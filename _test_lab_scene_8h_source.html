@@ -102,22 +102,18 @@
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keyword">class </span><a class="code" href="class_hover_race_1_1_client_1_1_test_lab_scene_1_1_lab_module.html">LabModule</a>;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_hover_race_1_1_client_1_1_test_lab_scene.html#a4e433944794bf7580cb637f098ec856b">OnPhaseChanged</a>(<a class="code" href="struct_hover_race_1_1_client_1_1_scene_1_1_phase.html#a37cb41f6ed9499f76da9d6dd1a845bfb">Phase::phase_t</a> oldPhase);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_hover_race_1_1_client_1_1_test_lab_scene.html#ae29407124a2dc5fb74da484434cf0805">Advance</a>(<a class="code" href="class_hover_race_1_1_util_1_1_o_s.html#ab95203994cd88a763857b64711c7cc9f">Util::OS::timestamp_t</a> tick);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_hover_race_1_1_client_1_1_test_lab_scene.html#a3331dcff53688da60f08dda84ea7099c">PrepareRender</a>();</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_hover_race_1_1_client_1_1_test_lab_scene.html#ad19fc75ad8069f784704108195ce71a3">Render</a>();</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_test_lab_scene.html#a16134f0fa0e18b57c769d4933d2bc7cd">   65</a></span>&#160;        <a class="code" href="class_hover_race_1_1_display_1_1_display.html" title="Base class for display managers.">Display::Display</a> &amp;<a class="code" href="class_hover_race_1_1_client_1_1_test_lab_scene.html#a16134f0fa0e18b57c769d4933d2bc7cd">display</a>;</div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_test_lab_scene.html#a79f77b47f83be0f21e98f3b1f39bbba5">   66</a></span>&#160;        <a class="code" href="class_hover_race_1_1_client_1_1_game_director.html" title="Interface for game client shells.">GameDirector</a> &amp;<a class="code" href="class_hover_race_1_1_client_1_1_test_lab_scene.html#a79f77b47f83be0f21e98f3b1f39bbba5">director</a>;</div>
-<div class="line"><a name="l00067"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_test_lab_scene.html#adae5d58a831dff2c13f808aa99eb998b">   67</a></span>&#160;        std::unique_ptr&lt;Display::ScreenFade&gt; <a class="code" href="class_hover_race_1_1_client_1_1_test_lab_scene.html#adae5d58a831dff2c13f808aa99eb998b">fader</a>;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;};</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}  <span class="comment">// namespace Client</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}  <span class="comment">// namespace HoverRace</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_hover_race_1_1_client_1_1_test_lab_scene.html#a3331dcff53688da60f08dda84ea7099c">PrepareRender</a>();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_hover_race_1_1_client_1_1_test_lab_scene.html#ad19fc75ad8069f784704108195ce71a3">Render</a>();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_test_lab_scene.html#a16134f0fa0e18b57c769d4933d2bc7cd">   61</a></span>&#160;        <a class="code" href="class_hover_race_1_1_display_1_1_display.html" title="Base class for display managers.">Display::Display</a> &amp;<a class="code" href="class_hover_race_1_1_client_1_1_test_lab_scene.html#a16134f0fa0e18b57c769d4933d2bc7cd">display</a>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_test_lab_scene.html#a79f77b47f83be0f21e98f3b1f39bbba5">   62</a></span>&#160;        <a class="code" href="class_hover_race_1_1_client_1_1_game_director.html" title="Interface for game client shells.">GameDirector</a> &amp;<a class="code" href="class_hover_race_1_1_client_1_1_test_lab_scene.html#a79f77b47f83be0f21e98f3b1f39bbba5">director</a>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_test_lab_scene.html#adae5d58a831dff2c13f808aa99eb998b">   63</a></span>&#160;        std::unique_ptr&lt;Display::ScreenFade&gt; <a class="code" href="class_hover_race_1_1_client_1_1_test_lab_scene.html#adae5d58a831dff2c13f808aa99eb998b">fader</a>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;};</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}  <span class="comment">// namespace Client</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}  <span class="comment">// namespace HoverRace</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

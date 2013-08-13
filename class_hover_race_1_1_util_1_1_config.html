@@ -121,6 +121,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a97c025c9f22f023fa78ccb7b71bc1604"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the default UI font name.  <a href="#a97c025c9f22f023fa78ccb7b71bc1604"></a><br/></td></tr>
 <tr class="memitem:aff6e07021eb4374926560c178159312b"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_util_1_1_config.html#aff6e07021eb4374926560c178159312b">GetDefaultMonospaceFontName</a> () const </td></tr>
 <tr class="memdesc:aff6e07021eb4374926560c178159312b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the default font name for monospace text (e.g.  <a href="#aff6e07021eb4374926560c178159312b"></a><br/></td></tr>
+<tr class="memitem:aa77ae1158a3e02ac2b2503d55e5a213e"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_util_1_1_config.html#aa77ae1158a3e02ac2b2503d55e5a213e">GetDefaultSymbolFontName</a> () const </td></tr>
+<tr class="memdesc:aa77ae1158a3e02ac2b2503d55e5a213e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the default font name for symbols.  <a href="#aa77ae1158a3e02ac2b2503d55e5a213e"></a><br/></td></tr>
 <tr class="memitem:a26a4f15c69dd5adb80043cdbb1fd4f5b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_util_1_1_config.html#a26a4f15c69dd5adb80043cdbb1fd4f5b">ResetToDefaults</a> ()</td></tr>
 <tr class="memdesc:a26a4f15c69dd5adb80043cdbb1fd4f5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the configuration to the default "factory" settings.  <a href="#a26a4f15c69dd5adb80043cdbb1fd4f5b"></a><br/></td></tr>
 <tr class="memitem:a927b600f494602dbe908504fa4137019"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_util_1_1_config.html#a927b600f494602dbe908504fa4137019">Load</a> ()</td></tr>
@@ -204,6 +206,7 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a59065fb3c07df65ea12a654321d097ad"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_util_1_1_config.html#a59065fb3c07df65ea12a654321d097ad">userAgentId</a></td></tr>
 <tr class="memitem:a43c0175a14a19fdd53062f18d89e7c05"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_util_1_1_config.html#a43c0175a14a19fdd53062f18d89e7c05">defaultFontName</a></td></tr>
 <tr class="memitem:a05c9619222aff8ab698bf3d4870c7083"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_util_1_1_config.html#a05c9619222aff8ab698bf3d4870c7083">defaultMonospaceFontName</a></td></tr>
+<tr class="memitem:abe5f22ad843a56310b0efd93cd265261"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_util_1_1_config.html#abe5f22ad843a56310b0efd93cd265261">defaultSymbolFontName</a></td></tr>
 <tr class="memitem:addaa448e16d26ce2c6a18367383841e1"><td class="memItemLeft" align="right" valign="top">xdgHandle *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_util_1_1_config.html#addaa448e16d26ce2c6a18367383841e1">xdg</a></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pri-static-attribs"></a>
@@ -553,6 +556,24 @@ Static Private Attributes</h2></td></tr>
 
 <p>Retrieve the default URL for the IMR room list. </p>
 <dl class="section return"><dt>Returns</dt><dd>The URL (without the initial "http://"). </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa77ae1158a3e02ac2b2503d55e5a213e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string &amp; HoverRace::Util::Config::GetDefaultSymbolFontName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieve the default font name for symbols. </p>
+<dl class="section return"><dt>Returns</dt><dd>The font name (never emepty). </dd></dl>
 
 </div>
 </div>
@@ -1152,6 +1173,26 @@ Static Private Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">std::string HoverRace::Util::Config::defaultMonospaceFontName</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abe5f22ad843a56310b0efd93cd265261"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string HoverRace::Util::Config::defaultSymbolFontName</td>
         </tr>
       </table>
   </td>

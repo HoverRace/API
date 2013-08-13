@@ -52,6 +52,8 @@
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-types">Private Types</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_hover_race_1_1_client_1_1_main_menu_scene-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">HoverRace::Client::MainMenuScene Class Reference</div>  </div>
@@ -72,8 +74,12 @@ Inheritance diagram for HoverRace::Client::MainMenuScene:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6052c11d10c46c61588468ada323549a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_main_menu_scene.html#a6052c11d10c46c61588468ada323549a">MainMenuScene</a> (<a class="el" href="class_hover_race_1_1_display_1_1_display.html">Display::Display</a> &amp;<a class="el" href="class_hover_race_1_1_client_1_1_form_scene.html#a833b46f3205a5a0ad72a074668908a30">display</a>)</td></tr>
+<tr class="memitem:afefc1b493c85f92e8bb4199da38b5b92"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_main_menu_scene.html#afefc1b493c85f92e8bb4199da38b5b92">MainMenuScene</a> (<a class="el" href="class_hover_race_1_1_display_1_1_display.html">Display::Display</a> &amp;<a class="el" href="class_hover_race_1_1_client_1_1_main_menu_scene.html#a9ccee689155c91c578714948bd352c6b">display</a>, <a class="el" href="class_hover_race_1_1_client_1_1_game_director.html">GameDirector</a> &amp;<a class="el" href="class_hover_race_1_1_client_1_1_main_menu_scene.html#a3344839d8d3c59211768c5fa1b440fea">director</a>)</td></tr>
 <tr class="memitem:ae829e0bb8997cc38ca8bb19e243c9f00"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_main_menu_scene.html#ae829e0bb8997cc38ca8bb19e243c9f00">~MainMenuScene</a> ()</td></tr>
+<tr class="memitem:aac0c059e2b9f5e59e0fb1fe6c580bb6d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_main_menu_scene.html#aac0c059e2b9f5e59e0fb1fe6c580bb6d">OnTransition</a> (double interval)</td></tr>
+<tr class="memdesc:aac0c059e2b9f5e59e0fb1fe6c580bb6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fired during the starting and stopping phases, if <a class="el" href="class_hover_race_1_1_client_1_1_scene.html#a88a5917127fe338c3564fac535c5db46" title="Set the maximum duration of the starting or stopping phases.">SetTransitionDuration()</a> was set.  <a href="#aac0c059e2b9f5e59e0fb1fe6c580bb6d"></a><br/></td></tr>
+<tr class="memitem:a90322935a27a2c0d3f40c25a8ecea06b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_main_menu_scene.html#a90322935a27a2c0d3f40c25a8ecea06b">Layout</a> ()</td></tr>
+<tr class="memdesc:a90322935a27a2c0d3f40c25a8ecea06b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adjust the size and position of any child elements.  <a href="#a90322935a27a2c0d3f40c25a8ecea06b"></a><br/></td></tr>
 <tr class="inherit_header pub_methods_class_hover_race_1_1_client_1_1_form_scene"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_hover_race_1_1_client_1_1_form_scene')"><img src="closed.png" alt="-"/>&nbsp;Public Member Functions inherited from <a class="el" href="class_hover_race_1_1_client_1_1_form_scene.html">HoverRace::Client::FormScene</a></td></tr>
 <tr class="memitem:a7abbd3bba9edb8568d15fde35eb1e61a inherit pub_methods_class_hover_race_1_1_client_1_1_form_scene"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_form_scene.html#a7abbd3bba9edb8568d15fde35eb1e61a">FormScene</a> (<a class="el" href="class_hover_race_1_1_display_1_1_display.html">Display::Display</a> &amp;<a class="el" href="class_hover_race_1_1_client_1_1_form_scene.html#a833b46f3205a5a0ad72a074668908a30">display</a>, const std::string &amp;<a class="el" href="class_hover_race_1_1_client_1_1_scene.html#acc98e2e244a10f1ca3ea841ea3fe6fd7">name</a>=&quot;&quot;)</td></tr>
 <tr class="memitem:a520260a7885b2286ffa288a7510f6c9f inherit pub_methods_class_hover_race_1_1_client_1_1_form_scene"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_form_scene.html#a520260a7885b2286ffa288a7510f6c9f">~FormScene</a> ()</td></tr>
@@ -97,15 +103,29 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae9056a7471c6189b692846623346a998 inherit pub_methods_class_hover_race_1_1_client_1_1_scene"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_hover_race_1_1_client_1_1_scene_1_1_phase.html#a37cb41f6ed9499f76da9d6dd1a845bfb">Phase::phase_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_scene.html#ae9056a7471c6189b692846623346a998">GetPhase</a> () const </td></tr>
 <tr class="memitem:a399bdbf2e232448d2ca28f7d83b3b1f3 inherit pub_methods_class_hover_race_1_1_client_1_1_scene"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_scene.html#a399bdbf2e232448d2ca28f7d83b3b1f3">SetPhase</a> (<a class="el" href="struct_hover_race_1_1_client_1_1_scene_1_1_phase.html#a37cb41f6ed9499f76da9d6dd1a845bfb">Phase::phase_t</a> <a class="el" href="class_hover_race_1_1_client_1_1_scene.html#a83c2472cc3abf73526296f54677d8b71">phase</a>)</td></tr>
 <tr class="memdesc:a399bdbf2e232448d2ca28f7d83b3b1f3 inherit pub_methods_class_hover_race_1_1_client_1_1_scene"><td class="mdescLeft">&#160;</td><td class="mdescRight">Switch to another phase.  <a href="#a399bdbf2e232448d2ca28f7d83b3b1f3"></a><br/></td></tr>
-<tr class="memitem:a0b2f5e575b2df1d2e2cd80af9844d698 inherit pub_methods_class_hover_race_1_1_client_1_1_scene"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_util_1_1_o_s.html#ab95203994cd88a763857b64711c7cc9f">Util::OS::timestamp_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_scene.html#a0b2f5e575b2df1d2e2cd80af9844d698">GetPhaseDuration</a> (<a class="el" href="class_hover_race_1_1_util_1_1_o_s.html#ab95203994cd88a763857b64711c7cc9f">Util::OS::timestamp_t</a> curTime=<a class="el" href="class_hover_race_1_1_util_1_1_o_s.html#a72fc72893a2370773b487e72a5b0c55e">Util::OS::Time</a>())</td></tr>
-<tr class="memdesc:a0b2f5e575b2df1d2e2cd80af9844d698 inherit pub_methods_class_hover_race_1_1_client_1_1_scene"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate how much time we've spent in the current phase.  <a href="#a0b2f5e575b2df1d2e2cd80af9844d698"></a><br/></td></tr>
-<tr class="memitem:aa013012db82a12e7a5806738fdc7fd10 inherit pub_methods_class_hover_race_1_1_client_1_1_scene"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_util_1_1_o_s.html#ab95203994cd88a763857b64711c7cc9f">Util::OS::timestamp_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_scene.html#aa013012db82a12e7a5806738fdc7fd10">GetStartingPhaseTime</a> ()</td></tr>
-<tr class="memdesc:aa013012db82a12e7a5806738fdc7fd10 inherit pub_methods_class_hover_race_1_1_client_1_1_scene"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return how long the starting phase lasted.  <a href="#aa013012db82a12e7a5806738fdc7fd10"></a><br/></td></tr>
-<tr class="memitem:a8a2449cf2f7009e5bdd6c17f96273ed1 inherit pub_methods_class_hover_race_1_1_client_1_1_scene"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_scene.html#a8a2449cf2f7009e5bdd6c17f96273ed1">Advance</a> (<a class="el" href="class_hover_race_1_1_util_1_1_o_s.html#ab95203994cd88a763857b64711c7cc9f">Util::OS::timestamp_t</a> tick)=0</td></tr>
+<tr class="memitem:aef72db676c2674a37b5725bd97cee912 inherit pub_methods_class_hover_race_1_1_client_1_1_scene"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_scene.html#aef72db676c2674a37b5725bd97cee912">Advance</a> (<a class="el" href="class_hover_race_1_1_util_1_1_o_s.html#ab95203994cd88a763857b64711c7cc9f">Util::OS::timestamp_t</a> tick)</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pri-types"></a>
 Private Types</h2></td></tr>
 <tr class="memitem:aaca7dcebf2cbce89ba1588445c82e4cf"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_hover_race_1_1_client_1_1_form_scene.html">FormScene</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_main_menu_scene.html#aaca7dcebf2cbce89ba1588445c82e4cf">SUPER</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:acafc1d229523397bbfbda4d42a204bdf"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_hover_race_1_1_display_1_1_button.html">Display::Button</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_main_menu_scene.html#acafc1d229523397bbfbda4d42a204bdf">AddButton</a> (const std::string &amp;text, bool enabled=true)</td></tr>
+<tr class="memitem:ad89d4bb605dfb6b59c3f4f3ac9ced9fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_main_menu_scene.html#ad89d4bb605dfb6b59c3f4f3ac9ced9fe">OnPracticeClicked</a> ()</td></tr>
+<tr class="memitem:a962ae7ae026b76cc2583aae158a274c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_main_menu_scene.html#a962ae7ae026b76cc2583aae158a274c7">OnMultiplayerClicked</a> ()</td></tr>
+<tr class="memitem:ac6789cf7d2d2a2b37d2b9bcec7e461a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_main_menu_scene.html#ac6789cf7d2d2a2b37d2b9bcec7e461a0">OnSettingsClicked</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a9ccee689155c91c578714948bd352c6b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_display_1_1_display.html">Display::Display</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_main_menu_scene.html#a9ccee689155c91c578714948bd352c6b">display</a></td></tr>
+<tr class="memitem:a3344839d8d3c59211768c5fa1b440fea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_client_1_1_game_director.html">GameDirector</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_main_menu_scene.html#a3344839d8d3c59211768c5fa1b440fea">director</a></td></tr>
+<tr class="memitem:ae84a489dcfba9464ed602c34d684fa2a"><td class="memItemLeft" align="right" valign="top">std::shared_ptr<br class="typebreak"/>
+&lt; <a class="el" href="class_hover_race_1_1_display_1_1_container.html">Display::Container</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_main_menu_scene.html#ae84a489dcfba9464ed602c34d684fa2a">titleContainer</a></td></tr>
+<tr class="memitem:a06f7187c99a544238776f729918718c6"><td class="memItemLeft" align="right" valign="top">std::shared_ptr<br class="typebreak"/>
+&lt; <a class="el" href="class_hover_race_1_1_display_1_1_container.html">Display::Container</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_main_menu_scene.html#a06f7187c99a544238776f729918718c6">menuContainer</a></td></tr>
+<tr class="memitem:af500d7d9793eb2b84c7d83ffe50e947a"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::shared_ptr<br class="typebreak"/>
+&lt; <a class="el" href="class_hover_race_1_1_display_1_1_button.html">Display::Button</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_main_menu_scene.html#af500d7d9793eb2b84c7d83ffe50e947a">menuButtons</a></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -139,7 +159,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a6052c11d10c46c61588468ada323549a"></a>
+<a class="anchor" id="afefc1b493c85f92e8bb4199da38b5b92"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -147,8 +167,18 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname">HoverRace::Client::MainMenuScene::MainMenuScene </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_hover_race_1_1_display_1_1_display.html">Display::Display</a> &amp;&#160;</td>
-          <td class="paramname"><em>display</em></td><td>)</td>
+          <td class="paramname"><em>display</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="class_hover_race_1_1_client_1_1_game_director.html">GameDirector</a> &amp;&#160;</td>
+          <td class="paramname"><em>director</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -172,6 +202,274 @@ Additional Inherited Members</h2></td></tr>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2>Member Function Documentation</h2>
+<a class="anchor" id="acafc1d229523397bbfbda4d42a204bdf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="class_hover_race_1_1_display_1_1_button.html">Display::Button</a> &gt; HoverRace::Client::MainMenuScene::AddButton </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enabled</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a90322935a27a2c0d3f40c25a8ecea06b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HoverRace::Client::MainMenuScene::Layout </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Adjust the size and position of any child elements. </p>
+<p>Subclasses with child elements that are relative to each other should override this function.</p>
+<p>This is called automatically during the <a class="el" href="class_hover_race_1_1_client_1_1_form_scene.html#a3e35f15d0e4e50f8e9b2f25f548918fd">PrepareRender()</a> phase if <a class="el" href="class_hover_race_1_1_client_1_1_ui_scene.html#a195e22f5b8aba8d15aace704faa6c6e2" title="Indicate that the current layout is out-of-date and needs to be adjusted.">RequestLayout()</a> has been called. It is also called the first time <a class="el" href="class_hover_race_1_1_client_1_1_form_scene.html#a3e35f15d0e4e50f8e9b2f25f548918fd">PrepareRender()</a> is invoked. After this function is called, it will not be called again until another call to <a class="el" href="class_hover_race_1_1_client_1_1_ui_scene.html#a195e22f5b8aba8d15aace704faa6c6e2" title="Indicate that the current layout is out-of-date and needs to be adjusted.">RequestLayout()</a>. </p>
+
+<p>Reimplemented from <a class="el" href="class_hover_race_1_1_client_1_1_ui_scene.html#af4b04ca88ff3001428a94137870055a6">HoverRace::Client::UiScene</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a962ae7ae026b76cc2583aae158a274c7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HoverRace::Client::MainMenuScene::OnMultiplayerClicked </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad89d4bb605dfb6b59c3f4f3ac9ced9fe"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HoverRace::Client::MainMenuScene::OnPracticeClicked </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac6789cf7d2d2a2b37d2b9bcec7e461a0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HoverRace::Client::MainMenuScene::OnSettingsClicked </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aac0c059e2b9f5e59e0fb1fe6c580bb6d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HoverRace::Client::MainMenuScene::OnTransition </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>progress</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Fired during the starting and stopping phases, if <a class="el" href="class_hover_race_1_1_client_1_1_scene.html#a88a5917127fe338c3564fac535c5db46" title="Set the maximum duration of the starting or stopping phases.">SetTransitionDuration()</a> was set. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">progress</td><td>The animation progress (during the <code>STARTING</code> phase this goes from 0.0 to 1.0, and in reverse for the <code>STOPPING</code> phase). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented from <a class="el" href="class_hover_race_1_1_client_1_1_scene.html#a58e0eeb07e115c45a78aa6613a924c8c">HoverRace::Client::Scene</a>.</p>
+
+</div>
+</div>
+<h2>Member Data Documentation</h2>
+<a class="anchor" id="a3344839d8d3c59211768c5fa1b440fea"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_hover_race_1_1_client_1_1_game_director.html">GameDirector</a>&amp; HoverRace::Client::MainMenuScene::director</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9ccee689155c91c578714948bd352c6b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_hover_race_1_1_display_1_1_display.html">Display::Display</a>&amp; HoverRace::Client::MainMenuScene::display</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af500d7d9793eb2b84c7d83ffe50e947a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::shared_ptr&lt;<a class="el" href="class_hover_race_1_1_display_1_1_button.html">Display::Button</a>&gt; &gt; HoverRace::Client::MainMenuScene::menuButtons</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a06f7187c99a544238776f729918718c6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="class_hover_race_1_1_display_1_1_container.html">Display::Container</a>&gt; HoverRace::Client::MainMenuScene::menuContainer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae84a489dcfba9464ed602c34d684fa2a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="class_hover_race_1_1_display_1_1_container.html">Display::Container</a>&gt; HoverRace::Client::MainMenuScene::titleContainer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
