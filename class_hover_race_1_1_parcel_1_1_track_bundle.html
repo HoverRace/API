@@ -65,8 +65,7 @@
 <div class="dynheader">
 Inheritance diagram for HoverRace::Parcel::TrackBundle:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_hover_race_1_1_parcel_1_1_track_bundle__inherit__graph.svg" width="144" height="150"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_hover_race_1_1_parcel_1_1_track_bundle__inherit__graph.svg" width="144" height="150"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
@@ -76,7 +75,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7f2febbcf181f11b01399a982e0913ea"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespace_hover_race_1_1_parcel.html#aed367add10793d385687b45b8b9981fc">RecordFilePtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_parcel_1_1_track_bundle.html#a7f2febbcf181f11b01399a982e0913ea">OpenParcel</a> (const std::string &amp;name, bool writing=false) const </td></tr>
 <tr class="memdesc:a7f2febbcf181f11b01399a982e0913ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open an existing parcel.  <a href="#a7f2febbcf181f11b01399a982e0913ea"></a><br/></td></tr>
 <tr class="memitem:ab3f16a87485d73b4c1d93dcca54cfd9f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_hover_race_1_1_model.html#ab23f9cc44970ee1052c0bf51b8d5978a">Model::TrackPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_parcel_1_1_track_bundle.html#ab3f16a87485d73b4c1d93dcca54cfd9f">OpenTrack</a> (const std::string &amp;name) const </td></tr>
-<tr class="memdesc:ab3f16a87485d73b4c1d93dcca54cfd9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a track.  <a href="#ab3f16a87485d73b4c1d93dcca54cfd9f"></a><br/></td></tr>
+<tr class="memdesc:ab3f16a87485d73b4c1d93dcca54cfd9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a track by name.  <a href="#ab3f16a87485d73b4c1d93dcca54cfd9f"></a><br/></td></tr>
+<tr class="memitem:a69d16eb503445819eac7391d637b724e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_hover_race_1_1_model.html#ab23f9cc44970ee1052c0bf51b8d5978a">Model::TrackPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_parcel_1_1_track_bundle.html#a69d16eb503445819eac7391d637b724e">OpenTrack</a> (const std::shared_ptr&lt; const <a class="el" href="class_hover_race_1_1_model_1_1_track_entry.html">Model::TrackEntry</a> &gt; &amp;<a class="el" href="_track_select_scene_8cpp.html#aa045bc78531a6273984424df87e9e821">entry</a>) const </td></tr>
+<tr class="memdesc:a69d16eb503445819eac7391d637b724e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a track by track header.  <a href="#a69d16eb503445819eac7391d637b724e"></a><br/></td></tr>
 <tr class="memitem:aea9435e196697519ccc17ffcbd5034fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_hover_race_1_1_model.html#a9ee639dfdd7cd9015c98c52e6a4a5741">Model::TrackEntryPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_parcel_1_1_track_bundle.html#aea9435e196697519ccc17ffcbd5034fe">OpenTrackEntry</a> (const std::string &amp;name) const </td></tr>
 <tr class="memdesc:aea9435e196697519ccc17ffcbd5034fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a track header.  <a href="#aea9435e196697519ccc17ffcbd5034fe"></a><br/></td></tr>
 <tr class="memitem:adb404d812d15abb9b16c96942cb5a8d1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_track_bundle_8h.html#a13ef2a5a74e7e6ba45c987d05ad2180e">MR_TrackAvail</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_parcel_1_1_track_bundle.html#adb404d812d15abb9b16c96942cb5a8d1">CheckAvail</a> (const std::string &amp;name) const </td></tr>
@@ -262,14 +263,45 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Load a track. </p>
+<p>Load a track by name. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td>The name of the track. The ".trk" suffix may be omitted. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The track or <code>NULL</code> if the track does not exist. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The track or <code>nullptr</code> if the track does not exist. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="class_hover_race_1_1_parcel_1_1_obj_stream_exn.html">ObjStreamExn</a></td><td>The track failed to load. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a69d16eb503445819eac7391d637b724e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_hover_race_1_1_model.html#ab23f9cc44970ee1052c0bf51b8d5978a">Model::TrackPtr</a> HoverRace::Parcel::TrackBundle::OpenTrack </td>
+          <td>(</td>
+          <td class="paramtype">const std::shared_ptr&lt; const <a class="el" href="class_hover_race_1_1_model_1_1_track_entry.html">Model::TrackEntry</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>entry</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Load a track by track header. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entry</td><td>The entry for the track (may not be <code>nullptr</code>, see OpenTrackEntry). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The track or <code>nullptr</code> if the track does not exist. </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname"><a class="el" href="class_hover_race_1_1_parcel_1_1_obj_stream_exn.html">ObjStreamExn</a></td><td>The track failed to load. </td></tr>

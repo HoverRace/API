@@ -51,7 +51,9 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="class_hover_race_1_1_client_1_1_rulebook-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">HoverRace::Client::Rulebook Class Reference</div>  </div>
@@ -65,22 +67,44 @@
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a466fcd75469b38862477f704d13b477c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_rulebook.html#a466fcd75469b38862477f704d13b477c">Rulebook</a> (const std::string &amp;<a class="el" href="class_hover_race_1_1_client_1_1_rulebook.html#a4f554737d8cbb769ebdab42c9aeda04f">trackName</a>, int <a class="el" href="class_hover_race_1_1_client_1_1_rulebook.html#a3b485bfda2d272c6a57381e2e0afd5a0">laps</a>, char <a class="el" href="class_hover_race_1_1_client_1_1_rulebook.html#a925c2f443e78fac4ef96f06399e233dd">gameOpts</a>)</td></tr>
-<tr class="memitem:af84a5907db038a36a2c64edaa0a49dbe"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_rulebook.html#af84a5907db038a36a2c64edaa0a49dbe">GetTrackName</a> () const </td></tr>
-<tr class="memitem:a23abb02f7273ed83f624350baff6f0ef"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_rulebook.html#a23abb02f7273ed83f624350baff6f0ef">GetLaps</a> () const </td></tr>
-<tr class="memitem:aa77b670f8483d57774db5b2136dc0ea8"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_rulebook.html#aa77b670f8483d57774db5b2136dc0ea8">GetGameOpts</a> () const </td></tr>
+<tr class="memitem:a5cb1fc6160a85bc8b24aad0653130855"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_rulebook.html#a5cb1fc6160a85bc8b24aad0653130855">Rulebook</a> (<a class="el" href="class_hover_race_1_1_script_1_1_core.html">Script::Core</a> *<a class="el" href="class_hover_race_1_1_client_1_1_rulebook.html#a826737f54103aa48da01a26ad752be36">scripting</a>, const std::string &amp;<a class="el" href="class_hover_race_1_1_client_1_1_rulebook.html#ab1535fe5d177a62278c57393ff82b769">name</a>, const std::string &amp;<a class="el" href="class_hover_race_1_1_client_1_1_rulebook.html#afa2fd5db81791638e174e92018c1e258">title</a>, const std::string &amp;<a class="el" href="class_hover_race_1_1_client_1_1_rulebook.html#a789e5bd5c2049b34baed14d782cd50ff">description</a>, int <a class="el" href="class_hover_race_1_1_client_1_1_rulebook.html#a639b4a1a2ced9f888eab041e42f67e29">maxPlayers</a>)</td></tr>
+<tr class="memitem:a79b6b4ddb904def368625c3e97a30ef6"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_rulebook.html#a79b6b4ddb904def368625c3e97a30ef6">GetName</a> () const </td></tr>
+<tr class="memitem:a33f8a388cd41445ddf9e22e868889ca8"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_rulebook.html#a33f8a388cd41445ddf9e22e868889ca8">GetTitle</a> () const </td></tr>
+<tr class="memitem:a4bf920ed1cf322c6d5c0e7a583de084b"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_rulebook.html#a4bf920ed1cf322c6d5c0e7a583de084b">GetDescription</a> () const </td></tr>
+<tr class="memitem:acf23394a9c481ff33089da007bde37fa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_rulebook.html#acf23394a9c481ff33089da007bde37fa">GetMaxPlayers</a> () const </td></tr>
+<tr class="memitem:a9e4af3d2d17f314256f71d57dbd2e037"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_rulebook.html#a9e4af3d2d17f314256f71d57dbd2e037">AddRule</a> (const std::string &amp;<a class="el" href="class_hover_race_1_1_client_1_1_rulebook.html#ab1535fe5d177a62278c57393ff82b769">name</a>, const luabind::object &amp;obj)</td></tr>
+<tr class="memitem:a10cacc8297f9ba1749f48d8472ca1460"><td class="memItemLeft" align="right" valign="top">luabind::object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_rulebook.html#a10cacc8297f9ba1749f48d8472ca1460">CreateDefaultRules</a> () const </td></tr>
+<tr class="memitem:a50df65764ad4af609dd35111251cb886"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_rulebook.html#a50df65764ad4af609dd35111251cb886">SetOnPreGame</a> (const luabind::object &amp;fn)</td></tr>
+<tr class="memitem:a9e4336712476993b88c4fde963a32084"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_rulebook.html#a9e4336712476993b88c4fde963a32084">OnPreGame</a> (<a class="el" href="namespace_hover_race_1_1_client_1_1_hover_script.html#a8007a6a9e1cc5a78dcd9d4155ddcfbad">HoverScript::SessionPeerPtr</a> session) const </td></tr>
+<tr class="memitem:a7f762ed59420b293a50c0b6caedd2f7e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_rulebook.html#a7f762ed59420b293a50c0b6caedd2f7e">SetOnPostGame</a> (const luabind::object &amp;fn)</td></tr>
+<tr class="memitem:a3c99cf42e5d9101ee5b10b6b0b78cf62"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_rulebook.html#a3c99cf42e5d9101ee5b10b6b0b78cf62">OnPostGame</a> (<a class="el" href="namespace_hover_race_1_1_client_1_1_hover_script.html#a8007a6a9e1cc5a78dcd9d4155ddcfbad">HoverScript::SessionPeerPtr</a> session) const </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:aed28bb2dac03755d215eae08a164cccd"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; std::string, <br class="typebreak"/>
+std::shared_ptr&lt; <a class="el" href="class_hover_race_1_1_client_1_1_rule.html">Rule</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_rulebook.html#aed28bb2dac03755d215eae08a164cccd">rules_t</a></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a4f554737d8cbb769ebdab42c9aeda04f"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_rulebook.html#a4f554737d8cbb769ebdab42c9aeda04f">trackName</a></td></tr>
-<tr class="memitem:a3b485bfda2d272c6a57381e2e0afd5a0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_rulebook.html#a3b485bfda2d272c6a57381e2e0afd5a0">laps</a></td></tr>
-<tr class="memitem:a925c2f443e78fac4ef96f06399e233dd"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_rulebook.html#a925c2f443e78fac4ef96f06399e233dd">gameOpts</a></td></tr>
+<tr class="memitem:a826737f54103aa48da01a26ad752be36"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_script_1_1_core.html">Script::Core</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_rulebook.html#a826737f54103aa48da01a26ad752be36">scripting</a></td></tr>
+<tr class="memitem:ab1535fe5d177a62278c57393ff82b769"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_rulebook.html#ab1535fe5d177a62278c57393ff82b769">name</a></td></tr>
+<tr class="memitem:afa2fd5db81791638e174e92018c1e258"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_rulebook.html#afa2fd5db81791638e174e92018c1e258">title</a></td></tr>
+<tr class="memitem:a789e5bd5c2049b34baed14d782cd50ff"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_rulebook.html#a789e5bd5c2049b34baed14d782cd50ff">description</a></td></tr>
+<tr class="memitem:a639b4a1a2ced9f888eab041e42f67e29"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_rulebook.html#a639b4a1a2ced9f888eab041e42f67e29">maxPlayers</a></td></tr>
+<tr class="memitem:a619140d6f9167bc61414667edf1bd0f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_client_1_1_rulebook.html#aed28bb2dac03755d215eae08a164cccd">rules_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_rulebook.html#a619140d6f9167bc61414667edf1bd0f2">rules</a></td></tr>
+<tr class="memitem:a6d489ca5c59751a5f095e628eec315d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_script_1_1_handlers.html">Script::Handlers</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_rulebook.html#a6d489ca5c59751a5f095e628eec315d6">onPreGame</a></td></tr>
+<tr class="memitem:a488ddb65a99efd2e9910e8b89776d72a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_script_1_1_handlers.html">Script::Handlers</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_rulebook.html#a488ddb65a99efd2e9910e8b89776d72a">onPostGame</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:ab2aa802c3ce42ea678196d847c3c5acd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_rulebook.html#ab2aa802c3ce42ea678196d847c3c5acd">operator==</a> (const <a class="el" href="class_hover_race_1_1_client_1_1_rulebook.html">Rulebook</a> &amp;lhs, const <a class="el" href="class_hover_race_1_1_client_1_1_rulebook.html">Rulebook</a> &amp;rhs)</td></tr>
+<tr class="memitem:ab5a640a091d5c44d5bcdd3d0534a7fd7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_rulebook.html#ab5a640a091d5c44d5bcdd3d0534a7fd7">operator&lt;</a> (const <a class="el" href="class_hover_race_1_1_client_1_1_rulebook.html">Rulebook</a> &amp;lhs, const <a class="el" href="class_hover_race_1_1_client_1_1_rulebook.html">Rulebook</a> &amp;rhs)</td></tr>
 </table>
 <a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Defines the rules for a particular game session. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>This is very basic right now; the idea is that later we will make this a base class and move some game state logic into subclasses. </dd></dl>
-</div><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a466fcd75469b38862477f704d13b477c"></a>
+<dl class="section author"><dt>Author</dt><dd>Michael Imamura </dd></dl>
+</div><h2>Member Typedef Documentation</h2>
+<a class="anchor" id="aed28bb2dac03755d215eae08a164cccd"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -88,22 +112,280 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
+          <td class="memname">typedef std::map&lt;std::string, std::shared_ptr&lt;<a class="el" href="class_hover_race_1_1_client_1_1_rule.html">Rule</a>&gt; &gt; <a class="el" href="class_hover_race_1_1_client_1_1_rulebook.html#aed28bb2dac03755d215eae08a164cccd">HoverRace::Client::Rulebook::rules_t</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a5cb1fc6160a85bc8b24aad0653130855"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
           <td class="memname">HoverRace::Client::Rulebook::Rulebook </td>
           <td>(</td>
+          <td class="paramtype"><a class="el" href="class_hover_race_1_1_script_1_1_core.html">Script::Core</a> *&#160;</td>
+          <td class="paramname"><em>scripting</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>trackName</em>, </td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>title</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>description</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>laps</em>, </td>
+          <td class="paramname"><em>maxPlayers</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2>Member Function Documentation</h2>
+<a class="anchor" id="a9e4af3d2d17f314256f71d57dbd2e037"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HoverRace::Client::Rulebook::AddRule </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">char&#160;</td>
-          <td class="paramname"><em>gameOpts</em>&#160;</td>
+          <td class="paramtype">const luabind::object &amp;&#160;</td>
+          <td class="paramname"><em>obj</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a10cacc8297f9ba1749f48d8472ca1460"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">luabind::object HoverRace::Client::Rulebook::CreateDefaultRules </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4bf920ed1cf322c6d5c0e7a583de084b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string&amp; HoverRace::Client::Rulebook::GetDescription </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acf23394a9c481ff33089da007bde37fa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int HoverRace::Client::Rulebook::GetMaxPlayers </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a79b6b4ddb904def368625c3e97a30ef6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string&amp; HoverRace::Client::Rulebook::GetName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a33f8a388cd41445ddf9e22e868889ca8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string&amp; HoverRace::Client::Rulebook::GetTitle </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3c99cf42e5d9101ee5b10b6b0b78cf62"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HoverRace::Client::Rulebook::OnPostGame </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_hover_race_1_1_client_1_1_hover_script.html#a8007a6a9e1cc5a78dcd9d4155ddcfbad">HoverScript::SessionPeerPtr</a>&#160;</td>
+          <td class="paramname"><em>session</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9e4336712476993b88c4fde963a32084"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HoverRace::Client::Rulebook::OnPreGame </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_hover_race_1_1_client_1_1_hover_script.html#a8007a6a9e1cc5a78dcd9d4155ddcfbad">HoverScript::SessionPeerPtr</a>&#160;</td>
+          <td class="paramname"><em>session</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7f762ed59420b293a50c0b6caedd2f7e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HoverRace::Client::Rulebook::SetOnPostGame </td>
+          <td>(</td>
+          <td class="paramtype">const luabind::object &amp;&#160;</td>
+          <td class="paramname"><em>fn</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a50df65764ad4af609dd35111251cb886"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HoverRace::Client::Rulebook::SetOnPreGame </td>
+          <td>(</td>
+          <td class="paramtype">const luabind::object &amp;&#160;</td>
+          <td class="paramname"><em>fn</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2>Friends And Related Function Documentation</h2>
+<a class="anchor" id="ab5a640a091d5c44d5bcdd3d0534a7fd7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator&lt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_hover_race_1_1_client_1_1_rulebook.html">Rulebook</a> &amp;&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_hover_race_1_1_client_1_1_rulebook.html">Rulebook</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -113,15 +395,14 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<h2>Member Function Documentation</h2>
-<a class="anchor" id="aa77b670f8483d57774db5b2136dc0ea8"></a>
+<a class="anchor" id="ab2aa802c3ce42ea678196d847c3c5acd"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -129,61 +410,26 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">char HoverRace::Client::Rulebook::GetGameOpts </td>
+          <td class="memname">bool operator== </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype">const <a class="el" href="class_hover_race_1_1_client_1_1_rulebook.html">Rulebook</a> &amp;&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
         </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a23abb02f7273ed83f624350baff6f0ef"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
         <tr>
-          <td class="memname">int HoverRace::Client::Rulebook::GetLaps </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_hover_race_1_1_client_1_1_rulebook.html">Rulebook</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em>&#160;</td>
         </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="af84a5907db038a36a2c64edaa0a49dbe"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
         <tr>
-          <td class="memname">const std::string&amp; HoverRace::Client::Rulebook::GetTrackName </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -191,7 +437,7 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2>Member Data Documentation</h2>
-<a class="anchor" id="a925c2f443e78fac4ef96f06399e233dd"></a>
+<a class="anchor" id="a789e5bd5c2049b34baed14d782cd50ff"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -199,7 +445,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">char HoverRace::Client::Rulebook::gameOpts</td>
+          <td class="memname">std::string HoverRace::Client::Rulebook::description</td>
         </tr>
       </table>
   </td>
@@ -211,7 +457,7 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a3b485bfda2d272c6a57381e2e0afd5a0"></a>
+<a class="anchor" id="a639b4a1a2ced9f888eab041e42f67e29"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -219,7 +465,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int HoverRace::Client::Rulebook::laps</td>
+          <td class="memname">int HoverRace::Client::Rulebook::maxPlayers</td>
         </tr>
       </table>
   </td>
@@ -231,7 +477,7 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a4f554737d8cbb769ebdab42c9aeda04f"></a>
+<a class="anchor" id="ab1535fe5d177a62278c57393ff82b769"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -239,7 +485,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string HoverRace::Client::Rulebook::trackName</td>
+          <td class="memname">std::string HoverRace::Client::Rulebook::name</td>
         </tr>
       </table>
   </td>
@@ -251,8 +497,109 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<a class="anchor" id="a488ddb65a99efd2e9910e8b89776d72a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_hover_race_1_1_script_1_1_handlers.html">Script::Handlers</a> HoverRace::Client::Rulebook::onPostGame</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6d489ca5c59751a5f095e628eec315d6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_hover_race_1_1_script_1_1_handlers.html">Script::Handlers</a> HoverRace::Client::Rulebook::onPreGame</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a619140d6f9167bc61414667edf1bd0f2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_hover_race_1_1_client_1_1_rulebook.html#aed28bb2dac03755d215eae08a164cccd">rules_t</a> HoverRace::Client::Rulebook::rules</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a826737f54103aa48da01a26ad752be36"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_hover_race_1_1_script_1_1_core.html">Script::Core</a>* HoverRace::Client::Rulebook::scripting</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afa2fd5db81791638e174e92018c1e258"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string HoverRace::Client::Rulebook::title</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_rulebook_8h_source.html">Rulebook.h</a></li>
+<li><a class="el" href="_rulebook_8cpp.html">Rulebook.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

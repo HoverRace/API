@@ -79,61 +79,60 @@
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">namespace </span>Client {</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keyword">class </span>Scene;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keyword">typedef</span> std::shared_ptr&lt;Scene&gt; <a class="code" href="namespace_hover_race_1_1_client.html#a75d2856d5ff4ea11bcbedca9132bcad4">ScenePtr</a>;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keyword">class </span>Rulebook;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keyword">typedef</span> std::shared_ptr&lt;Rulebook&gt; <a class="code" href="namespace_hover_race_1_1_client.html#a55222a3109c985138a0987b8bc55eb9b">RulebookPtr</a>;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    }</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">namespace </span>Control {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keyword">class </span>InputEventController;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    }</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">namespace </span>Display {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keyword">class </span>Display;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    }</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="code" href="namespace_hover_race_1_1_video_services.html">   38</a></span>&#160;    <span class="keyword">namespace </span>VideoServices {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keyword">class </span><a class="code" href="class_hover_race_1_1_video_services_1_1_video_buffer.html" title="Video framebuffer for legacy (8-bit, palettized) rendering.">VideoBuffer</a>;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    }</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">namespace </span>HoverRace {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">namespace </span>Client {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_game_director.html">   50</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_hover_race_1_1_client_1_1_game_director.html" title="Interface for game client shells.">GameDirector</a></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_game_director.html#a1a3eb94c432b5884e9b6c261a059e5ad">   53</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class_hover_race_1_1_client_1_1_game_director.html#a1a3eb94c432b5884e9b6c261a059e5ad">~GameDirector</a>() { }</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_hover_race_1_1_client_1_1_game_director.html#aeabf9e49d7861286f22804579d4b8cd4" title="Push a new scene to the foreground.">RequestPushScene</a>(<span class="keyword">const</span> <a class="code" href="namespace_hover_race_1_1_client.html#a75d2856d5ff4ea11bcbedca9132bcad4">ScenePtr</a> &amp;<a class="code" href="_client_app_8cpp.html#a449a153d9586c6526bf0a3e23ada7772">scene</a>) = 0;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_hover_race_1_1_client_1_1_game_director.html#a837f04fe438bfac4fe464af71b14d5ce" title="Return to the previous scene, if any.">RequestPopScene</a>() = 0;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_hover_race_1_1_client_1_1_game_director.html#ae3ceaf8b7ed686b5a71536b0eec31985" title="Replace the current scene and all background scenes with a new foreground scene.">RequestReplaceScene</a>(<span class="keyword">const</span> <a class="code" href="namespace_hover_race_1_1_client.html#a75d2856d5ff4ea11bcbedca9132bcad4">ScenePtr</a> &amp;<a class="code" href="_client_app_8cpp.html#a449a153d9586c6526bf0a3e23ada7772">scene</a>) = 0;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_hover_race_1_1_client_1_1_game_director.html#a1dc54157ab4292d77a608826031c76a8" title="Request a return to the main menu.">RequestMainMenu</a>() = 0;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_hover_race_1_1_client_1_1_game_director.html#a3b3ee43de301368fdc66572419329837" title="Request a new local practice session.">RequestNewPracticeSession</a>(<a class="code" href="namespace_hover_race_1_1_client.html#a55222a3109c985138a0987b8bc55eb9b">RulebookPtr</a> rules=<a class="code" href="namespace_hover_race_1_1_client.html#a55222a3109c985138a0987b8bc55eb9b">RulebookPtr</a>()) = 0;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_hover_race_1_1_client_1_1_game_director.html#a8e2b7806d39e02d606484daf32bdb240" title="Request an orderly shutdown the of app.">RequestShutdown</a>() = 0;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_hover_race_1_1_client_1_1_game_director.html#a5f0ebe7ebdba9810a583a528e16be014" title="Notify this director that the IMR server configuration has changed.">SignalServerHasChanged</a>() = 0;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_hover_race_1_1_client_1_1_game_director.html#a84da394a0cdd51e02de0a1550c9f5640" title="Notify this director that the auto-update configuration has changed.">ChangeAutoUpdates</a>(<span class="keywordtype">bool</span> newSetting) = 0;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_hover_race_1_1_client_1_1_game_director.html#ac53a08ab8b1abc4a30f33b2325af5f25" title="Notify this director that the video palette configuration has changed.">AssignPalette</a>() = 0;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class_hover_race_1_1_display_1_1_display.html" title="Base class for display managers.">Display::Display</a> *<a class="code" href="class_hover_race_1_1_client_1_1_game_director.html#a8b31524ed59dd6dd585a1adaa67c0da9">GetDisplay</a>() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class_hover_race_1_1_video_services_1_1_video_buffer.html" title="Video framebuffer for legacy (8-bit, palettized) rendering.">VideoServices::VideoBuffer</a> *<a class="code" href="class_hover_race_1_1_client_1_1_game_director.html#a2603498ef809720061a997f2fe183b99">GetVideoBuffer</a>() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class_hover_race_1_1_control_1_1_input_event_controller.html" title="Translates input events into actions.">Control::InputEventController</a> *<a class="code" href="class_hover_race_1_1_client_1_1_game_director.html#ac504d50cddf82887c8f416df5b88ee30">GetController</a>() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class_hover_race_1_1_control_1_1_input_event_controller.html" title="Translates input events into actions.">Control::InputEventController</a> *<a class="code" href="class_hover_race_1_1_client_1_1_game_director.html#adac4edd4d70e8ace85acd985fa9bb53c" title="Reload the control settings.">ReloadController</a>() = 0;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="preprocessor">#   ifdef _WIN32</span></div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="preprocessor"></span>        <span class="keyword">virtual</span> HWND GetWindowHandle() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="preprocessor">#   endif</span></div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="preprocessor"></span>};</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;}  <span class="comment">// namespace HoverScript</span></div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;}  <span class="comment">// namespace Client</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keyword">class </span>Rules;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    }</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">namespace </span>Control {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keyword">class </span>InputEventController;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    }</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">namespace </span>Display {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keyword">class </span>Display;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="namespace_hover_race_1_1_video_services.html">   37</a></span>&#160;    <span class="keyword">namespace </span>VideoServices {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keyword">class </span><a class="code" href="class_hover_race_1_1_video_services_1_1_video_buffer.html" title="Video framebuffer for legacy (8-bit, palettized) rendering.">VideoBuffer</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    }</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">namespace </span>HoverRace {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">namespace </span>Client {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_game_director.html">   49</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_hover_race_1_1_client_1_1_game_director.html" title="Interface for game client shells.">GameDirector</a></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_game_director.html#a1a3eb94c432b5884e9b6c261a059e5ad">   52</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class_hover_race_1_1_client_1_1_game_director.html#a1a3eb94c432b5884e9b6c261a059e5ad">~GameDirector</a>() { }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_hover_race_1_1_client_1_1_game_director.html#aeabf9e49d7861286f22804579d4b8cd4" title="Push a new scene to the foreground.">RequestPushScene</a>(<span class="keyword">const</span> <a class="code" href="namespace_hover_race_1_1_client.html#a75d2856d5ff4ea11bcbedca9132bcad4">ScenePtr</a> &amp;<a class="code" href="_client_app_8cpp.html#a449a153d9586c6526bf0a3e23ada7772">scene</a>) = 0;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_hover_race_1_1_client_1_1_game_director.html#a837f04fe438bfac4fe464af71b14d5ce" title="Return to the previous scene, if any.">RequestPopScene</a>() = 0;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_hover_race_1_1_client_1_1_game_director.html#ae3ceaf8b7ed686b5a71536b0eec31985" title="Replace the current scene and all background scenes with a new foreground scene.">RequestReplaceScene</a>(<span class="keyword">const</span> <a class="code" href="namespace_hover_race_1_1_client.html#a75d2856d5ff4ea11bcbedca9132bcad4">ScenePtr</a> &amp;<a class="code" href="_client_app_8cpp.html#a449a153d9586c6526bf0a3e23ada7772">scene</a>) = 0;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_hover_race_1_1_client_1_1_game_director.html#a1dc54157ab4292d77a608826031c76a8" title="Request a return to the main menu.">RequestMainMenu</a>() = 0;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_hover_race_1_1_client_1_1_game_director.html#a04cbebec80926e6baf32301f8d218a43" title="Request a new local practice session.">RequestNewPracticeSession</a>(std::shared_ptr&lt;Rules&gt; rules) = 0;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_hover_race_1_1_client_1_1_game_director.html#a8e2b7806d39e02d606484daf32bdb240" title="Request an orderly shutdown the of app.">RequestShutdown</a>() = 0;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_hover_race_1_1_client_1_1_game_director.html#a5f0ebe7ebdba9810a583a528e16be014" title="Notify this director that the IMR server configuration has changed.">SignalServerHasChanged</a>() = 0;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_hover_race_1_1_client_1_1_game_director.html#a84da394a0cdd51e02de0a1550c9f5640" title="Notify this director that the auto-update configuration has changed.">ChangeAutoUpdates</a>(<span class="keywordtype">bool</span> newSetting) = 0;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_hover_race_1_1_client_1_1_game_director.html#ac53a08ab8b1abc4a30f33b2325af5f25" title="Notify this director that the video palette configuration has changed.">AssignPalette</a>() = 0;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class_hover_race_1_1_display_1_1_display.html" title="Base class for display managers.">Display::Display</a> *<a class="code" href="class_hover_race_1_1_client_1_1_game_director.html#a8b31524ed59dd6dd585a1adaa67c0da9">GetDisplay</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class_hover_race_1_1_video_services_1_1_video_buffer.html" title="Video framebuffer for legacy (8-bit, palettized) rendering.">VideoServices::VideoBuffer</a> *<a class="code" href="class_hover_race_1_1_client_1_1_game_director.html#a2603498ef809720061a997f2fe183b99">GetVideoBuffer</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class_hover_race_1_1_control_1_1_input_event_controller.html" title="Translates input events into actions.">Control::InputEventController</a> *<a class="code" href="class_hover_race_1_1_client_1_1_game_director.html#ac504d50cddf82887c8f416df5b88ee30">GetController</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class_hover_race_1_1_control_1_1_input_event_controller.html" title="Translates input events into actions.">Control::InputEventController</a> *<a class="code" href="class_hover_race_1_1_client_1_1_game_director.html#adac4edd4d70e8ace85acd985fa9bb53c" title="Reload the control settings.">ReloadController</a>() = 0;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor">#   ifdef _WIN32</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="preprocessor"></span>        <span class="keyword">virtual</span> HWND GetWindowHandle() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="preprocessor">#   endif</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="preprocessor"></span>};</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;}  <span class="comment">// namespace HoverScript</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;}  <span class="comment">// namespace Client</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -64,7 +64,7 @@
 <div class="dynheader">
 Inheritance diagram for HoverRace::Script::Env:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_hover_race_1_1_script_1_1_env__inherit__graph.svg" width="336" height="227"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_hover_race_1_1_script_1_1_env__inherit__graph.svg" width="608" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -73,6 +73,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a03bb0d49858a15bec362315e326fc743"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_script_1_1_env.html#a03bb0d49858a15bec362315e326fc743">Env</a> (<a class="el" href="class_hover_race_1_1_script_1_1_core.html">Core</a> *<a class="el" href="class_hover_race_1_1_script_1_1_env.html#ad2463fdb270c9f375c2b447e42faba2b">scripting</a>)</td></tr>
 <tr class="memdesc:a03bb0d49858a15bec362315e326fc743"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a03bb0d49858a15bec362315e326fc743"></a><br/></td></tr>
 <tr class="memitem:a61a99963152cd364e65c09d8b71fb066"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_script_1_1_env.html#a61a99963152cd364e65c09d8b71fb066">~Env</a> ()</td></tr>
+<tr class="memitem:abfff378adae4f4ac591aa91c12fc13fb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_script_1_1_env.html#abfff378adae4f4ac591aa91c12fc13fb">RunScript</a> (const <a class="el" href="class_hover_race_1_1_util_1_1_o_s.html#ae39d4a5ac3a9c5101b8a0bc6cb6bd163">Util::OS::path_t</a> &amp;filename)</td></tr>
+<tr class="memdesc:abfff378adae4f4ac591aa91c12fc13fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute a script from a file.  <a href="#abfff378adae4f4ac591aa91c12fc13fb"></a><br/></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -291,7 +293,33 @@ Private Attributes</h2></td></tr>
 <p>Initialize the environment in which scripts will run in. </p>
 <p>Upon entry, the Lua stack will have at least one entry, the table which represents the environment. Implementing functions will fill this table with the globals which will be available to the functions which are run in this environment. Upon return, this same table must be at the top of the stack. </p>
 
-<p>Implemented in <a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_sys_console.html#a473716846c821bdc5f7963d8ce8a0dcd">HoverRace::Client::HoverScript::SysConsole</a>, and <a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_console.html#a4610f4e62c3d260743e8defcfc9af420">HoverRace::Client::HoverScript::Console</a>.</p>
+<p>Implemented in <a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_sys_console.html#a473716846c821bdc5f7963d8ce8a0dcd">HoverRace::Client::HoverScript::SysConsole</a>, <a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_console.html#a4610f4e62c3d260743e8defcfc9af420">HoverRace::Client::HoverScript::Console</a>, and <a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_rulebook_env.html#ad8c2cd0bdcb3b63c5b49c389b4771e45">HoverRace::Client::HoverScript::RulebookEnv</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abfff378adae4f4ac591aa91c12fc13fb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HoverRace::Script::Env::RunScript </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_hover_race_1_1_util_1_1_o_s.html#ae39d4a5ac3a9c5101b8a0bc6cb6bd163">Util::OS::path_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Execute a script from a file. </p>
+<p>If there is an error executing the script, then the error message will be written to the error log and the function will return <code>false</code>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>The script filename (must be an absolute path). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the script executed successfully, <code>false</code> if there was an error. </dd></dl>
 
 </div>
 </div>

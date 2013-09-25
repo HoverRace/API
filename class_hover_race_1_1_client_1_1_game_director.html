@@ -64,8 +64,7 @@
 <div class="dynheader">
 Inheritance diagram for HoverRace::Client::GameDirector:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_hover_race_1_1_client_1_1_game_director__inherit__graph.svg" width="291" height="150"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_hover_race_1_1_client_1_1_game_director__inherit__graph.svg" width="291" height="150"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
@@ -79,8 +78,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ae3ceaf8b7ed686b5a71536b0eec31985"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replace the current scene and all background scenes with a new foreground scene.  <a href="#ae3ceaf8b7ed686b5a71536b0eec31985"></a><br/></td></tr>
 <tr class="memitem:a1dc54157ab4292d77a608826031c76a8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_game_director.html#a1dc54157ab4292d77a608826031c76a8">RequestMainMenu</a> ()=0</td></tr>
 <tr class="memdesc:a1dc54157ab4292d77a608826031c76a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Request a return to the main menu.  <a href="#a1dc54157ab4292d77a608826031c76a8"></a><br/></td></tr>
-<tr class="memitem:a3b3ee43de301368fdc66572419329837"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_game_director.html#a3b3ee43de301368fdc66572419329837">RequestNewPracticeSession</a> (<a class="el" href="namespace_hover_race_1_1_client.html#a55222a3109c985138a0987b8bc55eb9b">RulebookPtr</a> rules=<a class="el" href="namespace_hover_race_1_1_client.html#a55222a3109c985138a0987b8bc55eb9b">RulebookPtr</a>())=0</td></tr>
-<tr class="memdesc:a3b3ee43de301368fdc66572419329837"><td class="mdescLeft">&#160;</td><td class="mdescRight">Request a new local practice session.  <a href="#a3b3ee43de301368fdc66572419329837"></a><br/></td></tr>
+<tr class="memitem:a04cbebec80926e6baf32301f8d218a43"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_game_director.html#a04cbebec80926e6baf32301f8d218a43">RequestNewPracticeSession</a> (std::shared_ptr&lt; <a class="el" href="class_hover_race_1_1_client_1_1_rules.html">Rules</a> &gt; rules)=0</td></tr>
+<tr class="memdesc:a04cbebec80926e6baf32301f8d218a43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Request a new local practice session.  <a href="#a04cbebec80926e6baf32301f8d218a43"></a><br/></td></tr>
 <tr class="memitem:a8e2b7806d39e02d606484daf32bdb240"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_game_director.html#a8e2b7806d39e02d606484daf32bdb240">RequestShutdown</a> ()=0</td></tr>
 <tr class="memdesc:a8e2b7806d39e02d606484daf32bdb240"><td class="mdescLeft">&#160;</td><td class="mdescRight">Request an orderly shutdown the of app.  <a href="#a8e2b7806d39e02d606484daf32bdb240"></a><br/></td></tr>
 <tr class="memitem:a5f0ebe7ebdba9810a583a528e16be014"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_game_director.html#a5f0ebe7ebdba9810a583a528e16be014">SignalServerHasChanged</a> ()=0</td></tr>
@@ -317,7 +316,7 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a3b3ee43de301368fdc66572419329837"></a>
+<a class="anchor" id="a04cbebec80926e6baf32301f8d218a43"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -327,8 +326,8 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual void HoverRace::Client::GameDirector::RequestNewPracticeSession </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespace_hover_race_1_1_client.html#a55222a3109c985138a0987b8bc55eb9b">RulebookPtr</a>&#160;</td>
-          <td class="paramname"><em>rules</em> = <code><a class="el" href="namespace_hover_race_1_1_client.html#a55222a3109c985138a0987b8bc55eb9b">RulebookPtr</a>()</code></td><td>)</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="class_hover_race_1_1_client_1_1_rules.html">Rules</a> &gt;&#160;</td>
+          <td class="paramname"><em>rules</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -347,7 +346,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="class_hover_race_1_1_client_1_1_client_app.html#adf53fec553974e4bbd53fa3ea88434d3">HoverRace::Client::ClientApp</a>.</p>
+<p>Implemented in <a class="el" href="class_hover_race_1_1_client_1_1_client_app.html#accf9d3ca65032dd5b7e93d8e9dac16f1">HoverRace::Client::ClientApp</a>.</p>
 
 </div>
 </div>
