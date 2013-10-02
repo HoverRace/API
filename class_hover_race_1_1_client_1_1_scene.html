@@ -53,6 +53,7 @@
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_hover_race_1_1_client_1_1_scene-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -74,6 +75,7 @@ Inheritance diagram for HoverRace::Client::Scene:</div>
 <tr class="heading"><td colspan="2"><h2><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_hover_race_1_1_client_1_1_scene_1_1_phase.html">Phase</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_hover_race_1_1_client_1_1_scene_1_1_state.html">State</a></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -93,31 +95,56 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae9056a7471c6189b692846623346a998"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_hover_race_1_1_client_1_1_scene_1_1_phase.html#a37cb41f6ed9499f76da9d6dd1a845bfb">Phase::phase_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_scene.html#ae9056a7471c6189b692846623346a998">GetPhase</a> () const </td></tr>
 <tr class="memitem:a399bdbf2e232448d2ca28f7d83b3b1f3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_scene.html#a399bdbf2e232448d2ca28f7d83b3b1f3">SetPhase</a> (<a class="el" href="struct_hover_race_1_1_client_1_1_scene_1_1_phase.html#a37cb41f6ed9499f76da9d6dd1a845bfb">Phase::phase_t</a> <a class="el" href="class_hover_race_1_1_client_1_1_scene.html#a83c2472cc3abf73526296f54677d8b71">phase</a>)</td></tr>
 <tr class="memdesc:a399bdbf2e232448d2ca28f7d83b3b1f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Switch to another phase.  <a href="#a399bdbf2e232448d2ca28f7d83b3b1f3"></a><br/></td></tr>
+<tr class="memitem:a75bfc3413af86124c2a6b046350a4f3b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_hover_race_1_1_client_1_1_scene_1_1_state.html#a403c7fcd24204c9c8326ff5905d029a7">State::state_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_scene.html#a75bfc3413af86124c2a6b046350a4f3b">GetState</a> () const </td></tr>
+<tr class="memitem:a00e3d032d8f740bd1d9ffa301787f535"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_scene.html#a00e3d032d8f740bd1d9ffa301787f535">MoveToForeground</a> ()</td></tr>
+<tr class="memdesc:a00e3d032d8f740bd1d9ffa301787f535"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signal that the scene is moving into the foreground.  <a href="#a00e3d032d8f740bd1d9ffa301787f535"></a><br/></td></tr>
+<tr class="memitem:a5c5e9b17e534fa280993c85be6e86f77"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_scene.html#a5c5e9b17e534fa280993c85be6e86f77">MoveToBackground</a> ()</td></tr>
+<tr class="memdesc:a5c5e9b17e534fa280993c85be6e86f77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signal that the scene is moving into the background.  <a href="#a5c5e9b17e534fa280993c85be6e86f77"></a><br/></td></tr>
 <tr class="memitem:aef72db676c2674a37b5725bd97cee912"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_scene.html#aef72db676c2674a37b5725bd97cee912">Advance</a> (<a class="el" href="class_hover_race_1_1_util_1_1_o_s.html#ab95203994cd88a763857b64711c7cc9f">Util::OS::timestamp_t</a> tick)</td></tr>
 <tr class="memitem:a376082851934724ec40c98566c0dbe02"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_scene.html#a376082851934724ec40c98566c0dbe02">PrepareRender</a> ()</td></tr>
 <tr class="memitem:a9672d9d8a6902e5346f0e92f41de36af"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_scene.html#a9672d9d8a6902e5346f0e92f41de36af">Render</a> ()=0</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a88a5917127fe338c3564fac535c5db46"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_scene.html#a88a5917127fe338c3564fac535c5db46">SetTransitionDuration</a> (<a class="el" href="class_hover_race_1_1_util_1_1_o_s.html#ab95203994cd88a763857b64711c7cc9f">Util::OS::timestamp_t</a> ms)</td></tr>
-<tr class="memdesc:a88a5917127fe338c3564fac535c5db46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the maximum duration of the starting or stopping phases.  <a href="#a88a5917127fe338c3564fac535c5db46"></a><br/></td></tr>
+<tr class="memitem:a4c2cec407b80f79b276634043eac6bd4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_scene.html#a4c2cec407b80f79b276634043eac6bd4">SetPhaseTransitionDuration</a> (<a class="el" href="class_hover_race_1_1_util_1_1_o_s.html#ab95203994cd88a763857b64711c7cc9f">Util::OS::timestamp_t</a> ms)</td></tr>
+<tr class="memdesc:a4c2cec407b80f79b276634043eac6bd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the maximum duration of the starting or stopping phases.  <a href="#a4c2cec407b80f79b276634043eac6bd4"></a><br/></td></tr>
 <tr class="memitem:a0b2f5e575b2df1d2e2cd80af9844d698"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_util_1_1_o_s.html#ab95203994cd88a763857b64711c7cc9f">Util::OS::timestamp_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_scene.html#a0b2f5e575b2df1d2e2cd80af9844d698">GetPhaseDuration</a> (<a class="el" href="class_hover_race_1_1_util_1_1_o_s.html#ab95203994cd88a763857b64711c7cc9f">Util::OS::timestamp_t</a> curTime=<a class="el" href="class_hover_race_1_1_util_1_1_o_s.html#a72fc72893a2370773b487e72a5b0c55e">Util::OS::Time</a>())</td></tr>
 <tr class="memdesc:a0b2f5e575b2df1d2e2cd80af9844d698"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate how much time we've spent in the current phase.  <a href="#a0b2f5e575b2df1d2e2cd80af9844d698"></a><br/></td></tr>
 <tr class="memitem:aa013012db82a12e7a5806738fdc7fd10"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_util_1_1_o_s.html#ab95203994cd88a763857b64711c7cc9f">Util::OS::timestamp_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_scene.html#aa013012db82a12e7a5806738fdc7fd10">GetStartingPhaseTime</a> ()</td></tr>
 <tr class="memdesc:aa013012db82a12e7a5806738fdc7fd10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return how long the starting phase lasted.  <a href="#aa013012db82a12e7a5806738fdc7fd10"></a><br/></td></tr>
+<tr class="memitem:a737eb31e42329ce31a5a1854f1cb7f77"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_util_1_1_o_s.html#ab95203994cd88a763857b64711c7cc9f">Util::OS::timestamp_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_scene.html#a737eb31e42329ce31a5a1854f1cb7f77">GetStateDuration</a> (<a class="el" href="class_hover_race_1_1_util_1_1_o_s.html#ab95203994cd88a763857b64711c7cc9f">Util::OS::timestamp_t</a> curTime=<a class="el" href="class_hover_race_1_1_util_1_1_o_s.html#a72fc72893a2370773b487e72a5b0c55e">Util::OS::Time</a>())</td></tr>
+<tr class="memdesc:a737eb31e42329ce31a5a1854f1cb7f77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate how much time we've spent in the current state.  <a href="#a737eb31e42329ce31a5a1854f1cb7f77"></a><br/></td></tr>
+<tr class="memitem:ac82514c2e5ab417f90e1420b577c7906"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_scene.html#ac82514c2e5ab417f90e1420b577c7906">SetStateTransitionDuration</a> (<a class="el" href="class_hover_race_1_1_util_1_1_o_s.html#ab95203994cd88a763857b64711c7cc9f">Util::OS::timestamp_t</a> ms)</td></tr>
+<tr class="memdesc:ac82514c2e5ab417f90e1420b577c7906"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the maximum duration of the raising or lowering state.  <a href="#ac82514c2e5ab417f90e1420b577c7906"></a><br/></td></tr>
 <tr class="memitem:a293cff17c7a7544383df3908aa8ea129"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_scene.html#a293cff17c7a7544383df3908aa8ea129">OnPhaseChanged</a> (<a class="el" href="struct_hover_race_1_1_client_1_1_scene_1_1_phase.html#a37cb41f6ed9499f76da9d6dd1a845bfb">Phase::phase_t</a> oldPhase)</td></tr>
 <tr class="memdesc:a293cff17c7a7544383df3908aa8ea129"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fired immediately after entering a new phase.  <a href="#a293cff17c7a7544383df3908aa8ea129"></a><br/></td></tr>
-<tr class="memitem:a58e0eeb07e115c45a78aa6613a924c8c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_scene.html#a58e0eeb07e115c45a78aa6613a924c8c">OnTransition</a> (double progress)</td></tr>
-<tr class="memdesc:a58e0eeb07e115c45a78aa6613a924c8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fired during the starting and stopping phases, if <a class="el" href="class_hover_race_1_1_client_1_1_scene.html#a88a5917127fe338c3564fac535c5db46" title="Set the maximum duration of the starting or stopping phases.">SetTransitionDuration()</a> was set.  <a href="#a58e0eeb07e115c45a78aa6613a924c8c"></a><br/></td></tr>
+<tr class="memitem:ad0f2e3d083043ce5e1f1be5430ef99e6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_scene.html#ad0f2e3d083043ce5e1f1be5430ef99e6">OnStateChanged</a> (<a class="el" href="struct_hover_race_1_1_client_1_1_scene_1_1_state.html#a403c7fcd24204c9c8326ff5905d029a7">State::state_t</a> oldState)</td></tr>
+<tr class="memdesc:ad0f2e3d083043ce5e1f1be5430ef99e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fired immediately after entering a new state.  <a href="#ad0f2e3d083043ce5e1f1be5430ef99e6"></a><br/></td></tr>
+<tr class="memitem:aba2bc5f1dfc434238918b0d92e0e3c9c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_scene.html#aba2bc5f1dfc434238918b0d92e0e3c9c">OnPhaseTransition</a> (double progress)</td></tr>
+<tr class="memdesc:aba2bc5f1dfc434238918b0d92e0e3c9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fired during the starting and stopping phases, if <a class="el" href="class_hover_race_1_1_client_1_1_scene.html#a4c2cec407b80f79b276634043eac6bd4" title="Set the maximum duration of the starting or stopping phases.">SetPhaseTransitionDuration()</a> was set.  <a href="#aba2bc5f1dfc434238918b0d92e0e3c9c"></a><br/></td></tr>
+<tr class="memitem:adaacb4c94221fb24f009264b86f5020e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_scene.html#adaacb4c94221fb24f009264b86f5020e">OnStateTransition</a> (double progress)</td></tr>
+<tr class="memdesc:adaacb4c94221fb24f009264b86f5020e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fired during the raising and lowering states, if <a class="el" href="class_hover_race_1_1_client_1_1_scene.html#ac82514c2e5ab417f90e1420b577c7906" title="Set the maximum duration of the raising or lowering state.">SetStateTransitionDuration()</a> was set.  <a href="#adaacb4c94221fb24f009264b86f5020e"></a><br/></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a4ea5a03411a3122eb0421d51f8f46c1b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_util_1_1_o_s.html#ab95203994cd88a763857b64711c7cc9f">Util::OS::timestamp_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_scene.html#a4ea5a03411a3122eb0421d51f8f46c1b">TimeSincePrevTick</a> (<a class="el" href="class_hover_race_1_1_util_1_1_o_s.html#ab95203994cd88a763857b64711c7cc9f">Util::OS::timestamp_t</a> tick)</td></tr>
+<tr class="memitem:a5156dc942d39d2030c632c0079e4c798"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_scene.html#a5156dc942d39d2030c632c0079e4c798">SetState</a> (<a class="el" href="struct_hover_race_1_1_client_1_1_scene_1_1_state.html#a403c7fcd24204c9c8326ff5905d029a7">State::state_t</a> <a class="el" href="class_hover_race_1_1_client_1_1_scene.html#aecad7d31283a82f5cfb39b4ae316a8f0">state</a>)</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:acc98e2e244a10f1ca3ea841ea3fe6fd7"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_scene.html#acc98e2e244a10f1ca3ea841ea3fe6fd7">name</a></td></tr>
+<tr class="memitem:a4ed68345d744ccdaabd2375f466154e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_util_1_1_o_s.html#ab95203994cd88a763857b64711c7cc9f">Util::OS::timestamp_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_scene.html#a4ed68345d744ccdaabd2375f466154e5">prevTick</a></td></tr>
 <tr class="memitem:a83c2472cc3abf73526296f54677d8b71"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_hover_race_1_1_client_1_1_scene_1_1_phase.html#a37cb41f6ed9499f76da9d6dd1a845bfb">Phase::phase_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_scene.html#a83c2472cc3abf73526296f54677d8b71">phase</a></td></tr>
-<tr class="memitem:a7035c5c88dcbd58a95534253a71be223"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_scene.html#a7035c5c88dcbd58a95534253a71be223">transitionDuration</a></td></tr>
+<tr class="memitem:a437bf3ffba42276caefca79a6713d1b7"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_scene.html#a437bf3ffba42276caefca79a6713d1b7">phaseTransitionDuration</a></td></tr>
 <tr class="memitem:a926e5864e2b84ec75acd72942e3e0aab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_util_1_1_o_s.html#ab95203994cd88a763857b64711c7cc9f">Util::OS::timestamp_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_scene.html#a926e5864e2b84ec75acd72942e3e0aab">phaseTs</a></td></tr>
 <tr class="memdesc:a926e5864e2b84ec75acd72942e3e0aab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timestamp of when current phase was started.  <a href="#a926e5864e2b84ec75acd72942e3e0aab"></a><br/></td></tr>
 <tr class="memitem:a376282d717a7860b2d03dfc901150c30"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_util_1_1_o_s.html#ab95203994cd88a763857b64711c7cc9f">Util::OS::timestamp_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_scene.html#a376282d717a7860b2d03dfc901150c30">startingPhaseTime</a></td></tr>
+<tr class="memitem:aecad7d31283a82f5cfb39b4ae316a8f0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_hover_race_1_1_client_1_1_scene_1_1_state.html#a403c7fcd24204c9c8326ff5905d029a7">State::state_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_scene.html#aecad7d31283a82f5cfb39b4ae316a8f0">state</a></td></tr>
+<tr class="memitem:a03b98bc23ab3dc774504e1863395a5ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_util_1_1_o_s.html#ab95203994cd88a763857b64711c7cc9f">Util::OS::timestamp_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_scene.html#a03b98bc23ab3dc774504e1863395a5ec">stateTs</a></td></tr>
+<tr class="memdesc:a03b98bc23ab3dc774504e1863395a5ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timestamp of when current state was started.  <a href="#a03b98bc23ab3dc774504e1863395a5ec"></a><br/></td></tr>
+<tr class="memitem:a2c0ce68bbf91b9538517860a2ad3ebd7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_util_1_1_o_s.html#ab95203994cd88a763857b64711c7cc9f">Util::OS::timestamp_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_scene.html#a2c0ce68bbf91b9538517860a2ad3ebd7">stateTransitionDuration</a></td></tr>
+<tr class="memitem:a3a8bc6b143a1424e2f0276724555e629"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_scene.html#a3a8bc6b143a1424e2f0276724555e629">stateTransitionVelocity</a></td></tr>
+<tr class="memitem:a5406cca1b576478dbe2603f48d7c7c11"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_scene.html#a5406cca1b576478dbe2603f48d7c7c11">statePosition</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Scenes are analogous to fullscreen windows that are layered on top of each other. </p>
@@ -378,6 +405,62 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a75bfc3413af86124c2a6b046350a4f3b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_hover_race_1_1_client_1_1_scene_1_1_state.html#a403c7fcd24204c9c8326ff5905d029a7">State::state_t</a> HoverRace::Client::Scene::GetState </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a737eb31e42329ce31a5a1854f1cb7f77"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_hover_race_1_1_util_1_1_o_s.html#ab95203994cd88a763857b64711c7cc9f">Util::OS::timestamp_t</a> HoverRace::Client::Scene::GetStateDuration </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_hover_race_1_1_util_1_1_o_s.html#ab95203994cd88a763857b64711c7cc9f">Util::OS::timestamp_t</a>&#160;</td>
+          <td class="paramname"><em>curTime</em> = <code><a class="el" href="class_hover_race_1_1_util_1_1_o_s.html#a72fc72893a2370773b487e72a5b0c55e">Util::OS::Time</a>()</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculate how much time we've spent in the current state. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">curTime</td><td>The current (or simulated) timestamp. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The duration. If <code>curTime</code> is before the start of the state, then zero is returned. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a22a49a0b177696a270a7040761c19ef4"></a>
 <div class="memitem">
 <div class="memproto">
@@ -403,6 +486,42 @@ Private Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd><code>true</code> if the cursor should be shown, <code>false</code> if it should be hidden. </dd></dl>
 
 <p>Implemented in <a class="el" href="class_hover_race_1_1_client_1_1_game_scene.html#ad5d7988ab361c7500b265b26a7cd8417">HoverRace::Client::GameScene</a>, <a class="el" href="class_hover_race_1_1_client_1_1_palette_scene.html#ae394e4416ae50dd93cee54267ec3f826">HoverRace::Client::PaletteScene</a>, and <a class="el" href="class_hover_race_1_1_client_1_1_ui_scene.html#a960194321cb736dd4050ef9ef7f211f4">HoverRace::Client::UiScene</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5c5e9b17e534fa280993c85be6e86f77"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HoverRace::Client::Scene::MoveToBackground </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Signal that the scene is moving into the background. </p>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the state changed. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a00e3d032d8f740bd1d9ffa301787f535"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HoverRace::Client::Scene::MoveToForeground </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Signal that the scene is moving into the foreground. </p>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the state changed. </dd></dl>
 
 </div>
 </div>
@@ -439,6 +558,40 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="aba2bc5f1dfc434238918b0d92e0e3c9c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void HoverRace::Client::Scene::OnPhaseTransition </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>progress</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Fired during the starting and stopping phases, if <a class="el" href="class_hover_race_1_1_client_1_1_scene.html#a4c2cec407b80f79b276634043eac6bd4" title="Set the maximum duration of the starting or stopping phases.">SetPhaseTransitionDuration()</a> was set. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">progress</td><td>The animation progress (during the <code>STARTING</code> phase this goes from 0.0 to 1.0, and in reverse for the <code>STOPPING</code> phase). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented in <a class="el" href="class_hover_race_1_1_client_1_1_module_1_1_transition_module.html#a7bd39099e061754804aeb8290a7ba3ca">HoverRace::Client::Module::TransitionModule</a>, <a class="el" href="class_hover_race_1_1_client_1_1_message_scene.html#a3a46a59563dff6dee7e163521f6b1fa4">HoverRace::Client::MessageScene</a>, <a class="el" href="class_hover_race_1_1_client_1_1_game_select_scene.html#a3be720333fe7a7e9af8482284409affb">HoverRace::Client::GameSelectScene</a>, <a class="el" href="class_hover_race_1_1_client_1_1_main_menu_scene.html#aa799bebc764f1d7ad998b0bf7ce28348">HoverRace::Client::MainMenuScene</a>, and <a class="el" href="class_hover_race_1_1_client_1_1_track_select_scene.html#aafd51dfb06f00126dabe3ffdb3baf986">HoverRace::Client::TrackSelectScene</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a1777e22d90df25f53afe2938c13e22d8"></a>
 <div class="memitem">
 <div class="memproto">
@@ -469,7 +622,7 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a58e0eeb07e115c45a78aa6613a924c8c"></a>
+<a class="anchor" id="ad0f2e3d083043ce5e1f1be5430ef99e6"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -477,7 +630,40 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void HoverRace::Client::Scene::OnTransition </td>
+          <td class="memname">virtual void HoverRace::Client::Scene::OnStateChanged </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_hover_race_1_1_client_1_1_scene_1_1_state.html#a403c7fcd24204c9c8326ff5905d029a7">State::state_t</a>&#160;</td>
+          <td class="paramname"><em>oldState</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Fired immediately after entering a new state. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">oldState</td><td>The previous state. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="class_hover_race_1_1_client_1_1_scene.html#a75bfc3413af86124c2a6b046350a4f3b">GetState()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="adaacb4c94221fb24f009264b86f5020e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void HoverRace::Client::Scene::OnStateTransition </td>
           <td>(</td>
           <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>progress</em></td><td>)</td>
@@ -491,15 +677,15 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Fired during the starting and stopping phases, if <a class="el" href="class_hover_race_1_1_client_1_1_scene.html#a88a5917127fe338c3564fac535c5db46" title="Set the maximum duration of the starting or stopping phases.">SetTransitionDuration()</a> was set. </p>
+<p>Fired during the raising and lowering states, if <a class="el" href="class_hover_race_1_1_client_1_1_scene.html#ac82514c2e5ab417f90e1420b577c7906" title="Set the maximum duration of the raising or lowering state.">SetStateTransitionDuration()</a> was set. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">progress</td><td>The animation progress (during the <code>STARTING</code> phase this goes from 0.0 to 1.0, and in reverse for the <code>STOPPING</code> phase). </td></tr>
+    <tr><td class="paramname">progress</td><td>The animation progress (during the <code>RAISING</code> phase this goes from 0.0 to 1.0, and in reverse for the <code>LOWERING</code> phase). </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="class_hover_race_1_1_client_1_1_message_scene.html#a2956ed63de4ea0d4171db4ef08c6713f">HoverRace::Client::MessageScene</a>, and <a class="el" href="class_hover_race_1_1_client_1_1_main_menu_scene.html#aac0c059e2b9f5e59e0fb1fe6c580bb6d">HoverRace::Client::MainMenuScene</a>.</p>
+<p>Reimplemented in <a class="el" href="class_hover_race_1_1_client_1_1_module_1_1_transition_module.html#a1ff465b2605e575e06138b023e3a0b9f">HoverRace::Client::Module::TransitionModule</a>, and <a class="el" href="class_hover_race_1_1_client_1_1_game_select_scene.html#a6f05dc57d818d0dc6a4e3239d3c98cb6">HoverRace::Client::GameSelectScene</a>.</p>
 
 </div>
 </div>
@@ -579,7 +765,7 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a88a5917127fe338c3564fac535c5db46"></a>
+<a class="anchor" id="a4c2cec407b80f79b276634043eac6bd4"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -587,7 +773,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void HoverRace::Client::Scene::SetTransitionDuration </td>
+          <td class="memname">void HoverRace::Client::Scene::SetPhaseTransitionDuration </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_hover_race_1_1_util_1_1_o_s.html#ab95203994cd88a763857b64711c7cc9f">Util::OS::timestamp_t</a>&#160;</td>
           <td class="paramname"><em>ms</em></td><td>)</td>
@@ -604,13 +790,96 @@ Private Attributes</h2></td></tr>
 <p>Set the maximum duration of the starting or stopping phases. </p>
 <p>Subclasses should call this function in the constructor or the first tick in order to set how long the starting phase will last. The stopping phase always lasts as long as the starting phase.</p>
 <p>If set to zero (the default), then the starting and stopping phases will be skipped.</p>
-<p>If set to non-zero, then the <a class="el" href="class_hover_race_1_1_client_1_1_scene.html#a58e0eeb07e115c45a78aa6613a924c8c" title="Fired during the starting and stopping phases, if SetTransitionDuration() was set.">OnTransition()</a> function will be called during <a class="el" href="class_hover_race_1_1_client_1_1_scene.html#aef72db676c2674a37b5725bd97cee912">Advance()</a> so subclasses can customize the animation. </p>
+<p>If set to non-zero, then the <a class="el" href="class_hover_race_1_1_client_1_1_scene.html#aba2bc5f1dfc434238918b0d92e0e3c9c" title="Fired during the starting and stopping phases, if SetPhaseTransitionDuration() was set...">OnPhaseTransition()</a> function will be called during <a class="el" href="class_hover_race_1_1_client_1_1_scene.html#aef72db676c2674a37b5725bd97cee912">Advance()</a> so subclasses can customize the animation. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ms</td><td>The duration (may be zero to disable starting and stopping phases. </td></tr>
+    <tr><td class="paramname">ms</td><td>The duration (may be zero to disable starting and stopping phases). </td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a class="anchor" id="a5156dc942d39d2030c632c0079e4c798"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HoverRace::Client::Scene::SetState </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_hover_race_1_1_client_1_1_scene_1_1_state.html#a403c7fcd24204c9c8326ff5905d029a7">State::state_t</a>&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac82514c2e5ab417f90e1420b577c7906"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HoverRace::Client::Scene::SetStateTransitionDuration </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_hover_race_1_1_util_1_1_o_s.html#ab95203994cd88a763857b64711c7cc9f">Util::OS::timestamp_t</a>&#160;</td>
+          <td class="paramname"><em>ms</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the maximum duration of the raising or lowering state. </p>
+<p>Subclasses should call this function in the constructor or the first tick in order to set how long the raising state will last. The lowering state always lasts as long as the raising state.</p>
+<p>If set to zero (the default), then the raising and lowering states will be skipped.</p>
+<p>If set to non-zero, then the <a class="el" href="class_hover_race_1_1_client_1_1_scene.html#adaacb4c94221fb24f009264b86f5020e" title="Fired during the raising and lowering states, if SetStateTransitionDuration() was set...">OnStateTransition()</a> function will be called during <a class="el" href="class_hover_race_1_1_client_1_1_scene.html#aef72db676c2674a37b5725bd97cee912">Advance()</a> so subclasses can customize the animation. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ms</td><td>The duration (may be zero to disable raising and lowering states). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a4ea5a03411a3122eb0421d51f8f46c1b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_hover_race_1_1_util_1_1_o_s.html#ab95203994cd88a763857b64711c7cc9f">Util::OS::timestamp_t</a> HoverRace::Client::Scene::TimeSincePrevTick </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_hover_race_1_1_util_1_1_o_s.html#ab95203994cd88a763857b64711c7cc9f">Util::OS::timestamp_t</a>&#160;</td>
+          <td class="paramname"><em>tick</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -655,6 +924,26 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a437bf3ffba42276caefca79a6713d1b7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double HoverRace::Client::Scene::phaseTransitionDuration</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a926e5864e2b84ec75acd72942e3e0aab"></a>
 <div class="memitem">
 <div class="memproto">
@@ -674,6 +963,26 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Timestamp of when current phase was started. </p>
+
+</div>
+</div>
+<a class="anchor" id="a4ed68345d744ccdaabd2375f466154e5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_hover_race_1_1_util_1_1_o_s.html#ab95203994cd88a763857b64711c7cc9f">Util::OS::timestamp_t</a> HoverRace::Client::Scene::prevTick</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -697,7 +1006,7 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a7035c5c88dcbd58a95534253a71be223"></a>
+<a class="anchor" id="aecad7d31283a82f5cfb39b4ae316a8f0"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -705,7 +1014,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double HoverRace::Client::Scene::transitionDuration</td>
+          <td class="memname"><a class="el" href="struct_hover_race_1_1_client_1_1_scene_1_1_state.html#a403c7fcd24204c9c8326ff5905d029a7">State::state_t</a> HoverRace::Client::Scene::state</td>
         </tr>
       </table>
   </td>
@@ -714,6 +1023,88 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5406cca1b576478dbe2603f48d7c7c11"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double HoverRace::Client::Scene::statePosition</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2c0ce68bbf91b9538517860a2ad3ebd7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_hover_race_1_1_util_1_1_o_s.html#ab95203994cd88a763857b64711c7cc9f">Util::OS::timestamp_t</a> HoverRace::Client::Scene::stateTransitionDuration</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3a8bc6b143a1424e2f0276724555e629"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double HoverRace::Client::Scene::stateTransitionVelocity</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a03b98bc23ab3dc774504e1863395a5ec"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_hover_race_1_1_util_1_1_o_s.html#ab95203994cd88a763857b64711c7cc9f">Util::OS::timestamp_t</a> HoverRace::Client::Scene::stateTs</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Timestamp of when current state was started. </p>
 
 </div>
 </div>

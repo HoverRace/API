@@ -52,6 +52,7 @@
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pri-types">Private Types</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
@@ -61,14 +62,15 @@
 </div><!--header-->
 <div class="contents">
 
-<p>Select options for a new game (track, rules, etc.).  
+<p>Select the track for a new game.  
  <a href="class_hover_race_1_1_client_1_1_track_select_scene.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_track_select_scene_8h_source.html">TrackSelectScene.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for HoverRace::Client::TrackSelectScene:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_hover_race_1_1_client_1_1_track_select_scene__inherit__graph.svg" width="142" height="336"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_hover_race_1_1_client_1_1_track_select_scene__inherit__graph.svg" width="142" height="430"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pub-types"></a>
@@ -81,10 +83,14 @@ boost::signals2::signal&lt; void()&gt;&#160;</td><td class="memItemRight" valign
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a02ab6d5c120c672cb10d8f5f7259b38c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_track_select_scene.html#a02ab6d5c120c672cb10d8f5f7259b38c">TrackSelectScene</a> (<a class="el" href="class_hover_race_1_1_display_1_1_display.html">Display::Display</a> &amp;<a class="el" href="class_hover_race_1_1_client_1_1_track_select_scene.html#a492599ef58add5f167e4bbe4ef0f5a59">display</a>, <a class="el" href="class_hover_race_1_1_client_1_1_game_director.html">GameDirector</a> &amp;<a class="el" href="class_hover_race_1_1_client_1_1_track_select_scene.html#ada651593a3f07996eea931c52aa11325">director</a>, <a class="el" href="class_hover_race_1_1_client_1_1_rulebook_library.html">RulebookLibrary</a> &amp;<a class="el" href="class_hover_race_1_1_client_1_1_track_select_scene.html#a2fcf99fb8124c8630436f515ad38513e">rulebookLibrary</a>)</td></tr>
+<tr class="memitem:af75ec2027563872f3833df4d30678cf9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_track_select_scene.html#af75ec2027563872f3833df4d30678cf9">TrackSelectScene</a> (<a class="el" href="class_hover_race_1_1_display_1_1_display.html">Display::Display</a> &amp;<a class="el" href="class_hover_race_1_1_client_1_1_track_select_scene.html#a492599ef58add5f167e4bbe4ef0f5a59">display</a>, <a class="el" href="class_hover_race_1_1_client_1_1_game_director.html">GameDirector</a> &amp;<a class="el" href="class_hover_race_1_1_client_1_1_track_select_scene.html#ada651593a3f07996eea931c52aa11325">director</a>, std::shared_ptr&lt; const <a class="el" href="class_hover_race_1_1_client_1_1_rulebook.html">Rulebook</a> &gt; rulebook)</td></tr>
 <tr class="memitem:a022fbb480237e65b332d103cb778a532"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_track_select_scene.html#a022fbb480237e65b332d103cb778a532">~TrackSelectScene</a> ()</td></tr>
 <tr class="memitem:a01949cee7f1af1b06fd1f197cb89e99e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_client_1_1_track_select_scene.html#a1a8616b68355775711bccba63f644a9b">okSignal_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_track_select_scene.html#a01949cee7f1af1b06fd1f197cb89e99e">GetOkSignal</a> ()</td></tr>
 <tr class="memitem:a5e1d3b835b940e98b04c65d5163d89cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_client_1_1_track_select_scene.html#a8ce46ea0696c465ff3c21810241041d8">cancelSignal_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_track_select_scene.html#a5e1d3b835b940e98b04c65d5163d89cd">GetCancelSignal</a> ()</td></tr>
+<tr class="inherit_header pub_methods_class_hover_race_1_1_client_1_1_dialog_scene"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_hover_race_1_1_client_1_1_dialog_scene')"><img src="closed.png" alt="-"/>&nbsp;Public Member Functions inherited from <a class="el" href="class_hover_race_1_1_client_1_1_dialog_scene.html">HoverRace::Client::DialogScene</a></td></tr>
+<tr class="memitem:afdd6f2e56ca087b3a1919c3eb73e87ea inherit pub_methods_class_hover_race_1_1_client_1_1_dialog_scene"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_dialog_scene.html#afdd6f2e56ca087b3a1919c3eb73e87ea">DialogScene</a> (<a class="el" href="class_hover_race_1_1_display_1_1_display.html">Display::Display</a> &amp;<a class="el" href="class_hover_race_1_1_client_1_1_form_scene.html#a833b46f3205a5a0ad72a074668908a30">display</a>, const std::string &amp;<a class="el" href="class_hover_race_1_1_client_1_1_dialog_scene.html#adb6b008153f5bade2f2a7c5c2379f05f">title</a>=&quot;&quot;, const std::string &amp;<a class="el" href="class_hover_race_1_1_client_1_1_scene.html#acc98e2e244a10f1ca3ea841ea3fe6fd7">name</a>=&quot;&quot;)</td></tr>
+<tr class="memdesc:afdd6f2e56ca087b3a1919c3eb73e87ea inherit pub_methods_class_hover_race_1_1_client_1_1_dialog_scene"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#afdd6f2e56ca087b3a1919c3eb73e87ea"></a><br/></td></tr>
+<tr class="memitem:a6b8f3fa33d5ee582922963689551679e inherit pub_methods_class_hover_race_1_1_client_1_1_dialog_scene"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_dialog_scene.html#a6b8f3fa33d5ee582922963689551679e">~DialogScene</a> ()</td></tr>
 <tr class="inherit_header pub_methods_class_hover_race_1_1_client_1_1_form_scene"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_hover_race_1_1_client_1_1_form_scene')"><img src="closed.png" alt="-"/>&nbsp;Public Member Functions inherited from <a class="el" href="class_hover_race_1_1_client_1_1_form_scene.html">HoverRace::Client::FormScene</a></td></tr>
 <tr class="memitem:a7abbd3bba9edb8568d15fde35eb1e61a inherit pub_methods_class_hover_race_1_1_client_1_1_form_scene"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_form_scene.html#a7abbd3bba9edb8568d15fde35eb1e61a">FormScene</a> (<a class="el" href="class_hover_race_1_1_display_1_1_display.html">Display::Display</a> &amp;<a class="el" href="class_hover_race_1_1_client_1_1_form_scene.html#a833b46f3205a5a0ad72a074668908a30">display</a>, const std::string &amp;<a class="el" href="class_hover_race_1_1_client_1_1_scene.html#acc98e2e244a10f1ca3ea841ea3fe6fd7">name</a>=&quot;&quot;)</td></tr>
 <tr class="memitem:a520260a7885b2286ffa288a7510f6c9f inherit pub_methods_class_hover_race_1_1_client_1_1_form_scene"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_form_scene.html#a520260a7885b2286ffa288a7510f6c9f">~FormScene</a> ()</td></tr>
@@ -110,26 +116,60 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae9056a7471c6189b692846623346a998 inherit pub_methods_class_hover_race_1_1_client_1_1_scene"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_hover_race_1_1_client_1_1_scene_1_1_phase.html#a37cb41f6ed9499f76da9d6dd1a845bfb">Phase::phase_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_scene.html#ae9056a7471c6189b692846623346a998">GetPhase</a> () const </td></tr>
 <tr class="memitem:a399bdbf2e232448d2ca28f7d83b3b1f3 inherit pub_methods_class_hover_race_1_1_client_1_1_scene"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_scene.html#a399bdbf2e232448d2ca28f7d83b3b1f3">SetPhase</a> (<a class="el" href="struct_hover_race_1_1_client_1_1_scene_1_1_phase.html#a37cb41f6ed9499f76da9d6dd1a845bfb">Phase::phase_t</a> <a class="el" href="class_hover_race_1_1_client_1_1_scene.html#a83c2472cc3abf73526296f54677d8b71">phase</a>)</td></tr>
 <tr class="memdesc:a399bdbf2e232448d2ca28f7d83b3b1f3 inherit pub_methods_class_hover_race_1_1_client_1_1_scene"><td class="mdescLeft">&#160;</td><td class="mdescRight">Switch to another phase.  <a href="#a399bdbf2e232448d2ca28f7d83b3b1f3"></a><br/></td></tr>
+<tr class="memitem:a75bfc3413af86124c2a6b046350a4f3b inherit pub_methods_class_hover_race_1_1_client_1_1_scene"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_hover_race_1_1_client_1_1_scene_1_1_state.html#a403c7fcd24204c9c8326ff5905d029a7">State::state_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_scene.html#a75bfc3413af86124c2a6b046350a4f3b">GetState</a> () const </td></tr>
+<tr class="memitem:a00e3d032d8f740bd1d9ffa301787f535 inherit pub_methods_class_hover_race_1_1_client_1_1_scene"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_scene.html#a00e3d032d8f740bd1d9ffa301787f535">MoveToForeground</a> ()</td></tr>
+<tr class="memdesc:a00e3d032d8f740bd1d9ffa301787f535 inherit pub_methods_class_hover_race_1_1_client_1_1_scene"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signal that the scene is moving into the foreground.  <a href="#a00e3d032d8f740bd1d9ffa301787f535"></a><br/></td></tr>
+<tr class="memitem:a5c5e9b17e534fa280993c85be6e86f77 inherit pub_methods_class_hover_race_1_1_client_1_1_scene"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_scene.html#a5c5e9b17e534fa280993c85be6e86f77">MoveToBackground</a> ()</td></tr>
+<tr class="memdesc:a5c5e9b17e534fa280993c85be6e86f77 inherit pub_methods_class_hover_race_1_1_client_1_1_scene"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signal that the scene is moving into the background.  <a href="#a5c5e9b17e534fa280993c85be6e86f77"></a><br/></td></tr>
 <tr class="memitem:aef72db676c2674a37b5725bd97cee912 inherit pub_methods_class_hover_race_1_1_client_1_1_scene"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_scene.html#aef72db676c2674a37b5725bd97cee912">Advance</a> (<a class="el" href="class_hover_race_1_1_util_1_1_o_s.html#ab95203994cd88a763857b64711c7cc9f">Util::OS::timestamp_t</a> tick)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:aafd51dfb06f00126dabe3ffdb3baf986"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_track_select_scene.html#aafd51dfb06f00126dabe3ffdb3baf986">OnPhaseTransition</a> (double progress)</td></tr>
+<tr class="memdesc:aafd51dfb06f00126dabe3ffdb3baf986"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fired during the starting and stopping phases, if <a class="el" href="class_hover_race_1_1_client_1_1_scene.html#a4c2cec407b80f79b276634043eac6bd4" title="Set the maximum duration of the starting or stopping phases.">SetPhaseTransitionDuration()</a> was set.  <a href="#aafd51dfb06f00126dabe3ffdb3baf986"></a><br/></td></tr>
+<tr class="inherit_header pro_methods_class_hover_race_1_1_client_1_1_dialog_scene"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_hover_race_1_1_client_1_1_dialog_scene')"><img src="closed.png" alt="-"/>&nbsp;Protected Member Functions inherited from <a class="el" href="class_hover_race_1_1_client_1_1_dialog_scene.html">HoverRace::Client::DialogScene</a></td></tr>
+<tr class="memitem:affb29c7cf6e71855c9c0840d0939c427 inherit pro_methods_class_hover_race_1_1_client_1_1_dialog_scene"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_display_1_1_container.html">Display::Container</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_dialog_scene.html#affb29c7cf6e71855c9c0840d0939c427">GetContentRoot</a> () const </td></tr>
+<tr class="memitem:abcac4c2b52f4aa1d42bcded585708586 inherit pro_methods_class_hover_race_1_1_client_1_1_dialog_scene"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_display_1_1_container.html">Display::Container</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_dialog_scene.html#abcac4c2b52f4aa1d42bcded585708586">GetStatusRoot</a> () const </td></tr>
+<tr class="inherit_header pro_methods_class_hover_race_1_1_client_1_1_form_scene"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_hover_race_1_1_client_1_1_form_scene')"><img src="closed.png" alt="-"/>&nbsp;Protected Member Functions inherited from <a class="el" href="class_hover_race_1_1_client_1_1_form_scene.html">HoverRace::Client::FormScene</a></td></tr>
+<tr class="memitem:a3b1d1a496899a5ceca0e6d6fb0c848a4 inherit pro_methods_class_hover_race_1_1_client_1_1_form_scene"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_display_1_1_container.html">Display::Container</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_form_scene.html#a3b1d1a496899a5ceca0e6d6fb0c848a4">GetRoot</a> () const </td></tr>
+<tr class="inherit_header pro_methods_class_hover_race_1_1_client_1_1_ui_scene"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_hover_race_1_1_client_1_1_ui_scene')"><img src="closed.png" alt="-"/>&nbsp;Protected Member Functions inherited from <a class="el" href="class_hover_race_1_1_client_1_1_ui_scene.html">HoverRace::Client::UiScene</a></td></tr>
+<tr class="memitem:a195e22f5b8aba8d15aace704faa6c6e2 inherit pro_methods_class_hover_race_1_1_client_1_1_ui_scene"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_ui_scene.html#a195e22f5b8aba8d15aace704faa6c6e2">RequestLayout</a> ()</td></tr>
+<tr class="memdesc:a195e22f5b8aba8d15aace704faa6c6e2 inherit pro_methods_class_hover_race_1_1_client_1_1_ui_scene"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicate that the current layout is out-of-date and needs to be adjusted.  <a href="#a195e22f5b8aba8d15aace704faa6c6e2"></a><br/></td></tr>
+<tr class="memitem:af4b04ca88ff3001428a94137870055a6 inherit pro_methods_class_hover_race_1_1_client_1_1_ui_scene"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_ui_scene.html#af4b04ca88ff3001428a94137870055a6">Layout</a> ()</td></tr>
+<tr class="memdesc:af4b04ca88ff3001428a94137870055a6 inherit pro_methods_class_hover_race_1_1_client_1_1_ui_scene"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adjust the size and position of any child elements.  <a href="#af4b04ca88ff3001428a94137870055a6"></a><br/></td></tr>
+<tr class="inherit_header pro_methods_class_hover_race_1_1_client_1_1_scene"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_hover_race_1_1_client_1_1_scene')"><img src="closed.png" alt="-"/>&nbsp;Protected Member Functions inherited from <a class="el" href="class_hover_race_1_1_client_1_1_scene.html">HoverRace::Client::Scene</a></td></tr>
+<tr class="memitem:a4c2cec407b80f79b276634043eac6bd4 inherit pro_methods_class_hover_race_1_1_client_1_1_scene"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_scene.html#a4c2cec407b80f79b276634043eac6bd4">SetPhaseTransitionDuration</a> (<a class="el" href="class_hover_race_1_1_util_1_1_o_s.html#ab95203994cd88a763857b64711c7cc9f">Util::OS::timestamp_t</a> ms)</td></tr>
+<tr class="memdesc:a4c2cec407b80f79b276634043eac6bd4 inherit pro_methods_class_hover_race_1_1_client_1_1_scene"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the maximum duration of the starting or stopping phases.  <a href="#a4c2cec407b80f79b276634043eac6bd4"></a><br/></td></tr>
+<tr class="memitem:a0b2f5e575b2df1d2e2cd80af9844d698 inherit pro_methods_class_hover_race_1_1_client_1_1_scene"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_util_1_1_o_s.html#ab95203994cd88a763857b64711c7cc9f">Util::OS::timestamp_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_scene.html#a0b2f5e575b2df1d2e2cd80af9844d698">GetPhaseDuration</a> (<a class="el" href="class_hover_race_1_1_util_1_1_o_s.html#ab95203994cd88a763857b64711c7cc9f">Util::OS::timestamp_t</a> curTime=<a class="el" href="class_hover_race_1_1_util_1_1_o_s.html#a72fc72893a2370773b487e72a5b0c55e">Util::OS::Time</a>())</td></tr>
+<tr class="memdesc:a0b2f5e575b2df1d2e2cd80af9844d698 inherit pro_methods_class_hover_race_1_1_client_1_1_scene"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate how much time we've spent in the current phase.  <a href="#a0b2f5e575b2df1d2e2cd80af9844d698"></a><br/></td></tr>
+<tr class="memitem:aa013012db82a12e7a5806738fdc7fd10 inherit pro_methods_class_hover_race_1_1_client_1_1_scene"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_util_1_1_o_s.html#ab95203994cd88a763857b64711c7cc9f">Util::OS::timestamp_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_scene.html#aa013012db82a12e7a5806738fdc7fd10">GetStartingPhaseTime</a> ()</td></tr>
+<tr class="memdesc:aa013012db82a12e7a5806738fdc7fd10 inherit pro_methods_class_hover_race_1_1_client_1_1_scene"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return how long the starting phase lasted.  <a href="#aa013012db82a12e7a5806738fdc7fd10"></a><br/></td></tr>
+<tr class="memitem:a737eb31e42329ce31a5a1854f1cb7f77 inherit pro_methods_class_hover_race_1_1_client_1_1_scene"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_util_1_1_o_s.html#ab95203994cd88a763857b64711c7cc9f">Util::OS::timestamp_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_scene.html#a737eb31e42329ce31a5a1854f1cb7f77">GetStateDuration</a> (<a class="el" href="class_hover_race_1_1_util_1_1_o_s.html#ab95203994cd88a763857b64711c7cc9f">Util::OS::timestamp_t</a> curTime=<a class="el" href="class_hover_race_1_1_util_1_1_o_s.html#a72fc72893a2370773b487e72a5b0c55e">Util::OS::Time</a>())</td></tr>
+<tr class="memdesc:a737eb31e42329ce31a5a1854f1cb7f77 inherit pro_methods_class_hover_race_1_1_client_1_1_scene"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate how much time we've spent in the current state.  <a href="#a737eb31e42329ce31a5a1854f1cb7f77"></a><br/></td></tr>
+<tr class="memitem:ac82514c2e5ab417f90e1420b577c7906 inherit pro_methods_class_hover_race_1_1_client_1_1_scene"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_scene.html#ac82514c2e5ab417f90e1420b577c7906">SetStateTransitionDuration</a> (<a class="el" href="class_hover_race_1_1_util_1_1_o_s.html#ab95203994cd88a763857b64711c7cc9f">Util::OS::timestamp_t</a> ms)</td></tr>
+<tr class="memdesc:ac82514c2e5ab417f90e1420b577c7906 inherit pro_methods_class_hover_race_1_1_client_1_1_scene"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the maximum duration of the raising or lowering state.  <a href="#ac82514c2e5ab417f90e1420b577c7906"></a><br/></td></tr>
+<tr class="memitem:a293cff17c7a7544383df3908aa8ea129 inherit pro_methods_class_hover_race_1_1_client_1_1_scene"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_scene.html#a293cff17c7a7544383df3908aa8ea129">OnPhaseChanged</a> (<a class="el" href="struct_hover_race_1_1_client_1_1_scene_1_1_phase.html#a37cb41f6ed9499f76da9d6dd1a845bfb">Phase::phase_t</a> oldPhase)</td></tr>
+<tr class="memdesc:a293cff17c7a7544383df3908aa8ea129 inherit pro_methods_class_hover_race_1_1_client_1_1_scene"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fired immediately after entering a new phase.  <a href="#a293cff17c7a7544383df3908aa8ea129"></a><br/></td></tr>
+<tr class="memitem:ad0f2e3d083043ce5e1f1be5430ef99e6 inherit pro_methods_class_hover_race_1_1_client_1_1_scene"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_scene.html#ad0f2e3d083043ce5e1f1be5430ef99e6">OnStateChanged</a> (<a class="el" href="struct_hover_race_1_1_client_1_1_scene_1_1_state.html#a403c7fcd24204c9c8326ff5905d029a7">State::state_t</a> oldState)</td></tr>
+<tr class="memdesc:ad0f2e3d083043ce5e1f1be5430ef99e6 inherit pro_methods_class_hover_race_1_1_client_1_1_scene"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fired immediately after entering a new state.  <a href="#ad0f2e3d083043ce5e1f1be5430ef99e6"></a><br/></td></tr>
+<tr class="memitem:adaacb4c94221fb24f009264b86f5020e inherit pro_methods_class_hover_race_1_1_client_1_1_scene"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_scene.html#adaacb4c94221fb24f009264b86f5020e">OnStateTransition</a> (double progress)</td></tr>
+<tr class="memdesc:adaacb4c94221fb24f009264b86f5020e inherit pro_methods_class_hover_race_1_1_client_1_1_scene"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fired during the raising and lowering states, if <a class="el" href="class_hover_race_1_1_client_1_1_scene.html#ac82514c2e5ab417f90e1420b577c7906" title="Set the maximum duration of the raising or lowering state.">SetStateTransitionDuration()</a> was set.  <a href="#adaacb4c94221fb24f009264b86f5020e"></a><br/></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pri-types"></a>
 Private Types</h2></td></tr>
-<tr class="memitem:a43bf5142bfeb17876f7dc27342eee74a"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_hover_race_1_1_client_1_1_form_scene.html">FormScene</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_track_select_scene.html#a43bf5142bfeb17876f7dc27342eee74a">SUPER</a></td></tr>
+<tr class="memitem:a87a5e2523695238da8e822db2cfc47a7"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_hover_race_1_1_client_1_1_dialog_scene.html">DialogScene</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_track_select_scene.html#a87a5e2523695238da8e822db2cfc47a7">SUPER</a></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a396c5e450b1b87216f0309852490fdf2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_track_select_scene.html#a396c5e450b1b87216f0309852490fdf2">OnRulebookSelected</a> (std::shared_ptr&lt; const <a class="el" href="class_hover_race_1_1_client_1_1_rulebook.html">Rulebook</a> &gt; <a class="el" href="_track_select_scene_8cpp.html#aa045bc78531a6273984424df87e9e821">entry</a>)</td></tr>
 <tr class="memitem:af50e2c8a3901201944dc26d78f01464e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_track_select_scene.html#af50e2c8a3901201944dc26d78f01464e">OnTrackSelected</a> (<a class="el" href="namespace_hover_race_1_1_model.html#a9ee639dfdd7cd9015c98c52e6a4a5741">Model::TrackEntryPtr</a> <a class="el" href="_track_select_scene_8cpp.html#aa045bc78531a6273984424df87e9e821">entry</a>)</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a492599ef58add5f167e4bbe4ef0f5a59"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_display_1_1_display.html">Display::Display</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_track_select_scene.html#a492599ef58add5f167e4bbe4ef0f5a59">display</a></td></tr>
 <tr class="memitem:ada651593a3f07996eea931c52aa11325"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_client_1_1_game_director.html">GameDirector</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_track_select_scene.html#ada651593a3f07996eea931c52aa11325">director</a></td></tr>
-<tr class="memitem:a2fcf99fb8124c8630436f515ad38513e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_client_1_1_rulebook_library.html">RulebookLibrary</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_track_select_scene.html#a2fcf99fb8124c8630436f515ad38513e">rulebookLibrary</a></td></tr>
-<tr class="memitem:a831d7cae0a11c5ea5e49680527cf17f1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_model_1_1_track_list.html">Model::TrackList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_track_select_scene.html#a831d7cae0a11c5ea5e49680527cf17f1">trackList</a></td></tr>
 <tr class="memitem:a7c2d464f950bf5cf393894377b7e7902"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_hover_race_1_1_client_1_1_rules.html">Rules</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_track_select_scene.html#a7c2d464f950bf5cf393894377b7e7902">rules</a></td></tr>
-<tr class="memitem:a2af7b38c1ff4d61784d05c38a2529610"><td class="memItemLeft" align="right" valign="top">std::shared_ptr<br class="typebreak"/>
-&lt; <a class="el" href="class_hover_race_1_1_display_1_1_container.html">Display::Container</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_track_select_scene.html#a2af7b38c1ff4d61784d05c38a2529610">rulebookPanel</a></td></tr>
+<tr class="memitem:a831d7cae0a11c5ea5e49680527cf17f1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_model_1_1_track_list.html">Model::TrackList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_track_select_scene.html#a831d7cae0a11c5ea5e49680527cf17f1">trackList</a></td></tr>
+<tr class="memitem:ae6478c0fabf9e85a546659829d6bf1d1"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_hover_race_1_1_display_1_1_label.html">Display::Label</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_track_select_scene.html#ae6478c0fabf9e85a546659829d6bf1d1">rulebookLbl</a></td></tr>
 <tr class="memitem:a28b51d0c99e08d58170b782904a58c46"><td class="memItemLeft" align="right" valign="top">std::shared_ptr<br class="typebreak"/>
 &lt; <a class="el" href="class_hover_race_1_1_display_1_1_container.html">Display::Container</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_track_select_scene.html#a28b51d0c99e08d58170b782904a58c46">trackPanel</a></td></tr>
 <tr class="memitem:acfa92df4da16288e5e79b1c389b7d524"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_client_1_1_track_select_scene.html#a1a8616b68355775711bccba63f644a9b">okSignal_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_track_select_scene.html#acfa92df4da16288e5e79b1c389b7d524">okSignal</a></td></tr>
@@ -137,13 +177,13 @@ Private Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pro_methods_class_hover_race_1_1_client_1_1_form_scene"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_hover_race_1_1_client_1_1_form_scene')"><img src="closed.png" alt="-"/>&nbsp;Protected Member Functions inherited from <a class="el" href="class_hover_race_1_1_client_1_1_form_scene.html">HoverRace::Client::FormScene</a></td></tr>
-<tr class="memitem:a3b1d1a496899a5ceca0e6d6fb0c848a4 inherit pro_methods_class_hover_race_1_1_client_1_1_form_scene"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_display_1_1_container.html">Display::Container</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_form_scene.html#a3b1d1a496899a5ceca0e6d6fb0c848a4">GetRoot</a> () const </td></tr>
+<tr class="inherit_header pub_static_attribs_class_hover_race_1_1_client_1_1_dialog_scene"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_class_hover_race_1_1_client_1_1_dialog_scene')"><img src="closed.png" alt="-"/>&nbsp;Static Public Attributes inherited from <a class="el" href="class_hover_race_1_1_client_1_1_dialog_scene.html">HoverRace::Client::DialogScene</a></td></tr>
+<tr class="memitem:ac0a161cc8799e8bcef424b7380a4dda9 inherit pub_static_attribs_class_hover_race_1_1_client_1_1_dialog_scene"><td class="memItemLeft" align="right" valign="top">static const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_dialog_scene.html#ac0a161cc8799e8bcef424b7380a4dda9">MARGIN_WIDTH</a> = 40</td></tr>
 <tr class="inherit_header pro_attribs_class_hover_race_1_1_client_1_1_form_scene"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_hover_race_1_1_client_1_1_form_scene')"><img src="closed.png" alt="-"/>&nbsp;Protected Attributes inherited from <a class="el" href="class_hover_race_1_1_client_1_1_form_scene.html">HoverRace::Client::FormScene</a></td></tr>
 <tr class="memitem:a833b46f3205a5a0ad72a074668908a30 inherit pro_attribs_class_hover_race_1_1_client_1_1_form_scene"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_display_1_1_display.html">Display::Display</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_form_scene.html#a833b46f3205a5a0ad72a074668908a30">display</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p>Select options for a new game (track, rules, etc.). </p>
+<div class="textblock"><p>Select the track for a new game. </p>
 <dl class="section author"><dt>Author</dt><dd>Michael Imamura </dd></dl>
 </div><h2>Member Typedef Documentation</h2>
 <a class="anchor" id="a8ce46ea0696c465ff3c21810241041d8"></a>
@@ -170,7 +210,7 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a43bf5142bfeb17876f7dc27342eee74a"></a>
+<a class="anchor" id="a87a5e2523695238da8e822db2cfc47a7"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -178,7 +218,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="class_hover_race_1_1_client_1_1_form_scene.html">FormScene</a> <a class="el" href="class_hover_race_1_1_client_1_1_track_select_scene.html#a43bf5142bfeb17876f7dc27342eee74a">HoverRace::Client::TrackSelectScene::SUPER</a></td>
+          <td class="memname">typedef <a class="el" href="class_hover_race_1_1_client_1_1_dialog_scene.html">DialogScene</a> <a class="el" href="class_hover_race_1_1_client_1_1_track_select_scene.html#a87a5e2523695238da8e822db2cfc47a7">HoverRace::Client::TrackSelectScene::SUPER</a></td>
         </tr>
       </table>
   </td>
@@ -191,7 +231,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a02ab6d5c120c672cb10d8f5f7259b38c"></a>
+<a class="anchor" id="af75ec2027563872f3833df4d30678cf9"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -210,8 +250,8 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_hover_race_1_1_client_1_1_rulebook_library.html">RulebookLibrary</a> &amp;&#160;</td>
-          <td class="paramname"><em>rulebookLibrary</em>&#160;</td>
+          <td class="paramtype">std::shared_ptr&lt; const <a class="el" href="class_hover_race_1_1_client_1_1_rulebook.html">Rulebook</a> &gt;&#160;</td>
+          <td class="paramname"><em>rulebook</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -293,7 +333,7 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a396c5e450b1b87216f0309852490fdf2"></a>
+<a class="anchor" id="aafd51dfb06f00126dabe3ffdb3baf986"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -301,19 +341,29 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void HoverRace::Client::TrackSelectScene::OnRulebookSelected </td>
+          <td class="memname">void HoverRace::Client::TrackSelectScene::OnPhaseTransition </td>
           <td>(</td>
-          <td class="paramtype">std::shared_ptr&lt; const <a class="el" href="class_hover_race_1_1_client_1_1_rulebook.html">Rulebook</a> &gt;&#160;</td>
-          <td class="paramname"><em>entry</em></td><td>)</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>progress</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Fired during the starting and stopping phases, if <a class="el" href="class_hover_race_1_1_client_1_1_scene.html#a4c2cec407b80f79b276634043eac6bd4" title="Set the maximum duration of the starting or stopping phases.">SetPhaseTransitionDuration()</a> was set. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">progress</td><td>The animation progress (during the <code>STARTING</code> phase this goes from 0.0 to 1.0, and in reverse for the <code>STOPPING</code> phase). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented from <a class="el" href="class_hover_race_1_1_client_1_1_scene.html#aba2bc5f1dfc434238918b0d92e0e3c9c">HoverRace::Client::Scene</a>.</p>
 
 </div>
 </div>
@@ -422,7 +472,7 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a2fcf99fb8124c8630436f515ad38513e"></a>
+<a class="anchor" id="ae6478c0fabf9e85a546659829d6bf1d1"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -430,27 +480,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_hover_race_1_1_client_1_1_rulebook_library.html">RulebookLibrary</a>&amp; HoverRace::Client::TrackSelectScene::rulebookLibrary</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a2af7b38c1ff4d61784d05c38a2529610"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::shared_ptr&lt;<a class="el" href="class_hover_race_1_1_display_1_1_container.html">Display::Container</a>&gt; HoverRace::Client::TrackSelectScene::rulebookPanel</td>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="class_hover_race_1_1_display_1_1_label.html">Display::Label</a>&gt; HoverRace::Client::TrackSelectScene::rulebookLbl</td>
         </tr>
       </table>
   </td>
