@@ -88,7 +88,6 @@ Public Types</h2></td></tr>
 <a class="el" href="namespace_hover_race_1_1_control.html#abc59d798fec5bc902c6c58c9a6462201">ControlActionPtr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_control_1_1_input_event_controller.html#a6deb50cbcdb5ab5036840ce757e545fd">ActionMap</a></td></tr>
 <tr class="memitem:a75b5445e1616992dc7cd9ba939b78bb2"><td class="memItemLeft" align="right" valign="top">typedef std::shared_ptr<br class="typebreak"/>
 &lt; <a class="el" href="class_hover_race_1_1_control_1_1_action.html">Action</a>&lt; <a class="el" href="namespace_hover_race_1_1_control.html#ab2a72289f61c4e8f013be018c83cfd88">voidSignal_t</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_control_1_1_input_event_controller.html#a75b5445e1616992dc7cd9ba939b78bb2">VoidActionPtr</a></td></tr>
-<tr class="memdesc:a75b5445e1616992dc7cd9ba939b78bb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">name of the map we are capturing for  <a href="#a75b5445e1616992dc7cd9ba939b78bb2"></a><br/></td></tr>
 <tr class="memitem:afe77e41bafa615097b403afe1c14ab56"><td class="memItemLeft" align="right" valign="top">typedef std::shared_ptr<br class="typebreak"/>
 &lt; <a class="el" href="class_hover_race_1_1_control_1_1_action.html">Action</a>&lt; <a class="el" href="namespace_hover_race_1_1_control.html#a2daddb41a4bf897e4220efab4b50dcc8">valueSignal_t</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_control_1_1_input_event_controller.html#afe77e41bafa615097b403afe1c14ab56">ValueActionPtr</a></td></tr>
 <tr class="memitem:aedf4a1dad955aa244fb1f11837c516d5"><td class="memItemLeft" align="right" valign="top">typedef std::shared_ptr<br class="typebreak"/>
@@ -181,8 +180,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a132e9c30bd7f1b4a781521c6944c3164"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_control_1_1_input_event_controller.html#a132e9c30bd7f1b4a781521c6944c3164">nextAvailableDisabledHash</a></td></tr>
 <tr class="memitem:a551c47f0977dfdda3e91d7caec34e9cd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_control_1_1_input_event_controller.html#a551c47f0977dfdda3e91d7caec34e9cd">captureNextInput</a></td></tr>
 <tr class="memitem:a818b7a54bc7cdfeab129c4adcc14a887"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_control_1_1_input_event_controller.html#a818b7a54bc7cdfeab129c4adcc14a887">captureOldHash</a></td></tr>
+<tr class="memdesc:a818b7a54bc7cdfeab129c4adcc14a887"><td class="mdescLeft">&#160;</td><td class="mdescRight">stores the value of the hash we will be replacing when capturing input  <a href="#a818b7a54bc7cdfeab129c4adcc14a887"></a><br/></td></tr>
 <tr class="memitem:a4ea10c2938adc7447f8fa1742e6beb20"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_control_1_1_input_event_controller.html#a4ea10c2938adc7447f8fa1742e6beb20">captureMap</a></td></tr>
-<tr class="memdesc:a4ea10c2938adc7447f8fa1742e6beb20"><td class="mdescLeft">&#160;</td><td class="mdescRight">stores the value of the hash we will be replacing when capturing input  <a href="#a4ea10c2938adc7447f8fa1742e6beb20"></a><br/></td></tr>
+<tr class="memdesc:a4ea10c2938adc7447f8fa1742e6beb20"><td class="mdescLeft">&#160;</td><td class="mdescRight">name of the map we are capturing for  <a href="#a4ea10c2938adc7447f8fa1742e6beb20"></a><br/></td></tr>
 </table>
 <a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Translates input events into actions. </p>
@@ -284,8 +284,6 @@ Michael Imamura </dd></dl>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>name of the map we are capturing for </p>
 
 </div>
 </div>
@@ -1166,7 +1164,7 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>stores the value of the hash we will be replacing when capturing input </p>
+<p>name of the map we are capturing for </p>
 
 </div>
 </div>
@@ -1207,6 +1205,8 @@ template&lt;class T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>stores the value of the hash we will be replacing when capturing input </p>
 
 </div>
 </div>

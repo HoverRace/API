@@ -52,6 +52,7 @@
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#pri-types">Private Types</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
@@ -68,7 +69,8 @@
 <div class="dynheader">
 Inheritance diagram for HoverRace::Display::Container:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_hover_race_1_1_display_1_1_container__inherit__graph.svg" width="144" height="243"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_hover_race_1_1_display_1_1_container__inherit__graph.svg" width="100%" height="540"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="nested-classes"></a>
@@ -95,9 +97,19 @@ T &gt;::value, std::shared_ptr&lt; T &gt;<br class="typebreak"/>
 T &gt;::value, std::shared_ptr&lt; T &gt;<br class="typebreak"/>
  &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_container.html#a8a5868bb92ffc3cfa362a88b9f82a537">InsertChild</a> (int <a class="el" href="class_hover_race_1_1_display_1_1_ui_view_model.html#ac23e2ece418a66675ecebd515e08cd64">pos</a>, T *child)</td></tr>
 <tr class="memdesc:a8a5868bb92ffc3cfa362a88b9f82a537"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert a child element to an arbitrary position in the list.  <a href="#a8a5868bb92ffc3cfa362a88b9f82a537"></a><br/></td></tr>
+<tr class="memitem:ad789fbb18f59d5a19af39aa45049cfdf"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ad789fbb18f59d5a19af39aa45049cfdf"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if<br class="typebreak"/>
+&lt; std::is_base_of&lt; <a class="el" href="class_hover_race_1_1_display_1_1_ui_view_model.html">UiViewModel</a>, <br class="typebreak"/>
+T &gt;::value, std::shared_ptr&lt; T &gt;<br class="typebreak"/>
+ &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_container.html#ad789fbb18f59d5a19af39aa45049cfdf">RemoveChild</a> (const std::shared_ptr&lt; T &gt; &amp;child)</td></tr>
+<tr class="memdesc:ad789fbb18f59d5a19af39aa45049cfdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a child element.  <a href="#ad789fbb18f59d5a19af39aa45049cfdf"></a><br/></td></tr>
+<tr class="memitem:a6811dafe9cc1260322f808744a87c326"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_container.html#a6811dafe9cc1260322f808744a87c326">Clear</a> ()</td></tr>
+<tr class="memdesc:a6811dafe9cc1260322f808744a87c326"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove all child elements.  <a href="#a6811dafe9cc1260322f808744a87c326"></a><br/></td></tr>
 <tr class="memitem:a6c50ef6e5eca1cc45e086253865cc5bb"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_container.html#a6c50ef6e5eca1cc45e086253865cc5bb">OnMouseMoved</a> (const <a class="el" href="struct_hover_race_1_1_display_1_1_vec2.html">Vec2</a> &amp;<a class="el" href="class_hover_race_1_1_display_1_1_ui_view_model.html#ac23e2ece418a66675ecebd515e08cd64">pos</a>)</td></tr>
 <tr class="memitem:a9fd23d0a797f845f63be0e2470a24147"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_container.html#a9fd23d0a797f845f63be0e2470a24147">OnMousePressed</a> (const <a class="el" href="struct_hover_race_1_1_control_1_1_mouse_1_1_click.html">Control::Mouse::Click</a> &amp;click)</td></tr>
 <tr class="memitem:ab5d92eeba6367b5b383d0024c65cba5d"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_container.html#ab5d92eeba6367b5b383d0024c65cba5d">OnMouseReleased</a> (const <a class="el" href="struct_hover_race_1_1_control_1_1_mouse_1_1_click.html">Control::Mouse::Click</a> &amp;click)</td></tr>
+<tr class="memitem:a67945122cf45a29476a96246e8c3a13c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_container.html#a67945122cf45a29476a96246e8c3a13c">ShrinkWrap</a> ()</td></tr>
+<tr class="memdesc:a67945122cf45a29476a96246e8c3a13c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resize the container to the minimum size that will fit all of the child elements.  <a href="#a67945122cf45a29476a96246e8c3a13c"></a><br/></td></tr>
 <tr class="memitem:a84d5eda59559b40afcba1933a97cafa1"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct_hover_race_1_1_display_1_1_vec2.html">Vec2</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_container.html#a84d5eda59559b40afcba1933a97cafa1">GetSize</a> () const </td></tr>
 <tr class="memdesc:a84d5eda59559b40afcba1933a97cafa1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the size of the container.  <a href="#a84d5eda59559b40afcba1933a97cafa1"></a><br/></td></tr>
 <tr class="memitem:ae2567bad10c047b18599911f74931806"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_container.html#ae2567bad10c047b18599911f74931806">SetSize</a> (const <a class="el" href="struct_hover_race_1_1_display_1_1_vec2.html">Vec2</a> &amp;<a class="el" href="class_hover_race_1_1_display_1_1_container.html#a07d59aeda3e6095f840e395a67d13db3">size</a>)</td></tr>
@@ -141,6 +153,10 @@ T &gt;::value, std::shared_ptr&lt; T &gt;<br class="typebreak"/>
 <tr class="memitem:a00cd9215d2c1bb649f5fcd9bd9d5cbd0 inherit pub_methods_class_hover_race_1_1_display_1_1_view_model"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_view_model.html#a00cd9215d2c1bb649f5fcd9bd9d5cbd0">PrepareRender</a> ()</td></tr>
 <tr class="memitem:add52adbc673f921716166708f064db2a inherit pub_methods_class_hover_race_1_1_display_1_1_view_model"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_view_model.html#add52adbc673f921716166708f064db2a">Render</a> ()</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a9667c67977c085050711e6c5b4fa45e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_display_1_1_display.html">Display</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_container.html#a9667c67977c085050711e6c5b4fa45e2">display</a></td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pri-types"></a>
 Private Types</h2></td></tr>
 <tr class="memitem:afaec235f582ddaefe717e4c6edf5eff6"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_hover_race_1_1_display_1_1_ui_view_model.html">UiViewModel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_container.html#afaec235f582ddaefe717e4c6edf5eff6">SUPER</a></td></tr>
@@ -152,7 +168,6 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a9667c67977c085050711e6c5b4fa45e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_display_1_1_display.html">Display</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_container.html#a9667c67977c085050711e6c5b4fa45e2">display</a></td></tr>
 <tr class="memitem:a07d59aeda3e6095f840e395a67d13db3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_hover_race_1_1_display_1_1_vec2.html">Vec2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_container.html#a07d59aeda3e6095f840e395a67d13db3">size</a></td></tr>
 <tr class="memitem:a8a6653dbb68c23b11989fc3201a5f8cb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_container.html#a8a6653dbb68c23b11989fc3201a5f8cb">clip</a></td></tr>
 <tr class="memitem:a9dc94649c1b5c0e6c394760115b3c345"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespace_hover_race_1_1_display.html#ab788c2cf7a91a3e154798a2574fd3e8b">UiViewModelPtr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_container.html#a9dc94649c1b5c0e6c394760115b3c345">children</a></td></tr>
@@ -360,6 +375,33 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="class_hover_race_1_1_display_1_1_view_model.html#a3362f25a740b606a8484b101df86a37f">HoverRace::Display::ViewModel</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6811dafe9cc1260322f808744a87c326"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void HoverRace::Display::Container::Clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Remove all child elements. </p>
+
+<p>Reimplemented in <a class="el" href="class_hover_race_1_1_display_1_1_hud.html#abb66746263f2dd51d242a24aff42e2cc">HoverRace::Display::Hud</a>.</p>
 
 </div>
 </div>
@@ -619,6 +661,41 @@ template&lt;typename P , bool(UiViewModel::*)(P) F&gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="ad789fbb18f59d5a19af39aa45049cfdf"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::enable_if&lt;std::is_base_of&lt;<a class="el" href="class_hover_race_1_1_display_1_1_ui_view_model.html">UiViewModel</a>, T&gt;::value, std::shared_ptr&lt;T&gt; &gt;::type HoverRace::Display::Container::RemoveChild </td>
+          <td>(</td>
+          <td class="paramtype">const std::shared_ptr&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>child</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Remove a child element. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">child</td><td>The child element; must be a shared_ptr to a subclass of <a class="el" href="class_hover_race_1_1_display_1_1_ui_view_model.html" title="Base class for UI (2D) components.">UiViewModel</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The same child element that was passed in. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="acfd9984e979b3b7e281b82fe6a242cb0"></a>
 <div class="memitem">
 <div class="memproto">
@@ -703,6 +780,23 @@ template&lt;typename P , bool(UiViewModel::*)(P) F&gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a67945122cf45a29476a96246e8c3a13c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HoverRace::Display::Container::ShrinkWrap </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Resize the container to the minimum size that will fit all of the child elements. </p>
+
+</div>
+</div>
 <h2>Member Data Documentation</h2>
 <a class="anchor" id="a9dc94649c1b5c0e6c394760115b3c345"></a>
 <div class="memitem">
@@ -757,7 +851,7 @@ template&lt;typename P , bool(UiViewModel::*)(P) F&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

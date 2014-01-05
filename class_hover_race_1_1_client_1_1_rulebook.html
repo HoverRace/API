@@ -78,6 +78,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9e4336712476993b88c4fde963a32084"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_rulebook.html#a9e4336712476993b88c4fde963a32084">OnPreGame</a> (<a class="el" href="namespace_hover_race_1_1_client_1_1_hover_script.html#a8007a6a9e1cc5a78dcd9d4155ddcfbad">HoverScript::SessionPeerPtr</a> session) const </td></tr>
 <tr class="memitem:a7f762ed59420b293a50c0b6caedd2f7e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_rulebook.html#a7f762ed59420b293a50c0b6caedd2f7e">SetOnPostGame</a> (const luabind::object &amp;fn)</td></tr>
 <tr class="memitem:a3c99cf42e5d9101ee5b10b6b0b78cf62"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_rulebook.html#a3c99cf42e5d9101ee5b10b6b0b78cf62">OnPostGame</a> (<a class="el" href="namespace_hover_race_1_1_client_1_1_hover_script.html#a8007a6a9e1cc5a78dcd9d4155ddcfbad">HoverScript::SessionPeerPtr</a> session) const </td></tr>
+<tr class="memitem:a17d4c7a3e8d81996e19753b4b066f29d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_rulebook.html#a17d4c7a3e8d81996e19753b4b066f29d">SetOnPlayerJoined</a> (const luabind::object &amp;fn)</td></tr>
+<tr class="memitem:acea0b89249e4153c3b1ed2fc4ae46664"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_rulebook.html#acea0b89249e4153c3b1ed2fc4ae46664">OnPlayerJoined</a> (<a class="el" href="namespace_hover_race_1_1_client_1_1_hover_script.html#a8007a6a9e1cc5a78dcd9d4155ddcfbad">HoverScript::SessionPeerPtr</a> session, std::shared_ptr&lt; <a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_player_peer.html">HoverScript::PlayerPeer</a> &gt; player) const </td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pri-types"></a>
 Private Types</h2></td></tr>
@@ -94,6 +96,7 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a619140d6f9167bc61414667edf1bd0f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_client_1_1_rulebook.html#aed28bb2dac03755d215eae08a164cccd">rules_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_rulebook.html#a619140d6f9167bc61414667edf1bd0f2">rules</a></td></tr>
 <tr class="memitem:a6d489ca5c59751a5f095e628eec315d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_script_1_1_handlers.html">Script::Handlers</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_rulebook.html#a6d489ca5c59751a5f095e628eec315d6">onPreGame</a></td></tr>
 <tr class="memitem:a488ddb65a99efd2e9910e8b89776d72a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_script_1_1_handlers.html">Script::Handlers</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_rulebook.html#a488ddb65a99efd2e9910e8b89776d72a">onPostGame</a></td></tr>
+<tr class="memitem:a5d03c9f0b450bcc1bffc2beaccd18cfe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_script_1_1_handlers.html">Script::Handlers</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_rulebook.html#a5d03c9f0b450bcc1bffc2beaccd18cfe">onPlayerJoined</a></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="friends"></a>
 Friends</h2></td></tr>
@@ -303,6 +306,32 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="acea0b89249e4153c3b1ed2fc4ae46664"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HoverRace::Client::Rulebook::OnPlayerJoined </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_hover_race_1_1_client_1_1_hover_script.html#a8007a6a9e1cc5a78dcd9d4155ddcfbad">HoverScript::SessionPeerPtr</a>&#160;</td>
+          <td class="paramname"><em>session</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_player_peer.html">HoverScript::PlayerPeer</a> &gt;&#160;</td>
+          <td class="paramname"><em>player</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a3c99cf42e5d9101ee5b10b6b0b78cf62"></a>
 <div class="memitem">
 <div class="memproto">
@@ -329,6 +358,22 @@ Friends</h2></td></tr>
           <td class="paramtype"><a class="el" href="namespace_hover_race_1_1_client_1_1_hover_script.html#a8007a6a9e1cc5a78dcd9d4155ddcfbad">HoverScript::SessionPeerPtr</a>&#160;</td>
           <td class="paramname"><em>session</em></td><td>)</td>
           <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a17d4c7a3e8d81996e19753b4b066f29d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HoverRace::Client::Rulebook::SetOnPlayerJoined </td>
+          <td>(</td>
+          <td class="paramtype">const luabind::object &amp;&#160;</td>
+          <td class="paramname"><em>fn</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -486,6 +531,26 @@ Friends</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">std::string HoverRace::Client::Rulebook::name</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5d03c9f0b450bcc1bffc2beaccd18cfe"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_hover_race_1_1_script_1_1_handlers.html">Script::Handlers</a> HoverRace::Client::Rulebook::onPlayerJoined</td>
         </tr>
       </table>
   </td>

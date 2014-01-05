@@ -47,157 +47,18 @@
 </div>
 </div><!-- top -->
 <div class="header">
-  <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Macros</a>  </div>
   <div class="headertitle">
 <div class="title">NetworkSession.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;StdAfx.h&quot;</code><br/>
-<code>#include &lt;Mmsystem.h&gt;</code><br/>
-<code>#include &quot;<a class="el" href="_main_character_8h_source.html">../../engine/MainCharacter/MainCharacter.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="_internet_room_8h_source.html">InternetRoom.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="resource_8h_source.html">resource.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="_network_session_8h_source.html">NetworkSession.h</a>&quot;</code><br/>
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for NetworkSession.cpp:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="_network_session_8cpp__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
-</div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_player_stats.html">HoverRace::Client::PlayerStats</a></td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2><a name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:namespace_hover_race"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hover_race.html">HoverRace</a></td></tr>
-<tr class="memitem:namespace_hover_race_1_1_client"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_client.html">HoverRace::Client</a></td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:abfb727218ca8733f8cb0d21c2aa135c5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_network_session_8cpp.html#abfb727218ca8733f8cb0d21c2aa135c5">MRNM_SET_TIME</a>&#160;&#160;&#160;1</td></tr>
-<tr class="memitem:ab634421a7f2d6d0929f21f8ef432874d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_network_session_8cpp.html#ab634421a7f2d6d0929f21f8ef432874d">MRNM_CREATE_MAIN_ELEM</a>&#160;&#160;&#160;2</td></tr>
-<tr class="memitem:a74e14bece52dd2a6c6f79948e9c45fb7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_network_session_8cpp.html#a74e14bece52dd2a6c6f79948e9c45fb7">MRNM_SET_MAIN_ELEM_STATE</a>&#160;&#160;&#160;3</td></tr>
-<tr class="memitem:a70d38621ec8ffc8125b860bffc57110c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_network_session_8cpp.html#a70d38621ec8ffc8125b860bffc57110c">MRNM_CREATE_AUTO_ELEM</a>&#160;&#160;&#160;4</td></tr>
-<tr class="memitem:a024b489a783cd4862bfcf1d9fc28ca72"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_network_session_8cpp.html#a024b489a783cd4862bfcf1d9fc28ca72">MRNM_CHAT_MESSAGE</a>&#160;&#160;&#160;6</td></tr>
-<tr class="memitem:aba3363b0e9103d2c57ed35de277ffc15"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_network_session_8cpp.html#aba3363b0e9103d2c57ed35de277ffc15">MRNM_PLAYER_STATS</a>&#160;&#160;&#160;7</td></tr>
-<tr class="memitem:a2d277aca88404117592b5f17b2cb8a76"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_network_session_8cpp.html#a2d277aca88404117592b5f17b2cb8a76">MRNM_SET_PERM_ELEMENT_STATE</a>&#160;&#160;&#160;8</td></tr>
-<tr class="memitem:a6c9edf5185233adbade567652120fe07"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_network_session_8cpp.html#a6c9edf5185233adbade567652120fe07">MRNM_SEND_KEYID</a>&#160;&#160;&#160;9</td></tr>
-<tr class="memitem:ad9980121ed277dac5a158235129c681f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_network_session_8cpp.html#ad9980121ed277dac5a158235129c681f">MRNM_HIT_MESSAGE</a>&#160;&#160;&#160;10</td></tr>
-</table>
-<h2>Macro Definition Documentation</h2>
-<a class="anchor" id="a024b489a783cd4862bfcf1d9fc28ca72"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MRNM_CHAT_MESSAGE&#160;&#160;&#160;6</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
+<div class="center"><iframe scrolling="no" frameborder="0" src="_network_session_8cpp__incl.svg" width="152" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
-<a class="anchor" id="a70d38621ec8ffc8125b860bffc57110c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MRNM_CREATE_AUTO_ELEM&#160;&#160;&#160;4</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ab634421a7f2d6d0929f21f8ef432874d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MRNM_CREATE_MAIN_ELEM&#160;&#160;&#160;2</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ad9980121ed277dac5a158235129c681f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MRNM_HIT_MESSAGE&#160;&#160;&#160;10</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aba3363b0e9103d2c57ed35de277ffc15"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MRNM_PLAYER_STATS&#160;&#160;&#160;7</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a6c9edf5185233adbade567652120fe07"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MRNM_SEND_KEYID&#160;&#160;&#160;9</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a74e14bece52dd2a6c6f79948e9c45fb7"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MRNM_SET_MAIN_ELEM_STATE&#160;&#160;&#160;3</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a2d277aca88404117592b5f17b2cb8a76"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MRNM_SET_PERM_ELEMENT_STATE&#160;&#160;&#160;8</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="abfb727218ca8733f8cb0d21c2aa135c5"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MRNM_SET_TIME&#160;&#160;&#160;1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-</div><!-- contents -->
+</div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 <a href="http://www.doxygen.org/index.html">

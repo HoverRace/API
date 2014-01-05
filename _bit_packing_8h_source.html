@@ -86,7 +86,7 @@
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="comment">// Need three bytes of padding to be safe in case we write</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="comment">// to the array starting at the last byte.</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno"><a class="code" href="struct_hover_race_1_1_util_1_1_bit_pack.html#a226c8fac611aa12b746432d1c4adcf2d">   35</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="struct_hover_race_1_1_util_1_1_bit_pack.html#a226c8fac611aa12b746432d1c4adcf2d">REALSIZE</a> = BYTES + 3;</div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="code" href="struct_hover_race_1_1_util_1_1_bit_pack.html#a73b0464fe962786b1c44679f14c83dbe">   36</a></span>&#160;    <a class="code" href="_m_r___types_8h.html#a3089f5b68dade59b5103438f6dbd5d03">MR_UInt8</a> <a class="code" href="struct_hover_race_1_1_util_1_1_bit_pack.html#a73b0464fe962786b1c44679f14c83dbe">mData</a>[<a class="code" href="struct_hover_race_1_1_util_1_1_bit_pack.html#a226c8fac611aa12b746432d1c4adcf2d">REALSIZE</a>];</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="code" href="struct_hover_race_1_1_util_1_1_bit_pack.html#ae8f7a83c07c035fcc3a35bd32c92a5a2">   36</a></span>&#160;    <span class="keywordtype">char</span> <a class="code" href="struct_hover_race_1_1_util_1_1_bit_pack.html#ae8f7a83c07c035fcc3a35bd32c92a5a2">bdata</a>[<a class="code" href="struct_hover_race_1_1_util_1_1_bit_pack.html#a226c8fac611aa12b746432d1c4adcf2d">REALSIZE</a>];</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="struct_hover_race_1_1_util_1_1_bit_pack.html#aab6b1945f9de71e1cc7c450d4dd666cc">InitFrom</a>(<span class="keyword">const</span> <a class="code" href="_m_r___types_8h.html#a3089f5b68dade59b5103438f6dbd5d03">MR_UInt8</a> *data);</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
@@ -97,27 +97,27 @@
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="_m_r___types_8h.html#abcc66530690cbfec146e654c252e684e">MR_UInt32</a> <a class="code" href="struct_hover_race_1_1_util_1_1_bit_pack.html#a0962d3171597bd5d3b5d40fa1e982f6e">Getu</a>(<span class="keywordtype">int</span> pOffset, <span class="keywordtype">int</span> pLen, <span class="keywordtype">int</span> pPrecision) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;};</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#ifdef HAVE_STDCXX_0X</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor"></span>static_assert(std::is_pod&lt;<a class="code" href="struct_hover_race_1_1_util_1_1_bit_pack.html">BitPack&lt;32&gt;</a>&gt;::value, <span class="stringliteral">&quot;BitPack must be a POD type&quot;</span>);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">template</span>&lt;<span class="keywordtype">int</span> BYTES&gt;</div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="code" href="struct_hover_race_1_1_util_1_1_bit_pack.html#aab6b1945f9de71e1cc7c450d4dd666cc">   52</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="struct_hover_race_1_1_util_1_1_bit_pack.html#aab6b1945f9de71e1cc7c450d4dd666cc">BitPack&lt;BYTES&gt;::InitFrom</a>(<span class="keyword">const</span> <a class="code" href="_m_r___types_8h.html#a3089f5b68dade59b5103438f6dbd5d03">MR_UInt8</a> *data) {</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    memcpy(mData, data, SIZE);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">template</span>&lt;<span class="keywordtype">int</span> BYTES&gt;</div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="code" href="struct_hover_race_1_1_util_1_1_bit_pack.html#a186b1f2b667edd619eac379981df5127">   57</a></span>&#160;<a class="code" href="_m_r___types_8h.html#a8bfe12ea5792920582684554d5f2e948">MR_Int32</a> <a class="code" href="struct_hover_race_1_1_util_1_1_bit_pack.html#a186b1f2b667edd619eac379981df5127">BitPack&lt;BYTES&gt;::Get</a>(<span class="keywordtype">int</span> pOffset, <span class="keywordtype">int</span> pLen, <span class="keywordtype">int</span> pPrecision)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">union </span>{</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <a class="code" href="_m_r___types_8h.html#a8bfe12ea5792920582684554d5f2e948">MR_Int32</a> s;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <a class="code" href="_m_r___types_8h.html#abcc66530690cbfec146e654c252e684e">MR_UInt32</a> u;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    } lReturnValue;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<a class="code" href="namespace_hover_race_1_1_util.html#a6238c31e92e0986e70b8319a3e0765d0">static_assert</a>(std::is_pod&lt;<a class="code" href="struct_hover_race_1_1_util_1_1_bit_pack.html">BitPack&lt;32&gt;</a>&gt;::value, <span class="stringliteral">&quot;BitPack must be a POD type&quot;</span>);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">template</span>&lt;<span class="keywordtype">int</span> BYTES&gt;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="code" href="struct_hover_race_1_1_util_1_1_bit_pack.html#aab6b1945f9de71e1cc7c450d4dd666cc">   50</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="struct_hover_race_1_1_util_1_1_bit_pack.html#aab6b1945f9de71e1cc7c450d4dd666cc">BitPack&lt;BYTES&gt;::InitFrom</a>(<span class="keyword">const</span> <a class="code" href="_m_r___types_8h.html#a3089f5b68dade59b5103438f6dbd5d03">MR_UInt8</a> *data) {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    memcpy(bdata, data, SIZE);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">template</span>&lt;<span class="keywordtype">int</span> BYTES&gt;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="code" href="struct_hover_race_1_1_util_1_1_bit_pack.html#a186b1f2b667edd619eac379981df5127">   55</a></span>&#160;<a class="code" href="_m_r___types_8h.html#a8bfe12ea5792920582684554d5f2e948">MR_Int32</a> <a class="code" href="struct_hover_race_1_1_util_1_1_bit_pack.html#a186b1f2b667edd619eac379981df5127">BitPack&lt;BYTES&gt;::Get</a>(<span class="keywordtype">int</span> pOffset, <span class="keywordtype">int</span> pLen, <span class="keywordtype">int</span> pPrecision)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">union </span>{</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <a class="code" href="_m_r___types_8h.html#a8bfe12ea5792920582684554d5f2e948">MR_Int32</a> s;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <a class="code" href="_m_r___types_8h.html#abcc66530690cbfec146e654c252e684e">MR_UInt32</a> u;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    } lReturnValue;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span> *cdata = <span class="keyword">static_cast&lt;</span><span class="keyword">const </span><span class="keywordtype">char</span>*<span class="keyword">&gt;</span>(bdata);</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    lReturnValue.u = (*(<a class="code" href="_m_r___types_8h.html#abcc66530690cbfec146e654c252e684e">MR_UInt32</a> *) (mData + pOffset / 8)) &gt;&gt; (pOffset % 8);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    lReturnValue.u = (*(<a class="code" href="_m_r___types_8h.html#abcc66530690cbfec146e654c252e684e">MR_UInt32</a> *) (cdata + pOffset / 8)) &gt;&gt; (pOffset % 8);</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">if</span>((pLen + (pOffset % 8)) &gt; 32) {</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        lReturnValue.u |= (*(<a class="code" href="_m_r___types_8h.html#abcc66530690cbfec146e654c252e684e">MR_UInt32</a> *) (mData + (pOffset / 8) + 4)) &lt;&lt; (32 - (pOffset % 8));</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        lReturnValue.u |= (*(<a class="code" href="_m_r___types_8h.html#abcc66530690cbfec146e654c252e684e">MR_UInt32</a> *) (cdata + (pOffset / 8) + 4)) &lt;&lt; (32 - (pOffset % 8));</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="comment">// Clear overhead bits and preserve sign</span></div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    lReturnValue.s = lReturnValue.s &lt;&lt; (32 - pLen) &gt;&gt; (32 - pLen);</div>
@@ -130,39 +130,43 @@
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword"></span>{</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <a class="code" href="_m_r___types_8h.html#abcc66530690cbfec146e654c252e684e">MR_UInt32</a> lReturnValue;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    lReturnValue = (*(<a class="code" href="_m_r___types_8h.html#abcc66530690cbfec146e654c252e684e">MR_UInt32</a> *) (mData + pOffset / 8)) &gt;&gt; (pOffset % 8);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span> *cdata = <span class="keyword">static_cast&lt;</span><span class="keyword">const </span><span class="keywordtype">char</span>*<span class="keyword">&gt;</span>(bdata);</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordflow">if</span>(pLen + (pOffset % 8) &gt; 32) {</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        lReturnValue |= (*(<a class="code" href="_m_r___types_8h.html#abcc66530690cbfec146e654c252e684e">MR_UInt32</a> *) (mData + (pOffset / 8) + 4)) &lt;&lt; (32 - (pOffset % 8));</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    }</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="comment">// Clear overhead bits</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    lReturnValue = lReturnValue &lt;&lt; (32 - pLen) &gt;&gt; (32 - pLen);</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordflow">return</span> lReturnValue &lt;&lt; pPrecision;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;}</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keyword">template</span>&lt;<span class="keywordtype">int</span> BYTES&gt;</div>
-<div class="line"><a name="l00092"></a><span class="lineno"><a class="code" href="struct_hover_race_1_1_util_1_1_bit_pack.html#a9be63e5bc815fd955d84e7b0a29c3d95">   92</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="struct_hover_race_1_1_util_1_1_bit_pack.html#a9be63e5bc815fd955d84e7b0a29c3d95">BitPack&lt;BYTES&gt;::Clear</a>()</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;{</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    memset(mData, 0, REALSIZE);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keyword">template</span>&lt;<span class="keywordtype">int</span> BYTES&gt;</div>
-<div class="line"><a name="l00098"></a><span class="lineno"><a class="code" href="struct_hover_race_1_1_util_1_1_bit_pack.html#a2339cee526ca2b772937bc767ed84966">   98</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="struct_hover_race_1_1_util_1_1_bit_pack.html#a2339cee526ca2b772937bc767ed84966">BitPack&lt;BYTES&gt;::Set</a>(<span class="keywordtype">int</span> pOffset, <span class="keywordtype">int</span> pLen, <span class="keywordtype">int</span> pPrecision, <a class="code" href="_m_r___types_8h.html#a8bfe12ea5792920582684554d5f2e948">MR_Int32</a> pValue)</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;{</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <a class="code" href="_m_r___types_8h.html#abcc66530690cbfec146e654c252e684e">MR_UInt32</a> lValue = pValue &gt;&gt; pPrecision;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    lValue = lValue &lt;&lt; (32 - pLen) &gt;&gt; (32 - pLen);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    lReturnValue = (*(<a class="code" href="_m_r___types_8h.html#abcc66530690cbfec146e654c252e684e">MR_UInt32</a> *) (cdata + pOffset / 8)) &gt;&gt; (pOffset % 8);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordflow">if</span>(pLen + (pOffset % 8) &gt; 32) {</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        lReturnValue |= (*(<a class="code" href="_m_r___types_8h.html#abcc66530690cbfec146e654c252e684e">MR_UInt32</a> *) (cdata + (pOffset / 8) + 4)) &lt;&lt; (32 - (pOffset % 8));</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    }</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="comment">// Clear overhead bits</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    lReturnValue = lReturnValue &lt;&lt; (32 - pLen) &gt;&gt; (32 - pLen);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">return</span> lReturnValue &lt;&lt; pPrecision;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;}</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keyword">template</span>&lt;<span class="keywordtype">int</span> BYTES&gt;</div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="code" href="struct_hover_race_1_1_util_1_1_bit_pack.html#a9be63e5bc815fd955d84e7b0a29c3d95">   94</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="struct_hover_race_1_1_util_1_1_bit_pack.html#a9be63e5bc815fd955d84e7b0a29c3d95">BitPack&lt;BYTES&gt;::Clear</a>()</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;{</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    memset(bdata, 0, REALSIZE);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;}</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="keyword">template</span>&lt;<span class="keywordtype">int</span> BYTES&gt;</div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="code" href="struct_hover_race_1_1_util_1_1_bit_pack.html#a2339cee526ca2b772937bc767ed84966">  100</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="struct_hover_race_1_1_util_1_1_bit_pack.html#a2339cee526ca2b772937bc767ed84966">BitPack&lt;BYTES&gt;::Set</a>(<span class="keywordtype">int</span> pOffset, <span class="keywordtype">int</span> pLen, <span class="keywordtype">int</span> pPrecision, <a class="code" href="_m_r___types_8h.html#a8bfe12ea5792920582684554d5f2e948">MR_Int32</a> pValue)</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;{</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordtype">char</span> *cdata = <span class="keyword">static_cast&lt;</span><span class="keywordtype">char</span>*<span class="keyword">&gt;</span>(bdata);</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    (*(<a class="code" href="_m_r___types_8h.html#abcc66530690cbfec146e654c252e684e">MR_UInt32</a> *) (mData + pOffset / 8)) |= lValue &lt;&lt; (pOffset % 8);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <a class="code" href="_m_r___types_8h.html#abcc66530690cbfec146e654c252e684e">MR_UInt32</a> lValue = pValue &gt;&gt; pPrecision;</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordflow">if</span>((pLen + (pOffset % 8)) &gt; 32) {</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        (*(<a class="code" href="_m_r___types_8h.html#abcc66530690cbfec146e654c252e684e">MR_UInt32</a> *) (mData + (pOffset / 8) + 4)) |= lValue &gt;&gt; (32 - (pOffset % 8));</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    }</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;}</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;}  <span class="comment">// namespace Util</span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;}  <span class="comment">// namespace HoverRace</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    lValue = lValue &lt;&lt; (32 - pLen) &gt;&gt; (32 - pLen);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    (*(<a class="code" href="_m_r___types_8h.html#abcc66530690cbfec146e654c252e684e">MR_UInt32</a> *) (cdata + pOffset / 8)) |= lValue &lt;&lt; (pOffset % 8);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordflow">if</span>((pLen + (pOffset % 8)) &gt; 32) {</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        (*(<a class="code" href="_m_r___types_8h.html#abcc66530690cbfec146e654c252e684e">MR_UInt32</a> *) (cdata + (pOffset / 8) + 4)) |= lValue &gt;&gt; (32 - (pOffset % 8));</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    }</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;}</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;}  <span class="comment">// namespace Util</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;}  <span class="comment">// namespace HoverRace</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

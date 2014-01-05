@@ -93,35 +93,36 @@
 <div class="line"><a name="l00040"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_video_services_1_1_bitmap.html">   40</a></span>&#160;<span class="keyword">class </span><a class="code" href="_bitmap_8h.html#a92ab9b5ccb38279197015ee3f200757a">MR_DllDeclare</a> <a class="code" href="class_hover_race_1_1_video_services_1_1_bitmap.html">Bitmap</a></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="comment">// Very flexible but may have to be change for performance issue</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="comment">// Bitmap related functions</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">int</span> GetWidth() <span class="keyword">const</span> = 0;         <span class="comment">// in mm</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">int</span> GetHeight() <span class="keyword">const</span> = 0;        <span class="comment">// in mm</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">int</span> GetMaxXRes() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">int</span> GetMaxYRes() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="_m_r___types_8h.html#a3089f5b68dade59b5103438f6dbd5d03">MR_UInt8</a> GetPlainColor() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="comment">// Subbitmap related functions</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">int</span> GetNbSubBitmap() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordtype">int</span> GetBestBitmapFor(<span class="keywordtype">int</span> pXRes, <span class="keywordtype">int</span> pYRes) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordtype">int</span> GetBestBitmapForYRes(<span class="keywordtype">int</span> pYRes) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordtype">int</span> GetBestBitmapForXRes(<span class="keywordtype">int</span> pXRes) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordtype">int</span> GetBestBitmapForPitch_4096(<span class="keywordtype">int</span> pPitch_4096) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">int</span> GetXRes(<span class="keywordtype">int</span> pSubBitmap) <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">int</span> GetYRes(<span class="keywordtype">int</span> pSubBitmap) <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">int</span> GetXResShiftFactor(<span class="keywordtype">int</span> pSubBitmap) <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">int</span> GetYResShiftFactor(<span class="keywordtype">int</span> pSubBitmap) <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="_m_r___types_8h.html#a3089f5b68dade59b5103438f6dbd5d03">MR_UInt8</a> *GetBuffer(<span class="keywordtype">int</span> pSubBitmap) <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="_m_r___types_8h.html#a3089f5b68dade59b5103438f6dbd5d03">MR_UInt8</a> *GetColumnBuffer(<span class="keywordtype">int</span> pSubBitmap, <span class="keywordtype">int</span> pColumn) <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="_m_r___types_8h.html#a3089f5b68dade59b5103438f6dbd5d03">MR_UInt8</a> **GetColumnBufferTable(<span class="keywordtype">int</span> pSubBitmap) <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;};</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}  <span class="comment">// namespace VideoServices</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}  <span class="comment">// namespace HoverRace</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#undef MR_DllDeclare</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_video_services_1_1_bitmap.html#a25f97ecf006b700c80680af7b740c643">   44</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class_hover_race_1_1_video_services_1_1_bitmap.html#a25f97ecf006b700c80680af7b740c643">~Bitmap</a>() { }</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="comment">// Bitmap related functions</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">int</span> GetWidth() <span class="keyword">const</span> = 0;         <span class="comment">// in mm</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">int</span> GetHeight() <span class="keyword">const</span> = 0;        <span class="comment">// in mm</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">int</span> GetMaxXRes() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">int</span> GetMaxYRes() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="_m_r___types_8h.html#a3089f5b68dade59b5103438f6dbd5d03">MR_UInt8</a> GetPlainColor() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="comment">// Subbitmap related functions</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">int</span> GetNbSubBitmap() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordtype">int</span> GetBestBitmapFor(<span class="keywordtype">int</span> pXRes, <span class="keywordtype">int</span> pYRes) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordtype">int</span> GetBestBitmapForYRes(<span class="keywordtype">int</span> pYRes) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordtype">int</span> GetBestBitmapForXRes(<span class="keywordtype">int</span> pXRes) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordtype">int</span> GetBestBitmapForPitch_4096(<span class="keywordtype">int</span> pPitch_4096) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">int</span> GetXRes(<span class="keywordtype">int</span> pSubBitmap) <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">int</span> GetYRes(<span class="keywordtype">int</span> pSubBitmap) <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">int</span> GetXResShiftFactor(<span class="keywordtype">int</span> pSubBitmap) <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">int</span> GetYResShiftFactor(<span class="keywordtype">int</span> pSubBitmap) <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="_m_r___types_8h.html#a3089f5b68dade59b5103438f6dbd5d03">MR_UInt8</a> *GetBuffer(<span class="keywordtype">int</span> pSubBitmap) <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="_m_r___types_8h.html#a3089f5b68dade59b5103438f6dbd5d03">MR_UInt8</a> *GetColumnBuffer(<span class="keywordtype">int</span> pSubBitmap, <span class="keywordtype">int</span> pColumn) <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="_m_r___types_8h.html#a3089f5b68dade59b5103438f6dbd5d03">MR_UInt8</a> **GetColumnBufferTable(<span class="keywordtype">int</span> pSubBitmap) <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;};</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}  <span class="comment">// namespace VideoServices</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}  <span class="comment">// namespace HoverRace</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#undef MR_DllDeclare</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

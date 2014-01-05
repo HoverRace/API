@@ -62,11 +62,6 @@
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="_client_session_8h_source.html">ClientSession.h</a>&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for HoverRace::Client::ClientSession:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_hover_race_1_1_client_1_1_client_session__inherit__graph.svg" width="139" height="150"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -76,9 +71,10 @@ Classes</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a4a0653b0e884b0145a7a2b7c2d6d3902"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_client_session.html#a4a0653b0e884b0145a7a2b7c2d6d3902">ClientSession</a> (std::shared_ptr&lt; <a class="el" href="class_hover_race_1_1_client_1_1_rules.html">Rules</a> &gt; <a class="el" href="class_hover_race_1_1_client_1_1_client_session.html#a6ac1a22221aa00ab92dbcb801f67442d">rules</a>=nullptr)</td></tr>
 <tr class="memitem:a5b0526884effc5d762ae40bbbeaff46f"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_client_session.html#a5b0526884effc5d762ae40bbbeaff46f">~ClientSession</a> ()</td></tr>
-<tr class="memitem:a51add7d868974cb594305f12ce756fa7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_client_session.html#a51add7d868974cb594305f12ce756fa7">Process</a> (int pSpeedFactor=1)</td></tr>
+<tr class="memitem:ae7e4b9d3f49b95a21a019990968431ea"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_client_session.html#ae7e4b9d3f49b95a21a019990968431ea">Process</a> ()</td></tr>
 <tr class="memitem:a857c4018b63009e8f9b8ce8e07090072"><td class="memItemLeft" align="right" valign="top">virtual BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_client_session.html#a857c4018b63009e8f9b8ce8e07090072">LoadNew</a> (const char *pTitle, <a class="el" href="namespace_hover_race_1_1_parcel.html#aed367add10793d385687b45b8b9981fc">Parcel::RecordFilePtr</a> pMazeFile, <a class="el" href="class_hover_race_1_1_video_services_1_1_video_buffer.html">VideoServices::VideoBuffer</a> *pVideo)</td></tr>
 <tr class="memitem:a95ef031cfddcf102777cf7b1349450b8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_client_session.html#a95ef031cfddcf102777cf7b1349450b8">CreateMainCharacter</a> (int i)</td></tr>
+<tr class="memitem:a683f55676fb93050e70c4fcda30a598f"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_hover_race_1_1_util_1_1_clock.html">Util::Clock</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_client_session.html#a683f55676fb93050e70c4fcda30a598f">GetClock</a> ()</td></tr>
 <tr class="memitem:a4e30ef77815649ed06545b95f8765899"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_client_session.html#a4e30ef77815649ed06545b95f8765899">SetSimulationTime</a> (<a class="el" href="_world_coordinates_8h.html#a42c86298bd2b0e3828f25069bbd8195a">MR_SimulationTime</a> pTime)</td></tr>
 <tr class="memitem:adca1486c3d9d2e630ff24c0cc11fcddd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_world_coordinates_8h.html#a42c86298bd2b0e3828f25069bbd8195a">MR_SimulationTime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_client_session.html#adca1486c3d9d2e630ff24c0cc11fcddd">GetSimulationTime</a> () const </td></tr>
 <tr class="memitem:a76f6c81ea00bf58dfd0e24195718016d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_client_session.html#a76f6c81ea00bf58dfd0e24195718016d">UpdateCharacterSimulationTimes</a> ()</td></tr>
@@ -118,6 +114,7 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:aa829a4de0bb9e9c1f67e0165293acf44"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_client_session.html#aa829a4de0bb9e9c1f67e0165293acf44">mHeightMap</a></td></tr>
 <tr class="memitem:a04b0da76f78d5f25bb3a1aa06a4684e7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_client_session.html#a04b0da76f78d5f25bb3a1aa06a4684e7">mWidthSprite</a></td></tr>
 <tr class="memitem:a9e746ccbb4140e48b33c79c00792df20"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_client_session.html#a9e746ccbb4140e48b33c79c00792df20">mHeightSprite</a></td></tr>
+<tr class="memitem:a1f45197ab934063b42da669b2c5b12d9"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_hover_race_1_1_util_1_1_clock.html">Util::Clock</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_client_session.html#a1f45197ab934063b42da669b2c5b12d9">clock</a></td></tr>
 <tr class="memitem:a6ac1a22221aa00ab92dbcb801f67442d"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_hover_race_1_1_client_1_1_rules.html">Rules</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_client_session.html#a6ac1a22221aa00ab92dbcb801f67442d">rules</a></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pro-static-attribs"></a>
@@ -204,8 +201,6 @@ Static Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="class_hover_race_1_1_client_1_1_network_session.html#a877d10c83b6ec0d612d24dbd69838d8f">HoverRace::Client::NetworkSession</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="ad12b2c4b8ed798817b018101f21cd13c"></a>
@@ -271,6 +266,29 @@ Static Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a683f55676fb93050e70c4fcda30a598f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="class_hover_race_1_1_util_1_1_clock.html">Util::Clock</a>&gt; HoverRace::Client::ClientSession::GetClock </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a773d01c638bb56adde620bd9a81f2f87"></a>
 <div class="memitem">
 <div class="memproto">
@@ -307,8 +325,6 @@ Static Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Reimplemented in <a class="el" href="class_hover_race_1_1_client_1_1_network_session.html#a76f56675ef8920a89a3d56470f6bf662">HoverRace::Client::NetworkSession</a>.</p>
 
 </div>
 </div>
@@ -368,8 +384,6 @@ Static Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000002">Deprecated:</a></b></dt><dd></dd></dl>
-
-<p>Reimplemented in <a class="el" href="class_hover_race_1_1_client_1_1_network_session.html#ab8dfb8bafd72a89c8c4990fc041148c0">HoverRace::Client::NetworkSession</a>.</p>
 
 </div>
 </div>
@@ -441,8 +455,6 @@ Static Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="class_hover_race_1_1_client_1_1_network_session.html#a4d2eee8ba4b935d94c1a4a58f95739fa">HoverRace::Client::NetworkSession</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a5130019d4a29ec8ebb22ee4c5ad8887b"></a>
@@ -467,8 +479,6 @@ Static Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="class_hover_race_1_1_client_1_1_network_session.html#a83e7152c6c6f86aef9251ab66d2ebafc">HoverRace::Client::NetworkSession</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a0897fad4391404fd8df7ccee0dc982ef"></a>
@@ -492,8 +502,6 @@ Static Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Reimplemented in <a class="el" href="class_hover_race_1_1_client_1_1_network_session.html#a3b10c648196a1209f7d446a3ac761f63">HoverRace::Client::NetworkSession</a>.</p>
 
 </div>
 </div>
@@ -559,8 +567,6 @@ Static Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Deprecated:</a></b></dt><dd></dd></dl>
-
-<p>Reimplemented in <a class="el" href="class_hover_race_1_1_client_1_1_network_session.html#a8e289a291cb256b060ddd34245b3f1a2">HoverRace::Client::NetworkSession</a>.</p>
 
 </div>
 </div>
@@ -642,7 +648,7 @@ Static Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a51add7d868974cb594305f12ce756fa7"></a>
+<a class="anchor" id="ae7e4b9d3f49b95a21a019990968431ea"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -652,8 +658,7 @@ Static Protected Attributes</h2></td></tr>
         <tr>
           <td class="memname">void HoverRace::Client::ClientSession::Process </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>pSpeedFactor</em> = <code>1</code></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -663,8 +668,6 @@ Static Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Reimplemented in <a class="el" href="class_hover_race_1_1_client_1_1_network_session.html#aec6bc23e19a0d0aa3046c1f996761d6f">HoverRace::Client::NetworkSession</a>.</p>
 
 </div>
 </div>
@@ -722,8 +725,6 @@ Static Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Reimplemented in <a class="el" href="class_hover_race_1_1_client_1_1_network_session.html#ada72e2bf768e14c1096b08766a0234e4">HoverRace::Client::NetworkSession</a>.</p>
 
 </div>
 </div>
@@ -793,8 +794,6 @@ Static Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="class_hover_race_1_1_client_1_1_network_session.html#aa50a200e689057b7c260b74f1102bb82">HoverRace::Client::NetworkSession</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a76f6c81ea00bf58dfd0e24195718016d"></a>
@@ -847,6 +846,26 @@ Static Protected Attributes</h2></td></tr>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">mutable</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1f45197ab934063b42da669b2c5b12d9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="class_hover_race_1_1_util_1_1_clock.html">Util::Clock</a>&gt; HoverRace::Client::ClientSession::clock</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

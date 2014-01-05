@@ -53,31 +53,31 @@
 <div class="contents">
 <a href="_session_peer_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// SessionPeer.h</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// Scripting peer for a game session.</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">// Copyright (c) 2010 Michael Imamura.</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">// Licensed under GrokkSoft HoverRace SourceCode License v1.0(the &quot;License&quot;);</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">// you may not use this file except in compliance with the License.</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// A copy of the license should have been attached to the package from which</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// you have taken this file. If you can not find the license you can not use</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">// this file.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// Copyright (c) 2010, 2013 Michael Imamura.</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">// Licensed under GrokkSoft HoverRace SourceCode License v1.0(the &quot;License&quot;);</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">// you may not use this file except in compliance with the License.</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">// A copy of the license should have been attached to the package from which</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// you have taken this file. If you can not find the license you can not use</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// this file.</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// The author makes no representations about the suitability of</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// this software for any purpose.  It is provided &quot;as is&quot; &quot;AS IS&quot;,</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">// implied.</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">// See the License for the specific language governing permissions</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">// and limitations under the License.</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;luabind/luabind.hpp&gt;</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &lt;luabind/object.hpp&gt;</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">// The author makes no representations about the suitability of</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// this software for any purpose.  It is provided &quot;as is&quot; &quot;AS IS&quot;,</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">// implied.</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">// See the License for the specific language governing permissions</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">// and limitations under the License.</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;luabind/luabind.hpp&gt;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;luabind/object.hpp&gt;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;../../../engine/Util/WorldCoordinates.h&quot;</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;../../../engine/Script/Peer.h&quot;</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">namespace </span>HoverRace {</div>
@@ -90,41 +90,58 @@
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">namespace </span>Script {</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keyword">class </span>Core;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    }</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">namespace </span>HoverRace {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">namespace </span>Client {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">namespace </span>HoverScript {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_hover_script_1_1_session_peer.html">   50</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_hover_race_1_1_client_1_1_hover_script_1_1_session_peer.html" title="Scripting peer for a game session.">SessionPeer</a> : <span class="keyword">public</span> <a class="code" href="class_hover_race_1_1_script_1_1_peer.html" title="Base class for script peers that extend Object.">Script::Peer</a> {</div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_hover_script_1_1_session_peer.html#afb4e3a9beae87708c3b1be1cc226b188">   51</a></span>&#160;    <span class="keyword">typedef</span> <a class="code" href="class_hover_race_1_1_script_1_1_peer.html" title="Base class for script peers that extend Object.">Script::Peer</a> <a class="code" href="class_hover_race_1_1_client_1_1_hover_script_1_1_session_peer.html#afb4e3a9beae87708c3b1be1cc226b188">SUPER</a>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <a class="code" href="class_hover_race_1_1_client_1_1_hover_script_1_1_session_peer.html#ad2c7a91f477efb12904eb6ffd21a66ef">SessionPeer</a>(<a class="code" href="class_hover_race_1_1_script_1_1_core.html" title="A script environment.">Script::Core</a> *<a class="code" href="class_hover_race_1_1_script_1_1_peer.html#a1fcd626aeb79d2ab853b38335df69f48">scripting</a>, <a class="code" href="class_hover_race_1_1_client_1_1_client_session.html">ClientSession</a> *<a class="code" href="class_hover_race_1_1_client_1_1_hover_script_1_1_session_peer.html#a5a6eb9c6340e6d9beab75fb5cd72b4a9">session</a>);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class_hover_race_1_1_client_1_1_hover_script_1_1_session_peer.html#ac1c2ff542cc504db78b2884f51b426e9">~SessionPeer</a>();</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_hover_race_1_1_client_1_1_hover_script_1_1_session_peer.html#a95c317c8d1336006cf132ed5172e6a5d" title="Register this peer in an environment.">Register</a>(<a class="code" href="class_hover_race_1_1_script_1_1_core.html" title="A script environment.">Script::Core</a> *<a class="code" href="class_hover_race_1_1_script_1_1_peer.html#a1fcd626aeb79d2ab853b38335df69f48">scripting</a>);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">namespace </span>Util {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keyword">class </span>Clock;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">namespace </span>HoverRace {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">namespace </span>Client {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">namespace </span>HoverScript {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_hover_script_1_1_session_peer.html">   53</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_hover_race_1_1_client_1_1_hover_script_1_1_session_peer.html" title="Scripting peer for a game session.">SessionPeer</a> : <span class="keyword">public</span> <a class="code" href="class_hover_race_1_1_script_1_1_peer.html" title="Base class for script peers that extend Object.">Script::Peer</a> {</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_hover_script_1_1_session_peer.html#afb4e3a9beae87708c3b1be1cc226b188">   54</a></span>&#160;    <span class="keyword">typedef</span> <a class="code" href="class_hover_race_1_1_script_1_1_peer.html" title="Base class for script peers that extend Object.">Script::Peer</a> <a class="code" href="class_hover_race_1_1_client_1_1_hover_script_1_1_session_peer.html#afb4e3a9beae87708c3b1be1cc226b188">SUPER</a>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <a class="code" href="class_hover_race_1_1_client_1_1_hover_script_1_1_session_peer.html#ad2c7a91f477efb12904eb6ffd21a66ef">SessionPeer</a>(<a class="code" href="class_hover_race_1_1_script_1_1_core.html" title="A script environment.">Script::Core</a> *<a class="code" href="class_hover_race_1_1_script_1_1_peer.html#a1fcd626aeb79d2ab853b38335df69f48">scripting</a>, <a class="code" href="class_hover_race_1_1_client_1_1_client_session.html">ClientSession</a> *<a class="code" href="class_hover_race_1_1_client_1_1_hover_script_1_1_session_peer.html#a5a6eb9c6340e6d9beab75fb5cd72b4a9">session</a>);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class_hover_race_1_1_client_1_1_hover_script_1_1_session_peer.html#ac1c2ff542cc504db78b2884f51b426e9">~SessionPeer</a>();</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_hover_race_1_1_client_1_1_hover_script_1_1_session_peer.html#a38124173b841ff00c490ce80e37992cc" title="Signal that the session has ended.">OnSessionEnd</a>();</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_hover_race_1_1_client_1_1_hover_script_1_1_session_peer.html#a95c317c8d1336006cf132ed5172e6a5d" title="Register this peer in an environment.">Register</a>(<a class="code" href="class_hover_race_1_1_script_1_1_core.html" title="A script environment.">Script::Core</a> *<a class="code" href="class_hover_race_1_1_script_1_1_peer.html#a1fcd626aeb79d2ab853b38335df69f48">scripting</a>);</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_hover_race_1_1_client_1_1_hover_script_1_1_session_peer.html#ad426932b48f978782b0ec7646218443c" title="Verify that the session is still active.">VerifySession</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_hover_race_1_1_client_1_1_hover_script_1_1_session_peer.html#a2a08616261c780548576c465b356884f">LGetNumPlayers</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_hover_script_1_1_session_peer.html#a5a6eb9c6340e6d9beab75fb5cd72b4a9">   69</a></span>&#160;        <a class="code" href="class_hover_race_1_1_client_1_1_client_session.html">ClientSession</a> *<a class="code" href="class_hover_race_1_1_client_1_1_hover_script_1_1_session_peer.html#a5a6eb9c6340e6d9beab75fb5cd72b4a9">session</a>;</div>
-<div class="line"><a name="l00070"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_hover_script_1_1_session_peer.html#ac0297ba043b999300d309b11f7c0f106">   70</a></span>&#160;        luabind::object <a class="code" href="class_hover_race_1_1_client_1_1_hover_script_1_1_session_peer.html#ac0297ba043b999300d309b11f7c0f106">rules</a>;</div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_hover_script_1_1_session_peer.html#aa789497177d111efd2fbd63fb2137831">   71</a></span>&#160;        luabind::object <a class="code" href="class_hover_race_1_1_client_1_1_hover_script_1_1_session_peer.html#aa789497177d111efd2fbd63fb2137831">players</a>;</div>
-<div class="line"><a name="l00072"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_hover_script_1_1_session_peer.html#a6647bdd93888fc187a0302acfd2b51ce">   72</a></span>&#160;        std::vector&lt;std::shared_ptr&lt;PlayerPeer&gt;&gt; <a class="code" href="class_hover_race_1_1_client_1_1_hover_script_1_1_session_peer.html#a6647bdd93888fc187a0302acfd2b51ce">playerRefs</a>;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;};</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">typedef</span> std::shared_ptr&lt;SessionPeer&gt; <a class="code" href="namespace_hover_race_1_1_client_1_1_hover_script.html#a8007a6a9e1cc5a78dcd9d4155ddcfbad">SessionPeerPtr</a>;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}  <span class="comment">// namespace HoverScript</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}  <span class="comment">// namespace Client</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}  <span class="comment">// namespace HoverRace</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">class</span> Fn&gt;</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_hover_script_1_1_session_peer.html#ada67d12485d2fff8b7d7aef6942f41ff">   64</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_hover_race_1_1_client_1_1_hover_script_1_1_session_peer.html#ada67d12485d2fff8b7d7aef6942f41ff">ForEachPlayer</a>(Fn fn)</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <span class="keywordflow">if</span> (!<a class="code" href="class_hover_race_1_1_client_1_1_hover_script_1_1_session_peer.html#a6647bdd93888fc187a0302acfd2b51ce">playerRefs</a>.empty()) {</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                std::for_each(<a class="code" href="class_hover_race_1_1_client_1_1_hover_script_1_1_session_peer.html#a6647bdd93888fc187a0302acfd2b51ce">playerRefs</a>.begin(), <a class="code" href="class_hover_race_1_1_client_1_1_hover_script_1_1_session_peer.html#a6647bdd93888fc187a0302acfd2b51ce">playerRefs</a>.end(), fn);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        }</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_hover_script_1_1_session_peer.html#a4d5dd4bfde9cf1d32d4d71f3db97ef24">   70</a></span>&#160;        std::shared_ptr&lt;PlayerPeer&gt; &amp;<a class="code" href="class_hover_race_1_1_client_1_1_hover_script_1_1_session_peer.html#a4d5dd4bfde9cf1d32d4d71f3db97ef24">GetPlayer</a>(<span class="keywordtype">unsigned</span> idx)</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="class_hover_race_1_1_client_1_1_hover_script_1_1_session_peer.html#a6647bdd93888fc187a0302acfd2b51ce">playerRefs</a>[idx];</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_hover_race_1_1_client_1_1_hover_script_1_1_session_peer.html#a38124173b841ff00c490ce80e37992cc" title="Signal that the session has ended.">OnSessionEnd</a>();</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_hover_race_1_1_client_1_1_hover_script_1_1_session_peer.html#ad426932b48f978782b0ec7646218443c" title="Verify that the session is still active.">VerifySession</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_hover_race_1_1_client_1_1_hover_script_1_1_session_peer.html#a2a08616261c780548576c465b356884f">LGetNumPlayers</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <a class="code" href="_world_coordinates_8h.html#a42c86298bd2b0e3828f25069bbd8195a">MR_SimulationTime</a> <a class="code" href="class_hover_race_1_1_client_1_1_hover_script_1_1_session_peer.html#a58b05f4e71cbfb4ef2d10947ea7c1b7e">LGetTime</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        std::shared_ptr&lt;Util::Clock&gt; <a class="code" href="class_hover_race_1_1_client_1_1_hover_script_1_1_session_peer.html#aeaccaa505b631bb9c0b2dc54178a9a4a">LGetClock</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_hover_script_1_1_session_peer.html#a5a6eb9c6340e6d9beab75fb5cd72b4a9">   86</a></span>&#160;        <a class="code" href="class_hover_race_1_1_client_1_1_client_session.html">ClientSession</a> *<a class="code" href="class_hover_race_1_1_client_1_1_hover_script_1_1_session_peer.html#a5a6eb9c6340e6d9beab75fb5cd72b4a9">session</a>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_hover_script_1_1_session_peer.html#ac0297ba043b999300d309b11f7c0f106">   87</a></span>&#160;        luabind::object <a class="code" href="class_hover_race_1_1_client_1_1_hover_script_1_1_session_peer.html#ac0297ba043b999300d309b11f7c0f106">rules</a>;</div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_hover_script_1_1_session_peer.html#aa789497177d111efd2fbd63fb2137831">   88</a></span>&#160;        luabind::object <a class="code" href="class_hover_race_1_1_client_1_1_hover_script_1_1_session_peer.html#aa789497177d111efd2fbd63fb2137831">players</a>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_hover_script_1_1_session_peer.html#a6647bdd93888fc187a0302acfd2b51ce">   89</a></span>&#160;        std::vector&lt;std::shared_ptr&lt;PlayerPeer&gt;&gt; <a class="code" href="class_hover_race_1_1_client_1_1_hover_script_1_1_session_peer.html#a6647bdd93888fc187a0302acfd2b51ce">playerRefs</a>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;};</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keyword">typedef</span> std::shared_ptr&lt;SessionPeer&gt; <a class="code" href="namespace_hover_race_1_1_client_1_1_hover_script.html#a8007a6a9e1cc5a78dcd9d4155ddcfbad">SessionPeerPtr</a>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;}  <span class="comment">// namespace HoverScript</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;}  <span class="comment">// namespace Client</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}  <span class="comment">// namespace HoverRace</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

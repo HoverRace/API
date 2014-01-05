@@ -51,241 +51,243 @@
 <div class="title">InternetRoom.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_internet_room_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// InternetRoom.h</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//</span></div>
+<a href="_internet_room_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifdef HR_LEGACY_BUILD</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="comment">// InternetRoom.h</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// Copyright (c) 1995-1998 - Richard Langlois and Grokksoft Inc.</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">// Licensed under GrokkSoft HoverRace SourceCode License v1.0(the &quot;License&quot;);</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">// you may not use this file except in compliance with the License.</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">// A copy of the license should have been attached to the package from which</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// you have taken this file. If you can not find the license you can not use</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// this file.</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">// Copyright (c) 1995-1998 - Richard Langlois and Grokksoft Inc.</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">// Licensed under GrokkSoft HoverRace SourceCode License v1.0(the &quot;License&quot;);</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">// you may not use this file except in compliance with the License.</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// A copy of the license should have been attached to the package from which</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// you have taken this file. If you can not find the license you can not use</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">// this file.</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">// The author makes no representations about the suitability of</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// this software for any purpose.  It is provided &quot;as is&quot; &quot;AS IS&quot;,</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">// implied.</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">// See the License for the specific language governing permissions</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">// and limitations under the License.</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;WINSOCK.h&gt;</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;../../engine/Parcel/TrackBundle.h&quot;</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_track_select_dialog_8h.html">TrackSelectDialog.h</a>&quot;</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_network_session_8h.html">NetworkSession.h</a>&quot;</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_gif_decoder_8h.html">GifDecoder.h</a>&quot;</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_room_list_8h.html">RoomList.h</a>&quot;</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">namespace </span>HoverRace {</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">namespace </span>Client {</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_internet_request.html">   39</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_hover_race_1_1_client_1_1_internet_request.html">InternetRequest</a></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_internet_request.html#a4974aae8f48681612716925d2e2a82ee">   42</a></span>&#160;        time_t <a class="code" href="class_hover_race_1_1_client_1_1_internet_request.html#a4974aae8f48681612716925d2e2a82ee">mStartTime</a>;</div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_internet_request.html#aefada220ade600ac48c13ea7cae3eb2d">   43</a></span>&#160;        BOOL <a class="code" href="class_hover_race_1_1_client_1_1_internet_request.html#aefada220ade600ac48c13ea7cae3eb2d">mBinMode</a>;                            <span class="comment">// use Bin buffer and Bin sending mode&quot;referer request&quot;</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_internet_request.html#a71482916d7b1306b679a18e21d11c001">   45</a></span>&#160;        SOCKET <a class="code" href="class_hover_race_1_1_client_1_1_internet_request.html#a71482916d7b1306b679a18e21d11c001">mSocket</a>;</div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_internet_request.html#ad51af3b26ebf8e843dc0c8990c205722">   46</a></span>&#160;        std::string <a class="code" href="class_hover_race_1_1_client_1_1_internet_request.html#ad51af3b26ebf8e843dc0c8990c205722">mRequest</a>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_internet_request.html#abbd1af0cd2b609740c18d921929db63e">   47</a></span>&#160;        std::string <a class="code" href="class_hover_race_1_1_client_1_1_internet_request.html#abbd1af0cd2b609740c18d921929db63e">mBuffer</a>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_internet_request.html#a2028b35830fb283d8dc2b5d3603d12bd">   49</a></span>&#160;        <span class="keywordtype">char</span> *<a class="code" href="class_hover_race_1_1_client_1_1_internet_request.html#a2028b35830fb283d8dc2b5d3603d12bd">mBinBuffer</a>;</div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_internet_request.html#a7ae6068affbc21623f796083028cf5b9">   50</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_hover_race_1_1_client_1_1_internet_request.html#a7ae6068affbc21623f796083028cf5b9">mBinIndex</a>;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_hover_race_1_1_client_1_1_internet_request.html#a378183bc360d783b3e8d1290b27e4001">Close</a>();</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        BOOL <a class="code" href="class_hover_race_1_1_client_1_1_internet_request.html#a3368ebc9469a3720bf78da86423f3f5c">Working</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <a class="code" href="class_hover_race_1_1_client_1_1_internet_request.html#aef474c4883e9d909d91f3a1daed00363">InternetRequest</a>();</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <a class="code" href="class_hover_race_1_1_client_1_1_internet_request.html#aee140adffbb926a151797d0149756875">~InternetRequest</a>();</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_hover_race_1_1_client_1_1_internet_request.html#a334d5650b0612e675ad7528f3bb595d6">SetBin</a>();</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        BOOL <a class="code" href="class_hover_race_1_1_client_1_1_internet_request.html#a800f4254408df3e109be0fd5823175d6">Send</a>(HWND pWindow, <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> pIP, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> pPort, <span class="keyword">const</span> <span class="keywordtype">char</span> *pURL, <span class="keyword">const</span> <span class="keywordtype">char</span> *pCoookie = NULL);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_hover_race_1_1_client_1_1_internet_request.html#a946c34216928418c69282006ae10664f">Clear</a>();                             <span class="comment">// Abort and clean</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                                                  <span class="comment">// return TRUE if some processing was done</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        BOOL <a class="code" href="class_hover_race_1_1_client_1_1_internet_request.html#ad6aedcf6139e56ef1d6ca74f83c13d1f">ProcessEvent</a>(WPARAM pWParam, LPARAM pLParam);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="class_hover_race_1_1_client_1_1_internet_request.html#a9d348a88c0c7f30e030ffd9b9f180972">GetBuffer</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="class_hover_race_1_1_client_1_1_internet_request.html#a47c1573bd0566e1a88eec1842d01adb4">GetBinBuffer</a>(<span class="keywordtype">int</span> &amp;pSize) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        BOOL <a class="code" href="class_hover_race_1_1_client_1_1_internet_request.html#a68591cfa4950898e723b405b742bcf20">IsReady</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;};</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html">   72</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html">InternetRoom</a></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;{</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keyword">enum</span> {</div>
-<div class="line"><a name="l00076"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#ad954dd2a6984a62390d3a0c054aa09dca0fb41baec6d33cda00881b7ddfda77b6">   76</a></span>&#160;            <a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#ad954dd2a6984a62390d3a0c054aa09dca0fb41baec6d33cda00881b7ddfda77b6">eMaxClient</a> = 300,</div>
-<div class="line"><a name="l00077"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#ad954dd2a6984a62390d3a0c054aa09dca38af31e927704404966c203eb0399350">   77</a></span>&#160;            <a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#ad954dd2a6984a62390d3a0c054aa09dca38af31e927704404966c203eb0399350">eMaxGame</a> = 100,</div>
-<div class="line"><a name="l00078"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#ad954dd2a6984a62390d3a0c054aa09dca79da62052da107c2f82154209cb71e1c">   78</a></span>&#160;            <a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#ad954dd2a6984a62390d3a0c054aa09dca79da62052da107c2f82154209cb71e1c">eMaxChat</a> = 50,</div>
-<div class="line"><a name="l00079"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#ad954dd2a6984a62390d3a0c054aa09dcaa9f2aadf7fef6326deb38c61ef6d0092">   79</a></span>&#160;            <a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#ad954dd2a6984a62390d3a0c054aa09dcaa9f2aadf7fef6326deb38c61ef6d0092">eMaxPlayerGame</a> = 16</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        };</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keyword">enum</span> {</div>
-<div class="line"><a name="l00083"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#a8ad69155b00e368e7b09a6816ddc376ea04fb558a43d125baa06c02a3323e0425">   83</a></span>&#160;            <a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#a8ad69155b00e368e7b09a6816ddc376ea04fb558a43d125baa06c02a3323e0425">eChatModified</a> = 1,</div>
-<div class="line"><a name="l00084"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#a8ad69155b00e368e7b09a6816ddc376ea179e24a778ea6e94bc040aa1ccab5cc7">   84</a></span>&#160;            <a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#a8ad69155b00e368e7b09a6816ddc376ea179e24a778ea6e94bc040aa1ccab5cc7">eUsersModified</a> = 2,</div>
-<div class="line"><a name="l00085"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#a8ad69155b00e368e7b09a6816ddc376ea13e83a86fd715b7c0b1cf513e4033d10">   85</a></span>&#160;            <a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#a8ad69155b00e368e7b09a6816ddc376ea13e83a86fd715b7c0b1cf513e4033d10">eGamesModified</a> = 4</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        };</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
-<div class="line"><a name="l00090"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_internet_room_1_1_client.html">   90</a></span>&#160;        <span class="keyword">class </span><a class="code" href="class_hover_race_1_1_client_1_1_internet_room_1_1_client.html">Client</a></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        {</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00093"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_internet_room_1_1_client.html#a2360d2e636c9d1588adaeb226c4f8a7a">   93</a></span>&#160;                BOOL <a class="code" href="class_hover_race_1_1_client_1_1_internet_room_1_1_client.html#a2360d2e636c9d1588adaeb226c4f8a7a">mValid</a>;</div>
-<div class="line"><a name="l00094"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_internet_room_1_1_client.html#a5b80c645e215b9f14a398bfb0b0013c1">   94</a></span>&#160;                std::string <a class="code" href="class_hover_race_1_1_client_1_1_internet_room_1_1_client.html#a5b80c645e215b9f14a398bfb0b0013c1">mName</a>;</div>
-<div class="line"><a name="l00095"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_internet_room_1_1_client.html#ab9ec9747a490dc5f2966c6e3c8fe439b">   95</a></span>&#160;                <span class="keywordtype">int</span> <a class="code" href="class_hover_race_1_1_client_1_1_internet_room_1_1_client.html#ab9ec9747a490dc5f2966c6e3c8fe439b">mGame</a>;</div>
-<div class="line"><a name="l00096"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_internet_room_1_1_client.html#ad14158f5abba1e9cf062c000a0ea03d0">   96</a></span>&#160;                <span class="keywordtype">int</span> <a class="code" href="class_hover_race_1_1_client_1_1_internet_room_1_1_client.html#ad14158f5abba1e9cf062c000a0ea03d0">mMajorID</a>;</div>
-<div class="line"><a name="l00097"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_internet_room_1_1_client.html#a674b0e6d9a4b6d5fb5d9f507c82e9d10">   97</a></span>&#160;                <span class="keywordtype">int</span> <a class="code" href="class_hover_race_1_1_client_1_1_internet_room_1_1_client.html#a674b0e6d9a4b6d5fb5d9f507c82e9d10">mMinorID</a>;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        };</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
-<div class="line"><a name="l00101"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_internet_room_1_1_game.html">  101</a></span>&#160;        <span class="keyword">class </span><a class="code" href="class_hover_race_1_1_client_1_1_internet_room_1_1_game.html">Game</a></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        {</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
-<div class="line"><a name="l00105"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_internet_room_1_1_game.html#af748b77594b52e03f0f31047019ccdf9">  105</a></span>&#160;                BOOL <a class="code" href="class_hover_race_1_1_client_1_1_internet_room_1_1_game.html#af748b77594b52e03f0f31047019ccdf9">mValid</a>;</div>
-<div class="line"><a name="l00106"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_internet_room_1_1_game.html#abe4ca1fb2556b38a9fc680e1fb9a9917">  106</a></span>&#160;                <span class="keywordtype">int</span> <a class="code" href="class_hover_race_1_1_client_1_1_internet_room_1_1_game.html#abe4ca1fb2556b38a9fc680e1fb9a9917">mId</a>;</div>
-<div class="line"><a name="l00107"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_internet_room_1_1_game.html#a6e6c90eaca7409a9bb74ea906887a08a">  107</a></span>&#160;                <a class="code" href="_track_bundle_8h.html#a13ef2a5a74e7e6ba45c987d05ad2180e">MR_TrackAvail</a> <a class="code" href="class_hover_race_1_1_client_1_1_internet_room_1_1_game.html#a6e6c90eaca7409a9bb74ea906887a08a">mAvailCode</a>;</div>
-<div class="line"><a name="l00108"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_internet_room_1_1_game.html#a403e5a2b62a6ac8d10869680c23bea9d">  108</a></span>&#160;                std::string <a class="code" href="class_hover_race_1_1_client_1_1_internet_room_1_1_game.html#a403e5a2b62a6ac8d10869680c23bea9d">mName</a>;</div>
-<div class="line"><a name="l00109"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_internet_room_1_1_game.html#a489fe62e2e6171a316e323bfb4c0647c">  109</a></span>&#160;                std::string <a class="code" href="class_hover_race_1_1_client_1_1_internet_room_1_1_game.html#a489fe62e2e6171a316e323bfb4c0647c">mTrack</a>;</div>
-<div class="line"><a name="l00110"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_internet_room_1_1_game.html#aa3378d7ae76fb3b9fa1eb4bf961e977c">  110</a></span>&#160;                <span class="keywordtype">int</span> <a class="code" href="class_hover_race_1_1_client_1_1_internet_room_1_1_game.html#aa3378d7ae76fb3b9fa1eb4bf961e977c">mNbLap</a>;</div>
-<div class="line"><a name="l00111"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_internet_room_1_1_game.html#a808d33d902a4415dfadd8159f85bad92">  111</a></span>&#160;                BOOL <a class="code" href="class_hover_race_1_1_client_1_1_internet_room_1_1_game.html#a808d33d902a4415dfadd8159f85bad92">mAllowWeapons</a>;</div>
-<div class="line"><a name="l00112"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_internet_room_1_1_game.html#a17a299627556017d60be0c0ba128e159">  112</a></span>&#160;                <span class="keywordtype">int</span> <a class="code" href="class_hover_race_1_1_client_1_1_internet_room_1_1_game.html#a17a299627556017d60be0c0ba128e159">mNbClient</a>;</div>
-<div class="line"><a name="l00113"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_internet_room_1_1_game.html#a1868c99dd680fd2b4cb59777219f24f9">  113</a></span>&#160;                <span class="keywordtype">int</span> <a class="code" href="class_hover_race_1_1_client_1_1_internet_room_1_1_game.html#a1868c99dd680fd2b4cb59777219f24f9">mClientList</a>[<a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#ad954dd2a6984a62390d3a0c054aa09dcaa9f2aadf7fef6326deb38c61ef6d0092">eMaxPlayerGame</a>];</div>
-<div class="line"><a name="l00114"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_internet_room_1_1_game.html#a2c01f8c5c5ac20ef3092a10d2acc08a2">  114</a></span>&#160;                std::string <a class="code" href="class_hover_race_1_1_client_1_1_internet_room_1_1_game.html#a2c01f8c5c5ac20ef3092a10d2acc08a2">mIPAddr</a>;</div>
-<div class="line"><a name="l00115"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_internet_room_1_1_game.html#a2d875796a9bb75ed254b3c4ac4088660">  115</a></span>&#160;                <span class="keywordtype">unsigned</span> <a class="code" href="class_hover_race_1_1_client_1_1_internet_room_1_1_game.html#a2d875796a9bb75ed254b3c4ac4088660">mPort</a>;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        };</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
-<div class="line"><a name="l00119"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#a6221c91246f037b429aa2566ab252d7c">  119</a></span>&#160;        <span class="keyword">static</span> <a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html">InternetRoom</a> *<a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#a6221c91246f037b429aa2566ab252d7c">mThis</a>;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
-<div class="line"><a name="l00121"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#ad94459f3189f116a073bf56614d72fd0">  121</a></span>&#160;        <a class="code" href="namespace_hover_race_1_1_client.html#a5b044643737ca548e2a17a10b99c87e0">RoomListPtr</a> <a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#ad94459f3189f116a073bf56614d72fd0">roomList</a>;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
-<div class="line"><a name="l00123"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#a7cd7af723dbf486a4fe13eb5d69c49bc">  123</a></span>&#160;        std::string <a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#a7cd7af723dbf486a4fe13eb5d69c49bc">mMainServer</a>;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
-<div class="line"><a name="l00125"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#adfffd936d277594931c3593b24758ef9">  125</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#adfffd936d277594931c3593b24758ef9">mCurrentUserIndex</a>;</div>
-<div class="line"><a name="l00126"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#a17c9d701bf7f46cbe5bb9ccc45a27e63">  126</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#a17c9d701bf7f46cbe5bb9ccc45a27e63">mCurrentUserId</a>;</div>
-<div class="line"><a name="l00127"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#a65d2d7d730f24e25e09f2ac9015ffb15">  127</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#a65d2d7d730f24e25e09f2ac9015ffb15">mCurrentGameIndex</a>;</div>
-<div class="line"><a name="l00128"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#acedba07737e3fd5bc562d37ed68abb8c">  128</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#acedba07737e3fd5bc562d37ed68abb8c">mCurrentGameId</a>;</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
-<div class="line"><a name="l00130"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#a4a1991cdb28a60796bb9086cfb7423ef">  130</a></span>&#160;        std::string <a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#a4a1991cdb28a60796bb9086cfb7423ef">mUser</a>;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
-<div class="line"><a name="l00132"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#af369b1ac02257c0a077a07bdd1bf4e53">  132</a></span>&#160;        <a class="code" href="class_hover_race_1_1_client_1_1_internet_room_1_1_client.html">Client</a> <a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#af369b1ac02257c0a077a07bdd1bf4e53">mClientList</a>[<a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#ad954dd2a6984a62390d3a0c054aa09dca0fb41baec6d33cda00881b7ddfda77b6">eMaxClient</a>];</div>
-<div class="line"><a name="l00133"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#a549d3ac38e3961ce523cb56208f9b193">  133</a></span>&#160;        <a class="code" href="class_hover_race_1_1_client_1_1_internet_room_1_1_game.html">Game</a> <a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#a549d3ac38e3961ce523cb56208f9b193">mGameList</a>[<a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#ad954dd2a6984a62390d3a0c054aa09dca38af31e927704404966c203eb0399350">eMaxGame</a>];</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
-<div class="line"><a name="l00135"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#a5e38ce136e65776d4d2b2de906f24e27">  135</a></span>&#160;        std::string <a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#a5e38ce136e65776d4d2b2de906f24e27">mChatBuffer</a>;</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div>
-<div class="line"><a name="l00137"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#a3cb2ef2205d84fe0e177a95ca29cf914">  137</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#a3cb2ef2205d84fe0e177a95ca29cf914">mLastRefreshTimeStamp</a>;</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
-<div class="line"><a name="l00139"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#a6952a5e7a5406f50baca73cc6a855dcb">  139</a></span>&#160;        HWND <a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#a6952a5e7a5406f50baca73cc6a855dcb">mModelessDlg</a>;</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        <span class="comment">// Temporary data</span></div>
-<div class="line"><a name="l00142"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#a6f21733bf2d215c441748b6f87c8eb7a">  142</a></span>&#160;        HANDLE <a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#a6f21733bf2d215c441748b6f87c8eb7a">mCurrentLocateRequest</a>;</div>
-<div class="line"><a name="l00143"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#a97cbab6c0879061475668d0c5be115a0">  143</a></span>&#160;        <span class="keywordtype">char</span> <a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#a97cbab6c0879061475668d0c5be115a0">mHostEnt</a>[MAXGETHOSTSTRUCT];</div>
-<div class="line"><a name="l00144"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#ad556be3a6ed701c2f329fc41a3f2904c">  144</a></span>&#160;        std::string <a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#ad556be3a6ed701c2f329fc41a3f2904c">mNetOpString</a>;</div>
-<div class="line"><a name="l00145"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#a57afa5f59841ad5de91867cb304ae77c">  145</a></span>&#160;        std::string <a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#a57afa5f59841ad5de91867cb304ae77c">mNetOpRequest</a>;</div>
-<div class="line"><a name="l00146"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#a1e4a220d64889cb0bd256d7482cd3a3c">  146</a></span>&#160;        <a class="code" href="class_hover_race_1_1_client_1_1_network_session.html" title="The NetworkSession is a child of the ClientSession; it is a networked game session.">NetworkSession</a> *<a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#a1e4a220d64889cb0bd256d7482cd3a3c">mSession</a>;</div>
-<div class="line"><a name="l00147"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#a583640268cfa50d4f4dde394bf09a003">  147</a></span>&#160;        <a class="code" href="class_hover_race_1_1_video_services_1_1_video_buffer.html" title="Video framebuffer for legacy (8-bit, palettized) rendering.">VideoServices::VideoBuffer</a> *<a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#a583640268cfa50d4f4dde394bf09a003">mVideoBuffer</a>;</div>
-<div class="line"><a name="l00148"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#a6b2b51f6cfd20622926feaa6a8ed5c3d">  148</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#a6b2b51f6cfd20622926feaa6a8ed5c3d">mNbSuccessiveRefreshTimeOut</a>;</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
-<div class="line"><a name="l00150"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#ad6a5264caedfcb87c0f78e03411bdb1e">  150</a></span>&#160;        <a class="code" href="class_hover_race_1_1_client_1_1_internet_request.html">InternetRequest</a> <a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#ad6a5264caedfcb87c0f78e03411bdb1e">mOpRequest</a>;</div>
-<div class="line"><a name="l00151"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#a47f8b8312e35243ce9961a23045965a8">  151</a></span>&#160;        <a class="code" href="class_hover_race_1_1_client_1_1_internet_request.html">InternetRequest</a> <a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#a47f8b8312e35243ce9961a23045965a8">mChatRequest</a>;</div>
-<div class="line"><a name="l00152"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#ae30f86d2f12641db70fcb1acf83512bc">  152</a></span>&#160;        <a class="code" href="class_hover_race_1_1_client_1_1_internet_request.html">InternetRequest</a> <a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#ae30f86d2f12641db70fcb1acf83512bc">mRefreshRequest</a>;</div>
-<div class="line"><a name="l00153"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#ace162ec620df3d19cf61104f3a569dbb">  153</a></span>&#160;        <a class="code" href="class_hover_race_1_1_client_1_1_internet_request.html">InternetRequest</a> <a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#ace162ec620df3d19cf61104f3a569dbb">mBannerRequest</a>;</div>
-<div class="line"><a name="l00154"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#a8f1fa6ebdd59a84efaf6afedb2fdd822">  154</a></span>&#160;        <a class="code" href="class_hover_race_1_1_client_1_1_internet_request.html">InternetRequest</a> <a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#a8f1fa6ebdd59a84efaf6afedb2fdd822">mClickRequest</a>;</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
-<div class="line"><a name="l00156"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#aa09e9110be0de21b54455b2341585c4e">  156</a></span>&#160;        <a class="code" href="class_hover_race_1_1_util_1_1_o_s.html#ab95203994cd88a763857b64711c7cc9f">Util::OS::timestamp_t</a> <a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#aa09e9110be0de21b54455b2341585c4e">lastMessageReceivedSoundTs</a>;</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
-<div class="line"><a name="l00158"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#aeea1000b63cec9600ae6a04382a16682">  158</a></span>&#160;        WNDPROC <a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#aeea1000b63cec9600ae6a04382a16682">oldBannerProc</a>;</div>
-<div class="line"><a name="l00159"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#a3b64cf97f5746da05ca94a5e924abed9">  159</a></span>&#160;        <a class="code" href="class_hover_race_1_1_client_1_1_gif_decoder.html" title="GIF image loader.">GifDecoder</a> <a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#a3b64cf97f5746da05ca94a5e924abed9">mBanner</a>;</div>
-<div class="line"><a name="l00160"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#a66fd5b619a87b32d1e12adc44ddc2fb5">  160</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#a66fd5b619a87b32d1e12adc44ddc2fb5">mCurrentBannerIndex</a>;</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;</div>
-<div class="line"><a name="l00162"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#a386b2cd1bbd919599bc56effbd36aca0">  162</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#a386b2cd1bbd919599bc56effbd36aca0">checkUpdates</a>;</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
-<div class="line"><a name="l00164"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#aa3c7757c06660c4722f9f81b1a44c64b">  164</a></span>&#160;        std::ofstream *<a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#aa3c7757c06660c4722f9f81b1a44c64b">chatLog</a>;</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        <span class="comment">/*</span></div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="comment">        static BOOL CALLBACK AskParamsCallBack(HWND pWindow, UINT pMsgId, WPARAM pWParam, LPARAM pLParam);</span></div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="comment">        */</span></div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        <span class="keyword">static</span> BOOL CALLBACK <a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#acdebb5b152ef28355cb1e8ab75de387f">RoomCallBack</a>(HWND pWindow, UINT pMsgId, WPARAM pWParam, LPARAM pLParam);</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        <span class="keyword">static</span> BOOL CALLBACK <a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#a410633b03337d941f1fc086fecc9b37e">BannerCallBack</a>(HWND pWindow, UINT pMsgId, WPARAM pWParam, LPARAM pLParam);</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        <span class="keyword">static</span> BOOL CALLBACK <a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#a69d49fc327a0b6b2139fab968f2dcf44">NetOpCallBack</a>(HWND pWindow, UINT pMsgId, WPARAM pWParam, LPARAM pLParam);</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        <span class="keyword">static</span> BOOL CALLBACK <a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#afbc70785fb92085bf0f0e7c7146d7c7b">FastNetOpCallBack</a>(HWND pWindow, UINT pMsgId, WPARAM pWParam, LPARAM pLParam);</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        <span class="keyword">static</span> BOOL CALLBACK <a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#a8d5a5c39ef3f43372f7b9af237671b32">GetAddrCallBack</a>(HWND pWindow, UINT pMsgId, WPARAM pWParam, LPARAM pLParam);</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        BOOL <a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#addafd91b76b8fa98f30a04d060f4a1dd">AskRoomParams</a>(HWND pParentWindow, BOOL pShouldRecheckServer);</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        <span class="comment">/*</span></div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="comment">        BOOL LocateServers(HWND pWindow, BOOL pShouldRecheckServer);</span></div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="comment">        */</span></div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        BOOL <a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#aefe43a78b12b70b1b21830efdfce0ec3">AddUserOp</a>(HWND pParentWindow);</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        BOOL <a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#a3dd3f5f402fb3d73043d1d24bb1e9502">DelUserOp</a>(HWND pParentWindow, BOOL pFastMode = FALSE);</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        BOOL <a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#acb14058cb51fddedeef55bbb478c7e9b">AddGameOp</a>(HWND pParentWindow, <span class="keyword">const</span> <span class="keywordtype">char</span> *pGameName, <span class="keyword">const</span> <span class="keywordtype">char</span> *pTrackName, <span class="keywordtype">int</span> pNbLap, <span class="keywordtype">char</span> pGameOpts, <span class="keywordtype">unsigned</span> pPort);</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        BOOL <a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#aecc7e1c4ded06522adca547ad9038d4c">DelGameOp</a>(HWND pParentWindow);</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        BOOL <a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#ae33150071a6c45f4993820d803b5a69f">JoinGameOp</a>(HWND pParentWindow, <span class="keywordtype">int</span> pGameIndex);</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        BOOL <a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#a7252b760f10ea2d04ec59e5305e54b6c">LeaveGameOp</a>(HWND pParentWindow);</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        BOOL <a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#a1abce61d395b53540369a1c8b2bec320">AddMessageOp</a>(HWND pParentWindow, <span class="keyword">const</span> <span class="keywordtype">char</span> *pMessage, <span class="keywordtype">int</span> pNbHours = 0, <span class="keywordtype">int</span> lNbMinutes = 0);</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#a6e02b6818dcd14f4dd8ce9380d96552a">SelectGameForUser</a>(HWND pWindow);</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#a367c0b600f89dd1aec35ac6726b3a34e">RefreshGameList</a>(HWND pWindow);</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#acaf8cdfa96efe80133e709be8db7060a">RefreshGameSelection</a>(HWND pWindow);</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#a468cfe8e5fd650b60ea23a60d65fa38e">RefreshUserList</a>(HWND pWindow);</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#aaa00c5fccc7debb9dbf468645c8f348d">RefreshChatOut</a>(HWND pWindow);</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#adbe9e368c66d523a0f5db70a85254c30" title="Play the &quot;message received&quot; notification sound.">PlayMessageReceivedSound</a>(HWND wnd);</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        <span class="keyword">static</span> BOOL <a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#a042cc0b1394ba2f6cce8ebf0116442a7">VerifyError</a>(HWND pParentWindow, <span class="keyword">const</span> <span class="keywordtype">char</span> *pAnswer);</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        BOOL <a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#abc56578c255f6755c9811ec11c7e75db">ParseState</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *pAnswer);</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#a417ff9c7fbde124e0dc0c3acf2dbcf5f" title="Initialize the chat log.">OpenChatLog</a>();</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#a14783d1598be010685cd8fe96968b5e9">AddChatLine</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *pText, <span class="keywordtype">bool</span> neverLog=<span class="keyword">false</span>);</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#a4b17835649d67c4c36745d1b5c353dd8">LoadBanner</a>(HWND pWindow, <span class="keyword">const</span> <span class="keywordtype">char</span> *pBuffer, <span class="keywordtype">int</span> pBufferLen);</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#a78b12044b272fe51c1d177d8a486e87d">RefreshBanner</a>(HWND pWindow);          <span class="comment">// Return next refresh time</span></div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#a92a3976f751fc05a86997da5a7edb15a">TrackOpenFailMessageBox</a>(HWND parent, <span class="keyword">const</span> std::string &amp;name, <span class="keyword">const</span> std::string &amp;details);</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        <a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#ac520d22bbfcffeff7cd093771a94acd9">InternetRoom</a>(<span class="keyword">const</span> std::string &amp;pMainServer, <span class="keywordtype">bool</span> mustCheckUpdates);</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        <a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#a4e0f09b6219ee0040540779489e3540d">~InternetRoom</a>();</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;</div>
-<div class="line"><a name="l00211"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#a8758c7e2d5694fe67066de4a04e348d7">  211</a></span>&#160;        <a class="code" href="namespace_hover_race_1_1_client.html#a5b044643737ca548e2a17a10b99c87e0">RoomListPtr</a> <a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#a8758c7e2d5694fe67066de4a04e348d7">GetRoomList</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#ad94459f3189f116a073bf56614d72fd0">roomList</a>; }</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;        BOOL <a class="code" href="class_hover_race_1_1_client_1_1_internet_room.html#a04c3c95093eefde8606f81c4a85fe74f" title="This function is called to initiate the connection to the IMR.">DisplayChatRoom</a>(HWND pParentWindow, <a class="code" href="class_hover_race_1_1_client_1_1_network_session.html" title="The NetworkSession is a child of the ClientSession; it is a networked game session.">NetworkSession</a> *pSession, <a class="code" href="class_hover_race_1_1_video_services_1_1_video_buffer.html" title="Video framebuffer for legacy (8-bit, palettized) rendering.">VideoServices::VideoBuffer</a> *pVideoBuffer, BOOL pShouldRecheckServer);</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;        <span class="comment">// Modelless.. do not use for the moment</span></div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;        <span class="comment">/*</span></div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;<span class="comment">           BOOL DisplayModeless( HWND pParentWindow, MR_NetworkSession* pSession, VideoServices::VideoBuffer* pVideoBuffer );</span></div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;<span class="comment">           BOOL IsDisplayed()const;</span></div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<span class="comment">         */</span></div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;};</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;BOOL <a class="code" href="namespace_hover_race_1_1_client.html#ab48b7765e7678b1f16ac42fe8af83f6c">MR_SendRaceResult</a>(HWND pParentWindow, <span class="keyword">const</span> <span class="keywordtype">char</span> *pTrack,</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    <span class="keywordtype">int</span> pBestLapTime, <span class="keywordtype">int</span> pMajorID, <span class="keywordtype">int</span> pMinorID, <span class="keyword">const</span> <span class="keywordtype">char</span> *pAlias,</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> pTrackSum, <span class="keywordtype">int</span> pHoverModel, <span class="keywordtype">int</span> pTotalTime,</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    <span class="keywordtype">int</span> pNbLap, <span class="keywordtype">int</span> pNbPlayer, <a class="code" href="namespace_hover_race_1_1_client.html#a5b044643737ca548e2a17a10b99c87e0">HoverRace::Client::RoomListPtr</a> roomList);</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;<span class="comment">BOOL MR_SendLadderResult(HWND pParentWindow, const char *pWinAlias,</span></div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;<span class="comment">    int pWinMajorID, int pWinMinorID, const char *pLoseAlias,</span></div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;<span class="comment">    int pLoseMajorID, int pLoseMinorID, const char *pTrack, int pNbLap);</span></div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;<span class="comment">*/</span></div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;}  <span class="comment">// namespace Client</span></div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;}  <span class="comment">// namespace HoverRace</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// The author makes no representations about the suitability of</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// this software for any purpose.  It is provided &quot;as is&quot; &quot;AS IS&quot;,</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">// implied.</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">// See the License for the specific language governing permissions</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">// and limitations under the License.</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &lt;WINSOCK.h&gt;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;../../engine/Parcel/TrackBundle.h&quot;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_track_select_dialog_8h.html">TrackSelectDialog.h</a>&quot;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_network_session_8h.html">NetworkSession.h</a>&quot;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_gif_decoder_8h.html">GifDecoder.h</a>&quot;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_room_list_8h.html">RoomList.h</a>&quot;</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">namespace </span>HoverRace {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">namespace </span>Client {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">class </span>InternetRequest</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        time_t mStartTime;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        BOOL mBinMode;                            <span class="comment">// use Bin buffer and Bin sending mode&quot;referer request&quot;</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        SOCKET mSocket;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        std::string mRequest;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        std::string mBuffer;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordtype">char</span> *mBinBuffer;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordtype">int</span> mBinIndex;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="namespace_hover_race_1_1_video_services_1_1_sound_server.html#ac2066b5043b71533f20d8ca809fef832">Close</a>();</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        BOOL Working() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        InternetRequest();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        ~InternetRequest();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordtype">void</span> SetBin();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        BOOL Send(HWND pWindow, <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> pIP, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> pPort, <span class="keyword">const</span> <span class="keywordtype">char</span> *pURL, <span class="keyword">const</span> <span class="keywordtype">char</span> *pCoookie = NULL);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordtype">void</span> Clear();                             <span class="comment">// Abort and clean</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                                                  <span class="comment">// return TRUE if some processing was done</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        BOOL ProcessEvent(WPARAM pWParam, LPARAM pLParam);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span> *GetBuffer() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span> *GetBinBuffer(<span class="keywordtype">int</span> &amp;pSize) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        BOOL IsReady() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;};</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keyword">class </span>InternetRoom</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;{</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keyword">enum</span> {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            eMaxClient = 300,</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            eMaxGame = 100,</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            eMaxChat = 50,</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            eMaxPlayerGame = 16</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        };</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keyword">enum</span> {</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            eChatModified = 1,</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            eUsersModified = 2,</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            eGamesModified = 4</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        };</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keyword">class </span>Client</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        {</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                BOOL mValid;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                std::string mName;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                <span class="keywordtype">int</span> mGame;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                <span class="keywordtype">int</span> mMajorID;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                <span class="keywordtype">int</span> mMinorID;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        };</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keyword">class </span>Game</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        {</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                BOOL mValid;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                <span class="keywordtype">int</span> mId;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                <a class="code" href="_track_bundle_8h.html#a13ef2a5a74e7e6ba45c987d05ad2180e">MR_TrackAvail</a> mAvailCode;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                std::string mName;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                std::string mTrack;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                <span class="keywordtype">int</span> mNbLap;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                BOOL mAllowWeapons;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                <span class="keywordtype">int</span> mNbClient;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                <span class="keywordtype">int</span> mClientList[eMaxPlayerGame];</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                std::string mIPAddr;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                <span class="keywordtype">unsigned</span> mPort;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        };</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keyword">static</span> InternetRoom *mThis;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <a class="code" href="namespace_hover_race_1_1_client.html#a5b044643737ca548e2a17a10b99c87e0">RoomListPtr</a> roomList;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        std::string mMainServer;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <span class="keywordtype">int</span> mCurrentUserIndex;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <span class="keywordtype">int</span> mCurrentUserId;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <span class="keywordtype">int</span> mCurrentGameIndex;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <span class="keywordtype">int</span> mCurrentGameId;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        std::string mUser;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        Client mClientList[eMaxClient];</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        Game mGameList[eMaxGame];</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        std::string mChatBuffer;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        <span class="keywordtype">int</span> mLastRefreshTimeStamp;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        HWND mModelessDlg;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        <span class="comment">// Temporary data</span></div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        HANDLE mCurrentLocateRequest;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        <span class="keywordtype">char</span> mHostEnt[MAXGETHOSTSTRUCT];</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        std::string mNetOpString;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        std::string mNetOpRequest;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        NetworkSession *mSession;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        VideoServices::VideoBuffer *mVideoBuffer;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <span class="keywordtype">int</span> mNbSuccessiveRefreshTimeOut;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        InternetRequest mOpRequest;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        InternetRequest mChatRequest;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        InternetRequest mRefreshRequest;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        InternetRequest mBannerRequest;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        InternetRequest mClickRequest;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        <a class="code" href="class_hover_race_1_1_util_1_1_o_s.html#a121b3df1148145f4a82b9542b544ad8f">Util::OS::timestamp_t</a> lastMessageReceivedSoundTs;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        WNDPROC oldBannerProc;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        GifDecoder mBanner;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        <span class="keywordtype">int</span> mCurrentBannerIndex;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        <span class="keywordtype">bool</span> checkUpdates;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        std::ofstream *chatLog;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        <span class="comment">/*</span></div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="comment">        static BOOL CALLBACK AskParamsCallBack(HWND pWindow, UINT pMsgId, WPARAM pWParam, LPARAM pLParam);</span></div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="comment">        */</span></div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        <span class="keyword">static</span> BOOL CALLBACK RoomCallBack(HWND pWindow, UINT pMsgId, WPARAM pWParam, LPARAM pLParam);</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        <span class="keyword">static</span> BOOL CALLBACK BannerCallBack(HWND pWindow, UINT pMsgId, WPARAM pWParam, LPARAM pLParam);</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        <span class="keyword">static</span> BOOL CALLBACK NetOpCallBack(HWND pWindow, UINT pMsgId, WPARAM pWParam, LPARAM pLParam);</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        <span class="keyword">static</span> BOOL CALLBACK FastNetOpCallBack(HWND pWindow, UINT pMsgId, WPARAM pWParam, LPARAM pLParam);</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        <span class="keyword">static</span> BOOL CALLBACK GetAddrCallBack(HWND pWindow, UINT pMsgId, WPARAM pWParam, LPARAM pLParam);</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        BOOL AskRoomParams(HWND pParentWindow, BOOL pShouldRecheckServer);</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        <span class="comment">/*</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="comment">        BOOL LocateServers(HWND pWindow, BOOL pShouldRecheckServer);</span></div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="comment">        */</span></div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        BOOL AddUserOp(HWND pParentWindow);</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        BOOL DelUserOp(HWND pParentWindow, BOOL pFastMode = FALSE);</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        BOOL AddGameOp(HWND pParentWindow, <span class="keyword">const</span> <span class="keywordtype">char</span> *pGameName, <span class="keyword">const</span> <span class="keywordtype">char</span> *pTrackName, <span class="keywordtype">int</span> pNbLap, <span class="keywordtype">char</span> pGameOpts, <span class="keywordtype">unsigned</span> pPort);</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        BOOL DelGameOp(HWND pParentWindow);</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        BOOL JoinGameOp(HWND pParentWindow, <span class="keywordtype">int</span> pGameIndex);</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        BOOL LeaveGameOp(HWND pParentWindow);</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        BOOL AddMessageOp(HWND pParentWindow, <span class="keyword">const</span> <span class="keywordtype">char</span> *pMessage, <span class="keywordtype">int</span> pNbHours = 0, <span class="keywordtype">int</span> lNbMinutes = 0);</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        <span class="keywordtype">void</span> SelectGameForUser(HWND pWindow);</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        <span class="keywordtype">void</span> RefreshGameList(HWND pWindow);</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        <span class="keywordtype">void</span> RefreshGameSelection(HWND pWindow);</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        <span class="keywordtype">void</span> RefreshUserList(HWND pWindow);</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        <span class="keywordtype">void</span> RefreshChatOut(HWND pWindow);</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        <span class="keywordtype">void</span> PlayMessageReceivedSound(HWND wnd);</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        <span class="keyword">static</span> BOOL VerifyError(HWND pParentWindow, <span class="keyword">const</span> <span class="keywordtype">char</span> *pAnswer);</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        BOOL ParseState(<span class="keyword">const</span> <span class="keywordtype">char</span> *pAnswer);</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        <span class="keywordtype">void</span> OpenChatLog();</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        <span class="keywordtype">void</span> AddChatLine(<span class="keyword">const</span> <span class="keywordtype">char</span> *pText, <span class="keywordtype">bool</span> neverLog=<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        <span class="keywordtype">int</span> LoadBanner(HWND pWindow, <span class="keyword">const</span> <span class="keywordtype">char</span> *pBuffer, <span class="keywordtype">int</span> pBufferLen);</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        <span class="keywordtype">int</span> RefreshBanner(HWND pWindow);          <span class="comment">// Return next refresh time</span></div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> TrackOpenFailMessageBox(HWND parent, <span class="keyword">const</span> std::string &amp;name, <span class="keyword">const</span> std::string &amp;details);</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        InternetRoom(<span class="keyword">const</span> std::string &amp;pMainServer, <span class="keywordtype">bool</span> mustCheckUpdates);</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        ~InternetRoom();</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;        <a class="code" href="namespace_hover_race_1_1_client.html#a5b044643737ca548e2a17a10b99c87e0">RoomListPtr</a> GetRoomList()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> roomList; }</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        BOOL DisplayChatRoom(HWND pParentWindow, NetworkSession *pSession, VideoServices::VideoBuffer *pVideoBuffer, BOOL pShouldRecheckServer);</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;        <span class="comment">// Modelless.. do not use for the moment</span></div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        <span class="comment">/*</span></div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;<span class="comment">           BOOL DisplayModeless( HWND pParentWindow, MR_NetworkSession* pSession, VideoServices::VideoBuffer* pVideoBuffer );</span></div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<span class="comment">           BOOL IsDisplayed()const;</span></div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;<span class="comment">         */</span></div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;};</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;BOOL MR_SendRaceResult(HWND pParentWindow, <span class="keyword">const</span> <span class="keywordtype">char</span> *pTrack,</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    <span class="keywordtype">int</span> pBestLapTime, <span class="keywordtype">int</span> pMajorID, <span class="keywordtype">int</span> pMinorID, <span class="keyword">const</span> <span class="keywordtype">char</span> *pAlias,</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> pTrackSum, <span class="keywordtype">int</span> pHoverModel, <span class="keywordtype">int</span> pTotalTime,</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    <span class="keywordtype">int</span> pNbLap, <span class="keywordtype">int</span> pNbPlayer, <a class="code" href="namespace_hover_race_1_1_client.html#a5b044643737ca548e2a17a10b99c87e0">HoverRace::Client::RoomListPtr</a> roomList);</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;<span class="comment">BOOL MR_SendLadderResult(HWND pParentWindow, const char *pWinAlias,</span></div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;<span class="comment">    int pWinMajorID, int pWinMinorID, const char *pLoseAlias,</span></div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;<span class="comment">    int pLoseMajorID, int pLoseMinorID, const char *pTrack, int pNbLap);</span></div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;}  <span class="comment">// namespace Client</span></div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;}  <span class="comment">// namespace HoverRace</span></div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
