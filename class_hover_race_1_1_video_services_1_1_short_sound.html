@@ -52,6 +52,7 @@
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
 <a href="class_hover_race_1_1_video_services_1_1_short_sound-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">HoverRace::VideoServices::ShortSound Class Reference</div>  </div>
@@ -71,10 +72,9 @@ Public Member Functions</h2></td></tr>
 <tr class="inherit_header pub_methods_class_hover_race_1_1_video_services_1_1_sound_buffer"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_hover_race_1_1_video_services_1_1_sound_buffer')"><img src="closed.png" alt="-"/>&nbsp;Public Member Functions inherited from <a class="el" href="class_hover_race_1_1_video_services_1_1_sound_buffer.html">HoverRace::VideoServices::SoundBuffer</a></td></tr>
 <tr class="memitem:a5646fad636bf9684674087ebe6f1a9ca inherit pub_methods_class_hover_race_1_1_video_services_1_1_sound_buffer"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_video_services_1_1_sound_buffer.html#a5646fad636bf9684674087ebe6f1a9ca">SoundBuffer</a> ()</td></tr>
 <tr class="memitem:acc9361502426327b00484c6ece052bd7 inherit pub_methods_class_hover_race_1_1_video_services_1_1_sound_buffer"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_video_services_1_1_sound_buffer.html#acc9361502426327b00484c6ece052bd7">~SoundBuffer</a> ()</td></tr>
-<tr class="memitem:abf706b3ffe1335717af8405d0a7f2976 inherit pub_methods_class_hover_race_1_1_video_services_1_1_sound_buffer"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_video_services_1_1_sound_buffer.html#abf706b3ffe1335717af8405d0a7f2976">Init</a> (const char *pData, int pNbCopy)</td></tr>
+<tr class="memitem:abf706b3ffe1335717af8405d0a7f2976 inherit pub_methods_class_hover_race_1_1_video_services_1_1_sound_buffer"><td class="memItemLeft" align="right" valign="top">virtual BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_video_services_1_1_sound_buffer.html#abf706b3ffe1335717af8405d0a7f2976">Init</a> (const char *pData, int pNbCopy)</td></tr>
 <tr class="memdesc:abf706b3ffe1335717af8405d0a7f2976 inherit pub_methods_class_hover_race_1_1_video_services_1_1_sound_buffer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill the buffer with sound data.  <a href="#abf706b3ffe1335717af8405d0a7f2976"></a><br/></td></tr>
 <tr class="memitem:ac596c6d184979ae4768b02a6e50d9eba inherit pub_methods_class_hover_race_1_1_video_services_1_1_sound_buffer"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_video_services_1_1_sound_buffer.html#ac596c6d184979ae4768b02a6e50d9eba">SetParams</a> (int pCopy, int pDB, double pSpeed, int pPan)</td></tr>
-<tr class="memitem:a3afb20edec10b6d5666375c52fd889f2 inherit pub_methods_class_hover_race_1_1_video_services_1_1_sound_buffer"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_video_services_1_1_sound_buffer.html#a3afb20edec10b6d5666375c52fd889f2">GetNbCopy</a> () const </td></tr>
 <tr class="memitem:adf5247e1216dd1acceea561b3333658d inherit pub_methods_class_hover_race_1_1_video_services_1_1_sound_buffer"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_video_services_1_1_sound_buffer.html#adf5247e1216dd1acceea561b3333658d">ApplyCumCommand</a> ()</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pro-attribs"></a>
@@ -86,12 +86,37 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a84ad031041a4ab62790edaf9813990e5 inherit pro_attribs_class_hover_race_1_1_video_services_1_1_sound_buffer"><td class="memItemLeft" align="right" valign="top">ALuint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_video_services_1_1_sound_buffer.html#a84ad031041a4ab62790edaf9813990e5">mSoundBuffer</a> [<a class="el" href="_sound_server_8cpp.html#ac2e0621063a559a4c8924b6fe086ce12">MR_MAX_SOUND_COPY</a>]</td></tr>
 <tr class="memitem:ac7979cb8921a3997e7211cca86589249 inherit pro_attribs_class_hover_race_1_1_video_services_1_1_sound_buffer"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_video_services_1_1_sound_buffer.html#ac7979cb8921a3997e7211cca86589249">mNormalFreq</a></td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:af8377cd4b5cd4ca57e98dd779161da9a"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_hover_race_1_1_video_services_1_1_sound_buffer.html">SoundBuffer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_video_services_1_1_short_sound.html#af8377cd4b5cd4ca57e98dd779161da9a">SUPER</a></td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_static_methods_class_hover_race_1_1_video_services_1_1_sound_buffer"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_class_hover_race_1_1_video_services_1_1_sound_buffer')"><img src="closed.png" alt="-"/>&nbsp;Static Public Member Functions inherited from <a class="el" href="class_hover_race_1_1_video_services_1_1_sound_buffer.html">HoverRace::VideoServices::SoundBuffer</a></td></tr>
 <tr class="memitem:ae5528b7ff46ca64c2905a01af333b601 inherit pub_static_methods_class_hover_race_1_1_video_services_1_1_sound_buffer"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_video_services_1_1_sound_buffer.html#ae5528b7ff46ca64c2905a01af333b601">DeleteAll</a> ()</td></tr>
 <tr class="memitem:a8e9c3ef6d42ad54338913007c69dda20 inherit pub_static_methods_class_hover_race_1_1_video_services_1_1_sound_buffer"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_video_services_1_1_sound_buffer.html#a8e9c3ef6d42ad54338913007c69dda20">ApplyCumCommandForAll</a> ()</td></tr>
 </table>
+<h2>Member Typedef Documentation</h2>
+<a class="anchor" id="af8377cd4b5cd4ca57e98dd779161da9a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="class_hover_race_1_1_video_services_1_1_sound_buffer.html">SoundBuffer</a> <a class="el" href="class_hover_race_1_1_video_services_1_1_short_sound.html#af8377cd4b5cd4ca57e98dd779161da9a">HoverRace::VideoServices::ShortSound::SUPER</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a0e58a0d63605a4e6b2b34e0095a548d0"></a>
 <div class="memitem">

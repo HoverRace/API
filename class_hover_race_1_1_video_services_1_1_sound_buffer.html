@@ -70,10 +70,9 @@ Inheritance diagram for HoverRace::VideoServices::SoundBuffer:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a5646fad636bf9684674087ebe6f1a9ca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_video_services_1_1_sound_buffer.html#a5646fad636bf9684674087ebe6f1a9ca">SoundBuffer</a> ()</td></tr>
 <tr class="memitem:acc9361502426327b00484c6ece052bd7"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_video_services_1_1_sound_buffer.html#acc9361502426327b00484c6ece052bd7">~SoundBuffer</a> ()</td></tr>
-<tr class="memitem:abf706b3ffe1335717af8405d0a7f2976"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_video_services_1_1_sound_buffer.html#abf706b3ffe1335717af8405d0a7f2976">Init</a> (const char *pData, int pNbCopy)</td></tr>
+<tr class="memitem:abf706b3ffe1335717af8405d0a7f2976"><td class="memItemLeft" align="right" valign="top">virtual BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_video_services_1_1_sound_buffer.html#abf706b3ffe1335717af8405d0a7f2976">Init</a> (const char *pData, int pNbCopy)</td></tr>
 <tr class="memdesc:abf706b3ffe1335717af8405d0a7f2976"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill the buffer with sound data.  <a href="#abf706b3ffe1335717af8405d0a7f2976"></a><br/></td></tr>
 <tr class="memitem:ac596c6d184979ae4768b02a6e50d9eba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_video_services_1_1_sound_buffer.html#ac596c6d184979ae4768b02a6e50d9eba">SetParams</a> (int pCopy, int pDB, double pSpeed, int pPan)</td></tr>
-<tr class="memitem:a3afb20edec10b6d5666375c52fd889f2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_video_services_1_1_sound_buffer.html#a3afb20edec10b6d5666375c52fd889f2">GetNbCopy</a> () const </td></tr>
 <tr class="memitem:adf5247e1216dd1acceea561b3333658d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_video_services_1_1_sound_buffer.html#adf5247e1216dd1acceea561b3333658d">ApplyCumCommand</a> ()</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pub-static-methods"></a>
@@ -207,24 +206,12 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a3afb20edec10b6d5666375c52fd889f2"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int HoverRace::VideoServices::SoundBuffer::GetNbCopy </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="abf706b3ffe1335717af8405d0a7f2976"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">BOOL HoverRace::VideoServices::SoundBuffer::Init </td>
@@ -244,6 +231,11 @@ Static Private Attributes</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Fill the buffer with sound data. </p>
@@ -255,6 +247,8 @@ Static Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><code>TRUE</code> if successful. </dd></dl>
+
+<p>Reimplemented in <a class="el" href="class_hover_race_1_1_video_services_1_1_continuous_sound.html#a023854b2b2d24453bfce449d78312b72">HoverRace::VideoServices::ContinuousSound</a>.</p>
 
 </div>
 </div>
