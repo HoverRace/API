@@ -50,6 +50,7 @@
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="class_hover_race_1_1_client_1_1_game_director-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -67,6 +68,11 @@ Inheritance diagram for HoverRace::Client::GameDirector:</div>
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_hover_race_1_1_client_1_1_game_director__inherit__graph.svg" width="139" height="150"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:ab90177e9e4e69e615edff78751620f5d"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
+boost::signals2::signal&lt; void(<a class="el" href="class_hover_race_1_1_client_1_1_client_session.html">ClientSession</a> *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_game_director.html#ab90177e9e4e69e615edff78751620f5d">sessionChangedSignal_t</a></td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a1a3eb94c432b5884e9b6c261a059e5ad"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_game_director.html#a1a3eb94c432b5884e9b6c261a059e5ad">~GameDirector</a> ()</td></tr>
@@ -96,11 +102,25 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:adac4edd4d70e8ace85acd985fa9bb53c"><td class="memItemLeft" align="right" valign="top">virtual <br class="typebreak"/>
 <a class="el" href="class_hover_race_1_1_control_1_1_input_event_controller.html">Control::InputEventController</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_game_director.html#adac4edd4d70e8ace85acd985fa9bb53c">ReloadController</a> ()=0</td></tr>
 <tr class="memdesc:adac4edd4d70e8ace85acd985fa9bb53c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reload the control settings.  <a href="#adac4edd4d70e8ace85acd985fa9bb53c"></a><br/></td></tr>
+<tr class="memitem:ac349f804ae2d10ba6a7b6e17447a34e3"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_hover_race_1_1_client_1_1_game_director.html#ab90177e9e4e69e615edff78751620f5d">sessionChangedSignal_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_game_director.html#ac349f804ae2d10ba6a7b6e17447a34e3">GetSessionChangedSignal</a> ()=0</td></tr>
 </table>
 <a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Interface for game client shells. </p>
 <dl class="section author"><dt>Author</dt><dd>Michael Imamura </dd></dl>
-</div><h2>Constructor &amp; Destructor Documentation</h2>
+</div><h2>Member Typedef Documentation</h2>
+<a class="anchor" id="ab90177e9e4e69e615edff78751620f5d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef boost::signals2::signal&lt;void(<a class="el" href="class_hover_race_1_1_client_1_1_client_session.html">ClientSession</a>*)&gt; <a class="el" href="class_hover_race_1_1_client_1_1_game_director.html#ab90177e9e4e69e615edff78751620f5d">HoverRace::Client::GameDirector::sessionChangedSignal_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a1a3eb94c432b5884e9b6c261a059e5ad"></a>
 <div class="memitem">
 <div class="memproto">
@@ -233,6 +253,31 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Implemented in <a class="el" href="class_hover_race_1_1_client_1_1_client_app.html#a114e7d300fd9b22110fb1fe26f8a6006">HoverRace::Client::ClientApp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac349f804ae2d10ba6a7b6e17447a34e3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_hover_race_1_1_client_1_1_game_director.html#ab90177e9e4e69e615edff78751620f5d">sessionChangedSignal_t</a>&amp; HoverRace::Client::GameDirector::GetSessionChangedSignal </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="class_hover_race_1_1_client_1_1_client_app.html#a50c4ab6779674946b5094d5da37126ba">HoverRace::Client::ClientApp</a>.</p>
 
 </div>
 </div>

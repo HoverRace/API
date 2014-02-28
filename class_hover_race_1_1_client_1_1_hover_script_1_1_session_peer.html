@@ -78,6 +78,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ada67d12485d2fff8b7d7aef6942f41ff"><td class="memTemplParams" colspan="2">template&lt;class Fn &gt; </td></tr>
 <tr class="memitem:ada67d12485d2fff8b7d7aef6942f41ff"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_session_peer.html#ada67d12485d2fff8b7d7aef6942f41ff">ForEachPlayer</a> (Fn fn)</td></tr>
 <tr class="memitem:a4d5dd4bfde9cf1d32d4d71f3db97ef24"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_player_peer.html">PlayerPeer</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_session_peer.html#a4d5dd4bfde9cf1d32d4d71f3db97ef24">GetPlayer</a> (unsigned idx)</td></tr>
+<tr class="memitem:ae4b2ce94f5ad7c9a0c0211fba9626bc3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_session_peer.html#ae4b2ce94f5ad7c9a0c0211fba9626bc3">OnSessionStart</a> (<a class="el" href="class_hover_race_1_1_client_1_1_client_session.html">ClientSession</a> *<a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_session_peer.html#a5a6eb9c6340e6d9beab75fb5cd72b4a9">session</a>)</td></tr>
+<tr class="memdesc:ae4b2ce94f5ad7c9a0c0211fba9626bc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attach a session.  <a href="#ae4b2ce94f5ad7c9a0c0211fba9626bc3"></a><br/></td></tr>
 <tr class="memitem:a38124173b841ff00c490ce80e37992cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_session_peer.html#a38124173b841ff00c490ce80e37992cc">OnSessionEnd</a> ()</td></tr>
 <tr class="memdesc:a38124173b841ff00c490ce80e37992cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signal that the session has ended.  <a href="#a38124173b841ff00c490ce80e37992cc"></a><br/></td></tr>
 <tr class="memitem:a2a08616261c780548576c465b356884f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_session_peer.html#a2a08616261c780548576c465b356884f">LGetNumPlayers</a> () const </td></tr>
@@ -297,6 +299,30 @@ template&lt;class Fn &gt; </div>
 
 <p>Signal that the session has ended. </p>
 <p>This will detach this peer from the session. </p>
+
+</div>
+</div>
+<a class="anchor" id="ae4b2ce94f5ad7c9a0c0211fba9626bc3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HoverRace::Client::HoverScript::SessionPeer::OnSessionStart </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_hover_race_1_1_client_1_1_client_session.html">ClientSession</a> *&#160;</td>
+          <td class="paramname"><em>session</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Attach a session. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">session</td><td>The session to attach (may be <code>nullptr</code>). </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

@@ -60,13 +60,14 @@
 <div class="contents">
 <div class="textblock"><code>#include &lt;SDL2/SDL_keycode.h&gt;</code><br/>
 <code>#include &lt;SDL2/SDL_mouse.h&gt;</code><br/>
-<code>#include &quot;<a class="el" href="_vec_8h_source.html">../Display/Vec.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="_vec_8h_source.html">../Vec.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="_exception_8h_source.html">../Exception.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="_control_action_8h_source.html">ControlAction.h</a>&quot;</code><br/>
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Action.h:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="_action_8h__incl.svg" width="100%" height="446"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="_action_8h__incl.svg" width="100%" height="446"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
@@ -109,10 +110,10 @@ std::string &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a cla
 <tr class="memitem:afb933994abfed1ce4ae1f409479a00d5"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
 boost::signals2::signal&lt; void(TextControl::key_t)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_control.html#afb933994abfed1ce4ae1f409479a00d5">HoverRace::Control::textControlSignal_t</a></td></tr>
 <tr class="memdesc:afb933994abfed1ce4ae1f409479a00d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signals for text input control.  <a href="#afb933994abfed1ce4ae1f409479a00d5"></a><br/></td></tr>
-<tr class="memitem:a1b8fc424a6cda3371968651ef6a630e7"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
+<tr class="memitem:a3769268fa3a0849b1f08289852a97556"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
 boost::signals2::signal&lt; void(const <br class="typebreak"/>
-Display::Vec2 &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_control.html#a1b8fc424a6cda3371968651ef6a630e7">HoverRace::Control::vec2Signal_t</a></td></tr>
-<tr class="memdesc:a1b8fc424a6cda3371968651ef6a630e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signals with have a Vec2 payload.  <a href="#a1b8fc424a6cda3371968651ef6a630e7"></a><br/></td></tr>
+Vec2 &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_control.html#a3769268fa3a0849b1f08289852a97556">HoverRace::Control::vec2Signal_t</a></td></tr>
+<tr class="memdesc:a3769268fa3a0849b1f08289852a97556"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signals with have a <a class="el" href="struct_hover_race_1_1_vec2.html">Vec2</a> payload.  <a href="#a3769268fa3a0849b1f08289852a97556"></a><br/></td></tr>
 <tr class="memitem:a14298c108f3d25a4c45e35651b5abed4"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
 boost::signals2::signal&lt; void(const <br class="typebreak"/>
 Mouse::Click &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_control.html#a14298c108f3d25a4c45e35651b5abed4">HoverRace::Control::mouseClickSignal_t</a></td></tr>
@@ -147,8 +148,8 @@ Functions</h2></td></tr>
 <tr class="memitem:a367d167db951c6486b233b6e7fc4bcf7"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_control.html#a367d167db951c6486b233b6e7fc4bcf7">HoverRace::Control::PerformAction&lt; stringSignal_t, const std::string &amp; &gt;</a> (const stringSignal_t &amp;signal, const std::string &amp;s)</td></tr>
 <tr class="memitem:a36b4402f4b588b79c3dab05b0595dc35"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
 <tr class="memitem:a36b4402f4b588b79c3dab05b0595dc35"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_control.html#a36b4402f4b588b79c3dab05b0595dc35">HoverRace::Control::PerformAction&lt; textControlSignal_t, TextControl::key_t &gt;</a> (const textControlSignal_t &amp;signal, TextControl::key_t key)</td></tr>
-<tr class="memitem:a76c959de995428d168a88d889b1d11af"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
-<tr class="memitem:a76c959de995428d168a88d889b1d11af"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_control.html#a76c959de995428d168a88d889b1d11af">HoverRace::Control::PerformAction&lt; vec2Signal_t, const Display::Vec2 &amp; &gt;</a> (const vec2Signal_t &amp;signal, const Display::Vec2 &amp;vec)</td></tr>
+<tr class="memitem:a09fa3cf606aedc0521c9cd8253eaf05c"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:a09fa3cf606aedc0521c9cd8253eaf05c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_control.html#a09fa3cf606aedc0521c9cd8253eaf05c">HoverRace::Control::PerformAction&lt; vec2Signal_t, const Vec2 &amp; &gt;</a> (const vec2Signal_t &amp;signal, const Vec2 &amp;vec)</td></tr>
 <tr class="memitem:af4ab8dc7f3c0651c35a150e296d6388d"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
 <tr class="memitem:af4ab8dc7f3c0651c35a150e296d6388d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_control.html#af4ab8dc7f3c0651c35a150e296d6388d">HoverRace::Control::PerformAction&lt; mouseClickSignal_t, const Mouse::Click &amp; &gt;</a> (const mouseClickSignal_t &amp;signal, const Mouse::Click &amp;vec)</td></tr>
 </table>
