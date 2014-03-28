@@ -103,6 +103,7 @@ Public Member Functions</h2></td></tr>
 <a class="el" href="class_hover_race_1_1_control_1_1_input_event_controller.html">Control::InputEventController</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_game_director.html#adac4edd4d70e8ace85acd985fa9bb53c">ReloadController</a> ()=0</td></tr>
 <tr class="memdesc:adac4edd4d70e8ace85acd985fa9bb53c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reload the control settings.  <a href="#adac4edd4d70e8ace85acd985fa9bb53c"></a><br/></td></tr>
 <tr class="memitem:ac349f804ae2d10ba6a7b6e17447a34e3"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_hover_race_1_1_client_1_1_game_director.html#ab90177e9e4e69e615edff78751620f5d">sessionChangedSignal_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_game_director.html#ac349f804ae2d10ba6a7b6e17447a34e3">GetSessionChangedSignal</a> ()=0</td></tr>
+<tr class="memdesc:ac349f804ae2d10ba6a7b6e17447a34e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access the signal that indicates that the gameplay session started or stopped.  <a href="#ac349f804ae2d10ba6a7b6e17447a34e3"></a><br/></td></tr>
 </table>
 <a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Interface for game client shells. </p>
@@ -276,6 +277,9 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Access the signal that indicates that the gameplay session started or stopped. </p>
+<p>Subscribers to this signal will get the <a class="el" href="class_hover_race_1_1_client_1_1_client_session.html">ClientSession</a> instance if the session is starting or <code>nullptr</code> if the session has ended. </p>
 
 <p>Implemented in <a class="el" href="class_hover_race_1_1_client_1_1_client_app.html#a50c4ab6779674946b5094d5da37126ba">HoverRace::Client::ClientApp</a>.</p>
 

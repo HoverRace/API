@@ -99,6 +99,7 @@ Public Member Functions</h2></td></tr>
 <a class="el" href="class_hover_race_1_1_control_1_1_input_event_controller.html">Control::InputEventController</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_client_app.html#a8fbe7ac6cdbfd373dec2871e9554b665">ReloadController</a> ()</td></tr>
 <tr class="memdesc:a8fbe7ac6cdbfd373dec2871e9554b665"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reload the control settings.  <a href="#a8fbe7ac6cdbfd373dec2871e9554b665"></a><br/></td></tr>
 <tr class="memitem:a50c4ab6779674946b5094d5da37126ba"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_hover_race_1_1_client_1_1_game_director.html#ab90177e9e4e69e615edff78751620f5d">sessionChangedSignal_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_client_app.html#a50c4ab6779674946b5094d5da37126ba">GetSessionChangedSignal</a> ()</td></tr>
+<tr class="memdesc:a50c4ab6779674946b5094d5da37126ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access the signal that indicates that the gameplay session started or stopped.  <a href="#a50c4ab6779674946b5094d5da37126ba"></a><br/></td></tr>
 <tr class="inherit_header pub_methods_class_hover_race_1_1_client_1_1_game_director"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_hover_race_1_1_client_1_1_game_director')"><img src="closed.png" alt="-"/>&nbsp;Public Member Functions inherited from <a class="el" href="class_hover_race_1_1_client_1_1_game_director.html">HoverRace::Client::GameDirector</a></td></tr>
 <tr class="memitem:a1a3eb94c432b5884e9b6c261a059e5ad inherit pub_methods_class_hover_race_1_1_client_1_1_game_director"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_game_director.html#a1a3eb94c432b5884e9b6c261a059e5ad">~GameDirector</a> ()</td></tr>
 </table><table class="memberdecls">
@@ -396,6 +397,9 @@ boost::signals2::signal&lt; void(<a class="el" href="class_hover_race_1_1_client
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Access the signal that indicates that the gameplay session started or stopped. </p>
+<p>Subscribers to this signal will get the <a class="el" href="class_hover_race_1_1_client_1_1_client_session.html">ClientSession</a> instance if the session is starting or <code>nullptr</code> if the session has ended. </p>
 
 <p>Implements <a class="el" href="class_hover_race_1_1_client_1_1_game_director.html#ac349f804ae2d10ba6a7b6e17447a34e3">HoverRace::Client::GameDirector</a>.</p>
 
