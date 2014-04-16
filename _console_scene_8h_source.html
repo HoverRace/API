@@ -84,8 +84,8 @@
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    }</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">namespace </span>Display {</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keyword">class </span>Display;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keyword">class </span>FillBox;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keyword">class </span>Label;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keyword">class </span>Label;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keyword">class </span>ScreenFade;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
@@ -156,7 +156,7 @@
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
 <div class="line"><a name="l00108"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_hover_script_1_1_console_scene.html#a47c7f974bb82edf2911e2fc98bf2171b">  108</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_hover_race_1_1_client_1_1_hover_script_1_1_console_scene.html#a47c7f974bb82edf2911e2fc98bf2171b">layoutChanged</a>;</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
-<div class="line"><a name="l00110"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_hover_script_1_1_console_scene.html#a00322088a48a3eaba48112cec31c4c72">  110</a></span>&#160;        <a class="code" href="class_hover_race_1_1_display_1_1_fill_box.html" title="A colored rectangle, that&#39;s all.">Display::FillBox</a> *<a class="code" href="class_hover_race_1_1_client_1_1_hover_script_1_1_console_scene.html#a00322088a48a3eaba48112cec31c4c72">winShadeBox</a>;</div>
+<div class="line"><a name="l00110"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_hover_script_1_1_console_scene.html#af3ebb222aee30f96d0f6ccc756513725">  110</a></span>&#160;        std::unique_ptr&lt;Display::ScreenFade&gt; <a class="code" href="class_hover_race_1_1_client_1_1_hover_script_1_1_console_scene.html#af3ebb222aee30f96d0f6ccc756513725">fader</a>;</div>
 <div class="line"><a name="l00111"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_hover_script_1_1_console_scene.html#a11b43fcdcc5282db6b2c7269337922bd">  111</a></span>&#160;        <a class="code" href="class_hover_race_1_1_display_1_1_label.html" title="A static text label.">Display::Label</a> *<a class="code" href="class_hover_race_1_1_client_1_1_hover_script_1_1_console_scene.html#a11b43fcdcc5282db6b2c7269337922bd">inputLbl</a>;</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
 <div class="line"><a name="l00113"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_client_1_1_hover_script_1_1_console_scene.html#a1b731dff1c10d8d34e986cf556d8c73f">  113</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_hover_race_1_1_client_1_1_hover_script_1_1_console_scene.html#a1b731dff1c10d8d34e986cf556d8c73f">cursorOn</a>;</div>
