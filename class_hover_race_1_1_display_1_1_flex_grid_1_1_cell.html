@@ -63,7 +63,7 @@
 <div class="dynheader">
 Inheritance diagram for HoverRace::Display::FlexGrid::Cell:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_hover_race_1_1_display_1_1_flex_grid_1_1_cell__inherit__graph.svg" width="176" height="150"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_hover_race_1_1_display_1_1_flex_grid_1_1_cell__inherit__graph.svg" width="363" height="120"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -71,6 +71,8 @@ Inheritance diagram for HoverRace::Display::FlexGrid::Cell:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a515f103bea999cefc2e0311db8b95869"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_flex_grid_1_1_cell.html#a515f103bea999cefc2e0311db8b95869">Cell</a> ()</td></tr>
 <tr class="memitem:a0dae04e22912b6e85849e839b689c2e1"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_flex_grid_1_1_cell.html#a0dae04e22912b6e85849e839b689c2e1">~Cell</a> ()</td></tr>
+<tr class="memitem:aa4b3b89a9140583e4807f4aca459725e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_flex_grid_1_1_cell.html#aa4b3b89a9140583e4807f4aca459725e">SetAlignment</a> (<a class="el" href="struct_hover_race_1_1_display_1_1_ui_view_model_1_1_alignment.html#aa3053cce0b5cc2f4b4973d1be3bc6e56">Alignment::type</a> <a class="el" href="class_hover_race_1_1_display_1_1_ui_view_model.html#a7f19004c1bff59508b64752bb192878f">alignment</a>)=0</td></tr>
+<tr class="memdesc:aa4b3b89a9140583e4807f4aca459725e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the how the widget is aligned inside the cell when the cell is larger than the widget.  <a href="#aa4b3b89a9140583e4807f4aca459725e"></a><br/></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -155,7 +157,41 @@ Friends</h2></td></tr>
 <p>Measure the size of the cell contents. </p>
 <dl class="section return"><dt>Returns</dt><dd>The size (may be zero). </dd></dl>
 
-<p>Implemented in <a class="el" href="class_hover_race_1_1_display_1_1_flex_grid_1_1_basic_cell.html#aa04c74b938d38a15f0aaad4adcad1ce8">HoverRace::Display::FlexGrid::BasicCell&lt; T &gt;</a>.</p>
+<p>Implemented in <a class="el" href="class_hover_race_1_1_display_1_1_flex_grid_1_1_basic_cell.html#aa04c74b938d38a15f0aaad4adcad1ce8">HoverRace::Display::FlexGrid::BasicCell&lt; T &gt;</a>, and <a class="el" href="class_hover_race_1_1_display_1_1_flex_grid_1_1_default_cell.html#abdc9f03f111d8123c882b661b319add2">HoverRace::Display::FlexGrid::DefaultCell</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa4b3b89a9140583e4807f4aca459725e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void HoverRace::Display::FlexGrid::Cell::SetAlignment </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_hover_race_1_1_display_1_1_ui_view_model_1_1_alignment.html#aa3053cce0b5cc2f4b4973d1be3bc6e56">Alignment::type</a>&#160;</td>
+          <td class="paramname"><em>alignment</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the how the widget is aligned inside the cell when the cell is larger than the widget. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">alignment</td><td>The alignment (default is <code>NW</code>). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="class_hover_race_1_1_display_1_1_flex_grid_1_1_basic_cell.html#a68bb0d5f78915592903c3c4a67774880">HoverRace::Display::FlexGrid::BasicCell&lt; T &gt;</a>, and <a class="el" href="class_hover_race_1_1_display_1_1_flex_grid_1_1_default_cell.html#ad292e89e15fffc82d52e31d71894e1f9">HoverRace::Display::FlexGrid::DefaultCell</a>.</p>
 
 </div>
 </div>
@@ -226,7 +262,7 @@ Friends</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="class_hover_race_1_1_display_1_1_flex_grid_1_1_basic_cell.html#a267cbbf701361e12e9945aa91394d38f">HoverRace::Display::FlexGrid::BasicCell&lt; T &gt;</a>.</p>
+<p>Implemented in <a class="el" href="class_hover_race_1_1_display_1_1_flex_grid_1_1_basic_cell.html#a267cbbf701361e12e9945aa91394d38f">HoverRace::Display::FlexGrid::BasicCell&lt; T &gt;</a>, and <a class="el" href="class_hover_race_1_1_display_1_1_flex_grid_1_1_default_cell.html#aab20078fa2ee21a1fac32b8e6011ddf6">HoverRace::Display::FlexGrid::DefaultCell</a>.</p>
 
 </div>
 </div>

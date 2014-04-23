@@ -120,7 +120,7 @@
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keyword">typename</span> std::enable_if&lt;std::is_base_of&lt;UiViewModel, T&gt;::value, std::shared_ptr&lt;T&gt;&gt;::type</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keyword">typename</span> std::enable_if&lt;std::is_base_of&lt;UiViewModel, T&gt;::value, std::shared_ptr&lt;T&gt;&gt;<a class="code" href="namespace_hover_race_1_1_util_1_1_log_1_1_level.html#a680b1115ab5b762738d8b4e4f40ddea2">::type</a></div>
 <div class="line"><a name="l00080"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_display_1_1_container.html#ab57213d1d36aefb9c80725e246774832">   80</a></span>&#160;        AddChild(T *child)</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        {</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            std::shared_ptr&lt;T&gt; sharedChild(child);</div>
@@ -130,7 +130,7 @@
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        }</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keyword">typename</span> std::enable_if&lt;std::is_base_of&lt;UiViewModel, T&gt;::value, std::shared_ptr&lt;T&gt;&gt;::type</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keyword">typename</span> std::enable_if&lt;std::is_base_of&lt;UiViewModel, T&gt;::value, std::shared_ptr&lt;T&gt;&gt;<a class="code" href="namespace_hover_race_1_1_util_1_1_log_1_1_level.html#a680b1115ab5b762738d8b4e4f40ddea2">::type</a></div>
 <div class="line"><a name="l00097"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_display_1_1_container.html#a8a5868bb92ffc3cfa362a88b9f82a537">   97</a></span>&#160;        InsertChild(<span class="keywordtype">int</span> pos, T *child)</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        {</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            std::shared_ptr&lt;T&gt; sharedChild(child);</div>
@@ -142,7 +142,7 @@
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        }</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <span class="keyword">typename</span> std::enable_if&lt;std::is_base_of&lt;UiViewModel, T&gt;::value, std::shared_ptr&lt;T&gt;&gt;::type</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <span class="keyword">typename</span> std::enable_if&lt;std::is_base_of&lt;UiViewModel, T&gt;::value, std::shared_ptr&lt;T&gt;&gt;<a class="code" href="namespace_hover_race_1_1_util_1_1_log_1_1_level.html#a680b1115ab5b762738d8b4e4f40ddea2">::type</a></div>
 <div class="line"><a name="l00115"></a><span class="lineno"><a class="code" href="class_hover_race_1_1_display_1_1_container.html#ad789fbb18f59d5a19af39aa45049cfdf">  115</a></span>&#160;        RemoveChild(<span class="keyword">const</span> std::shared_ptr&lt;T&gt; &amp;child)</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        {</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            <span class="keyword">auto</span> iter = std::find(children.begin(), children.end(), child);</div>
