@@ -6,6 +6,20 @@
 <!-- Title: RuntimeEnv.h Pages: 1 -->
 <!--zoomable 274 -->
 <svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
+<style type="text/css"><![CDATA[
+.edge:hover path { stroke: red; }
+.edge:hover polygon { stroke: red; fill: red; }
+]]></style>
+<script type="text/javascript"><![CDATA[
+var edges = document.getElementsByTagName('g');
+if (edges && edges.length) {
+  for (var i=0;i<edges.length;i++) {
+    if (edges[i].id.substr(0,4)=='edge') {
+      edges[i].setAttribute('class','edge');
+    }
+  }
+}
+]]></script>
         <defs>
                 <circle id="rim" cx="0" cy="0" r="7"/>
                 <circle id="rim2" cx="0" cy="0" r="3.5"/>
@@ -42,21 +56,21 @@ var sectionId = 'dynsection-0';
 <title>RuntimeEnv.h</title>
 <!-- Node1 -->
 <g id="node1" class="node"><title>Node1</title>
-<polygon fill="#bfbfbf" stroke="black" points="320.5,-245 320.5,-265 397.5,-265 397.5,-245 320.5,-245"/>
-<text text-anchor="middle" x="359" y="-252" font-family="FreeSans" font-size="10.00">RuntimeEnv.h</text>
+<polygon fill="#bfbfbf" stroke="black" points="492.5,-245 492.5,-265 569.5,-265 569.5,-245 492.5,-245"/>
+<text text-anchor="middle" x="531" y="-252" font-family="FreeSans" font-size="10.00">RuntimeEnv.h</text>
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
 <a xlink:href="_env_8h.html" target="_top" xlink:title="../../../engine/Script\l/Env.h">
-<polygon fill="none" stroke="black" points="311,-175 311,-207 407,-207 407,-175 311,-175"/>
-<text text-anchor="start" x="319" y="-194" font-family="FreeSans" font-size="10.00">../../../engine/Script</text>
-<text text-anchor="middle" x="359" y="-182" font-family="FreeSans" font-size="10.00">/Env.h</text>
+<polygon fill="none" stroke="black" points="483,-175 483,-207 579,-207 579,-175 483,-175"/>
+<text text-anchor="start" x="491" y="-194" font-family="FreeSans" font-size="10.00">../../../engine/Script</text>
+<text text-anchor="middle" x="531" y="-182" font-family="FreeSans" font-size="10.00">/Env.h</text>
 </a>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge2" class="edge"><title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M359,-244.717C359,-237.244 359,-226.779 359,-217.068"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="362.5,-217.005 359,-207.005 355.5,-217.005 362.5,-217.005"/>
+<path fill="none" stroke="midnightblue" d="M531,-244.717C531,-237.244 531,-226.779 531,-217.068"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="534.5,-217.005 531,-207.005 527.5,-217.005 534.5,-217.005"/>
 </g>
 <!-- Node3 -->
 <g id="node5" class="node"><title>Node3</title>
@@ -67,8 +81,8 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node2&#45;&gt;Node3 -->
 <g id="edge4" class="edge"><title>Node2&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M315.849,-174.85C287.563,-164.264 251.004,-150.58 224.23,-140.56"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="225.435,-137.274 214.842,-137.046 222.981,-143.829 225.435,-137.274"/>
+<path fill="none" stroke="midnightblue" d="M482.946,-182.034C415.706,-169.487 294.609,-146.892 230.495,-134.929"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="230.809,-131.427 220.337,-133.034 229.525,-138.309 230.809,-131.427"/>
 </g>
 <!-- Node11 -->
 <g id="node21" class="node"><title>Node11</title>
@@ -79,8 +93,20 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node2&#45;&gt;Node11 -->
 <g id="edge20" class="edge"><title>Node2&#45;&gt;Node11</title>
-<path fill="none" stroke="midnightblue" d="M402.403,-174.85C432.538,-163.637 472.01,-148.95 499.233,-138.82"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="500.517,-142.077 508.668,-135.309 498.076,-135.517 500.517,-142.077"/>
+<path fill="none" stroke="midnightblue" d="M531,-174.85C531,-166.518 531,-156.269 531,-147.396"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="534.5,-147.141 531,-137.141 527.5,-147.141 534.5,-147.141"/>
+</g>
+<!-- Node19 -->
+<g id="node37" class="node"><title>Node19</title>
+<a xlink:href="_registry_ref_8h.html" target="_top" xlink:title="RegistryRef.h">
+<polygon fill="none" stroke="black" points="571,-117 571,-137 645,-137 645,-117 571,-117"/>
+<text text-anchor="middle" x="608" y="-124" font-family="FreeSans" font-size="10.00">RegistryRef.h</text>
+</a>
+</g>
+<!-- Node2&#45;&gt;Node19 -->
+<g id="edge36" class="edge"><title>Node2&#45;&gt;Node19</title>
+<path fill="none" stroke="midnightblue" d="M550.43,-174.85C561.902,-165.315 576.397,-153.268 587.972,-143.647"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="590.346,-146.225 595.799,-137.141 585.871,-140.841 590.346,-146.225"/>
 </g>
 <!-- Node4 -->
 <g id="node7" class="node"><title>Node4</title>

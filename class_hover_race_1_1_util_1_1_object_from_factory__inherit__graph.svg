@@ -6,6 +6,20 @@
 <!-- Title: HoverRace::Util::ObjectFromFactory Pages: 1 -->
 <!--zoomable 490 -->
 <svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
+<style type="text/css"><![CDATA[
+.edge:hover path { stroke: red; }
+.edge:hover polygon { stroke: red; fill: red; }
+]]></style>
+<script type="text/javascript"><![CDATA[
+var edges = document.getElementsByTagName('g');
+if (edges && edges.length) {
+  for (var i=0;i<edges.length;i++) {
+    if (edges[i].id.substr(0,4)=='edge') {
+      edges[i].setAttribute('class','edge');
+    }
+  }
+}
+]]></script>
         <defs>
                 <circle id="rim" cx="0" cy="0" r="7"/>
                 <circle id="rim2" cx="0" cy="0" r="3.5"/>
@@ -61,7 +75,7 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node4 -->
 <g id="node7" class="node"><title>Node4</title>
-<a xlink:href="class_hover_race_1_1_model_1_1_element.html" target="_top" xlink:title="Represents all objects (wall, floor, ceiling, etc.) that can be found in a maze.">
+<a xlink:href="class_hover_race_1_1_model_1_1_element.html" target="_top" xlink:title="Represents all objects (wall, floor, ceiling, etc.) that can be found in a maze. ">
 <polygon fill="none" stroke="black" points="177,-331 177,-351 313,-351 313,-331 177,-331"/>
 <text text-anchor="middle" x="245" y="-338" font-family="FreeSans" font-size="10.00">HoverRace::Model::Element</text>
 </a>

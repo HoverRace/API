@@ -6,6 +6,20 @@
 <!-- Title: SessionPeer.h Pages: 1 -->
 <!--zoomable 88 -->
 <svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
+<style type="text/css"><![CDATA[
+.edge:hover path { stroke: red; }
+.edge:hover polygon { stroke: red; fill: red; }
+]]></style>
+<script type="text/javascript"><![CDATA[
+var edges = document.getElementsByTagName('g');
+if (edges && edges.length) {
+  for (var i=0;i<edges.length;i++) {
+    if (edges[i].id.substr(0,4)=='edge') {
+      edges[i].setAttribute('class','edge');
+    }
+  }
+}
+]]></script>
         <defs>
                 <circle id="rim" cx="0" cy="0" r="7"/>
                 <circle id="rim2" cx="0" cy="0" r="3.5"/>
@@ -32,7 +46,7 @@
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 714;
+var viewWidth = 720;
 var viewHeight = 88;
 var sectionId = 'dynsection-1';
 </script>
@@ -107,27 +121,27 @@ var sectionId = 'dynsection-1';
 </g>
 <!-- Node7 -->
 <g id="node13" class="node"><title>Node7</title>
-<a xlink:href="_session_peer_8cpp.html" target="_top" xlink:title="SessionPeer.cpp">
-<polygon fill="none" stroke="black" points="512,-1 512,-21 602,-21 602,-1 512,-1"/>
-<text text-anchor="middle" x="557" y="-8" font-family="FreeSans" font-size="10.00">SessionPeer.cpp</text>
+<a xlink:href="_meta_session_8cpp.html" target="_top" xlink:title="MetaSession.cpp">
+<polygon fill="none" stroke="black" points="512,-1 512,-21 604,-21 604,-1 512,-1"/>
+<text text-anchor="middle" x="558" y="-8" font-family="FreeSans" font-size="10.00">MetaSession.cpp</text>
 </a>
 </g>
 <!-- Node1&#45;&gt;Node7 -->
 <g id="edge12" class="edge"><title>Node1&#45;&gt;Node7</title>
-<path fill="none" stroke="midnightblue" d="M391.113,-56.1712C429.927,-45.602 484.212,-30.8202 519.967,-21.0842"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="389.831,-52.8927 381.102,-58.8972 391.67,-59.6468 389.831,-52.8927"/>
+<path fill="none" stroke="midnightblue" d="M391.334,-56.1712C430.331,-45.602 484.87,-30.8202 520.793,-21.0842"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="390.012,-52.9031 381.276,-58.8972 391.843,-59.6593 390.012,-52.9031"/>
 </g>
 <!-- Node8 -->
 <g id="node15" class="node"><title>Node8</title>
-<a xlink:href="_sys_console_8cpp.html" target="_top" xlink:title="SysConsole.cpp">
-<polygon fill="none" stroke="black" points="620,-1 620,-21 706,-21 706,-1 620,-1"/>
-<text text-anchor="middle" x="663" y="-8" font-family="FreeSans" font-size="10.00">SysConsole.cpp</text>
+<a xlink:href="_session_peer_8cpp.html" target="_top" xlink:title="SessionPeer.cpp">
+<polygon fill="none" stroke="black" points="622,-1 622,-21 712,-21 712,-1 622,-1"/>
+<text text-anchor="middle" x="667" y="-8" font-family="FreeSans" font-size="10.00">SessionPeer.cpp</text>
 </a>
 </g>
 <!-- Node1&#45;&gt;Node8 -->
 <g id="edge14" class="edge"><title>Node1&#45;&gt;Node8</title>
-<path fill="none" stroke="midnightblue" d="M394.293,-60.6746C448.037,-51.6548 535.684,-36.5907 611,-22 613.899,-21.4384 616.886,-20.8453 619.893,-20.2374"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="393.622,-57.2382 384.337,-62.3414 394.778,-64.1421 393.622,-57.2382"/>
+<path fill="none" stroke="midnightblue" d="M394.185,-60.6631C448.273,-51.5769 536.854,-36.4049 613,-22 615.914,-21.4487 618.915,-20.8696 621.937,-20.2776"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="393.453,-57.2368 384.169,-62.3422 394.61,-64.1405 393.453,-57.2368"/>
 </g>
 </g>
 </svg>

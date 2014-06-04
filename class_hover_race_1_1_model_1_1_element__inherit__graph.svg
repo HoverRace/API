@@ -6,6 +6,20 @@
 <!-- Title: HoverRace::Model::Element Pages: 1 -->
 <!--zoomable 490 -->
 <svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
+<style type="text/css"><![CDATA[
+.edge:hover path { stroke: red; }
+.edge:hover polygon { stroke: red; fill: red; }
+]]></style>
+<script type="text/javascript"><![CDATA[
+var edges = document.getElementsByTagName('g');
+if (edges && edges.length) {
+  for (var i=0;i<edges.length;i++) {
+    if (edges[i].id.substr(0,4)=='edge') {
+      edges[i].setAttribute('class','edge');
+    }
+  }
+}
+]]></script>
         <defs>
                 <circle id="rim" cx="0" cy="0" r="7"/>
                 <circle id="rim2" cx="0" cy="0" r="3.5"/>
@@ -72,7 +86,7 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node2 -->
 <g id="node2" class="node"><title>Node2</title>
-<a xlink:href="class_hover_race_1_1_util_1_1_object_from_factory.html" target="_top" xlink:title="HoverRace::Util::ObjectFrom\lFactory">
+<a xlink:href="class_hover_race_1_1_util_1_1_object_from_factory.html" target="_top" xlink:title="Base class for object created with a Dll Factory. ">
 <polygon fill="none" stroke="black" points="0,-237 0,-269 140,-269 140,-237 0,-237"/>
 <text text-anchor="start" x="8" y="-256" font-family="FreeSans" font-size="10.00">HoverRace::Util::ObjectFrom</text>
 <text text-anchor="middle" x="70" y="-244" font-family="FreeSans" font-size="10.00">Factory</text>

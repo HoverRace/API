@@ -6,6 +6,20 @@
 <!-- Title: HoverRace::Display::ViewModel Pages: 1 -->
 <!--zoomable 390 -->
 <svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
+<style type="text/css"><![CDATA[
+.edge:hover path { stroke: red; }
+.edge:hover polygon { stroke: red; fill: red; }
+]]></style>
+<script type="text/javascript"><![CDATA[
+var edges = document.getElementsByTagName('g');
+if (edges && edges.length) {
+  for (var i=0;i<edges.length;i++) {
+    if (edges[i].id.substr(0,4)=='edge') {
+      edges[i].setAttribute('class','edge');
+    }
+  }
+}
+]]></script>
         <defs>
                 <circle id="rim" cx="0" cy="0" r="7"/>
                 <circle id="rim2" cx="0" cy="0" r="3.5"/>
@@ -32,7 +46,7 @@
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 752;
+var viewWidth = 750;
 var viewHeight = 390;
 var sectionId = 'dynsection-0';
 </script>
@@ -48,7 +62,7 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="class_hover_race_1_1_display_1_1_screen_fade.html" target="_top" xlink:title="Paints a solid color over the whole screen with adjustable opacity.">
+<a xlink:href="class_hover_race_1_1_display_1_1_screen_fade.html" target="_top" xlink:title="Paints a solid color over the whole screen with adjustable opacity. ">
 <polygon fill="none" stroke="black" points="138.5,-187 138.5,-219 239.5,-219 239.5,-187 138.5,-187"/>
 <text text-anchor="start" x="146.5" y="-206" font-family="FreeSans" font-size="10.00">HoverRace::Display</text>
 <text text-anchor="middle" x="189" y="-194" font-family="FreeSans" font-size="10.00">::ScreenFade</text>
@@ -61,7 +75,7 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node3 -->
 <g id="node5" class="node"><title>Node3</title>
-<a xlink:href="class_hover_race_1_1_display_1_1_ui_view_model.html" target="_top" xlink:title="Base class for UI (2D) components.">
+<a xlink:href="class_hover_race_1_1_display_1_1_ui_view_model.html" target="_top" xlink:title="Base class for UI (2D) components. ">
 <polygon fill="none" stroke="black" points="138.5,-137 138.5,-169 239.5,-169 239.5,-137 138.5,-137"/>
 <text text-anchor="start" x="146.5" y="-156" font-family="FreeSans" font-size="10.00">HoverRace::Display</text>
 <text text-anchor="middle" x="189" y="-144" font-family="FreeSans" font-size="10.00">::UiViewModel</text>
@@ -74,7 +88,7 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node4 -->
 <g id="node7" class="node"><title>Node4</title>
-<a xlink:href="class_hover_race_1_1_display_1_1_click_region.html" target="_top" xlink:title="Base class for clickable areas.">
+<a xlink:href="class_hover_race_1_1_display_1_1_click_region.html" target="_top" xlink:title="Base class for clickable areas. ">
 <polygon fill="none" stroke="black" points="276.5,-252 276.5,-284 377.5,-284 377.5,-252 276.5,-252"/>
 <text text-anchor="start" x="284.5" y="-271" font-family="FreeSans" font-size="10.00">HoverRace::Display</text>
 <text text-anchor="middle" x="327" y="-259" font-family="FreeSans" font-size="10.00">::ClickRegion</text>
@@ -87,7 +101,7 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node9 -->
 <g id="node17" class="node"><title>Node9</title>
-<a xlink:href="class_hover_race_1_1_display_1_1_container.html" target="_top" xlink:title="An invisible container for other UI widgets.">
+<a xlink:href="class_hover_race_1_1_display_1_1_container.html" target="_top" xlink:title="An invisible container for other UI widgets. ">
 <polygon fill="none" stroke="black" points="276.5,-162 276.5,-194 377.5,-194 377.5,-162 276.5,-162"/>
 <text text-anchor="start" x="284.5" y="-181" font-family="FreeSans" font-size="10.00">HoverRace::Display</text>
 <text text-anchor="middle" x="327" y="-169" font-family="FreeSans" font-size="10.00">::Container</text>
@@ -100,7 +114,7 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node18 -->
 <g id="node35" class="node"><title>Node18</title>
-<a xlink:href="class_hover_race_1_1_display_1_1_fill_box.html" target="_top" xlink:title="A colored rectangle, that&#39;s all.">
+<a xlink:href="class_hover_race_1_1_display_1_1_fill_box.html" target="_top" xlink:title="A colored rectangle, that&#39;s all. ">
 <polygon fill="none" stroke="black" points="276.5,-112 276.5,-144 377.5,-144 377.5,-112 276.5,-112"/>
 <text text-anchor="start" x="284.5" y="-131" font-family="FreeSans" font-size="10.00">HoverRace::Display</text>
 <text text-anchor="middle" x="327" y="-119" font-family="FreeSans" font-size="10.00">::FillBox</text>
@@ -113,7 +127,7 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node20 -->
 <g id="node39" class="node"><title>Node20</title>
-<a xlink:href="class_hover_race_1_1_display_1_1_label.html" target="_top" xlink:title="A static text label.">
+<a xlink:href="class_hover_race_1_1_display_1_1_label.html" target="_top" xlink:title="A static text label. ">
 <polygon fill="none" stroke="black" points="276.5,-62 276.5,-94 377.5,-94 377.5,-62 276.5,-62"/>
 <text text-anchor="start" x="284.5" y="-81" font-family="FreeSans" font-size="10.00">HoverRace::Display</text>
 <text text-anchor="middle" x="327" y="-69" font-family="FreeSans" font-size="10.00">::Label</text>
@@ -126,7 +140,7 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node5 -->
 <g id="node9" class="node"><title>Node5</title>
-<a xlink:href="class_hover_race_1_1_display_1_1_button.html" target="_top" xlink:title="A standard button, with a text label.">
+<a xlink:href="class_hover_race_1_1_display_1_1_button.html" target="_top" xlink:title="A standard button, with a text label. ">
 <polygon fill="none" stroke="black" points="425.5,-275 425.5,-307 526.5,-307 526.5,-275 425.5,-275"/>
 <text text-anchor="start" x="433.5" y="-294" font-family="FreeSans" font-size="10.00">HoverRace::Display</text>
 <text text-anchor="middle" x="476" y="-282" font-family="FreeSans" font-size="10.00">::Button</text>
@@ -139,42 +153,42 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node6 -->
 <g id="node11" class="node"><title>Node6</title>
-<a xlink:href="class_hover_race_1_1_client_1_1_test_lab_scene_1_1_module_button_base.html" target="_top" xlink:title="HoverRace::Client:\l:TestLabScene::ModuleButtonBase">
-<polygon fill="none" stroke="black" points="574,-350 574,-382 744,-382 744,-350 574,-350"/>
-<text text-anchor="start" x="582" y="-369" font-family="FreeSans" font-size="10.00">HoverRace::Client:</text>
-<text text-anchor="middle" x="659" y="-357" font-family="FreeSans" font-size="10.00">:TestLabScene::ModuleButtonBase</text>
+<a xlink:href="class_hover_race_1_1_client_1_1_test_lab_scene_1_1_module_button_base.html" target="_top" xlink:title="HoverRace::Client::\lTestLabScene::ModuleButtonBase">
+<polygon fill="none" stroke="black" points="574.5,-350 574.5,-382 741.5,-382 741.5,-350 574.5,-350"/>
+<text text-anchor="start" x="582.5" y="-369" font-family="FreeSans" font-size="10.00">HoverRace::Client::</text>
+<text text-anchor="middle" x="658" y="-357" font-family="FreeSans" font-size="10.00">TestLabScene::ModuleButtonBase</text>
 </a>
 </g>
 <!-- Node5&#45;&gt;Node6 -->
 <g id="edge10" class="edge"><title>Node5&#45;&gt;Node6</title>
-<path fill="none" stroke="midnightblue" d="M513.093,-311.987C531.111,-321.643 553.297,-332.757 574,-341 582.003,-344.186 590.572,-347.175 599.076,-349.9"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="514.539,-308.789 504.081,-307.093 511.199,-314.941 514.539,-308.789"/>
+<path fill="none" stroke="midnightblue" d="M513.105,-311.957C531.126,-321.607 553.311,-332.724 574,-341 581.911,-344.165 590.381,-347.141 598.786,-349.86"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="514.55,-308.759 504.091,-307.068 511.212,-314.912 514.55,-308.759"/>
 </g>
 <!-- Node7 -->
 <g id="node13" class="node"><title>Node7</title>
-<a xlink:href="class_hover_race_1_1_display_1_1_action_button.html" target="_top" xlink:title="A button that&#39;s bound to a controller action.">
-<polygon fill="none" stroke="black" points="608.5,-300 608.5,-332 709.5,-332 709.5,-300 608.5,-300"/>
-<text text-anchor="start" x="616.5" y="-319" font-family="FreeSans" font-size="10.00">HoverRace::Display</text>
-<text text-anchor="middle" x="659" y="-307" font-family="FreeSans" font-size="10.00">::ActionButton</text>
+<a xlink:href="class_hover_race_1_1_display_1_1_action_button.html" target="_top" xlink:title="A button that&#39;s bound to a controller action. ">
+<polygon fill="none" stroke="black" points="607.5,-300 607.5,-332 708.5,-332 708.5,-300 607.5,-300"/>
+<text text-anchor="start" x="615.5" y="-319" font-family="FreeSans" font-size="10.00">HoverRace::Display</text>
+<text text-anchor="middle" x="658" y="-307" font-family="FreeSans" font-size="10.00">::ActionButton</text>
 </a>
 </g>
 <!-- Node5&#45;&gt;Node7 -->
 <g id="edge12" class="edge"><title>Node5&#45;&gt;Node7</title>
-<path fill="none" stroke="midnightblue" d="M537.029,-299.337C560.158,-302.497 586.22,-306.057 608.298,-309.073"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="537.357,-295.85 526.976,-297.964 536.41,-302.785 537.357,-295.85"/>
+<path fill="none" stroke="midnightblue" d="M536.653,-299.331C559.556,-302.478 585.357,-306.022 607.259,-309.03"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="537.08,-295.857 526.697,-297.964 536.128,-302.792 537.08,-295.857"/>
 </g>
 <!-- Node8 -->
 <g id="node15" class="node"><title>Node8</title>
-<a xlink:href="class_hover_race_1_1_display_1_1_checkbox.html" target="_top" xlink:title="A checkbox widget.">
-<polygon fill="none" stroke="black" points="608.5,-250 608.5,-282 709.5,-282 709.5,-250 608.5,-250"/>
-<text text-anchor="start" x="616.5" y="-269" font-family="FreeSans" font-size="10.00">HoverRace::Display</text>
-<text text-anchor="middle" x="659" y="-257" font-family="FreeSans" font-size="10.00">::Checkbox</text>
+<a xlink:href="class_hover_race_1_1_display_1_1_checkbox.html" target="_top" xlink:title="A checkbox widget. ">
+<polygon fill="none" stroke="black" points="607.5,-250 607.5,-282 708.5,-282 708.5,-250 607.5,-250"/>
+<text text-anchor="start" x="615.5" y="-269" font-family="FreeSans" font-size="10.00">HoverRace::Display</text>
+<text text-anchor="middle" x="658" y="-257" font-family="FreeSans" font-size="10.00">::Checkbox</text>
 </a>
 </g>
 <!-- Node5&#45;&gt;Node8 -->
 <g id="edge14" class="edge"><title>Node5&#45;&gt;Node8</title>
-<path fill="none" stroke="midnightblue" d="M537.029,-282.663C560.158,-279.503 586.22,-275.943 608.298,-272.927"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="536.41,-279.215 526.976,-284.036 537.357,-286.15 536.41,-279.215"/>
+<path fill="none" stroke="midnightblue" d="M536.653,-282.669C559.556,-279.522 585.357,-275.978 607.259,-272.97"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="536.128,-279.208 526.697,-284.036 537.08,-286.143 536.128,-279.208"/>
 </g>
 <!-- Node10 -->
 <g id="node19" class="node"><title>Node10</title>
@@ -191,7 +205,7 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node11 -->
 <g id="node21" class="node"><title>Node11</title>
-<a xlink:href="class_hover_race_1_1_display_1_1_hud.html" target="_top" xlink:title="The container for the heads&#45;up display.">
+<a xlink:href="class_hover_race_1_1_display_1_1_hud.html" target="_top" xlink:title="The container for the heads&#45;up display. ">
 <polygon fill="none" stroke="black" points="414,-168 414,-188 538,-188 538,-168 414,-168"/>
 <text text-anchor="middle" x="476" y="-175" font-family="FreeSans" font-size="10.00">HoverRace::Display::Hud</text>
 </a>
@@ -203,7 +217,7 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node12 -->
 <g id="node23" class="node"><title>Node12</title>
-<a xlink:href="class_hover_race_1_1_display_1_1_hud_decor.html" target="_top" xlink:title="Base view model for elements of the heads&#45;up display.">
+<a xlink:href="class_hover_race_1_1_display_1_1_hud_decor.html" target="_top" xlink:title="Base view model for elements of the heads&#45;up display. ">
 <polygon fill="none" stroke="black" points="425.5,-118 425.5,-150 526.5,-150 526.5,-118 425.5,-118"/>
 <text text-anchor="start" x="433.5" y="-137" font-family="FreeSans" font-size="10.00">HoverRace::Display</text>
 <text text-anchor="middle" x="476" y="-125" font-family="FreeSans" font-size="10.00">::HudDecor</text>
@@ -216,72 +230,72 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node13 -->
 <g id="node25" class="node"><title>Node13</title>
-<a xlink:href="class_hover_race_1_1_display_1_1_chronometer.html" target="_top" xlink:title="Display the current game time.">
-<polygon fill="none" stroke="black" points="608.5,-200 608.5,-232 709.5,-232 709.5,-200 608.5,-200"/>
-<text text-anchor="start" x="616.5" y="-219" font-family="FreeSans" font-size="10.00">HoverRace::Display</text>
-<text text-anchor="middle" x="659" y="-207" font-family="FreeSans" font-size="10.00">::Chronometer</text>
+<a xlink:href="class_hover_race_1_1_display_1_1_chronometer.html" target="_top" xlink:title="Display the current game time. ">
+<polygon fill="none" stroke="black" points="607.5,-200 607.5,-232 708.5,-232 708.5,-200 607.5,-200"/>
+<text text-anchor="start" x="615.5" y="-219" font-family="FreeSans" font-size="10.00">HoverRace::Display</text>
+<text text-anchor="middle" x="658" y="-207" font-family="FreeSans" font-size="10.00">::Chronometer</text>
 </a>
 </g>
 <!-- Node12&#45;&gt;Node13 -->
 <g id="edge24" class="edge"><title>Node12&#45;&gt;Node13</title>
-<path fill="none" stroke="midnightblue" d="M530.367,-154.623C532.99,-156.021 535.549,-157.481 538,-159 556.194,-170.28 555.279,-180.618 574,-191 584.492,-196.819 596.482,-201.413 608.082,-204.988"/>
+<path fill="none" stroke="midnightblue" d="M530.367,-154.623C532.99,-156.021 535.549,-157.481 538,-159 556.194,-170.28 555.296,-180.588 574,-191 584.237,-196.699 595.915,-201.231 607.241,-204.783"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="531.78,-151.417 521.266,-150.115 528.673,-157.69 531.78,-151.417"/>
 </g>
 <!-- Node14 -->
 <g id="node27" class="node"><title>Node14</title>
-<a xlink:href="class_hover_race_1_1_display_1_1_counter.html" target="_top" xlink:title="HUD lap / score / whatever counter.">
-<polygon fill="none" stroke="black" points="608.5,-150 608.5,-182 709.5,-182 709.5,-150 608.5,-150"/>
-<text text-anchor="start" x="616.5" y="-169" font-family="FreeSans" font-size="10.00">HoverRace::Display</text>
-<text text-anchor="middle" x="659" y="-157" font-family="FreeSans" font-size="10.00">::Counter</text>
+<a xlink:href="class_hover_race_1_1_display_1_1_counter.html" target="_top" xlink:title="HUD lap / score / whatever counter. ">
+<polygon fill="none" stroke="black" points="607.5,-150 607.5,-182 708.5,-182 708.5,-150 607.5,-150"/>
+<text text-anchor="start" x="615.5" y="-169" font-family="FreeSans" font-size="10.00">HoverRace::Display</text>
+<text text-anchor="middle" x="658" y="-157" font-family="FreeSans" font-size="10.00">::Counter</text>
 </a>
 </g>
 <!-- Node12&#45;&gt;Node14 -->
 <g id="edge26" class="edge"><title>Node12&#45;&gt;Node14</title>
-<path fill="none" stroke="midnightblue" d="M537.029,-144.672C560.158,-148.716 586.22,-153.274 608.298,-157.134"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="537.429,-141.189 526.976,-142.914 536.223,-148.084 537.429,-141.189"/>
+<path fill="none" stroke="midnightblue" d="M536.653,-144.664C559.556,-148.691 585.357,-153.228 607.259,-157.079"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="537.152,-141.198 526.697,-142.914 535.94,-148.093 537.152,-141.198"/>
 </g>
 <!-- Node15 -->
 <g id="node29" class="node"><title>Node15</title>
-<a xlink:href="class_hover_race_1_1_display_1_1_fuel_gauge.html" target="_top" xlink:title="HUD fuel level indicator.">
-<polygon fill="none" stroke="black" points="608.5,-100 608.5,-132 709.5,-132 709.5,-100 608.5,-100"/>
-<text text-anchor="start" x="616.5" y="-119" font-family="FreeSans" font-size="10.00">HoverRace::Display</text>
-<text text-anchor="middle" x="659" y="-107" font-family="FreeSans" font-size="10.00">::FuelGauge</text>
+<a xlink:href="class_hover_race_1_1_display_1_1_fuel_gauge.html" target="_top" xlink:title="HUD fuel level indicator. ">
+<polygon fill="none" stroke="black" points="607.5,-100 607.5,-132 708.5,-132 708.5,-100 607.5,-100"/>
+<text text-anchor="start" x="615.5" y="-119" font-family="FreeSans" font-size="10.00">HoverRace::Display</text>
+<text text-anchor="middle" x="658" y="-107" font-family="FreeSans" font-size="10.00">::FuelGauge</text>
 </a>
 </g>
 <!-- Node12&#45;&gt;Node15 -->
 <g id="edge28" class="edge"><title>Node12&#45;&gt;Node15</title>
-<path fill="none" stroke="midnightblue" d="M537.029,-127.997C560.158,-125.722 586.22,-123.159 608.298,-120.987"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="536.585,-124.524 526.976,-128.986 537.27,-131.49 536.585,-124.524"/>
+<path fill="none" stroke="midnightblue" d="M536.653,-128.001C559.556,-125.736 585.357,-123.185 607.259,-121.018"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="536.304,-124.519 526.697,-128.986 536.993,-131.485 536.304,-124.519"/>
 </g>
 <!-- Node16 -->
 <g id="node31" class="node"><title>Node16</title>
-<a xlink:href="class_hover_race_1_1_display_1_1_hud_text.html" target="_top" xlink:title="Arbitrary text on the HUD.">
-<polygon fill="none" stroke="black" points="608.5,-50 608.5,-82 709.5,-82 709.5,-50 608.5,-50"/>
-<text text-anchor="start" x="616.5" y="-69" font-family="FreeSans" font-size="10.00">HoverRace::Display</text>
-<text text-anchor="middle" x="659" y="-57" font-family="FreeSans" font-size="10.00">::HudText</text>
+<a xlink:href="class_hover_race_1_1_display_1_1_hud_text.html" target="_top" xlink:title="Arbitrary text on the HUD. ">
+<polygon fill="none" stroke="black" points="607.5,-50 607.5,-82 708.5,-82 708.5,-50 607.5,-50"/>
+<text text-anchor="start" x="615.5" y="-69" font-family="FreeSans" font-size="10.00">HoverRace::Display</text>
+<text text-anchor="middle" x="658" y="-57" font-family="FreeSans" font-size="10.00">::HudText</text>
 </a>
 </g>
 <!-- Node12&#45;&gt;Node16 -->
 <g id="edge30" class="edge"><title>Node12&#45;&gt;Node16</title>
-<path fill="none" stroke="midnightblue" d="M526.743,-113.928C530.567,-112.297 534.355,-110.643 538,-109 554.308,-101.649 557.354,-97.5496 574,-91 584.879,-86.7198 596.789,-82.7776 608.161,-79.3499"/>
+<path fill="none" stroke="midnightblue" d="M526.743,-113.928C530.567,-112.297 534.355,-110.643 538,-109 554.308,-101.649 557.364,-97.5764 574,-91 584.612,-86.8047 596.217,-82.9219 607.32,-79.5284"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="525.087,-110.827 517.217,-117.92 527.793,-117.283 525.087,-110.827"/>
 </g>
 <!-- Node17 -->
 <g id="node33" class="node"><title>Node17</title>
-<a xlink:href="class_hover_race_1_1_display_1_1_speedometer.html" target="_top" xlink:title="HUD velocity indicator.">
-<polygon fill="none" stroke="black" points="608.5,-0 608.5,-32 709.5,-32 709.5,-0 608.5,-0"/>
-<text text-anchor="start" x="616.5" y="-19" font-family="FreeSans" font-size="10.00">HoverRace::Display</text>
-<text text-anchor="middle" x="659" y="-7" font-family="FreeSans" font-size="10.00">::Speedometer</text>
+<a xlink:href="class_hover_race_1_1_display_1_1_speedometer.html" target="_top" xlink:title="HUD velocity indicator. ">
+<polygon fill="none" stroke="black" points="607.5,-0 607.5,-32 708.5,-32 708.5,-0 607.5,-0"/>
+<text text-anchor="start" x="615.5" y="-19" font-family="FreeSans" font-size="10.00">HoverRace::Display</text>
+<text text-anchor="middle" x="658" y="-7" font-family="FreeSans" font-size="10.00">::Speedometer</text>
 </a>
 </g>
 <!-- Node12&#45;&gt;Node17 -->
 <g id="edge32" class="edge"><title>Node12&#45;&gt;Node17</title>
-<path fill="none" stroke="midnightblue" d="M533.913,-112.373C535.33,-111.299 536.696,-110.175 538,-109 563.4,-86.1042 547.517,-62.6344 574,-41 583.768,-33.0202 596,-27.5875 608.114,-23.8888"/>
+<path fill="none" stroke="midnightblue" d="M533.913,-112.373C535.33,-111.299 536.696,-110.175 538,-109 563.4,-86.1042 547.552,-62.677 574,-41 583.532,-33.1875 595.442,-27.816 607.27,-24.123"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="531.778,-109.588 525.331,-117.996 535.614,-115.443 531.778,-109.588"/>
 </g>
 <!-- Node19 -->
 <g id="node37" class="node"><title>Node19</title>
-<a xlink:href="class_hover_race_1_1_display_1_1_symbol_icon.html" target="_top" xlink:title="One of the predefined icons from the symbol font.">
+<a xlink:href="class_hover_race_1_1_display_1_1_symbol_icon.html" target="_top" xlink:title="One of the predefined icons from the symbol font. ">
 <polygon fill="none" stroke="black" points="425.5,-68 425.5,-100 526.5,-100 526.5,-68 425.5,-68"/>
 <text text-anchor="start" x="433.5" y="-87" font-family="FreeSans" font-size="10.00">HoverRace::Display</text>
 <text text-anchor="middle" x="476" y="-75" font-family="FreeSans" font-size="10.00">::SymbolIcon</text>
