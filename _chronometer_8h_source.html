@@ -76,7 +76,7 @@
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_hud_decor_8h.html">HudDecor.h</a>&quot;</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#ifdef _WIN32</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#if defined(_WIN32) &amp;&amp; defined(HR_ENGINE_SHARED)</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#   ifdef MR_ENGINE</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#       define MR_DllDeclare   __declspec( dllexport )</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#   else</span></div>
@@ -122,7 +122,7 @@
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}  <span class="comment">// namespace HoverRace</span></div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#undef MR_DllDeclare</span></div>
-<div class="ttc" id="class_hover_race_1_1_util_1_1_o_s_html_a121b3df1148145f4a82b9542b544ad8f"><div class="ttname"><a href="class_hover_race_1_1_util_1_1_o_s.html#a121b3df1148145f4a82b9542b544ad8f">HoverRace::Util::OS::timestamp_t</a></div><div class="ttdeci">MR_UInt32 timestamp_t</div><div class="ttdef"><b>Definition:</b> OS.h:58</div></div>
+<div class="ttc" id="class_hover_race_1_1_util_1_1_o_s_html_a121b3df1148145f4a82b9542b544ad8f"><div class="ttname"><a href="class_hover_race_1_1_util_1_1_o_s.html#a121b3df1148145f4a82b9542b544ad8f">HoverRace::Util::OS::timestamp_t</a></div><div class="ttdeci">MR_UInt32 timestamp_t</div><div class="ttdef"><b>Definition:</b> OS.h:57</div></div>
 <div class="ttc" id="_chronometer_8h_html_a92ab9b5ccb38279197015ee3f200757a"><div class="ttname"><a href="_chronometer_8h.html#a92ab9b5ccb38279197015ee3f200757a">MR_DllDeclare</a></div><div class="ttdeci">#define MR_DllDeclare</div><div class="ttdef"><b>Definition:</b> Chronometer.h:33</div></div>
 <div class="ttc" id="_hud_decor_8h_html"><div class="ttname"><a href="_hud_decor_8h.html">HudDecor.h</a></div></div>
 <div class="ttc" id="class_hover_race_1_1_display_1_1_chronometer_html_ae4c3d31a642b877048eeb3bcac0f1ea8"><div class="ttname"><a href="class_hover_race_1_1_display_1_1_chronometer.html#ae4c3d31a642b877048eeb3bcac0f1ea8">HoverRace::Display::Chronometer::SUPER</a></div><div class="ttdeci">HudDecor SUPER</div><div class="ttdef"><b>Definition:</b> Chronometer.h:51</div></div>

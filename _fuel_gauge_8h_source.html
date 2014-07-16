@@ -54,7 +54,7 @@
 <a href="_fuel_gauge_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// FuelGauge.h</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// Copyright (c) 2013 Michael Imamura.</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// Copyright (c) 2013, 2014 Michael Imamura.</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">// Licensed under GrokkSoft HoverRace SourceCode License v1.0(the &quot;License&quot;);</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">// you may not use this file except in compliance with the License.</span></div>
@@ -76,7 +76,7 @@
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_hud_decor_8h.html">HudDecor.h</a>&quot;</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#ifdef _WIN32</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#if defined(_WIN32) &amp;&amp; defined(HR_ENGINE_SHARED)</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#   ifdef MR_ENGINE</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#       define MR_DllDeclare   __declspec( dllexport )</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#   else</span></div>
@@ -105,7 +105,7 @@
 <div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="class_hover_race_1_1_display_1_1_fuel_gauge.html#ac299b3b9b82420abc55a388df051b411">   56</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class_hover_race_1_1_display_1_1_fuel_gauge.html#ac299b3b9b82420abc55a388df051b411">~FuelGauge</a>() { }</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordtype">void</span> Advance(<a class="code" href="class_hover_race_1_1_util_1_1_o_s.html#a121b3df1148145f4a82b9542b544ad8f">Util::OS::timestamp_t</a> tick);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordtype">void</span> Advance(<a class="code" href="class_hover_race_1_1_util_1_1_o_s.html#a121b3df1148145f4a82b9542b544ad8f">Util::OS::timestamp_t</a> tick) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="class_hover_race_1_1_display_1_1_fuel_gauge.html#a9efd93cb900cf2b6c24777e0594c5898">   62</a></span>&#160;        std::shared_ptr&lt;FillBox&gt; <a class="code" href="class_hover_race_1_1_display_1_1_fuel_gauge.html#a9efd93cb900cf2b6c24777e0594c5898">bg</a>;</div>
@@ -117,7 +117,7 @@
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#undef MR_DllDeclare</span></div>
 <div class="ttc" id="class_hover_race_1_1_display_1_1_fuel_gauge_html_a3f3bf4b0c58878e47735846e5578539e"><div class="ttname"><a href="class_hover_race_1_1_display_1_1_fuel_gauge.html#a3f3bf4b0c58878e47735846e5578539e">HoverRace::Display::FuelGauge::SUPER</a></div><div class="ttdeci">HudDecor SUPER</div><div class="ttdef"><b>Definition:</b> FuelGauge.h:52</div></div>
-<div class="ttc" id="class_hover_race_1_1_util_1_1_o_s_html_a121b3df1148145f4a82b9542b544ad8f"><div class="ttname"><a href="class_hover_race_1_1_util_1_1_o_s.html#a121b3df1148145f4a82b9542b544ad8f">HoverRace::Util::OS::timestamp_t</a></div><div class="ttdeci">MR_UInt32 timestamp_t</div><div class="ttdef"><b>Definition:</b> OS.h:58</div></div>
+<div class="ttc" id="class_hover_race_1_1_util_1_1_o_s_html_a121b3df1148145f4a82b9542b544ad8f"><div class="ttname"><a href="class_hover_race_1_1_util_1_1_o_s.html#a121b3df1148145f4a82b9542b544ad8f">HoverRace::Util::OS::timestamp_t</a></div><div class="ttdeci">MR_UInt32 timestamp_t</div><div class="ttdef"><b>Definition:</b> OS.h:57</div></div>
 <div class="ttc" id="class_hover_race_1_1_display_1_1_fuel_gauge_html_ac299b3b9b82420abc55a388df051b411"><div class="ttname"><a href="class_hover_race_1_1_display_1_1_fuel_gauge.html#ac299b3b9b82420abc55a388df051b411">HoverRace::Display::FuelGauge::~FuelGauge</a></div><div class="ttdeci">virtual ~FuelGauge()</div><div class="ttdef"><b>Definition:</b> FuelGauge.h:56</div></div>
 <div class="ttc" id="class_hover_race_1_1_display_1_1_fuel_gauge_html"><div class="ttname"><a href="class_hover_race_1_1_display_1_1_fuel_gauge.html">HoverRace::Display::FuelGauge</a></div><div class="ttdoc">HUD fuel level indicator. </div><div class="ttdef"><b>Definition:</b> FuelGauge.h:50</div></div>
 <div class="ttc" id="_hud_decor_8h_html"><div class="ttname"><a href="_hud_decor_8h.html">HudDecor.h</a></div></div>

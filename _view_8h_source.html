@@ -54,7 +54,7 @@
 <a href="_view_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// View.h</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// Copyright (c) 2013 Michael Imamura.</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// Copyright (c) 2013, 2014 Michael Imamura.</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">// Licensed under GrokkSoft HoverRace SourceCode License v1.0(the &quot;License&quot;);</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">// you may not use this file except in compliance with the License.</span></div>
@@ -74,7 +74,7 @@
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#ifdef _WIN32</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#if defined(_WIN32) &amp;&amp; defined(HR_ENGINE_SHARED)</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#   ifdef MR_ENGINE</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#       define MR_DllDeclare   __declspec( dllexport )</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#   else</span></div>
@@ -93,7 +93,7 @@
 <div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_hover_race_1_1_display_1_1_view.html#a2cf3cabf6ffc7d394710d21281908d18">   45</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class_hover_race_1_1_display_1_1_view.html#a2cf3cabf6ffc7d394710d21281908d18">~View</a>() { }</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_hover_race_1_1_display_1_1_view.html#a7c92cd703cf190b0fb7198ec8fc86ba7">   54</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_hover_race_1_1_display_1_1_view.html#a7c92cd703cf190b0fb7198ec8fc86ba7">OnModelUpdate</a>(<span class="keywordtype">int</span> prop) { }</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_hover_race_1_1_display_1_1_view.html#a7c92cd703cf190b0fb7198ec8fc86ba7">   54</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_hover_race_1_1_display_1_1_view.html#a7c92cd703cf190b0fb7198ec8fc86ba7">OnModelUpdate</a>(<span class="keywordtype">int</span> prop) { HR_UNUSED(prop); }</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="struct_hover_race_1_1_vec3.html">Vec3</a> Measure() = 0;</div>

@@ -77,7 +77,7 @@
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_res_bitmap_8h.html">ResBitmap.h</a>&quot;</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;../VideoServices/Viewport3D.h&quot;</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#ifdef _WIN32</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#if defined(_WIN32) &amp;&amp; defined(HR_ENGINE_SHARED)</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#   ifdef MR_ENGINE</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#       define MR_DllDeclare   __declspec( dllexport )</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#   else</span></div>
@@ -227,7 +227,7 @@
 <div class="ttc" id="class_hover_race_1_1_obj_fac_tools_1_1_res_bitmap_html"><div class="ttname"><a href="class_hover_race_1_1_obj_fac_tools_1_1_res_bitmap.html">HoverRace::ObjFacTools::ResBitmap</a></div><div class="ttdef"><b>Definition:</b> ResBitmap.h:47</div></div>
 <div class="ttc" id="class_hover_race_1_1_obj_fac_tools_1_1_res_actor_1_1_frame_html_af62190fe1b9dcb4d18e68f7390050326"><div class="ttname"><a href="class_hover_race_1_1_obj_fac_tools_1_1_res_actor_1_1_frame.html#af62190fe1b9dcb4d18e68f7390050326">HoverRace::ObjFacTools::ResActor::Frame::mNbComponent</a></div><div class="ttdeci">int mNbComponent</div><div class="ttdef"><b>Definition:</b> ResActor.h:96</div></div>
 <div class="ttc" id="class_hover_race_1_1_obj_fac_tools_1_1_res_actor_html_a83ca4d7a32a758a882bbdfed2af128a2"><div class="ttname"><a href="class_hover_race_1_1_obj_fac_tools_1_1_res_actor.html#a83ca4d7a32a758a882bbdfed2af128a2">HoverRace::ObjFacTools::ResActor::GetSequenceCount</a></div><div class="ttdeci">MR_DllDeclare int GetSequenceCount() const </div><div class="ttdef"><b>Definition:</b> ResActor.cpp:52</div></div>
-<div class="ttc" id="class_hover_race_1_1_obj_fac_tools_1_1_resource_lib_html"><div class="ttname"><a href="class_hover_race_1_1_obj_fac_tools_1_1_resource_lib.html">HoverRace::ObjFacTools::ResourceLib</a></div><div class="ttdef"><b>Definition:</b> ResourceLib.h:52</div></div>
+<div class="ttc" id="class_hover_race_1_1_obj_fac_tools_1_1_resource_lib_html"><div class="ttname"><a href="class_hover_race_1_1_obj_fac_tools_1_1_resource_lib.html">HoverRace::ObjFacTools::ResourceLib</a></div><div class="ttdoc">Loadable resource manager. </div><div class="ttdef"><b>Definition:</b> ResourceLib.h:55</div></div>
 <div class="ttc" id="class_hover_race_1_1_obj_fac_tools_1_1_res_actor_1_1_sequence_html_a68f85b08837d49af3d11cee023b7e8e6"><div class="ttname"><a href="class_hover_race_1_1_obj_fac_tools_1_1_res_actor_1_1_sequence.html#a68f85b08837d49af3d11cee023b7e8e6">HoverRace::ObjFacTools::ResActor::Sequence::mFrameList</a></div><div class="ttdeci">Frame * mFrameList</div><div class="ttdef"><b>Definition:</b> ResActor.h:111</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

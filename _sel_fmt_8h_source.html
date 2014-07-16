@@ -54,7 +54,7 @@
 <a href="_sel_fmt_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// SelFmt.h</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// Copyright (c) 2013 Michael Imamura.</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// Copyright (c) 2013, 2014 Michael Imamura.</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">// Licensed under GrokkSoft HoverRace SourceCode License v1.0(the &quot;License&quot;);</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">// you may not use this file except in compliance with the License.</span></div>
@@ -76,7 +76,7 @@
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;../Util/MR_Types.h&quot;</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#ifdef _WIN32</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#if defined(_WIN32) &amp;&amp; defined(HR_ENGINE_SHARED)</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#   ifdef MR_ENGINE</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#       define MR_DllDeclare   __declspec( dllexport )</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#   else</span></div>
@@ -103,7 +103,7 @@
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">return</span> os;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="namespace_hover_race_1_1_util.html#a6f05a8a5dde24ee8acae1587bd0df75c">   53</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">int</span> <a class="code" href="namespace_hover_race_1_1_util.html#a6f05a8a5dde24ee8acae1587bd0df75c">GetSelFmt</a>(std::ostream &amp;os)</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="namespace_hover_race_1_1_util.html#ac829f73fa9482c3385fc4520ec0e4d0d">   53</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">long</span> <a class="code" href="namespace_hover_race_1_1_util.html#ac829f73fa9482c3385fc4520ec0e4d0d">GetSelFmt</a>(std::ostream &amp;os)</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;{</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">return</span> os.iword(<a class="code" href="namespace_hover_race_1_1_util.html#a59bd6df59094e2112319d12214c8f98d">SEL_FMT_INDEX</a>);</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
@@ -112,10 +112,10 @@
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}  <span class="comment">// namespace HoverRace</span></div>
 <div class="ttc" id="namespace_hover_race_1_1_util_html_a0315ef48eaf934e7f83bfbb731d9d799ab9a627f4a9b9cb4265c3774c2a2f2a81"><div class="ttname"><a href="namespace_hover_race_1_1_util.html#a0315ef48eaf934e7f83bfbb731d9d799ab9a627f4a9b9cb4265c3774c2a2f2a81">HoverRace::Util::SEL_FMT_DEFAULT</a></div><div class="ttdef"><b>Definition:</b> SelFmt.h:42</div></div>
 <div class="ttc" id="namespace_hover_race_1_1_util_html_a83b4d1ed83b0d57290ae9d1c37989161"><div class="ttname"><a href="namespace_hover_race_1_1_util.html#a83b4d1ed83b0d57290ae9d1c37989161">HoverRace::Util::SelFmt</a></div><div class="ttdeci">std::ostream &amp; SelFmt(std::ostream &amp;os)</div><div class="ttdef"><b>Definition:</b> SelFmt.h:47</div></div>
+<div class="ttc" id="namespace_hover_race_1_1_util_html_ac829f73fa9482c3385fc4520ec0e4d0d"><div class="ttname"><a href="namespace_hover_race_1_1_util.html#ac829f73fa9482c3385fc4520ec0e4d0d">HoverRace::Util::GetSelFmt</a></div><div class="ttdeci">long GetSelFmt(std::ostream &amp;os)</div><div class="ttdef"><b>Definition:</b> SelFmt.h:53</div></div>
 <div class="ttc" id="_sel_fmt_8h_html_a92ab9b5ccb38279197015ee3f200757a"><div class="ttname"><a href="_sel_fmt_8h.html#a92ab9b5ccb38279197015ee3f200757a">MR_DllDeclare</a></div><div class="ttdeci">#define MR_DllDeclare</div><div class="ttdef"><b>Definition:</b> SelFmt.h:33</div></div>
 <div class="ttc" id="namespace_hover_race_1_1_util_html_a59bd6df59094e2112319d12214c8f98d"><div class="ttname"><a href="namespace_hover_race_1_1_util.html#a59bd6df59094e2112319d12214c8f98d">HoverRace::Util::SEL_FMT_INDEX</a></div><div class="ttdeci">const int SEL_FMT_INDEX</div><div class="ttdef"><b>Definition:</b> SelFmt.cpp:29</div></div>
 <div class="ttc" id="namespace_hover_race_1_1_util_html_a0315ef48eaf934e7f83bfbb731d9d799a5a52e1acdc085acec07288ec2c9bc94b"><div class="ttname"><a href="namespace_hover_race_1_1_util.html#a0315ef48eaf934e7f83bfbb731d9d799a5a52e1acdc085acec07288ec2c9bc94b">HoverRace::Util::SEL_FMT_PANGO</a></div><div class="ttdef"><b>Definition:</b> SelFmt.h:43</div></div>
-<div class="ttc" id="namespace_hover_race_1_1_util_html_a6f05a8a5dde24ee8acae1587bd0df75c"><div class="ttname"><a href="namespace_hover_race_1_1_util.html#a6f05a8a5dde24ee8acae1587bd0df75c">HoverRace::Util::GetSelFmt</a></div><div class="ttdeci">int GetSelFmt(std::ostream &amp;os)</div><div class="ttdef"><b>Definition:</b> SelFmt.h:53</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
