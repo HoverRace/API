@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 568;
+var viewWidth = 700;
 var viewHeight = 88;
 var sectionId = 'dynsection-1';
 </script>
@@ -56,8 +56,8 @@ var sectionId = 'dynsection-1';
 <title>TrackBundle.h</title>
 <!-- Node1 -->
 <g id="node1" class="node"><title>Node1</title>
-<polygon fill="#bfbfbf" stroke="black" points="248.5,-59 248.5,-79 327.5,-79 327.5,-59 248.5,-59"/>
-<text text-anchor="middle" x="288" y="-66" font-family="FreeSans" font-size="10.00">TrackBundle.h</text>
+<polygon fill="#bfbfbf" stroke="black" points="332.5,-59 332.5,-79 411.5,-79 411.5,-59 332.5,-59"/>
+<text text-anchor="middle" x="372" y="-66" font-family="FreeSans" font-size="10.00">TrackBundle.h</text>
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
@@ -68,8 +68,8 @@ var sectionId = 'dynsection-1';
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge2" class="edge"><title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M238.55,-57.5856C197.44,-48.0882 137.405,-34.199 85,-22 82.3065,-21.373 79.5265,-20.7249 76.727,-20.0715"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="237.786,-61.0014 248.317,-59.8419 239.362,-54.181 237.786,-61.0014"/>
+<path fill="none" stroke="midnightblue" d="M322.145,-61.8805C264.753,-53.443 167.752,-38.44 85,-22 82.2875,-21.4611 79.4934,-20.8784 76.6837,-20.2721"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="321.986,-65.3945 332.387,-63.3784 322.999,-58.4681 321.986,-65.3945"/>
 </g>
 <!-- Node3 -->
 <g id="node5" class="node"><title>Node3</title>
@@ -80,56 +80,68 @@ var sectionId = 'dynsection-1';
 </g>
 <!-- Node1&#45;&gt;Node3 -->
 <g id="edge4" class="edge"><title>Node1&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M252.351,-55.2158C225.222,-44.7258 188.509,-30.5302 164.08,-21.0842"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="251.283,-58.5551 261.872,-58.8972 253.807,-52.0262 251.283,-58.5551"/>
+<path fill="none" stroke="midnightblue" d="M322.39,-56.7036C279.62,-46.1024 218.62,-30.9827 178.676,-21.0821"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="321.757,-60.1524 332.305,-59.1611 323.441,-53.358 321.757,-60.1524"/>
 </g>
 <!-- Node4 -->
 <g id="node7" class="node"><title>Node4</title>
-<a xlink:href="_game_peer_8cpp.html" target="_top" xlink:title="GamePeer.cpp">
-<polygon fill="none" stroke="black" points="199.5,-1 199.5,-21 280.5,-21 280.5,-1 199.5,-1"/>
-<text text-anchor="middle" x="240" y="-8" font-family="FreeSans" font-size="10.00">GamePeer.cpp</text>
+<a xlink:href="_track_select_scene_8cpp.html" target="_top" xlink:title="TrackSelectScene.cpp">
+<polygon fill="none" stroke="black" points="199.5,-1 199.5,-21 314.5,-21 314.5,-1 199.5,-1"/>
+<text text-anchor="middle" x="257" y="-8" font-family="FreeSans" font-size="10.00">TrackSelectScene.cpp</text>
 </a>
 </g>
 <!-- Node1&#45;&gt;Node4 -->
 <g id="edge6" class="edge"><title>Node1&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M273.088,-50.981C265.036,-41.2522 255.384,-29.5889 248.588,-21.3776"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="270.567,-53.4247 279.639,-58.8972 275.96,-48.9617 270.567,-53.4247"/>
+<path fill="none" stroke="midnightblue" d="M342.763,-54.2544C322.25,-43.9086 295.349,-30.3411 277.188,-21.1817"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="341.464,-57.519 351.969,-58.8972 344.616,-51.2689 341.464,-57.519"/>
 </g>
 <!-- Node5 -->
 <g id="node9" class="node"><title>Node5</title>
-<a xlink:href="_track_list_8cpp.html" target="_top" xlink:title="TrackList.cpp">
-<polygon fill="none" stroke="black" points="298,-1 298,-21 374,-21 374,-1 298,-1"/>
-<text text-anchor="middle" x="336" y="-8" font-family="FreeSans" font-size="10.00">TrackList.cpp</text>
+<a xlink:href="_game_peer_8cpp.html" target="_top" xlink:title="GamePeer.cpp">
+<polygon fill="none" stroke="black" points="331.5,-1 331.5,-21 412.5,-21 412.5,-1 331.5,-1"/>
+<text text-anchor="middle" x="372" y="-8" font-family="FreeSans" font-size="10.00">GamePeer.cpp</text>
 </a>
 </g>
 <!-- Node1&#45;&gt;Node5 -->
 <g id="edge8" class="edge"><title>Node1&#45;&gt;Node5</title>
-<path fill="none" stroke="midnightblue" d="M302.912,-50.981C310.964,-41.2522 320.616,-29.5889 327.412,-21.3776"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="300.04,-48.9617 296.361,-58.8972 305.433,-53.4247 300.04,-48.9617"/>
+<path fill="none" stroke="midnightblue" d="M372,-48.8902C372,-39.6201 372,-29.0083 372,-21.3776"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="368.5,-48.8971 372,-58.8972 375.5,-48.8972 368.5,-48.8971"/>
 </g>
 <!-- Node6 -->
 <g id="node11" class="node"><title>Node6</title>
-<a xlink:href="_track_bundle_8cpp.html" target="_top" xlink:title="TrackBundle.cpp">
-<polygon fill="none" stroke="black" points="391.5,-1 391.5,-21 480.5,-21 480.5,-1 391.5,-1"/>
-<text text-anchor="middle" x="436" y="-8" font-family="FreeSans" font-size="10.00">TrackBundle.cpp</text>
+<a xlink:href="_track_list_8cpp.html" target="_top" xlink:title="TrackList.cpp">
+<polygon fill="none" stroke="black" points="430,-1 430,-21 506,-21 506,-1 430,-1"/>
+<text text-anchor="middle" x="468" y="-8" font-family="FreeSans" font-size="10.00">TrackList.cpp</text>
 </a>
 </g>
 <!-- Node1&#45;&gt;Node6 -->
 <g id="edge10" class="edge"><title>Node1&#45;&gt;Node6</title>
-<path fill="none" stroke="midnightblue" d="M323.143,-55.2276C349.822,-44.7725 385.907,-30.6312 410.019,-21.1817"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="321.813,-51.9897 313.78,-58.8972 324.367,-58.5071 321.813,-51.9897"/>
+<path fill="none" stroke="midnightblue" d="M397.577,-53.5474C414.543,-43.2969 436.33,-30.1339 451.148,-21.1817"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="395.471,-50.7303 388.722,-58.8972 399.091,-56.7217 395.471,-50.7303"/>
 </g>
 <!-- Node7 -->
 <g id="node13" class="node"><title>Node7</title>
-<a xlink:href="_config_8cpp.html" target="_top" xlink:title="Config.cpp">
-<polygon fill="none" stroke="black" points="498,-1 498,-21 560,-21 560,-1 498,-1"/>
-<text text-anchor="middle" x="529" y="-8" font-family="FreeSans" font-size="10.00">Config.cpp</text>
+<a xlink:href="_track_bundle_8cpp.html" target="_top" xlink:title="TrackBundle.cpp">
+<polygon fill="none" stroke="black" points="523.5,-1 523.5,-21 612.5,-21 612.5,-1 523.5,-1"/>
+<text text-anchor="middle" x="568" y="-8" font-family="FreeSans" font-size="10.00">TrackBundle.cpp</text>
 </a>
 </g>
 <!-- Node1&#45;&gt;Node7 -->
 <g id="edge12" class="edge"><title>Node1&#45;&gt;Node7</title>
-<path fill="none" stroke="midnightblue" d="M337.724,-57.9355C378.48,-48.7314 437.611,-35.069 489,-22 491.792,-21.2899 494.688,-20.5332 497.588,-19.7618"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="336.76,-54.5648 327.773,-60.1765 338.298,-61.3937 336.76,-54.5648"/>
+<path fill="none" stroke="midnightblue" d="M415.809,-56.0361C451.494,-45.4763 501.161,-30.7788 533.922,-21.0842"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="414.736,-52.7034 406.141,-58.8972 416.723,-59.4157 414.736,-52.7034"/>
+</g>
+<!-- Node8 -->
+<g id="node15" class="node"><title>Node8</title>
+<a xlink:href="_config_8cpp.html" target="_top" xlink:title="Config.cpp">
+<polygon fill="none" stroke="black" points="630,-1 630,-21 692,-21 692,-1 630,-1"/>
+<text text-anchor="middle" x="661" y="-8" font-family="FreeSans" font-size="10.00">Config.cpp</text>
+</a>
+</g>
+<!-- Node1&#45;&gt;Node8 -->
+<g id="edge14" class="edge"><title>Node1&#45;&gt;Node8</title>
+<path fill="none" stroke="midnightblue" d="M421.875,-60.8219C472.325,-52.2602 552.434,-37.8708 621,-22 623.807,-21.3503 626.713,-20.6351 629.619,-19.8907"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="421.163,-57.3925 411.884,-62.507 422.327,-64.295 421.163,-57.3925"/>
 </g>
 </g>
 </svg>

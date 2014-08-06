@@ -56,6 +56,7 @@
 <div class="contents">
 <div class="textblock"><code>#include &quot;StdAfx.h&quot;</code><br/>
 <code>#include &lt;SDL2/SDL.h&gt;</code><br/>
+<code>#include &lt;SDL2/SDL_image.h&gt;</code><br/>
 <code>#include &quot;<a class="el" href="_config_8h_source.html">../../Util/Config.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="_log_8h_source.html">../../Util/Log.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="_str_8h_source.html">../../Util/Str.h</a>&quot;</code><br/>
@@ -65,17 +66,25 @@
 <code>#include &quot;<a class="el" href="_container_8h_source.html">../Container.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="_fill_box_8h_source.html">../FillBox.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="_label_8h_source.html">../Label.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="_picture_8h_source.html">../Picture.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="_res_8h_source.html">../Res.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="_rule_line_8h_source.html">../RuleLine.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="_screen_fade_8h_source.html">../ScreenFade.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="_symbol_icon_8h_source.html">../SymbolIcon.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="_ui_font_8h_source.html">../UiFont.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="_wallpaper_8h_source.html">../Wallpaper.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="_sdl_button_view_8h_source.html">SdlButtonView.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="_sdl_click_region_view_8h_source.html">SdlClickRegionView.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="_sdl_container_view_8h_source.html">SdlContainerView.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="_sdl_fill_box_view_8h_source.html">SdlFillBoxView.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="_sdl_label_view_8h_source.html">SdlLabelView.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="_sdl_picture_view_8h_source.html">SdlPictureView.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="_sdl_rule_line_view_8h_source.html">SdlRuleLineView.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="_sdl_screen_fade_view_8h_source.html">SdlScreenFadeView.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="_sdl_symbol_icon_view_8h_source.html">SdlSymbolIconView.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="_sdl_texture_8h_source.html">SdlTexture.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="_sdl_legacy_display_8h_source.html">SdlLegacyDisplay.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="_sdl_wallpaper_view_8h_source.html">SdlWallpaperView.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="_sdl_display_8h_source.html">SdlDisplay.h</a>&quot;</code><br/>
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for SdlDisplay.cpp:</div>
@@ -163,6 +172,18 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">SDL_RendererInfo info</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4f6f435cec61f3b6d7b0c7b0b8fc901e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SDL_RWops* ops</td>
         </tr>
       </table>
 </div><div class="memdoc">

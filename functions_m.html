@@ -136,6 +136,9 @@
 : <a class="el" href="class_hover_race_1_1_model_1_1_game_session.html#a1676f4d19f24535a6193353ce1a25b21">HoverRace::Model::GameSession</a>
 , <a class="el" href="class_hover_race_1_1_model_1_1_level.html#a79fc9534f4cd2a0854d58de6c385c63b">HoverRace::Model::Level</a>
 </li>
+<li>map
+: <a class="el" href="class_hover_race_1_1_model_1_1_track.html#a4e24bcbaf3722c348d8018327f398403">HoverRace::Model::Track</a>
+</li>
 <li>MapKey()
 : <a class="el" href="classyaml_1_1_emitter.html#af256da599915af5a418fff575df92c24">yaml::Emitter</a>
 </li>
@@ -145,11 +148,17 @@
 <li>mApperture
 : <a class="el" href="class_hover_race_1_1_client_1_1_observer.html#af08fec7cb63e16476210f104fb8406c4">HoverRace::Client::Observer</a>
 </li>
+<li>mapPic
+: <a class="el" href="class_hover_race_1_1_display_1_1_minimap.html#ac5896044dab2cc9238bf42c6a615a58a">HoverRace::Display::Minimap</a>
+</li>
+<li>mapScale
+: <a class="el" href="class_hover_race_1_1_display_1_1_minimap.html#a9f479f088d2ed0674994174663dc8701">HoverRace::Display::Minimap</a>
+</li>
 <li>margin
 : <a class="el" href="class_hover_race_1_1_display_1_1_flex_grid.html#a4333d942dd52a89a6b02c0d4317fb418">HoverRace::Display::FlexGrid</a>
 </li>
 <li>MARGIN
-: <a class="el" href="struct_hover_race_1_1_display_1_1_flex_grid_1_1_props.html#a8c993b1e4009f7f2717777a8cc8ada9ca62178d67b003c4850cff7e27d72762f0">HoverRace::Display::FlexGrid::Props</a>
+: <a class="el" href="struct_hover_race_1_1_display_1_1_flex_grid_1_1_props.html#a9231ba8d3ef8707a8d5a860574e8a04ba62178d67b003c4850cff7e27d72762f0">HoverRace::Display::FlexGrid::Props</a>
 </li>
 <li>MARGIN_WIDTH
 : <a class="el" href="class_hover_race_1_1_client_1_1_dialog_scene.html#ac0a161cc8799e8bcef424b7380a4dda9">HoverRace::Client::DialogScene</a>
@@ -410,13 +419,18 @@
 , <a class="el" href="class_hover_race_1_1_display_1_1_flex_grid_1_1_cell.html#a5c59a590f244fac708d43ba025e3e991">HoverRace::Display::FlexGrid::Cell</a>
 , <a class="el" href="class_hover_race_1_1_display_1_1_flex_grid_1_1_default_cell.html#af1d5c1ed00fe941b7d873bb8ec40ed5b">HoverRace::Display::FlexGrid::DefaultCell</a>
 , <a class="el" href="class_hover_race_1_1_display_1_1_flex_grid.html#a62515ea713657c46f12b42633dac4cd0">HoverRace::Display::FlexGrid</a>
+, <a class="el" href="class_hover_race_1_1_display_1_1_picture.html#ae641c81e886d434c3897dc64ee4569de">HoverRace::Display::Picture</a>
+, <a class="el" href="class_hover_race_1_1_display_1_1_rule_line.html#ac1cc0910fb7c76f5f3b0f24cc9c298d2">HoverRace::Display::RuleLine</a>
 , <a class="el" href="class_hover_race_1_1_display_1_1_s_d_l_1_1_sdl_button_view.html#a1854212a4529002fa2132410ab1b73c1">HoverRace::Display::SDL::SdlButtonView</a>
 , <a class="el" href="class_hover_race_1_1_display_1_1_s_d_l_1_1_sdl_click_region_view.html#a2e37ecd799e65703ced83c8d6cbb1e46">HoverRace::Display::SDL::SdlClickRegionView</a>
 , <a class="el" href="class_hover_race_1_1_display_1_1_s_d_l_1_1_sdl_container_view.html#a82a86b440f35454201fcb9c89912e9d4">HoverRace::Display::SDL::SdlContainerView</a>
 , <a class="el" href="class_hover_race_1_1_display_1_1_s_d_l_1_1_sdl_fill_box_view.html#affbc69b16a3557e50aa5abd156b38fce">HoverRace::Display::SDL::SdlFillBoxView</a>
 , <a class="el" href="class_hover_race_1_1_display_1_1_s_d_l_1_1_sdl_label_view.html#a08b28e7cda805f83ed5e304d499e589f">HoverRace::Display::SDL::SdlLabelView</a>
+, <a class="el" href="class_hover_race_1_1_display_1_1_s_d_l_1_1_sdl_picture_view.html#a0e8126a9845d33dd24c0294464a963e8">HoverRace::Display::SDL::SdlPictureView</a>
+, <a class="el" href="class_hover_race_1_1_display_1_1_s_d_l_1_1_sdl_rule_line_view.html#a58e4bc08f9c317559723941196ce1623">HoverRace::Display::SDL::SdlRuleLineView</a>
 , <a class="el" href="class_hover_race_1_1_display_1_1_s_d_l_1_1_sdl_screen_fade_view.html#ad8f4c834202a3dd80e20fd8727ff534b">HoverRace::Display::SDL::SdlScreenFadeView</a>
 , <a class="el" href="class_hover_race_1_1_display_1_1_s_d_l_1_1_sdl_symbol_icon_view.html#a9953ff5ad20b8ecc048a3f3931b362a3">HoverRace::Display::SDL::SdlSymbolIconView</a>
+, <a class="el" href="class_hover_race_1_1_display_1_1_s_d_l_1_1_sdl_wallpaper_view.html#ae9c5354a579d090c1589c4de217da7a1">HoverRace::Display::SDL::SdlWallpaperView</a>
 , <a class="el" href="class_hover_race_1_1_display_1_1_view.html#ae85087a4d6081c03df2749ae580b6b03">HoverRace::Display::View</a>
 , <a class="el" href="class_hover_race_1_1_display_1_1_view_model.html#a82de489930acd52aebe203f1996eaefa">HoverRace::Display::ViewModel</a>
 </li>
@@ -429,6 +443,9 @@
 <li>mediaPath
 : <a class="el" href="struct_hover_race_1_1_util_1_1_config_1_1cfg__app__t.html#ae962481a096ab5f6062efa3bf79f8a6f">HoverRace::Util::Config::cfg_app_t</a>
 , <a class="el" href="class_hover_race_1_1_util_1_1_config.html#af08763bf8019569e89ea1282ef122885">HoverRace::Util::Config</a>
+</li>
+<li>MediaRes()
+: <a class="el" href="class_hover_race_1_1_display_1_1_media_res.html#a9df719dd3c2a2f0c60113073e3c502c8">HoverRace::Display::MediaRes&lt; T &gt;</a>
 </li>
 <li>mEffect
 : <a class="el" href="class_hover_race_1_1_obj_fac1_1_1_finish_line.html#afa6425c4b55e9d449c3c57a008ad5add">HoverRace::ObjFac1::FinishLine</a>
@@ -589,12 +606,6 @@
 <li>mHeight
 : <a class="el" href="class_hover_race_1_1_obj_fac_tools_1_1_res_bitmap.html#aba603089d9c95dd837e5fb95297a3558">HoverRace::ObjFacTools::ResBitmap</a>
 </li>
-<li>mHeightMap
-: <a class="el" href="class_hover_race_1_1_client_1_1_client_session.html#aa829a4de0bb9e9c1f67e0165293acf44">HoverRace::Client::ClientSession</a>
-</li>
-<li>mHeightSprite
-: <a class="el" href="class_hover_race_1_1_client_1_1_client_session.html#a9e746ccbb4140e48b33c79c00792df20">HoverRace::Client::ClientSession</a>
-</li>
 <li>mHoverIcons
 : <a class="el" href="class_hover_race_1_1_client_1_1_observer.html#ae670d399dba79a888e363d38ea252d2d">HoverRace::Client::Observer</a>
 </li>
@@ -616,6 +627,9 @@
 </li>
 <li>Mine()
 : <a class="el" href="class_hover_race_1_1_obj_fac1_1_1_mine.html#a4554e000039482e41aa19b967560dc86">HoverRace::ObjFac1::Mine</a>
+</li>
+<li>Minimap()
+: <a class="el" href="class_hover_race_1_1_display_1_1_minimap.html#af0e5b41b242626fc3fdfbe3e159c3ace">HoverRace::Display::Minimap</a>
 </li>
 <li>mInMaze
 : <a class="el" href="class_hover_race_1_1_model_1_1_obstacle_collision_report.html#a2c99e64a988d1d9523167cf7f980442a">HoverRace::Model::ObstacleCollisionReport</a>
@@ -697,9 +711,6 @@
 </li>
 <li>mLostOfControlEffect
 : <a class="el" href="class_hover_race_1_1_obj_fac1_1_1_missile.html#aed6eacdf7555ea2ba18b05132d30be77">HoverRace::ObjFac1::Missile</a>
-</li>
-<li>mMap
-: <a class="el" href="class_hover_race_1_1_client_1_1_client_session.html#ae1b29c3ea1d6794796e8c9c72fd35110">HoverRace::Client::ClientSession</a>
 </li>
 <li>mMasterMode
 : <a class="el" href="class_hover_race_1_1_main_character_1_1_main_character.html#a31a72c3bc70a81e6269ac88bf1b65324">HoverRace::MainCharacter::MainCharacter</a>
@@ -981,7 +992,7 @@
 : <a class="el" href="class_m_r__2_d_coordinate.html#a54897f5dd349610bddd8527003bffaa9">MR_2DCoordinate</a>
 </li>
 <li>MR_3DCoordinate()
-: <a class="el" href="class_m_r__3_d_coordinate.html#a87823cceaeb61f5f1eb89793a19279ed">MR_3DCoordinate</a>
+: <a class="el" href="class_m_r__3_d_coordinate.html#a938151a3ff405edd394c4fdcdf138ca8">MR_3DCoordinate</a>
 </li>
 <li>MR_FastArrayBase()
 : <a class="el" href="class_m_r___fast_array_base.html#a136b13e9361e5226a0c2406d2b52efcd">MR_FastArrayBase&lt; pType &gt;</a>
@@ -1206,21 +1217,12 @@
 : <a class="el" href="class_hover_race_1_1_obj_fac_tools_1_1_res_bitmap.html#a018ca43342e011490f306ec9699b7838">HoverRace::ObjFacTools::ResBitmap</a>
 , <a class="el" href="class_hover_race_1_1_video_services_1_1_sprite.html#a138ea211644f4e07522767627d557d73">HoverRace::VideoServices::Sprite</a>
 </li>
-<li>mWidthMap
-: <a class="el" href="class_hover_race_1_1_client_1_1_client_session.html#abe50183f2abcbce0d25098ed91762a3c">HoverRace::Client::ClientSession</a>
-</li>
-<li>mWidthSprite
-: <a class="el" href="class_hover_race_1_1_client_1_1_client_session.html#a04b0da76f78d5f25bb3a1aa06a4684e7">HoverRace::Client::ClientSession</a>
-</li>
 <li>mWireFrameView
 : <a class="el" href="class_hover_race_1_1_client_1_1_observer.html#a07bf1e1de1677bb5ac51779a02703aca">HoverRace::Client::Observer</a>
 </li>
 <li>mX
 : <a class="el" href="class_hover_race_1_1_maze_compiler_1_1_m_r__2_d_float_pos.html#a163d81f20f6cb76f0a42a0b227e69333">HoverRace::MazeCompiler::MR_2DFloatPos</a>
 , <a class="el" href="class_m_r__2_d_coordinate.html#a83e71fb56df0228f5905f9e32f012134">MR_2DCoordinate</a>
-</li>
-<li>mX0Map
-: <a class="el" href="class_hover_race_1_1_client_1_1_client_session.html#aaf451ce94096f36c4c8aa4fbb6b8b485">HoverRace::Client::ClientSession</a>
 </li>
 <li>mXMargin_1024
 : <a class="el" href="class_hover_race_1_1_client_1_1_observer.html#ad4dcf6106891745233a0f17469881a68">HoverRace::Client::Observer</a>
@@ -1261,9 +1263,6 @@
 <li>mY
 : <a class="el" href="class_hover_race_1_1_maze_compiler_1_1_m_r__2_d_float_pos.html#a1d7b4bf5cfae3923925403371af46bf4">HoverRace::MazeCompiler::MR_2DFloatPos</a>
 , <a class="el" href="class_m_r__2_d_coordinate.html#aad41e464998154c791fb6287496cb3a5">MR_2DCoordinate</a>
-</li>
-<li>mY0Map
-: <a class="el" href="class_hover_race_1_1_client_1_1_client_session.html#a9066edfd351341b0b29b0e968b769e80">HoverRace::Client::ClientSession</a>
 </li>
 <li>mYMargin_1024
 : <a class="el" href="class_hover_race_1_1_client_1_1_observer.html#ab11877dffdaed2abab1f6d4afe6c58ad">HoverRace::Client::Observer</a>
