@@ -97,15 +97,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8e2b7806d39e02d606484daf32bdb240"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_game_director.html#a8e2b7806d39e02d606484daf32bdb240">RequestShutdown</a> ()=0</td></tr>
 <tr class="memdesc:a8e2b7806d39e02d606484daf32bdb240"><td class="mdescLeft">&#160;</td><td class="mdescRight">Request an orderly shutdown the of app.  <a href="#a8e2b7806d39e02d606484daf32bdb240">More...</a><br/></td></tr>
 <tr class="separator:a8e2b7806d39e02d606484daf32bdb240"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f0ebe7ebdba9810a583a528e16be014"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_game_director.html#a5f0ebe7ebdba9810a583a528e16be014">SignalServerHasChanged</a> ()=0</td></tr>
-<tr class="memdesc:a5f0ebe7ebdba9810a583a528e16be014"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify this director that the IMR server configuration has changed.  <a href="#a5f0ebe7ebdba9810a583a528e16be014">More...</a><br/></td></tr>
-<tr class="separator:a5f0ebe7ebdba9810a583a528e16be014"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84da394a0cdd51e02de0a1550c9f5640"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_game_director.html#a84da394a0cdd51e02de0a1550c9f5640">ChangeAutoUpdates</a> (bool newSetting)=0</td></tr>
-<tr class="memdesc:a84da394a0cdd51e02de0a1550c9f5640"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify this director that the auto-update configuration has changed.  <a href="#a84da394a0cdd51e02de0a1550c9f5640">More...</a><br/></td></tr>
-<tr class="separator:a84da394a0cdd51e02de0a1550c9f5640"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac53a08ab8b1abc4a30f33b2325af5f25"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_game_director.html#ac53a08ab8b1abc4a30f33b2325af5f25">AssignPalette</a> ()=0</td></tr>
-<tr class="memdesc:ac53a08ab8b1abc4a30f33b2325af5f25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify this director that the video palette configuration has changed.  <a href="#ac53a08ab8b1abc4a30f33b2325af5f25">More...</a><br/></td></tr>
-<tr class="separator:ac53a08ab8b1abc4a30f33b2325af5f25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b31524ed59dd6dd585a1adaa67c0da9"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_hover_race_1_1_display_1_1_display.html">Display::Display</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_game_director.html#a8b31524ed59dd6dd585a1adaa67c0da9">GetDisplay</a> () const =0</td></tr>
 <tr class="separator:a8b31524ed59dd6dd585a1adaa67c0da9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2603498ef809720061a997f2fe183b99"><td class="memItemLeft" align="right" valign="top">virtual <br class="typebreak"/>
@@ -163,67 +154,6 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ac53a08ab8b1abc4a30f33b2325af5f25"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void HoverRace::Client::GameDirector::AssignPalette </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Notify this director that the video palette configuration has changed. </p>
-
-<p>Implemented in <a class="el" href="class_hover_race_1_1_client_1_1_client_app.html#a429e4be6ce802fec109c3cd5a3dbe834">HoverRace::Client::ClientApp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a84da394a0cdd51e02de0a1550c9f5640"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void HoverRace::Client::GameDirector::ChangeAutoUpdates </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>newSetting</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Notify this director that the auto-update configuration has changed. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">newSetting</td><td>The new value of the auto-update setting. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implemented in <a class="el" href="class_hover_race_1_1_client_1_1_client_app.html#a09c0a82b9756bedea51118b5f9235c80">HoverRace::Client::ClientApp</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="ac504d50cddf82887c8f416df5b88ee30"></a>
 <div class="memitem">
 <div class="memproto">
@@ -539,33 +469,6 @@ Public Member Functions</h2></td></tr>
 <p>This call returns immediately; the shutdown will actually occur later, possibly when you least expect it. All normal "Are you sure?" confirmation prompts will be skipped. </p>
 
 <p>Implemented in <a class="el" href="class_hover_race_1_1_client_1_1_client_app.html#a63763a2e79d566405e697afa401dd8aa">HoverRace::Client::ClientApp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a5f0ebe7ebdba9810a583a528e16be014"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void HoverRace::Client::GameDirector::SignalServerHasChanged </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Notify this director that the IMR server configuration has changed. </p>
-
-<p>Implemented in <a class="el" href="class_hover_race_1_1_client_1_1_client_app.html#a19ffb8a1fb50d3c0ca3294a1d565f057">HoverRace::Client::ClientApp</a>.</p>
 
 </div>
 </div>
