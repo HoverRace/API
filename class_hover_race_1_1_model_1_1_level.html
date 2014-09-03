@@ -56,6 +56,7 @@
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_hover_race_1_1_model_1_1_level-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">HoverRace::Model::Level Class Reference</div>  </div>
@@ -185,6 +186,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a40147190208e863fed0c0928cf474cbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0295d08bf34862c2205fdf23d1b5c04a"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_model_1_1_level.html#a0295d08bf34862c2205fdf23d1b5c04a">GetFeatureContactOrientation</a> (int pFeature, const <a class="el" href="class_hover_race_1_1_model_1_1_shape_interface.html">ShapeInterface</a> *pShape, <a class="el" href="_world_coordinates_8h.html#a41932ac1a511e3a805f85bae090c5ebd">MR_Angle</a> &amp;pAnswer)</td></tr>
 <tr class="separator:a0295d08bf34862c2205fdf23d1b5c04a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cb8b9efdd75609fe8e25ef027e0fa1a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_model_1_1_level.html#a4cb8b9efdd75609fe8e25ef027e0fa1a">GetGravity</a> () const </td></tr>
+<tr class="memdesc:a4cb8b9efdd75609fe8e25ef027e0fa1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the gravity multiplier.  <a href="#a4cb8b9efdd75609fe8e25ef027e0fa1a">More...</a><br/></td></tr>
+<tr class="separator:a4cb8b9efdd75609fe8e25ef027e0fa1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cb4a73251b8e38b11ba94acd841157d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_model_1_1_level.html#a6cb4a73251b8e38b11ba94acd841157d">SetGravity</a> (double <a class="el" href="class_hover_race_1_1_model_1_1_level.html#a666a19f65b82f4c55c7ea77cea11b275">gravity</a>)</td></tr>
+<tr class="memdesc:a6cb4a73251b8e38b11ba94acd841157d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the current gravity multiplier.  <a href="#a6cb4a73251b8e38b11ba94acd841157d">More...</a><br/></td></tr>
+<tr class="separator:a6cb4a73251b8e38b11ba94acd841157d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -244,6 +251,11 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a66b871301ff6c9c8fb92298867a7edbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a482c12b39cb4d400245f35956d93140a"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_model_1_1_level.html#a482c12b39cb4d400245f35956d93140a">mBroadcastHookData</a></td></tr>
 <tr class="separator:a482c12b39cb4d400245f35956d93140a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a666a19f65b82f4c55c7ea77cea11b275"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_model_1_1_level.html#a666a19f65b82f4c55c7ea77cea11b275">gravity</a></td></tr>
+<tr class="separator:a666a19f65b82f4c55c7ea77cea11b275"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
 <a class="anchor" id="a945a2b81b988f9cc27dcac8d3dd9a321"></a>
@@ -689,6 +701,32 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4cb8b9efdd75609fe8e25ef027e0fa1a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double HoverRace::Model::Level::GetGravity </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the gravity multiplier. </p>
+<dl class="section return"><dt>Returns</dt><dd>The gravity multiplier (1.0 is normal gravity). </dd></dl>
 
 </div>
 </div>
@@ -1332,6 +1370,38 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a6cb4a73251b8e38b11ba94acd841157d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HoverRace::Model::Level::SetGravity </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>gravity</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the current gravity multiplier. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">gravity</td><td>The gravity multiplier (1.0 is normal gravity). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="a9894b1af84e6ca741e405f33abd2a13c"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1365,6 +1435,26 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a666a19f65b82f4c55c7ea77cea11b275"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double HoverRace::Model::Level::gravity</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a79fc9534f4cd2a0854d58de6c385c63b"></a>
 <div class="memitem">
 <div class="memproto">

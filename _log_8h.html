@@ -53,12 +53,19 @@
 <a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">Log.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><div class="dynheader">
+<div class="textblock"><code>#include &lt;boost/log/trivial.hpp&gt;</code><br/>
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for Log.h:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="_log_8h__incl.svg" width="144" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="_log_8h__dep__incl.svg" width="100%" height="504"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
@@ -79,11 +86,16 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespace_hover_race_1_1_util_1_1_log"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_util_1_1_log.html">HoverRace::Util::Log</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespace_hover_race_1_1_util_1_1_log_1_1detail"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_util_1_1_log_1_1detail.html">HoverRace::Util::Log::detail</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a92ab9b5ccb38279197015ee3f200757a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_log_8h.html#a92ab9b5ccb38279197015ee3f200757a">MR_DllDeclare</a></td></tr>
 <tr class="separator:a92ab9b5ccb38279197015ee3f200757a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83e9de9d7f261a75394fc3db4a1368dc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_log_8h.html#a83e9de9d7f261a75394fc3db4a1368dc">HR_LOG</a>(lvl)&#160;&#160;&#160;BOOST_LOG_TRIVIAL(lvl)</td></tr>
+<tr class="memdesc:a83e9de9d7f261a75394fc3db4a1368dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alias for BOOST_LOG_TRIVIAL.  <a href="#a83e9de9d7f261a75394fc3db4a1368dc">More...</a><br/></td></tr>
+<tr class="separator:a83e9de9d7f261a75394fc3db4a1368dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -95,33 +107,60 @@ Entry &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:a182a1731a5141e120a173ebae4a7a79e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_util_1_1_log.html#a182a1731a5141e120a173ebae4a7a79e">HoverRace::Util::Log::Level</a> { <br/>
-&#160;&#160;<a class="el" href="namespace_hover_race_1_1_util_1_1_log.html#a182a1731a5141e120a173ebae4a7a79eadc30ec20708ef7b0f641ef78b7880a15">HoverRace::Util::Log::Level::DEBUG</a>, 
-<a class="el" href="namespace_hover_race_1_1_util_1_1_log.html#a182a1731a5141e120a173ebae4a7a79ea551b723eafd6a31d444fcb2f5920fbd3">HoverRace::Util::Log::Level::INFO</a>, 
-<a class="el" href="namespace_hover_race_1_1_util_1_1_log.html#a182a1731a5141e120a173ebae4a7a79ea32bd8a1db2275458673903bdb84cb277">HoverRace::Util::Log::Level::WARN</a>, 
-<a class="el" href="namespace_hover_race_1_1_util_1_1_log.html#a182a1731a5141e120a173ebae4a7a79eabb1ca97ec761fc37101737ba0aa2e7c5">HoverRace::Util::Log::Level::ERROR</a>, 
+&#160;&#160;<a class="el" href="namespace_hover_race_1_1_util_1_1_log.html#a182a1731a5141e120a173ebae4a7a79ea2d3e4144aa384b18849ab9a8abad74d6">HoverRace::Util::Log::Level::TRACE</a> = boost::log::trivial::trace, 
+<a class="el" href="namespace_hover_race_1_1_util_1_1_log.html#a182a1731a5141e120a173ebae4a7a79eadc30ec20708ef7b0f641ef78b7880a15">HoverRace::Util::Log::Level::DEBUG</a> = boost::log::trivial::debug, 
+<a class="el" href="namespace_hover_race_1_1_util_1_1_log.html#a182a1731a5141e120a173ebae4a7a79ea551b723eafd6a31d444fcb2f5920fbd3">HoverRace::Util::Log::Level::INFO</a> = boost::log::trivial::info, 
+<a class="el" href="namespace_hover_race_1_1_util_1_1_log.html#a182a1731a5141e120a173ebae4a7a79ea32bd8a1db2275458673903bdb84cb277">HoverRace::Util::Log::Level::WARN</a> = boost::log::trivial::warning, 
 <br/>
-&#160;&#160;<a class="el" href="namespace_hover_race_1_1_util_1_1_log.html#a182a1731a5141e120a173ebae4a7a79ea19da7170bea36556dde582519795f3fc">HoverRace::Util::Log::Level::FATAL</a>
+&#160;&#160;<a class="el" href="namespace_hover_race_1_1_util_1_1_log.html#a182a1731a5141e120a173ebae4a7a79eabb1ca97ec761fc37101737ba0aa2e7c5">HoverRace::Util::Log::Level::ERROR</a> = boost::log::trivial::error, 
+<a class="el" href="namespace_hover_race_1_1_util_1_1_log.html#a182a1731a5141e120a173ebae4a7a79ea19da7170bea36556dde582519795f3fc">HoverRace::Util::Log::Level::FATAL</a> = boost::log::trivial::fatal
 <br/>
  }</td></tr>
 <tr class="separator:a182a1731a5141e120a173ebae4a7a79e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a6333baefd408d61c4157ea48871feac9"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_util_1_1_log_1_1detail.html#a6333baefd408d61c4157ea48871feac9">HoverRace::Util::Log::detail::Fmt</a> (const char *fmt, va_list ap)</td></tr>
+<tr class="separator:a6333baefd408d61c4157ea48871feac9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e32993cc3d1a5c1786edb4039d11805"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_util_1_1_log.html#a0e32993cc3d1a5c1786edb4039d11805">HoverRace::Util::Log::Init</a> ()</td></tr>
 <tr class="memdesc:a0e32993cc3d1a5c1786edb4039d11805"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the system log.  <a href="#a0e32993cc3d1a5c1786edb4039d11805">More...</a><br/></td></tr>
 <tr class="separator:a0e32993cc3d1a5c1786edb4039d11805"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4a7e733e014856aa28f5376705e649c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_viewport3_d_8h.html#a92ab9b5ccb38279197015ee3f200757a">MR_DllDeclare</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_util_1_1_log.html#aa4a7e733e014856aa28f5376705e649c">HoverRace::Util::Log::Debug</a> (...)</td></tr>
-<tr class="separator:aa4a7e733e014856aa28f5376705e649c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a712fba75c147c463ad644013c1153399"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_util_1_1_log.html#a712fba75c147c463ad644013c1153399">HoverRace::Util::Log::Info</a> (const char *fmt,...)</td></tr>
-<tr class="separator:a712fba75c147c463ad644013c1153399"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3db37fca5edd267b290688bfbcc3b885"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_util_1_1_log.html#a3db37fca5edd267b290688bfbcc3b885">HoverRace::Util::Log::Warn</a> (const char *fmt,...)</td></tr>
-<tr class="separator:a3db37fca5edd267b290688bfbcc3b885"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7ffb441490a12c6df4c67070f9822c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_util_1_1_log.html#ab7ffb441490a12c6df4c67070f9822c8">HoverRace::Util::Log::Error</a> (const char *fmt,...)</td></tr>
-<tr class="separator:ab7ffb441490a12c6df4c67070f9822c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afdaa56c933b4657214dc55b20011aeda"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_util_1_1_log.html#afdaa56c933b4657214dc55b20011aeda">HoverRace::Util::Log::Fatal</a> (const char *fmt,...)</td></tr>
-<tr class="separator:afdaa56c933b4657214dc55b20011aeda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad510f42533dadbd22712a1063f8dca17"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_util_1_1_log.html#ad510f42533dadbd22712a1063f8dca17">HoverRace::Util::Log::Debug</a> (const char *fmt,...)</td></tr>
+<tr class="separator:ad510f42533dadbd22712a1063f8dca17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6b1ed902a8dc9143ffd5c9c4469bb1d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_util_1_1_log.html#ab6b1ed902a8dc9143ffd5c9c4469bb1d">HoverRace::Util::Log::Info</a> (const char *fmt,...)</td></tr>
+<tr class="separator:ab6b1ed902a8dc9143ffd5c9c4469bb1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d4d3487baa7dd43519200761fadb2c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_util_1_1_log.html#a3d4d3487baa7dd43519200761fadb2c5">HoverRace::Util::Log::Warn</a> (const char *fmt,...)</td></tr>
+<tr class="separator:a3d4d3487baa7dd43519200761fadb2c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90943b863422055bb790837cc3d5f8fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_util_1_1_log.html#a90943b863422055bb790837cc3d5f8fe">HoverRace::Util::Log::Error</a> (const char *fmt,...)</td></tr>
+<tr class="separator:a90943b863422055bb790837cc3d5f8fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dee4346155cbd0bb205d57c07cd55d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_util_1_1_log.html#a4dee4346155cbd0bb205d57c07cd55d4">HoverRace::Util::Log::Fatal</a> (const char *fmt,...)</td></tr>
+<tr class="separator:a4dee4346155cbd0bb205d57c07cd55d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ab45a4a583e7049b306ddc3d32b51074e"><td class="memItemLeft" align="right" valign="top">const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_util_1_1_log_1_1detail.html#ab45a4a583e7049b306ddc3d32b51074e">HoverRace::Util::Log::detail::MAX_LOG</a> = 512</td></tr>
+<tr class="memdesc:ab45a4a583e7049b306ddc3d32b51074e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum length of a vararg log.  <a href="#ab45a4a583e7049b306ddc3d32b51074e">More...</a><br/></td></tr>
+<tr class="separator:ab45a4a583e7049b306ddc3d32b51074e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="a83e9de9d7f261a75394fc3db4a1368dc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HR_LOG</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">lvl</td><td>)</td>
+          <td>&#160;&#160;&#160;BOOST_LOG_TRIVIAL(lvl)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Alias for BOOST_LOG_TRIVIAL. </p>
+
+</div>
+</div>
 <a class="anchor" id="a92ab9b5ccb38279197015ee3f200757a"></a>
 <div class="memitem">
 <div class="memproto">
