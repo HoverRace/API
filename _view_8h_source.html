@@ -96,20 +96,27 @@
 <div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_hover_race_1_1_display_1_1_view.html#a7c92cd703cf190b0fb7198ec8fc86ba7">   54</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_hover_race_1_1_display_1_1_view.html#a7c92cd703cf190b0fb7198ec8fc86ba7">OnModelUpdate</a>(<span class="keywordtype">int</span> prop) { HR_UNUSED(prop); }</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="struct_hover_race_1_1_vec3.html">Vec3</a> Measure() = 0;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> PrepareRender() = 0;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> Render() = 0;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;};</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}  <span class="comment">// namespace Display</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}  <span class="comment">// namespace HoverRace</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#undef MR_DllDeclare</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="class_hover_race_1_1_display_1_1_view.html#a107ffad5e2ca1f178470e50d3548481f">   62</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="struct_hover_race_1_1_vec2.html">Vec2</a> <a class="code" href="class_hover_race_1_1_display_1_1_view.html#a107ffad5e2ca1f178470e50d3548481f">GetScreenPos</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="struct_hover_race_1_1_vec2.html">Vec2</a>(0, 0); }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="class_hover_race_1_1_display_1_1_view.html#a6ecce640d299754b9797a567fe819544">   69</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="struct_hover_race_1_1_vec2.html">Vec2</a> <a class="code" href="class_hover_race_1_1_display_1_1_view.html#a6ecce640d299754b9797a567fe819544">GetScreenSize</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="struct_hover_race_1_1_vec2.html">Vec2</a>(0, 0); }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="struct_hover_race_1_1_vec3.html">Vec3</a> Measure() = 0;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> PrepareRender() = 0;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> Render() = 0;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;};</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}  <span class="comment">// namespace Display</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}  <span class="comment">// namespace HoverRace</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#undef MR_DllDeclare</span></div>
 <div class="ttc" id="_view_8h_html_a92ab9b5ccb38279197015ee3f200757a"><div class="ttname"><a href="_view_8h.html#a92ab9b5ccb38279197015ee3f200757a">MR_DllDeclare</a></div><div class="ttdeci">#define MR_DllDeclare</div><div class="ttdef"><b>Definition:</b> View.h:31</div></div>
 <div class="ttc" id="class_hover_race_1_1_display_1_1_view_html_a2cf3cabf6ffc7d394710d21281908d18"><div class="ttname"><a href="class_hover_race_1_1_display_1_1_view.html#a2cf3cabf6ffc7d394710d21281908d18">HoverRace::Display::View::~View</a></div><div class="ttdeci">virtual ~View()</div><div class="ttdef"><b>Definition:</b> View.h:45</div></div>
+<div class="ttc" id="struct_hover_race_1_1_vec2_html"><div class="ttname"><a href="struct_hover_race_1_1_vec2.html">HoverRace::Vec2</a></div><div class="ttdef"><b>Definition:</b> Vec.h:38</div></div>
+<div class="ttc" id="class_hover_race_1_1_display_1_1_view_html_a6ecce640d299754b9797a567fe819544"><div class="ttname"><a href="class_hover_race_1_1_display_1_1_view.html#a6ecce640d299754b9797a567fe819544">HoverRace::Display::View::GetScreenSize</a></div><div class="ttdeci">virtual Vec2 GetScreenSize() const </div><div class="ttdoc">Retrieve the screen-space size, if available. </div><div class="ttdef"><b>Definition:</b> View.h:69</div></div>
 <div class="ttc" id="class_hover_race_1_1_display_1_1_view_html_a7c92cd703cf190b0fb7198ec8fc86ba7"><div class="ttname"><a href="class_hover_race_1_1_display_1_1_view.html#a7c92cd703cf190b0fb7198ec8fc86ba7">HoverRace::Display::View::OnModelUpdate</a></div><div class="ttdeci">virtual void OnModelUpdate(int prop)</div><div class="ttdoc">Called by the view model to indicate that a property has changed. </div><div class="ttdef"><b>Definition:</b> View.h:54</div></div>
 <div class="ttc" id="class_hover_race_1_1_display_1_1_view_html"><div class="ttname"><a href="class_hover_race_1_1_display_1_1_view.html">HoverRace::Display::View</a></div><div class="ttdoc">Base class for views. </div><div class="ttdef"><b>Definition:</b> View.h:42</div></div>
-<div class="ttc" id="struct_hover_race_1_1_vec3_html"><div class="ttname"><a href="struct_hover_race_1_1_vec3.html">HoverRace::Vec3</a></div><div class="ttdef"><b>Definition:</b> Vec.h:88</div></div>
+<div class="ttc" id="class_hover_race_1_1_display_1_1_view_html_a107ffad5e2ca1f178470e50d3548481f"><div class="ttname"><a href="class_hover_race_1_1_display_1_1_view.html#a107ffad5e2ca1f178470e50d3548481f">HoverRace::Display::View::GetScreenPos</a></div><div class="ttdeci">virtual Vec2 GetScreenPos() const </div><div class="ttdoc">Retrieve the screen-space position, if available. </div><div class="ttdef"><b>Definition:</b> View.h:62</div></div>
+<div class="ttc" id="struct_hover_race_1_1_vec3_html"><div class="ttname"><a href="struct_hover_race_1_1_vec3.html">HoverRace::Vec3</a></div><div class="ttdef"><b>Definition:</b> Vec.h:114</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

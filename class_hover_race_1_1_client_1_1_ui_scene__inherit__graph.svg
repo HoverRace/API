@@ -56,9 +56,9 @@ var sectionId = 'dynsection-0';
 <title>HoverRace::Client::UiScene</title>
 <!-- Node1 -->
 <g id="node1" class="node"><title>Node1</title>
-<polygon fill="#bfbfbf" stroke="black" points="136.5,-287 136.5,-319 235.5,-319 235.5,-287 136.5,-287"/>
-<text text-anchor="start" x="144.5" y="-306" font-family="FreeSans" font-size="10.00">HoverRace::Client::</text>
-<text text-anchor="middle" x="186" y="-294" font-family="FreeSans" font-size="10.00">UiScene</text>
+<polygon fill="#bfbfbf" stroke="black" points="136.5,-262 136.5,-294 235.5,-294 235.5,-262 136.5,-262"/>
+<text text-anchor="start" x="144.5" y="-281" font-family="FreeSans" font-size="10.00">HoverRace::Client::</text>
+<text text-anchor="middle" x="186" y="-269" font-family="FreeSans" font-size="10.00">UiScene</text>
 </g>
 <!-- Node3 -->
 <g id="node5" class="node"><title>Node3</title>
@@ -70,8 +70,8 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node1&#45;&gt;Node3 -->
 <g id="edge4" class="edge"><title>Node1&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M245.241,-322.234C260.197,-327.09 276.099,-332.253 290.519,-336.935"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="246.166,-318.855 235.574,-319.096 244.005,-325.513 246.166,-318.855"/>
+<path fill="none" stroke="midnightblue" d="M219.709,-299.431C235.284,-308.851 254.231,-319.646 272,-328 278.716,-331.157 285.948,-334.187 293.102,-336.981"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="221.318,-296.312 210.962,-294.072 217.661,-302.281 221.318,-296.312"/>
 </g>
 <!-- Node25 -->
 <g id="node49" class="node"><title>Node25</title>
@@ -83,8 +83,8 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node1&#45;&gt;Node25 -->
 <g id="edge48" class="edge"><title>Node1&#45;&gt;Node25</title>
-<path fill="none" stroke="midnightblue" d="M245.848,-303C254.418,-303 263.286,-303 271.998,-303"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="245.574,-299.5 235.574,-303 245.574,-306.5 245.574,-299.5"/>
+<path fill="none" stroke="midnightblue" d="M245.566,-287.67C254.223,-289.075 263.19,-290.531 271.998,-291.961"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="246.006,-284.195 235.574,-286.048 244.884,-291.105 246.006,-284.195"/>
 </g>
 <!-- Node26 -->
 <g id="node51" class="node"><title>Node26</title>
@@ -96,21 +96,34 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node1&#45;&gt;Node26 -->
 <g id="edge50" class="edge"><title>Node1&#45;&gt;Node26</title>
-<path fill="none" stroke="midnightblue" d="M245.241,-283.766C260.197,-278.91 276.099,-273.747 290.519,-269.065"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="244.005,-280.487 235.574,-286.904 246.166,-287.145 244.005,-280.487"/>
+<path fill="none" stroke="midnightblue" d="M245.617,-268.322C260.373,-265.927 276.026,-263.385 290.255,-261.076"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="244.884,-264.895 235.574,-269.952 246.006,-271.805 244.884,-264.895"/>
+</g>
+<!-- Node27 -->
+<g id="node53" class="node"><title>Node27</title>
+<a xlink:href="class_hover_race_1_1_client_1_1_status_overlay_scene.html" target="_top" xlink:title="Overlay for showing connected players, pop&#45;up messages, etc. ">
+<polygon fill="none" stroke="black" points="287,-187 287,-219 393,-219 393,-187 287,-187"/>
+<text text-anchor="start" x="295" y="-206" font-family="FreeSans" font-size="10.00">HoverRace::Client::</text>
+<text text-anchor="middle" x="340" y="-194" font-family="FreeSans" font-size="10.00">StatusOverlayScene</text>
+</a>
+</g>
+<!-- Node1&#45;&gt;Node27 -->
+<g id="edge52" class="edge"><title>Node1&#45;&gt;Node27</title>
+<path fill="none" stroke="midnightblue" d="M219.709,-256.569C235.284,-247.149 254.231,-236.354 272,-228 278.716,-224.843 285.948,-221.813 293.102,-219.019"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="217.661,-253.719 210.962,-261.928 221.318,-259.688 217.661,-253.719"/>
 </g>
 <!-- Node2 -->
 <g id="node2" class="node"><title>Node2</title>
 <a xlink:href="class_hover_race_1_1_client_1_1_scene.html" target="_top" xlink:title="Scenes are analogous to fullscreen windows that are layered on top of each other. ...">
-<polygon fill="none" stroke="black" points="0.5,-287 0.5,-319 99.5,-319 99.5,-287 0.5,-287"/>
-<text text-anchor="start" x="8.5" y="-306" font-family="FreeSans" font-size="10.00">HoverRace::Client::</text>
-<text text-anchor="middle" x="50" y="-294" font-family="FreeSans" font-size="10.00">Scene</text>
+<polygon fill="none" stroke="black" points="0.5,-262 0.5,-294 99.5,-294 99.5,-262 0.5,-262"/>
+<text text-anchor="start" x="8.5" y="-281" font-family="FreeSans" font-size="10.00">HoverRace::Client::</text>
+<text text-anchor="middle" x="50" y="-269" font-family="FreeSans" font-size="10.00">Scene</text>
 </a>
 </g>
 <!-- Node2&#45;&gt;Node1 -->
 <g id="edge2" class="edge"><title>Node2&#45;&gt;Node1</title>
-<path fill="none" stroke="midnightblue" d="M110,-303C118.729,-303 127.637,-303 136.137,-303"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="109.869,-299.5 99.8691,-303 109.869,-306.5 109.869,-299.5"/>
+<path fill="none" stroke="midnightblue" d="M110,-278C118.729,-278 127.637,-278 136.137,-278"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="109.869,-274.5 99.8691,-278 109.869,-281.5 109.869,-274.5"/>
 </g>
 <!-- Node4 -->
 <g id="node7" class="node"><title>Node4</title>

@@ -56,9 +56,9 @@ var sectionId = 'dynsection-0';
 <title>HoverRace::Client::Scene</title>
 <!-- Node1 -->
 <g id="node1" class="node"><title>Node1</title>
-<polygon fill="#bfbfbf" stroke="black" points="0.5,-362 0.5,-394 99.5,-394 99.5,-362 0.5,-362"/>
-<text text-anchor="start" x="8.5" y="-381" font-family="FreeSans" font-size="10.00">HoverRace::Client::</text>
-<text text-anchor="middle" x="50" y="-369" font-family="FreeSans" font-size="10.00">Scene</text>
+<polygon fill="#bfbfbf" stroke="black" points="0.5,-337 0.5,-369 99.5,-369 99.5,-337 0.5,-337"/>
+<text text-anchor="start" x="8.5" y="-356" font-family="FreeSans" font-size="10.00">HoverRace::Client::</text>
+<text text-anchor="middle" x="50" y="-344" font-family="FreeSans" font-size="10.00">Scene</text>
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
@@ -70,21 +70,21 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge2" class="edge"><title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M109.715,-388.977C118.535,-390.598 127.545,-392.255 136.137,-393.834"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="110.337,-385.533 99.8691,-387.167 109.072,-392.417 110.337,-385.533"/>
+<path fill="none" stroke="midnightblue" d="M103.451,-372.651C116.326,-377.385 129.932,-382.387 142.302,-386.935"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="104.373,-369.261 93.7799,-369.096 101.958,-375.831 104.373,-369.261"/>
 </g>
 <!-- Node5 -->
 <g id="node9" class="node"><title>Node5</title>
 <a xlink:href="class_hover_race_1_1_client_1_1_ui_scene.html" target="_top" xlink:title="Base class for UI&#45;centric scenes. ">
-<polygon fill="none" stroke="black" points="136.5,-312 136.5,-344 235.5,-344 235.5,-312 136.5,-312"/>
-<text text-anchor="start" x="144.5" y="-331" font-family="FreeSans" font-size="10.00">HoverRace::Client::</text>
-<text text-anchor="middle" x="186" y="-319" font-family="FreeSans" font-size="10.00">UiScene</text>
+<polygon fill="none" stroke="black" points="136.5,-287 136.5,-319 235.5,-319 235.5,-287 136.5,-287"/>
+<text text-anchor="start" x="144.5" y="-306" font-family="FreeSans" font-size="10.00">HoverRace::Client::</text>
+<text text-anchor="middle" x="186" y="-294" font-family="FreeSans" font-size="10.00">UiScene</text>
 </a>
 </g>
 <!-- Node1&#45;&gt;Node5 -->
 <g id="edge8" class="edge"><title>Node1&#45;&gt;Node5</title>
-<path fill="none" stroke="midnightblue" d="M103.451,-358.349C116.326,-353.615 129.932,-348.613 142.302,-344.065"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="101.958,-355.169 93.7799,-361.904 104.373,-361.739 101.958,-355.169"/>
+<path fill="none" stroke="midnightblue" d="M103.451,-333.349C116.326,-328.615 129.932,-323.613 142.302,-319.065"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="101.958,-330.169 93.7799,-336.904 104.373,-336.739 101.958,-330.169"/>
 </g>
 <!-- Node3 -->
 <g id="node5" class="node"><title>Node3</title>
@@ -122,8 +122,8 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node5&#45;&gt;Node6 -->
 <g id="edge10" class="edge"><title>Node5&#45;&gt;Node6</title>
-<path fill="none" stroke="midnightblue" d="M245.617,-337.678C260.373,-340.073 276.026,-342.615 290.255,-344.924"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="246.006,-334.195 235.574,-336.048 244.884,-341.105 246.006,-334.195"/>
+<path fill="none" stroke="midnightblue" d="M245.241,-322.234C260.197,-327.09 276.099,-332.253 290.519,-336.935"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="246.166,-318.855 235.574,-319.096 244.005,-325.513 246.166,-318.855"/>
 </g>
 <!-- Node28 -->
 <g id="node55" class="node"><title>Node28</title>
@@ -135,8 +135,8 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node5&#45;&gt;Node28 -->
 <g id="edge54" class="edge"><title>Node5&#45;&gt;Node28</title>
-<path fill="none" stroke="midnightblue" d="M245.566,-318.33C254.223,-316.925 263.19,-315.469 271.998,-314.039"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="244.884,-314.895 235.574,-319.952 246.006,-321.805 244.884,-314.895"/>
+<path fill="none" stroke="midnightblue" d="M245.848,-303C254.418,-303 263.286,-303 271.998,-303"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="245.574,-299.5 235.574,-303 245.574,-306.5 245.574,-299.5"/>
 </g>
 <!-- Node29 -->
 <g id="node57" class="node"><title>Node29</title>
@@ -148,8 +148,21 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node5&#45;&gt;Node29 -->
 <g id="edge56" class="edge"><title>Node5&#45;&gt;Node29</title>
-<path fill="none" stroke="midnightblue" d="M219.709,-306.569C235.284,-297.149 254.231,-286.354 272,-278 278.716,-274.843 285.948,-271.813 293.102,-269.019"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="217.661,-303.719 210.962,-311.928 221.318,-309.688 217.661,-303.719"/>
+<path fill="none" stroke="midnightblue" d="M245.241,-283.766C260.197,-278.91 276.099,-273.747 290.519,-269.065"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="244.005,-280.487 235.574,-286.904 246.166,-287.145 244.005,-280.487"/>
+</g>
+<!-- Node30 -->
+<g id="node59" class="node"><title>Node30</title>
+<a xlink:href="class_hover_race_1_1_client_1_1_status_overlay_scene.html" target="_top" xlink:title="Overlay for showing connected players, pop&#45;up messages, etc. ">
+<polygon fill="none" stroke="black" points="287,-187 287,-219 393,-219 393,-187 287,-187"/>
+<text text-anchor="start" x="295" y="-206" font-family="FreeSans" font-size="10.00">HoverRace::Client::</text>
+<text text-anchor="middle" x="340" y="-194" font-family="FreeSans" font-size="10.00">StatusOverlayScene</text>
+</a>
+</g>
+<!-- Node5&#45;&gt;Node30 -->
+<g id="edge58" class="edge"><title>Node5&#45;&gt;Node30</title>
+<path fill="none" stroke="midnightblue" d="M208.547,-279.192C224.916,-263.004 248.27,-242.055 272,-228 277.519,-224.731 283.538,-221.772 289.639,-219.13"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="205.654,-277.139 201.101,-286.705 210.626,-282.066 205.654,-277.139"/>
 </g>
 <!-- Node7 -->
 <g id="node13" class="node"><title>Node7</title>
