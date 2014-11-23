@@ -101,6 +101,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a889ac50fcf2d4ac1073db1167bde601b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_s_d_l_1_1_sdl_display.html#a889ac50fcf2d4ac1073db1167bde601b">AttachView</a> (<a class="el" href="class_hover_race_1_1_display_1_1_screen_fade.html">ScreenFade</a> &amp;model) override</td></tr>
 <tr class="memdesc:a889ac50fcf2d4ac1073db1167bde601b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attach the display-specific view.  <a href="#a889ac50fcf2d4ac1073db1167bde601b">More...</a><br/></td></tr>
 <tr class="separator:a889ac50fcf2d4ac1073db1167bde601b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a843c19938c5b870417846b5ad7a4507a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_s_d_l_1_1_sdl_display.html#a843c19938c5b870417846b5ad7a4507a">AttachView</a> (<a class="el" href="class_hover_race_1_1_display_1_1_slider.html">Slider</a> &amp;model) override</td></tr>
+<tr class="memdesc:a843c19938c5b870417846b5ad7a4507a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attach the display-specific view.  <a href="#a843c19938c5b870417846b5ad7a4507a">More...</a><br/></td></tr>
+<tr class="separator:a843c19938c5b870417846b5ad7a4507a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a122a53bb3eb0678ce5b567483762ec8b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_s_d_l_1_1_sdl_display.html#a122a53bb3eb0678ce5b567483762ec8b">AttachView</a> (<a class="el" href="class_hover_race_1_1_display_1_1_symbol_icon.html">SymbolIcon</a> &amp;model) override</td></tr>
 <tr class="memdesc:a122a53bb3eb0678ce5b567483762ec8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attach the display-specific view.  <a href="#a122a53bb3eb0678ce5b567483762ec8b">More...</a><br/></td></tr>
 <tr class="separator:a122a53bb3eb0678ce5b567483762ec8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -638,6 +641,40 @@ boost::signals2::signal&lt; void(double)&gt;&#160;</td><td class="memItemRight" 
 
 </div>
 </div>
+<a class="anchor" id="a843c19938c5b870417846b5ad7a4507a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HoverRace::Display::SDL::SdlDisplay::AttachView </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_hover_race_1_1_display_1_1_slider.html">Slider</a> &amp;&#160;</td>
+          <td class="paramname"><em>model</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Attach the display-specific view. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">model</td><td>The view model. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="struct_hover_race_1_1_display_1_1_view_attacher.html#a14d0d3a368d41ad09eeeefef07e7e537">HoverRace::Display::ViewAttacher&lt; Slider &gt;</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a122a53bb3eb0678ce5b567483762ec8b"></a>
 <div class="memitem">
 <div class="memproto">
@@ -913,7 +950,7 @@ boost::signals2::signal&lt; void(double)&gt;&#160;</td><td class="memItemRight" 
 <p>Loads a texture resource. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">res</td><td>The resource. </td></tr>
+    <tr><td class="paramname">res</td><td>The resource (may be <code>nullptr</code>). </td></tr>
   </table>
   </dd>
 </dl>

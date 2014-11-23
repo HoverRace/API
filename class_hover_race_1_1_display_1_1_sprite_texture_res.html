@@ -71,11 +71,11 @@ Inheritance diagram for HoverRace::Display::SpriteTextureRes:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a96fd5546c54257a388da40c8bf80a974"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_sprite_texture_res.html#a96fd5546c54257a388da40c8bf80a974">SpriteTextureRes</a> (const std::string &amp;recordName, <a class="el" href="class_hover_race_1_1_parcel_1_1_obj_stream.html">Parcel::ObjStream</a> &amp;archive)</td></tr>
-<tr class="memdesc:a96fd5546c54257a388da40c8bf80a974"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a96fd5546c54257a388da40c8bf80a974">More...</a><br/></td></tr>
-<tr class="separator:a96fd5546c54257a388da40c8bf80a974"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8dcbaca7f49cf8f3e5c8f44c2e728f01"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_sprite_texture_res.html#a8dcbaca7f49cf8f3e5c8f44c2e728f01">~SpriteTextureRes</a> ()</td></tr>
-<tr class="separator:a8dcbaca7f49cf8f3e5c8f44c2e728f01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41ac6b1a1a6d761a4fbc64f0aacf6ae8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_sprite_texture_res.html#a41ac6b1a1a6d761a4fbc64f0aacf6ae8">SpriteTextureRes</a> (const std::string &amp;recordName, <a class="el" href="class_hover_race_1_1_parcel_1_1_obj_stream.html">Parcel::ObjStream</a> &amp;archive, bool flipped=false)</td></tr>
+<tr class="memdesc:a41ac6b1a1a6d761a4fbc64f0aacf6ae8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a41ac6b1a1a6d761a4fbc64f0aacf6ae8">More...</a><br/></td></tr>
+<tr class="separator:a41ac6b1a1a6d761a4fbc64f0aacf6ae8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3caafa3ce5c8f532764c7fd5416e553"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_sprite_texture_res.html#ad3caafa3ce5c8f532764c7fd5416e553">~SpriteTextureRes</a> ()</td></tr>
+<tr class="separator:ad3caafa3ce5c8f532764c7fd5416e553"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64ee908c0246a979bf7ce9572f00adc9"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_sprite_texture_res.html#a64ee908c0246a979bf7ce9572f00adc9">GetId</a> () const override</td></tr>
 <tr class="memdesc:a64ee908c0246a979bf7ce9572f00adc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the ID for this resource.  <a href="#a64ee908c0246a979bf7ce9572f00adc9">More...</a><br/></td></tr>
 <tr class="separator:a64ee908c0246a979bf7ce9572f00adc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -132,7 +132,7 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a96fd5546c54257a388da40c8bf80a974"></a>
+<a class="anchor" id="a41ac6b1a1a6d761a4fbc64f0aacf6ae8"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -146,7 +146,13 @@ Private Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="class_hover_race_1_1_parcel_1_1_obj_stream.html">Parcel::ObjStream</a> &amp;&#160;</td>
-          <td class="paramname"><em>archive</em>&#160;</td>
+          <td class="paramname"><em>archive</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>flipped</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -161,13 +167,14 @@ Private Attributes</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">recordName</td><td>The name of the record being loaded. </td></tr>
     <tr><td class="paramname">archive</td><td>The input object stream. </td></tr>
+    <tr><td class="paramname">flipped</td><td><code>true</code> if the sprite data is stored upside-down. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a class="anchor" id="a8dcbaca7f49cf8f3e5c8f44c2e728f01"></a>
+<a class="anchor" id="ad3caafa3ce5c8f532764c7fd5416e553"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -175,7 +182,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">HoverRace::Display::SpriteTextureRes::~SpriteTextureRes </td>
+          <td class="memname">virtual HoverRace::Display::SpriteTextureRes::~SpriteTextureRes </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -183,7 +190,7 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

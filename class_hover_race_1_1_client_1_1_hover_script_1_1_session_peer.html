@@ -50,6 +50,7 @@
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
@@ -71,6 +72,11 @@ Inheritance diagram for HoverRace::Client::HoverScript::SessionPeer:</div>
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_hover_race_1_1_client_1_1_hover_script_1_1_session_peer__inherit__graph.svg" width="182" height="134"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_session_peer_1_1_player_ref.html">PlayerRef</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ad2c7a91f477efb12904eb6ffd21a66ef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_session_peer.html#ad2c7a91f477efb12904eb6ffd21a66ef">SessionPeer</a> (<a class="el" href="class_hover_race_1_1_script_1_1_core.html">Script::Core</a> *<a class="el" href="class_hover_race_1_1_script_1_1_peer.html#a1fcd626aeb79d2ab853b38335df69f48">scripting</a>, <a class="el" href="class_hover_race_1_1_client_1_1_client_session.html">ClientSession</a> *<a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_session_peer.html#a5a6eb9c6340e6d9beab75fb5cd72b4a9">session</a>)</td></tr>
@@ -144,9 +150,9 @@ Private Attributes</h2></td></tr>
 <tr class="separator:ac0297ba043b999300d309b11f7c0f106"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa789497177d111efd2fbd63fb2137831"><td class="memItemLeft" align="right" valign="top">luabind::object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_session_peer.html#aa789497177d111efd2fbd63fb2137831">players</a></td></tr>
 <tr class="separator:aa789497177d111efd2fbd63fb2137831"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae573cbff4373d05dae33607ab258747e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::shared_ptr<br class="typebreak"/>
-&lt; <a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_meta_player.html">MetaPlayer</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_session_peer.html#ae573cbff4373d05dae33607ab258747e">playerRefs</a></td></tr>
-<tr class="separator:ae573cbff4373d05dae33607ab258747e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cac77e127f9b345b1395a000dc65775"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::unique_ptr<br class="typebreak"/>
+&lt; <a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_session_peer_1_1_player_ref.html">PlayerRef</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_session_peer.html#a3cac77e127f9b345b1395a000dc65775">playerRefs</a></td></tr>
+<tr class="separator:a3cac77e127f9b345b1395a000dc65775"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Scripting peer for a game session. </p>
@@ -503,7 +509,7 @@ template&lt;class Fn &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ae573cbff4373d05dae33607ab258747e"></a>
+<a class="anchor" id="a3cac77e127f9b345b1395a000dc65775"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -511,7 +517,7 @@ template&lt;class Fn &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;std::shared_ptr&lt;<a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_meta_player.html">MetaPlayer</a>&gt; &gt; HoverRace::Client::HoverScript::SessionPeer::playerRefs</td>
+          <td class="memname">std::vector&lt;std::unique_ptr&lt;<a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_session_peer_1_1_player_ref.html">PlayerRef</a>&gt; &gt; HoverRace::Client::HoverScript::SessionPeer::playerRefs</td>
         </tr>
       </table>
   </td>

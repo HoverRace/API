@@ -112,9 +112,9 @@ Public Member Functions</h2></td></tr>
 <a class="el" href="class_hover_race_1_1_control_1_1_input_event_controller.html">Control::InputEventController</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_game_director.html#adac4edd4d70e8ace85acd985fa9bb53c">ReloadController</a> ()=0</td></tr>
 <tr class="memdesc:adac4edd4d70e8ace85acd985fa9bb53c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reload the control settings.  <a href="#adac4edd4d70e8ace85acd985fa9bb53c">More...</a><br/></td></tr>
 <tr class="separator:adac4edd4d70e8ace85acd985fa9bb53c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46844776942a5815baed454a4ca6ed98"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_hover_race_1_1_client_1_1_roster.html">Roster</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_game_director.html#a46844776942a5815baed454a4ca6ed98">GetConnectedPlayers</a> () const =0</td></tr>
-<tr class="memdesc:a46844776942a5815baed454a4ca6ed98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the list of players connected to this game instance.  <a href="#a46844776942a5815baed454a4ca6ed98">More...</a><br/></td></tr>
-<tr class="separator:a46844776942a5815baed454a4ca6ed98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c10422b595176e714e2fc1f775e48a3"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_hover_race_1_1_client_1_1_roster.html">Roster</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_game_director.html#a3c10422b595176e714e2fc1f775e48a3">GetParty</a> () const =0</td></tr>
+<tr class="memdesc:a3c10422b595176e714e2fc1f775e48a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the list of players connected to this game instance.  <a href="#a3c10422b595176e714e2fc1f775e48a3">More...</a><br/></td></tr>
+<tr class="separator:a3c10422b595176e714e2fc1f775e48a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac349f804ae2d10ba6a7b6e17447a34e3"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_hover_race_1_1_client_1_1_game_director.html#a223be148c60bd69b4220220411644609">sessionChangedSignal_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_game_director.html#ac349f804ae2d10ba6a7b6e17447a34e3">GetSessionChangedSignal</a> ()=0</td></tr>
 <tr class="memdesc:ac349f804ae2d10ba6a7b6e17447a34e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access the signal that indicates that the gameplay session started or stopped.  <a href="#ac349f804ae2d10ba6a7b6e17447a34e3">More...</a><br/></td></tr>
 <tr class="separator:ac349f804ae2d10ba6a7b6e17447a34e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -160,34 +160,6 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a46844776942a5815baed454a4ca6ed98"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="class_hover_race_1_1_client_1_1_roster.html">Roster</a>* HoverRace::Client::GameDirector::GetConnectedPlayers </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Retrieve the list of players connected to this game instance. </p>
-<dl class="section return"><dt>Returns</dt><dd>The list (may be <code>nullptr</code>). </dd></dl>
-
-<p>Implemented in <a class="el" href="class_hover_race_1_1_client_1_1_client_app.html#a50d0d4abeb2e5a54c3560b6fe5afe731">HoverRace::Client::ClientApp</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="ac504d50cddf82887c8f416df5b88ee30"></a>
 <div class="memitem">
 <div class="memproto">
@@ -235,6 +207,34 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Implemented in <a class="el" href="class_hover_race_1_1_client_1_1_client_app.html#a6b6bfc5e83212dccd817726adf16fac8">HoverRace::Client::ClientApp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3c10422b595176e714e2fc1f775e48a3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_hover_race_1_1_client_1_1_roster.html">Roster</a>* HoverRace::Client::GameDirector::GetParty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Retrieve the list of players connected to this game instance. </p>
+<dl class="section return"><dt>Returns</dt><dd>The list (may be <code>nullptr</code>). </dd></dl>
+
+<p>Implemented in <a class="el" href="class_hover_race_1_1_client_1_1_client_app.html#a6f5edf2a405c1b0a5dcc4f3bfd5dcf62">HoverRace::Client::ClientApp</a>.</p>
 
 </div>
 </div>

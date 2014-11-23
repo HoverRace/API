@@ -56,9 +56,9 @@ var sectionId = 'dynsection-0';
 <title>HoverRace::Display::ClickRegion</title>
 <!-- Node1 -->
 <g id="node1" class="node"><title>Node1</title>
-<polygon fill="#bfbfbf" stroke="black" points="276.5,-50 276.5,-82 377.5,-82 377.5,-50 276.5,-50"/>
-<text text-anchor="start" x="284.5" y="-69" font-family="FreeSans" font-size="10.00">HoverRace::Display</text>
-<text text-anchor="middle" x="327" y="-57" font-family="FreeSans" font-size="10.00">::ClickRegion</text>
+<polygon fill="#bfbfbf" stroke="black" points="276.5,-25 276.5,-57 377.5,-57 377.5,-25 276.5,-25"/>
+<text text-anchor="start" x="284.5" y="-44" font-family="FreeSans" font-size="10.00">HoverRace::Display</text>
+<text text-anchor="middle" x="327" y="-32" font-family="FreeSans" font-size="10.00">::ClickRegion</text>
 </g>
 <!-- Node4 -->
 <g id="node7" class="node"><title>Node4</title>
@@ -70,34 +70,47 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node1&#45;&gt;Node4 -->
 <g id="edge6" class="edge"><title>Node1&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M387.882,-66C396.74,-66 405.779,-66 414.404,-66"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="387.603,-62.5001 377.603,-66 387.602,-69.5001 387.603,-62.5001"/>
+<path fill="none" stroke="midnightblue" d="M387.593,-51.977C396.543,-53.5984 405.685,-55.2545 414.404,-56.834"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="388.066,-48.5058 377.603,-50.1671 386.818,-55.3937 388.066,-48.5058"/>
+</g>
+<!-- Node8 -->
+<g id="node15" class="node"><title>Node8</title>
+<a xlink:href="class_hover_race_1_1_display_1_1_slider.html" target="_top" xlink:title="A slider for selecting values from a range. ">
+<polygon fill="none" stroke="black" points="414.5,-0 414.5,-32 515.5,-32 515.5,-0 414.5,-0"/>
+<text text-anchor="start" x="422.5" y="-19" font-family="FreeSans" font-size="10.00">HoverRace::Display</text>
+<text text-anchor="middle" x="465" y="-7" font-family="FreeSans" font-size="10.00">::Slider</text>
+</a>
+</g>
+<!-- Node1&#45;&gt;Node8 -->
+<g id="edge14" class="edge"><title>Node1&#45;&gt;Node8</title>
+<path fill="none" stroke="midnightblue" d="M387.593,-30.023C396.543,-28.4016 405.685,-26.7455 414.404,-25.166"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="386.818,-26.6063 377.603,-31.8329 388.066,-33.4942 386.818,-26.6063"/>
 </g>
 <!-- Node2 -->
 <g id="node2" class="node"><title>Node2</title>
 <a xlink:href="class_hover_race_1_1_display_1_1_ui_view_model.html" target="_top" xlink:title="Base class for UI (2D) components. ">
-<polygon fill="none" stroke="black" points="138.5,-50 138.5,-82 239.5,-82 239.5,-50 138.5,-50"/>
-<text text-anchor="start" x="146.5" y="-69" font-family="FreeSans" font-size="10.00">HoverRace::Display</text>
-<text text-anchor="middle" x="189" y="-57" font-family="FreeSans" font-size="10.00">::UiViewModel</text>
+<polygon fill="none" stroke="black" points="138.5,-25 138.5,-57 239.5,-57 239.5,-25 138.5,-25"/>
+<text text-anchor="start" x="146.5" y="-44" font-family="FreeSans" font-size="10.00">HoverRace::Display</text>
+<text text-anchor="middle" x="189" y="-32" font-family="FreeSans" font-size="10.00">::UiViewModel</text>
 </a>
 </g>
 <!-- Node2&#45;&gt;Node1 -->
 <g id="edge2" class="edge"><title>Node2&#45;&gt;Node1</title>
-<path fill="none" stroke="midnightblue" d="M249.882,-66C258.74,-66 267.779,-66 276.404,-66"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="249.603,-62.5001 239.603,-66 249.602,-69.5001 249.603,-62.5001"/>
+<path fill="none" stroke="midnightblue" d="M249.882,-41C258.74,-41 267.779,-41 276.404,-41"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="249.603,-37.5001 239.603,-41 249.602,-44.5001 249.603,-37.5001"/>
 </g>
 <!-- Node3 -->
 <g id="node4" class="node"><title>Node3</title>
 <a xlink:href="class_hover_race_1_1_display_1_1_view_model.html" target="_top" xlink:title="Base class for renderable components. ">
-<polygon fill="none" stroke="black" points="0.5,-50 0.5,-82 101.5,-82 101.5,-50 0.5,-50"/>
-<text text-anchor="start" x="8.5" y="-69" font-family="FreeSans" font-size="10.00">HoverRace::Display</text>
-<text text-anchor="middle" x="51" y="-57" font-family="FreeSans" font-size="10.00">::ViewModel</text>
+<polygon fill="none" stroke="black" points="0.5,-25 0.5,-57 101.5,-57 101.5,-25 0.5,-25"/>
+<text text-anchor="start" x="8.5" y="-44" font-family="FreeSans" font-size="10.00">HoverRace::Display</text>
+<text text-anchor="middle" x="51" y="-32" font-family="FreeSans" font-size="10.00">::ViewModel</text>
 </a>
 </g>
 <!-- Node3&#45;&gt;Node2 -->
 <g id="edge4" class="edge"><title>Node3&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M111.882,-66C120.74,-66 129.779,-66 138.404,-66"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="111.603,-62.5001 101.603,-66 111.602,-69.5001 111.603,-62.5001"/>
+<path fill="none" stroke="midnightblue" d="M111.882,-41C120.74,-41 129.779,-41 138.404,-41"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="111.603,-37.5001 101.603,-41 111.602,-44.5001 111.603,-37.5001"/>
 </g>
 <!-- Node5 -->
 <g id="node9" class="node"><title>Node5</title>
