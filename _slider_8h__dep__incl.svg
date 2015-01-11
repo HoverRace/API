@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 532;
+var viewWidth = 672;
 var viewHeight = 88;
 var sectionId = 'dynsection-1';
 </script>
@@ -56,8 +56,8 @@ var sectionId = 'dynsection-1';
 <title>Slider.h</title>
 <!-- Node1 -->
 <g id="node1" class="node"><title>Node1</title>
-<polygon fill="#bfbfbf" stroke="black" points="260.5,-59 260.5,-79 309.5,-79 309.5,-59 260.5,-59"/>
-<text text-anchor="middle" x="285" y="-66" font-family="FreeSans" font-size="10.00">Slider.h</text>
+<polygon fill="#bfbfbf" stroke="black" points="346.5,-59 346.5,-79 395.5,-79 395.5,-59 346.5,-59"/>
+<text text-anchor="middle" x="371" y="-66" font-family="FreeSans" font-size="10.00">Slider.h</text>
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
@@ -68,8 +68,8 @@ var sectionId = 'dynsection-1';
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge2" class="edge"><title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M250.43,-60.0487C209.72,-49.5077 142.279,-32.0455 99.812,-21.0495"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="249.614,-63.4529 260.172,-62.5714 251.369,-56.6764 249.614,-63.4529"/>
+<path fill="none" stroke="midnightblue" d="M336.332,-62.5137C282.414,-52.4259 178.067,-32.9028 114.459,-21.0021"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="335.943,-66.0015 346.416,-64.4004 337.23,-59.1209 335.943,-66.0015"/>
 </g>
 <!-- Node3 -->
 <g id="node5" class="node"><title>Node3</title>
@@ -80,44 +80,56 @@ var sectionId = 'dynsection-1';
 </g>
 <!-- Node1&#45;&gt;Node3 -->
 <g id="edge4" class="edge"><title>Node1&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M259.423,-53.5474C242.457,-43.2969 220.67,-30.1339 205.852,-21.1817"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="257.909,-56.7217 268.278,-58.8972 261.529,-50.7303 257.909,-56.7217"/>
+<path fill="none" stroke="midnightblue" d="M336.664,-58.0579C303.241,-47.4066 252.878,-31.3569 220.468,-21.0283"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="335.864,-61.4762 346.455,-61.1779 337.99,-54.8067 335.864,-61.4762"/>
 </g>
 <!-- Node4 -->
 <g id="node7" class="node"><title>Node4</title>
-<a xlink:href="_slider_8cpp.html" target="_top" xlink:title="Slider.cpp">
-<polygon fill="none" stroke="black" points="255.5,-1 255.5,-21 314.5,-21 314.5,-1 255.5,-1"/>
-<text text-anchor="middle" x="285" y="-8" font-family="FreeSans" font-size="10.00">Slider.cpp</text>
+<a xlink:href="_video_settings_scene_8cpp.html" target="_top" xlink:title="VideoSettingsScene.cpp">
+<polygon fill="none" stroke="black" points="255.5,-1 255.5,-21 378.5,-21 378.5,-1 255.5,-1"/>
+<text text-anchor="middle" x="317" y="-8" font-family="FreeSans" font-size="10.00">VideoSettingsScene.cpp</text>
 </a>
 </g>
 <!-- Node1&#45;&gt;Node4 -->
 <g id="edge6" class="edge"><title>Node1&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M285,-48.8902C285,-39.6201 285,-29.0083 285,-21.3776"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="281.5,-48.8971 285,-58.8972 288.5,-48.8972 281.5,-48.8971"/>
+<path fill="none" stroke="midnightblue" d="M354.77,-51.5682C345.606,-41.7249 334.461,-29.7548 326.662,-21.3776"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="352.218,-53.9632 361.594,-58.8972 357.341,-49.1932 352.218,-53.9632"/>
 </g>
 <!-- Node5 -->
 <g id="node9" class="node"><title>Node5</title>
-<a xlink:href="_sdl_display_8cpp.html" target="_top" xlink:title="SdlDisplay.cpp">
-<polygon fill="none" stroke="black" points="332,-1 332,-21 412,-21 412,-1 332,-1"/>
-<text text-anchor="middle" x="372" y="-8" font-family="FreeSans" font-size="10.00">SdlDisplay.cpp</text>
+<a xlink:href="_slider_8cpp.html" target="_top" xlink:title="Slider.cpp">
+<polygon fill="none" stroke="black" points="395.5,-1 395.5,-21 454.5,-21 454.5,-1 395.5,-1"/>
+<text text-anchor="middle" x="425" y="-8" font-family="FreeSans" font-size="10.00">Slider.cpp</text>
 </a>
 </g>
 <!-- Node1&#45;&gt;Node5 -->
 <g id="edge8" class="edge"><title>Node1&#45;&gt;Node5</title>
-<path fill="none" stroke="midnightblue" d="M308.607,-53.2619C323.92,-43.0535 343.424,-30.051 356.728,-21.1817"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="306.533,-50.4379 300.154,-58.8972 310.416,-56.2623 306.533,-50.4379"/>
+<path fill="none" stroke="midnightblue" d="M387.23,-51.5682C396.394,-41.7249 407.539,-29.7548 415.338,-21.3776"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="384.659,-49.1932 380.406,-58.8972 389.782,-53.9632 384.659,-49.1932"/>
 </g>
 <!-- Node6 -->
 <g id="node11" class="node"><title>Node6</title>
-<a xlink:href="_sdl_slider_view_8cpp.html" target="_top" xlink:title="SdlSliderView.cpp">
-<polygon fill="none" stroke="black" points="429.5,-1 429.5,-21 524.5,-21 524.5,-1 429.5,-1"/>
-<text text-anchor="middle" x="477" y="-8" font-family="FreeSans" font-size="10.00">SdlSliderView.cpp</text>
+<a xlink:href="_sdl_display_8cpp.html" target="_top" xlink:title="SdlDisplay.cpp">
+<polygon fill="none" stroke="black" points="472,-1 472,-21 552,-21 552,-1 472,-1"/>
+<text text-anchor="middle" x="512" y="-8" font-family="FreeSans" font-size="10.00">SdlDisplay.cpp</text>
 </a>
 </g>
 <!-- Node1&#45;&gt;Node6 -->
 <g id="edge10" class="edge"><title>Node1&#45;&gt;Node6</title>
-<path fill="none" stroke="midnightblue" d="M319.537,-58.5669C354.732,-47.935 408.946,-31.558 443.691,-21.0622"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="318.268,-55.2939 309.708,-61.5363 320.292,-61.9949 318.268,-55.2939"/>
+<path fill="none" stroke="midnightblue" d="M404.816,-55.0898C430.199,-44.6486 464.377,-30.5898 487.248,-21.1817"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="403.477,-51.8561 395.56,-58.8972 406.14,-58.3298 403.477,-51.8561"/>
+</g>
+<!-- Node7 -->
+<g id="node13" class="node"><title>Node7</title>
+<a xlink:href="_sdl_slider_view_8cpp.html" target="_top" xlink:title="SdlSliderView.cpp">
+<polygon fill="none" stroke="black" points="569.5,-1 569.5,-21 664.5,-21 664.5,-1 569.5,-1"/>
+<text text-anchor="middle" x="617" y="-8" font-family="FreeSans" font-size="10.00">SdlSliderView.cpp</text>
+</a>
+</g>
+<!-- Node1&#45;&gt;Node7 -->
+<g id="edge12" class="edge"><title>Node1&#45;&gt;Node7</title>
+<path fill="none" stroke="midnightblue" d="M405.951,-60.7596C450.267,-50.3109 526.635,-32.3056 574.34,-21.0581"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="404.871,-57.418 395.942,-63.1195 406.478,-64.2312 404.871,-57.418"/>
 </g>
 </g>
 </svg>

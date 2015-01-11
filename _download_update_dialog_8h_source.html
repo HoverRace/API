@@ -87,7 +87,7 @@
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">class </span>DownloadUpdateDialog</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        DownloadUpdateDialog(<span class="keyword">const</span> std::string &amp;baseUrl, <span class="keyword">const</span> <a class="code" href="class_hover_race_1_1_util_1_1_o_s.html#ae39d4a5ac3a9c5101b8a0bc6cb6bd163">Util::OS::path_t</a> &amp;filename, <span class="keyword">const</span> <a class="code" href="class_hover_race_1_1_util_1_1_o_s.html#ae39d4a5ac3a9c5101b8a0bc6cb6bd163">Util::OS::path_t</a> &amp;destDir);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        DownloadUpdateDialog(<span class="keyword">const</span> std::string &amp;baseUrl, <span class="keyword">const</span> <a class="code" href="struct_hover_race_1_1_util_1_1_o_s.html#a479d7860ca6d8236fc4e80fe1b00f414">Util::OS::path_t</a> &amp;filename, <span class="keyword">const</span> <a class="code" href="struct_hover_race_1_1_util_1_1_o_s.html#a479d7860ca6d8236fc4e80fe1b00f414">Util::OS::path_t</a> &amp;destDir);</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        ~DownloadUpdateDialog();</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordtype">bool</span> ShowModal(HINSTANCE hinst, HWND parent);</div>
@@ -115,8 +115,8 @@
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        std::string baseUrl;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <a class="code" href="class_hover_race_1_1_util_1_1_o_s.html#ae39d4a5ac3a9c5101b8a0bc6cb6bd163">Util::OS::path_t</a> filename;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <a class="code" href="class_hover_race_1_1_util_1_1_o_s.html#ae39d4a5ac3a9c5101b8a0bc6cb6bd163">Util::OS::path_t</a> destDir;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <a class="code" href="struct_hover_race_1_1_util_1_1_o_s.html#a479d7860ca6d8236fc4e80fe1b00f414">Util::OS::path_t</a> filename;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <a class="code" href="struct_hover_race_1_1_util_1_1_o_s.html#a479d7860ca6d8236fc4e80fe1b00f414">Util::OS::path_t</a> destDir;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        HWND dlgHwnd;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
@@ -126,7 +126,7 @@
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keyword">volatile</span> state_t state;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keyword">volatile</span> <span class="keywordtype">bool</span> cancel;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <a class="code" href="namespace_hover_race_1_1_util_1_1_symbol.html#af147e81d4a718385efcca4ead1c61222abccbe1fffeeef905dab769a4c6936a06">FILE</a> *outFile;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <a class="code" href="namespace_hover_race_1_1_util_1_1_symbol.html#aeab2aede27e11cd77001d9f82b5f7b87abccbe1fffeeef905dab769a4c6936a06">FILE</a> *outFile;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keyword">volatile</span> <span class="keywordtype">size_t</span> bufSize;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keywordtype">size_t</span> bufCapacity;</div>
@@ -136,8 +136,8 @@
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;}  <span class="comment">// namespace Client</span></div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;}  <span class="comment">// namespace HoverRace</span></div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="class_hover_race_1_1_util_1_1_o_s_html_ae39d4a5ac3a9c5101b8a0bc6cb6bd163"><div class="ttname"><a href="class_hover_race_1_1_util_1_1_o_s.html#ae39d4a5ac3a9c5101b8a0bc6cb6bd163">HoverRace::Util::OS::path_t</a></div><div class="ttdeci">boost::filesystem::path path_t</div><div class="ttdef"><b>Definition:</b> OS.h:64</div></div>
-<div class="ttc" id="namespace_hover_race_1_1_util_1_1_symbol_html_af147e81d4a718385efcca4ead1c61222abccbe1fffeeef905dab769a4c6936a06"><div class="ttname"><a href="namespace_hover_race_1_1_util_1_1_symbol.html#af147e81d4a718385efcca4ead1c61222abccbe1fffeeef905dab769a4c6936a06">HoverRace::Util::Symbol::FILE</a></div><div class="ttdef"><b>Definition:</b> Symbol.h:253</div></div>
+<div class="ttc" id="namespace_hover_race_1_1_util_1_1_symbol_html_aeab2aede27e11cd77001d9f82b5f7b87abccbe1fffeeef905dab769a4c6936a06"><div class="ttname"><a href="namespace_hover_race_1_1_util_1_1_symbol.html#aeab2aede27e11cd77001d9f82b5f7b87abccbe1fffeeef905dab769a4c6936a06">HoverRace::Util::Symbol::FILE</a></div><div class="ttdef"><b>Definition:</b> Symbol.h:253</div></div>
+<div class="ttc" id="struct_hover_race_1_1_util_1_1_o_s_html_a479d7860ca6d8236fc4e80fe1b00f414"><div class="ttname"><a href="struct_hover_race_1_1_util_1_1_o_s.html#a479d7860ca6d8236fc4e80fe1b00f414">HoverRace::Util::OS::path_t</a></div><div class="ttdeci">boost::filesystem::path path_t</div><div class="ttdef"><b>Definition:</b> OS.h:57</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

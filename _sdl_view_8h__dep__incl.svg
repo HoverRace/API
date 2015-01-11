@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 1470;
+var viewWidth = 1632;
 var viewHeight = 146;
 var sectionId = 'dynsection-1';
 </script>
@@ -56,334 +56,363 @@ var sectionId = 'dynsection-1';
 <title>SdlView.h</title>
 <!-- Node1 -->
 <g id="node1" class="node"><title>Node1</title>
-<polygon fill="#bfbfbf" stroke="black" points="678,-117 678,-137 738,-137 738,-117 678,-117"/>
-<text text-anchor="middle" x="708" y="-124" font-family="FreeSans" font-size="10.00">SdlView.h</text>
+<polygon fill="#bfbfbf" stroke="black" points="787,-117 787,-137 847,-137 847,-117 787,-117"/>
+<text text-anchor="middle" x="817" y="-124" font-family="FreeSans" font-size="10.00">SdlView.h</text>
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="_sdl_button_view_8h.html" target="_top" xlink:title="SdlButtonView.h">
-<polygon fill="none" stroke="black" points="100.5,-59 100.5,-79 189.5,-79 189.5,-59 100.5,-59"/>
-<text text-anchor="middle" x="145" y="-66" font-family="FreeSans" font-size="10.00">SdlButtonView.h</text>
+<a xlink:href="_sdl_base_container_view_8h.html" target="_top" xlink:title="SdlBaseContainerView.h">
+<polygon fill="none" stroke="black" points="111,-59 111,-79 235,-79 235,-59 111,-59"/>
+<text text-anchor="middle" x="173" y="-66" font-family="FreeSans" font-size="10.00">SdlBaseContainerView.h</text>
 </a>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge2" class="edge"><title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M667.816,-124.842C581.459,-119.866 371.906,-105.976 198,-80 195.305,-79.5974 192.54,-79.1449 189.756,-78.6589"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="667.784,-128.346 677.967,-125.418 668.181,-121.357 667.784,-128.346"/>
+<path fill="none" stroke="midnightblue" d="M776.613,-124.689C682.854,-119.104 443.238,-103.574 244,-80 241.151,-79.6629 238.241,-79.2976 235.303,-78.9118"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="776.603,-128.194 786.792,-125.29 777.016,-121.206 776.603,-128.194"/>
 </g>
 <!-- Node5 -->
 <g id="node9" class="node"><title>Node5</title>
-<a xlink:href="_sdl_click_region_view_8h.html" target="_top" xlink:title="SdlClickRegionView.h">
-<polygon fill="none" stroke="black" points="207,-59 207,-79 319,-79 319,-59 207,-59"/>
-<text text-anchor="middle" x="263" y="-66" font-family="FreeSans" font-size="10.00">SdlClickRegionView.h</text>
+<a xlink:href="_sdl_button_view_8h.html" target="_top" xlink:title="SdlButtonView.h">
+<polygon fill="none" stroke="black" points="252.5,-59 252.5,-79 341.5,-79 341.5,-59 252.5,-59"/>
+<text text-anchor="middle" x="297" y="-66" font-family="FreeSans" font-size="10.00">SdlButtonView.h</text>
 </a>
 </g>
 <!-- Node1&#45;&gt;Node5 -->
 <g id="edge8" class="edge"><title>Node1&#45;&gt;Node5</title>
-<path fill="none" stroke="midnightblue" d="M667.824,-122.627C598.404,-114.938 451.561,-98.0872 328,-80 325.169,-79.5856 322.271,-79.1472 319.346,-78.6935"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="667.566,-126.12 677.889,-123.738 668.334,-119.162 667.566,-126.12"/>
+<path fill="none" stroke="midnightblue" d="M776.537,-124.356C695.334,-118.735 506.858,-104.104 350,-80 347.306,-79.5861 344.543,-79.1248 341.76,-78.6321"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="776.598,-127.868 786.813,-125.058 777.075,-120.884 776.598,-127.868"/>
 </g>
 <!-- Node7 -->
 <g id="node14" class="node"><title>Node7</title>
-<a xlink:href="_sdl_container_view_8h.html" target="_top" xlink:title="SdlContainerView.h">
-<polygon fill="none" stroke="black" points="336.5,-59 336.5,-79 437.5,-79 437.5,-59 336.5,-59"/>
-<text text-anchor="middle" x="387" y="-66" font-family="FreeSans" font-size="10.00">SdlContainerView.h</text>
+<a xlink:href="_sdl_click_region_view_8h.html" target="_top" xlink:title="SdlClickRegionView.h">
+<polygon fill="none" stroke="black" points="359,-59 359,-79 471,-79 471,-59 359,-59"/>
+<text text-anchor="middle" x="415" y="-66" font-family="FreeSans" font-size="10.00">SdlClickRegionView.h</text>
 </a>
 </g>
 <!-- Node1&#45;&gt;Node7 -->
 <g id="edge14" class="edge"><title>Node1&#45;&gt;Node7</title>
-<path fill="none" stroke="midnightblue" d="M667.686,-119.856C616.228,-110.717 524.464,-94.3521 446,-80 443.233,-79.4938 440.393,-78.972 437.526,-78.4436"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="667.273,-123.337 677.73,-121.639 668.496,-116.445 667.273,-123.337"/>
+<path fill="none" stroke="midnightblue" d="M776.789,-121.776C713.548,-113.475 587.012,-96.5136 480,-80 477.059,-79.5462 474.045,-79.0711 471.003,-78.5837"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="776.378,-125.252 786.748,-123.081 777.287,-118.312 776.378,-125.252"/>
 </g>
 <!-- Node9 -->
 <g id="node19" class="node"><title>Node9</title>
 <a xlink:href="_sdl_fill_box_view_8h.html" target="_top" xlink:title="SdlFillBoxView.h">
-<polygon fill="none" stroke="black" points="454.5,-59 454.5,-79 543.5,-79 543.5,-59 454.5,-59"/>
-<text text-anchor="middle" x="499" y="-66" font-family="FreeSans" font-size="10.00">SdlFillBoxView.h</text>
+<polygon fill="none" stroke="black" points="488.5,-59 488.5,-79 577.5,-79 577.5,-59 488.5,-59"/>
+<text text-anchor="middle" x="533" y="-66" font-family="FreeSans" font-size="10.00">SdlFillBoxView.h</text>
 </a>
 </g>
 <!-- Node1&#45;&gt;Node9 -->
 <g id="edge20" class="edge"><title>Node1&#45;&gt;Node9</title>
-<path fill="none" stroke="midnightblue" d="M667.794,-115.842C629.379,-105.182 572.006,-89.2602 535.042,-79.002"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="667.038,-119.265 677.61,-118.566 668.91,-112.52 667.038,-119.265"/>
+<path fill="none" stroke="midnightblue" d="M776.828,-118.876C730.739,-109.544 652.899,-93.748 586,-80 583.238,-79.4325 580.396,-78.8469 577.53,-78.2553"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="776.226,-122.325 786.722,-120.879 777.615,-115.464 776.226,-122.325"/>
 </g>
 <!-- Node11 -->
 <g id="node24" class="node"><title>Node11</title>
-<a xlink:href="_sdl_label_view_8h.html" target="_top" xlink:title="SdlLabelView.h">
-<polygon fill="none" stroke="black" points="561,-59 561,-79 645,-79 645,-59 561,-59"/>
-<text text-anchor="middle" x="603" y="-66" font-family="FreeSans" font-size="10.00">SdlLabelView.h</text>
+<a xlink:href="_sdl_keycap_icon_view_8h.html" target="_top" xlink:title="SdlKeycapIconView.h">
+<polygon fill="none" stroke="black" points="594.5,-59 594.5,-79 705.5,-79 705.5,-59 594.5,-59"/>
+<text text-anchor="middle" x="650" y="-66" font-family="FreeSans" font-size="10.00">SdlKeycapIconView.h</text>
 </a>
 </g>
 <!-- Node1&#45;&gt;Node11 -->
 <g id="edge26" class="edge"><title>Node1&#45;&gt;Node11</title>
-<path fill="none" stroke="midnightblue" d="M680.796,-111.973C662.132,-101.663 637.864,-88.2582 621.432,-79.1817"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="679.265,-115.126 689.71,-116.897 682.649,-108.998 679.265,-115.126"/>
+<path fill="none" stroke="midnightblue" d="M778.103,-113.491C747.825,-102.975 706.472,-88.6131 679.036,-79.0842"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="777.316,-116.923 787.911,-116.897 779.613,-110.31 777.316,-116.923"/>
 </g>
 <!-- Node13 -->
 <g id="node29" class="node"><title>Node13</title>
-<a xlink:href="_sdl_picture_view_8h.html" target="_top" xlink:title="SdlPictureView.h">
-<polygon fill="none" stroke="black" points="662.5,-59 662.5,-79 753.5,-79 753.5,-59 662.5,-59"/>
-<text text-anchor="middle" x="708" y="-66" font-family="FreeSans" font-size="10.00">SdlPictureView.h</text>
+<a xlink:href="_sdl_label_view_8h.html" target="_top" xlink:title="SdlLabelView.h">
+<polygon fill="none" stroke="black" points="723,-59 723,-79 807,-79 807,-59 723,-59"/>
+<text text-anchor="middle" x="765" y="-66" font-family="FreeSans" font-size="10.00">SdlLabelView.h</text>
 </a>
 </g>
 <!-- Node1&#45;&gt;Node13 -->
 <g id="edge32" class="edge"><title>Node1&#45;&gt;Node13</title>
-<path fill="none" stroke="midnightblue" d="M708,-106.89C708,-97.6201 708,-87.0083 708,-79.3776"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="704.5,-106.897 708,-116.897 711.5,-106.897 704.5,-106.897"/>
+<path fill="none" stroke="midnightblue" d="M801.109,-109.275C792.334,-99.4882 781.74,-87.6718 774.304,-79.3776"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="798.661,-111.788 807.942,-116.897 803.873,-107.115 798.661,-111.788"/>
 </g>
 <!-- Node15 -->
 <g id="node34" class="node"><title>Node15</title>
-<a xlink:href="_sdl_rule_line_view_8h.html" target="_top" xlink:title="SdlRuleLineView.h">
-<polygon fill="none" stroke="black" points="771,-59 771,-79 869,-79 869,-59 771,-59"/>
-<text text-anchor="middle" x="820" y="-66" font-family="FreeSans" font-size="10.00">SdlRuleLineView.h</text>
+<a xlink:href="_sdl_picture_view_8h.html" target="_top" xlink:title="SdlPictureView.h">
+<polygon fill="none" stroke="black" points="824.5,-59 824.5,-79 915.5,-79 915.5,-59 824.5,-59"/>
+<text text-anchor="middle" x="870" y="-66" font-family="FreeSans" font-size="10.00">SdlPictureView.h</text>
 </a>
 </g>
 <!-- Node1&#45;&gt;Node15 -->
 <g id="edge38" class="edge"><title>Node1&#45;&gt;Node15</title>
-<path fill="none" stroke="midnightblue" d="M736.474,-112.254C756.452,-101.909 782.652,-88.3411 800.339,-79.1817"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="734.779,-109.191 727.509,-116.897 737.998,-115.407 734.779,-109.191"/>
+<path fill="none" stroke="midnightblue" d="M833.197,-109.275C842.14,-99.4882 852.938,-87.6718 860.517,-79.3776"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="830.394,-107.154 826.232,-116.897 835.561,-111.876 830.394,-107.154"/>
 </g>
 <!-- Node17 -->
 <g id="node39" class="node"><title>Node17</title>
-<a xlink:href="_sdl_screen_fade_view_8h.html" target="_top" xlink:title="SdlScreenFadeView.h">
-<polygon fill="none" stroke="black" points="886.5,-59 886.5,-79 999.5,-79 999.5,-59 886.5,-59"/>
-<text text-anchor="middle" x="943" y="-66" font-family="FreeSans" font-size="10.00">SdlScreenFadeView.h</text>
+<a xlink:href="_sdl_rule_line_view_8h.html" target="_top" xlink:title="SdlRuleLineView.h">
+<polygon fill="none" stroke="black" points="933,-59 933,-79 1031,-79 1031,-59 933,-59"/>
+<text text-anchor="middle" x="982" y="-66" font-family="FreeSans" font-size="10.00">SdlRuleLineView.h</text>
 </a>
 </g>
 <!-- Node1&#45;&gt;Node17 -->
 <g id="edge44" class="edge"><title>Node1&#45;&gt;Node17</title>
-<path fill="none" stroke="midnightblue" d="M748.074,-117.109C791.064,-106.499 858.975,-89.7382 902.231,-79.0622"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="747.111,-113.742 738.241,-119.536 748.788,-120.538 747.111,-113.742"/>
+<path fill="none" stroke="midnightblue" d="M855.431,-113.491C885.346,-102.975 926.204,-88.6131 953.312,-79.0842"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="854.014,-110.279 845.741,-116.897 856.336,-116.883 854.014,-110.279"/>
 </g>
 <!-- Node19 -->
 <g id="node44" class="node"><title>Node19</title>
-<a xlink:href="_sdl_slider_view_8h.html" target="_top" xlink:title="SdlSliderView.h">
-<polygon fill="none" stroke="black" points="1016.5,-59 1016.5,-79 1101.5,-79 1101.5,-59 1016.5,-59"/>
-<text text-anchor="middle" x="1059" y="-66" font-family="FreeSans" font-size="10.00">SdlSliderView.h</text>
+<a xlink:href="_sdl_screen_fade_view_8h.html" target="_top" xlink:title="SdlScreenFadeView.h">
+<polygon fill="none" stroke="black" points="1048.5,-59 1048.5,-79 1161.5,-79 1161.5,-59 1048.5,-59"/>
+<text text-anchor="middle" x="1105" y="-66" font-family="FreeSans" font-size="10.00">SdlScreenFadeView.h</text>
 </a>
 </g>
 <!-- Node1&#45;&gt;Node19 -->
 <g id="edge50" class="edge"><title>Node1&#45;&gt;Node19</title>
-<path fill="none" stroke="midnightblue" d="M748.5,-121.403C806.258,-113.252 915.538,-97.1998 1008,-80 1010.76,-79.4865 1013.6,-78.936 1016.46,-78.3651"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="747.747,-117.975 738.331,-122.832 748.72,-124.907 747.747,-117.975"/>
+<path fill="none" stroke="midnightblue" d="M856.816,-118.982C908.546,-108.564 998.876,-90.3722 1055.12,-79.0455"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="856.118,-115.552 847.006,-120.957 857.5,-122.414 856.118,-115.552"/>
 </g>
 <!-- Node21 -->
 <g id="node49" class="node"><title>Node21</title>
-<a xlink:href="_sdl_symbol_icon_view_8h.html" target="_top" xlink:title="SdlSymbolIconView.h">
-<polygon fill="none" stroke="black" points="1118.5,-59 1118.5,-79 1229.5,-79 1229.5,-59 1118.5,-59"/>
-<text text-anchor="middle" x="1174" y="-66" font-family="FreeSans" font-size="10.00">SdlSymbolIconView.h</text>
+<a xlink:href="_sdl_slider_view_8h.html" target="_top" xlink:title="SdlSliderView.h">
+<polygon fill="none" stroke="black" points="1178.5,-59 1178.5,-79 1263.5,-79 1263.5,-59 1178.5,-59"/>
+<text text-anchor="middle" x="1221" y="-66" font-family="FreeSans" font-size="10.00">SdlSliderView.h</text>
 </a>
 </g>
 <!-- Node1&#45;&gt;Node21 -->
 <g id="edge56" class="edge"><title>Node1&#45;&gt;Node21</title>
-<path fill="none" stroke="midnightblue" d="M748.136,-123.03C820.576,-115.705 977.924,-99.0571 1110,-80 1112.68,-79.6136 1115.42,-79.203 1118.18,-78.776"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="747.677,-119.559 738.077,-124.043 748.378,-126.524 747.677,-119.559"/>
+<path fill="none" stroke="midnightblue" d="M857.29,-122.699C923.007,-115.445 1057.26,-99.6314 1170,-80 1172.77,-79.5183 1175.61,-78.992 1178.47,-78.4389"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="856.904,-119.22 847.345,-123.789 857.667,-126.178 856.904,-119.22"/>
 </g>
 <!-- Node23 -->
 <g id="node54" class="node"><title>Node23</title>
-<a xlink:href="_sdl_wallpaper_view_8h.html" target="_top" xlink:title="SdlWallpaperView.h">
-<polygon fill="none" stroke="black" points="1246.5,-59 1246.5,-79 1349.5,-79 1349.5,-59 1246.5,-59"/>
-<text text-anchor="middle" x="1298" y="-66" font-family="FreeSans" font-size="10.00">SdlWallpaperView.h</text>
+<a xlink:href="_sdl_symbol_icon_view_8h.html" target="_top" xlink:title="SdlSymbolIconView.h">
+<polygon fill="none" stroke="black" points="1280.5,-59 1280.5,-79 1391.5,-79 1391.5,-59 1280.5,-59"/>
+<text text-anchor="middle" x="1336" y="-66" font-family="FreeSans" font-size="10.00">SdlSymbolIconView.h</text>
 </a>
 </g>
 <!-- Node1&#45;&gt;Node23 -->
 <g id="edge62" class="edge"><title>Node1&#45;&gt;Node23</title>
-<path fill="none" stroke="midnightblue" d="M748.47,-124.698C837.342,-119.36 1056.14,-104.68 1238,-80 1240.73,-79.6297 1243.52,-79.2212 1246.34,-78.786"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="748.062,-121.216 738.287,-125.302 748.477,-128.203 748.062,-121.216"/>
+<path fill="none" stroke="midnightblue" d="M857.233,-123.76C936.702,-117.157 1119.34,-100.979 1272,-80 1274.68,-79.6316 1277.42,-79.2356 1280.19,-78.8204"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="856.843,-120.28 847.165,-124.591 857.419,-127.256 856.843,-120.28"/>
+</g>
+<!-- Node25 -->
+<g id="node59" class="node"><title>Node25</title>
+<a xlink:href="_sdl_wallpaper_view_8h.html" target="_top" xlink:title="SdlWallpaperView.h">
+<polygon fill="none" stroke="black" points="1408.5,-59 1408.5,-79 1511.5,-79 1511.5,-59 1408.5,-59"/>
+<text text-anchor="middle" x="1460" y="-66" font-family="FreeSans" font-size="10.00">SdlWallpaperView.h</text>
+</a>
+</g>
+<!-- Node1&#45;&gt;Node25 -->
+<g id="edge68" class="edge"><title>Node1&#45;&gt;Node25</title>
+<path fill="none" stroke="midnightblue" d="M857.169,-125.16C951.974,-120.514 1196.95,-106.728 1400,-80 1402.73,-79.6406 1405.52,-79.2408 1408.34,-78.8125"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="856.97,-121.666 847.15,-125.645 857.308,-128.658 856.97,-121.666"/>
 </g>
 <!-- Node3 -->
 <g id="node5" class="node"><title>Node3</title>
-<a xlink:href="_sdl_button_view_8cpp.html" target="_top" xlink:title="SdlButtonView.cpp">
-<polygon fill="none" stroke="black" points="-0.5,-1 -0.5,-21 98.5,-21 98.5,-1 -0.5,-1"/>
-<text text-anchor="middle" x="49" y="-8" font-family="FreeSans" font-size="10.00">SdlButtonView.cpp</text>
+<a xlink:href="_sdl_base_container_view_8cpp.html" target="_top" xlink:title="SdlBaseContainerView.cpp">
+<polygon fill="none" stroke="black" points="0,-1 0,-21 134,-21 134,-1 0,-1"/>
+<text text-anchor="middle" x="67" y="-8" font-family="FreeSans" font-size="10.00">SdlBaseContainerView.cpp</text>
 </a>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
 <g id="edge4" class="edge"><title>Node2&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M119.423,-53.5474C102.457,-43.2969 80.6698,-30.1339 65.8524,-21.1817"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="117.909,-56.7217 128.278,-58.8972 121.529,-50.7303 117.909,-56.7217"/>
+<path fill="none" stroke="midnightblue" d="M145.536,-53.9728C126.695,-43.6634 102.196,-30.2582 85.6079,-21.1817"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="144.084,-57.1674 154.536,-58.8972 147.444,-51.0266 144.084,-57.1674"/>
 </g>
 <!-- Node4 -->
 <g id="node7" class="node"><title>Node4</title>
 <a xlink:href="_sdl_display_8cpp.html" target="_top" xlink:title="SdlDisplay.cpp">
-<polygon fill="none" stroke="black" points="616,-1 616,-21 696,-21 696,-1 616,-1"/>
-<text text-anchor="middle" x="656" y="-8" font-family="FreeSans" font-size="10.00">SdlDisplay.cpp</text>
+<polygon fill="none" stroke="black" points="778,-1 778,-21 858,-21 858,-1 778,-1"/>
+<text text-anchor="middle" x="818" y="-8" font-family="FreeSans" font-size="10.00">SdlDisplay.cpp</text>
 </a>
 </g>
 <!-- Node2&#45;&gt;Node4 -->
 <g id="edge6" class="edge"><title>Node2&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M199.85,-57.8602C380.316,-32.0712 429.945,-49.5404 607,-22 609.929,-21.5444 612.945,-21.0158 615.972,-20.4416"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="199.146,-54.4255 189.754,-59.3281 200.153,-61.3527 199.146,-54.4255"/>
+<path fill="none" stroke="midnightblue" d="M245.434,-57.9253C478.205,-32.7305 540.838,-55.2349 769,-22 771.933,-21.5727 774.952,-21.0649 777.981,-20.5055"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="244.855,-54.4678 235.298,-59.0408 245.621,-61.4258 244.855,-54.4678"/>
 </g>
 <!-- Node5&#45;&gt;Node4 -->
 <g id="edge12" class="edge"><title>Node5&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M329.609,-57.8107C453.423,-39.7664 487.119,-43.1436 607,-22 609.919,-21.4851 612.927,-20.913 615.949,-20.3079"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="328.731,-54.4024 319.349,-59.3247 329.752,-61.3274 328.731,-54.4024"/>
+<path fill="none" stroke="midnightblue" d="M351.809,-57.8698C536.719,-31.6341 587.53,-50.0335 769,-22 771.93,-21.5474 774.945,-21.0211 777.973,-20.4484"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="351.15,-54.4285 341.753,-59.3215 352.15,-61.3567 351.15,-54.4285"/>
 </g>
 <!-- Node6 -->
 <g id="node11" class="node"><title>Node6</title>
-<a xlink:href="_sdl_click_region_view_8cpp.html" target="_top" xlink:title="SdlClickRegionView.cpp">
-<polygon fill="none" stroke="black" points="116,-1 116,-21 238,-21 238,-1 116,-1"/>
-<text text-anchor="middle" x="177" y="-8" font-family="FreeSans" font-size="10.00">SdlClickRegionView.cpp</text>
+<a xlink:href="_sdl_button_view_8cpp.html" target="_top" xlink:title="SdlButtonView.cpp">
+<polygon fill="none" stroke="black" points="151.5,-1 151.5,-21 250.5,-21 250.5,-1 151.5,-1"/>
+<text text-anchor="middle" x="201" y="-8" font-family="FreeSans" font-size="10.00">SdlButtonView.cpp</text>
 </a>
 </g>
 <!-- Node5&#45;&gt;Node6 -->
 <g id="edge10" class="edge"><title>Node5&#45;&gt;Node6</title>
-<path fill="none" stroke="midnightblue" d="M239.664,-53.2619C224.528,-43.0535 205.248,-30.051 192.097,-21.1817"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="237.772,-56.2075 248.02,-58.8972 241.686,-50.404 237.772,-56.2075"/>
+<path fill="none" stroke="midnightblue" d="M271.423,-53.5474C254.457,-43.2969 232.67,-30.1339 217.852,-21.1817"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="269.909,-56.7217 280.278,-58.8972 273.529,-50.7303 269.909,-56.7217"/>
 </g>
 <!-- Node7&#45;&gt;Node4 -->
 <g id="edge18" class="edge"><title>Node7&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M444.693,-56.8452C489.091,-47.4502 551.961,-34.0566 607,-22 609.896,-21.3657 612.887,-20.7058 615.896,-20.0384"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="443.726,-53.4721 434.667,-58.9653 445.175,-60.3207 443.726,-53.4721"/>
+<path fill="none" stroke="midnightblue" d="M481.564,-57.8252C609.822,-39.4333 644.719,-43.6382 769,-22 771.92,-21.4915 774.929,-20.9241 777.952,-20.3223"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="480.739,-54.4082 471.346,-59.3095 481.746,-61.3355 480.739,-54.4082"/>
 </g>
 <!-- Node8 -->
 <g id="node16" class="node"><title>Node8</title>
-<a xlink:href="_sdl_container_view_8cpp.html" target="_top" xlink:title="SdlContainerView.cpp">
-<polygon fill="none" stroke="black" points="256,-1 256,-21 368,-21 368,-1 256,-1"/>
-<text text-anchor="middle" x="312" y="-8" font-family="FreeSans" font-size="10.00">SdlContainerView.cpp</text>
+<a xlink:href="_sdl_click_region_view_8cpp.html" target="_top" xlink:title="SdlClickRegionView.cpp">
+<polygon fill="none" stroke="black" points="268,-1 268,-21 390,-21 390,-1 268,-1"/>
+<text text-anchor="middle" x="329" y="-8" font-family="FreeSans" font-size="10.00">SdlClickRegionView.cpp</text>
 </a>
 </g>
 <!-- Node7&#45;&gt;Node8 -->
 <g id="edge16" class="edge"><title>Node7&#45;&gt;Node8</title>
-<path fill="none" stroke="midnightblue" d="M365.905,-52.6866C352.822,-42.5689 336.421,-29.8852 325.166,-21.1817"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="363.884,-55.5483 373.936,-58.8972 368.167,-50.011 363.884,-55.5483"/>
+<path fill="none" stroke="midnightblue" d="M391.664,-53.2619C376.528,-43.0535 357.248,-30.051 344.097,-21.1817"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="389.772,-56.2075 400.02,-58.8972 393.686,-50.404 389.772,-56.2075"/>
 </g>
 <!-- Node9&#45;&gt;Node4 -->
 <g id="edge22" class="edge"><title>Node9&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M535.939,-55.3536C564.37,-44.8504 603.022,-30.5716 628.703,-21.0842"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="534.515,-52.1486 526.347,-58.8972 536.941,-58.7149 534.515,-52.1486"/>
+<path fill="none" stroke="midnightblue" d="M587.732,-57.667C668.954,-41.3599 691.055,-38.4126 769,-22 771.901,-21.3892 774.895,-20.7466 777.908,-20.0915"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="586.638,-54.3171 577.526,-59.7237 588.021,-61.1792 586.638,-54.3171"/>
 </g>
 <!-- Node10 -->
 <g id="node22" class="node"><title>Node10</title>
 <a xlink:href="_sdl_fill_box_view_8cpp.html" target="_top" xlink:title="SdlFillBoxView.cpp">
-<polygon fill="none" stroke="black" points="386,-1 386,-21 486,-21 486,-1 386,-1"/>
-<text text-anchor="middle" x="436" y="-8" font-family="FreeSans" font-size="10.00">SdlFillBoxView.cpp</text>
+<polygon fill="none" stroke="black" points="408,-1 408,-21 508,-21 508,-1 408,-1"/>
+<text text-anchor="middle" x="458" y="-8" font-family="FreeSans" font-size="10.00">SdlFillBoxView.cpp</text>
 </a>
 </g>
 <!-- Node9&#45;&gt;Node10 -->
 <g id="edge24" class="edge"><title>Node9&#45;&gt;Node10</title>
-<path fill="none" stroke="midnightblue" d="M480.382,-51.86C469.631,-41.9622 456.462,-29.8377 447.272,-21.3776"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="478.299,-54.699 488.026,-58.8972 483.04,-49.5491 478.299,-54.699"/>
+<path fill="none" stroke="midnightblue" d="M511.905,-52.6866C498.822,-42.5689 482.421,-29.8852 471.166,-21.1817"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="509.884,-55.5483 519.936,-58.8972 514.167,-50.011 509.884,-55.5483"/>
 </g>
 <!-- Node11&#45;&gt;Node4 -->
 <g id="edge28" class="edge"><title>Node11&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M619.197,-51.2752C628.14,-41.4882 638.938,-29.6718 646.517,-21.3776"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="616.394,-49.154 612.232,-58.8972 621.561,-53.8761 616.394,-49.154"/>
+<path fill="none" stroke="midnightblue" d="M688.733,-55.6279C719.227,-45.1002 761.07,-30.6545 788.791,-21.0842"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="687.574,-52.3253 679.263,-58.8972 689.858,-58.9421 687.574,-52.3253"/>
 </g>
 <!-- Node12 -->
 <g id="node27" class="node"><title>Node12</title>
-<a xlink:href="_sdl_label_view_8cpp.html" target="_top" xlink:title="SdlLabelView.cpp">
-<polygon fill="none" stroke="black" points="503.5,-1 503.5,-21 598.5,-21 598.5,-1 503.5,-1"/>
-<text text-anchor="middle" x="551" y="-8" font-family="FreeSans" font-size="10.00">SdlLabelView.cpp</text>
+<a xlink:href="_sdl_keycap_icon_view_8cpp.html" target="_top" xlink:title="SdlKeycapIconView.cpp">
+<polygon fill="none" stroke="black" points="526,-1 526,-21 648,-21 648,-1 526,-1"/>
+<text text-anchor="middle" x="587" y="-8" font-family="FreeSans" font-size="10.00">SdlKeycapIconView.cpp</text>
 </a>
 </g>
 <!-- Node11&#45;&gt;Node12 -->
 <g id="edge30" class="edge"><title>Node11&#45;&gt;Node12</title>
-<path fill="none" stroke="midnightblue" d="M587.109,-51.2752C578.334,-41.4882 567.74,-29.6718 560.304,-21.3776"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="584.661,-53.7879 593.942,-58.8972 589.873,-49.115 584.661,-53.7879"/>
+<path fill="none" stroke="midnightblue" d="M631.382,-51.86C620.631,-41.9622 607.462,-29.8377 598.272,-21.3776"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="629.299,-54.699 639.026,-58.8972 634.04,-49.5491 629.299,-54.699"/>
 </g>
 <!-- Node13&#45;&gt;Node4 -->
 <g id="edge34" class="edge"><title>Node13&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M692.109,-51.2752C683.334,-41.4882 672.74,-29.6718 665.304,-21.3776"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="689.661,-53.7879 698.942,-58.8972 694.873,-49.115 689.661,-53.7879"/>
+<path fill="none" stroke="midnightblue" d="M781.197,-51.2752C790.14,-41.4882 800.938,-29.6718 808.517,-21.3776"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="778.394,-49.154 774.232,-58.8972 783.561,-53.8761 778.394,-49.154"/>
 </g>
 <!-- Node14 -->
 <g id="node32" class="node"><title>Node14</title>
-<a xlink:href="_sdl_picture_view_8cpp.html" target="_top" xlink:title="SdlPictureView.cpp">
-<polygon fill="none" stroke="black" points="713.5,-1 713.5,-21 814.5,-21 814.5,-1 713.5,-1"/>
-<text text-anchor="middle" x="764" y="-8" font-family="FreeSans" font-size="10.00">SdlPictureView.cpp</text>
+<a xlink:href="_sdl_label_view_8cpp.html" target="_top" xlink:title="SdlLabelView.cpp">
+<polygon fill="none" stroke="black" points="665.5,-1 665.5,-21 760.5,-21 760.5,-1 665.5,-1"/>
+<text text-anchor="middle" x="713" y="-8" font-family="FreeSans" font-size="10.00">SdlLabelView.cpp</text>
 </a>
 </g>
 <!-- Node13&#45;&gt;Node14 -->
 <g id="edge36" class="edge"><title>Node13&#45;&gt;Node14</title>
-<path fill="none" stroke="midnightblue" d="M724.831,-51.5682C734.335,-41.7249 745.892,-29.7548 753.98,-21.3776"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="722.183,-49.272 717.754,-58.8972 727.218,-54.1342 722.183,-49.272"/>
+<path fill="none" stroke="midnightblue" d="M749.109,-51.2752C740.334,-41.4882 729.74,-29.6718 722.304,-21.3776"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="746.661,-53.7879 755.942,-58.8972 751.873,-49.115 746.661,-53.7879"/>
 </g>
 <!-- Node15&#45;&gt;Node4 -->
 <g id="edge40" class="edge"><title>Node15&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M781.802,-55.491C752.068,-44.9752 711.458,-30.6131 684.514,-21.0842"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="780.839,-58.8626 791.433,-58.8972 783.173,-52.2632 780.839,-58.8626"/>
+<path fill="none" stroke="midnightblue" d="M854.109,-51.2752C845.334,-41.4882 834.74,-29.6718 827.304,-21.3776"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="851.661,-53.7879 860.942,-58.8972 856.873,-49.115 851.661,-53.7879"/>
 </g>
 <!-- Node16 -->
 <g id="node37" class="node"><title>Node16</title>
-<a xlink:href="_sdl_rule_line_view_8cpp.html" target="_top" xlink:title="SdlRuleLineView.cpp">
-<polygon fill="none" stroke="black" points="831.5,-1 831.5,-21 940.5,-21 940.5,-1 831.5,-1"/>
-<text text-anchor="middle" x="886" y="-8" font-family="FreeSans" font-size="10.00">SdlRuleLineView.cpp</text>
+<a xlink:href="_sdl_picture_view_8cpp.html" target="_top" xlink:title="SdlPictureView.cpp">
+<polygon fill="none" stroke="black" points="875.5,-1 875.5,-21 976.5,-21 976.5,-1 875.5,-1"/>
+<text text-anchor="middle" x="926" y="-8" font-family="FreeSans" font-size="10.00">SdlPictureView.cpp</text>
 </a>
 </g>
 <!-- Node15&#45;&gt;Node16 -->
 <g id="edge42" class="edge"><title>Node15&#45;&gt;Node16</title>
-<path fill="none" stroke="midnightblue" d="M839.174,-52.1504C850.496,-42.2003 864.47,-29.9207 874.191,-21.3776"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="836.698,-49.6669 831.496,-58.8972 841.318,-54.9251 836.698,-49.6669"/>
+<path fill="none" stroke="midnightblue" d="M886.831,-51.5682C896.335,-41.7249 907.892,-29.7548 915.98,-21.3776"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="884.183,-49.272 879.754,-58.8972 889.218,-54.1342 884.183,-49.272"/>
 </g>
 <!-- Node17&#45;&gt;Node4 -->
 <g id="edge46" class="edge"><title>Node17&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M880.045,-57.0279C832.016,-47.7827 764.25,-34.4986 705,-22 702.099,-21.3881 699.105,-20.7448 696.093,-20.0891"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="879.504,-60.4877 889.984,-58.9376 880.825,-53.6135 879.504,-60.4877"/>
+<path fill="none" stroke="midnightblue" d="M943.802,-55.491C914.068,-44.9752 873.458,-30.6131 846.514,-21.0842"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="942.839,-58.8626 953.433,-58.8972 945.173,-52.2632 942.839,-58.8626"/>
 </g>
 <!-- Node18 -->
 <g id="node42" class="node"><title>Node18</title>
-<a xlink:href="_sdl_screen_fade_view_8cpp.html" target="_top" xlink:title="SdlScreenFadeView.cpp">
-<polygon fill="none" stroke="black" points="957.5,-1 957.5,-21 1080.5,-21 1080.5,-1 957.5,-1"/>
-<text text-anchor="middle" x="1019" y="-8" font-family="FreeSans" font-size="10.00">SdlScreenFadeView.cpp</text>
+<a xlink:href="_sdl_rule_line_view_8cpp.html" target="_top" xlink:title="SdlRuleLineView.cpp">
+<polygon fill="none" stroke="black" points="993.5,-1 993.5,-21 1102.5,-21 1102.5,-1 993.5,-1"/>
+<text text-anchor="middle" x="1048" y="-8" font-family="FreeSans" font-size="10.00">SdlRuleLineView.cpp</text>
 </a>
 </g>
 <!-- Node17&#45;&gt;Node18 -->
 <g id="edge48" class="edge"><title>Node17&#45;&gt;Node18</title>
-<path fill="none" stroke="midnightblue" d="M964.376,-52.6866C977.634,-42.5689 994.254,-29.8852 1005.66,-21.1817"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="962.064,-50.0481 956.238,-58.8972 966.311,-55.6127 962.064,-50.0481"/>
+<path fill="none" stroke="midnightblue" d="M1001.17,-52.1504C1012.5,-42.2003 1026.47,-29.9207 1036.19,-21.3776"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="998.698,-49.6669 993.496,-58.8972 1003.32,-54.9251 998.698,-49.6669"/>
 </g>
 <!-- Node19&#45;&gt;Node4 -->
 <g id="edge52" class="edge"><title>Node19&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M1006.25,-57.8281C872.441,-36.1093 835.406,-44.3237 705,-22 702.078,-21.4998 699.068,-20.9385 696.045,-20.341"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="1006.04,-61.3414 1016.48,-59.5159 1007.18,-54.4348 1006.04,-61.3414"/>
+<path fill="none" stroke="midnightblue" d="M1042.05,-57.0279C994.016,-47.7827 926.25,-34.4986 867,-22 864.099,-21.3881 861.105,-20.7448 858.093,-20.0891"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="1041.5,-60.4877 1051.98,-58.9376 1042.82,-53.6135 1041.5,-60.4877"/>
 </g>
 <!-- Node20 -->
 <g id="node47" class="node"><title>Node20</title>
-<a xlink:href="_sdl_slider_view_8cpp.html" target="_top" xlink:title="SdlSliderView.cpp">
-<polygon fill="none" stroke="black" points="1097.5,-1 1097.5,-21 1192.5,-21 1192.5,-1 1097.5,-1"/>
-<text text-anchor="middle" x="1145" y="-8" font-family="FreeSans" font-size="10.00">SdlSliderView.cpp</text>
+<a xlink:href="_sdl_screen_fade_view_8cpp.html" target="_top" xlink:title="SdlScreenFadeView.cpp">
+<polygon fill="none" stroke="black" points="1119.5,-1 1119.5,-21 1242.5,-21 1242.5,-1 1119.5,-1"/>
+<text text-anchor="middle" x="1181" y="-8" font-family="FreeSans" font-size="10.00">SdlScreenFadeView.cpp</text>
 </a>
 </g>
 <!-- Node19&#45;&gt;Node20 -->
 <g id="edge54" class="edge"><title>Node19&#45;&gt;Node20</title>
-<path fill="none" stroke="midnightblue" d="M1082.34,-53.2619C1097.47,-43.0535 1116.75,-30.051 1129.9,-21.1817"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="1080.31,-50.404 1073.98,-58.8972 1084.23,-56.2075 1080.31,-50.404"/>
+<path fill="none" stroke="midnightblue" d="M1126.38,-52.6866C1139.63,-42.5689 1156.25,-29.8852 1167.66,-21.1817"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="1124.06,-50.0481 1118.24,-58.8972 1128.31,-55.6127 1124.06,-50.0481"/>
 </g>
 <!-- Node21&#45;&gt;Node4 -->
 <g id="edge58" class="edge"><title>Node21&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M1108.17,-57.8452C929.052,-35.2096 880.325,-49.3488 705,-22 702.071,-21.5431 699.056,-21.0136 696.029,-20.4387"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="1107.83,-61.3297 1118.19,-59.1324 1108.72,-54.3867 1107.83,-61.3297"/>
+<path fill="none" stroke="midnightblue" d="M1168.25,-57.8281C1034.44,-36.1093 997.406,-44.3237 867,-22 864.078,-21.4998 861.068,-20.9385 858.045,-20.341"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="1168.04,-61.3414 1178.48,-59.5159 1169.18,-54.4348 1168.04,-61.3414"/>
 </g>
 <!-- Node22 -->
 <g id="node52" class="node"><title>Node22</title>
-<a xlink:href="_sdl_symbol_icon_view_8cpp.html" target="_top" xlink:title="SdlSymbolIconView.cpp">
-<polygon fill="none" stroke="black" points="1210,-1 1210,-21 1332,-21 1332,-1 1210,-1"/>
-<text text-anchor="middle" x="1271" y="-8" font-family="FreeSans" font-size="10.00">SdlSymbolIconView.cpp</text>
+<a xlink:href="_sdl_slider_view_8cpp.html" target="_top" xlink:title="SdlSliderView.cpp">
+<polygon fill="none" stroke="black" points="1259.5,-1 1259.5,-21 1354.5,-21 1354.5,-1 1259.5,-1"/>
+<text text-anchor="middle" x="1307" y="-8" font-family="FreeSans" font-size="10.00">SdlSliderView.cpp</text>
 </a>
 </g>
 <!-- Node21&#45;&gt;Node22 -->
 <g id="edge60" class="edge"><title>Node21&#45;&gt;Node22</title>
-<path fill="none" stroke="midnightblue" d="M1199.84,-53.5474C1216.99,-43.2969 1239,-30.1339 1253.97,-21.1817"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="1197.68,-50.7612 1190.9,-58.8972 1201.28,-56.7691 1197.68,-50.7612"/>
+<path fill="none" stroke="midnightblue" d="M1244.34,-53.2619C1259.47,-43.0535 1278.75,-30.051 1291.9,-21.1817"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="1242.31,-50.404 1235.98,-58.8972 1246.23,-56.2075 1242.31,-50.404"/>
 </g>
 <!-- Node23&#45;&gt;Node4 -->
 <g id="edge64" class="edge"><title>Node23&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M1236.09,-57.8793C1000.6,-29.3129 936.639,-55.6203 705,-22 702.066,-21.5742 699.048,-21.0675 696.018,-20.5089"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="1235.99,-61.3936 1246.35,-59.1445 1236.85,-54.4462 1235.99,-61.3936"/>
+<path fill="none" stroke="midnightblue" d="M1270.17,-57.8452C1091.05,-35.2096 1042.32,-49.3488 867,-22 864.071,-21.5431 861.056,-21.0136 858.029,-20.4387"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="1269.83,-61.3297 1280.19,-59.1324 1270.72,-54.3867 1269.83,-61.3297"/>
 </g>
 <!-- Node24 -->
 <g id="node57" class="node"><title>Node24</title>
-<a xlink:href="_sdl_wallpaper_view_8cpp.html" target="_top" xlink:title="SdlWallpaperView.cpp">
-<polygon fill="none" stroke="black" points="1349.5,-1 1349.5,-21 1462.5,-21 1462.5,-1 1349.5,-1"/>
-<text text-anchor="middle" x="1406" y="-8" font-family="FreeSans" font-size="10.00">SdlWallpaperView.cpp</text>
+<a xlink:href="_sdl_symbol_icon_view_8cpp.html" target="_top" xlink:title="SdlSymbolIconView.cpp">
+<polygon fill="none" stroke="black" points="1372,-1 1372,-21 1494,-21 1494,-1 1372,-1"/>
+<text text-anchor="middle" x="1433" y="-8" font-family="FreeSans" font-size="10.00">SdlSymbolIconView.cpp</text>
 </a>
 </g>
 <!-- Node23&#45;&gt;Node24 -->
 <g id="edge66" class="edge"><title>Node23&#45;&gt;Node24</title>
-<path fill="none" stroke="midnightblue" d="M1325.72,-54.1138C1344.95,-43.7859 1370.06,-30.2996 1387.04,-21.1817"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="1323.97,-51.0824 1316.81,-58.8972 1327.28,-57.2493 1323.97,-51.0824"/>
+<path fill="none" stroke="midnightblue" d="M1361.84,-53.5474C1378.99,-43.2969 1401,-30.1339 1415.97,-21.1817"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="1359.68,-50.7612 1352.9,-58.8972 1363.28,-56.7691 1359.68,-50.7612"/>
+</g>
+<!-- Node25&#45;&gt;Node4 -->
+<g id="edge70" class="edge"><title>Node25&#45;&gt;Node4</title>
+<path fill="none" stroke="midnightblue" d="M1398.09,-57.8793C1162.6,-29.3129 1098.64,-55.6203 867,-22 864.066,-21.5742 861.048,-21.0675 858.018,-20.5089"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="1397.99,-61.3936 1408.35,-59.1445 1398.85,-54.4462 1397.99,-61.3936"/>
+</g>
+<!-- Node26 -->
+<g id="node62" class="node"><title>Node26</title>
+<a xlink:href="_sdl_wallpaper_view_8cpp.html" target="_top" xlink:title="SdlWallpaperView.cpp">
+<polygon fill="none" stroke="black" points="1511.5,-1 1511.5,-21 1624.5,-21 1624.5,-1 1511.5,-1"/>
+<text text-anchor="middle" x="1568" y="-8" font-family="FreeSans" font-size="10.00">SdlWallpaperView.cpp</text>
+</a>
+</g>
+<!-- Node25&#45;&gt;Node26 -->
+<g id="edge72" class="edge"><title>Node25&#45;&gt;Node26</title>
+<path fill="none" stroke="midnightblue" d="M1487.72,-54.1138C1506.95,-43.7859 1532.06,-30.2996 1549.04,-21.1817"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="1485.97,-51.0824 1478.81,-58.8972 1489.28,-57.2493 1485.97,-51.0824"/>
 </g>
 </g>
 </svg>

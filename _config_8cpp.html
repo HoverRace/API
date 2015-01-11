@@ -54,8 +54,7 @@
 <div class="title">Config.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;../StdAfx.h&quot;</code><br/>
-<code>#include &lt;limits.h&gt;</code><br/>
+<div class="textblock"><code>#include &lt;limits.h&gt;</code><br/>
 <code>#include &lt;stdlib.h&gt;</code><br/>
 <code>#include &lt;iomanip&gt;</code><br/>
 <code>#include &lt;string&gt;</code><br/>
@@ -264,7 +263,7 @@ Macros</h2></td></tr>
 <div class="line">        if (_scalar != NULL) (name) = _scalar-&gt;<a class="code" href="classyaml_1_1_scalar_node.html#afb33eb0efa0c15a8a0ff00997dc35f76">AsBool</a>(name); \</div>
 <div class="line">    }</div>
 <div class="ttc" id="classyaml_1_1_scalar_node_html"><div class="ttname"><a href="classyaml_1_1_scalar_node.html">yaml::ScalarNode</a></div><div class="ttdoc">Wrapper for LibYAML scalar nodes. </div><div class="ttdef"><b>Definition:</b> ScalarNode.h:34</div></div>
-<div class="ttc" id="classyaml_1_1_scalar_node_html_afb33eb0efa0c15a8a0ff00997dc35f76"><div class="ttname"><a href="classyaml_1_1_scalar_node.html#afb33eb0efa0c15a8a0ff00997dc35f76">yaml::ScalarNode::AsBool</a></div><div class="ttdeci">bool AsBool(bool def) const </div><div class="ttdoc">Convert this scalar to a boolean value. </div><div class="ttdef"><b>Definition:</b> ScalarNode.cpp:75</div></div>
+<div class="ttc" id="classyaml_1_1_scalar_node_html_afb33eb0efa0c15a8a0ff00997dc35f76"><div class="ttname"><a href="classyaml_1_1_scalar_node.html#afb33eb0efa0c15a8a0ff00997dc35f76">yaml::ScalarNode::AsBool</a></div><div class="ttdeci">bool AsBool(bool def) const </div><div class="ttdoc">Convert this scalar to a boolean value. </div><div class="ttdef"><b>Definition:</b> ScalarNode.cpp:73</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -307,7 +306,7 @@ Macros</h2></td></tr>
 <div class="line">        yaml::ScalarNode *_scalar = <span class="keyword">dynamic_cast&lt;</span><a class="code" href="classyaml_1_1_scalar_node.html">yaml::ScalarNode</a>*<span class="keyword">&gt;</span>((root)-&gt;Get(#name)); \</div>
 <div class="line">        if (_scalar != NULL) (name) = _scalar-&gt;<a class="code" href="classyaml_1_1_scalar_node.html#aed5b836d2e22be00086c0a76c0e60de6">AsDouble</a>(name, min, max); \</div>
 <div class="line">    }</div>
-<div class="ttc" id="classyaml_1_1_scalar_node_html_aed5b836d2e22be00086c0a76c0e60de6"><div class="ttname"><a href="classyaml_1_1_scalar_node.html#aed5b836d2e22be00086c0a76c0e60de6">yaml::ScalarNode::AsDouble</a></div><div class="ttdeci">double AsDouble(double def, double min, double max) const </div><div class="ttdoc">Convert this scalar to a double floating-point value. </div><div class="ttdef"><b>Definition:</b> ScalarNode.cpp:102</div></div>
+<div class="ttc" id="classyaml_1_1_scalar_node_html_aed5b836d2e22be00086c0a76c0e60de6"><div class="ttname"><a href="classyaml_1_1_scalar_node.html#aed5b836d2e22be00086c0a76c0e60de6">yaml::ScalarNode::AsDouble</a></div><div class="ttdeci">double AsDouble(double def, double min, double max) const </div><div class="ttdoc">Convert this scalar to a double floating-point value. </div><div class="ttdef"><b>Definition:</b> ScalarNode.cpp:100</div></div>
 <div class="ttc" id="classyaml_1_1_scalar_node_html"><div class="ttname"><a href="classyaml_1_1_scalar_node.html">yaml::ScalarNode</a></div><div class="ttdoc">Wrapper for LibYAML scalar nodes. </div><div class="ttdef"><b>Definition:</b> ScalarNode.h:34</div></div>
 </div><!-- fragment -->
 </div>
@@ -352,7 +351,7 @@ Macros</h2></td></tr>
 <div class="line">        if (_scalar != NULL) (name) = _scalar-&gt;<a class="code" href="classyaml_1_1_scalar_node.html#ad281fdc05d3fffaf1642715d39237761">AsFloat</a>(name, min, max); \</div>
 <div class="line">    }</div>
 <div class="ttc" id="classyaml_1_1_scalar_node_html"><div class="ttname"><a href="classyaml_1_1_scalar_node.html">yaml::ScalarNode</a></div><div class="ttdoc">Wrapper for LibYAML scalar nodes. </div><div class="ttdef"><b>Definition:</b> ScalarNode.h:34</div></div>
-<div class="ttc" id="classyaml_1_1_scalar_node_html_ad281fdc05d3fffaf1642715d39237761"><div class="ttname"><a href="classyaml_1_1_scalar_node.html#ad281fdc05d3fffaf1642715d39237761">yaml::ScalarNode::AsFloat</a></div><div class="ttdeci">float AsFloat(float def, float min, float max) const </div><div class="ttdoc">Convert this scalar to a floating-point value. </div><div class="ttdef"><b>Definition:</b> ScalarNode.cpp:120</div></div>
+<div class="ttc" id="classyaml_1_1_scalar_node_html_ad281fdc05d3fffaf1642715d39237761"><div class="ttname"><a href="classyaml_1_1_scalar_node.html#ad281fdc05d3fffaf1642715d39237761">yaml::ScalarNode::AsFloat</a></div><div class="ttdeci">float AsFloat(float def, float min, float max) const </div><div class="ttdoc">Convert this scalar to a floating-point value. </div><div class="ttdef"><b>Definition:</b> ScalarNode.cpp:118</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -396,7 +395,7 @@ Macros</h2></td></tr>
 <div class="line">        if (_scalar != NULL) (name) = _scalar-&gt;<a class="code" href="classyaml_1_1_scalar_node.html#a2c66aa6cfba2f6ce79babbb98c5aa8af">AsInt</a>(name, min, max); \</div>
 <div class="line">    }</div>
 <div class="ttc" id="classyaml_1_1_scalar_node_html"><div class="ttname"><a href="classyaml_1_1_scalar_node.html">yaml::ScalarNode</a></div><div class="ttdoc">Wrapper for LibYAML scalar nodes. </div><div class="ttdef"><b>Definition:</b> ScalarNode.h:34</div></div>
-<div class="ttc" id="classyaml_1_1_scalar_node_html_a2c66aa6cfba2f6ce79babbb98c5aa8af"><div class="ttname"><a href="classyaml_1_1_scalar_node.html#a2c66aa6cfba2f6ce79babbb98c5aa8af">yaml::ScalarNode::AsInt</a></div><div class="ttdeci">int AsInt(int def, int min=INT_MIN, int max=INT_MAX) const </div><div class="ttdoc">Convert this scalar to an integer value. </div><div class="ttdef"><b>Definition:</b> ScalarNode.cpp:138</div></div>
+<div class="ttc" id="classyaml_1_1_scalar_node_html_a2c66aa6cfba2f6ce79babbb98c5aa8af"><div class="ttname"><a href="classyaml_1_1_scalar_node.html#a2c66aa6cfba2f6ce79babbb98c5aa8af">yaml::ScalarNode::AsInt</a></div><div class="ttdeci">int AsInt(int def, int min=INT_MIN, int max=INT_MAX) const </div><div class="ttdoc">Convert this scalar to an integer value. </div><div class="ttdef"><b>Definition:</b> ScalarNode.cpp:136</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -428,7 +427,7 @@ Macros</h2></td></tr>
 <div class="line">        if (_scalar != NULL) (name) = _scalar-&gt;<a class="code" href="classyaml_1_1_scalar_node.html#abb7e8b0e0ac6df22da11d0c5ff52b00b">AsPath</a>(); \</div>
 <div class="line">    }</div>
 <div class="ttc" id="classyaml_1_1_scalar_node_html"><div class="ttname"><a href="classyaml_1_1_scalar_node.html">yaml::ScalarNode</a></div><div class="ttdoc">Wrapper for LibYAML scalar nodes. </div><div class="ttdef"><b>Definition:</b> ScalarNode.h:34</div></div>
-<div class="ttc" id="classyaml_1_1_scalar_node_html_abb7e8b0e0ac6df22da11d0c5ff52b00b"><div class="ttname"><a href="classyaml_1_1_scalar_node.html#abb7e8b0e0ac6df22da11d0c5ff52b00b">yaml::ScalarNode::AsPath</a></div><div class="ttdeci">HoverRace::Util::OS::path_t AsPath() const </div><div class="ttdoc">Convert this scalar to a path. </div><div class="ttdef"><b>Definition:</b> ScalarNode.cpp:153</div></div>
+<div class="ttc" id="classyaml_1_1_scalar_node_html_abb7e8b0e0ac6df22da11d0c5ff52b00b"><div class="ttname"><a href="classyaml_1_1_scalar_node.html#abb7e8b0e0ac6df22da11d0c5ff52b00b">yaml::ScalarNode::AsPath</a></div><div class="ttdeci">HoverRace::Util::OS::path_t AsPath() const </div><div class="ttdoc">Convert this scalar to a path. </div><div class="ttdef"><b>Definition:</b> ScalarNode.cpp:151</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -460,7 +459,7 @@ Macros</h2></td></tr>
 <div class="line">        if (_scalar != NULL) (name) = _scalar-&gt;<a class="code" href="classyaml_1_1_scalar_node.html#a50faef4361749beaa392256b469a0b37">AsString</a>(); \</div>
 <div class="line">    }</div>
 <div class="ttc" id="classyaml_1_1_scalar_node_html"><div class="ttname"><a href="classyaml_1_1_scalar_node.html">yaml::ScalarNode</a></div><div class="ttdoc">Wrapper for LibYAML scalar nodes. </div><div class="ttdef"><b>Definition:</b> ScalarNode.h:34</div></div>
-<div class="ttc" id="classyaml_1_1_scalar_node_html_a50faef4361749beaa392256b469a0b37"><div class="ttname"><a href="classyaml_1_1_scalar_node.html#a50faef4361749beaa392256b469a0b37">yaml::ScalarNode::AsString</a></div><div class="ttdeci">std::string AsString() const </div><div class="ttdoc">Returns the string value. </div><div class="ttdef"><b>Definition:</b> ScalarNode.cpp:65</div></div>
+<div class="ttc" id="classyaml_1_1_scalar_node_html_a50faef4361749beaa392256b469a0b37"><div class="ttname"><a href="classyaml_1_1_scalar_node.html#a50faef4361749beaa392256b469a0b37">yaml::ScalarNode::AsString</a></div><div class="ttdeci">std::string AsString() const </div><div class="ttdoc">Returns the string value. </div><div class="ttdef"><b>Definition:</b> ScalarNode.cpp:63</div></div>
 </div><!-- fragment -->
 </div>
 </div>

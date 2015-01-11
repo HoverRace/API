@@ -80,8 +80,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aeafa473a1b24031780741e279dce7721"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3bb7bc9ca44f24ad672e05058892b61"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_exception.html#aa3bb7bc9ca44f24ad672e05058892b61">~Exception</a> () noexcept</td></tr>
 <tr class="separator:aa3bb7bc9ca44f24ad672e05058892b61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1bc2698a27424b20eb6a684f5b6ad6f"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_exception.html#aa1bc2698a27424b20eb6a684f5b6ad6f">what</a> () const noexcept</td></tr>
-<tr class="separator:aa1bc2698a27424b20eb6a684f5b6ad6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ca46ac051daf45bd9eaa3345b4eb16c"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_exception.html#a1ca46ac051daf45bd9eaa3345b4eb16c">what</a> () const noexceptoverride</td></tr>
+<tr class="separator:a1ca46ac051daf45bd9eaa3345b4eb16c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -90,8 +90,8 @@ Protected Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
 Private Types</h2></td></tr>
-<tr class="memitem:af4dc1280ed3d0db51e41c34957fa9b13"><td class="memItemLeft" align="right" valign="top">typedef std::exception&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_exception.html#af4dc1280ed3d0db51e41c34957fa9b13">SUPER</a></td></tr>
-<tr class="separator:af4dc1280ed3d0db51e41c34957fa9b13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85055c37a0b2249f40214cd2962c1a39"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_exception.html#a85055c37a0b2249f40214cd2962c1a39">SUPER</a> = std::exception</td></tr>
+<tr class="separator:a85055c37a0b2249f40214cd2962c1a39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -102,7 +102,7 @@ Private Attributes</h2></td></tr>
 <div class="textblock"><p>Base exception, providing constructors for setting the message. </p>
 <dl class="section author"><dt>Author</dt><dd>Michael Imamura </dd></dl>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="af4dc1280ed3d0db51e41c34957fa9b13"></a>
+<a class="anchor" id="a85055c37a0b2249f40214cd2962c1a39"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -110,7 +110,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::exception <a class="el" href="class_hover_race_1_1_exception.html#af4dc1280ed3d0db51e41c34957fa9b13">HoverRace::Exception::SUPER</a></td>
+          <td class="memname">using <a class="el" href="class_hover_race_1_1_exception.html#a85055c37a0b2249f40214cd2962c1a39">HoverRace::Exception::SUPER</a> =  std::exception</td>
         </tr>
       </table>
   </td>
@@ -241,7 +241,7 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aa1bc2698a27424b20eb6a684f5b6ad6f"></a>
+<a class="anchor" id="a1ca46ac051daf45bd9eaa3345b4eb16c"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -249,7 +249,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual const char* HoverRace::Exception::what </td>
+          <td class="memname">const char* HoverRace::Exception::what </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -257,7 +257,7 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

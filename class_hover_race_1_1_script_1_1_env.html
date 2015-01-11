@@ -78,7 +78,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a03bb0d49858a15bec362315e326fc743"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61a99963152cd364e65c09d8b71fb066"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_script_1_1_env.html#a61a99963152cd364e65c09d8b71fb066">~Env</a> ()</td></tr>
 <tr class="separator:a61a99963152cd364e65c09d8b71fb066"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abfff378adae4f4ac591aa91c12fc13fb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_script_1_1_env.html#abfff378adae4f4ac591aa91c12fc13fb">RunScript</a> (const <a class="el" href="class_hover_race_1_1_util_1_1_o_s.html#ae39d4a5ac3a9c5101b8a0bc6cb6bd163">Util::OS::path_t</a> &amp;filename)</td></tr>
+<tr class="memitem:aeffa741a6a7521db19e06926b33fe834"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_script_1_1_env.html">Env</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_script_1_1_env.html#aeffa741a6a7521db19e06926b33fe834">operator=</a> (const <a class="el" href="class_hover_race_1_1_script_1_1_env.html">Env</a> &amp;)=delete</td></tr>
+<tr class="separator:aeffa741a6a7521db19e06926b33fe834"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfff378adae4f4ac591aa91c12fc13fb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_script_1_1_env.html#abfff378adae4f4ac591aa91c12fc13fb">RunScript</a> (const <a class="el" href="struct_hover_race_1_1_util_1_1_o_s.html#a479d7860ca6d8236fc4e80fe1b00f414">Util::OS::path_t</a> &amp;filename)</td></tr>
 <tr class="memdesc:abfff378adae4f4ac591aa91c12fc13fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute a script from a file.  <a href="#abfff378adae4f4ac591aa91c12fc13fb">More...</a><br/></td></tr>
 <tr class="separator:abfff378adae4f4ac591aa91c12fc13fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -106,7 +108,7 @@ Protected Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-methods"></a>
 Static Protected Member Functions</h2></td></tr>
-<tr class="memitem:a9f891c1ddb979c08d245c15d9ace2d37"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_hover_race_1_1_script_1_1_core_1_1_chunk.html">Core::Chunk</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_script_1_1_env.html#a9f891c1ddb979c08d245c15d9ace2d37">LoadChunkFromFile</a> (const <a class="el" href="class_hover_race_1_1_util_1_1_o_s.html#ae39d4a5ac3a9c5101b8a0bc6cb6bd163">Util::OS::path_t</a> &amp;filename)</td></tr>
+<tr class="memitem:a9f891c1ddb979c08d245c15d9ace2d37"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_hover_race_1_1_script_1_1_core_1_1_chunk.html">Core::Chunk</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_script_1_1_env.html#a9f891c1ddb979c08d245c15d9ace2d37">LoadChunkFromFile</a> (const <a class="el" href="struct_hover_race_1_1_util_1_1_o_s.html#a479d7860ca6d8236fc4e80fe1b00f414">Util::OS::path_t</a> &amp;filename)</td></tr>
 <tr class="memdesc:a9f891c1ddb979c08d245c15d9ace2d37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a chunk from a file.  <a href="#a9f891c1ddb979c08d245c15d9ace2d37">More...</a><br/></td></tr>
 <tr class="separator:a9f891c1ddb979c08d245c15d9ace2d37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -251,7 +253,7 @@ template&lt;class ReturnPolicy  = Core::PrintReturn&gt; </div>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname"><a class="el" href="class_hover_race_1_1_script_1_1_incomplete_exn.html" title="Exception to signal that the current chunk is incomplete. ">IncompleteExn</a></td><td>If the code does not complete a statement; i.e., expecting more tokens. Callers can catch this to keep reading more data to finish the statement. </td></tr>
-    <tr><td class="paramname"><a class="el" href="class_hover_race_1_1_script_1_1_script_exn.html">ScriptExn</a></td><td>The code either failed to compile or signaled an error while executing. </td></tr>
+    <tr><td class="paramname"><a class="el" href="class_hover_race_1_1_script_1_1_script_exn.html" title="Generic script engine exception. ">ScriptExn</a></td><td>The code either failed to compile or signaled an error while executing. </td></tr>
   </table>
   </dd>
 </dl>
@@ -305,7 +307,7 @@ template&lt;class ReturnPolicy  = Core::PrintReturn&gt; </div>
 <p>Initialize the environment in which scripts will run in. </p>
 <p>Upon entry, the Lua stack will have at least one entry, the table which represents the environment. Implementing functions will fill this table with the globals which will be available to the functions which are run in this environment. Upon return, this same table must be at the top of the stack. </p>
 
-<p>Implemented in <a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_sys_console.html#a473716846c821bdc5f7963d8ce8a0dcd">HoverRace::Client::HoverScript::SysConsole</a>, <a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_sys_env.html#a6f6056f4e9123a224a4ef1e3e112b040">HoverRace::Client::HoverScript::SysEnv</a>, <a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_rulebook_env.html#ad8c2cd0bdcb3b63c5b49c389b4771e45">HoverRace::Client::HoverScript::RulebookEnv</a>, and <a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_console.html#a4610f4e62c3d260743e8defcfc9af420">HoverRace::Client::HoverScript::Console</a>.</p>
+<p>Implemented in <a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_sys_console.html#a473716846c821bdc5f7963d8ce8a0dcd">HoverRace::Client::HoverScript::SysConsole</a>, <a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_style_env.html#aa8ac79a9b10dad9c50c472086efb28ac">HoverRace::Client::HoverScript::StyleEnv</a>, <a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_rulebook_env.html#ad8c2cd0bdcb3b63c5b49c389b4771e45">HoverRace::Client::HoverScript::RulebookEnv</a>, <a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_sys_env.html#a6f6056f4e9123a224a4ef1e3e112b040">HoverRace::Client::HoverScript::SysEnv</a>, and <a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_console.html#a4610f4e62c3d260743e8defcfc9af420">HoverRace::Client::HoverScript::Console</a>.</p>
 
 </div>
 </div>
@@ -319,7 +321,7 @@ template&lt;class ReturnPolicy  = Core::PrintReturn&gt; </div>
         <tr>
           <td class="memname"><a class="el" href="struct_hover_race_1_1_script_1_1_core_1_1_chunk.html">Core::Chunk</a> HoverRace::Script::Env::LoadChunkFromFile </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_hover_race_1_1_util_1_1_o_s.html#ae39d4a5ac3a9c5101b8a0bc6cb6bd163">Util::OS::path_t</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="struct_hover_race_1_1_util_1_1_o_s.html#a479d7860ca6d8236fc4e80fe1b00f414">Util::OS::path_t</a> &amp;&#160;</td>
           <td class="paramname"><em>filename</em></td><td>)</td>
           <td></td>
         </tr>
@@ -342,7 +344,7 @@ template&lt;class ReturnPolicy  = Core::PrintReturn&gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>The loaded chunk, ready for compilation. </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname"><a class="el" href="class_hover_race_1_1_script_1_1_script_exn.html">Script::ScriptExn</a></td><td>The script file was not found. </td></tr>
+    <tr><td class="paramname"><a class="el" href="class_hover_race_1_1_script_1_1_script_exn.html" title="Generic script engine exception. ">Script::ScriptExn</a></td><td>The script file was not found. </td></tr>
   </table>
   </dd>
 </dl>
@@ -367,6 +369,30 @@ template&lt;class ReturnPolicy  = Core::PrintReturn&gt; </div>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aeffa741a6a7521db19e06926b33fe834"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_hover_race_1_1_script_1_1_env.html">Env</a>&amp; HoverRace::Script::Env::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_hover_race_1_1_script_1_1_env.html">Env</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -409,7 +435,7 @@ template&lt;class ReturnPolicy  = Core::PrintReturn&gt; </div>
         <tr>
           <td class="memname">bool HoverRace::Script::Env::RunScript </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_hover_race_1_1_util_1_1_o_s.html#ae39d4a5ac3a9c5101b8a0bc6cb6bd163">Util::OS::path_t</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="struct_hover_race_1_1_util_1_1_o_s.html#a479d7860ca6d8236fc4e80fe1b00f414">Util::OS::path_t</a> &amp;&#160;</td>
           <td class="paramname"><em>filename</em></td><td>)</td>
           <td></td>
         </tr>
