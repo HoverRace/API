@@ -53,6 +53,7 @@
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pri-types">Private Types</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_hover_race_1_1_client_1_1_ui_scene-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -121,6 +122,9 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
+<tr class="memitem:a3623342efcdd80c55dac637a991a4ffd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_ui_scene.html#a3623342efcdd80c55dac637a991a4ffd">SetFocusRoot</a> (std::shared_ptr&lt; <a class="el" href="class_hover_race_1_1_display_1_1_ui_view_model.html">Display::UiViewModel</a> &gt; root)</td></tr>
+<tr class="memdesc:a3623342efcdd80c55dac637a991a4ffd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the widget used as the root for all focus management.  <a href="#a3623342efcdd80c55dac637a991a4ffd">More...</a><br/></td></tr>
+<tr class="separator:a3623342efcdd80c55dac637a991a4ffd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a195e22f5b8aba8d15aace704faa6c6e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_ui_scene.html#a195e22f5b8aba8d15aace704faa6c6e2">RequestLayout</a> ()</td></tr>
 <tr class="memdesc:a195e22f5b8aba8d15aace704faa6c6e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicate that the current layout is out-of-date and needs to be adjusted.  <a href="#a195e22f5b8aba8d15aace704faa6c6e2">More...</a><br/></td></tr>
 <tr class="separator:a195e22f5b8aba8d15aace704faa6c6e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -158,13 +162,41 @@ Protected Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
 Private Types</h2></td></tr>
-<tr class="memitem:accfe276284fb8e09eccc366fe6049255"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_hover_race_1_1_client_1_1_scene.html">Scene</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_ui_scene.html#accfe276284fb8e09eccc366fe6049255">SUPER</a></td></tr>
-<tr class="separator:accfe276284fb8e09eccc366fe6049255"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b739bfe2de0a850bada1b0238d1e86b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_ui_scene.html#a3b739bfe2de0a850bada1b0238d1e86b">SUPER</a> = <a class="el" href="class_hover_race_1_1_client_1_1_scene.html">Scene</a></td></tr>
+<tr class="separator:a3b739bfe2de0a850bada1b0238d1e86b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a3aac00125f19fbabd7c4a404ba09a03e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_ui_scene.html#a3aac00125f19fbabd7c4a404ba09a03e">OnAction</a> ()</td></tr>
+<tr class="separator:a3aac00125f19fbabd7c4a404ba09a03e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a072639e85086ffca029b4e5c73752441"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_ui_scene.html#a072639e85086ffca029b4e5c73752441">OnNav</a> (<a class="el" href="class_hover_race_1_1_control_1_1_nav.html">Control::Nav</a> &amp;nav)</td></tr>
+<tr class="separator:a072639e85086ffca029b4e5c73752441"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a6d1ac00eba45584cc1b4351a253ad30a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_ui_scene.html#a6d1ac00eba45584cc1b4351a253ad30a">needsLayout</a></td></tr>
 <tr class="separator:a6d1ac00eba45584cc1b4351a253ad30a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed1c3958f2557ef7c6a741577cc53bcd"><td class="memItemLeft" align="right" valign="top">std::shared_ptr<br class="typebreak"/>
+&lt; <a class="el" href="class_hover_race_1_1_display_1_1_ui_view_model.html">Display::UiViewModel</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_ui_scene.html#aed1c3958f2557ef7c6a741577cc53bcd">focusRoot</a></td></tr>
+<tr class="separator:aed1c3958f2557ef7c6a741577cc53bcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6194b7c8f9102b260d9dc4ece599bb73"><td class="memItemLeft" align="right" valign="top">boost::signals2::scoped_connection&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_ui_scene.html#a6194b7c8f9102b260d9dc4ece599bb73">focusReqConn</a></td></tr>
+<tr class="separator:a6194b7c8f9102b260d9dc4ece599bb73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae46045a83a4c0828ce7c716892de4856"><td class="memItemLeft" align="right" valign="top">boost::signals2::scoped_connection&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_ui_scene.html#ae46045a83a4c0828ce7c716892de4856">focusRelConn</a></td></tr>
+<tr class="separator:ae46045a83a4c0828ce7c716892de4856"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa269d122adfca26d9b45b2c696c9ae19"><td class="memItemLeft" align="right" valign="top">boost::signals2::scoped_connection&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_ui_scene.html#aa269d122adfca26d9b45b2c696c9ae19">okConn</a></td></tr>
+<tr class="separator:aa269d122adfca26d9b45b2c696c9ae19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a114ad6f602e97a687d7557debd69d233"><td class="memItemLeft" align="right" valign="top">boost::signals2::scoped_connection&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_ui_scene.html#a114ad6f602e97a687d7557debd69d233">upConn</a></td></tr>
+<tr class="separator:a114ad6f602e97a687d7557debd69d233"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c9a5cfe7c4ab922fe6abe2829e65f41"><td class="memItemLeft" align="right" valign="top">boost::signals2::scoped_connection&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_ui_scene.html#a8c9a5cfe7c4ab922fe6abe2829e65f41">downConn</a></td></tr>
+<tr class="separator:a8c9a5cfe7c4ab922fe6abe2829e65f41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fb3685b232ed63140a652b190095229"><td class="memItemLeft" align="right" valign="top">boost::signals2::scoped_connection&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_ui_scene.html#a5fb3685b232ed63140a652b190095229">leftConn</a></td></tr>
+<tr class="separator:a5fb3685b232ed63140a652b190095229"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae82bd8b588250e7e3936bc86766eb218"><td class="memItemLeft" align="right" valign="top">boost::signals2::scoped_connection&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_ui_scene.html#ae82bd8b588250e7e3936bc86766eb218">rightConn</a></td></tr>
+<tr class="separator:ae82bd8b588250e7e3936bc86766eb218"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49698a93a42bb46e8ed351a8d43229df"><td class="memItemLeft" align="right" valign="top">boost::signals2::scoped_connection&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_ui_scene.html#a49698a93a42bb46e8ed351a8d43229df">prevConn</a></td></tr>
+<tr class="separator:a49698a93a42bb46e8ed351a8d43229df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd4a9fd2030222840f69a50245b8addb"><td class="memItemLeft" align="right" valign="top">boost::signals2::scoped_connection&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_ui_scene.html#afd4a9fd2030222840f69a50245b8addb">nextConn</a></td></tr>
+<tr class="separator:afd4a9fd2030222840f69a50245b8addb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -194,7 +226,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock"><p>Base class for UI-centric scenes. </p>
 <dl class="section author"><dt>Author</dt><dd>Michael Imamura </dd></dl>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="accfe276284fb8e09eccc366fe6049255"></a>
+<a class="anchor" id="a3b739bfe2de0a850bada1b0238d1e86b"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -202,7 +234,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="class_hover_race_1_1_client_1_1_scene.html">Scene</a> <a class="el" href="class_hover_race_1_1_client_1_1_ui_scene.html#accfe276284fb8e09eccc366fe6049255">HoverRace::Client::UiScene::SUPER</a></td>
+          <td class="memname">using <a class="el" href="class_hover_race_1_1_client_1_1_ui_scene.html#a3b739bfe2de0a850bada1b0238d1e86b">HoverRace::Client::UiScene::SUPER</a> =  <a class="el" href="class_hover_race_1_1_client_1_1_scene.html">Scene</a></td>
         </tr>
       </table>
   </td>
@@ -389,7 +421,54 @@ Additional Inherited Members</h2></td></tr>
 <p>Subclasses with child elements that are relative to each other should override this function.</p>
 <p>This is called automatically during the <a class="el" href="class_hover_race_1_1_client_1_1_ui_scene.html#aa12885a75bb4dac8be3523b2af44343b">PrepareRender()</a> phase if <a class="el" href="class_hover_race_1_1_client_1_1_ui_scene.html#a195e22f5b8aba8d15aace704faa6c6e2" title="Indicate that the current layout is out-of-date and needs to be adjusted. ">RequestLayout()</a> has been called. It is also called the first time <a class="el" href="class_hover_race_1_1_client_1_1_ui_scene.html#aa12885a75bb4dac8be3523b2af44343b">PrepareRender()</a> is invoked. After this function is called, it will not be called again until another call to <a class="el" href="class_hover_race_1_1_client_1_1_ui_scene.html#a195e22f5b8aba8d15aace704faa6c6e2" title="Indicate that the current layout is out-of-date and needs to be adjusted. ">RequestLayout()</a>. </p>
 
-<p>Reimplemented in <a class="el" href="class_hover_race_1_1_client_1_1_module_1_1_flex_grid_module.html#a8e99e05faddae4cc3d89075c5c8abcc8">HoverRace::Client::Module::FlexGridModule</a>, <a class="el" href="class_hover_race_1_1_client_1_1_game_scene.html#ad76d55cefafb4241f085831254be6100">HoverRace::Client::GameScene</a>, <a class="el" href="class_hover_race_1_1_client_1_1_status_overlay_scene.html#ad22b02d9416231e1a1e34bca8c9273b0">HoverRace::Client::StatusOverlayScene</a>, <a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_console_scene.html#a8234b27457dcdb1a30ea7267b2518dec">HoverRace::Client::HoverScript::ConsoleScene</a>, <a class="el" href="class_hover_race_1_1_client_1_1_message_scene.html#a3da792e659bd4fe0cbb3040cbb3ef28e">HoverRace::Client::MessageScene</a>, and <a class="el" href="class_hover_race_1_1_client_1_1_main_menu_scene.html#ac545b9b894e10a9ce4f2327606cf6405">HoverRace::Client::MainMenuScene</a>.</p>
+<p>Reimplemented in <a class="el" href="class_hover_race_1_1_client_1_1_module_1_1_flex_grid_module.html#a8e99e05faddae4cc3d89075c5c8abcc8">HoverRace::Client::Module::FlexGridModule</a>, <a class="el" href="class_hover_race_1_1_client_1_1_game_scene.html#ad76d55cefafb4241f085831254be6100">HoverRace::Client::GameScene</a>, <a class="el" href="class_hover_race_1_1_client_1_1_status_overlay_scene.html#ad22b02d9416231e1a1e34bca8c9273b0">HoverRace::Client::StatusOverlayScene</a>, <a class="el" href="class_hover_race_1_1_client_1_1_message_scene.html#a3da792e659bd4fe0cbb3040cbb3ef28e">HoverRace::Client::MessageScene</a>, <a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_console_scene.html#a8234b27457dcdb1a30ea7267b2518dec">HoverRace::Client::HoverScript::ConsoleScene</a>, and <a class="el" href="class_hover_race_1_1_client_1_1_main_menu_scene.html#ac545b9b894e10a9ce4f2327606cf6405">HoverRace::Client::MainMenuScene</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3aac00125f19fbabd7c4a404ba09a03e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HoverRace::Client::UiScene::OnAction </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a072639e85086ffca029b4e5c73752441"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HoverRace::Client::UiScene::OnNav </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_hover_race_1_1_control_1_1_nav.html">Control::Nav</a> &amp;&#160;</td>
+          <td class="paramname"><em>nav</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -473,7 +552,140 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a3623342efcdd80c55dac637a991a4ffd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HoverRace::Client::UiScene::SetFocusRoot </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="class_hover_race_1_1_display_1_1_ui_view_model.html">Display::UiViewModel</a> &gt;&#160;</td>
+          <td class="paramname"><em>root</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the widget used as the root for all focus management. </p>
+<p>Widgets which are not under this widget will not be able to receive input focus.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">root</td><td>The root widget. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a8c9a5cfe7c4ab922fe6abe2829e65f41"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::signals2::scoped_connection HoverRace::Client::UiScene::downConn</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae46045a83a4c0828ce7c716892de4856"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::signals2::scoped_connection HoverRace::Client::UiScene::focusRelConn</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6194b7c8f9102b260d9dc4ece599bb73"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::signals2::scoped_connection HoverRace::Client::UiScene::focusReqConn</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aed1c3958f2557ef7c6a741577cc53bcd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="class_hover_race_1_1_display_1_1_ui_view_model.html">Display::UiViewModel</a>&gt; HoverRace::Client::UiScene::focusRoot</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5fb3685b232ed63140a652b190095229"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::signals2::scoped_connection HoverRace::Client::UiScene::leftConn</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a6d1ac00eba45584cc1b4351a253ad30a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -483,6 +695,106 @@ Additional Inherited Members</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">bool HoverRace::Client::UiScene::needsLayout</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afd4a9fd2030222840f69a50245b8addb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::signals2::scoped_connection HoverRace::Client::UiScene::nextConn</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa269d122adfca26d9b45b2c696c9ae19"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::signals2::scoped_connection HoverRace::Client::UiScene::okConn</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a49698a93a42bb46e8ed351a8d43229df"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::signals2::scoped_connection HoverRace::Client::UiScene::prevConn</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae82bd8b588250e7e3936bc86766eb218"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::signals2::scoped_connection HoverRace::Client::UiScene::rightConn</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a114ad6f602e97a687d7557debd69d233"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::signals2::scoped_connection HoverRace::Client::UiScene::upConn</td>
         </tr>
       </table>
   </td>
