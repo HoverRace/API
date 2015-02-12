@@ -52,60 +52,63 @@
 </div><!--header-->
 <div class="contents">
 <a href="_node_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// yaml/Node.h</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// Header for yaml::Node.</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">// Copyright (c) 2008, 2009 Michael Imamura.</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">// Licensed under GrokkSoft HoverRace SourceCode License v1.0(the &quot;License&quot;);</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">// you may not use this file except in compliance with the License.</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// A copy of the license should have been attached to the package from which</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// you have taken this file. If you can not find the license you can not use</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">// this file.</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// Node.h</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// Copyright (c) 2008, 2009, 2015 Michael Imamura.</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">// Licensed under GrokkSoft HoverRace SourceCode License v1.0(the &quot;License&quot;);</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">// you may not use this file except in compliance with the License.</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">// A copy of the license should have been attached to the package from which</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// you have taken this file. If you can not find the license you can not use</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// this file.</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// The author makes no representations about the suitability of</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// this software for any purpose.  It is provided &quot;as is&quot; &quot;AS IS&quot;,</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">// implied.</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">// See the License for the specific language governing permissions</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">// and limitations under the License.</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;yaml.h&gt;</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">namespace </span>yaml</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classyaml_1_1_node.html">   31</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classyaml_1_1_node.html">Node</a></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classyaml_1_1_node.html#a6ba7b27de18dae5f72f388e0df42897b">   34</a></span>&#160;            <a class="code" href="classyaml_1_1_node.html#a6ba7b27de18dae5f72f388e0df42897b">Node</a>() : <a class="code" href="classyaml_1_1_node.html#ae364cc307d401c9ac58e44bc71894000">doc</a>(NULL), <a class="code" href="classyaml_1_1_node.html#a1b7e954e7becb8e8098ae514dbc344ec">node</a>(NULL) { }</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classyaml_1_1_node.html#a92e45e9adec07bb4227e51c01276ee6b">   36</a></span>&#160;            <a class="code" href="classyaml_1_1_node.html#a92e45e9adec07bb4227e51c01276ee6b">Node</a>(yaml_document_t *<a class="code" href="classyaml_1_1_node.html#ae364cc307d401c9ac58e44bc71894000">doc</a>, yaml_node_t *<a class="code" href="classyaml_1_1_node.html#a1b7e954e7becb8e8098ae514dbc344ec">node</a>) :</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                doc(doc), node(node) { };</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classyaml_1_1_node.html#a562e355c5b61c51a5329204843ddfb67">   38</a></span>&#160;            <span class="keyword">virtual</span> <a class="code" href="classyaml_1_1_node.html#a562e355c5b61c51a5329204843ddfb67">~Node</a>() { }</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">// The author makes no representations about the suitability of</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// this software for any purpose.  It is provided &quot;as is&quot; &quot;AS IS&quot;,</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">// implied.</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">// See the License for the specific language governing permissions</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">// and limitations under the License.</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;yaml.h&gt;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">namespace </span>HoverRace {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">namespace </span>Util {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">namespace </span>yaml {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_hover_race_1_1_util_1_1yaml_1_1_node.html">   31</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_hover_race_1_1_util_1_1yaml_1_1_node.html">Node</a></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_hover_race_1_1_util_1_1yaml_1_1_node.html#a4b9b2d0853463ae3ebea459a31687835">   34</a></span>&#160;    <a class="code" href="class_hover_race_1_1_util_1_1yaml_1_1_node.html#a4b9b2d0853463ae3ebea459a31687835">Node</a>() : <a class="code" href="class_hover_race_1_1_util_1_1yaml_1_1_node.html#a889ed6f2d8a88316a7638e3d6a90fa50">doc</a>(nullptr), <a class="code" href="class_hover_race_1_1_util_1_1yaml_1_1_node.html#aa46534b5fd669caa2e4d9af4cc4934bb">node</a>(nullptr) { }</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_hover_race_1_1_util_1_1yaml_1_1_node.html#a7e077a18822fe8c489971b48ac7bfe77">   36</a></span>&#160;    <a class="code" href="class_hover_race_1_1_util_1_1yaml_1_1_node.html#a7e077a18822fe8c489971b48ac7bfe77">Node</a>(yaml_document_t *<a class="code" href="class_hover_race_1_1_util_1_1yaml_1_1_node.html#a889ed6f2d8a88316a7638e3d6a90fa50">doc</a>, yaml_node_t *<a class="code" href="class_hover_race_1_1_util_1_1yaml_1_1_node.html#aa46534b5fd669caa2e4d9af4cc4934bb">node</a>) :</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        doc(doc), node(node) { };</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_hover_race_1_1_util_1_1yaml_1_1_node.html#a712872c3d45083948f63340bf0dcf691">   38</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_hover_race_1_1_util_1_1yaml_1_1_node.html#a712872c3d45083948f63340bf0dcf691">~Node</a>() { }</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classyaml_1_1_node.html#aa33cc3587a67d8259dd979120686ba43">   41</a></span>&#160;            yaml_document_t *<a class="code" href="classyaml_1_1_node.html#aa33cc3587a67d8259dd979120686ba43">GetDocument</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classyaml_1_1_node.html#ae364cc307d401c9ac58e44bc71894000">doc</a>; }</div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classyaml_1_1_node.html#a871fbe5e365630293d77efea65f5f513">   42</a></span>&#160;            yaml_node_t *<a class="code" href="classyaml_1_1_node.html#a871fbe5e365630293d77efea65f5f513">GetNode</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classyaml_1_1_node.html#a1b7e954e7becb8e8098ae514dbc344ec">node</a>; }</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_hover_race_1_1_util_1_1yaml_1_1_node.html#a284351c38edd94ff20c05838674d6c97">   41</a></span>&#160;    yaml_document_t *<a class="code" href="class_hover_race_1_1_util_1_1yaml_1_1_node.html#a284351c38edd94ff20c05838674d6c97">GetDocument</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="class_hover_race_1_1_util_1_1yaml_1_1_node.html#a889ed6f2d8a88316a7638e3d6a90fa50">doc</a>; }</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_hover_race_1_1_util_1_1yaml_1_1_node.html#a6b4f539f1861d90ea23610bf5e2d2922">   42</a></span>&#160;    yaml_node_t *<a class="code" href="class_hover_race_1_1_util_1_1yaml_1_1_node.html#a6b4f539f1861d90ea23610bf5e2d2922">GetNode</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="class_hover_race_1_1_util_1_1yaml_1_1_node.html#aa46534b5fd669caa2e4d9af4cc4934bb">node</a>; }</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classyaml_1_1_node.html#ae364cc307d401c9ac58e44bc71894000">   45</a></span>&#160;            yaml_document_t *<a class="code" href="classyaml_1_1_node.html#ae364cc307d401c9ac58e44bc71894000">doc</a>;</div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classyaml_1_1_node.html#a1b7e954e7becb8e8098ae514dbc344ec">   46</a></span>&#160;            yaml_node_t *<a class="code" href="classyaml_1_1_node.html#a1b7e954e7becb8e8098ae514dbc344ec">node</a>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    };</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
-<div class="ttc" id="classyaml_1_1_node_html"><div class="ttname"><a href="classyaml_1_1_node.html">yaml::Node</a></div><div class="ttdoc">Base class for LibYAML document nodes. </div><div class="ttdef"><b>Definition:</b> Node.h:31</div></div>
-<div class="ttc" id="classyaml_1_1_node_html_a562e355c5b61c51a5329204843ddfb67"><div class="ttname"><a href="classyaml_1_1_node.html#a562e355c5b61c51a5329204843ddfb67">yaml::Node::~Node</a></div><div class="ttdeci">virtual ~Node()</div><div class="ttdef"><b>Definition:</b> Node.h:38</div></div>
-<div class="ttc" id="classyaml_1_1_node_html_ae364cc307d401c9ac58e44bc71894000"><div class="ttname"><a href="classyaml_1_1_node.html#ae364cc307d401c9ac58e44bc71894000">yaml::Node::doc</a></div><div class="ttdeci">yaml_document_t * doc</div><div class="ttdef"><b>Definition:</b> Node.h:45</div></div>
-<div class="ttc" id="classyaml_1_1_node_html_aa33cc3587a67d8259dd979120686ba43"><div class="ttname"><a href="classyaml_1_1_node.html#aa33cc3587a67d8259dd979120686ba43">yaml::Node::GetDocument</a></div><div class="ttdeci">yaml_document_t * GetDocument() const </div><div class="ttdef"><b>Definition:</b> Node.h:41</div></div>
-<div class="ttc" id="classyaml_1_1_node_html_a92e45e9adec07bb4227e51c01276ee6b"><div class="ttname"><a href="classyaml_1_1_node.html#a92e45e9adec07bb4227e51c01276ee6b">yaml::Node::Node</a></div><div class="ttdeci">Node(yaml_document_t *doc, yaml_node_t *node)</div><div class="ttdef"><b>Definition:</b> Node.h:36</div></div>
-<div class="ttc" id="classyaml_1_1_node_html_a871fbe5e365630293d77efea65f5f513"><div class="ttname"><a href="classyaml_1_1_node.html#a871fbe5e365630293d77efea65f5f513">yaml::Node::GetNode</a></div><div class="ttdeci">yaml_node_t * GetNode() const </div><div class="ttdef"><b>Definition:</b> Node.h:42</div></div>
-<div class="ttc" id="classyaml_1_1_node_html_a6ba7b27de18dae5f72f388e0df42897b"><div class="ttname"><a href="classyaml_1_1_node.html#a6ba7b27de18dae5f72f388e0df42897b">yaml::Node::Node</a></div><div class="ttdeci">Node()</div><div class="ttdef"><b>Definition:</b> Node.h:34</div></div>
-<div class="ttc" id="classyaml_1_1_node_html_a1b7e954e7becb8e8098ae514dbc344ec"><div class="ttname"><a href="classyaml_1_1_node.html#a1b7e954e7becb8e8098ae514dbc344ec">yaml::Node::node</a></div><div class="ttdeci">yaml_node_t * node</div><div class="ttdef"><b>Definition:</b> Node.h:46</div></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_hover_race_1_1_util_1_1yaml_1_1_node.html#a889ed6f2d8a88316a7638e3d6a90fa50">   45</a></span>&#160;    yaml_document_t *<a class="code" href="class_hover_race_1_1_util_1_1yaml_1_1_node.html#a889ed6f2d8a88316a7638e3d6a90fa50">doc</a>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="class_hover_race_1_1_util_1_1yaml_1_1_node.html#aa46534b5fd669caa2e4d9af4cc4934bb">   46</a></span>&#160;    yaml_node_t *<a class="code" href="class_hover_race_1_1_util_1_1yaml_1_1_node.html#aa46534b5fd669caa2e4d9af4cc4934bb">node</a>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;};</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}  <span class="comment">// namespace yaml</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}  <span class="comment">// namespace Util</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}  <span class="comment">// namespace HoverRace</span></div>
+<div class="ttc" id="class_hover_race_1_1_util_1_1yaml_1_1_node_html"><div class="ttname"><a href="class_hover_race_1_1_util_1_1yaml_1_1_node.html">HoverRace::Util::yaml::Node</a></div><div class="ttdoc">Base class for LibYAML document nodes. </div><div class="ttdef"><b>Definition:</b> Node.h:31</div></div>
+<div class="ttc" id="class_hover_race_1_1_util_1_1yaml_1_1_node_html_a6b4f539f1861d90ea23610bf5e2d2922"><div class="ttname"><a href="class_hover_race_1_1_util_1_1yaml_1_1_node.html#a6b4f539f1861d90ea23610bf5e2d2922">HoverRace::Util::yaml::Node::GetNode</a></div><div class="ttdeci">yaml_node_t * GetNode() const </div><div class="ttdef"><b>Definition:</b> Node.h:42</div></div>
+<div class="ttc" id="class_hover_race_1_1_util_1_1yaml_1_1_node_html_a889ed6f2d8a88316a7638e3d6a90fa50"><div class="ttname"><a href="class_hover_race_1_1_util_1_1yaml_1_1_node.html#a889ed6f2d8a88316a7638e3d6a90fa50">HoverRace::Util::yaml::Node::doc</a></div><div class="ttdeci">yaml_document_t * doc</div><div class="ttdef"><b>Definition:</b> Node.h:45</div></div>
+<div class="ttc" id="class_hover_race_1_1_util_1_1yaml_1_1_node_html_a7e077a18822fe8c489971b48ac7bfe77"><div class="ttname"><a href="class_hover_race_1_1_util_1_1yaml_1_1_node.html#a7e077a18822fe8c489971b48ac7bfe77">HoverRace::Util::yaml::Node::Node</a></div><div class="ttdeci">Node(yaml_document_t *doc, yaml_node_t *node)</div><div class="ttdef"><b>Definition:</b> Node.h:36</div></div>
+<div class="ttc" id="class_hover_race_1_1_util_1_1yaml_1_1_node_html_a4b9b2d0853463ae3ebea459a31687835"><div class="ttname"><a href="class_hover_race_1_1_util_1_1yaml_1_1_node.html#a4b9b2d0853463ae3ebea459a31687835">HoverRace::Util::yaml::Node::Node</a></div><div class="ttdeci">Node()</div><div class="ttdef"><b>Definition:</b> Node.h:34</div></div>
+<div class="ttc" id="class_hover_race_1_1_util_1_1yaml_1_1_node_html_a284351c38edd94ff20c05838674d6c97"><div class="ttname"><a href="class_hover_race_1_1_util_1_1yaml_1_1_node.html#a284351c38edd94ff20c05838674d6c97">HoverRace::Util::yaml::Node::GetDocument</a></div><div class="ttdeci">yaml_document_t * GetDocument() const </div><div class="ttdef"><b>Definition:</b> Node.h:41</div></div>
+<div class="ttc" id="class_hover_race_1_1_util_1_1yaml_1_1_node_html_aa46534b5fd669caa2e4d9af4cc4934bb"><div class="ttname"><a href="class_hover_race_1_1_util_1_1yaml_1_1_node.html#aa46534b5fd669caa2e4d9af4cc4934bb">HoverRace::Util::yaml::Node::node</a></div><div class="ttdeci">yaml_node_t * node</div><div class="ttdef"><b>Definition:</b> Node.h:46</div></div>
+<div class="ttc" id="class_hover_race_1_1_util_1_1yaml_1_1_node_html_a712872c3d45083948f63340bf0dcf691"><div class="ttname"><a href="class_hover_race_1_1_util_1_1yaml_1_1_node.html#a712872c3d45083948f63340bf0dcf691">HoverRace::Util::yaml::Node::~Node</a></div><div class="ttdeci">virtual ~Node()</div><div class="ttdef"><b>Definition:</b> Node.h:38</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

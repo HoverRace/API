@@ -72,10 +72,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3706dab0acd624b5788acd3eb09307bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d787efd94d36571da80b5f9834140ba"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_util_1_1_inspect_seq_node.html#a7d787efd94d36571da80b5f9834140ba">~InspectSeqNode</a> ()</td></tr>
 <tr class="separator:a7d787efd94d36571da80b5f9834140ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4786ec583c09eb885704f2ef5fc80c6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_util_1_1_inspect_seq_node.html#aa4786ec583c09eb885704f2ef5fc80c6">Add</a> (<a class="el" href="namespace_hover_race_1_1_util.html#aa82c2c2b75ca55408de1505b28e099d8">InspectNodePtr</a> s)</td></tr>
-<tr class="separator:aa4786ec583c09eb885704f2ef5fc80c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad79247bb13da49d0abaf5057b11bf7c3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_util_1_1_inspect_seq_node.html#ad79247bb13da49d0abaf5057b11bf7c3">RenderToYaml</a> (<a class="el" href="classyaml_1_1_emitter.html">yaml::Emitter</a> &amp;emitter)</td></tr>
-<tr class="separator:ad79247bb13da49d0abaf5057b11bf7c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a944263ab492a1b586750132879a09062"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_util_1_1_inspect_seq_node.html#a944263ab492a1b586750132879a09062">Add</a> (std::shared_ptr&lt; <a class="el" href="class_hover_race_1_1_util_1_1_inspect_node.html">InspectNode</a> &gt; s)</td></tr>
+<tr class="separator:a944263ab492a1b586750132879a09062"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af846f84e28661301310373338800458c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_util_1_1_inspect_seq_node.html#af846f84e28661301310373338800458c">RenderToYaml</a> (<a class="el" href="class_hover_race_1_1_util_1_1yaml_1_1_emitter.html">yaml::Emitter</a> &amp;emitter) override</td></tr>
+<tr class="separator:af846f84e28661301310373338800458c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_hover_race_1_1_util_1_1_inspect_node"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_hover_race_1_1_util_1_1_inspect_node')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_hover_race_1_1_util_1_1_inspect_node.html">HoverRace::Util::InspectNode</a></td></tr>
 <tr class="memitem:aafea241dc8226a78ce504b2bc8c3910e inherit pub_methods_class_hover_race_1_1_util_1_1_inspect_node"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_util_1_1_inspect_node.html#aafea241dc8226a78ce504b2bc8c3910e">InspectNode</a> ()</td></tr>
 <tr class="separator:aafea241dc8226a78ce504b2bc8c3910e inherit pub_methods_class_hover_race_1_1_util_1_1_inspect_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -84,19 +84,17 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
 Private Types</h2></td></tr>
-<tr class="memitem:a1b9cf557cbdd3aaa05eae0025281435f"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_hover_race_1_1_util_1_1_inspect_node.html">InspectNode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_util_1_1_inspect_seq_node.html#a1b9cf557cbdd3aaa05eae0025281435f">SUPER</a></td></tr>
-<tr class="separator:a1b9cf557cbdd3aaa05eae0025281435f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0ec0bad827b87ba2807f6cff4e2f251"><td class="memItemLeft" align="right" valign="top">typedef std::vector<br class="typebreak"/>
-&lt; <a class="el" href="namespace_hover_race_1_1_util.html#aa82c2c2b75ca55408de1505b28e099d8">InspectNodePtr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_util_1_1_inspect_seq_node.html#ac0ec0bad827b87ba2807f6cff4e2f251">fields_t</a></td></tr>
-<tr class="separator:ac0ec0bad827b87ba2807f6cff4e2f251"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18f18f18f19809cf28e4e099055218c8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_util_1_1_inspect_seq_node.html#a18f18f18f19809cf28e4e099055218c8">SUPER</a> = <a class="el" href="class_hover_race_1_1_util_1_1_inspect_node.html">InspectNode</a></td></tr>
+<tr class="separator:a18f18f18f19809cf28e4e099055218c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:afd3d95c23dcaaf4d62e9a228160f7b45"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_util_1_1_inspect_seq_node.html#ac0ec0bad827b87ba2807f6cff4e2f251">fields_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_util_1_1_inspect_seq_node.html#afd3d95c23dcaaf4d62e9a228160f7b45">fields</a></td></tr>
-<tr class="separator:afd3d95c23dcaaf4d62e9a228160f7b45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d7e9914d214ff3701a7f8bf3b8f895d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::shared_ptr<br class="typebreak"/>
+&lt; <a class="el" href="class_hover_race_1_1_util_1_1_inspect_node.html">InspectNode</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_util_1_1_inspect_seq_node.html#a1d7e9914d214ff3701a7f8bf3b8f895d">fields</a></td></tr>
+<tr class="separator:a1d7e9914d214ff3701a7f8bf3b8f895d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="ac0ec0bad827b87ba2807f6cff4e2f251"></a>
+<a class="anchor" id="a18f18f18f19809cf28e4e099055218c8"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -104,27 +102,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::vector&lt;<a class="el" href="namespace_hover_race_1_1_util.html#aa82c2c2b75ca55408de1505b28e099d8">InspectNodePtr</a>&gt; <a class="el" href="class_hover_race_1_1_util_1_1_inspect_seq_node.html#ac0ec0bad827b87ba2807f6cff4e2f251">HoverRace::Util::InspectSeqNode::fields_t</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a1b9cf557cbdd3aaa05eae0025281435f"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="class_hover_race_1_1_util_1_1_inspect_node.html">InspectNode</a> <a class="el" href="class_hover_race_1_1_util_1_1_inspect_seq_node.html#a1b9cf557cbdd3aaa05eae0025281435f">HoverRace::Util::InspectSeqNode::SUPER</a></td>
+          <td class="memname">using <a class="el" href="class_hover_race_1_1_util_1_1_inspect_seq_node.html#a18f18f18f19809cf28e4e099055218c8">HoverRace::Util::InspectSeqNode::SUPER</a> =  <a class="el" href="class_hover_race_1_1_util_1_1_inspect_node.html">InspectNode</a></td>
         </tr>
       </table>
   </td>
@@ -185,7 +163,7 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="aa4786ec583c09eb885704f2ef5fc80c6"></a>
+<a class="anchor" id="a944263ab492a1b586750132879a09062"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -195,7 +173,7 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">void HoverRace::Util::InspectSeqNode::Add </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespace_hover_race_1_1_util.html#aa82c2c2b75ca55408de1505b28e099d8">InspectNodePtr</a>&#160;</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="class_hover_race_1_1_util_1_1_inspect_node.html">InspectNode</a> &gt;&#160;</td>
           <td class="paramname"><em>s</em></td><td>)</td>
           <td></td>
         </tr>
@@ -209,7 +187,7 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ad79247bb13da49d0abaf5057b11bf7c3"></a>
+<a class="anchor" id="af846f84e28661301310373338800458c"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -219,14 +197,14 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">void HoverRace::Util::InspectSeqNode::RenderToYaml </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classyaml_1_1_emitter.html">yaml::Emitter</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="class_hover_race_1_1_util_1_1yaml_1_1_emitter.html">yaml::Emitter</a> &amp;&#160;</td>
           <td class="paramname"><em>emitter</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -236,7 +214,7 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="afd3d95c23dcaaf4d62e9a228160f7b45"></a>
+<a class="anchor" id="a1d7e9914d214ff3701a7f8bf3b8f895d"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -244,7 +222,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_hover_race_1_1_util_1_1_inspect_seq_node.html#ac0ec0bad827b87ba2807f6cff4e2f251">fields_t</a> HoverRace::Util::InspectSeqNode::fields</td>
+          <td class="memname">std::vector&lt;std::shared_ptr&lt;<a class="el" href="class_hover_race_1_1_util_1_1_inspect_node.html">InspectNode</a>&gt; &gt; HoverRace::Util::InspectSeqNode::fields</td>
         </tr>
       </table>
   </td>

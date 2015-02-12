@@ -74,8 +74,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:abec95746f920992a76e80d12fdef7438"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a318d9653e2517212875287ca387c635d"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_parcel_1_1_record_file.html#a318d9653e2517212875287ca387c635d">~RecordFile</a> ()</td></tr>
 <tr class="separator:a318d9653e2517212875287ca387c635d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac09e042068949844963774ffcb22adc0"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_parcel_1_1_record_file.html#ac09e042068949844963774ffcb22adc0">CreateForWrite</a> (const <a class="el" href="struct_hover_race_1_1_util_1_1_o_s.html#a479d7860ca6d8236fc4e80fe1b00f414">Util::OS::path_t</a> &amp;filename, int numRecords, const char *title=NULL)=0</td></tr>
-<tr class="separator:ac09e042068949844963774ffcb22adc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af268a7ecc05244783325c48759dd085b"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_parcel_1_1_record_file.html#af268a7ecc05244783325c48759dd085b">CreateForWrite</a> (const <a class="el" href="struct_hover_race_1_1_util_1_1_o_s.html#a479d7860ca6d8236fc4e80fe1b00f414">Util::OS::path_t</a> &amp;filename, int numRecords, const char *title=nullptr)=0</td></tr>
+<tr class="separator:af268a7ecc05244783325c48759dd085b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aded942ede8f28929791379f56eea1aca"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_parcel_1_1_record_file.html#aded942ede8f28929791379f56eea1aca">OpenForWrite</a> (const <a class="el" href="struct_hover_race_1_1_util_1_1_o_s.html#a479d7860ca6d8236fc4e80fe1b00f414">Util::OS::path_t</a> &amp;filename)=0</td></tr>
 <tr class="separator:aded942ede8f28929791379f56eea1aca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07ae60b7f6bd0f80076be269203be807"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_parcel_1_1_record_file.html#a07ae60b7f6bd0f80076be269203be807">OpenForRead</a> (const <a class="el" href="struct_hover_race_1_1_util_1_1_o_s.html#a479d7860ca6d8236fc4e80fe1b00f414">Util::OS::path_t</a> &amp;filename, bool validateChecksum=false)=0</td></tr>
@@ -106,14 +106,14 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
 Private Types</h2></td></tr>
-<tr class="memitem:a949a646475d8522b996ebc1d71f6fa66"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_hover_race_1_1_util_1_1_inspectable.html">Util::Inspectable</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_parcel_1_1_record_file.html#a949a646475d8522b996ebc1d71f6fa66">SUPER</a></td></tr>
-<tr class="separator:a949a646475d8522b996ebc1d71f6fa66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c59badba853f12e63f6404b7ee0679b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_parcel_1_1_record_file.html#a3c59badba853f12e63f6404b7ee0679b">SUPER</a> = <a class="el" href="class_hover_race_1_1_util_1_1_inspectable.html">Util::Inspectable</a></td></tr>
+<tr class="separator:a3c59badba853f12e63f6404b7ee0679b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for parcel implementations. </p>
 <dl class="section author"><dt>Author</dt><dd>Michael Imamura </dd></dl>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="a949a646475d8522b996ebc1d71f6fa66"></a>
+<a class="anchor" id="a3c59badba853f12e63f6404b7ee0679b"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -121,7 +121,7 @@ Private Types</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="class_hover_race_1_1_util_1_1_inspectable.html">Util::Inspectable</a> <a class="el" href="class_hover_race_1_1_parcel_1_1_record_file.html#a949a646475d8522b996ebc1d71f6fa66">HoverRace::Parcel::RecordFile::SUPER</a></td>
+          <td class="memname">using <a class="el" href="class_hover_race_1_1_parcel_1_1_record_file.html#a3c59badba853f12e63f6404b7ee0679b">HoverRace::Parcel::RecordFile::SUPER</a> =  <a class="el" href="class_hover_race_1_1_util_1_1_inspectable.html">Util::Inspectable</a></td>
         </tr>
       </table>
   </td>
@@ -203,7 +203,7 @@ Private Types</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_hover_race_1_1_parcel_1_1_classic_record_file.html#a995e94690cfb0b6b109a29eb8c78dee4">HoverRace::Parcel::ClassicRecordFile</a>.</p>
+<p>Implemented in <a class="el" href="class_hover_race_1_1_parcel_1_1_classic_record_file.html#a06238cfa6a5256d34986134c80d01571">HoverRace::Parcel::ClassicRecordFile</a>.</p>
 
 </div>
 </div>
@@ -228,11 +228,11 @@ Private Types</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_hover_race_1_1_parcel_1_1_classic_record_file.html#a0c3eec3b8270c9bb7f2393757e5c5380">HoverRace::Parcel::ClassicRecordFile</a>.</p>
+<p>Implemented in <a class="el" href="class_hover_race_1_1_parcel_1_1_classic_record_file.html#a505fe0101347c02f2744082a0f571cf9">HoverRace::Parcel::ClassicRecordFile</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ac09e042068949844963774ffcb22adc0"></a>
+<a class="anchor" id="af268a7ecc05244783325c48759dd085b"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -255,7 +255,7 @@ Private Types</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>title</em> = <code>NULL</code>&#160;</td>
+          <td class="paramname"><em>title</em> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -270,7 +270,7 @@ Private Types</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_hover_race_1_1_parcel_1_1_classic_record_file.html#a5a14f264128efdc70defbe6501eb7d8a">HoverRace::Parcel::ClassicRecordFile</a>.</p>
+<p>Implemented in <a class="el" href="class_hover_race_1_1_parcel_1_1_classic_record_file.html#a8c4675725fe7a678999b12c4a26abac2">HoverRace::Parcel::ClassicRecordFile</a>.</p>
 
 </div>
 </div>
@@ -295,7 +295,7 @@ Private Types</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_hover_race_1_1_parcel_1_1_classic_record_file.html#a23c95e54ca87c2f6d68015b842d81573">HoverRace::Parcel::ClassicRecordFile</a>.</p>
+<p>Implemented in <a class="el" href="class_hover_race_1_1_parcel_1_1_classic_record_file.html#a2c63a3c687c355e3890b012c8a90924b">HoverRace::Parcel::ClassicRecordFile</a>.</p>
 
 </div>
 </div>
@@ -320,7 +320,7 @@ Private Types</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_hover_race_1_1_parcel_1_1_classic_record_file.html#a6e0d627cf307b007fe3857e8adc79660">HoverRace::Parcel::ClassicRecordFile</a>.</p>
+<p>Implemented in <a class="el" href="class_hover_race_1_1_parcel_1_1_classic_record_file.html#a518ba14532863190eb52061990b6ea86">HoverRace::Parcel::ClassicRecordFile</a>.</p>
 
 </div>
 </div>
@@ -356,7 +356,7 @@ Private Types</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_hover_race_1_1_parcel_1_1_classic_record_file.html#a0ba9121e4f50f0cce208b7b72bacda3a">HoverRace::Parcel::ClassicRecordFile</a>.</p>
+<p>Implemented in <a class="el" href="class_hover_race_1_1_parcel_1_1_classic_record_file.html#a0080aeef6195f667c5883c9d4e434515">HoverRace::Parcel::ClassicRecordFile</a>.</p>
 
 </div>
 </div>
@@ -382,7 +382,7 @@ Private Types</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_hover_race_1_1_parcel_1_1_classic_record_file.html#aca201195837059c82318bcb9d00e2421">HoverRace::Parcel::ClassicRecordFile</a>.</p>
+<p>Implemented in <a class="el" href="class_hover_race_1_1_parcel_1_1_classic_record_file.html#ae72297bc6e16ad5f2b4658d089051aa3">HoverRace::Parcel::ClassicRecordFile</a>.</p>
 
 </div>
 </div>
@@ -408,7 +408,7 @@ Private Types</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_hover_race_1_1_parcel_1_1_classic_record_file.html#a96f96edbd833976cecec0d4b6fec9ab7">HoverRace::Parcel::ClassicRecordFile</a>.</p>
+<p>Implemented in <a class="el" href="class_hover_race_1_1_parcel_1_1_classic_record_file.html#a9011f40e428a5efc0b3bbc0d51d15a75">HoverRace::Parcel::ClassicRecordFile</a>.</p>
 
 </div>
 </div>
@@ -437,7 +437,7 @@ Private Types</h2></td></tr>
 <p>It is the caller's responsibility to ensure that only one stream (input or output) exists at a time. </p>
 <dl class="section return"><dt>Returns</dt><dd>A shared pointer to the new input stream (never <code>NULL</code>). </dd></dl>
 
-<p>Implemented in <a class="el" href="class_hover_race_1_1_parcel_1_1_classic_record_file.html#a74a3f708813fbb18eb0ef8a9777df730">HoverRace::Parcel::ClassicRecordFile</a>.</p>
+<p>Implemented in <a class="el" href="class_hover_race_1_1_parcel_1_1_classic_record_file.html#a4b1f6e7f788e40906418cc5b4f2a5e3d">HoverRace::Parcel::ClassicRecordFile</a>.</p>
 
 </div>
 </div>
@@ -466,7 +466,7 @@ Private Types</h2></td></tr>
 <p>It is the caller's responsibility to ensure that only one stream (input or output) exists at a time. </p>
 <dl class="section return"><dt>Returns</dt><dd>A shared pointer to the new output stream (never <code>NULL</code>). </dd></dl>
 
-<p>Implemented in <a class="el" href="class_hover_race_1_1_parcel_1_1_classic_record_file.html#a893e0ac95e5a9035dbd66bae717050e4">HoverRace::Parcel::ClassicRecordFile</a>.</p>
+<p>Implemented in <a class="el" href="class_hover_race_1_1_parcel_1_1_classic_record_file.html#a5eec4fee95f7078a0b67d8db3da80368">HoverRace::Parcel::ClassicRecordFile</a>.</p>
 
 </div>
 </div>

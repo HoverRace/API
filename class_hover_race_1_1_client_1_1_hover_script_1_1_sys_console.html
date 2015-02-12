@@ -91,10 +91,10 @@ Public Types</h2></td></tr>
 boost::signals2::signal&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_sys_console.html#acb89ccc55d59b27f342b04d4d4677723">logClearedSignal_t</a></td></tr>
 <tr class="memdesc:acb89ccc55d59b27f342b04d4d4677723"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fired when the log is cleared.  <a href="#acb89ccc55d59b27f342b04d4d4677723">More...</a><br/></td></tr>
 <tr class="separator:acb89ccc55d59b27f342b04d4d4677723"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5382c3be9766d3046ab4e90c8865901"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
-boost::signals2::signal&lt; void(int)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_sys_console.html#ae5382c3be9766d3046ab4e90c8865901">logAddedSignal_t</a></td></tr>
-<tr class="memdesc:ae5382c3be9766d3046ab4e90c8865901"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fired when a log line is added. Parameter is the log index.  <a href="#ae5382c3be9766d3046ab4e90c8865901">More...</a><br/></td></tr>
-<tr class="separator:ae5382c3be9766d3046ab4e90c8865901"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae898df33e11d09e344990c773e0fa13"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
+boost::signals2::signal&lt; void(size_t)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_sys_console.html#aae898df33e11d09e344990c773e0fa13">logAddedSignal_t</a></td></tr>
+<tr class="memdesc:aae898df33e11d09e344990c773e0fa13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fired when a log line is added. Parameter is the log index.  <a href="#aae898df33e11d09e344990c773e0fa13">More...</a><br/></td></tr>
+<tr class="separator:aae898df33e11d09e344990c773e0fa13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_class_hover_race_1_1_client_1_1_hover_script_1_1_console"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_hover_race_1_1_client_1_1_hover_script_1_1_console')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_console.html">HoverRace::Client::HoverScript::Console</a></td></tr>
 <tr class="memitem:ab8a83b21febd57331080934bd42fd792 inherit pub_types_class_hover_race_1_1_client_1_1_hover_script_1_1_console"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_console.html#ab8a83b21febd57331080934bd42fd792">InputState</a> { <a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_console.html#ab8a83b21febd57331080934bd42fd792a26097a57f572fe88a7cdf80543422cb1">InputState::COMMAND</a>, 
 <a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_console.html#ab8a83b21febd57331080934bd42fd792a2f453cfe638e57e27bb0c9512436111e">InputState::CONTINUE</a>
@@ -103,9 +103,9 @@ boost::signals2::signal&lt; void(int)&gt;&#160;</td><td class="memItemRight" val
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a258831e1a77cc8aba93faf4dbe87a18d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_sys_console.html#a258831e1a77cc8aba93faf4dbe87a18d">SysConsole</a> (<a class="el" href="class_hover_race_1_1_script_1_1_core.html">Script::Core</a> *<a class="el" href="class_hover_race_1_1_script_1_1_env.html#ad2463fdb270c9f375c2b447e42faba2b">scripting</a>, <a class="el" href="class_hover_race_1_1_client_1_1_game_director.html">GameDirector</a> &amp;<a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_sys_console.html#a8bc2bad3c31ada41d1fba3e4b948c379">director</a>, <a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_debug_peer.html">DebugPeer</a> *<a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_sys_console.html#a4a0997c9753f5a31368cef378bc81c00">debugPeer</a>, <a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_game_peer.html">GamePeer</a> *<a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_sys_console.html#a7f7c09473a0d1708f78d48906c3dd709">gamePeer</a>, <a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_input_peer.html">InputPeer</a> *<a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_sys_console.html#a8e742d639566a1823ec85ec229dd6df8">inputPeer</a>, int <a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_sys_console.html#adfa877b888866b74e34a7a5592190691">maxLogLines</a>=512, int maxHistory=64)</td></tr>
-<tr class="memdesc:a258831e1a77cc8aba93faf4dbe87a18d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a258831e1a77cc8aba93faf4dbe87a18d">More...</a><br/></td></tr>
-<tr class="separator:a258831e1a77cc8aba93faf4dbe87a18d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad079b376abddf889a45d1508fe3eadb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_sys_console.html#aad079b376abddf889a45d1508fe3eadb">SysConsole</a> (<a class="el" href="class_hover_race_1_1_script_1_1_core.html">Script::Core</a> *<a class="el" href="class_hover_race_1_1_script_1_1_env.html#ad2463fdb270c9f375c2b447e42faba2b">scripting</a>, <a class="el" href="class_hover_race_1_1_client_1_1_game_director.html">GameDirector</a> &amp;<a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_sys_console.html#a8bc2bad3c31ada41d1fba3e4b948c379">director</a>, <a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_debug_peer.html">DebugPeer</a> *<a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_sys_console.html#a4a0997c9753f5a31368cef378bc81c00">debugPeer</a>, <a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_game_peer.html">GamePeer</a> *<a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_sys_console.html#a7f7c09473a0d1708f78d48906c3dd709">gamePeer</a>, <a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_input_peer.html">InputPeer</a> *<a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_sys_console.html#a8e742d639566a1823ec85ec229dd6df8">inputPeer</a>, size_t <a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_sys_console.html#a6c6b01f67d7105fcbcfc5bbdd7b4dd9d">maxLogLines</a>=512, size_t maxHistory=64)</td></tr>
+<tr class="memdesc:aad079b376abddf889a45d1508fe3eadb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#aad079b376abddf889a45d1508fe3eadb">More...</a><br/></td></tr>
+<tr class="separator:aad079b376abddf889a45d1508fe3eadb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef3f8c0f971e4b692186e1d6881559ec"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_sys_console.html#aef3f8c0f971e4b692186e1d6881559ec">~SysConsole</a> ()</td></tr>
 <tr class="separator:aef3f8c0f971e4b692186e1d6881559ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4ab71840c79ce9e9bd98a58a63870b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_sys_console.html#ae4ab71840c79ce9e9bd98a58a63870b3">Advance</a> (<a class="el" href="struct_hover_race_1_1_util_1_1_o_s.html#ac38407706b69f667bd46de27443b29c3">Util::OS::timestamp_t</a> tick) override</td></tr>
@@ -140,19 +140,19 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a08de6b240956ce8729afb7f6be2e92cd"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_sys_console.html#a08de6b240956ce8729afb7f6be2e92cd">ReadLogs</a> (Function fn)</td></tr>
 <tr class="memdesc:a08de6b240956ce8729afb7f6be2e92cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read all log entries.  <a href="#a08de6b240956ce8729afb7f6be2e92cd">More...</a><br/></td></tr>
 <tr class="separator:a08de6b240956ce8729afb7f6be2e92cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76d22131adfc56dcc1eb9d8a94d57174"><td class="memTemplParams" colspan="2">template&lt;class Function &gt; </td></tr>
-<tr class="memitem:a76d22131adfc56dcc1eb9d8a94d57174"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_sys_console.html#a76d22131adfc56dcc1eb9d8a94d57174">ReadLogs</a> (int start, Function fn)</td></tr>
-<tr class="memdesc:a76d22131adfc56dcc1eb9d8a94d57174"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a subset of log entries, from a starting index to the end.  <a href="#a76d22131adfc56dcc1eb9d8a94d57174">More...</a><br/></td></tr>
-<tr class="separator:a76d22131adfc56dcc1eb9d8a94d57174"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0e6d616527df6da78680cd3868de569"><td class="memTemplParams" colspan="2">template&lt;class Function &gt; </td></tr>
-<tr class="memitem:ac0e6d616527df6da78680cd3868de569"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_sys_console.html#ac0e6d616527df6da78680cd3868de569">ReadLogs</a> (int start, int end, Function fn)</td></tr>
-<tr class="memdesc:ac0e6d616527df6da78680cd3868de569"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a subset of log entries, for a specific range.  <a href="#ac0e6d616527df6da78680cd3868de569">More...</a><br/></td></tr>
-<tr class="separator:ac0e6d616527df6da78680cd3868de569"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97d58d18580401030c5c7b4aa39f89aa"><td class="memTemplParams" colspan="2">template&lt;class Function &gt; </td></tr>
+<tr class="memitem:a97d58d18580401030c5c7b4aa39f89aa"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_sys_console.html#a97d58d18580401030c5c7b4aa39f89aa">ReadLogs</a> (size_t start, Function fn)</td></tr>
+<tr class="memdesc:a97d58d18580401030c5c7b4aa39f89aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a subset of log entries, from a starting index to the end.  <a href="#a97d58d18580401030c5c7b4aa39f89aa">More...</a><br/></td></tr>
+<tr class="separator:a97d58d18580401030c5c7b4aa39f89aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61ff0b8eeef3feef9597fad742c7dac7"><td class="memTemplParams" colspan="2">template&lt;class Function &gt; </td></tr>
+<tr class="memitem:a61ff0b8eeef3feef9597fad742c7dac7"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_sys_console.html#a61ff0b8eeef3feef9597fad742c7dac7">ReadLogs</a> (size_t start, size_t end, Function fn)</td></tr>
+<tr class="memdesc:a61ff0b8eeef3feef9597fad742c7dac7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a subset of log entries, for a specific range.  <a href="#a61ff0b8eeef3feef9597fad742c7dac7">More...</a><br/></td></tr>
+<tr class="separator:a61ff0b8eeef3feef9597fad742c7dac7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e7234d98650216eab59bb3674c4db5e"><td class="memItemLeft" align="right" valign="top">std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_sys_console.html#a9e7234d98650216eab59bb3674c4db5e">GetCommandLine</a> ()</td></tr>
 <tr class="separator:a9e7234d98650216eab59bb3674c4db5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a8fa765bd5de0bb048dfdffd60fb322"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_sys_console.html#acb89ccc55d59b27f342b04d4d4677723">logClearedSignal_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_sys_console.html#a6a8fa765bd5de0bb048dfdffd60fb322">GetLogClearedSignal</a> ()</td></tr>
 <tr class="separator:a6a8fa765bd5de0bb048dfdffd60fb322"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb1691dd4107a96ff14c81b534ba1a02"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_sys_console.html#ae5382c3be9766d3046ab4e90c8865901">logAddedSignal_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_sys_console.html#aeb1691dd4107a96ff14c81b534ba1a02">GetLogAddedSignal</a> ()</td></tr>
+<tr class="memitem:aeb1691dd4107a96ff14c81b534ba1a02"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_sys_console.html#aae898df33e11d09e344990c773e0fa13">logAddedSignal_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_sys_console.html#aeb1691dd4107a96ff14c81b534ba1a02">GetLogAddedSignal</a> ()</td></tr>
 <tr class="separator:aeb1691dd4107a96ff14c81b534ba1a02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6874d6f2c27ac150e851c5de03b4d28e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_sys_console.html#a6874d6f2c27ac150e851c5de03b4d28e">HelpClass</a> (const <a class="el" href="class_hover_race_1_1_script_1_1_help_1_1_class.html">Script::Help::Class</a> &amp;cls)</td></tr>
 <tr class="separator:a6874d6f2c27ac150e851c5de03b4d28e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -213,8 +213,8 @@ Protected Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
 Private Types</h2></td></tr>
-<tr class="memitem:a2e6eb98d022ce121d956b1b0cc79e70e"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_console.html">Console</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_sys_console.html#a2e6eb98d022ce121d956b1b0cc79e70e">SUPER</a></td></tr>
-<tr class="separator:a2e6eb98d022ce121d956b1b0cc79e70e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08fdede2a891148010862748bfebfcf5"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_sys_console.html#a08fdede2a891148010862748bfebfcf5">SUPER</a> = <a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_console.html">Console</a></td></tr>
+<tr class="separator:a08fdede2a891148010862748bfebfcf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d084dfd39abc2d78cfd24d1707cba49"><td class="memItemLeft" align="right" valign="top">typedef boost::circular_buffer<br class="typebreak"/>
 &lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_sys_console.html#a7d084dfd39abc2d78cfd24d1707cba49">history_t</a></td></tr>
 <tr class="separator:a7d084dfd39abc2d78cfd24d1707cba49"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -244,13 +244,13 @@ Private Attributes</h2></td></tr>
 <tr class="separator:afe074ecd6e735bc3007e858ce1a638bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74c99a76e4d9d76e9fe174bad34445ea"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_sys_console.html#a74c99a76e4d9d76e9fe174bad34445ea">introWritten</a></td></tr>
 <tr class="separator:a74c99a76e4d9d76e9fe174bad34445ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adfa877b888866b74e34a7a5592190691"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_sys_console.html#adfa877b888866b74e34a7a5592190691">maxLogLines</a></td></tr>
-<tr class="separator:adfa877b888866b74e34a7a5592190691"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c6b01f67d7105fcbcfc5bbdd7b4dd9d"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_sys_console.html#a6c6b01f67d7105fcbcfc5bbdd7b4dd9d">maxLogLines</a></td></tr>
+<tr class="separator:a6c6b01f67d7105fcbcfc5bbdd7b4dd9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abdb01a51ad88a7cbc8492d6eb555e6d1"><td class="memItemLeft" align="right" valign="top">std::deque&lt; <a class="el" href="struct_hover_race_1_1_client_1_1_hover_script_1_1_sys_console_1_1_log_line.html">LogLine</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_sys_console.html#abdb01a51ad88a7cbc8492d6eb555e6d1">logLines</a></td></tr>
 <tr class="separator:abdb01a51ad88a7cbc8492d6eb555e6d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38896346d8f546decf68f0923a721112"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_sys_console.html#a38896346d8f546decf68f0923a721112">baseLogIdx</a></td></tr>
-<tr class="memdesc:a38896346d8f546decf68f0923a721112"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index of the first item in logLines.  <a href="#a38896346d8f546decf68f0923a721112">More...</a><br/></td></tr>
-<tr class="separator:a38896346d8f546decf68f0923a721112"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a194e5126ae6e656355dd6e71bd27af3d"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_sys_console.html#a194e5126ae6e656355dd6e71bd27af3d">baseLogIdx</a></td></tr>
+<tr class="memdesc:a194e5126ae6e656355dd6e71bd27af3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index of the first item in logLines.  <a href="#a194e5126ae6e656355dd6e71bd27af3d">More...</a><br/></td></tr>
+<tr class="separator:a194e5126ae6e656355dd6e71bd27af3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85e1a653df3d4ff09616f645572efee4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_sys_console.html#a7d084dfd39abc2d78cfd24d1707cba49">history_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_sys_console.html#a85e1a653df3d4ff09616f645572efee4">history</a></td></tr>
 <tr class="separator:a85e1a653df3d4ff09616f645572efee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada1258d0f11322445ca22b7563e01ecd"><td class="memItemLeft" align="right" valign="top">history_t::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_sys_console.html#ada1258d0f11322445ca22b7563e01ecd">curHistory</a></td></tr>
@@ -261,7 +261,7 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a52f80f4f0fe08e365bdd70226500506f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a201ab3b76de619de0f34ccd4b5ffc3f3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_sys_console.html#acb89ccc55d59b27f342b04d4d4677723">logClearedSignal_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_sys_console.html#a201ab3b76de619de0f34ccd4b5ffc3f3">logClearedSignal</a></td></tr>
 <tr class="separator:a201ab3b76de619de0f34ccd4b5ffc3f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ebd3ceeda1b48e0872d7a12bd2bc12d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_sys_console.html#ae5382c3be9766d3046ab4e90c8865901">logAddedSignal_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_sys_console.html#a7ebd3ceeda1b48e0872d7a12bd2bc12d">logAddedSignal</a></td></tr>
+<tr class="memitem:a7ebd3ceeda1b48e0872d7a12bd2bc12d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_sys_console.html#aae898df33e11d09e344990c773e0fa13">logAddedSignal_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_sys_console.html#a7ebd3ceeda1b48e0872d7a12bd2bc12d">logAddedSignal</a></td></tr>
 <tr class="separator:a7ebd3ceeda1b48e0872d7a12bd2bc12d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
@@ -296,12 +296,12 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ae5382c3be9766d3046ab4e90c8865901"></a>
+<a class="anchor" id="aae898df33e11d09e344990c773e0fa13"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef boost::signals2::signal&lt;void(int)&gt; <a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_sys_console.html#ae5382c3be9766d3046ab4e90c8865901">HoverRace::Client::HoverScript::SysConsole::logAddedSignal_t</a></td>
+          <td class="memname">typedef boost::signals2::signal&lt;void(size_t)&gt; <a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_sys_console.html#aae898df33e11d09e344990c773e0fa13">HoverRace::Client::HoverScript::SysConsole::logAddedSignal_t</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -324,7 +324,7 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a2e6eb98d022ce121d956b1b0cc79e70e"></a>
+<a class="anchor" id="a08fdede2a891148010862748bfebfcf5"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -332,7 +332,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_console.html">Console</a> <a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_sys_console.html#a2e6eb98d022ce121d956b1b0cc79e70e">HoverRace::Client::HoverScript::SysConsole::SUPER</a></td>
+          <td class="memname">using <a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_sys_console.html#a08fdede2a891148010862748bfebfcf5">HoverRace::Client::HoverScript::SysConsole::SUPER</a> =  <a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_console.html">Console</a></td>
         </tr>
       </table>
   </td>
@@ -376,7 +376,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a258831e1a77cc8aba93faf4dbe87a18d"></a>
+<a class="anchor" id="aad079b376abddf889a45d1508fe3eadb"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -413,13 +413,13 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>maxLogLines</em> = <code>512</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>maxHistory</em> = <code>64</code>&#160;</td>
         </tr>
         <tr>
@@ -624,7 +624,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_sys_console.html#ae5382c3be9766d3046ab4e90c8865901">logAddedSignal_t</a>&amp; HoverRace::Client::HoverScript::SysConsole::GetLogAddedSignal </td>
+          <td class="memname"><a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_sys_console.html#aae898df33e11d09e344990c773e0fa13">logAddedSignal_t</a>&amp; HoverRace::Client::HoverScript::SysConsole::GetLogAddedSignal </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -976,7 +976,7 @@ template&lt;class Function &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a76d22131adfc56dcc1eb9d8a94d57174"></a>
+<a class="anchor" id="a97d58d18580401030c5c7b4aa39f89aa"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -988,7 +988,7 @@ template&lt;class Function &gt; </div>
         <tr>
           <td class="memname">void HoverRace::Client::HoverScript::SysConsole::ReadLogs </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>start</em>, </td>
         </tr>
         <tr>
@@ -1021,7 +1021,7 @@ template&lt;class Function &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ac0e6d616527df6da78680cd3868de569"></a>
+<a class="anchor" id="a61ff0b8eeef3feef9597fad742c7dac7"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -1033,13 +1033,13 @@ template&lt;class Function &gt; </div>
         <tr>
           <td class="memname">void HoverRace::Client::HoverScript::SysConsole::ReadLogs </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>start</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>end</em>, </td>
         </tr>
         <tr>
@@ -1099,7 +1099,7 @@ template&lt;class Function &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a38896346d8f546decf68f0923a721112"></a>
+<a class="anchor" id="a194e5126ae6e656355dd6e71bd27af3d"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1107,7 +1107,7 @@ template&lt;class Function &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int HoverRace::Client::HoverScript::SysConsole::baseLogIdx</td>
+          <td class="memname">size_t HoverRace::Client::HoverScript::SysConsole::baseLogIdx</td>
         </tr>
       </table>
   </td>
@@ -1289,7 +1289,7 @@ template&lt;class Function &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_sys_console.html#ae5382c3be9766d3046ab4e90c8865901">logAddedSignal_t</a> HoverRace::Client::HoverScript::SysConsole::logAddedSignal</td>
+          <td class="memname"><a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_sys_console.html#aae898df33e11d09e344990c773e0fa13">logAddedSignal_t</a> HoverRace::Client::HoverScript::SysConsole::logAddedSignal</td>
         </tr>
       </table>
   </td>
@@ -1361,7 +1361,7 @@ template&lt;class Function &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="adfa877b888866b74e34a7a5592190691"></a>
+<a class="anchor" id="a6c6b01f67d7105fcbcfc5bbdd7b4dd9d"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1369,7 +1369,7 @@ template&lt;class Function &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int HoverRace::Client::HoverScript::SysConsole::maxLogLines</td>
+          <td class="memname">size_t HoverRace::Client::HoverScript::SysConsole::maxLogLines</td>
         </tr>
       </table>
   </td>
