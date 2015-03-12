@@ -51,6 +51,7 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pri-types">Private Types</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
@@ -153,6 +154,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0d22d5bfd814aedc21f3dfae157165b2 inherit pub_methods_class_hover_race_1_1_display_1_1_display"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ba0d8e7d543396fd44317e460ca8570 inherit pub_methods_class_hover_race_1_1_display_1_1_display"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_display.html#a9ba0d8e7d543396fd44317e460ca8570">~Display</a> ()</td></tr>
 <tr class="separator:a9ba0d8e7d543396fd44317e460ca8570 inherit pub_methods_class_hover_race_1_1_display_1_1_display"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42d9d7b222c72207869ed326225775a8 inherit pub_methods_class_hover_race_1_1_display_1_1_display"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_hover_race_1_1_display_1_1_type_case.html">TypeCase</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_display.html#a42d9d7b222c72207869ed326225775a8">GetTypeCase</a> (const <a class="el" href="struct_hover_race_1_1_display_1_1_ui_font.html">UiFont</a> &amp;font)</td></tr>
+<tr class="memdesc:a42d9d7b222c72207869ed326225775a8 inherit pub_methods_class_hover_race_1_1_display_1_1_display"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve or create the <a class="el" href="class_hover_race_1_1_display_1_1_type_case.html" title="Character-by-character text renderer. ">TypeCase</a> for a particular font.  <a href="#a42d9d7b222c72207869ed326225775a8">More...</a><br/></td></tr>
+<tr class="separator:a42d9d7b222c72207869ed326225775a8 inherit pub_methods_class_hover_race_1_1_display_1_1_display"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a500ed4955b36b2688af30862712f6ce5 inherit pub_methods_class_hover_race_1_1_display_1_1_display"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_display.html#a500ed4955b36b2688af30862712f6ce5">CleanTypeCaseCache</a> ()</td></tr>
+<tr class="memdesc:a500ed4955b36b2688af30862712f6ce5 inherit pub_methods_class_hover_race_1_1_display_1_1_display"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clean up the cache of <a class="el" href="class_hover_race_1_1_display_1_1_type_case.html" title="Character-by-character text renderer. ">TypeCase</a> instances.  <a href="#a500ed4955b36b2688af30862712f6ce5">More...</a><br/></td></tr>
+<tr class="separator:a500ed4955b36b2688af30862712f6ce5 inherit pub_methods_class_hover_race_1_1_display_1_1_display"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adccda3425521bb78ff5d72a3198f72ba inherit pub_methods_class_hover_race_1_1_display_1_1_display"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_display_1_1_display.html#ac0cf3805383102a895c7e6bde5f955d6">displayConfigChangedSignal_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_display.html#adccda3425521bb78ff5d72a3198f72ba">GetDisplayConfigChangedSignal</a> ()</td></tr>
 <tr class="separator:adccda3425521bb78ff5d72a3198f72ba inherit pub_methods_class_hover_race_1_1_display_1_1_display"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca4bc6df4ca465aad74714b647a637d7 inherit pub_methods_class_hover_race_1_1_display_1_1_display"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_display_1_1_display.html#a0e9b39d590dc8f767f73d3286f674197">uiScaleChangedSignal_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_display.html#aca4bc6df4ca465aad74714b647a637d7">GetUiScaleChangedSignal</a> ()</td></tr>
@@ -182,16 +189,25 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a0db3055f982cb293a6c4c81d2626ae9a inherit pub_methods_class_hover_race_1_1_display_1_1_display"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the dimensions of the screen, in UI coordinates.  <a href="#a0db3055f982cb293a6c4c81d2626ae9a">More...</a><br/></td></tr>
 <tr class="separator:a0db3055f982cb293a6c4c81d2626ae9a inherit pub_methods_class_hover_race_1_1_display_1_1_display"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a2ae311d932eefa1298ac6d8ef8c5d92e"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_hover_race_1_1_display_1_1_type_case.html">TypeCase</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_s_d_l_1_1_sdl_display.html#a2ae311d932eefa1298ac6d8ef8c5d92e">MakeTypeCase</a> (const <a class="el" href="struct_hover_race_1_1_display_1_1_ui_font.html">UiFont</a> &amp;font) override</td></tr>
+<tr class="memdesc:a2ae311d932eefa1298ac6d8ef8c5d92e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new <a class="el" href="class_hover_race_1_1_display_1_1_type_case.html" title="Character-by-character text renderer. ">TypeCase</a> for a given font.  <a href="#a2ae311d932eefa1298ac6d8ef8c5d92e">More...</a><br/></td></tr>
+<tr class="separator:a2ae311d932eefa1298ac6d8ef8c5d92e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_hover_race_1_1_display_1_1_display"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_hover_race_1_1_display_1_1_display')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_hover_race_1_1_display_1_1_display.html">HoverRace::Display::Display</a></td></tr>
+<tr class="memitem:a0e77a230cd725d7aadd0e6a6957754f1 inherit pro_methods_class_hover_race_1_1_display_1_1_display"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_display.html#a0e77a230cd725d7aadd0e6a6957754f1">FireDisplayConfigChangedSignal</a> (int width, int height) const </td></tr>
+<tr class="separator:a0e77a230cd725d7aadd0e6a6957754f1 inherit pro_methods_class_hover_race_1_1_display_1_1_display"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53f4a0a8ad4e01f5302457efd467cefa inherit pro_methods_class_hover_race_1_1_display_1_1_display"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_display.html#a53f4a0a8ad4e01f5302457efd467cefa">FireUiScaleChangedSignal</a> (double scale) const </td></tr>
+<tr class="separator:a53f4a0a8ad4e01f5302457efd467cefa inherit pro_methods_class_hover_race_1_1_display_1_1_display"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
 Private Types</h2></td></tr>
 <tr class="memitem:a39978404c2d35fe1df898748e9131eb8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_s_d_l_1_1_sdl_display.html#a39978404c2d35fe1df898748e9131eb8">SUPER</a> = <a class="el" href="class_hover_race_1_1_display_1_1_display.html">Display</a></td></tr>
 <tr class="separator:a39978404c2d35fe1df898748e9131eb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6db07402368a60a8b75cfbd867a3e6db"><td class="memItemLeft" align="right" valign="top">typedef std::pair&lt; std::string, <br class="typebreak"/>
-int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_s_d_l_1_1_sdl_display.html#a6db07402368a60a8b75cfbd867a3e6db">loadedFontKey</a></td></tr>
-<tr class="separator:a6db07402368a60a8b75cfbd867a3e6db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad235ea6ec4593b4f93052771e42802ff"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="_sdl_display_8cpp.html#ac794df5461b19719072c49d25cdbf8ef">std::map</a><br class="typebreak"/>
-&lt; <a class="el" href="class_hover_race_1_1_display_1_1_s_d_l_1_1_sdl_display.html#a6db07402368a60a8b75cfbd867a3e6db">loadedFontKey</a>, TTF_Font * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_s_d_l_1_1_sdl_display.html#ad235ea6ec4593b4f93052771e42802ff">loadedFonts_t</a></td></tr>
-<tr class="separator:ad235ea6ec4593b4f93052771e42802ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad313638501ab4bb2750bda42c46bd69b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_s_d_l_1_1_sdl_display.html#ad313638501ab4bb2750bda42c46bd69b">loadedFontKey</a> = std::pair&lt; std::string, int &gt;</td></tr>
+<tr class="separator:ad313638501ab4bb2750bda42c46bd69b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab50c22009137681aa0c5956c985cf13c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_s_d_l_1_1_sdl_display.html#ab50c22009137681aa0c5956c985cf13c">loadedFonts_t</a> = <a class="el" href="_sdl_display_8cpp.html#ac794df5461b19719072c49d25cdbf8ef">std::map</a>&lt; <a class="el" href="class_hover_race_1_1_display_1_1_s_d_l_1_1_sdl_display.html#ad313638501ab4bb2750bda42c46bd69b">loadedFontKey</a>, TTF_Font * &gt;</td></tr>
+<tr class="separator:ab50c22009137681aa0c5956c985cf13c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -213,7 +229,7 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a9c23925780e3bc68af23e76578d110f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99f93dfbbe6118b0fa1b7d4456c4f579"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_video_services_1_1_video_buffer.html">VideoServices::VideoBuffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_s_d_l_1_1_sdl_display.html#a99f93dfbbe6118b0fa1b7d4456c4f579">legacyDisplay</a></td></tr>
 <tr class="separator:a99f93dfbbe6118b0fa1b7d4456c4f579"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d7e262d91ab16a07673c99e34ff4550"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_display_1_1_s_d_l_1_1_sdl_display.html#ad235ea6ec4593b4f93052771e42802ff">loadedFonts_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_s_d_l_1_1_sdl_display.html#a6d7e262d91ab16a07673c99e34ff4550">loadedFonts</a></td></tr>
+<tr class="memitem:a6d7e262d91ab16a07673c99e34ff4550"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_display_1_1_s_d_l_1_1_sdl_display.html#ab50c22009137681aa0c5956c985cf13c">loadedFonts_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_s_d_l_1_1_sdl_display.html#a6d7e262d91ab16a07673c99e34ff4550">loadedFonts</a></td></tr>
 <tr class="separator:a6d7e262d91ab16a07673c99e34ff4550"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
@@ -226,17 +242,12 @@ Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_attribs_class_hover_race_1_1_display_1_1_display"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_hover_race_1_1_display_1_1_display')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="class_hover_race_1_1_display_1_1_display.html">HoverRace::Display::Display</a></td></tr>
 <tr class="memitem:afc14ceef360bc38f68c8406def3c480e inherit pub_attribs_class_hover_race_1_1_display_1_1_display"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_display_1_1_styles.html">Styles</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_display.html#afc14ceef360bc38f68c8406def3c480e">styles</a></td></tr>
 <tr class="separator:afc14ceef360bc38f68c8406def3c480e inherit pub_attribs_class_hover_race_1_1_display_1_1_display"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_methods_class_hover_race_1_1_display_1_1_display"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_hover_race_1_1_display_1_1_display')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_hover_race_1_1_display_1_1_display.html">HoverRace::Display::Display</a></td></tr>
-<tr class="memitem:a0e77a230cd725d7aadd0e6a6957754f1 inherit pro_methods_class_hover_race_1_1_display_1_1_display"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_display.html#a0e77a230cd725d7aadd0e6a6957754f1">FireDisplayConfigChangedSignal</a> (int width, int height) const </td></tr>
-<tr class="separator:a0e77a230cd725d7aadd0e6a6957754f1 inherit pro_methods_class_hover_race_1_1_display_1_1_display"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53f4a0a8ad4e01f5302457efd467cefa inherit pro_methods_class_hover_race_1_1_display_1_1_display"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_display.html#a53f4a0a8ad4e01f5302457efd467cefa">FireUiScaleChangedSignal</a> (double scale) const </td></tr>
-<tr class="separator:a53f4a0a8ad4e01f5302457efd467cefa inherit pro_methods_class_hover_race_1_1_display_1_1_display"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>SDL-based software rendering. </p>
 <dl class="section author"><dt>Author</dt><dd>Michael Imamura </dd></dl>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="a6db07402368a60a8b75cfbd867a3e6db"></a>
+<a class="anchor" id="ad313638501ab4bb2750bda42c46bd69b"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -244,7 +255,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::pair&lt;std::string, int&gt; <a class="el" href="class_hover_race_1_1_display_1_1_s_d_l_1_1_sdl_display.html#a6db07402368a60a8b75cfbd867a3e6db">HoverRace::Display::SDL::SdlDisplay::loadedFontKey</a></td>
+          <td class="memname">using <a class="el" href="class_hover_race_1_1_display_1_1_s_d_l_1_1_sdl_display.html#ad313638501ab4bb2750bda42c46bd69b">HoverRace::Display::SDL::SdlDisplay::loadedFontKey</a> =  std::pair&lt;std::string, int&gt;</td>
         </tr>
       </table>
   </td>
@@ -256,7 +267,7 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ad235ea6ec4593b4f93052771e42802ff"></a>
+<a class="anchor" id="ab50c22009137681aa0c5956c985cf13c"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -264,7 +275,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="_sdl_display_8cpp.html#ac794df5461b19719072c49d25cdbf8ef">std::map</a>&lt;<a class="el" href="class_hover_race_1_1_display_1_1_s_d_l_1_1_sdl_display.html#a6db07402368a60a8b75cfbd867a3e6db">loadedFontKey</a>, TTF_Font*&gt; <a class="el" href="class_hover_race_1_1_display_1_1_s_d_l_1_1_sdl_display.html#ad235ea6ec4593b4f93052771e42802ff">HoverRace::Display::SDL::SdlDisplay::loadedFonts_t</a></td>
+          <td class="memname">using <a class="el" href="class_hover_race_1_1_display_1_1_s_d_l_1_1_sdl_display.html#ab50c22009137681aa0c5956c985cf13c">HoverRace::Display::SDL::SdlDisplay::loadedFonts_t</a> =  <a class="el" href="_sdl_display_8cpp.html#ac794df5461b19719072c49d25cdbf8ef">std::map</a>&lt;<a class="el" href="class_hover_race_1_1_display_1_1_s_d_l_1_1_sdl_display.html#ad313638501ab4bb2750bda42c46bd69b">loadedFontKey</a>, TTF_Font*&gt;</td>
         </tr>
       </table>
   </td>
@@ -1092,6 +1103,42 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a2ae311d932eefa1298ac6d8ef8c5d92e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="class_hover_race_1_1_display_1_1_type_case.html">TypeCase</a> &gt; HoverRace::Display::SDL::SdlDisplay::MakeTypeCase </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_hover_race_1_1_display_1_1_ui_font.html">UiFont</a> &amp;&#160;</td>
+          <td class="paramname"><em>font</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create a new <a class="el" href="class_hover_race_1_1_display_1_1_type_case.html" title="Character-by-character text renderer. ">TypeCase</a> for a given font. </p>
+<p>This is called by <a class="el" href="class_hover_race_1_1_display_1_1_display.html#a42d9d7b222c72207869ed326225775a8" title="Retrieve or create the TypeCase for a particular font. ">GetTypeCase()</a> when the <a class="el" href="class_hover_race_1_1_display_1_1_type_case.html" title="Character-by-character text renderer. ">TypeCase</a> is not in the cache.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">font</td><td>The normalized font. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="class_hover_race_1_1_display_1_1_type_case.html" title="Character-by-character text renderer. ">TypeCase</a>, never <code>nullptr</code>. </dd></dl>
+
+<p>Implements <a class="el" href="class_hover_race_1_1_display_1_1_display.html#a650f991df35934017f6a750c3e58e8e3">HoverRace::Display::Display</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a134f1297810acfea4e257e1796c7647d"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1244,7 +1291,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_hover_race_1_1_display_1_1_s_d_l_1_1_sdl_display.html#ad235ea6ec4593b4f93052771e42802ff">loadedFonts_t</a> HoverRace::Display::SDL::SdlDisplay::loadedFonts</td>
+          <td class="memname"><a class="el" href="class_hover_race_1_1_display_1_1_s_d_l_1_1_sdl_display.html#ab50c22009137681aa0c5956c985cf13c">loadedFonts_t</a> HoverRace::Display::SDL::SdlDisplay::loadedFonts</td>
         </tr>
       </table>
   </td>

@@ -77,6 +77,9 @@ Inheritance diagram for HoverRace::Display::PickList&lt; T &gt;:</div>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_pick_list_1_1_default_item.html">DefaultItem</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_pick_list_1_1_item_child.html">ItemChild</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps the container child wrapper to each item.  <a href="class_hover_race_1_1_display_1_1_pick_list_1_1_item_child.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -125,6 +128,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a14361b7d5f35949cb94405055aff8661"><td class="memItemLeft" align="right" valign="top">boost::optional&lt; const T &amp; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_pick_list.html#a14361b7d5f35949cb94405055aff8661">GetValue</a> () const </td></tr>
 <tr class="memdesc:a14361b7d5f35949cb94405055aff8661"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the value of the selected item.  <a href="#a14361b7d5f35949cb94405055aff8661">More...</a><br/></td></tr>
 <tr class="separator:a14361b7d5f35949cb94405055aff8661"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4528e7391fd7cbb1dcb3d1dff746102c"><td class="memTemplParams" colspan="2">template&lt;class Fn &gt; </td></tr>
+<tr class="memitem:a4528e7391fd7cbb1dcb3d1dff746102c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_pick_list.html#a4528e7391fd7cbb1dcb3d1dff746102c">ApplyFilter</a> (Fn fn)</td></tr>
+<tr class="memdesc:a4528e7391fd7cbb1dcb3d1dff746102c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply a filter to the list items.  <a href="#a4528e7391fd7cbb1dcb3d1dff746102c">More...</a><br/></td></tr>
+<tr class="separator:a4528e7391fd7cbb1dcb3d1dff746102c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11be358aa50811470810ce961d2dec6c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_pick_list.html#a11be358aa50811470810ce961d2dec6c">Reserve</a> (size_t capacity) override</td></tr>
+<tr class="memdesc:a11be358aa50811470810ce961d2dec6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increase the capacity of the of this container.  <a href="#a11be358aa50811470810ce961d2dec6c">More...</a><br/></td></tr>
+<tr class="separator:a11be358aa50811470810ce961d2dec6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7121d02b0c7ce43143a703a73de029b4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_display_1_1_pick_list.html#a7298d035e2c9d5f1a58830c625692623">valueChangedSignal_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_pick_list.html#a7121d02b0c7ce43143a703a73de029b4">GetValueChangedSignal</a> ()</td></tr>
 <tr class="separator:a7121d02b0c7ce43143a703a73de029b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_hover_race_1_1_display_1_1_base_container"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_hover_race_1_1_display_1_1_base_container')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_hover_race_1_1_display_1_1_base_container.html">HoverRace::Display::BaseContainer</a></td></tr>
@@ -181,6 +191,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a82c9bd7e1ede4f30843a34badb2c1f4d inherit pub_methods_class_hover_race_1_1_display_1_1_base_container"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_base_container.html#a82c9bd7e1ede4f30843a34badb2c1f4d">ForEachChild</a> (Fn fn) const </td></tr>
 <tr class="memdesc:a82c9bd7e1ede4f30843a34badb2c1f4d inherit pub_methods_class_hover_race_1_1_display_1_1_base_container"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterate over each child widget.  <a href="#a82c9bd7e1ede4f30843a34badb2c1f4d">More...</a><br/></td></tr>
 <tr class="separator:a82c9bd7e1ede4f30843a34badb2c1f4d inherit pub_methods_class_hover_race_1_1_display_1_1_base_container"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d4ea622b2ece47f7c443cfdd03db8c6 inherit pub_methods_class_hover_race_1_1_display_1_1_base_container"><td class="memTemplParams" colspan="2">template&lt;class Fn &gt; </td></tr>
+<tr class="memitem:a3d4ea622b2ece47f7c443cfdd03db8c6 inherit pub_methods_class_hover_race_1_1_display_1_1_base_container"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_base_container.html#a3d4ea622b2ece47f7c443cfdd03db8c6">ForEachVisibleChild</a> (Fn fn) const </td></tr>
+<tr class="memdesc:a3d4ea622b2ece47f7c443cfdd03db8c6 inherit pub_methods_class_hover_race_1_1_display_1_1_base_container"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterate over each visible child widget.  <a href="#a3d4ea622b2ece47f7c443cfdd03db8c6">More...</a><br/></td></tr>
+<tr class="separator:a3d4ea622b2ece47f7c443cfdd03db8c6 inherit pub_methods_class_hover_race_1_1_display_1_1_base_container"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32c8791300151b96dcb0e614824eaebd inherit pub_methods_class_hover_race_1_1_display_1_1_base_container"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_hover_race_1_1_vec3.html">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_base_container.html#a32c8791300151b96dcb0e614824eaebd">Measure</a> () override</td></tr>
 <tr class="memdesc:a32c8791300151b96dcb0e614824eaebd inherit pub_methods_class_hover_race_1_1_display_1_1_base_container"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the size of the component.  <a href="#a32c8791300151b96dcb0e614824eaebd">More...</a><br/></td></tr>
 <tr class="separator:a32c8791300151b96dcb0e614824eaebd inherit pub_methods_class_hover_race_1_1_display_1_1_base_container"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -230,12 +244,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad65fb0acbbfb138e688b6af325476120 inherit pub_methods_class_hover_race_1_1_display_1_1_ui_view_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adcfec79df00692f4797dd40833ccdc0a inherit pub_methods_class_hover_race_1_1_display_1_1_ui_view_model"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_hover_race_1_1_display.html#af768889f6faee40a82bfb4afcdb90447">uiLayoutFlags_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_ui_view_model.html#adcfec79df00692f4797dd40833ccdc0a">IsLayoutFloating</a> () const </td></tr>
 <tr class="separator:adcfec79df00692f4797dd40833ccdc0a inherit pub_methods_class_hover_race_1_1_display_1_1_ui_view_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeec217a543e9c773e135b047911c0854 inherit pub_methods_class_hover_race_1_1_display_1_1_ui_view_model"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_m_r___types_8h.html#abcc66530690cbfec146e654c252e684e">MR_UInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_ui_view_model.html#aeec217a543e9c773e135b047911c0854">GetId</a> () const </td></tr>
-<tr class="memdesc:aeec217a543e9c773e135b047911c0854 inherit pub_methods_class_hover_race_1_1_display_1_1_ui_view_model"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the non-unique identifier for this widget.  <a href="#aeec217a543e9c773e135b047911c0854">More...</a><br/></td></tr>
-<tr class="separator:aeec217a543e9c773e135b047911c0854 inherit pub_methods_class_hover_race_1_1_display_1_1_ui_view_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3c9ee8c6033a55f76034951908d7c75 inherit pub_methods_class_hover_race_1_1_display_1_1_ui_view_model"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_ui_view_model.html#ac3c9ee8c6033a55f76034951908d7c75">SetId</a> (<a class="el" href="_m_r___types_8h.html#abcc66530690cbfec146e654c252e684e">MR_UInt32</a> <a class="el" href="class_hover_race_1_1_display_1_1_ui_view_model.html#ae99c74eacdda18701de7aa95feeb272f">id</a>)</td></tr>
-<tr class="memdesc:ac3c9ee8c6033a55f76034951908d7c75 inherit pub_methods_class_hover_race_1_1_display_1_1_ui_view_model"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the non-unique identifier for this widget.  <a href="#ac3c9ee8c6033a55f76034951908d7c75">More...</a><br/></td></tr>
-<tr class="separator:ac3c9ee8c6033a55f76034951908d7c75 inherit pub_methods_class_hover_race_1_1_display_1_1_ui_view_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1825e8696bbc0648e735631e1e4a332 inherit pub_methods_class_hover_race_1_1_display_1_1_ui_view_model"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_ui_view_model.html#af1825e8696bbc0648e735631e1e4a332">IsFocused</a> () const </td></tr>
 <tr class="memdesc:af1825e8696bbc0648e735631e1e4a332 inherit pub_methods_class_hover_race_1_1_display_1_1_ui_view_model"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if this widget currently has input focus.  <a href="#af1825e8696bbc0648e735631e1e4a332">More...</a><br/></td></tr>
 <tr class="separator:af1825e8696bbc0648e735631e1e4a332 inherit pub_methods_class_hover_race_1_1_display_1_1_ui_view_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -302,7 +310,7 @@ T &gt;::value, std::shared_ptr&lt; T &gt;<br class="typebreak"/>
 <tr class="memitem:a0df456435f51d986490fd4ee055c06bd inherit pro_methods_class_hover_race_1_1_display_1_1_base_container"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_base_container.html#a0df456435f51d986490fd4ee055c06bd">OnChildRelinquishedFocus</a> (<a class="el" href="class_hover_race_1_1_display_1_1_ui_view_model.html">UiViewModel</a> &amp;child, const <a class="el" href="class_hover_race_1_1_control_1_1_nav.html">Control::Nav</a> &amp;nav)</td></tr>
 <tr class="memdesc:a0df456435f51d986490fd4ee055c06bd inherit pro_methods_class_hover_race_1_1_display_1_1_base_container"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a child widget passes input focus to another widget.  <a href="#a0df456435f51d986490fd4ee055c06bd">More...</a><br/></td></tr>
 <tr class="separator:a0df456435f51d986490fd4ee055c06bd inherit pro_methods_class_hover_race_1_1_display_1_1_base_container"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82f63babb59a80125280890ec2195a90 inherit pro_methods_class_hover_race_1_1_display_1_1_base_container"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_display_1_1_base_container.html#a069f2d8781e3a2cfb39166d8ff60bb47">children_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_base_container.html#a82f63babb59a80125280890ec2195a90">GetChildren</a> ()</td></tr>
+<tr class="memitem:a82f63babb59a80125280890ec2195a90 inherit pro_methods_class_hover_race_1_1_display_1_1_base_container"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_display_1_1_base_container.html#aff5cbd5b34c38aa416da21cf50518e54">children_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_base_container.html#a82f63babb59a80125280890ec2195a90">GetChildren</a> ()</td></tr>
 <tr class="separator:a82f63babb59a80125280890ec2195a90 inherit pro_methods_class_hover_race_1_1_display_1_1_base_container"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_hover_race_1_1_display_1_1_ui_view_model"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_hover_race_1_1_display_1_1_ui_view_model')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_hover_race_1_1_display_1_1_ui_view_model.html">HoverRace::Display::UiViewModel</a></td></tr>
 <tr class="memitem:aaa0e52097e198a9e3b65f85033ab25ae inherit pro_methods_class_hover_race_1_1_display_1_1_ui_view_model"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_ui_view_model.html#aaa0e52097e198a9e3b65f85033ab25ae">SetFocused</a> (bool <a class="el" href="class_hover_race_1_1_display_1_1_ui_view_model.html#ad55a79f62ee3a2495ea28c38c015f985">focused</a>)</td></tr>
@@ -334,19 +342,22 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a312375df31e6db37b1168a6732828121"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::shared_ptr<br class="typebreak"/>
-&lt; <a class="el" href="class_hover_race_1_1_display_1_1_pick_list_1_1_default_item.html">DefaultItem</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_pick_list.html#a312375df31e6db37b1168a6732828121">items</a></td></tr>
-<tr class="separator:a312375df31e6db37b1168a6732828121"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a8d687d63878cfe42dd508be76741c9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_display_1_1_pick_list_1_1_default_item.html">DefaultItem</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_pick_list.html#a4a8d687d63878cfe42dd508be76741c9">selItem</a></td></tr>
-<tr class="separator:a4a8d687d63878cfe42dd508be76741c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cefcd365eea5fb669e927ffbb420cf7"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_hover_race_1_1_display_1_1_pick_list_1_1_item_child.html">ItemChild</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_pick_list.html#a0cefcd365eea5fb669e927ffbb420cf7">items</a></td></tr>
+<tr class="separator:a0cefcd365eea5fb669e927ffbb420cf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca1eafa0082671e0e819a730ef08d7dd"><td class="memItemLeft" align="right" valign="top">std::vector&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_pick_list.html#aca1eafa0082671e0e819a730ef08d7dd">filteredItems</a></td></tr>
+<tr class="memdesc:aca1eafa0082671e0e819a730ef08d7dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indexes of filtered items.  <a href="#aca1eafa0082671e0e819a730ef08d7dd">More...</a><br/></td></tr>
+<tr class="separator:aca1eafa0082671e0e819a730ef08d7dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a221df3b95c9aab1225516627754cb28a"><td class="memItemLeft" align="right" valign="top">boost::optional&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_pick_list.html#a221df3b95c9aab1225516627754cb28a">selItem</a></td></tr>
+<tr class="memdesc:a221df3b95c9aab1225516627754cb28a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index of selected item.  <a href="#a221df3b95c9aab1225516627754cb28a">More...</a><br/></td></tr>
+<tr class="separator:a221df3b95c9aab1225516627754cb28a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac05396aaa4b42f254aaf25ee75672f96"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_display_1_1_pick_list.html#a7298d035e2c9d5f1a58830c625692623">valueChangedSignal_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_pick_list.html#ac05396aaa4b42f254aaf25ee75672f96">valueChangedSignal</a></td></tr>
 <tr class="separator:ac05396aaa4b42f254aaf25ee75672f96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_types_class_hover_race_1_1_display_1_1_base_container"><td colspan="2" onclick="javascript:toggleInherit('pro_types_class_hover_race_1_1_display_1_1_base_container')"><img src="closed.png" alt="-"/>&#160;Protected Types inherited from <a class="el" href="class_hover_race_1_1_display_1_1_base_container.html">HoverRace::Display::BaseContainer</a></td></tr>
-<tr class="memitem:a069f2d8781e3a2cfb39166d8ff60bb47 inherit pro_types_class_hover_race_1_1_display_1_1_base_container"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_base_container.html#a069f2d8781e3a2cfb39166d8ff60bb47">children_t</a> = std::vector&lt; <a class="el" href="class_hover_race_1_1_display_1_1_base_container_1_1_child.html">Child</a> &gt;</td></tr>
-<tr class="separator:a069f2d8781e3a2cfb39166d8ff60bb47 inherit pro_types_class_hover_race_1_1_display_1_1_base_container"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff5cbd5b34c38aa416da21cf50518e54 inherit pro_types_class_hover_race_1_1_display_1_1_base_container"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_base_container.html#aff5cbd5b34c38aa416da21cf50518e54">children_t</a> = std::vector&lt; std::unique_ptr&lt; <a class="el" href="class_hover_race_1_1_display_1_1_base_container_1_1_child.html">Child</a> &gt;&gt;</td></tr>
+<tr class="separator:aff5cbd5b34c38aa416da21cf50518e54 inherit pro_types_class_hover_race_1_1_display_1_1_base_container"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_hover_race_1_1_display_1_1_base_container"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_hover_race_1_1_display_1_1_base_container')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_hover_race_1_1_display_1_1_base_container.html">HoverRace::Display::BaseContainer</a></td></tr>
 <tr class="memitem:a8e414ea3ff423c3defd60f3f023b7053 inherit pro_attribs_class_hover_race_1_1_display_1_1_base_container"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_display_1_1_display.html">Display</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_base_container.html#a8e414ea3ff423c3defd60f3f023b7053">display</a></td></tr>
 <tr class="separator:a8e414ea3ff423c3defd60f3f023b7053 inherit pro_attribs_class_hover_race_1_1_display_1_1_base_container"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -551,6 +562,43 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a4528e7391fd7cbb1dcb3d1dff746102c"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T&gt; </div>
+<div class="memtemplate">
+template&lt;class Fn &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_hover_race_1_1_display_1_1_pick_list.html">HoverRace::Display::PickList</a>&lt; T &gt;::ApplyFilter </td>
+          <td>(</td>
+          <td class="paramtype">Fn&#160;</td>
+          <td class="paramname"><em>fn</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Apply a filter to the list items. </p>
+<p>This filter is one-time; any items added later will not have the filter applied.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fn</td><td>The filter function. Takes the value and returns either <code>true</code> if the item is visible, <code>false</code> otherwise. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="a14361b7d5f35949cb94405055aff8661"></a>
 <div class="memitem">
 <div class="memproto">
@@ -663,6 +711,43 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a11be358aa50811470810ce961d2dec6c"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_hover_race_1_1_display_1_1_pick_list.html">HoverRace::Display::PickList</a>&lt; T &gt;::Reserve </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>capacity</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Increase the capacity of the of this container. </p>
+<p>The internal capacity will be increased (never decreased). This is useful as a hint to prevent re-allocation due to resizing the internal storage. It's not required; the internal storage will be resized as necessary anyway, at the cost of re-allocation. Containers with a lot of child elements will benefit the most from specifying the capacity early.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">capacity</td><td>The new capacity. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented from <a class="el" href="class_hover_race_1_1_display_1_1_base_container.html#afc8457d720ab3b54ea42c912ac965a19">HoverRace::Display::BaseContainer</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="af28c29e0f6dbd22a56d71087b2cf1ccb"></a>
 <div class="memitem">
 <div class="memproto">
@@ -725,7 +810,7 @@ template&lt;class T&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a312375df31e6db37b1168a6732828121"></a>
+<a class="anchor" id="aca1eafa0082671e0e819a730ef08d7dd"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -735,7 +820,31 @@ template&lt;class T&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;std::shared_ptr&lt;<a class="el" href="class_hover_race_1_1_display_1_1_pick_list_1_1_default_item.html">DefaultItem</a>&gt; &gt; <a class="el" href="class_hover_race_1_1_display_1_1_pick_list.html">HoverRace::Display::PickList</a>&lt; T &gt;::items</td>
+          <td class="memname">std::vector&lt;size_t&gt; <a class="el" href="class_hover_race_1_1_display_1_1_pick_list.html">HoverRace::Display::PickList</a>&lt; T &gt;::filteredItems</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Indexes of filtered items. </p>
+
+</div>
+</div>
+<a class="anchor" id="a0cefcd365eea5fb669e927ffbb420cf7"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="class_hover_race_1_1_display_1_1_pick_list_1_1_item_child.html">ItemChild</a>&gt; <a class="el" href="class_hover_race_1_1_display_1_1_pick_list.html">HoverRace::Display::PickList</a>&lt; T &gt;::items</td>
         </tr>
       </table>
   </td>
@@ -747,7 +856,7 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a4a8d687d63878cfe42dd508be76741c9"></a>
+<a class="anchor" id="a221df3b95c9aab1225516627754cb28a"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -757,7 +866,7 @@ template&lt;class T&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_hover_race_1_1_display_1_1_pick_list_1_1_default_item.html">DefaultItem</a>* <a class="el" href="class_hover_race_1_1_display_1_1_pick_list.html">HoverRace::Display::PickList</a>&lt; T &gt;::selItem</td>
+          <td class="memname">boost::optional&lt;size_t&gt; <a class="el" href="class_hover_race_1_1_display_1_1_pick_list.html">HoverRace::Display::PickList</a>&lt; T &gt;::selItem</td>
         </tr>
       </table>
   </td>
@@ -766,6 +875,8 @@ template&lt;class T&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Index of selected item. </p>
 
 </div>
 </div>

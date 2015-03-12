@@ -84,6 +84,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0d22d5bfd814aedc21f3dfae157165b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ba0d8e7d543396fd44317e460ca8570"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_display.html#a9ba0d8e7d543396fd44317e460ca8570">~Display</a> ()</td></tr>
 <tr class="separator:a9ba0d8e7d543396fd44317e460ca8570"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42d9d7b222c72207869ed326225775a8"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_hover_race_1_1_display_1_1_type_case.html">TypeCase</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_display.html#a42d9d7b222c72207869ed326225775a8">GetTypeCase</a> (const <a class="el" href="struct_hover_race_1_1_display_1_1_ui_font.html">UiFont</a> &amp;font)</td></tr>
+<tr class="memdesc:a42d9d7b222c72207869ed326225775a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve or create the <a class="el" href="class_hover_race_1_1_display_1_1_type_case.html" title="Character-by-character text renderer. ">TypeCase</a> for a particular font.  <a href="#a42d9d7b222c72207869ed326225775a8">More...</a><br/></td></tr>
+<tr class="separator:a42d9d7b222c72207869ed326225775a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a500ed4955b36b2688af30862712f6ce5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_display.html#a500ed4955b36b2688af30862712f6ce5">CleanTypeCaseCache</a> ()</td></tr>
+<tr class="memdesc:a500ed4955b36b2688af30862712f6ce5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clean up the cache of <a class="el" href="class_hover_race_1_1_display_1_1_type_case.html" title="Character-by-character text renderer. ">TypeCase</a> instances.  <a href="#a500ed4955b36b2688af30862712f6ce5">More...</a><br/></td></tr>
+<tr class="separator:a500ed4955b36b2688af30862712f6ce5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe6818c42ba456bae648e64f6361ef25"><td class="memItemLeft" align="right" valign="top">virtual <br class="typebreak"/>
 <a class="el" href="class_hover_race_1_1_video_services_1_1_video_buffer.html">VideoServices::VideoBuffer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_display.html#afe6818c42ba456bae648e64f6361ef25">GetLegacyDisplay</a> () const =0</td></tr>
 <tr class="memdesc:afe6818c42ba456bae648e64f6361ef25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the legacy (8-bit) framebuffer.  <a href="#afe6818c42ba456bae648e64f6361ef25">More...</a><br/></td></tr>
@@ -184,6 +190,9 @@ Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
+<tr class="memitem:a650f991df35934017f6a750c3e58e8e3"><td class="memItemLeft" align="right" valign="top">virtual std::shared_ptr&lt; <a class="el" href="class_hover_race_1_1_display_1_1_type_case.html">TypeCase</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_display.html#a650f991df35934017f6a750c3e58e8e3">MakeTypeCase</a> (const <a class="el" href="struct_hover_race_1_1_display_1_1_ui_font.html">UiFont</a> &amp;font)=0</td></tr>
+<tr class="memdesc:a650f991df35934017f6a750c3e58e8e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new <a class="el" href="class_hover_race_1_1_display_1_1_type_case.html" title="Character-by-character text renderer. ">TypeCase</a> for a given font.  <a href="#a650f991df35934017f6a750c3e58e8e3">More...</a><br/></td></tr>
+<tr class="separator:a650f991df35934017f6a750c3e58e8e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e77a230cd725d7aadd0e6a6957754f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_display.html#a0e77a230cd725d7aadd0e6a6957754f1">FireDisplayConfigChangedSignal</a> (int width, int height) const </td></tr>
 <tr class="separator:a0e77a230cd725d7aadd0e6a6957754f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53f4a0a8ad4e01f5302457efd467cefa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_display.html#a53f4a0a8ad4e01f5302457efd467cefa">FireUiScaleChangedSignal</a> (double scale) const </td></tr>
@@ -201,6 +210,9 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a1186184e7b01c3e2db4fe26063e6eb14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4cbef77a48f5d54fe95d06c25e7169fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_hover_race_1_1_vec2.html">Vec2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_display.html#a4cbef77a48f5d54fe95d06c25e7169fd">uiScreenSize</a></td></tr>
 <tr class="separator:a4cbef77a48f5d54fe95d06c25e7169fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9daf59614b50ad33a88ea67829250576"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; <a class="el" href="struct_hover_race_1_1_display_1_1_ui_font.html">UiFont</a>, <br class="typebreak"/>
+std::weak_ptr&lt; <a class="el" href="class_hover_race_1_1_display_1_1_type_case.html">TypeCase</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_display.html#a9daf59614b50ad33a88ea67829250576">typeCases</a></td></tr>
+<tr class="separator:a9daf59614b50ad33a88ea67829250576"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50f6932ddbe331790f3d0fa401cd3749"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_display_1_1_display.html#ac0cf3805383102a895c7e6bde5f955d6">displayConfigChangedSignal_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_display.html#a50f6932ddbe331790f3d0fa401cd3749">displayConfigChangedSignal</a></td></tr>
 <tr class="separator:a50f6932ddbe331790f3d0fa401cd3749"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ca277b14edf2334c2221897a2450355"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_display_1_1_display.html#a0e9b39d590dc8f767f73d3286f674197">uiScaleChangedSignal_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_display.html#a7ca277b14edf2334c2221897a2450355">uiScaleChangedSignal</a></td></tr>
@@ -352,6 +364,24 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a500ed4955b36b2688af30862712f6ce5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HoverRace::Display::Display::CleanTypeCaseCache </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clean up the cache of <a class="el" href="class_hover_race_1_1_display_1_1_type_case.html" title="Character-by-character text renderer. ">TypeCase</a> instances. </p>
+<p>This only should be called when the font rendering has changed in some way (e.g., the global font scale changes, a new style is loaded, etc.) that may cause many of the <a class="el" href="class_hover_race_1_1_display_1_1_type_case.html" title="Character-by-character text renderer. ">TypeCase</a> instances to no longer be used. </p>
+
+</div>
+</div>
 <a class="anchor" id="a0e77a230cd725d7aadd0e6a6957754f1"></a>
 <div class="memitem">
 <div class="memproto">
@@ -486,6 +516,31 @@ Private Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>The framebuffer. </dd></dl>
 
 <p>Implemented in <a class="el" href="class_hover_race_1_1_display_1_1_s_d_l_1_1_sdl_display.html#a92f485f3d9e9cdd667b70b64a70543b9">HoverRace::Display::SDL::SdlDisplay</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a42d9d7b222c72207869ed326225775a8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="class_hover_race_1_1_display_1_1_type_case.html">TypeCase</a> &gt; HoverRace::Display::Display::GetTypeCase </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_hover_race_1_1_display_1_1_ui_font.html">UiFont</a> &amp;&#160;</td>
+          <td class="paramname"><em>font</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieve or create the <a class="el" href="class_hover_race_1_1_display_1_1_type_case.html" title="Character-by-character text renderer. ">TypeCase</a> for a particular font. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">font</td><td>The font. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="class_hover_race_1_1_display_1_1_type_case.html" title="Character-by-character text renderer. ">TypeCase</a>, never <code>nullptr</code>. </dd></dl>
 
 </div>
 </div>
@@ -642,6 +697,42 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a650f991df35934017f6a750c3e58e8e3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::shared_ptr&lt;<a class="el" href="class_hover_race_1_1_display_1_1_type_case.html">TypeCase</a>&gt; HoverRace::Display::Display::MakeTypeCase </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_hover_race_1_1_display_1_1_ui_font.html">UiFont</a> &amp;&#160;</td>
+          <td class="paramname"><em>font</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create a new <a class="el" href="class_hover_race_1_1_display_1_1_type_case.html" title="Character-by-character text renderer. ">TypeCase</a> for a given font. </p>
+<p>This is called by <a class="el" href="class_hover_race_1_1_display_1_1_display.html#a42d9d7b222c72207869ed326225775a8" title="Retrieve or create the TypeCase for a particular font. ">GetTypeCase()</a> when the <a class="el" href="class_hover_race_1_1_display_1_1_type_case.html" title="Character-by-character text renderer. ">TypeCase</a> is not in the cache.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">font</td><td>The normalized font. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="class_hover_race_1_1_display_1_1_type_case.html" title="Character-by-character text renderer. ">TypeCase</a>, never <code>nullptr</code>. </dd></dl>
+
+<p>Implemented in <a class="el" href="class_hover_race_1_1_display_1_1_s_d_l_1_1_sdl_display.html#a2ae311d932eefa1298ac6d8ef8c5d92e">HoverRace::Display::SDL::SdlDisplay</a>.</p>
 
 </div>
 </div>
@@ -843,6 +934,26 @@ Private Attributes</h2></td></tr>
           <td class="memname"><a class="el" href="class_hover_race_1_1_display_1_1_styles.html">Styles</a> HoverRace::Display::Display::styles</td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9daf59614b50ad33a88ea67829250576"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_map&lt;<a class="el" href="struct_hover_race_1_1_display_1_1_ui_font.html">UiFont</a>, std::weak_ptr&lt;<a class="el" href="class_hover_race_1_1_display_1_1_type_case.html">TypeCase</a>&gt; &gt; HoverRace::Display::Display::typeCases</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
