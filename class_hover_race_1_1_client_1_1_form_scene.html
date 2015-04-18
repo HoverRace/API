@@ -197,6 +197,8 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:a1006c1e2708b0284c07d24ddafce8d73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2610d3e5e960e41df6c89ea5c3a7ab97"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_form_scene.html#a2610d3e5e960e41df6c89ea5c3a7ab97">OnMouseReleased</a> (const <a class="el" href="struct_hover_race_1_1_control_1_1_mouse_1_1_click.html">Control::Mouse::Click</a> &amp;click)</td></tr>
 <tr class="separator:a2610d3e5e960e41df6c89ea5c3a7ab97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad172fee0da9c277a8809277b0c074384"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_form_scene.html#ad172fee0da9c277a8809277b0c074384">OnMouseScrolled</a> (const <a class="el" href="struct_hover_race_1_1_control_1_1_mouse_1_1_scroll.html">Control::Mouse::Scroll</a> &amp;scroll)</td></tr>
+<tr class="separator:ad172fee0da9c277a8809277b0c074384"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -209,6 +211,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a509ef2b96e9c9ffccbf9a3d550c55c18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1749c818901331ff82066bdc449691f5"><td class="memItemLeft" align="right" valign="top">boost::signals2::connection&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_form_scene.html#a1749c818901331ff82066bdc449691f5">mouseReleasedConn</a></td></tr>
 <tr class="separator:a1749c818901331ff82066bdc449691f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad00f8c5e29437fbd45215daa71de95aa"><td class="memItemLeft" align="right" valign="top">boost::signals2::connection&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_form_scene.html#ad00f8c5e29437fbd45215daa71de95aa">mouseScrolledConn</a></td></tr>
+<tr class="separator:ad00f8c5e29437fbd45215daa71de95aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -477,6 +481,30 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ad172fee0da9c277a8809277b0c074384"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HoverRace::Client::FormScene::OnMouseScrolled </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_hover_race_1_1_control_1_1_mouse_1_1_scroll.html">Control::Mouse::Scroll</a> &amp;&#160;</td>
+          <td class="paramname"><em>scroll</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a80aba023fd492d64f3b25b4908d9dfdb"></a>
 <div class="memitem">
 <div class="memproto">
@@ -500,7 +528,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="class_hover_race_1_1_client_1_1_scene.html#a376082851934724ec40c98566c0dbe02">HoverRace::Client::Scene</a>.</p>
 
-<p>Reimplemented in <a class="el" href="class_hover_race_1_1_client_1_1_module_1_1_type_case_module.html#ad7e564903b7244307b3d663e56af0a0a">HoverRace::Client::Module::TypeCaseModule</a>, <a class="el" href="class_hover_race_1_1_client_1_1_module_1_1_hud_module.html#a59642719b3e262937bef32aaa3b51b89">HoverRace::Client::Module::HudModule</a>, <a class="el" href="class_hover_race_1_1_client_1_1_message_scene.html#a51cf1ec73eddf372970bcb53e37ee9c6">HoverRace::Client::MessageScene</a>, <a class="el" href="class_hover_race_1_1_client_1_1_test_lab_scene_1_1_lab_module.html#a90c811b48e4c66481c76a945af0a6da7">HoverRace::Client::TestLabScene::LabModule</a>, <a class="el" href="class_hover_race_1_1_client_1_1_loading_scene.html#a33fb49cbf5d06b1797468fdbaff07d32">HoverRace::Client::LoadingScene</a>, <a class="el" href="class_hover_race_1_1_client_1_1_settings_scene.html#a24b56cf01219dd6e3046723cf5a6bae7">HoverRace::Client::SettingsScene</a>, <a class="el" href="class_hover_race_1_1_client_1_1_pause_menu_scene.html#a7d7db012155750d94b918cc349f8cb42">HoverRace::Client::PauseMenuScene</a>, and <a class="el" href="class_hover_race_1_1_client_1_1_test_lab_scene.html#a3b2415b4912a8e89142302a36df4ec0e">HoverRace::Client::TestLabScene</a>.</p>
+<p>Reimplemented in <a class="el" href="class_hover_race_1_1_client_1_1_module_1_1_type_case_module.html#ad7e564903b7244307b3d663e56af0a0a">HoverRace::Client::Module::TypeCaseModule</a>, <a class="el" href="class_hover_race_1_1_client_1_1_module_1_1_hud_module.html#a59642719b3e262937bef32aaa3b51b89">HoverRace::Client::Module::HudModule</a>, <a class="el" href="class_hover_race_1_1_client_1_1_test_lab_scene_1_1_lab_module.html#a90c811b48e4c66481c76a945af0a6da7">HoverRace::Client::TestLabScene::LabModule</a>, <a class="el" href="class_hover_race_1_1_client_1_1_message_scene.html#a51cf1ec73eddf372970bcb53e37ee9c6">HoverRace::Client::MessageScene</a>, <a class="el" href="class_hover_race_1_1_client_1_1_loading_scene.html#a33fb49cbf5d06b1797468fdbaff07d32">HoverRace::Client::LoadingScene</a>, <a class="el" href="class_hover_race_1_1_client_1_1_settings_scene.html#a24b56cf01219dd6e3046723cf5a6bae7">HoverRace::Client::SettingsScene</a>, <a class="el" href="class_hover_race_1_1_client_1_1_pause_menu_scene.html#a7d7db012155750d94b918cc349f8cb42">HoverRace::Client::PauseMenuScene</a>, and <a class="el" href="class_hover_race_1_1_client_1_1_test_lab_scene.html#a3b2415b4912a8e89142302a36df4ec0e">HoverRace::Client::TestLabScene</a>.</p>
 
 </div>
 </div>
@@ -527,7 +555,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_hover_race_1_1_client_1_1_scene.html#a9672d9d8a6902e5346f0e92f41de36af">HoverRace::Client::Scene</a>.</p>
 
-<p>Reimplemented in <a class="el" href="class_hover_race_1_1_client_1_1_module_1_1_type_case_module.html#a733abb87f722357b65572ab0e4ae3990">HoverRace::Client::Module::TypeCaseModule</a>, <a class="el" href="class_hover_race_1_1_client_1_1_module_1_1_hud_module.html#aac28aeb9cd1728d15dbde9bb351ec745">HoverRace::Client::Module::HudModule</a>, <a class="el" href="class_hover_race_1_1_client_1_1_game_select_scene.html#ae8e1809fa9657db5b9b5c74df43ed623">HoverRace::Client::GameSelectScene</a>, <a class="el" href="class_hover_race_1_1_client_1_1_message_scene.html#a18a514280caff6ccd7a5ae49e9fe372c">HoverRace::Client::MessageScene</a>, <a class="el" href="class_hover_race_1_1_client_1_1_test_lab_scene_1_1_lab_module.html#a5017e92634f1c7ce140fcc21b1215071">HoverRace::Client::TestLabScene::LabModule</a>, <a class="el" href="class_hover_race_1_1_client_1_1_loading_scene.html#aeb1559313ea3564ae2737f801d42dc8f">HoverRace::Client::LoadingScene</a>, <a class="el" href="class_hover_race_1_1_client_1_1_pause_menu_scene.html#abeb2e03b86bba411a8f69e423b1277f9">HoverRace::Client::PauseMenuScene</a>, and <a class="el" href="class_hover_race_1_1_client_1_1_test_lab_scene.html#a1ae1f93f93b232c0b765be189caf4799">HoverRace::Client::TestLabScene</a>.</p>
+<p>Reimplemented in <a class="el" href="class_hover_race_1_1_client_1_1_module_1_1_type_case_module.html#a733abb87f722357b65572ab0e4ae3990">HoverRace::Client::Module::TypeCaseModule</a>, <a class="el" href="class_hover_race_1_1_client_1_1_module_1_1_hud_module.html#aac28aeb9cd1728d15dbde9bb351ec745">HoverRace::Client::Module::HudModule</a>, <a class="el" href="class_hover_race_1_1_client_1_1_game_select_scene.html#ae8e1809fa9657db5b9b5c74df43ed623">HoverRace::Client::GameSelectScene</a>, <a class="el" href="class_hover_race_1_1_client_1_1_test_lab_scene_1_1_lab_module.html#a5017e92634f1c7ce140fcc21b1215071">HoverRace::Client::TestLabScene::LabModule</a>, <a class="el" href="class_hover_race_1_1_client_1_1_message_scene.html#a18a514280caff6ccd7a5ae49e9fe372c">HoverRace::Client::MessageScene</a>, <a class="el" href="class_hover_race_1_1_client_1_1_loading_scene.html#aeb1559313ea3564ae2737f801d42dc8f">HoverRace::Client::LoadingScene</a>, <a class="el" href="class_hover_race_1_1_client_1_1_pause_menu_scene.html#abeb2e03b86bba411a8f69e423b1277f9">HoverRace::Client::PauseMenuScene</a>, and <a class="el" href="class_hover_race_1_1_client_1_1_test_lab_scene.html#a1ae1f93f93b232c0b765be189caf4799">HoverRace::Client::TestLabScene</a>.</p>
 
 </div>
 </div>
@@ -601,6 +629,26 @@ Additional Inherited Members</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">boost::signals2::connection HoverRace::Client::FormScene::mouseReleasedConn</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad00f8c5e29437fbd45215daa71de95aa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::signals2::connection HoverRace::Client::FormScene::mouseScrolledConn</td>
         </tr>
       </table>
   </td>

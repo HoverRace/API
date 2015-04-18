@@ -112,6 +112,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae909e836cdf641caca78b14f26e07cf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0bf7b0c3e4f34180e7e1798be82647f6"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_ui_view_model.html#a0bf7b0c3e4f34180e7e1798be82647f6">OnMouseReleased</a> (const <a class="el" href="struct_hover_race_1_1_control_1_1_mouse_1_1_click.html">Control::Mouse::Click</a> &amp;)</td></tr>
 <tr class="separator:a0bf7b0c3e4f34180e7e1798be82647f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b1b37fa5be5f82ae6c19d10126454dd"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_ui_view_model.html#a4b1b37fa5be5f82ae6c19d10126454dd">OnMouseScrolled</a> (const <a class="el" href="struct_hover_race_1_1_control_1_1_mouse_1_1_scroll.html">Control::Mouse::Scroll</a> &amp;)</td></tr>
+<tr class="separator:a4b1b37fa5be5f82ae6c19d10126454dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1613b5f91373bc643e31eef007411d1c"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_ui_view_model.html#a1613b5f91373bc643e31eef007411d1c">OnAction</a> ()</td></tr>
 <tr class="separator:a1613b5f91373bc643e31eef007411d1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a967146d9fc015238961e6b7bfebc4278"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_ui_view_model.html#a967146d9fc015238961e6b7bfebc4278">OnNavigate</a> (const <a class="el" href="class_hover_race_1_1_control_1_1_nav.html">Control::Nav</a> &amp;)</td></tr>
@@ -406,7 +408,7 @@ Private Attributes</h2></td></tr>
 <p>Force this widget to give up focus, if it is currently focused. </p>
 <p>This is called by the parent container if focus is shifting away to another widget. </p>
 
-<p>Reimplemented in <a class="el" href="class_hover_race_1_1_display_1_1_flex_grid.html#a7108af6db095fe0f1315d6b24e6bebf7">HoverRace::Display::FlexGrid</a>, and <a class="el" href="class_hover_race_1_1_display_1_1_container.html#ab92c8075a4251ee66717adb8ade3fc65">HoverRace::Display::Container</a>.</p>
+<p>Reimplemented in <a class="el" href="class_hover_race_1_1_display_1_1_flex_grid.html#a7108af6db095fe0f1315d6b24e6bebf7">HoverRace::Display::FlexGrid</a>, <a class="el" href="class_hover_race_1_1_display_1_1_base_pick_list.html#a260a226270cbc31eefd8459bc58e2e56">HoverRace::Display::BasePickList</a>, and <a class="el" href="class_hover_race_1_1_display_1_1_container.html#ab92c8075a4251ee66717adb8ade3fc65">HoverRace::Display::Container</a>.</p>
 
 </div>
 </div>
@@ -742,7 +744,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="class_hover_race_1_1_display_1_1_click_region.html#a2eafcc06f6e6fecb33488694d559f4c3">HoverRace::Display::ClickRegion</a>, <a class="el" href="class_hover_race_1_1_display_1_1_flex_grid.html#a1f39618f7bc55fbc6f19fc173aa94482">HoverRace::Display::FlexGrid</a>, and <a class="el" href="class_hover_race_1_1_display_1_1_container.html#a60fa89811ee30d0a4d5420701d32a8c1">HoverRace::Display::Container</a>.</p>
+<p>Reimplemented in <a class="el" href="class_hover_race_1_1_display_1_1_base_pick_list.html#a8fbba813e79e80f5495bab93bf505d7e">HoverRace::Display::BasePickList</a>, <a class="el" href="class_hover_race_1_1_display_1_1_click_region.html#a2eafcc06f6e6fecb33488694d559f4c3">HoverRace::Display::ClickRegion</a>, <a class="el" href="class_hover_race_1_1_display_1_1_flex_grid.html#a1f39618f7bc55fbc6f19fc173aa94482">HoverRace::Display::FlexGrid</a>, and <a class="el" href="class_hover_race_1_1_display_1_1_container.html#a60fa89811ee30d0a4d5420701d32a8c1">HoverRace::Display::Container</a>.</p>
 
 </div>
 </div>
@@ -824,6 +826,32 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a4b1b37fa5be5f82ae6c19d10126454dd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool HoverRace::Display::UiViewModel::OnMouseScrolled </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_hover_race_1_1_control_1_1_mouse_1_1_scroll.html">Control::Mouse::Scroll</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="class_hover_race_1_1_display_1_1_base_container.html#aca739cfc23ce797b7ee03ac654d83aad">HoverRace::Display::BaseContainer</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a967146d9fc015238961e6b7bfebc4278"></a>
 <div class="memitem">
 <div class="memproto">
@@ -846,7 +874,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="class_hover_race_1_1_display_1_1_button.html#acb2b2ad9218d2c4b82621c18c00d9c52">HoverRace::Display::Button</a>, <a class="el" href="class_hover_race_1_1_display_1_1_flex_grid.html#a7fdfb1122f62230c82d93156c0346ffc">HoverRace::Display::FlexGrid</a>, <a class="el" href="class_hover_race_1_1_display_1_1_slider.html#a939b3b13e307f6fd660c66d635bee643">HoverRace::Display::Slider</a>, and <a class="el" href="class_hover_race_1_1_display_1_1_container.html#ae129d5b17c5ab3e83f910dd1e1177902">HoverRace::Display::Container</a>.</p>
+<p>Reimplemented in <a class="el" href="class_hover_race_1_1_display_1_1_base_pick_list.html#a0288d60be26fc9ab229c1c82444c5cdc">HoverRace::Display::BasePickList</a>, <a class="el" href="class_hover_race_1_1_display_1_1_button.html#acb2b2ad9218d2c4b82621c18c00d9c52">HoverRace::Display::Button</a>, <a class="el" href="class_hover_race_1_1_display_1_1_flex_grid.html#a7fdfb1122f62230c82d93156c0346ffc">HoverRace::Display::FlexGrid</a>, <a class="el" href="class_hover_race_1_1_display_1_1_slider.html#a939b3b13e307f6fd660c66d635bee643">HoverRace::Display::Slider</a>, and <a class="el" href="class_hover_race_1_1_display_1_1_container.html#ae129d5b17c5ab3e83f910dd1e1177902">HoverRace::Display::Container</a>.</p>
 
 </div>
 </div>
@@ -1110,7 +1138,7 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><code>true</code> if it succeeds (widget is now focused), <code>false</code> if it fails (widget did not take focus). </dd></dl>
 
-<p>Reimplemented in <a class="el" href="class_hover_race_1_1_display_1_1_flex_grid.html#a1c1e3a488a3b3c7110a22b09aa0b50cf">HoverRace::Display::FlexGrid</a>, <a class="el" href="class_hover_race_1_1_display_1_1_click_region.html#a2e9c33ef86684e74f7c5f93117b5d029">HoverRace::Display::ClickRegion</a>, and <a class="el" href="class_hover_race_1_1_display_1_1_container.html#a5088d2e5c35584ea024bdcdb968a602b">HoverRace::Display::Container</a>.</p>
+<p>Reimplemented in <a class="el" href="class_hover_race_1_1_display_1_1_flex_grid.html#a1c1e3a488a3b3c7110a22b09aa0b50cf">HoverRace::Display::FlexGrid</a>, <a class="el" href="class_hover_race_1_1_display_1_1_base_pick_list.html#ac531dd7519f4cf8dacbbe4f5b58218ac">HoverRace::Display::BasePickList</a>, <a class="el" href="class_hover_race_1_1_display_1_1_click_region.html#a2e9c33ef86684e74f7c5f93117b5d029">HoverRace::Display::ClickRegion</a>, and <a class="el" href="class_hover_race_1_1_display_1_1_container.html#a5088d2e5c35584ea024bdcdb968a602b">HoverRace::Display::Container</a>.</p>
 
 </div>
 </div>

@@ -76,8 +76,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9a8f6a3e5c135c2d568300a8e647a207"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95cfb42f0cecdda42147c13d2faccb40"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_loading_scene.html#a95cfb42f0cecdda42147c13d2faccb40">~LoadingScene</a> ()</td></tr>
 <tr class="separator:a95cfb42f0cecdda42147c13d2faccb40"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e28f6edbd51a13f641fa2be5623ea58"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_hover_race_1_1_util_1_1_loader.html">Util::Loader</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_loading_scene.html#a6e28f6edbd51a13f641fa2be5623ea58">GetLoader</a> () const </td></tr>
-<tr class="separator:a6e28f6edbd51a13f641fa2be5623ea58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a693fed6b2ad4fcacf75fd2312d4a0c4e"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_hover_race_1_1_util_1_1_loader.html">Util::Loader</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_loading_scene.html#a693fed6b2ad4fcacf75fd2312d4a0c4e">ShareLoader</a> () const </td></tr>
+<tr class="separator:a693fed6b2ad4fcacf75fd2312d4a0c4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b72ccd988347fa3dbadf7703168237e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_loading_scene.html#a9b72ccd988347fa3dbadf7703168237e">IsMouseCursorEnabled</a> () const override</td></tr>
 <tr class="memdesc:a9b72ccd988347fa3dbadf7703168237e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if the mouse cursor is enabled for this scene.  <a href="#a9b72ccd988347fa3dbadf7703168237e">More...</a><br/></td></tr>
 <tr class="separator:a9b72ccd988347fa3dbadf7703168237e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -190,8 +190,8 @@ Protected Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
 Private Types</h2></td></tr>
-<tr class="memitem:af7c96c420d4e3da224afd91a0b540d41"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_hover_race_1_1_client_1_1_form_scene.html">FormScene</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_loading_scene.html#af7c96c420d4e3da224afd91a0b540d41">SUPER</a></td></tr>
-<tr class="separator:af7c96c420d4e3da224afd91a0b540d41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae405099dcee113ad927ff0f4d197ecf4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_loading_scene.html#ae405099dcee113ad927ff0f4d197ecf4">SUPER</a> = <a class="el" href="class_hover_race_1_1_client_1_1_form_scene.html">FormScene</a></td></tr>
+<tr class="separator:ae405099dcee113ad927ff0f4d197ecf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -238,7 +238,7 @@ Additional Inherited Members</h2></td></tr>
 <p>To use this scene, enqueue tasks to the loader, then push the scene that depends on the loader, then push this scene. When all of the resources have been loaded, this scene will automatically pop itself.</p>
 <dl class="section author"><dt>Author</dt><dd>Michael Imamura </dd></dl>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="af7c96c420d4e3da224afd91a0b540d41"></a>
+<a class="anchor" id="ae405099dcee113ad927ff0f4d197ecf4"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -246,7 +246,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="class_hover_race_1_1_client_1_1_form_scene.html">FormScene</a> <a class="el" href="class_hover_race_1_1_client_1_1_loading_scene.html#af7c96c420d4e3da224afd91a0b540d41">HoverRace::Client::LoadingScene::SUPER</a></td>
+          <td class="memname">using <a class="el" href="class_hover_race_1_1_client_1_1_loading_scene.html#ae405099dcee113ad927ff0f4d197ecf4">HoverRace::Client::LoadingScene::SUPER</a> =  <a class="el" href="class_hover_race_1_1_client_1_1_form_scene.html">FormScene</a></td>
         </tr>
       </table>
   </td>
@@ -315,29 +315,6 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a6e28f6edbd51a13f641fa2be5623ea58"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::shared_ptr&lt;<a class="el" href="class_hover_race_1_1_util_1_1_loader.html">Util::Loader</a>&gt; HoverRace::Client::LoadingScene::GetLoader </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="a9b72ccd988347fa3dbadf7703168237e"></a>
 <div class="memitem">
 <div class="memproto">
@@ -484,6 +461,29 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Reimplemented from <a class="el" href="class_hover_race_1_1_client_1_1_form_scene.html#a7a16d2ba869bd7798e413a002b359edb">HoverRace::Client::FormScene</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a693fed6b2ad4fcacf75fd2312d4a0c4e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="class_hover_race_1_1_util_1_1_loader.html">Util::Loader</a>&gt; HoverRace::Client::LoadingScene::ShareLoader </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

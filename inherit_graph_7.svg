@@ -11,34 +11,42 @@
 <!-- Node1 -->
 <g id="node1" class="node"><title>Node1</title>
 <a xlink:title="STL class. ">
-<polygon fill="none" stroke="#bfbfbf" points="0,-43 0,-63 74,-63 74,-43 0,-43"/>
-<text text-anchor="middle" x="37" y="-50" font-family="FreeSans" font-size="10.00">std::ios_base</text>
+<polygon fill="none" stroke="#bfbfbf" points="0,-24 0,-44 74,-44 74,-24 0,-24"/>
+<text text-anchor="middle" x="37" y="-31" font-family="FreeSans" font-size="10.00">std::ios_base</text>
 </a>
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:title="STL class. ">
-<polygon fill="none" stroke="#bfbfbf" points="110.5,-43 110.5,-63 223.5,-63 223.5,-43 110.5,-43"/>
-<text text-anchor="middle" x="167" y="-50" font-family="FreeSans" font-size="10.00">std::basic_ios&lt; Char &gt;</text>
-</a>
+<polygon fill="none" stroke="#bfbfbf" points="111.5,-43 111.5,-63 222.5,-63 222.5,-43 111.5,-43"/>
+<text text-anchor="middle" x="167" y="-50" font-family="FreeSans" font-size="10.00">std::basic_ios&lt; char &gt;</text>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge2" class="edge"><title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M84.3122,-53C92.7699,-53 101.66,-53 110.348,-53"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="84.2528,-49.5001 74.2528,-53 84.2527,-56.5001 84.2528,-49.5001"/>
+<path fill="none" stroke="midnightblue" d="M84.301,-40.9132C93.0793,-42.1962 102.324,-43.5473 111.325,-44.8628"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="84.6539,-37.4277 74.2528,-39.4446 83.6415,-44.3541 84.6539,-37.4277"/>
+</g>
+<!-- Node7 -->
+<g id="node13" class="node"><title>Node7</title>
+<a xlink:title="STL class. ">
+<polygon fill="none" stroke="#bfbfbf" points="110.5,-5 110.5,-25 223.5,-25 223.5,-5 110.5,-5"/>
+<text text-anchor="middle" x="167" y="-12" font-family="FreeSans" font-size="10.00">std::basic_ios&lt; Char &gt;</text>
+</a>
+</g>
+<!-- Node1&#45;&gt;Node7 -->
+<g id="edge12" class="edge"><title>Node1&#45;&gt;Node7</title>
+<path fill="none" stroke="midnightblue" d="M84.3122,-27.0851C92.7699,-25.849 101.66,-24.5497 110.348,-23.2799"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="83.6415,-23.6459 74.2528,-28.5554 84.6539,-30.5723 83.6415,-23.6459"/>
 </g>
 <!-- Node3 -->
 <g id="node5" class="node"><title>Node3</title>
-<a xlink:title="STL class. ">
 <polygon fill="none" stroke="#bfbfbf" points="260,-37 260,-69 358,-69 358,-37 260,-37"/>
 <text text-anchor="start" x="268" y="-56" font-family="FreeSans" font-size="10.00">std::basic_ostream</text>
-<text text-anchor="middle" x="309" y="-44" font-family="FreeSans" font-size="10.00">&lt; Char &gt;</text>
-</a>
+<text text-anchor="middle" x="309" y="-44" font-family="FreeSans" font-size="10.00">&lt; char &gt;</text>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
 <g id="edge4" class="edge"><title>Node2&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M233.816,-53C242.639,-53 251.549,-53 259.998,-53"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="233.53,-49.5001 223.53,-53 233.53,-56.5001 233.53,-49.5001"/>
+<path fill="none" stroke="midnightblue" d="M232.897,-53C241.986,-53 251.187,-53 259.9,-53"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="232.715,-49.5001 222.715,-53 232.715,-56.5001 232.715,-49.5001"/>
 </g>
 <!-- Node4 -->
 <g id="node7" class="node"><title>Node4</title>

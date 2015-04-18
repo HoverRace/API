@@ -99,6 +99,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a91c04f96b8e4e2b42d6c8a164234bb80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf418956ea9c6b83f32d4746e0715f58"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_base_container.html#aaf418956ea9c6b83f32d4746e0715f58">OnMouseReleased</a> (const <a class="el" href="struct_hover_race_1_1_control_1_1_mouse_1_1_click.html">Control::Mouse::Click</a> &amp;click) override</td></tr>
 <tr class="separator:aaf418956ea9c6b83f32d4746e0715f58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca739cfc23ce797b7ee03ac654d83aad"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_base_container.html#aca739cfc23ce797b7ee03ac654d83aad">OnMouseScrolled</a> (const <a class="el" href="struct_hover_race_1_1_control_1_1_mouse_1_1_scroll.html">Control::Mouse::Scroll</a> &amp;scroll) override</td></tr>
+<tr class="separator:aca739cfc23ce797b7ee03ac654d83aad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afea51c7bf433a996c244aee32d595210"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_base_container.html#afea51c7bf433a996c244aee32d595210">ShrinkWrap</a> ()</td></tr>
 <tr class="memdesc:afea51c7bf433a996c244aee32d595210"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resize the container to the minimum size that will fit all of the child elements.  <a href="#afea51c7bf433a996c244aee32d595210">More...</a><br/></td></tr>
 <tr class="separator:afea51c7bf433a996c244aee32d595210"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -129,6 +131,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afcba51b1dc8e866a9cbfb507208aa4f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_base_container.html#afcba51b1dc8e866a9cbfb507208aa4f4">SetVisible</a> (bool <a class="el" href="class_hover_race_1_1_display_1_1_base_container.html#a9d37a2dfe7c3d2b78d1f22aed1261252">visible</a>)</td></tr>
 <tr class="memdesc:afcba51b1dc8e866a9cbfb507208aa4f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets whether the widgets in this container are visible.  <a href="#afcba51b1dc8e866a9cbfb507208aa4f4">More...</a><br/></td></tr>
 <tr class="separator:afcba51b1dc8e866a9cbfb507208aa4f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6012108b7890fb9de63c488c97b883fe"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct_hover_race_1_1_vec2.html">Vec2</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_base_container.html#a6012108b7890fb9de63c488c97b883fe">GetChildOffset</a> () const </td></tr>
+<tr class="memdesc:a6012108b7890fb9de63c488c97b883fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the offset to the position of the child widgets.  <a href="#a6012108b7890fb9de63c488c97b883fe">More...</a><br/></td></tr>
+<tr class="separator:a6012108b7890fb9de63c488c97b883fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46925a3bdef37bb2a50b5d4f132bad32"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_base_container.html#a46925a3bdef37bb2a50b5d4f132bad32">IsEmpty</a> () const </td></tr>
 <tr class="memdesc:a46925a3bdef37bb2a50b5d4f132bad32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if this container is devoid of child widgets.  <a href="#a46925a3bdef37bb2a50b5d4f132bad32">More...</a><br/></td></tr>
 <tr class="separator:a46925a3bdef37bb2a50b5d4f132bad32"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -259,8 +264,14 @@ T &gt;::value, std::shared_ptr&lt; T &gt;<br class="typebreak"/>
 <tr class="memitem:a0df456435f51d986490fd4ee055c06bd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_base_container.html#a0df456435f51d986490fd4ee055c06bd">OnChildRelinquishedFocus</a> (<a class="el" href="class_hover_race_1_1_display_1_1_ui_view_model.html">UiViewModel</a> &amp;child, const <a class="el" href="class_hover_race_1_1_control_1_1_nav.html">Control::Nav</a> &amp;nav)</td></tr>
 <tr class="memdesc:a0df456435f51d986490fd4ee055c06bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a child widget passes input focus to another widget.  <a href="#a0df456435f51d986490fd4ee055c06bd">More...</a><br/></td></tr>
 <tr class="separator:a0df456435f51d986490fd4ee055c06bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59d19e7e32970dad9c03837cbc75f1eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_base_container.html#a59d19e7e32970dad9c03837cbc75f1eb">SetChildOffset</a> (const <a class="el" href="struct_hover_race_1_1_vec2.html">Vec2</a> &amp;offset)</td></tr>
+<tr class="memdesc:a59d19e7e32970dad9c03837cbc75f1eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the position offset of child widgets.  <a href="#a59d19e7e32970dad9c03837cbc75f1eb">More...</a><br/></td></tr>
+<tr class="separator:a59d19e7e32970dad9c03837cbc75f1eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82f63babb59a80125280890ec2195a90"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_display_1_1_base_container.html#aff5cbd5b34c38aa416da21cf50518e54">children_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_base_container.html#a82f63babb59a80125280890ec2195a90">GetChildren</a> ()</td></tr>
 <tr class="separator:a82f63babb59a80125280890ec2195a90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab21316b661389710675edce63af667f2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_base_container.html#ab21316b661389710675edce63af667f2">TestHit</a> (const <a class="el" href="struct_hover_race_1_1_vec2.html">Vec2</a> &amp;<a class="el" href="class_hover_race_1_1_display_1_1_ui_view_model.html#ac23e2ece418a66675ecebd515e08cd64">pos</a>)</td></tr>
+<tr class="memdesc:ab21316b661389710675edce63af667f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the coordinates of an event are within the bounds of this component.  <a href="#ab21316b661389710675edce63af667f2">More...</a><br/></td></tr>
+<tr class="separator:ab21316b661389710675edce63af667f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_hover_race_1_1_display_1_1_ui_view_model"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_hover_race_1_1_display_1_1_ui_view_model')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_hover_race_1_1_display_1_1_ui_view_model.html">HoverRace::Display::UiViewModel</a></td></tr>
 <tr class="memitem:aaa0e52097e198a9e3b65f85033ab25ae inherit pro_methods_class_hover_race_1_1_display_1_1_ui_view_model"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_ui_view_model.html#aaa0e52097e198a9e3b65f85033ab25ae">SetFocused</a> (bool <a class="el" href="class_hover_race_1_1_display_1_1_ui_view_model.html#ad55a79f62ee3a2495ea28c38c015f985">focused</a>)</td></tr>
 <tr class="memdesc:aaa0e52097e198a9e3b65f85033ab25ae inherit pro_methods_class_hover_race_1_1_display_1_1_ui_view_model"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the focused state.  <a href="#aaa0e52097e198a9e3b65f85033ab25ae">More...</a><br/></td></tr>
@@ -308,6 +319,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a6e7a644a830e5039fcbb4d1e921324b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d37a2dfe7c3d2b78d1f22aed1261252"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_base_container.html#a9d37a2dfe7c3d2b78d1f22aed1261252">visible</a></td></tr>
 <tr class="separator:a9d37a2dfe7c3d2b78d1f22aed1261252"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f3537bafff9aae208659af38ab9a313"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_hover_race_1_1_vec2.html">Vec2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_base_container.html#a8f3537bafff9aae208659af38ab9a313">childOffset</a></td></tr>
+<tr class="separator:a8f3537bafff9aae208659af38ab9a313"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b1fa589c79aee5f57a836f1be33a96c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_display_1_1_base_container.html#aff5cbd5b34c38aa416da21cf50518e54">children_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_base_container.html#a8b1fa589c79aee5f57a836f1be33a96c">children</a></td></tr>
 <tr class="separator:a8b1fa589c79aee5f57a836f1be33a96c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -537,7 +550,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Remove all child elements. </p>
 
-<p>Reimplemented in <a class="el" href="class_hover_race_1_1_display_1_1_flex_grid.html#a163b4c285639518ca5278fbeba1547d5">HoverRace::Display::FlexGrid</a>, <a class="el" href="class_hover_race_1_1_display_1_1_hud.html#abb66746263f2dd51d242a24aff42e2cc">HoverRace::Display::Hud</a>, and <a class="el" href="class_hover_race_1_1_display_1_1_container.html#a1409b40a70739aec21ef062f304c11bf">HoverRace::Display::Container</a>.</p>
+<p>Reimplemented in <a class="el" href="class_hover_race_1_1_display_1_1_flex_grid.html#a163b4c285639518ca5278fbeba1547d5">HoverRace::Display::FlexGrid</a>, <a class="el" href="class_hover_race_1_1_display_1_1_pick_list.html#ac34dd984efb3c32f79fe98cd6ce2516d">HoverRace::Display::PickList&lt; T &gt;</a>, <a class="el" href="class_hover_race_1_1_display_1_1_hud.html#abb66746263f2dd51d242a24aff42e2cc">HoverRace::Display::Hud</a>, and <a class="el" href="class_hover_race_1_1_display_1_1_container.html#a1409b40a70739aec21ef062f304c11bf">HoverRace::Display::Container</a>.</p>
 
 </div>
 </div>
@@ -606,6 +619,32 @@ template&lt;class Fn &gt; </div>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a class="anchor" id="a6012108b7890fb9de63c488c97b883fe"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="struct_hover_race_1_1_vec2.html">Vec2</a>&amp; HoverRace::Display::BaseContainer::GetChildOffset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Retrieve the offset to the position of the child widgets. </p>
+<dl class="section return"><dt>Returns</dt><dd>The child offset. </dd></dl>
 
 </div>
 </div>
@@ -878,7 +917,7 @@ template&lt;class T , class... Args&gt; </div>
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="class_hover_race_1_1_display_1_1_flex_grid.html#add5cd69684b4666b53ef3486fd639994">HoverRace::Display::FlexGrid</a>, and <a class="el" href="class_hover_race_1_1_display_1_1_container.html#af827aa1da02cbfc4cfad964f7d2c81dd">HoverRace::Display::Container</a>.</p>
+<p>Reimplemented in <a class="el" href="class_hover_race_1_1_display_1_1_base_pick_list.html#afafb05cc1fa1780bdb807c26a91b0979">HoverRace::Display::BasePickList</a>, <a class="el" href="class_hover_race_1_1_display_1_1_flex_grid.html#add5cd69684b4666b53ef3486fd639994">HoverRace::Display::FlexGrid</a>, and <a class="el" href="class_hover_race_1_1_display_1_1_container.html#af827aa1da02cbfc4cfad964f7d2c81dd">HoverRace::Display::Container</a>.</p>
 
 </div>
 </div>
@@ -912,7 +951,7 @@ template&lt;class T , class... Args&gt; </div>
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="class_hover_race_1_1_display_1_1_flex_grid.html#a8a03a57cf7e234b81b52f8b790dbff7d">HoverRace::Display::FlexGrid</a>, and <a class="el" href="class_hover_race_1_1_display_1_1_container.html#a56438e3995202e1d296f6e77bfd823a3">HoverRace::Display::Container</a>.</p>
+<p>Reimplemented in <a class="el" href="class_hover_race_1_1_display_1_1_base_pick_list.html#a0a6f07bff5a5a279ce320afa46a9ea50">HoverRace::Display::BasePickList</a>, <a class="el" href="class_hover_race_1_1_display_1_1_flex_grid.html#a8a03a57cf7e234b81b52f8b790dbff7d">HoverRace::Display::FlexGrid</a>, and <a class="el" href="class_hover_race_1_1_display_1_1_container.html#a56438e3995202e1d296f6e77bfd823a3">HoverRace::Display::Container</a>.</p>
 
 </div>
 </div>
@@ -933,7 +972,7 @@ template&lt;class T , class... Args&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -959,7 +998,7 @@ template&lt;class T , class... Args&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -985,12 +1024,38 @@ template&lt;class T , class... Args&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Reimplemented from <a class="el" href="class_hover_race_1_1_display_1_1_ui_view_model.html#a0bf7b0c3e4f34180e7e1798be82647f6">HoverRace::Display::UiViewModel</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aca739cfc23ce797b7ee03ac654d83aad"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HoverRace::Display::BaseContainer::OnMouseScrolled </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_hover_race_1_1_control_1_1_mouse_1_1_scroll.html">Control::Mouse::Scroll</a> &amp;&#160;</td>
+          <td class="paramname"><em>scroll</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="class_hover_race_1_1_display_1_1_ui_view_model.html#a4b1b37fa5be5f82ae6c19d10126454dd">HoverRace::Display::UiViewModel</a>.</p>
 
 </div>
 </div>
@@ -1133,6 +1198,38 @@ template&lt;class T &gt; </div>
 </dl>
 
 <p>Reimplemented in <a class="el" href="class_hover_race_1_1_display_1_1_flex_grid.html#aa28dc785816a24592e1b0ce5e626f581">HoverRace::Display::FlexGrid</a>, <a class="el" href="class_hover_race_1_1_display_1_1_pick_list.html#a11be358aa50811470810ce961d2dec6c">HoverRace::Display::PickList&lt; T &gt;</a>, and <a class="el" href="class_hover_race_1_1_display_1_1_container.html#a272cdc249cebce660ecbc801d3b159a0">HoverRace::Display::Container</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a59d19e7e32970dad9c03837cbc75f1eb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HoverRace::Display::BaseContainer::SetChildOffset </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_hover_race_1_1_vec2.html">Vec2</a> &amp;&#160;</td>
+          <td class="paramname"><em>childOffset</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the position offset of child widgets. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">childOffset</td><td>The child offset. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1287,7 +1384,60 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="ab21316b661389710675edce63af667f2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HoverRace::Display::BaseContainer::TestHit </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_hover_race_1_1_vec2.html">Vec2</a> &amp;&#160;</td>
+          <td class="paramname"><em>pos</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check if the coordinates of an event are within the bounds of this component. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pos</td><td>The screen-space position. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the test passes, false if the test fails. </dd></dl>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a8f3537bafff9aae208659af38ab9a313"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_hover_race_1_1_vec2.html">Vec2</a> HoverRace::Display::BaseContainer::childOffset</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a8b1fa589c79aee5f57a836f1be33a96c"></a>
 <div class="memitem">
 <div class="memproto">

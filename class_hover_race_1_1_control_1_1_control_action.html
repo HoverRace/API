@@ -58,20 +58,25 @@
 </div><!--header-->
 <div class="contents">
 
+<p>Abstract base class which allows us a simple reference to arbitrary functors of type ControlActionImpl (which bind a class via a template parameter).  
+ <a href="class_hover_race_1_1_control_1_1_control_action.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_control_action_8h_source.html">ControlAction.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:afcde2cab493a5704b46a510b701f17bb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_control_1_1_control_action.html#afcde2cab493a5704b46a510b701f17bb">ControlAction</a> ()</td></tr>
+<tr class="separator:afcde2cab493a5704b46a510b701f17bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1d61f79df4352da15cacd08bec57f92"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_control_1_1_control_action.html#af1d61f79df4352da15cacd08bec57f92">ControlAction</a> (const std::string &amp;<a class="el" href="class_hover_race_1_1_control_1_1_control_action.html#a4eae137b2018443595ba316739c51719">name</a>, int <a class="el" href="class_hover_race_1_1_control_1_1_control_action.html#a7fd5ec0a1a2f7d8bb4c3ad50ad463f1a">listOrder</a>)</td></tr>
 <tr class="separator:af1d61f79df4352da15cacd08bec57f92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a36e2016bc85b0c20784828f8159bea36"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_control_1_1_control_action.html#a36e2016bc85b0c20784828f8159bea36">~ControlAction</a> ()</td></tr>
 <tr class="separator:a36e2016bc85b0c20784828f8159bea36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33b4e9ba1aa275af013536287e43d321"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_control_1_1_control_action.html#a33b4e9ba1aa275af013536287e43d321">operator()</a> (T eventValue)=0</td></tr>
 <tr class="separator:a33b4e9ba1aa275af013536287e43d321"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab127e1d188c53854b58771a89866328c"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_control_1_1_control_action.html#ab127e1d188c53854b58771a89866328c">GetName</a> ()</td></tr>
-<tr class="separator:ab127e1d188c53854b58771a89866328c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84b70c7c7989f3657b4bb0f4c088101c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_control_1_1_control_action.html#a84b70c7c7989f3657b4bb0f4c088101c">GetListOrder</a> ()</td></tr>
-<tr class="separator:a84b70c7c7989f3657b4bb0f4c088101c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b7a3521ef3044ec3e1d62894413fa22"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_control_1_1_control_action.html#a1b7a3521ef3044ec3e1d62894413fa22">GetName</a> () const </td></tr>
+<tr class="separator:a1b7a3521ef3044ec3e1d62894413fa22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10e4514bb1aeaa351e35175e93005b36"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_control_1_1_control_action.html#a10e4514bb1aeaa351e35175e93005b36">GetListOrder</a> () const </td></tr>
+<tr class="separator:a10e4514bb1aeaa351e35175e93005b36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -80,7 +85,40 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a7fd5ec0a1a2f7d8bb4c3ad50ad463f1a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_control_1_1_control_action.html#a7fd5ec0a1a2f7d8bb4c3ad50ad463f1a">listOrder</a></td></tr>
 <tr class="separator:a7fd5ec0a1a2f7d8bb4c3ad50ad463f1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;class T&gt;<br/>
+class HoverRace::Control::ControlAction&lt; T &gt;</h3>
+
+<p>Abstract base class which allows us a simple reference to arbitrary functors of type ControlActionImpl (which bind a class via a template parameter). </p>
+<p>Unfortunately, this must use virtual functions to work correctly, which is not optimal, but is the best the language can do.</p>
+<p>To create a functor, derive the <a class="el" href="class_hover_race_1_1_control_1_1_control_action.html" title="Abstract base class which allows us a simple reference to arbitrary functors of type ControlActionImp...">ControlAction</a> class.</p>
+<dl class="section author"><dt>Author</dt><dd>Ryan Curtin </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="afcde2cab493a5704b46a510b701f17bb"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_hover_race_1_1_control_1_1_control_action.html">HoverRace::Control::ControlAction</a>&lt; T &gt;::<a class="el" href="class_hover_race_1_1_control_1_1_control_action.html">ControlAction</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="af1d61f79df4352da15cacd08bec57f92"></a>
 <div class="memitem">
 <div class="memproto">
@@ -143,7 +181,7 @@ template&lt;class T&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a84b70c7c7989f3657b4bb0f4c088101c"></a>
+<a class="anchor" id="a10e4514bb1aeaa351e35175e93005b36"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -156,7 +194,7 @@ template&lt;class T&gt; </div>
           <td class="memname">int <a class="el" href="class_hover_race_1_1_control_1_1_control_action.html">HoverRace::Control::ControlAction</a>&lt; T &gt;::GetListOrder </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -168,7 +206,7 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ab127e1d188c53854b58771a89866328c"></a>
+<a class="anchor" id="a1b7a3521ef3044ec3e1d62894413fa22"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -181,7 +219,7 @@ template&lt;class T&gt; </div>
           <td class="memname">const std::string&amp; <a class="el" href="class_hover_race_1_1_control_1_1_control_action.html">HoverRace::Control::ControlAction</a>&lt; T &gt;::GetName </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -217,7 +255,7 @@ template&lt;class T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_hover_race_1_1_control_1_1_look_back_action.html#a9b74e9f3e65b02d7f671d39be1d9df4d">HoverRace::Control::LookBackAction</a>, <a class="el" href="class_hover_race_1_1_control_1_1_brake_action.html#aeb7421c8780213b6c38098a41712b7a0">HoverRace::Control::BrakeAction</a>, <a class="el" href="class_hover_race_1_1_control_1_1_action.html#ada71e83d91c43477b6701d6439c458dc">HoverRace::Control::Action&lt; T, Val &gt;</a>, <a class="el" href="class_hover_race_1_1_control_1_1_change_item_action.html#a26d671ef1dd7b6476795b465d09835e9">HoverRace::Control::ChangeItemAction</a>, <a class="el" href="class_hover_race_1_1_control_1_1_powerup_action.html#a08395f769e8dbac16df24a7734283f94">HoverRace::Control::PowerupAction</a>, <a class="el" href="class_hover_race_1_1_control_1_1_jump_action.html#a3907cfa53002543307879db1319c03fb">HoverRace::Control::JumpAction</a>, <a class="el" href="class_hover_race_1_1_control_1_1_turn_right_action.html#af68baba4b4fd9599b36aa2b135f310de">HoverRace::Control::TurnRightAction</a>, <a class="el" href="class_hover_race_1_1_control_1_1_turn_left_action.html#a68c18cf0ab9851968f52c72febb90f8f">HoverRace::Control::TurnLeftAction</a>, <a class="el" href="class_hover_race_1_1_control_1_1_engine_action.html#a4becfd5b43e439b111fc2d61da07146b">HoverRace::Control::EngineAction</a>, <a class="el" href="class_hover_race_1_1_control_1_1_blank_action.html#adc0a582c84245d52c1f5a6668590380b">HoverRace::Control::BlankAction</a>, and <a class="el" href="class_hover_race_1_1_control_1_1_player_effect_action.html#a0b4c88b99a0000f9b651f0b6c3add07e">HoverRace::Control::PlayerEffectAction</a>.</p>
+<p>Implemented in <a class="el" href="class_hover_race_1_1_control_1_1_look_back_action.html#a9b74e9f3e65b02d7f671d39be1d9df4d">HoverRace::Control::LookBackAction</a>, <a class="el" href="class_hover_race_1_1_control_1_1_action.html#ada71e83d91c43477b6701d6439c458dc">HoverRace::Control::Action&lt; T, Val &gt;</a>, <a class="el" href="class_hover_race_1_1_control_1_1_brake_action.html#aeb7421c8780213b6c38098a41712b7a0">HoverRace::Control::BrakeAction</a>, <a class="el" href="class_hover_race_1_1_control_1_1_change_item_action.html#a26d671ef1dd7b6476795b465d09835e9">HoverRace::Control::ChangeItemAction</a>, <a class="el" href="class_hover_race_1_1_control_1_1_powerup_action.html#a08395f769e8dbac16df24a7734283f94">HoverRace::Control::PowerupAction</a>, <a class="el" href="class_hover_race_1_1_control_1_1_jump_action.html#a3907cfa53002543307879db1319c03fb">HoverRace::Control::JumpAction</a>, <a class="el" href="class_hover_race_1_1_control_1_1_turn_right_action.html#af68baba4b4fd9599b36aa2b135f310de">HoverRace::Control::TurnRightAction</a>, <a class="el" href="class_hover_race_1_1_control_1_1_turn_left_action.html#a68c18cf0ab9851968f52c72febb90f8f">HoverRace::Control::TurnLeftAction</a>, <a class="el" href="class_hover_race_1_1_control_1_1_blank_action.html#adc0a582c84245d52c1f5a6668590380b">HoverRace::Control::BlankAction</a>, <a class="el" href="class_hover_race_1_1_control_1_1_engine_action.html#a4becfd5b43e439b111fc2d61da07146b">HoverRace::Control::EngineAction</a>, and <a class="el" href="class_hover_race_1_1_control_1_1_player_effect_action.html#a0b4c88b99a0000f9b651f0b6c3add07e">HoverRace::Control::PlayerEffectAction</a>.</p>
 
 </div>
 </div>

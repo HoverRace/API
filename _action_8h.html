@@ -81,6 +81,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_hover_race_1_1_control_1_1_mouse_1_1_click.html">HoverRace::Control::Mouse::Click</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="namespace_hover_race_1_1_control_1_1_mouse.html">Mouse</a> click events.  <a href="struct_hover_race_1_1_control_1_1_mouse_1_1_click.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_hover_race_1_1_control_1_1_mouse_1_1_scroll.html">HoverRace::Control::Mouse::Scroll</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="namespace_hover_race_1_1_control_1_1_mouse.html">Mouse</a> scroll events.  <a href="struct_hover_race_1_1_control_1_1_mouse_1_1_scroll.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_control_1_1_action.html">HoverRace::Control::Action&lt; T, Val &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Actions are effectively signals that can be triggered by both the <a class="el" href="class_hover_race_1_1_control_1_1_input_event_controller.html" title="Translates input events into actions. ">InputEventController</a> and other things such as UI buttons.  <a href="class_hover_race_1_1_control_1_1_action.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -103,33 +106,27 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ab2a72289f61c4e8f013be018c83cfd88"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
-boost::signals2::signal&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_control.html#ab2a72289f61c4e8f013be018c83cfd88">HoverRace::Control::voidSignal_t</a></td></tr>
-<tr class="memdesc:ab2a72289f61c4e8f013be018c83cfd88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signals which are self-contained (no payload).  <a href="#ab2a72289f61c4e8f013be018c83cfd88">More...</a><br/></td></tr>
-<tr class="separator:ab2a72289f61c4e8f013be018c83cfd88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2daddb41a4bf897e4220efab4b50dcc8"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
-boost::signals2::signal&lt; void(int)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_control.html#a2daddb41a4bf897e4220efab4b50dcc8">HoverRace::Control::valueSignal_t</a></td></tr>
-<tr class="memdesc:a2daddb41a4bf897e4220efab4b50dcc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signals which have a single (action-dependent) payload.  <a href="#a2daddb41a4bf897e4220efab4b50dcc8">More...</a><br/></td></tr>
-<tr class="separator:a2daddb41a4bf897e4220efab4b50dcc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8bc3ced7069174641edb23fbc8663d5b"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
-boost::signals2::signal&lt; void(const <br class="typebreak"/>
-std::string &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_control.html#a8bc3ced7069174641edb23fbc8663d5b">HoverRace::Control::stringSignal_t</a></td></tr>
-<tr class="memdesc:a8bc3ced7069174641edb23fbc8663d5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signals which have a single string payload.  <a href="#a8bc3ced7069174641edb23fbc8663d5b">More...</a><br/></td></tr>
-<tr class="separator:a8bc3ced7069174641edb23fbc8663d5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb933994abfed1ce4ae1f409479a00d5"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
-boost::signals2::signal&lt; void(TextControl::key_t)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_control.html#afb933994abfed1ce4ae1f409479a00d5">HoverRace::Control::textControlSignal_t</a></td></tr>
-<tr class="memdesc:afb933994abfed1ce4ae1f409479a00d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signals for text input control.  <a href="#afb933994abfed1ce4ae1f409479a00d5">More...</a><br/></td></tr>
-<tr class="separator:afb933994abfed1ce4ae1f409479a00d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3769268fa3a0849b1f08289852a97556"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
-boost::signals2::signal&lt; void(const <br class="typebreak"/>
-Vec2 &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_control.html#a3769268fa3a0849b1f08289852a97556">HoverRace::Control::vec2Signal_t</a></td></tr>
-<tr class="memdesc:a3769268fa3a0849b1f08289852a97556"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signals with have a <a class="el" href="struct_hover_race_1_1_vec2.html">Vec2</a> payload.  <a href="#a3769268fa3a0849b1f08289852a97556">More...</a><br/></td></tr>
-<tr class="separator:a3769268fa3a0849b1f08289852a97556"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14298c108f3d25a4c45e35651b5abed4"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
-boost::signals2::signal&lt; void(const <br class="typebreak"/>
-Mouse::Click &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_control.html#a14298c108f3d25a4c45e35651b5abed4">HoverRace::Control::mouseClickSignal_t</a></td></tr>
-<tr class="memdesc:a14298c108f3d25a4c45e35651b5abed4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signals for mouse clicks.  <a href="#a14298c108f3d25a4c45e35651b5abed4">More...</a><br/></td></tr>
-<tr class="separator:a14298c108f3d25a4c45e35651b5abed4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd1ebf6417bb8d71f3e9e91d27f873e1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_control.html#abd1ebf6417bb8d71f3e9e91d27f873e1">HoverRace::Control::voidSignal_t</a> = boost::signals2::signal&lt; void()&gt;</td></tr>
+<tr class="memdesc:abd1ebf6417bb8d71f3e9e91d27f873e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signals which are self-contained (no payload).  <a href="#abd1ebf6417bb8d71f3e9e91d27f873e1">More...</a><br/></td></tr>
+<tr class="separator:abd1ebf6417bb8d71f3e9e91d27f873e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24a543537824cd2e59aca00cf432f71e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_control.html#a24a543537824cd2e59aca00cf432f71e">HoverRace::Control::valueSignal_t</a> = boost::signals2::signal&lt; void(int)&gt;</td></tr>
+<tr class="memdesc:a24a543537824cd2e59aca00cf432f71e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signals which have a single (action-dependent) payload.  <a href="#a24a543537824cd2e59aca00cf432f71e">More...</a><br/></td></tr>
+<tr class="separator:a24a543537824cd2e59aca00cf432f71e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34355b4eaac7f11fd9166c9515321af2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_control.html#a34355b4eaac7f11fd9166c9515321af2">HoverRace::Control::stringSignal_t</a> = boost::signals2::signal&lt; void(const std::string &amp;)&gt;</td></tr>
+<tr class="memdesc:a34355b4eaac7f11fd9166c9515321af2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signals which have a single string payload.  <a href="#a34355b4eaac7f11fd9166c9515321af2">More...</a><br/></td></tr>
+<tr class="separator:a34355b4eaac7f11fd9166c9515321af2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7382952bd6fbaa3cfae57d36f9e3697"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_control.html#ab7382952bd6fbaa3cfae57d36f9e3697">HoverRace::Control::textControlSignal_t</a> = boost::signals2::signal&lt; void(TextControl::key_t)&gt;</td></tr>
+<tr class="memdesc:ab7382952bd6fbaa3cfae57d36f9e3697"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signals for text input control.  <a href="#ab7382952bd6fbaa3cfae57d36f9e3697">More...</a><br/></td></tr>
+<tr class="separator:ab7382952bd6fbaa3cfae57d36f9e3697"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8707895440d777d138eadf42992c1aa4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_control.html#a8707895440d777d138eadf42992c1aa4">HoverRace::Control::vec2Signal_t</a> = boost::signals2::signal&lt; void(const Vec2 &amp;)&gt;</td></tr>
+<tr class="memdesc:a8707895440d777d138eadf42992c1aa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signals which have a <a class="el" href="struct_hover_race_1_1_vec2.html">Vec2</a> payload.  <a href="#a8707895440d777d138eadf42992c1aa4">More...</a><br/></td></tr>
+<tr class="separator:a8707895440d777d138eadf42992c1aa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af17c91aff2c46c1b8c9df29edfe36266"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_control.html#af17c91aff2c46c1b8c9df29edfe36266">HoverRace::Control::mouseClickSignal_t</a> = boost::signals2::signal&lt; void(const Mouse::Click &amp;)&gt;</td></tr>
+<tr class="memdesc:af17c91aff2c46c1b8c9df29edfe36266"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signals for mouse clicks.  <a href="#af17c91aff2c46c1b8c9df29edfe36266">More...</a><br/></td></tr>
+<tr class="separator:af17c91aff2c46c1b8c9df29edfe36266"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2892760d9ac7e3cf77415b3aa188605e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_control.html#a2892760d9ac7e3cf77415b3aa188605e">HoverRace::Control::mouseScrollSignal_t</a> = boost::signals2::signal&lt; void(const Mouse::Scroll &amp;)&gt;</td></tr>
+<tr class="memdesc:a2892760d9ac7e3cf77415b3aa188605e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signals for mouse scrolling.  <a href="#a2892760d9ac7e3cf77415b3aa188605e">More...</a><br/></td></tr>
+<tr class="separator:a2892760d9ac7e3cf77415b3aa188605e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -161,9 +158,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a1ddb6e0b1e2a96daf4bf012d725e7adb"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
 <tr class="memitem:a1ddb6e0b1e2a96daf4bf012d725e7adb"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_control.html#a1ddb6e0b1e2a96daf4bf012d725e7adb">HoverRace::Control::PerformAction&lt; valueSignal_t, int &gt;</a> (const valueSignal_t &amp;signal, int value)</td></tr>
 <tr class="separator:a1ddb6e0b1e2a96daf4bf012d725e7adb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a367d167db951c6486b233b6e7fc4bcf7"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
-<tr class="memitem:a367d167db951c6486b233b6e7fc4bcf7"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_control.html#a367d167db951c6486b233b6e7fc4bcf7">HoverRace::Control::PerformAction&lt; stringSignal_t, const std::string &amp; &gt;</a> (const stringSignal_t &amp;signal, const std::string &amp;s)</td></tr>
-<tr class="separator:a367d167db951c6486b233b6e7fc4bcf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a36b4402f4b588b79c3dab05b0595dc35"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
 <tr class="memitem:a36b4402f4b588b79c3dab05b0595dc35"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_control.html#a36b4402f4b588b79c3dab05b0595dc35">HoverRace::Control::PerformAction&lt; textControlSignal_t, TextControl::key_t &gt;</a> (const textControlSignal_t &amp;signal, TextControl::key_t key)</td></tr>
 <tr class="separator:a36b4402f4b588b79c3dab05b0595dc35"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -173,6 +167,9 @@ Functions</h2></td></tr>
 <tr class="memitem:af4ab8dc7f3c0651c35a150e296d6388d"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
 <tr class="memitem:af4ab8dc7f3c0651c35a150e296d6388d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_control.html#af4ab8dc7f3c0651c35a150e296d6388d">HoverRace::Control::PerformAction&lt; mouseClickSignal_t, const Mouse::Click &amp; &gt;</a> (const mouseClickSignal_t &amp;signal, const Mouse::Click &amp;vec)</td></tr>
 <tr class="separator:af4ab8dc7f3c0651c35a150e296d6388d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ff3892ec93dfa2de6e73053bad38b8a"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:a7ff3892ec93dfa2de6e73053bad38b8a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_control.html#a7ff3892ec93dfa2de6e73053bad38b8a">HoverRace::Control::PerformAction&lt; mouseScrollSignal_t, const Mouse::Scroll &amp; &gt;</a> (const mouseScrollSignal_t &amp;signal, const Mouse::Scroll &amp;scroll)</td></tr>
+<tr class="separator:a7ff3892ec93dfa2de6e73053bad38b8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="a92ab9b5ccb38279197015ee3f200757a"></a>

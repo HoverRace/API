@@ -51,6 +51,7 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
 <a href="class_hover_race_1_1_main_character_1_1_main_character_renderer-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">HoverRace::MainCharacter::MainCharacterRenderer Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -68,10 +69,10 @@ Inheritance diagram for HoverRace::MainCharacter::MainCharacterRenderer:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a53a25602e0f4d300a9dc2fe1e3d07ee6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_main_character_1_1_main_character_renderer.html#a53a25602e0f4d300a9dc2fe1e3d07ee6">MainCharacterRenderer</a> (const <a class="el" href="class_hover_race_1_1_util_1_1_object_from_factory_id.html">Util::ObjectFromFactoryId</a> &amp;pId)</td></tr>
 <tr class="separator:a53a25602e0f4d300a9dc2fe1e3d07ee6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e00c83b8fdc303860372fa18ac27864"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_main_character_1_1_main_character_renderer.html#a5e00c83b8fdc303860372fa18ac27864">~MainCharacterRenderer</a> ()</td></tr>
-<tr class="separator:a5e00c83b8fdc303860372fa18ac27864"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac02a2b8aa6af4b93bdc7d6da33010e69"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_main_character_1_1_main_character_renderer.html#ac02a2b8aa6af4b93bdc7d6da33010e69">Render</a> (<a class="el" href="class_hover_race_1_1_video_services_1_1_viewport3_d.html">VideoServices::Viewport3D</a> *pDest, const <a class="el" href="class_m_r__3_d_coordinate.html">MR_3DCoordinate</a> &amp;pPosition, <a class="el" href="_world_coordinates_8h.html#a41932ac1a511e3a805f85bae090c5ebd">MR_Angle</a> pOrientation, BOOL pMotorOn, int pHoverId, int pModel)=0</td></tr>
-<tr class="separator:ac02a2b8aa6af4b93bdc7d6da33010e69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8604740125254c21fc6c5acd24a7e75"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_main_character_1_1_main_character_renderer.html#ac8604740125254c21fc6c5acd24a7e75">~MainCharacterRenderer</a> ()</td></tr>
+<tr class="separator:ac8604740125254c21fc6c5acd24a7e75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bc1b2caebe078c5cb450cf25d7956b5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_main_character_1_1_main_character_renderer.html#a3bc1b2caebe078c5cb450cf25d7956b5">Render</a> (<a class="el" href="class_hover_race_1_1_video_services_1_1_viewport3_d.html">VideoServices::Viewport3D</a> *pDest, const <a class="el" href="class_m_r__3_d_coordinate.html">MR_3DCoordinate</a> &amp;pPosition, <a class="el" href="_world_coordinates_8h.html#a41932ac1a511e3a805f85bae090c5ebd">MR_Angle</a> pOrientation, BOOL pMotorOn, int pHoverId, unsigned int pModel)=0</td></tr>
+<tr class="separator:a3bc1b2caebe078c5cb450cf25d7956b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d12b69cbc41a02e9d1517181098fbbb"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_hover_race_1_1_video_services_1_1_short_sound.html">VideoServices::ShortSound</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_main_character_1_1_main_character_renderer.html#a4d12b69cbc41a02e9d1517181098fbbb">GetLineCrossingSound</a> ()=0</td></tr>
 <tr class="separator:a4d12b69cbc41a02e9d1517181098fbbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab38963af523cdfe2b68b25e1d35bc5cc"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_hover_race_1_1_video_services_1_1_short_sound.html">VideoServices::ShortSound</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_main_character_1_1_main_character_renderer.html#ab38963af523cdfe2b68b25e1d35bc5cc">GetStartSound</a> ()=0</td></tr>
@@ -108,12 +109,38 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a63b50668e1e3e26b104790f8e42af384 inherit pub_methods_class_hover_race_1_1_util_1_1_object_from_factory"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_util_1_1_object_from_factory.html#a63b50668e1e3e26b104790f8e42af384">Serialize</a> (<a class="el" href="class_hover_race_1_1_parcel_1_1_obj_stream.html">HoverRace::Parcel::ObjStream</a> &amp;pArchive)</td></tr>
 <tr class="separator:a63b50668e1e3e26b104790f8e42af384 inherit pub_methods_class_hover_race_1_1_util_1_1_object_from_factory"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:a3ebf7486d1da98fd7103c6436772a376"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_main_character_1_1_main_character_renderer.html#a3ebf7486d1da98fd7103c6436772a376">SUPER</a> = <a class="el" href="class_hover_race_1_1_util_1_1_object_from_factory.html">Util::ObjectFromFactory</a></td></tr>
+<tr class="separator:a3ebf7486d1da98fd7103c6436772a376"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_static_methods_class_hover_race_1_1_util_1_1_object_from_factory"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_class_hover_race_1_1_util_1_1_object_from_factory')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="class_hover_race_1_1_util_1_1_object_from_factory.html">HoverRace::Util::ObjectFromFactory</a></td></tr>
 <tr class="memitem:abfac85ae9c8df44a825f825c740a203e inherit pub_static_methods_class_hover_race_1_1_util_1_1_object_from_factory"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_util_1_1_object_from_factory.html#abfac85ae9c8df44a825f825c740a203e">SerializePtr</a> (<a class="el" href="class_hover_race_1_1_parcel_1_1_obj_stream.html">HoverRace::Parcel::ObjStream</a> &amp;pArchive, <a class="el" href="class_hover_race_1_1_util_1_1_object_from_factory.html">ObjectFromFactory</a> *&amp;pPtr)</td></tr>
 <tr class="separator:abfac85ae9c8df44a825f825c740a203e inherit pub_static_methods_class_hover_race_1_1_util_1_1_object_from_factory"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a class="anchor" id="a3ebf7486d1da98fd7103c6436772a376"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="class_hover_race_1_1_main_character_1_1_main_character_renderer.html#a3ebf7486d1da98fd7103c6436772a376">HoverRace::MainCharacter::MainCharacterRenderer::SUPER</a> =  <a class="el" href="class_hover_race_1_1_util_1_1_object_from_factory.html">Util::ObjectFromFactory</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a53a25602e0f4d300a9dc2fe1e3d07ee6"></a>
 <div class="memitem">
@@ -131,17 +158,25 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a5e00c83b8fdc303860372fa18ac27864"></a>
+<a class="anchor" id="ac8604740125254c21fc6c5acd24a7e75"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">HoverRace::MainCharacter::MainCharacterRenderer::~MainCharacterRenderer </td>
+          <td class="memname">virtual HoverRace::MainCharacter::MainCharacterRenderer::~MainCharacterRenderer </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -168,7 +203,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_hover_race_1_1_obj_fac1_1_1_hover_render.html#a7c7dfc4b33f8ec74f500ed3e685517ca">HoverRace::ObjFac1::HoverRender</a>.</p>
+<p>Implemented in <a class="el" href="class_hover_race_1_1_obj_fac1_1_1_hover_render.html#ac8c72130ceb09f2695f6fb9b4e468430">HoverRace::ObjFac1::HoverRender</a>.</p>
 
 </div>
 </div>
@@ -193,7 +228,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_hover_race_1_1_obj_fac1_1_1_hover_render.html#a7a9762e9fb59c5e578e7a4160000dd82">HoverRace::ObjFac1::HoverRender</a>.</p>
+<p>Implemented in <a class="el" href="class_hover_race_1_1_obj_fac1_1_1_hover_render.html#a3c179cf2c76b1b973a60e0bb36d034c2">HoverRace::ObjFac1::HoverRender</a>.</p>
 
 </div>
 </div>
@@ -218,7 +253,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_hover_race_1_1_obj_fac1_1_1_hover_render.html#ac0b9de68263044faab38a34011e19b9f">HoverRace::ObjFac1::HoverRender</a>.</p>
+<p>Implemented in <a class="el" href="class_hover_race_1_1_obj_fac1_1_1_hover_render.html#a631e1ad9e481ee0cbd3afe63c65cedd0">HoverRace::ObjFac1::HoverRender</a>.</p>
 
 </div>
 </div>
@@ -243,7 +278,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_hover_race_1_1_obj_fac1_1_1_hover_render.html#aecd7a106e24e9aca2886914d65cf1f1b">HoverRace::ObjFac1::HoverRender</a>.</p>
+<p>Implemented in <a class="el" href="class_hover_race_1_1_obj_fac1_1_1_hover_render.html#a53ee46b5dab835083cdf6c5b358f59f6">HoverRace::ObjFac1::HoverRender</a>.</p>
 
 </div>
 </div>
@@ -268,7 +303,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_hover_race_1_1_obj_fac1_1_1_hover_render.html#a36664e66f25ec81a72b10cc7d57c1ed7">HoverRace::ObjFac1::HoverRender</a>.</p>
+<p>Implemented in <a class="el" href="class_hover_race_1_1_obj_fac1_1_1_hover_render.html#a78076d847b4d5b278c6a2feff9922af3">HoverRace::ObjFac1::HoverRender</a>.</p>
 
 </div>
 </div>
@@ -293,7 +328,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_hover_race_1_1_obj_fac1_1_1_hover_render.html#ae1c49257f76c019cae55a8aec0125db3">HoverRace::ObjFac1::HoverRender</a>.</p>
+<p>Implemented in <a class="el" href="class_hover_race_1_1_obj_fac1_1_1_hover_render.html#aba802f55306df40cc1ff8bb9f4eb9d56">HoverRace::ObjFac1::HoverRender</a>.</p>
 
 </div>
 </div>
@@ -318,7 +353,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_hover_race_1_1_obj_fac1_1_1_hover_render.html#ac4731c22d9f742072b78c0facdeb4041">HoverRace::ObjFac1::HoverRender</a>.</p>
+<p>Implemented in <a class="el" href="class_hover_race_1_1_obj_fac1_1_1_hover_render.html#a47b71b77c9fc5f4a9272f042200f6a40">HoverRace::ObjFac1::HoverRender</a>.</p>
 
 </div>
 </div>
@@ -343,7 +378,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_hover_race_1_1_obj_fac1_1_1_hover_render.html#a5cc55ce7dab1bf02b23c3ed4efc35abc">HoverRace::ObjFac1::HoverRender</a>.</p>
+<p>Implemented in <a class="el" href="class_hover_race_1_1_obj_fac1_1_1_hover_render.html#ac2b0bdc4836cedb9b1efae9c706a4ad2">HoverRace::ObjFac1::HoverRender</a>.</p>
 
 </div>
 </div>
@@ -368,7 +403,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_hover_race_1_1_obj_fac1_1_1_hover_render.html#a009225312b7552290d5815a30b78e62e">HoverRace::ObjFac1::HoverRender</a>.</p>
+<p>Implemented in <a class="el" href="class_hover_race_1_1_obj_fac1_1_1_hover_render.html#ab5f8462b8efe275ca5b89589235665dc">HoverRace::ObjFac1::HoverRender</a>.</p>
 
 </div>
 </div>
@@ -393,7 +428,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_hover_race_1_1_obj_fac1_1_1_hover_render.html#a7aa111e35f655e7ae06ce798de0faaff">HoverRace::ObjFac1::HoverRender</a>.</p>
+<p>Implemented in <a class="el" href="class_hover_race_1_1_obj_fac1_1_1_hover_render.html#a6699cc020fee332a9ba4b3bfd2d53d60">HoverRace::ObjFac1::HoverRender</a>.</p>
 
 </div>
 </div>
@@ -418,7 +453,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_hover_race_1_1_obj_fac1_1_1_hover_render.html#a0a3bd62de8c4ec424721bbe9b4395da3">HoverRace::ObjFac1::HoverRender</a>.</p>
+<p>Implemented in <a class="el" href="class_hover_race_1_1_obj_fac1_1_1_hover_render.html#a94419794b2b23ca0f20afce24101a100">HoverRace::ObjFac1::HoverRender</a>.</p>
 
 </div>
 </div>
@@ -443,11 +478,11 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_hover_race_1_1_obj_fac1_1_1_hover_render.html#aeca6e6bf4cf882ec287df19fdfc4af9c">HoverRace::ObjFac1::HoverRender</a>.</p>
+<p>Implemented in <a class="el" href="class_hover_race_1_1_obj_fac1_1_1_hover_render.html#a81105bda2d5a71a1426b2e0003f92ede">HoverRace::ObjFac1::HoverRender</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ac02a2b8aa6af4b93bdc7d6da33010e69"></a>
+<a class="anchor" id="a3bc1b2caebe078c5cb450cf25d7956b5"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -487,7 +522,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><em>pModel</em>&#160;</td>
         </tr>
         <tr>
@@ -503,7 +538,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_hover_race_1_1_obj_fac1_1_1_hover_render.html#a06cc2d87b934d226325a6e902a2997e1">HoverRace::ObjFac1::HoverRender</a>.</p>
+<p>Implemented in <a class="el" href="class_hover_race_1_1_obj_fac1_1_1_hover_render.html#a32e0fa13123ceaa30f41ef6c9b9561a4">HoverRace::ObjFac1::HoverRender</a>.</p>
 
 </div>
 </div>

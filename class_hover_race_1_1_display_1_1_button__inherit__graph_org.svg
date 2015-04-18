@@ -94,10 +94,10 @@
 </g>
 <!-- Node8 -->
 <g id="node15" class="node"><title>Node8</title>
-<a xlink:href="class_hover_race_1_1_display_1_1_checkbox.html" target="_top" xlink:title="A checkbox widget. ">
+<a xlink:href="class_hover_race_1_1_display_1_1_base_radio_button.html" target="_top" xlink:title="Base class for radio buttons. ">
 <polygon fill="none" stroke="black" points="756.5,-100 756.5,-132 857.5,-132 857.5,-100 756.5,-100"/>
 <text text-anchor="start" x="764.5" y="-119" font-family="FreeSans" font-size="10.00">HoverRace::Display</text>
-<text text-anchor="middle" x="807" y="-107" font-family="FreeSans" font-size="10.00">::Checkbox</text>
+<text text-anchor="middle" x="807" y="-107" font-family="FreeSans" font-size="10.00">::BaseRadioButton</text>
 </a>
 </g>
 <!-- Node7&#45;&gt;Node8 -->
@@ -105,25 +105,25 @@
 <path fill="none" stroke="midnightblue" d="M696.57,-83.7104C716.127,-89.4289 737.591,-95.7049 756.353,-101.191"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="697.423,-80.3135 686.843,-80.8663 695.458,-87.0322 697.423,-80.3135"/>
 </g>
-<!-- Node9 -->
-<g id="node17" class="node"><title>Node9</title>
-<a xlink:href="class_hover_race_1_1_display_1_1_pick_list_item.html" target="_top" xlink:title="A single list item. ">
+<!-- Node10 -->
+<g id="node19" class="node"><title>Node10</title>
+<a xlink:href="class_hover_race_1_1_display_1_1_checkbox.html" target="_top" xlink:title="A checkbox widget. ">
 <polygon fill="none" stroke="black" points="756.5,-50 756.5,-82 857.5,-82 857.5,-50 756.5,-50"/>
 <text text-anchor="start" x="764.5" y="-69" font-family="FreeSans" font-size="10.00">HoverRace::Display</text>
-<text text-anchor="middle" x="807" y="-57" font-family="FreeSans" font-size="10.00">::PickListItem</text>
+<text text-anchor="middle" x="807" y="-57" font-family="FreeSans" font-size="10.00">::Checkbox</text>
 </a>
 </g>
-<!-- Node7&#45;&gt;Node9 -->
-<g id="edge16" class="edge"><title>Node7&#45;&gt;Node9</title>
+<!-- Node7&#45;&gt;Node10 -->
+<g id="edge18" class="edge"><title>Node7&#45;&gt;Node10</title>
 <path fill="none" stroke="midnightblue" d="M697.106,-66C716.519,-66 737.762,-66 756.353,-66"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="696.843,-62.5001 686.843,-66 696.843,-69.5001 696.843,-62.5001"/>
 </g>
 <!-- Node11 -->
 <g id="node21" class="node"><title>Node11</title>
-<a xlink:href="class_hover_race_1_1_display_1_1_radio_button_base.html" target="_top" xlink:title="Base class for radio buttons. ">
+<a xlink:href="class_hover_race_1_1_display_1_1_pick_list_item.html" target="_top" xlink:title="A single list item. ">
 <polygon fill="none" stroke="black" points="756.5,-0 756.5,-32 857.5,-32 857.5,-0 756.5,-0"/>
 <text text-anchor="start" x="764.5" y="-19" font-family="FreeSans" font-size="10.00">HoverRace::Display</text>
-<text text-anchor="middle" x="807" y="-7" font-family="FreeSans" font-size="10.00">::RadioButtonBase</text>
+<text text-anchor="middle" x="807" y="-7" font-family="FreeSans" font-size="10.00">::PickListItem</text>
 </a>
 </g>
 <!-- Node7&#45;&gt;Node11 -->
@@ -131,30 +131,30 @@
 <path fill="none" stroke="midnightblue" d="M696.57,-48.2896C716.127,-42.5711 737.591,-36.2951 756.353,-30.809"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="695.458,-44.9678 686.843,-51.1337 697.423,-51.6865 695.458,-44.9678"/>
 </g>
-<!-- Node10 -->
-<g id="node19" class="node"><title>Node10</title>
-<a xlink:href="class_hover_race_1_1_display_1_1_pick_list_1_1_default_item.html" target="_top" xlink:title="HoverRace::Display\l::PickList\&lt; T \&gt;::DefaultItem">
-<polygon fill="none" stroke="black" points="894,-50 894,-82 1028,-82 1028,-50 894,-50"/>
-<text text-anchor="start" x="902" y="-69" font-family="FreeSans" font-size="10.00">HoverRace::Display</text>
-<text text-anchor="middle" x="961" y="-57" font-family="FreeSans" font-size="10.00">::PickList&lt; T &gt;::DefaultItem</text>
+<!-- Node9 -->
+<g id="node17" class="node"><title>Node9</title>
+<a xlink:href="class_hover_race_1_1_display_1_1_radio_button.html" target="_top" xlink:title="A single radio button. ">
+<polygon fill="none" stroke="black" points="910.5,-100 910.5,-132 1011.5,-132 1011.5,-100 910.5,-100"/>
+<text text-anchor="start" x="918.5" y="-119" font-family="FreeSans" font-size="10.00">HoverRace::Display</text>
+<text text-anchor="middle" x="961" y="-107" font-family="FreeSans" font-size="10.00">::RadioButton&lt; T &gt;</text>
 </a>
 </g>
-<!-- Node9&#45;&gt;Node10 -->
-<g id="edge18" class="edge"><title>Node9&#45;&gt;Node10</title>
-<path fill="none" stroke="midnightblue" d="M868.075,-66C876.591,-66 885.378,-66 893.996,-66"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="867.852,-62.5001 857.852,-66 867.852,-69.5001 867.852,-62.5001"/>
+<!-- Node8&#45;&gt;Node9 -->
+<g id="edge16" class="edge"><title>Node8&#45;&gt;Node9</title>
+<path fill="none" stroke="midnightblue" d="M867.95,-116C882.038,-116 896.877,-116 910.464,-116"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="867.852,-112.5 857.852,-116 867.852,-119.5 867.852,-112.5"/>
 </g>
 <!-- Node12 -->
 <g id="node23" class="node"><title>Node12</title>
-<a xlink:href="class_hover_race_1_1_display_1_1_radio_button.html" target="_top" xlink:title="A single radio button. ">
-<polygon fill="none" stroke="black" points="910.5,-0 910.5,-32 1011.5,-32 1011.5,-0 910.5,-0"/>
-<text text-anchor="start" x="918.5" y="-19" font-family="FreeSans" font-size="10.00">HoverRace::Display</text>
-<text text-anchor="middle" x="961" y="-7" font-family="FreeSans" font-size="10.00">::RadioButton&lt; T &gt;</text>
+<a xlink:href="class_hover_race_1_1_display_1_1_pick_list_1_1_default_item.html" target="_top" xlink:title="HoverRace::Display\l::PickList\&lt; T \&gt;::DefaultItem">
+<polygon fill="none" stroke="black" points="894,-0 894,-32 1028,-32 1028,-0 894,-0"/>
+<text text-anchor="start" x="902" y="-19" font-family="FreeSans" font-size="10.00">HoverRace::Display</text>
+<text text-anchor="middle" x="961" y="-7" font-family="FreeSans" font-size="10.00">::PickList&lt; T &gt;::DefaultItem</text>
 </a>
 </g>
 <!-- Node11&#45;&gt;Node12 -->
 <g id="edge22" class="edge"><title>Node11&#45;&gt;Node12</title>
-<path fill="none" stroke="midnightblue" d="M867.95,-16C882.038,-16 896.877,-16 910.464,-16"/>
+<path fill="none" stroke="midnightblue" d="M868.075,-16C876.591,-16 885.378,-16 893.996,-16"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="867.852,-12.5001 857.852,-16 867.852,-19.5001 867.852,-12.5001"/>
 </g>
 </g>
