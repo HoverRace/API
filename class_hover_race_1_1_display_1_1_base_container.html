@@ -64,7 +64,7 @@
 </div><!--header-->
 <div class="contents">
 
-<p>An invisible container for other UI widgets.  
+<p>Base class for widgets that contain other widgets.  
  <a href="class_hover_race_1_1_display_1_1_base_container.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_base_container_8h_source.html">BaseContainer.h</a>&gt;</code></p>
@@ -349,7 +349,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a05aa5afe625ba3a4ba72c352b8197296 inherit pub_types_class_hover_race_1_1_display_1_1_ui_view_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>An invisible container for other UI widgets. </p>
+<div class="textblock"><p>Base class for widgets that contain other widgets. </p>
+<p>Most containers differ only in how their child widgets are managed (i.e., layout, visibility, navigation, etc.) but share a common view and, beneath it all, just need a way to keep track of the child widgets and propagate events.</p>
+<p>The majority of the member functions regarding adding, removing, or otherwise manipulating the list of child widgets are marked as protected, since each subclass will want to control what operations are allowed and what the side-effects are. For example, <a class="el" href="class_hover_race_1_1_display_1_1_container.html" title="An invisible container for other UI widgets. ">Container</a> simply redefines the functions as public, while <a class="el" href="class_hover_race_1_1_display_1_1_flex_grid.html" title="A container that arranges components into a grid that is automatically sized to the contents...">FlexGrid</a> requires children to be placed into cells in the grid, while <a class="el" href="class_hover_race_1_1_display_1_1_pick_list.html" title="Scrollable list of selectable items. ">PickList</a> treats child widgets as an implementation detail. All of them share the same view.</p>
 <dl class="section author"><dt>Author</dt><dd>Michael Imamura </dd></dl>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="aff5cbd5b34c38aa416da21cf50518e54"></a>
@@ -1056,6 +1058,8 @@ template&lt;class T , class... Args&gt; </div>
 </div><div class="memdoc">
 
 <p>Reimplemented from <a class="el" href="class_hover_race_1_1_display_1_1_ui_view_model.html#a4b1b37fa5be5f82ae6c19d10126454dd">HoverRace::Display::UiViewModel</a>.</p>
+
+<p>Reimplemented in <a class="el" href="class_hover_race_1_1_display_1_1_base_pick_list.html#a74cb9d3ff70dec4159908f07bc8094a7">HoverRace::Display::BasePickList</a>.</p>
 
 </div>
 </div>

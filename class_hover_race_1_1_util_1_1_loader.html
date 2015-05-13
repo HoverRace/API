@@ -67,9 +67,8 @@
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a526d20ea5b1492a4ac3fd8bbf64fe8ee"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
-boost::signals2::signal&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_util_1_1_loader.html#a526d20ea5b1492a4ac3fd8bbf64fe8ee">finishedLoadingSignal_t</a></td></tr>
-<tr class="separator:a526d20ea5b1492a4ac3fd8bbf64fe8ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae62709fa0cf4d6601cd515a16b7c3631"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_util_1_1_loader.html#ae62709fa0cf4d6601cd515a16b7c3631">finishedLoadingSignal_t</a> = boost::signals2::signal&lt; void()&gt;</td></tr>
+<tr class="separator:ae62709fa0cf4d6601cd515a16b7c3631"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -79,7 +78,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a57a2b6cbba9e535479bcf2f466ce8ecc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21600f0d92f38ebee94a860c3c4847c9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_util_1_1_loader.html#a21600f0d92f38ebee94a860c3c4847c9">IsEmpty</a> () const </td></tr>
 <tr class="separator:a21600f0d92f38ebee94a860c3c4847c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeebc74347b6b97d02688fd3055a9dc5a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_util_1_1_loader.html#a526d20ea5b1492a4ac3fd8bbf64fe8ee">finishedLoadingSignal_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_util_1_1_loader.html#aeebc74347b6b97d02688fd3055a9dc5a">GetFinishedLoadingSignal</a> ()</td></tr>
+<tr class="memitem:aeebc74347b6b97d02688fd3055a9dc5a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_util_1_1_loader.html#ae62709fa0cf4d6601cd515a16b7c3631">finishedLoadingSignal_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_util_1_1_loader.html#aeebc74347b6b97d02688fd3055a9dc5a">GetFinishedLoadingSignal</a> ()</td></tr>
 <tr class="memdesc:aeebc74347b6b97d02688fd3055a9dc5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fired when all resources have been loaded and the loading scene is shutting down.  <a href="#aeebc74347b6b97d02688fd3055a9dc5a">More...</a><br/></td></tr>
 <tr class="separator:aeebc74347b6b97d02688fd3055a9dc5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab01ee0bc3db14adc35d40a24ddd42430"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_util_1_1_loader.html#ab01ee0bc3db14adc35d40a24ddd42430">FireFinishedLoadingSignal</a> ()</td></tr>
@@ -98,34 +97,33 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
 Private Types</h2></td></tr>
-<tr class="memitem:a5649bcfb102514c62a0a4c4069e6f8d5"><td class="memItemLeft" align="right" valign="top">typedef std::pair&lt; std::string, <br class="typebreak"/>
-std::function&lt; void()&gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_util_1_1_loader.html#a5649bcfb102514c62a0a4c4069e6f8d5">loader_t</a></td></tr>
-<tr class="separator:a5649bcfb102514c62a0a4c4069e6f8d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb199be79a8a1c936a50538d8835bff9"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_util_1_1_loader.html#acb199be79a8a1c936a50538d8835bff9">loader_t</a> = std::pair&lt; std::string, std::function&lt; void()&gt;&gt;</td></tr>
+<tr class="separator:acb199be79a8a1c936a50538d8835bff9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a23203d12dd7fa62e0165d5b602236adc"><td class="memItemLeft" align="right" valign="top">std::queue&lt; <a class="el" href="class_hover_race_1_1_util_1_1_loader.html#a5649bcfb102514c62a0a4c4069e6f8d5">loader_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_util_1_1_loader.html#a23203d12dd7fa62e0165d5b602236adc">loaders</a></td></tr>
+<tr class="memitem:a23203d12dd7fa62e0165d5b602236adc"><td class="memItemLeft" align="right" valign="top">std::queue&lt; <a class="el" href="class_hover_race_1_1_util_1_1_loader.html#acb199be79a8a1c936a50538d8835bff9">loader_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_util_1_1_loader.html#a23203d12dd7fa62e0165d5b602236adc">loaders</a></td></tr>
 <tr class="separator:a23203d12dd7fa62e0165d5b602236adc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a1ff3c29d27594777b492a1fe582be1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_util_1_1_loader.html#a526d20ea5b1492a4ac3fd8bbf64fe8ee">finishedLoadingSignal_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_util_1_1_loader.html#a7a1ff3c29d27594777b492a1fe582be1">finishedLoadingSignal</a></td></tr>
+<tr class="memitem:a7a1ff3c29d27594777b492a1fe582be1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_util_1_1_loader.html#ae62709fa0cf4d6601cd515a16b7c3631">finishedLoadingSignal_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_util_1_1_loader.html#a7a1ff3c29d27594777b492a1fe582be1">finishedLoadingSignal</a></td></tr>
 <tr class="separator:a7a1ff3c29d27594777b492a1fe582be1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Queue of resource loaders. </p>
 <dl class="section author"><dt>Author</dt><dd>Michael Imamura </dd></dl>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="a526d20ea5b1492a4ac3fd8bbf64fe8ee"></a>
+<a class="anchor" id="ae62709fa0cf4d6601cd515a16b7c3631"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef boost::signals2::signal&lt;void()&gt; <a class="el" href="class_hover_race_1_1_util_1_1_loader.html#a526d20ea5b1492a4ac3fd8bbf64fe8ee">HoverRace::Util::Loader::finishedLoadingSignal_t</a></td>
+          <td class="memname">using <a class="el" href="class_hover_race_1_1_util_1_1_loader.html#ae62709fa0cf4d6601cd515a16b7c3631">HoverRace::Util::Loader::finishedLoadingSignal_t</a> =  boost::signals2::signal&lt;void()&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a5649bcfb102514c62a0a4c4069e6f8d5"></a>
+<a class="anchor" id="acb199be79a8a1c936a50538d8835bff9"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -133,7 +131,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::pair&lt;std::string, std::function&lt;void()&gt; &gt; <a class="el" href="class_hover_race_1_1_util_1_1_loader.html#a5649bcfb102514c62a0a4c4069e6f8d5">HoverRace::Util::Loader::loader_t</a></td>
+          <td class="memname">using <a class="el" href="class_hover_race_1_1_util_1_1_loader.html#acb199be79a8a1c936a50538d8835bff9">HoverRace::Util::Loader::loader_t</a> =  std::pair&lt;std::string, std::function&lt;void()&gt;&gt;</td>
         </tr>
       </table>
   </td>
@@ -304,7 +302,7 @@ template&lt;class Fn &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_hover_race_1_1_util_1_1_loader.html#a526d20ea5b1492a4ac3fd8bbf64fe8ee">finishedLoadingSignal_t</a>&amp; HoverRace::Util::Loader::GetFinishedLoadingSignal </td>
+          <td class="memname"><a class="el" href="class_hover_race_1_1_util_1_1_loader.html#ae62709fa0cf4d6601cd515a16b7c3631">finishedLoadingSignal_t</a>&amp; HoverRace::Util::Loader::GetFinishedLoadingSignal </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -381,7 +379,7 @@ template&lt;class Fn &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_hover_race_1_1_util_1_1_loader.html#a526d20ea5b1492a4ac3fd8bbf64fe8ee">finishedLoadingSignal_t</a> HoverRace::Util::Loader::finishedLoadingSignal</td>
+          <td class="memname"><a class="el" href="class_hover_race_1_1_util_1_1_loader.html#ae62709fa0cf4d6601cd515a16b7c3631">finishedLoadingSignal_t</a> HoverRace::Util::Loader::finishedLoadingSignal</td>
         </tr>
       </table>
   </td>
@@ -401,7 +399,7 @@ template&lt;class Fn &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::queue&lt;<a class="el" href="class_hover_race_1_1_util_1_1_loader.html#a5649bcfb102514c62a0a4c4069e6f8d5">loader_t</a>&gt; HoverRace::Util::Loader::loaders</td>
+          <td class="memname">std::queue&lt;<a class="el" href="class_hover_race_1_1_util_1_1_loader.html#acb199be79a8a1c936a50538d8835bff9">loader_t</a>&gt; HoverRace::Util::Loader::loaders</td>
         </tr>
       </table>
   </td>

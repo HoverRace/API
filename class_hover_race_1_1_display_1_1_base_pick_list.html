@@ -103,6 +103,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5d810edd6b2a4b87f4f18050c4926d9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3de26a89a8c43a8722c68a0db9a9260"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_base_pick_list.html#aa3de26a89a8c43a8722c68a0db9a9260">~BasePickList</a> ()</td></tr>
 <tr class="separator:aa3de26a89a8c43a8722c68a0db9a9260"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74cb9d3ff70dec4159908f07bc8094a7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_base_pick_list.html#a74cb9d3ff70dec4159908f07bc8094a7">OnMouseScrolled</a> (const <a class="el" href="struct_hover_race_1_1_control_1_1_mouse_1_1_scroll.html">Control::Mouse::Scroll</a> &amp;) override</td></tr>
+<tr class="separator:a74cb9d3ff70dec4159908f07bc8094a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8fbba813e79e80f5495bab93bf505d7e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_base_pick_list.html#a8fbba813e79e80f5495bab93bf505d7e">OnAction</a> () override</td></tr>
 <tr class="separator:a8fbba813e79e80f5495bab93bf505d7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0288d60be26fc9ab229c1c82444c5cdc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_base_pick_list.html#a0288d60be26fc9ab229c1c82444c5cdc">OnNavigate</a> (const <a class="el" href="class_hover_race_1_1_control_1_1_nav.html">Control::Nav</a> &amp;nav) override</td></tr>
@@ -141,8 +143,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a91c04f96b8e4e2b42d6c8a164234bb80 inherit pub_methods_class_hover_race_1_1_display_1_1_base_container"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf418956ea9c6b83f32d4746e0715f58 inherit pub_methods_class_hover_race_1_1_display_1_1_base_container"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_base_container.html#aaf418956ea9c6b83f32d4746e0715f58">OnMouseReleased</a> (const <a class="el" href="struct_hover_race_1_1_control_1_1_mouse_1_1_click.html">Control::Mouse::Click</a> &amp;click) override</td></tr>
 <tr class="separator:aaf418956ea9c6b83f32d4746e0715f58 inherit pub_methods_class_hover_race_1_1_display_1_1_base_container"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca739cfc23ce797b7ee03ac654d83aad inherit pub_methods_class_hover_race_1_1_display_1_1_base_container"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_base_container.html#aca739cfc23ce797b7ee03ac654d83aad">OnMouseScrolled</a> (const <a class="el" href="struct_hover_race_1_1_control_1_1_mouse_1_1_scroll.html">Control::Mouse::Scroll</a> &amp;scroll) override</td></tr>
-<tr class="separator:aca739cfc23ce797b7ee03ac654d83aad inherit pub_methods_class_hover_race_1_1_display_1_1_base_container"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afea51c7bf433a996c244aee32d595210 inherit pub_methods_class_hover_race_1_1_display_1_1_base_container"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_base_container.html#afea51c7bf433a996c244aee32d595210">ShrinkWrap</a> ()</td></tr>
 <tr class="memdesc:afea51c7bf433a996c244aee32d595210 inherit pub_methods_class_hover_race_1_1_display_1_1_base_container"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resize the container to the minimum size that will fit all of the child elements.  <a href="#afea51c7bf433a996c244aee32d595210">More...</a><br/></td></tr>
 <tr class="separator:afea51c7bf433a996c244aee32d595210 inherit pub_methods_class_hover_race_1_1_display_1_1_base_container"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -273,6 +273,15 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:afafb05cc1fa1780bdb807c26a91b0979"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_base_pick_list.html#afafb05cc1fa1780bdb807c26a91b0979">OnChildRelinquishedFocus</a> (<a class="el" href="class_hover_race_1_1_display_1_1_ui_view_model.html">UiViewModel</a> &amp;, const <a class="el" href="class_hover_race_1_1_control_1_1_nav.html">Control::Nav</a> &amp;nav) override</td></tr>
 <tr class="memdesc:afafb05cc1fa1780bdb807c26a91b0979"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a child widget passes input focus to another widget.  <a href="#afafb05cc1fa1780bdb807c26a91b0979">More...</a><br/></td></tr>
 <tr class="separator:afafb05cc1fa1780bdb807c26a91b0979"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbe9b597ad6871a2efccef52563e6edb"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_base_pick_list.html#afbe9b597ad6871a2efccef52563e6edb">GetScroll</a> () const </td></tr>
+<tr class="memdesc:afbe9b597ad6871a2efccef52563e6edb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve how far down the list we have scrolled.  <a href="#afbe9b597ad6871a2efccef52563e6edb">More...</a><br/></td></tr>
+<tr class="separator:afbe9b597ad6871a2efccef52563e6edb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13dc9600fe3e539c8c42dcdb4488754c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_base_pick_list.html#a13dc9600fe3e539c8c42dcdb4488754c">ScrollTo</a> (double y)</td></tr>
+<tr class="memdesc:a13dc9600fe3e539c8c42dcdb4488754c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scroll the list to the specified UI-space position.  <a href="#a13dc9600fe3e539c8c42dcdb4488754c">More...</a><br/></td></tr>
+<tr class="separator:a13dc9600fe3e539c8c42dcdb4488754c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7afa217691f77d3965905d30016c5856"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_base_pick_list.html#a7afa217691f77d3965905d30016c5856">ScrollToFocused</a> ()</td></tr>
+<tr class="memdesc:a7afa217691f77d3965905d30016c5856"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scroll the list to ensure the focused item is visible.  <a href="#a7afa217691f77d3965905d30016c5856">More...</a><br/></td></tr>
+<tr class="separator:a7afa217691f77d3965905d30016c5856"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7aa74f9cf38e1dabc77d6960cbb9d1c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_base_pick_list.html#a7aa74f9cf38e1dabc77d6960cbb9d1c4">Layout</a> () override</td></tr>
 <tr class="memdesc:a7aa74f9cf38e1dabc77d6960cbb9d1c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adjust the size and position of any child elements.  <a href="#a7aa74f9cf38e1dabc77d6960cbb9d1c4">More...</a><br/></td></tr>
 <tr class="separator:a7aa74f9cf38e1dabc77d6960cbb9d1c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -569,6 +578,32 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="afbe9b597ad6871a2efccef52563e6edb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double HoverRace::Display::BasePickList::GetScroll </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Retrieve how far down the list we have scrolled. </p>
+<dl class="section return"><dt>Returns</dt><dd>The position (always greater than or equal to zero). </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="aebe1490f22d764bde1f88af24f6bde97"></a>
 <div class="memitem">
 <div class="memproto">
@@ -751,6 +786,32 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a74cb9d3ff70dec4159908f07bc8094a7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HoverRace::Display::BasePickList::OnMouseScrolled </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_hover_race_1_1_control_1_1_mouse_1_1_scroll.html">Control::Mouse::Scroll</a> &amp;&#160;</td>
+          <td class="paramname"><em>scroll</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="class_hover_race_1_1_display_1_1_base_container.html#aca739cfc23ce797b7ee03ac654d83aad">HoverRace::Display::BaseContainer</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a0288d60be26fc9ab229c1c82444c5cdc"></a>
 <div class="memitem">
 <div class="memproto">
@@ -774,6 +835,63 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Reimplemented from <a class="el" href="class_hover_race_1_1_display_1_1_ui_view_model.html#a967146d9fc015238961e6b7bfebc4278">HoverRace::Display::UiViewModel</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a13dc9600fe3e539c8c42dcdb4488754c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HoverRace::Display::BasePickList::ScrollTo </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Scroll the list to the specified UI-space position. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">y</td><td>The position (positive values scroll down the list). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a7afa217691f77d3965905d30016c5856"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HoverRace::Display::BasePickList::ScrollToFocused </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Scroll the list to ensure the focused item is visible. </p>
 
 </div>
 </div>
