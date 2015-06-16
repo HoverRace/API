@@ -79,6 +79,9 @@ boost::signals2::signal&lt; void(std::shared_ptr<br class="typebreak"/>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a1a3eb94c432b5884e9b6c261a059e5ad"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_game_director.html#a1a3eb94c432b5884e9b6c261a059e5ad">~GameDirector</a> ()</td></tr>
 <tr class="separator:a1a3eb94c432b5884e9b6c261a059e5ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf52279eb98bcb6081116478cd46ecf5"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_hover_race_1_1_client_1_1_scene.html">Scene</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_game_director.html#acf52279eb98bcb6081116478cd46ecf5">GetForegroundScene</a> () const =0</td></tr>
+<tr class="memdesc:acf52279eb98bcb6081116478cd46ecf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets foreground scene, if available.  <a href="#acf52279eb98bcb6081116478cd46ecf5">More...</a><br/></td></tr>
+<tr class="separator:acf52279eb98bcb6081116478cd46ecf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeabf9e49d7861286f22804579d4b8cd4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_game_director.html#aeabf9e49d7861286f22804579d4b8cd4">RequestPushScene</a> (const <a class="el" href="namespace_hover_race_1_1_client.html#a75d2856d5ff4ea11bcbedca9132bcad4">ScenePtr</a> &amp;<a class="el" href="_client_app_8cpp.html#a449a153d9586c6526bf0a3e23ada7772">scene</a>)=0</td></tr>
 <tr class="memdesc:aeabf9e49d7861286f22804579d4b8cd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Push a new scene to the foreground.  <a href="#aeabf9e49d7861286f22804579d4b8cd4">More...</a><br/></td></tr>
 <tr class="separator:aeabf9e49d7861286f22804579d4b8cd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -210,6 +213,34 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Implemented in <a class="el" href="class_hover_race_1_1_client_1_1_client_app.html#a6b6bfc5e83212dccd817726adf16fac8">HoverRace::Client::ClientApp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acf52279eb98bcb6081116478cd46ecf5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_hover_race_1_1_client_1_1_scene.html">Scene</a>* HoverRace::Client::GameDirector::GetForegroundScene </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets foreground scene, if available. </p>
+<dl class="section return"><dt>Returns</dt><dd><code>nullptr</code> if no scene is active, else the foreground scene. </dd></dl>
+
+<p>Implemented in <a class="el" href="class_hover_race_1_1_client_1_1_client_app.html#a44106cc2f11db585ad4597721ab84685">HoverRace::Client::ClientApp</a>.</p>
 
 </div>
 </div>

@@ -77,31 +77,38 @@
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;../Model/Shapes.h&quot;</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#if defined(_WIN32) &amp;&amp; defined(HR_ENGINE_SHARED)</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#   ifdef MR_ENGINE</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#       define MR_DllDeclare   __declspec( dllexport )</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#   else</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#       define MR_DllDeclare   __declspec( dllimport )</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#   endif</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="_contact_effect_8h.html#a92ab9b5ccb38279197015ee3f200757a">   36</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#   define MR_DllDeclare</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_m_r___contact_effect.html">   43</a></span>&#160;<span class="keyword">class </span><a class="code" href="_contact_effect_8h.html#a92ab9b5ccb38279197015ee3f200757a">MR_DllDeclare</a> <a class="code" href="class_m_r___contact_effect.html">MR_ContactEffect</a></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keyword">virtual</span> ~<a class="code" href="class_m_r___contact_effect.html"> MR_ContactEffect</a>();</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keyword">virtual</span> <span class="keyword">const</span> <a class="code" href="class_m_r___contact_effect.html">MR_ContactEffect</a> *GetAlternate() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;};</div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="_contact_effect_8h.html#a7b7f1b500c741a0fd0f263f1689b5c2a">   54</a></span>&#160;<span class="keyword">typedef</span> std::vector&lt;MR_ContactEffect*&gt; <a class="code" href="_contact_effect_8h.html#a7b7f1b500c741a0fd0f263f1689b5c2a">MR_ContactEffectList</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#if defined(_WIN32) &amp;&amp; defined(HR_ENGINE_SHARED)</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#   ifdef MR_ENGINE</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#       define MR_DllDeclare   __declspec( dllexport )</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#   else</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#       define MR_DllDeclare   __declspec( dllimport )</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#   endif</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="_contact_effect_8h.html#a92ab9b5ccb38279197015ee3f200757a">   34</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#   define MR_DllDeclare</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">namespace </span>HoverRace {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">namespace </span>Model {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_hover_race_1_1_model_1_1_contact_effect.html">   44</a></span>&#160;<span class="keyword">class </span><a class="code" href="_contact_effect_8h.html#a92ab9b5ccb38279197015ee3f200757a">MR_DllDeclare</a> <a class="code" href="class_hover_race_1_1_model_1_1_contact_effect.html">ContactEffect</a></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_hover_race_1_1_model_1_1_contact_effect.html#ab04e4b69f1b96216760ff4bc63ecc3eb">   47</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_hover_race_1_1_model_1_1_contact_effect.html#ab04e4b69f1b96216760ff4bc63ecc3eb">~ContactEffect</a>() { }</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_hover_race_1_1_model_1_1_contact_effect.html#aa206d62eece5466df0f2d201b94259ba">   53</a></span>&#160;    <span class="keyword">virtual</span> <span class="keyword">const</span> <a class="code" href="class_hover_race_1_1_model_1_1_contact_effect.html">ContactEffect</a> *<a class="code" href="class_hover_race_1_1_model_1_1_contact_effect.html#aa206d62eece5466df0f2d201b94259ba">GetAlternate</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="keyword">nullptr</span>; }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;};</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#undef MR_DllDeclare</span></div>
-<div class="ttc" id="_contact_effect_8h_html_a92ab9b5ccb38279197015ee3f200757a"><div class="ttname"><a href="_contact_effect_8h.html#a92ab9b5ccb38279197015ee3f200757a">MR_DllDeclare</a></div><div class="ttdeci">#define MR_DllDeclare</div><div class="ttdef"><b>Definition:</b> ContactEffect.h:36</div></div>
-<div class="ttc" id="class_m_r___contact_effect_html"><div class="ttname"><a href="class_m_r___contact_effect.html">MR_ContactEffect</a></div><div class="ttdoc">Base class for all contact effects. </div><div class="ttdef"><b>Definition:</b> ContactEffect.h:43</div></div>
-<div class="ttc" id="_contact_effect_8h_html_a7b7f1b500c741a0fd0f263f1689b5c2a"><div class="ttname"><a href="_contact_effect_8h.html#a7b7f1b500c741a0fd0f263f1689b5c2a">MR_ContactEffectList</a></div><div class="ttdeci">std::vector&lt; MR_ContactEffect * &gt; MR_ContactEffectList</div><div class="ttdef"><b>Definition:</b> ContactEffect.h:54</div></div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="namespace_hover_race_1_1_model.html#ab721a409da2d7d556dc55fab3679a772">   56</a></span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_hover_race_1_1_model.html#ab721a409da2d7d556dc55fab3679a772">ContactEffectList</a> = std::vector&lt;ContactEffect*&gt;;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}  <span class="comment">// namespace Model</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}  <span class="comment">// namespace HoverRace</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#undef MR_DllDeclare</span></div>
+<div class="ttc" id="namespace_hover_race_1_1_model_html_ab721a409da2d7d556dc55fab3679a772"><div class="ttname"><a href="namespace_hover_race_1_1_model.html#ab721a409da2d7d556dc55fab3679a772">HoverRace::Model::ContactEffectList</a></div><div class="ttdeci">std::vector&lt; ContactEffect * &gt; ContactEffectList</div><div class="ttdef"><b>Definition:</b> ContactEffect.h:56</div></div>
+<div class="ttc" id="_contact_effect_8h_html_a92ab9b5ccb38279197015ee3f200757a"><div class="ttname"><a href="_contact_effect_8h.html#a92ab9b5ccb38279197015ee3f200757a">MR_DllDeclare</a></div><div class="ttdeci">#define MR_DllDeclare</div><div class="ttdef"><b>Definition:</b> ContactEffect.h:34</div></div>
+<div class="ttc" id="class_hover_race_1_1_model_1_1_contact_effect_html"><div class="ttname"><a href="class_hover_race_1_1_model_1_1_contact_effect.html">HoverRace::Model::ContactEffect</a></div><div class="ttdoc">Base class for all contact effects. </div><div class="ttdef"><b>Definition:</b> ContactEffect.h:44</div></div>
+<div class="ttc" id="class_hover_race_1_1_model_1_1_contact_effect_html_ab04e4b69f1b96216760ff4bc63ecc3eb"><div class="ttname"><a href="class_hover_race_1_1_model_1_1_contact_effect.html#ab04e4b69f1b96216760ff4bc63ecc3eb">HoverRace::Model::ContactEffect::~ContactEffect</a></div><div class="ttdeci">virtual ~ContactEffect()</div><div class="ttdef"><b>Definition:</b> ContactEffect.h:47</div></div>
+<div class="ttc" id="class_hover_race_1_1_model_1_1_contact_effect_html_aa206d62eece5466df0f2d201b94259ba"><div class="ttname"><a href="class_hover_race_1_1_model_1_1_contact_effect.html#aa206d62eece5466df0f2d201b94259ba">HoverRace::Model::ContactEffect::GetAlternate</a></div><div class="ttdeci">virtual const ContactEffect * GetAlternate() const </div><div class="ttdoc">If the effect is unknown, use that one instead. </div><div class="ttdef"><b>Definition:</b> ContactEffect.h:53</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

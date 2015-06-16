@@ -51,7 +51,6 @@
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#define-members">Macros</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">DllObjectFactory.h File Reference</div>  </div>
@@ -73,8 +72,8 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_util_1_1_object_from_factory_id.html">HoverRace::Util::ObjectFromFactoryId</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unique identifier for a Factory Object.  <a href="class_hover_race_1_1_util_1_1_object_from_factory_id.html#details">More...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_hover_race_1_1_util_1_1_object_from_factory_id.html">HoverRace::Util::ObjectFromFactoryId</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unique identifier for a Factory Object.  <a href="struct_hover_race_1_1_util_1_1_object_from_factory_id.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_util_1_1_object_from_factory.html">HoverRace::Util::ObjectFromFactory</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for object created with a Dll Factory.  <a href="class_hover_race_1_1_util_1_1_object_from_factory.html#details">More...</a><br/></td></tr>
@@ -98,23 +97,14 @@ Macros</h2></td></tr>
 <tr class="memitem:a92ab9b5ccb38279197015ee3f200757a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dll_object_factory_8h.html#a92ab9b5ccb38279197015ee3f200757a">MR_DllDeclare</a></td></tr>
 <tr class="separator:a92ab9b5ccb38279197015ee3f200757a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:aabdac6740877c7c7636d34f8f18f51b6"><td class="memItemLeft" align="right" valign="top">typedef ObjectFromFactory *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_util_1_1_dll_object_factory.html#aabdac6740877c7c7636d34f8f18f51b6">HoverRace::Util::DllObjectFactory::getObject_t</a> )(<a class="el" href="_m_r___types_8h.html#aabf0f69e00c14b39285b217a41c58fd2">MR_UInt16</a>)</td></tr>
-<tr class="separator:aabdac6740877c7c7636d34f8f18f51b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a2adc21e0502e885dabeeadd1c218ce54"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_viewport3_d_8h.html#a92ab9b5ccb38279197015ee3f200757a">MR_DllDeclare</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_util_1_1_dll_object_factory.html#a2adc21e0502e885dabeeadd1c218ce54">HoverRace::Util::DllObjectFactory::Init</a> ()</td></tr>
-<tr class="memdesc:a2adc21e0502e885dabeeadd1c218ce54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Must be called at the begining of the program.  <a href="#a2adc21e0502e885dabeeadd1c218ce54">More...</a><br/></td></tr>
+<tr class="memdesc:a2adc21e0502e885dabeeadd1c218ce54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Must be called at the beginning of the program.  <a href="#a2adc21e0502e885dabeeadd1c218ce54">More...</a><br/></td></tr>
 <tr class="separator:a2adc21e0502e885dabeeadd1c218ce54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c7e808097d246445e462571fe0cc5f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_viewport3_d_8h.html#a92ab9b5ccb38279197015ee3f200757a">MR_DllDeclare</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_util_1_1_dll_object_factory.html#a6c7e808097d246445e462571fe0cc5f8">HoverRace::Util::DllObjectFactory::Clean</a> (BOOL pOnlyDynamic)</td></tr>
-<tr class="memdesc:a6c7e808097d246445e462571fe0cc5f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Must be called at the end of the program.  <a href="#a6c7e808097d246445e462571fe0cc5f8">More...</a><br/></td></tr>
-<tr class="separator:a6c7e808097d246445e462571fe0cc5f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac99e52af7f723864a497698421264242"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_viewport3_d_8h.html#a92ab9b5ccb38279197015ee3f200757a">MR_DllDeclare</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_util_1_1_dll_object_factory.html#ac99e52af7f723864a497698421264242">HoverRace::Util::DllObjectFactory::IncrementReferenceCount</a> (int pDllId)</td></tr>
-<tr class="separator:ac99e52af7f723864a497698421264242"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6131920d29398dad109a0c3c38bbceb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_viewport3_d_8h.html#a92ab9b5ccb38279197015ee3f200757a">MR_DllDeclare</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_util_1_1_dll_object_factory.html#aa6131920d29398dad109a0c3c38bbceb">HoverRace::Util::DllObjectFactory::DecrementReferenceCount</a> (int pDllId)</td></tr>
-<tr class="separator:aa6131920d29398dad109a0c3c38bbceb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02e34bfa0af13f35ab80ac7c3ea7bf3c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_viewport3_d_8h.html#a92ab9b5ccb38279197015ee3f200757a">MR_DllDeclare</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_util_1_1_dll_object_factory.html#a02e34bfa0af13f35ab80ac7c3ea7bf3c">HoverRace::Util::DllObjectFactory::Clean</a> ()</td></tr>
+<tr class="memdesc:a02e34bfa0af13f35ab80ac7c3ea7bf3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Must be called at the end of the program.  <a href="#a02e34bfa0af13f35ab80ac7c3ea7bf3c">More...</a><br/></td></tr>
+<tr class="separator:a02e34bfa0af13f35ab80ac7c3ea7bf3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afacdc1c2720f1c5220233036fbfca08b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_viewport3_d_8h.html#a92ab9b5ccb38279197015ee3f200757a">MR_DllDeclare</a> ObjectFromFactory *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_util_1_1_dll_object_factory.html#afacdc1c2720f1c5220233036fbfca08b">HoverRace::Util::DllObjectFactory::CreateObject</a> (const ObjectFromFactoryId &amp;pId)</td></tr>
 <tr class="memdesc:afacdc1c2720f1c5220233036fbfca08b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fast Object Creation function.  <a href="#afacdc1c2720f1c5220233036fbfca08b">More...</a><br/></td></tr>
 <tr class="separator:afacdc1c2720f1c5220233036fbfca08b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -122,8 +112,6 @@ Functions</h2></td></tr>
 ObjFacTools::ResourceLib &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_util_1_1_dll_object_factory.html#a77b250935d289fcde1a07d0672846af6">HoverRace::Util::DllObjectFactory::GetResourceLib</a> (<a class="el" href="_m_r___types_8h.html#aabf0f69e00c14b39285b217a41c58fd2">MR_UInt16</a> dllId=1)</td></tr>
 <tr class="memdesc:a77b250935d289fcde1a07d0672846af6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the resource library for an object factory.  <a href="#a77b250935d289fcde1a07d0672846af6">More...</a><br/></td></tr>
 <tr class="separator:a77b250935d289fcde1a07d0672846af6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4f221cd25e7d0676ed77b189a40da7c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_viewport3_d_8h.html#a92ab9b5ccb38279197015ee3f200757a">MR_DllDeclare</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_util_1_1_dll_object_factory.html#ac4f221cd25e7d0676ed77b189a40da7c">HoverRace::Util::DllObjectFactory::RegisterLocalDll</a> (int pDLLId, getObject_t pFunc)</td></tr>
-<tr class="separator:ac4f221cd25e7d0676ed77b189a40da7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="a92ab9b5ccb38279197015ee3f200757a"></a>
