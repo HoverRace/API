@@ -75,10 +75,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad236542b3ce252828e9d3704eb7ae019"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4aba15b40e193f570ae6f52923ab1ad"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_script_1_1_handlers.html#ad4aba15b40e193f570ae6f52923ab1ad">~Handlers</a> ()</td></tr>
 <tr class="separator:ad4aba15b40e193f570ae6f52923ab1ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b195e15bddcc90a6d9260490425666b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_script_1_1_handlers.html">Handlers</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_script_1_1_handlers.html#a5b195e15bddcc90a6d9260490425666b">operator=</a> (const <a class="el" href="class_hover_race_1_1_script_1_1_handlers.html">Handlers</a> &amp;)=default</td></tr>
-<tr class="separator:a5b195e15bddcc90a6d9260490425666b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a867d94b46b6bd73e809d8349e8609956"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_script_1_1_handlers.html">Handlers</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_script_1_1_handlers.html#a867d94b46b6bd73e809d8349e8609956">operator=</a> (<a class="el" href="class_hover_race_1_1_script_1_1_handlers.html">Handlers</a> &amp;&amp;)=default</td></tr>
-<tr class="separator:a867d94b46b6bd73e809d8349e8609956"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a83f3b4bd7df5cc48bb81b433647d9e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_script_1_1_handlers.html#a7a83f3b4bd7df5cc48bb81b433647d9e">AddHandler</a> (const luabind::object &amp;fn)</td></tr>
+<tr class="memdesc:a7a83f3b4bd7df5cc48bb81b433647d9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an unnamed event handler.  <a href="#a7a83f3b4bd7df5cc48bb81b433647d9e">More...</a><br/></td></tr>
+<tr class="separator:a7a83f3b4bd7df5cc48bb81b433647d9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d3e39b868496c8f21e0938323002860"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_script_1_1_handlers.html#a9d3e39b868496c8f21e0938323002860">AddHandler</a> (const std::string &amp;name, const luabind::object &amp;fn)</td></tr>
+<tr class="memdesc:a9d3e39b868496c8f21e0938323002860"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a named event handler.  <a href="#a9d3e39b868496c8f21e0938323002860">More...</a><br/></td></tr>
+<tr class="separator:a9d3e39b868496c8f21e0938323002860"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f6423184c1fbd897e5506f3db26cf67"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_script_1_1_handlers.html#a2f6423184c1fbd897e5506f3db26cf67">CallHandlers</a> () const </td></tr>
 <tr class="memdesc:a2f6423184c1fbd897e5506f3db26cf67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call all registered event handlers without any parameters.  <a href="#a2f6423184c1fbd897e5506f3db26cf67">More...</a><br/></td></tr>
 <tr class="separator:a2f6423184c1fbd897e5506f3db26cf67"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -88,12 +90,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae80fbddad3ccd9d2d5bda7c6304b2335"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_script_1_1_handlers.html#ae80fbddad3ccd9d2d5bda7c6304b2335">CallHandlers</a> (const luabind::object &amp;p1, const luabind::object &amp;p2) const </td></tr>
 <tr class="memdesc:ae80fbddad3ccd9d2d5bda7c6304b2335"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call all registered event handlers with two parameters.  <a href="#ae80fbddad3ccd9d2d5bda7c6304b2335">More...</a><br/></td></tr>
 <tr class="separator:ae80fbddad3ccd9d2d5bda7c6304b2335"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a83f3b4bd7df5cc48bb81b433647d9e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_script_1_1_handlers.html#a7a83f3b4bd7df5cc48bb81b433647d9e">AddHandler</a> (const luabind::object &amp;fn)</td></tr>
-<tr class="memdesc:a7a83f3b4bd7df5cc48bb81b433647d9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an unnamed event handler.  <a href="#a7a83f3b4bd7df5cc48bb81b433647d9e">More...</a><br/></td></tr>
-<tr class="separator:a7a83f3b4bd7df5cc48bb81b433647d9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d3e39b868496c8f21e0938323002860"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_script_1_1_handlers.html#a9d3e39b868496c8f21e0938323002860">AddHandler</a> (const std::string &amp;name, const luabind::object &amp;fn)</td></tr>
-<tr class="memdesc:a9d3e39b868496c8f21e0938323002860"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a named event handler.  <a href="#a9d3e39b868496c8f21e0938323002860">More...</a><br/></td></tr>
-<tr class="separator:a9d3e39b868496c8f21e0938323002860"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b195e15bddcc90a6d9260490425666b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_script_1_1_handlers.html">Handlers</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_script_1_1_handlers.html#a5b195e15bddcc90a6d9260490425666b">operator=</a> (const <a class="el" href="class_hover_race_1_1_script_1_1_handlers.html">Handlers</a> &amp;)=default</td></tr>
+<tr class="separator:a5b195e15bddcc90a6d9260490425666b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a867d94b46b6bd73e809d8349e8609956"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_script_1_1_handlers.html">Handlers</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_script_1_1_handlers.html#a867d94b46b6bd73e809d8349e8609956">operator=</a> (<a class="el" href="class_hover_race_1_1_script_1_1_handlers.html">Handlers</a> &amp;&amp;)=default</td></tr>
+<tr class="separator:a867d94b46b6bd73e809d8349e8609956"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -103,12 +103,12 @@ Protected Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
+<tr class="memitem:af74ee6f8a505f5006337d5cb200976c3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_script_1_1_registry_ref.html">RegistryRef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_script_1_1_handlers.html#af74ee6f8a505f5006337d5cb200976c3">ref</a></td></tr>
+<tr class="separator:af74ee6f8a505f5006337d5cb200976c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac49df669046293741f260e79e17dc6fc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_script_1_1_core.html">Core</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_script_1_1_handlers.html#ac49df669046293741f260e79e17dc6fc">scripting</a></td></tr>
 <tr class="separator:ac49df669046293741f260e79e17dc6fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe11f6453750e4759d356b2c05de74a3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_script_1_1_handlers.html#afe11f6453750e4759d356b2c05de74a3">seq</a></td></tr>
 <tr class="separator:afe11f6453750e4759d356b2c05de74a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af74ee6f8a505f5006337d5cb200976c3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_script_1_1_registry_ref.html">RegistryRef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_script_1_1_handlers.html#af74ee6f8a505f5006337d5cb200976c3">ref</a></td></tr>
-<tr class="separator:af74ee6f8a505f5006337d5cb200976c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Tracks event handlers registered in scripts. </p>
