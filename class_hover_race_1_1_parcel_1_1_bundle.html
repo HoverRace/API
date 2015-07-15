@@ -87,7 +87,7 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ace19c55c5d6062feba7bf0f2276b0f12"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_parcel_1_1_bundle.html#ace19c55c5d6062feba7bf0f2276b0f12">Bundle</a> (const <a class="el" href="namespace_hover_race_1_1_util_1_1_o_s.html#a2214cc4c8bc277b059dfe766dcf35b4e">Util::OS::path_t</a> &amp;<a class="el" href="class_hover_race_1_1_parcel_1_1_bundle.html#a0e85653a1e5d70713b7adba5ad916d72">dir</a>, <a class="el" href="namespace_hover_race_1_1_parcel.html#ae598d648ed182db1086071b00f4deffc">BundlePtr</a> <a class="el" href="class_hover_race_1_1_parcel_1_1_bundle.html#a1a11b9eea978ad56abfc9e4d7b560ac4">subBundle</a>=<a class="el" href="namespace_hover_race_1_1_parcel.html#ae598d648ed182db1086071b00f4deffc">BundlePtr</a>())</td></tr>
+<tr class="memitem:ace19c55c5d6062feba7bf0f2276b0f12"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_parcel_1_1_bundle.html#ace19c55c5d6062feba7bf0f2276b0f12">Bundle</a> (const <a class="el" href="namespace_hover_race_1_1_util_1_1_o_s.html#a2214cc4c8bc277b059dfe766dcf35b4e">Util::OS::path_t</a> &amp;<a class="el" href="class_hover_race_1_1_parcel_1_1_bundle.html#a0e85653a1e5d70713b7adba5ad916d72">dir</a>, <a class="el" href="namespace_hover_race_1_1_parcel.html#a453d9d14d461675b60621e7e5f0dae6d">BundlePtr</a> <a class="el" href="class_hover_race_1_1_parcel_1_1_bundle.html#a1a11b9eea978ad56abfc9e4d7b560ac4">subBundle</a>=<a class="el" href="namespace_hover_race_1_1_parcel.html#a453d9d14d461675b60621e7e5f0dae6d">BundlePtr</a>())</td></tr>
 <tr class="memdesc:ace19c55c5d6062feba7bf0f2276b0f12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#ace19c55c5d6062feba7bf0f2276b0f12">More...</a><br/></td></tr>
 <tr class="separator:ace19c55c5d6062feba7bf0f2276b0f12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10feff67529e4a1f37a90525a80dab6b"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_parcel_1_1_bundle.html#a10feff67529e4a1f37a90525a80dab6b">~Bundle</a> ()</td></tr>
@@ -100,15 +100,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2c098cae3b35528cb8cfa452bed952b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abecd23c6ed025782e8e036be6fa85c92"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_parcel_1_1_bundle.html#adc91efe20e2142a3980dc73e17fd2320">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_parcel_1_1_bundle.html#abecd23c6ed025782e8e036be6fa85c92">end</a> () const </td></tr>
 <tr class="separator:abecd23c6ed025782e8e036be6fa85c92"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aedc84b6155dd62f1346d397cc8d3b867"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespace_hover_race_1_1_parcel.html#aed367add10793d385687b45b8b9981fc">RecordFilePtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_parcel_1_1_bundle.html#aedc84b6155dd62f1346d397cc8d3b867">OpenParcel</a> (const std::string &amp;name, bool writing=false) const </td></tr>
-<tr class="memdesc:aedc84b6155dd62f1346d397cc8d3b867"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open an existing parcel.  <a href="#aedc84b6155dd62f1346d397cc8d3b867">More...</a><br/></td></tr>
-<tr class="separator:aedc84b6155dd62f1346d397cc8d3b867"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafe953808570de5b2e89f41f4ceaf148"><td class="memItemLeft" align="right" valign="top">virtual std::shared_ptr<br class="typebreak"/>
+&lt; <a class="el" href="class_hover_race_1_1_parcel_1_1_record_file.html">RecordFile</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_parcel_1_1_bundle.html#aafe953808570de5b2e89f41f4ceaf148">OpenParcel</a> (const std::string &amp;name, bool writing=false) const </td></tr>
+<tr class="memdesc:aafe953808570de5b2e89f41f4ceaf148"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open an existing parcel.  <a href="#aafe953808570de5b2e89f41f4ceaf148">More...</a><br/></td></tr>
+<tr class="separator:aafe953808570de5b2e89f41f4ceaf148"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a0e85653a1e5d70713b7adba5ad916d72"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_hover_race_1_1_util_1_1_o_s.html#a2214cc4c8bc277b059dfe766dcf35b4e">Util::OS::path_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_parcel_1_1_bundle.html#a0e85653a1e5d70713b7adba5ad916d72">dir</a></td></tr>
 <tr class="separator:a0e85653a1e5d70713b7adba5ad916d72"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a11b9eea978ad56abfc9e4d7b560ac4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_hover_race_1_1_parcel.html#ae598d648ed182db1086071b00f4deffc">BundlePtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_parcel_1_1_bundle.html#a1a11b9eea978ad56abfc9e4d7b560ac4">subBundle</a></td></tr>
+<tr class="memitem:a1a11b9eea978ad56abfc9e4d7b560ac4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_hover_race_1_1_parcel.html#a453d9d14d461675b60621e7e5f0dae6d">BundlePtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_parcel_1_1_bundle.html#a1a11b9eea978ad56abfc9e4d7b560ac4">subBundle</a></td></tr>
 <tr class="separator:a1a11b9eea978ad56abfc9e4d7b560ac4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
@@ -170,8 +171,8 @@ Static Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespace_hover_race_1_1_parcel.html#ae598d648ed182db1086071b00f4deffc">BundlePtr</a>&#160;</td>
-          <td class="paramname"><em>subBundle</em> = <code><a class="el" href="namespace_hover_race_1_1_parcel.html#ae598d648ed182db1086071b00f4deffc">BundlePtr</a>()</code>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespace_hover_race_1_1_parcel.html#a453d9d14d461675b60621e7e5f0dae6d">BundlePtr</a>&#160;</td>
+          <td class="paramname"><em>subBundle</em> = <code><a class="el" href="namespace_hover_race_1_1_parcel.html#a453d9d14d461675b60621e7e5f0dae6d">BundlePtr</a>()</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -276,7 +277,7 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aedc84b6155dd62f1346d397cc8d3b867"></a>
+<a class="anchor" id="aafe953808570de5b2e89f41f4ceaf148"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -284,7 +285,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespace_hover_race_1_1_parcel.html#aed367add10793d385687b45b8b9981fc">RecordFilePtr</a> HoverRace::Parcel::Bundle::OpenParcel </td>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="class_hover_race_1_1_parcel_1_1_record_file.html">RecordFile</a> &gt; HoverRace::Parcel::Bundle::OpenParcel </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>name</em>, </td>
@@ -319,7 +320,7 @@ Static Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The parcel (may be <code>NULL</code> if parcel does not exist). </dd></dl>
 
-<p>Reimplemented in <a class="el" href="class_hover_race_1_1_parcel_1_1_track_bundle.html#af651d3aaeea7266c4d7437bbf1112714">HoverRace::Parcel::TrackBundle</a>.</p>
+<p>Reimplemented in <a class="el" href="class_hover_race_1_1_parcel_1_1_track_bundle.html#ad43292e57f48a9f43045d7926d91ca3f">HoverRace::Parcel::TrackBundle</a>.</p>
 
 </div>
 </div>
@@ -372,7 +373,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespace_hover_race_1_1_parcel.html#ae598d648ed182db1086071b00f4deffc">BundlePtr</a> HoverRace::Parcel::Bundle::subBundle</td>
+          <td class="memname"><a class="el" href="namespace_hover_race_1_1_parcel.html#a453d9d14d461675b60621e7e5f0dae6d">BundlePtr</a> HoverRace::Parcel::Bundle::subBundle</td>
         </tr>
       </table>
   </td>

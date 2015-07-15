@@ -52,6 +52,7 @@
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_hover_race_1_1_util_1_1_object_from_factory-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -84,6 +85,15 @@ Public Member Functions</h2></td></tr>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:af6faf01cd64fe8dd7a0bdd04d7d8aa69"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_util_1_1_object_from_factory.html#af6faf01cd64fe8dd7a0bdd04d7d8aa69">SerializePtr</a> (<a class="el" href="class_hover_race_1_1_parcel_1_1_obj_stream.html">Parcel::ObjStream</a> &amp;pArchive, <a class="el" href="class_hover_race_1_1_util_1_1_object_from_factory.html">ObjectFromFactory</a> *&amp;pPtr)</td></tr>
 <tr class="separator:af6faf01cd64fe8dd7a0bdd04d7d8aa69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4eae4ee56f868da4498b6b8d38ae89a6"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a4eae4ee56f868da4498b6b8d38ae89a6"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_util_1_1_object_from_factory.html#a4eae4ee56f868da4498b6b8d38ae89a6">SerializeShared</a> (<a class="el" href="class_hover_race_1_1_parcel_1_1_obj_stream.html">Parcel::ObjStream</a> &amp;archive, typename std::enable_if&lt; std::is_base_of&lt; <a class="el" href="class_hover_race_1_1_util_1_1_object_from_factory.html">ObjectFromFactory</a>, T &gt;::value, std::shared_ptr&lt; T &gt;&gt;::type &amp;obj)</td></tr>
+<tr class="memdesc:a4eae4ee56f868da4498b6b8d38ae89a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize a shared pointer to a serializable object.  <a href="#a4eae4ee56f868da4498b6b8d38ae89a6">More...</a><br/></td></tr>
+<tr class="separator:a4eae4ee56f868da4498b6b8d38ae89a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:ab1c938d663ebe3e41c2d1185036894aa"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_util_1_1_object_from_factory.html#ab1c938d663ebe3e41c2d1185036894aa">ThrowUnexpected</a> (const <a class="el" href="struct_hover_race_1_1_util_1_1_object_from_factory_id.html">ObjectFromFactoryId</a> &amp;oid)</td></tr>
+<tr class="separator:ab1c938d663ebe3e41c2d1185036894aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -218,6 +228,88 @@ Private Attributes</h2></td></tr>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4eae4ee56f868da4498b6b8d38ae89a6"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void HoverRace::Util::ObjectFromFactory::SerializeShared </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_hover_race_1_1_parcel_1_1_obj_stream.html">Parcel::ObjStream</a> &amp;&#160;</td>
+          <td class="paramname"><em>archive</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">typename std::enable_if&lt; std::is_base_of&lt; <a class="el" href="class_hover_race_1_1_util_1_1_object_from_factory.html">ObjectFromFactory</a>, T &gt;::value, std::shared_ptr&lt; T &gt;&gt;::type &amp;&#160;</td>
+          <td class="paramname"><em>obj</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Serialize a shared pointer to a serializable object. </p>
+<p>When reading, the created object is checked against the expected type. If the created object is not the correct type, then the object pointer is set to <code>nullptr</code>.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>The expected shared pointer type. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir"></td><td class="paramname">archive</td><td>The archive. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">obj</td><td>The object. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="class_hover_race_1_1_parcel_1_1_obj_stream_exn.html">Parcel::ObjStreamExn</a></td><td>The object being read from the stream is not the expected type. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ab1c938d663ebe3e41c2d1185036894aa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HoverRace::Util::ObjectFromFactory::ThrowUnexpected </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_hover_race_1_1_util_1_1_object_from_factory_id.html">ObjectFromFactoryId</a> &amp;&#160;</td>
+          <td class="paramname"><em>oid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
