@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <title>HoverRace: Config.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.13/jquery.min.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="customdoxygen.css" rel="stylesheet" type="text/css" />
 </head>
@@ -74,7 +74,9 @@
 <code>#include &quot;<a class="el" href="_parser_8h_source.html">yaml/Parser.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="_controller_8h_source.html">../Control/Controller.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="_bundle_8h_source.html">../Parcel/Bundle.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="_res_bundle_8h_source.html">../Parcel/ResBundle.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="_track_bundle_8h_source.html">../Parcel/TrackBundle.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="_locale_8h_source.html">Locale.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="_log_8h_source.html">Log.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="_str_8h_source.html">Str.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="_config_8h_source.html">Config.h</a>&quot;</code><br/>
@@ -109,17 +111,17 @@ Macros</h2></td></tr>
 <tr class="separator:a66d78502aae542180ff9bc41c4c1fccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad09fcf8097ccc37c6e7ffe4e881082bb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_config_8cpp.html#ad09fcf8097ccc37c6e7ffe4e881082bb">PREREL_CONFIG_FILENAME</a>&#160;&#160;&#160;&quot;config-testing.yml&quot;</td></tr>
 <tr class="separator:ad09fcf8097ccc37c6e7ffe4e881082bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c28d9b88d98952ad1890e3327468f16"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_config_8cpp.html#a4c28d9b88d98952ad1890e3327468f16">READ_BOOL</a>(root, name)</td></tr>
+<tr class="memitem:a4c28d9b88d98952ad1890e3327468f16"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_config_8cpp.html#a4c28d9b88d98952ad1890e3327468f16">READ_BOOL</a>(root, name)&#160;&#160;&#160;root-&gt;ReadBool(#name, name)</td></tr>
 <tr class="separator:a4c28d9b88d98952ad1890e3327468f16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af079e872e3052d7c57b59578471b9a68"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_config_8cpp.html#af079e872e3052d7c57b59578471b9a68">READ_DOUBLE</a>(root, name, min, max)</td></tr>
+<tr class="memitem:af079e872e3052d7c57b59578471b9a68"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_config_8cpp.html#af079e872e3052d7c57b59578471b9a68">READ_DOUBLE</a>(root, name, min, max)&#160;&#160;&#160;root-&gt;ReadDouble(#name, name, min, max)</td></tr>
 <tr class="separator:af079e872e3052d7c57b59578471b9a68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3362f48078849097bc6a5efd946b8549"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_config_8cpp.html#a3362f48078849097bc6a5efd946b8549">READ_FLOAT</a>(root, name, min, max)</td></tr>
+<tr class="memitem:a3362f48078849097bc6a5efd946b8549"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_config_8cpp.html#a3362f48078849097bc6a5efd946b8549">READ_FLOAT</a>(root, name, min, max)&#160;&#160;&#160;root-&gt;ReadFloat(#name, name, min, max)</td></tr>
 <tr class="separator:a3362f48078849097bc6a5efd946b8549"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7bcc5d382c839ddc4e4440cd645a552c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_config_8cpp.html#a7bcc5d382c839ddc4e4440cd645a552c">READ_INT</a>(root, name, min, max)</td></tr>
+<tr class="memitem:a7bcc5d382c839ddc4e4440cd645a552c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_config_8cpp.html#a7bcc5d382c839ddc4e4440cd645a552c">READ_INT</a>(root, name, min, max)&#160;&#160;&#160;root-&gt;ReadInt(#name, name, min, max)</td></tr>
 <tr class="separator:a7bcc5d382c839ddc4e4440cd645a552c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27915248334f7d8eb4b4ca066da34d84"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_config_8cpp.html#a27915248334f7d8eb4b4ca066da34d84">READ_PATH</a>(root, name)</td></tr>
+<tr class="memitem:a27915248334f7d8eb4b4ca066da34d84"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_config_8cpp.html#a27915248334f7d8eb4b4ca066da34d84">READ_PATH</a>(root, name)&#160;&#160;&#160;root-&gt;ReadPath(#name, name)</td></tr>
 <tr class="separator:a27915248334f7d8eb4b4ca066da34d84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb6825be80ea582dcfe62f906eb2b2ae"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_config_8cpp.html#aeb6825be80ea582dcfe62f906eb2b2ae">READ_STRING</a>(root, name)</td></tr>
+<tr class="memitem:aeb6825be80ea582dcfe62f906eb2b2ae"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_config_8cpp.html#aeb6825be80ea582dcfe62f906eb2b2ae">READ_STRING</a>(root, name)&#160;&#160;&#160;root-&gt;ReadString(#name, name)</td></tr>
 <tr class="separator:aeb6825be80ea582dcfe62f906eb2b2ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -254,15 +256,11 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td>&#160;&#160;&#160;root-&gt;ReadBool(#name, name)</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{\</div>
-<div class="line">        yaml::ScalarNode *_scalar = <span class="keyword">dynamic_cast&lt;</span>yaml::ScalarNode*<span class="keyword">&gt;</span>((root)-&gt;Get(#name)); \</div>
-<div class="line">        if (_scalar != NULL) (name) = _scalar-&gt;AsBool(name); \</div>
-<div class="line">    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a class="anchor" id="af079e872e3052d7c57b59578471b9a68"></a>
@@ -296,15 +294,11 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td>&#160;&#160;&#160;root-&gt;ReadDouble(#name, name, min, max)</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{\</div>
-<div class="line">        yaml::ScalarNode *_scalar = <span class="keyword">dynamic_cast&lt;</span>yaml::ScalarNode*<span class="keyword">&gt;</span>((root)-&gt;Get(#name)); \</div>
-<div class="line">        if (_scalar != NULL) (name) = _scalar-&gt;AsDouble(name, min, max); \</div>
-<div class="line">    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a class="anchor" id="a3362f48078849097bc6a5efd946b8549"></a>
@@ -338,15 +332,11 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td>&#160;&#160;&#160;root-&gt;ReadFloat(#name, name, min, max)</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{\</div>
-<div class="line">        yaml::ScalarNode *_scalar = <span class="keyword">dynamic_cast&lt;</span>yaml::ScalarNode*<span class="keyword">&gt;</span>((root)-&gt;Get(#name)); \</div>
-<div class="line">        if (_scalar != NULL) (name) = _scalar-&gt;AsFloat(name, min, max); \</div>
-<div class="line">    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a class="anchor" id="a7bcc5d382c839ddc4e4440cd645a552c"></a>
@@ -380,15 +370,11 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td>&#160;&#160;&#160;root-&gt;ReadInt(#name, name, min, max)</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{\</div>
-<div class="line">        yaml::ScalarNode *_scalar = <span class="keyword">dynamic_cast&lt;</span>yaml::ScalarNode*<span class="keyword">&gt;</span>((root)-&gt;Get(#name)); \</div>
-<div class="line">        if (_scalar != NULL) (name) = _scalar-&gt;AsInt(name, min, max); \</div>
-<div class="line">    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a class="anchor" id="a27915248334f7d8eb4b4ca066da34d84"></a>
@@ -410,15 +396,11 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td>&#160;&#160;&#160;root-&gt;ReadPath(#name, name)</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{\</div>
-<div class="line">        yaml::ScalarNode *_scalar = <span class="keyword">dynamic_cast&lt;</span>yaml::ScalarNode*<span class="keyword">&gt;</span>((root)-&gt;Get(#name)); \</div>
-<div class="line">        if (_scalar != NULL) (name) = _scalar-&gt;AsPath(); \</div>
-<div class="line">    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a class="anchor" id="aeb6825be80ea582dcfe62f906eb2b2ae"></a>
@@ -440,15 +422,11 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td>&#160;&#160;&#160;root-&gt;ReadString(#name, name)</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{\</div>
-<div class="line">        yaml::ScalarNode *_scalar = <span class="keyword">dynamic_cast&lt;</span>yaml::ScalarNode*<span class="keyword">&gt;</span>((root)-&gt;Get(#name)); \</div>
-<div class="line">        if (_scalar != NULL) (name) = _scalar-&gt;AsString(); \</div>
-<div class="line">    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 </div><!-- contents -->

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <title>HoverRace: HoverRace::Util::yaml::MapNode Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.13/jquery.min.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="customdoxygen.css" rel="stylesheet" type="text/css" />
 </head>
@@ -96,6 +96,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4eb7c2e6bb5189747b210a29260ba974"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_util_1_1yaml_1_1_node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_util_1_1yaml_1_1_map_node.html#a4eb7c2e6bb5189747b210a29260ba974">Get</a> (const std::string &amp;key) const </td></tr>
 <tr class="memdesc:a4eb7c2e6bb5189747b210a29260ba974"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the child node for a given key.  <a href="#a4eb7c2e6bb5189747b210a29260ba974">More...</a><br/></td></tr>
 <tr class="separator:a4eb7c2e6bb5189747b210a29260ba974"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f99e77ae53cee60719ebb3ac1ba5cb1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_util_1_1yaml_1_1_map_node.html#a4f99e77ae53cee60719ebb3ac1ba5cb1">ReadBool</a> (const std::string &amp;key, bool &amp;dest) const </td></tr>
+<tr class="separator:a4f99e77ae53cee60719ebb3ac1ba5cb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa4d333530260f0ae8e4df98d59acf98"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_util_1_1yaml_1_1_map_node.html#afa4d333530260f0ae8e4df98d59acf98">ReadDouble</a> (const std::string &amp;key, double &amp;dest, double min, double max) const </td></tr>
+<tr class="separator:afa4d333530260f0ae8e4df98d59acf98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47f26958bace631120d6cbe1625fb49d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_util_1_1yaml_1_1_map_node.html#a47f26958bace631120d6cbe1625fb49d">ReadFloat</a> (const std::string &amp;key, float &amp;dest, float min, float max) const </td></tr>
+<tr class="separator:a47f26958bace631120d6cbe1625fb49d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c0982e2cddfdf61ba13a5383c05e7a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_util_1_1yaml_1_1_map_node.html#a2c0982e2cddfdf61ba13a5383c05e7a6">ReadInt</a> (const std::string &amp;key, int &amp;dest, int min=INT_MIN, int max=INT_MAX) const </td></tr>
+<tr class="separator:a2c0982e2cddfdf61ba13a5383c05e7a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17a4bffadaf765e2159f09223c0228e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_util_1_1yaml_1_1_map_node.html#a17a4bffadaf765e2159f09223c0228e0">ReadPath</a> (const std::string &amp;key, <a class="el" href="namespace_hover_race_1_1_util_1_1_o_s.html#a2214cc4c8bc277b059dfe766dcf35b4e">OS::path_t</a> &amp;dest) const </td></tr>
+<tr class="separator:a17a4bffadaf765e2159f09223c0228e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab490fc7c138f649cb955da14e8ffc003"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_util_1_1yaml_1_1_map_node.html#ab490fc7c138f649cb955da14e8ffc003">ReadString</a> (const std::string &amp;key, std::string &amp;dest) const </td></tr>
 <tr class="memdesc:ab490fc7c138f649cb955da14e8ffc003"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve an optional child node as a string.  <a href="#ab490fc7c138f649cb955da14e8ffc003">More...</a><br/></td></tr>
 <tr class="separator:ab490fc7c138f649cb955da14e8ffc003"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -377,6 +387,172 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Lazy initialization of the child nodes. </p>
+
+</div>
+</div>
+<a class="anchor" id="a4f99e77ae53cee60719ebb3ac1ba5cb1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HoverRace::Util::yaml::MapNode::ReadBool </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool &amp;&#160;</td>
+          <td class="paramname"><em>dest</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afa4d333530260f0ae8e4df98d59acf98"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HoverRace::Util::yaml::MapNode::ReadDouble </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>dest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>min</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>max</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a47f26958bace631120d6cbe1625fb49d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HoverRace::Util::yaml::MapNode::ReadFloat </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float &amp;&#160;</td>
+          <td class="paramname"><em>dest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>min</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>max</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2c0982e2cddfdf61ba13a5383c05e7a6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HoverRace::Util::yaml::MapNode::ReadInt </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>dest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>min</em> = <code>INT_MIN</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>max</em> = <code>INT_MAX</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a17a4bffadaf765e2159f09223c0228e0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HoverRace::Util::yaml::MapNode::ReadPath </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_hover_race_1_1_util_1_1_o_s.html#a2214cc4c8bc277b059dfe766dcf35b4e">OS::path_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>dest</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

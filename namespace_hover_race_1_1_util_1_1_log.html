@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <title>HoverRace: HoverRace::Util::Log Namespace Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.13/jquery.min.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="customdoxygen.css" rel="stylesheet" type="text/css" />
 </head>
@@ -71,10 +71,8 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a139e06307863df3e6bb3ae6cff68ec4b"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
-boost::signals2::signal&lt; void(const <br class="typebreak"/>
-<a class="el" href="struct_hover_race_1_1_util_1_1_log_1_1_entry.html">Entry</a> &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_util_1_1_log.html#a139e06307863df3e6bb3ae6cff68ec4b">logAdded_t</a></td></tr>
-<tr class="separator:a139e06307863df3e6bb3ae6cff68ec4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd0e08b5a02a24d461d7cf3065b5b763"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_util_1_1_log.html#abd0e08b5a02a24d461d7cf3065b5b763">logAdded_t</a> = boost::signals2::signal&lt; void(const <a class="el" href="struct_hover_race_1_1_util_1_1_log_1_1_entry.html">Entry</a> &amp;)&gt;</td></tr>
+<tr class="separator:abd0e08b5a02a24d461d7cf3065b5b763"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -100,24 +98,24 @@ Functions</h2></td></tr>
 <tr class="separator:a4dee4346155cbd0bb205d57c07cd55d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6b1ed902a8dc9143ffd5c9c4469bb1d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_util_1_1_log.html#ab6b1ed902a8dc9143ffd5c9c4469bb1d">Info</a> (const char *fmt,...)</td></tr>
 <tr class="separator:ab6b1ed902a8dc9143ffd5c9c4469bb1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e32993cc3d1a5c1786edb4039d11805"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_util_1_1_log.html#a0e32993cc3d1a5c1786edb4039d11805">Init</a> ()</td></tr>
-<tr class="memdesc:a0e32993cc3d1a5c1786edb4039d11805"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the system log.  <a href="#a0e32993cc3d1a5c1786edb4039d11805">More...</a><br/></td></tr>
-<tr class="separator:a0e32993cc3d1a5c1786edb4039d11805"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed95adfa5aed6f503cf0e592133fd72d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_util_1_1_log.html#aed95adfa5aed6f503cf0e592133fd72d">Init</a> (bool verboseLog)</td></tr>
+<tr class="memdesc:aed95adfa5aed6f503cf0e592133fd72d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the system log.  <a href="#aed95adfa5aed6f503cf0e592133fd72d">More...</a><br/></td></tr>
+<tr class="separator:aed95adfa5aed6f503cf0e592133fd72d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d4d3487baa7dd43519200761fadb2c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_util_1_1_log.html#a3d4d3487baa7dd43519200761fadb2c5">Warn</a> (const char *fmt,...)</td></tr>
 <tr class="separator:a3d4d3487baa7dd43519200761fadb2c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a99c8cf46524d5bd9f64b1fc4cf48d55e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_hover_race_1_1_util_1_1_log.html#a139e06307863df3e6bb3ae6cff68ec4b">logAdded_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_util_1_1_log.html#a99c8cf46524d5bd9f64b1fc4cf48d55e">logAddedSignal</a></td></tr>
+<tr class="memitem:a99c8cf46524d5bd9f64b1fc4cf48d55e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_hover_race_1_1_util_1_1_log.html#abd0e08b5a02a24d461d7cf3065b5b763">logAdded_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_util_1_1_log.html#a99c8cf46524d5bd9f64b1fc4cf48d55e">logAddedSignal</a></td></tr>
 <tr class="separator:a99c8cf46524d5bd9f64b1fc4cf48d55e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a class="anchor" id="a139e06307863df3e6bb3ae6cff68ec4b"></a>
+<a class="anchor" id="abd0e08b5a02a24d461d7cf3065b5b763"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef boost::signals2::signal&lt;void(const <a class="el" href="struct_hover_race_1_1_util_1_1_log_1_1_entry.html">Entry</a>&amp;)&gt; <a class="el" href="namespace_hover_race_1_1_util_1_1_log.html#a139e06307863df3e6bb3ae6cff68ec4b">HoverRace::Util::Log::logAdded_t</a></td>
+          <td class="memname">using <a class="el" href="namespace_hover_race_1_1_util_1_1_log.html#abd0e08b5a02a24d461d7cf3065b5b763">HoverRace::Util::Log::logAdded_t</a> = typedef boost::signals2::signal&lt;void(const <a class="el" href="struct_hover_race_1_1_util_1_1_log_1_1_entry.html">Entry</a>&amp;)&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -296,21 +294,27 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a0e32993cc3d1a5c1786edb4039d11805"></a>
+<a class="anchor" id="aed95adfa5aed6f503cf0e592133fd72d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="_viewport3_d_8h.html#a92ab9b5ccb38279197015ee3f200757a">MR_DllDeclare</a> void HoverRace::Util::Log::Init </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>verboseLog</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Initialize the system log. </p>
-<p>Must be called at the beginning of the program. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">verboseLog</td><td>Enable DEBUG-level logging. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -354,7 +358,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_viewport3_d_8h.html#a92ab9b5ccb38279197015ee3f200757a">MR_DllDeclare</a> <a class="el" href="namespace_hover_race_1_1_util_1_1_log.html#a139e06307863df3e6bb3ae6cff68ec4b">logAdded_t</a> HoverRace::Util::Log::logAddedSignal</td>
+          <td class="memname"><a class="el" href="_viewport3_d_8h.html#a92ab9b5ccb38279197015ee3f200757a">MR_DllDeclare</a> <a class="el" href="namespace_hover_race_1_1_util_1_1_log.html#abd0e08b5a02a24d461d7cf3065b5b763">logAdded_t</a> HoverRace::Util::Log::logAddedSignal</td>
         </tr>
       </table>
 </div><div class="memdoc">

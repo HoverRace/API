@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <title>HoverRace: Missile.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.13/jquery.min.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="customdoxygen.css" rel="stylesheet" type="text/css" />
 </head>
@@ -50,16 +50,20 @@
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">Missile.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="_missile_8h_source.html">Missile.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="_obj_fac1_res_8h_source.html">ObjFac1Res.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="_concrete_shape_8h_source.html">../Model/ConcreteShape.h</a>&quot;</code><br/>
+<div class="textblock"><code>#include &quot;<a class="el" href="_concrete_shape_8h_source.html">../Model/ConcreteShape.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="_obstacle_collision_report_8h_source.html">../Model/ObstacleCollisionReport.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="_track_8h_source.html">../Model/Track.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="_resource_lib_8h_source.html">../ObjFacTools/ResourceLib.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="_res_bundle_8h_source.html">../Parcel/ResBundle.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="_config_8h_source.html">../Util/Config.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="_obj_fac1_res_8h_source.html">ObjFac1Res.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="_missile_8h_source.html">Missile.h</a>&quot;</code><br/>
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Missile.cpp:</div>
 <div class="dyncontent">
@@ -79,6 +83,19 @@ Macros</h2></td></tr>
 <tr class="separator:ab5d40454bdc2a1328d3efcb09c3298f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae17b0e0d44770e679be7612a45ca831a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_missile_8cpp.html#ae17b0e0d44770e679be7612a45ca831a">TIME_SLICE</a>&#160;&#160;&#160;5</td></tr>
 <tr class="separator:ae17b0e0d44770e679be7612a45ca831a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a958cff296b82a0b608e9d0c9891c10e0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_obj_fac1.html#a958cff296b82a0b608e9d0c9891c10e0">HoverRace::ObjFac1::mBounceSoundEvent</a> (false)</td></tr>
+<tr class="separator:a958cff296b82a0b608e9d0c9891c10e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3007b75dc936b528bb22d407adf6f52"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_obj_fac1.html#ac3007b75dc936b528bb22d407adf6f52">HoverRace::ObjFac1::mHoverId</a> (-1)</td></tr>
+<tr class="separator:ac3007b75dc936b528bb22d407adf6f52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4e8949b5b1551b11b2b7e124584d3d4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_obj_fac1.html#ad4e8949b5b1551b11b2b7e124584d3d4">HoverRace::ObjFac1::mLived</a> (0)</td></tr>
+<tr class="separator:ad4e8949b5b1551b11b2b7e124584d3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20a101de4d1e25de4e0916e31933842a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_obj_fac1.html#a20a101de4d1e25de4e0916e31933842a">HoverRace::ObjFac1::mXSpeed</a> (0)</td></tr>
+<tr class="separator:a20a101de4d1e25de4e0916e31933842a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec5ddada6a2e64e319d4c4163dd995fd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_obj_fac1.html#aec5ddada6a2e64e319d4c4163dd995fd">HoverRace::ObjFac1::mYSpeed</a> (0)</td></tr>
+<tr class="separator:aec5ddada6a2e64e319d4c4163dd995fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <title>HoverRace: HoverRace::Util::OS Namespace Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.13/jquery.min.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="customdoxygen.css" rel="stylesheet" type="text/css" />
 </head>
@@ -93,9 +93,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a75ff2ceea3c156e0812874d064cd358b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_util_1_1_o_s.html#a75ff2ceea3c156e0812874d064cd358b">SetEnv</a> (const char *key, const char *<a class="el" href="_rulebook_8cpp.html#aef340542f1edc6a67d9a8e21585fe760">val</a>)</td></tr>
 <tr class="memdesc:a75ff2ceea3c156e0812874d064cd358b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set an environment variable.  <a href="#a75ff2ceea3c156e0812874d064cd358b">More...</a><br/></td></tr>
 <tr class="separator:a75ff2ceea3c156e0812874d064cd358b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afea83473d3b007e5f54509fb5b32cca8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_util_1_1_o_s.html#afea83473d3b007e5f54509fb5b32cca8">SetLocale</a> ()</td></tr>
-<tr class="memdesc:afea83473d3b007e5f54509fb5b32cca8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the locale based on the current environment.  <a href="#afea83473d3b007e5f54509fb5b32cca8">More...</a><br/></td></tr>
-<tr class="separator:afea83473d3b007e5f54509fb5b32cca8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae44c5dc64a3efc34638bea21c7cc2e37"><td class="memItemLeft" align="right" valign="top">const std::locale &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_util_1_1_o_s.html#ae44c5dc64a3efc34638bea21c7cc2e37">SetLocale</a> (const <a class="el" href="namespace_hover_race_1_1_util_1_1_o_s.html#a2214cc4c8bc277b059dfe766dcf35b4e">path_t</a> &amp;path, const std::string &amp;domain, const std::string &amp;reqLocale={})</td></tr>
+<tr class="memdesc:ae44c5dc64a3efc34638bea21c7cc2e37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the locale based on the current environment.  <a href="#ae44c5dc64a3efc34638bea21c7cc2e37">More...</a><br/></td></tr>
+<tr class="separator:ae44c5dc64a3efc34638bea21c7cc2e37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99ff9c93ff3bde8edff1f256b7a7c79e"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_util_1_1_o_s.html#a99ff9c93ff3bde8edff1f256b7a7c79e">StrError</a> (int errnum)</td></tr>
 <tr class="memdesc:a99ff9c93ff3bde8edff1f256b7a7c79e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert an error number to a string.  <a href="#a99ff9c93ff3bde8edff1f256b7a7c79e">More...</a><br/></td></tr>
 <tr class="separator:a99ff9c93ff3bde8edff1f256b7a7c79e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -114,12 +114,12 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a81112da736119bf479432efed8f21e54"><td class="memItemLeft" align="right" valign="top">std::locale&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_util_1_1_o_s.html#a81112da736119bf479432efed8f21e54">locale</a></td></tr>
+<tr class="memitem:a81112da736119bf479432efed8f21e54"><td class="memItemLeft" align="right" valign="top">std::locale&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_util_1_1_o_s.html#a81112da736119bf479432efed8f21e54">locale</a> {&quot;&quot;}</td></tr>
 <tr class="memdesc:a81112da736119bf479432efed8f21e54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Global reference to the current locale.  <a href="#a81112da736119bf479432efed8f21e54">More...</a><br/></td></tr>
 <tr class="separator:a81112da736119bf479432efed8f21e54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ac29658d09dac675c77db6a6930054d"><td class="memItemLeft" align="right" valign="top">const std::locale&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_util_1_1_o_s.html#a4ac29658d09dac675c77db6a6930054d">stdLocale</a></td></tr>
-<tr class="memdesc:a4ac29658d09dac675c77db6a6930054d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The standard "C" locale for things that should be not be affected by locale.  <a href="#a4ac29658d09dac675c77db6a6930054d">More...</a><br/></td></tr>
-<tr class="separator:a4ac29658d09dac675c77db6a6930054d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a257ea9b1f1103dbc7dfc8fad47d459fc"><td class="memItemLeft" align="right" valign="top">const std::locale &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_util_1_1_o_s.html#a257ea9b1f1103dbc7dfc8fad47d459fc">stdLocale</a> = std::locale::classic()</td></tr>
+<tr class="memdesc:a257ea9b1f1103dbc7dfc8fad47d459fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">The standard "C" locale for things that should be not be affected by locale.  <a href="#a257ea9b1f1103dbc7dfc8fad47d459fc">More...</a><br/></td></tr>
+<tr class="separator:a257ea9b1f1103dbc7dfc8fad47d459fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Operating system support utilities. </p>
@@ -356,20 +356,46 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="afea83473d3b007e5f54509fb5b32cca8"></a>
+<a class="anchor" id="ae44c5dc64a3efc34638bea21c7cc2e37"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void HoverRace::Util::OS::SetLocale </td>
+          <td class="memname">const std::locale &amp; HoverRace::Util::OS::SetLocale </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">const path_t &amp;&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>reqLocale</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Set the locale based on the current environment. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>The path to where compiled translations can be found. </td></tr>
+    <tr><td class="paramname">domain</td><td>The translation domain to use. </td></tr>
+    <tr><td class="paramname">reqLocale</td><td>The requested locale. If blank, the system default will be used. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The selected locale. </dd></dl>
 
 </div>
 </div>
@@ -503,22 +529,22 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::locale HoverRace::Util::OS::locale</td>
+          <td class="memname">std::locale HoverRace::Util::OS::locale {&quot;&quot;}</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Global reference to the current locale. </p>
-<p>Defaults to "C" until <a class="el" href="namespace_hover_race_1_1_util_1_1_o_s.html#afea83473d3b007e5f54509fb5b32cca8" title="Set the locale based on the current environment. ">OS::SetLocale()</a> is called. </p>
+<p>Defaults to "C" until <a class="el" href="namespace_hover_race_1_1_util_1_1_o_s.html#ae44c5dc64a3efc34638bea21c7cc2e37" title="Set the locale based on the current environment. ">OS::SetLocale()</a> is called. </p>
 
 </div>
 </div>
-<a class="anchor" id="a4ac29658d09dac675c77db6a6930054d"></a>
+<a class="anchor" id="a257ea9b1f1103dbc7dfc8fad47d459fc"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const std::locale HoverRace::Util::OS::stdLocale</td>
+          <td class="memname">const std::locale &amp; HoverRace::Util::OS::stdLocale = std::locale::classic()</td>
         </tr>
       </table>
 </div><div class="memdoc">

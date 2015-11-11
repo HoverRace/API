@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <title>HoverRace: ObjFac1.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.13/jquery.min.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="customdoxygen.css" rel="stylesheet" type="text/css" />
 </head>
@@ -75,8 +75,8 @@
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">namespace </span>HoverRace {</div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="namespace_hover_race_1_1_obj_fac_tools.html">   25</a></span>&#160;    <span class="keyword">namespace </span>ObjFacTools {</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keyword">class </span><a class="code" href="class_hover_race_1_1_obj_fac_tools_1_1_resource_lib.html">ResourceLib</a>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">namespace </span>ObjFacTools {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keyword">class </span>ResourceLib;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    }</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">namespace </span>Util {</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keyword">class </span>ObjectFromFactory;</div>
@@ -89,26 +89,13 @@
 <div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_hover_race_1_1_obj_fac1_1_1_obj_fac1.html">   36</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_hover_race_1_1_obj_fac1_1_1_obj_fac1.html">ObjFac1</a></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="class_hover_race_1_1_obj_fac1_1_1_obj_fac1.html#ac4fa94b60566e3bc1e3cd8f62651a528">ObjFac1</a>();</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="class_hover_race_1_1_obj_fac1_1_1_obj_fac1.html#a31050d052a65db6b38a914eb53c65035">~ObjFac1</a>();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    std::shared_ptr&lt;Util::ObjectFromFactory&gt; <a class="code" href="class_hover_race_1_1_obj_fac1_1_1_obj_fac1.html#a54e57c54c5b0deae0fc87ef5c700a24a">GetObject</a>(<span class="keywordtype">int</span> pClassId);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;};</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_hover_race_1_1_obj_fac1_1_1_obj_fac1.html#aaf10876dfa1846330af04ab2254d89da">   42</a></span>&#160;    <a class="code" href="class_hover_race_1_1_obj_fac_tools_1_1_resource_lib.html">ObjFacTools::ResourceLib</a> &amp;<a class="code" href="class_hover_race_1_1_obj_fac1_1_1_obj_fac1.html#aaf10876dfa1846330af04ab2254d89da">GetResourceLib</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> *<a class="code" href="class_hover_race_1_1_obj_fac1_1_1_obj_fac1.html#a929d8281b258959a9baf185b89f92662">resourceLib</a>; }</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    std::shared_ptr&lt;Util::ObjectFromFactory&gt; <a class="code" href="class_hover_race_1_1_obj_fac1_1_1_obj_fac1.html#a54e57c54c5b0deae0fc87ef5c700a24a">GetObject</a>(<span class="keywordtype">int</span> pClassId);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_hover_race_1_1_obj_fac1_1_1_obj_fac1.html#a929d8281b258959a9baf185b89f92662">   47</a></span>&#160;    std::unique_ptr&lt;ObjFacTools::ResourceLib&gt; <a class="code" href="class_hover_race_1_1_obj_fac1_1_1_obj_fac1.html#a929d8281b258959a9baf185b89f92662">resourceLib</a>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;};</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;} <span class="comment">// namespace ObjFac1</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;} <span class="comment">// namespace HoverRace</span></div>
-<div class="ttc" id="class_hover_race_1_1_obj_fac1_1_1_obj_fac1_html_a31050d052a65db6b38a914eb53c65035"><div class="ttname"><a href="class_hover_race_1_1_obj_fac1_1_1_obj_fac1.html#a31050d052a65db6b38a914eb53c65035">HoverRace::ObjFac1::ObjFac1::~ObjFac1</a></div><div class="ttdeci">~ObjFac1()</div><div class="ttdef"><b>Definition:</b> ObjFac1.cpp:53</div></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;} <span class="comment">// namespace ObjFac1</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;} <span class="comment">// namespace HoverRace</span></div>
 <div class="ttc" id="class_hover_race_1_1_obj_fac1_1_1_obj_fac1_html"><div class="ttname"><a href="class_hover_race_1_1_obj_fac1_1_1_obj_fac1.html">HoverRace::ObjFac1::ObjFac1</a></div><div class="ttdef"><b>Definition:</b> ObjFac1.h:36</div></div>
-<div class="ttc" id="class_hover_race_1_1_obj_fac1_1_1_obj_fac1_html_ac4fa94b60566e3bc1e3cd8f62651a528"><div class="ttname"><a href="class_hover_race_1_1_obj_fac1_1_1_obj_fac1.html#ac4fa94b60566e3bc1e3cd8f62651a528">HoverRace::ObjFac1::ObjFac1::ObjFac1</a></div><div class="ttdeci">ObjFac1()</div><div class="ttdef"><b>Definition:</b> ObjFac1.cpp:48</div></div>
-<div class="ttc" id="class_hover_race_1_1_obj_fac1_1_1_obj_fac1_html_a929d8281b258959a9baf185b89f92662"><div class="ttname"><a href="class_hover_race_1_1_obj_fac1_1_1_obj_fac1.html#a929d8281b258959a9baf185b89f92662">HoverRace::ObjFac1::ObjFac1::resourceLib</a></div><div class="ttdeci">std::unique_ptr&lt; ObjFacTools::ResourceLib &gt; resourceLib</div><div class="ttdef"><b>Definition:</b> ObjFac1.h:47</div></div>
-<div class="ttc" id="class_hover_race_1_1_obj_fac1_1_1_obj_fac1_html_a54e57c54c5b0deae0fc87ef5c700a24a"><div class="ttname"><a href="class_hover_race_1_1_obj_fac1_1_1_obj_fac1.html#a54e57c54c5b0deae0fc87ef5c700a24a">HoverRace::ObjFac1::ObjFac1::GetObject</a></div><div class="ttdeci">std::shared_ptr&lt; Util::ObjectFromFactory &gt; GetObject(int pClassId)</div><div class="ttdef"><b>Definition:</b> ObjFac1.cpp:57</div></div>
-<div class="ttc" id="class_hover_race_1_1_obj_fac1_1_1_obj_fac1_html_aaf10876dfa1846330af04ab2254d89da"><div class="ttname"><a href="class_hover_race_1_1_obj_fac1_1_1_obj_fac1.html#aaf10876dfa1846330af04ab2254d89da">HoverRace::ObjFac1::ObjFac1::GetResourceLib</a></div><div class="ttdeci">ObjFacTools::ResourceLib &amp; GetResourceLib() const </div><div class="ttdef"><b>Definition:</b> ObjFac1.h:42</div></div>
-<div class="ttc" id="class_hover_race_1_1_obj_fac_tools_1_1_resource_lib_html"><div class="ttname"><a href="class_hover_race_1_1_obj_fac_tools_1_1_resource_lib.html">HoverRace::ObjFacTools::ResourceLib</a></div><div class="ttdoc">Loadable resource manager. </div><div class="ttdef"><b>Definition:</b> ResourceLib.h:55</div></div>
+<div class="ttc" id="class_hover_race_1_1_obj_fac1_1_1_obj_fac1_html_a54e57c54c5b0deae0fc87ef5c700a24a"><div class="ttname"><a href="class_hover_race_1_1_obj_fac1_1_1_obj_fac1.html#a54e57c54c5b0deae0fc87ef5c700a24a">HoverRace::ObjFac1::ObjFac1::GetObject</a></div><div class="ttdeci">std::shared_ptr&lt; Util::ObjectFromFactory &gt; GetObject(int pClassId)</div><div class="ttdef"><b>Definition:</b> ObjFac1.cpp:50</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
