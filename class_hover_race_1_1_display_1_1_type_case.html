@@ -91,9 +91,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a028fa9ebe58a14fea114e80c04e03ef3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_type_case.html#a028fa9ebe58a14fea114e80c04e03ef3">Prepare</a> (const std::string &amp;s, <a class="el" href="class_hover_race_1_1_display_1_1_type_line.html">TypeLine</a> *rects=nullptr)=0</td></tr>
 <tr class="memdesc:a028fa9ebe58a14fea114e80c04e03ef3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare a string to be rendered.  <a href="#a028fa9ebe58a14fea114e80c04e03ef3">More...</a><br /></td></tr>
 <tr class="separator:a028fa9ebe58a14fea114e80c04e03ef3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aacf25f46c78d154be4e3db0218e670a8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_type_case.html#aacf25f46c78d154be4e3db0218e670a8">Render</a> (const <a class="el" href="class_hover_race_1_1_display_1_1_type_line.html">TypeLine</a> &amp;s, const <a class="el" href="union_hover_race_1_1_display_1_1_color.html">Color</a> color, int x, int y)=0</td></tr>
-<tr class="memdesc:aacf25f46c78d154be4e3db0218e670a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render a string.  <a href="#aacf25f46c78d154be4e3db0218e670a8">More...</a><br /></td></tr>
-<tr class="separator:aacf25f46c78d154be4e3db0218e670a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0053955c4ed17ff03fce3b22739a9dea"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_type_case.html#a0053955c4ed17ff03fce3b22739a9dea">Render</a> (const <a class="el" href="class_hover_race_1_1_display_1_1_type_line.html">TypeLine</a> &amp;s, const <a class="el" href="union_hover_race_1_1_display_1_1_color.html">Color</a> color, int x, int y, boost::optional&lt; size_t &gt; caret={})=0</td></tr>
+<tr class="memdesc:a0053955c4ed17ff03fce3b22739a9dea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render a string.  <a href="#a0053955c4ed17ff03fce3b22739a9dea">More...</a><br /></td></tr>
+<tr class="separator:a0053955c4ed17ff03fce3b22739a9dea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe27f2575f03758563e49d3b4a136d59"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_type_case.html#afe27f2575f03758563e49d3b4a136d59">RenderTexture</a> (<a class="el" href="_m_r___types_8h.html#abcc66530690cbfec146e654c252e684e">MR_UInt32</a> <a class="el" href="_sdl_display_8cpp.html#ae40354a1051342eb5a9db005715dcfa9">idx</a>, int x, int y, double scale=1.0)=0</td></tr>
 <tr class="memdesc:afe27f2575f03758563e49d3b4a136d59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders the backing texture (for debugging purposes).  <a href="#afe27f2575f03758563e49d3b4a136d59">More...</a><br /></td></tr>
 <tr class="separator:afe27f2575f03758563e49d3b4a136d59"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -359,7 +359,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aacf25f46c78d154be4e3db0218e670a8"></a>
+<a class="anchor" id="a0053955c4ed17ff03fce3b22739a9dea"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -388,7 +388,13 @@ Protected Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>y</em>&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">boost::optional&lt; size_t &gt;&#160;</td>
+          <td class="paramname"><em>caret</em> = <code>{}</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -411,11 +417,12 @@ Protected Attributes</h2></td></tr>
     <tr><td class="paramname">color</td><td>The color of the string. </td></tr>
     <tr><td class="paramname">x</td><td>The screen X coordinate of the upper-left corner. </td></tr>
     <tr><td class="paramname">y</td><td>The screen Y coordinate of the upper-left corner. </td></tr>
+    <tr><td class="paramname">caret</td><td>The optional caret position. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="class_hover_race_1_1_display_1_1_s_d_l_1_1_sdl_type_case.html#a116541f4f85e5642b4b2db230a444fba">HoverRace::Display::SDL::SdlTypeCase</a>.</p>
+<p>Implemented in <a class="el" href="class_hover_race_1_1_display_1_1_s_d_l_1_1_sdl_type_case.html#a76591257c52af485e857a6d38d1a4b8c">HoverRace::Display::SDL::SdlTypeCase</a>.</p>
 
 </div>
 </div>

@@ -78,8 +78,8 @@ Public Types</h2></td></tr>
  }</td></tr>
 <tr class="separator:a7de3793e15869bc77ba8fdc98558f388"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_class_hover_race_1_1_client_1_1_game_director"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_hover_race_1_1_client_1_1_game_director')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_hover_race_1_1_client_1_1_game_director.html">HoverRace::Client::GameDirector</a></td></tr>
-<tr class="memitem:a223be148c60bd69b4220220411644609 inherit pub_types_class_hover_race_1_1_client_1_1_game_director"><td class="memItemLeft" align="right" valign="top">typedef boost::signals2::signal&lt; void(std::shared_ptr&lt; <a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_meta_session.html">HoverScript::MetaSession</a> &gt;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_game_director.html#a223be148c60bd69b4220220411644609">sessionChangedSignal_t</a></td></tr>
-<tr class="separator:a223be148c60bd69b4220220411644609 inherit pub_types_class_hover_race_1_1_client_1_1_game_director"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad55bab48b51913417a5a8f81fc14e1fe inherit pub_types_class_hover_race_1_1_client_1_1_game_director"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_game_director.html#ad55bab48b51913417a5a8f81fc14e1fe">sessionChangedSignal_t</a> = boost::signals2::signal&lt; void(std::shared_ptr&lt; <a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_meta_session.html">HoverScript::MetaSession</a> &gt;)&gt;</td></tr>
+<tr class="separator:ad55bab48b51913417a5a8f81fc14e1fe inherit pub_types_class_hover_race_1_1_client_1_1_game_director"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -97,7 +97,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6f5edf2a405c1b0a5dcc4f3bfd5dcf62"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_client_1_1_roster.html">Roster</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_client_app.html#a6f5edf2a405c1b0a5dcc4f3bfd5dcf62">GetParty</a> () const override</td></tr>
 <tr class="memdesc:a6f5edf2a405c1b0a5dcc4f3bfd5dcf62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the list of players connected to this game instance.  <a href="#a6f5edf2a405c1b0a5dcc4f3bfd5dcf62">More...</a><br /></td></tr>
 <tr class="separator:a6f5edf2a405c1b0a5dcc4f3bfd5dcf62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad454e2e72f3953273eb676a394f168e6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_client_1_1_game_director.html#a223be148c60bd69b4220220411644609">sessionChangedSignal_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_client_app.html#ad454e2e72f3953273eb676a394f168e6">GetSessionChangedSignal</a> () override</td></tr>
+<tr class="memitem:ad454e2e72f3953273eb676a394f168e6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_client_1_1_game_director.html#ad55bab48b51913417a5a8f81fc14e1fe">sessionChangedSignal_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_client_app.html#ad454e2e72f3953273eb676a394f168e6">GetSessionChangedSignal</a> () override</td></tr>
 <tr class="memdesc:ad454e2e72f3953273eb676a394f168e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access the signal that indicates that the gameplay session started or stopped.  <a href="#ad454e2e72f3953273eb676a394f168e6">More...</a><br /></td></tr>
 <tr class="separator:ad454e2e72f3953273eb676a394f168e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17b3faf3547d30aac3c3fce1ffe4863b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_video_services_1_1_video_buffer.html">VideoServices::VideoBuffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_client_app.html#a17b3faf3547d30aac3c3fce1ffe4863b">GetVideoBuffer</a> () const override</td></tr>
@@ -234,7 +234,7 @@ Private Attributes</h2></td></tr>
 <tr class="separator:ae25e50a00aa8223ee511d899743fd1a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c164b72908a81376b377442e0b00fd6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_script_1_1_core.html">Script::Core</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_client_app.html#a5c164b72908a81376b377442e0b00fd6">scripting</a></td></tr>
 <tr class="separator:a5c164b72908a81376b377442e0b00fd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad44fdb4a7cad20a019723e93bf6d9ba7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_client_1_1_game_director.html#a223be148c60bd69b4220220411644609">sessionChangedSignal_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_client_app.html#ad44fdb4a7cad20a019723e93bf6d9ba7">sessionChangedSignal</a></td></tr>
+<tr class="memitem:ad44fdb4a7cad20a019723e93bf6d9ba7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_client_1_1_game_director.html#ad55bab48b51913417a5a8f81fc14e1fe">sessionChangedSignal_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_client_app.html#ad44fdb4a7cad20a019723e93bf6d9ba7">sessionChangedSignal</a></td></tr>
 <tr class="separator:ad44fdb4a7cad20a019723e93bf6d9ba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace44e4f7ad882d0bceea66642be92750"><td class="memItemLeft" align="right" valign="top">const bool &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_client_app.html#ace44e4f7ad882d0bceea66642be92750">showDebug</a></td></tr>
 <tr class="separator:ace44e4f7ad882d0bceea66642be92750"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -502,7 +502,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_hover_race_1_1_client_1_1_game_director.html#a223be148c60bd69b4220220411644609">sessionChangedSignal_t</a>&amp; HoverRace::Client::ClientApp::GetSessionChangedSignal </td>
+          <td class="memname"><a class="el" href="class_hover_race_1_1_client_1_1_game_director.html#ad55bab48b51913417a5a8f81fc14e1fe">sessionChangedSignal_t</a>&amp; HoverRace::Client::ClientApp::GetSessionChangedSignal </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1713,7 +1713,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_hover_race_1_1_client_1_1_game_director.html#a223be148c60bd69b4220220411644609">sessionChangedSignal_t</a> HoverRace::Client::ClientApp::sessionChangedSignal</td>
+          <td class="memname"><a class="el" href="class_hover_race_1_1_client_1_1_game_director.html#ad55bab48b51913417a5a8f81fc14e1fe">sessionChangedSignal_t</a> HoverRace::Client::ClientApp::sessionChangedSignal</td>
         </tr>
       </table>
   </td>

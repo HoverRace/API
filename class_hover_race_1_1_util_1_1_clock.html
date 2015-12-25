@@ -71,8 +71,8 @@ Inheritance diagram for HoverRace::Util::Clock:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ac384a55275d1f49afd1ca35e77fa67f2"><td class="memItemLeft" align="right" valign="top">typedef boost::signals2::signal&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_util_1_1_clock.html#ac384a55275d1f49afd1ca35e77fa67f2">alarmSignal_t</a></td></tr>
-<tr class="separator:ac384a55275d1f49afd1ca35e77fa67f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4489caead12f89f31e3c6b6ebc6df745"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_util_1_1_clock.html#a4489caead12f89f31e3c6b6ebc6df745">alarmSignal_t</a> = boost::signals2::signal&lt; void()&gt;</td></tr>
+<tr class="separator:a4489caead12f89f31e3c6b6ebc6df745"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -95,26 +95,26 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a78e6bed2c2722dd7574114aa3afb8fdc"><td class="memTemplItemLeft" align="right" valign="top">boost::signals2::connection&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_util_1_1_clock.html#a78e6bed2c2722dd7574114aa3afb8fdc">At</a> (const <a class="el" href="class_hover_race_1_1_util_1_1_duration.html">Duration</a> &amp;duration, Fn &amp;&amp;fn)</td></tr>
 <tr class="memdesc:a78e6bed2c2722dd7574114aa3afb8fdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a one-shot alarm to run at a specific time.  <a href="#a78e6bed2c2722dd7574114aa3afb8fdc">More...</a><br /></td></tr>
 <tr class="separator:a78e6bed2c2722dd7574114aa3afb8fdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8d200d0c5e714daa87071e44772621d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_util_1_1_clock.html#af8d200d0c5e714daa87071e44772621d">ClearAlarms</a> ()</td></tr>
-<tr class="memdesc:af8d200d0c5e714daa87071e44772621d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove all alarms.  <a href="#af8d200d0c5e714daa87071e44772621d">More...</a><br /></td></tr>
-<tr class="separator:af8d200d0c5e714daa87071e44772621d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1fbf8c4c55064f58c143574a83aa002"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_util_1_1_clock.html#aa1fbf8c4c55064f58c143574a83aa002">ClearAlarms</a> () noexcept</td></tr>
+<tr class="memdesc:aa1fbf8c4c55064f58c143574a83aa002"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove all alarms.  <a href="#aa1fbf8c4c55064f58c143574a83aa002">More...</a><br /></td></tr>
+<tr class="separator:aa1fbf8c4c55064f58c143574a83aa002"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4bb67747f1f40ae893e0d2b2405d733"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_util_1_1_clock.html#ab4bb67747f1f40ae893e0d2b2405d733">FmtLong</a> () const </td></tr>
 <tr class="separator:ab4bb67747f1f40ae893e0d2b2405d733"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31ac0157acd868b5feed34ee8406c301"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_util_1_1_clock.html#a31ac0157acd868b5feed34ee8406c301">FmtShort</a> () const </td></tr>
 <tr class="separator:a31ac0157acd868b5feed34ee8406c301"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7aaeadaba72648b1fd42ea57c83f169c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_hover_race_1_1_util_1_1_duration.html">Duration</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_util_1_1_clock.html#a7aaeadaba72648b1fd42ea57c83f169c">GetTime</a> () const </td></tr>
-<tr class="memdesc:a7aaeadaba72648b1fd42ea57c83f169c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the time of the last call to <a class="el" href="class_hover_race_1_1_util_1_1_clock.html#a50ff802049e9637215bd3b29c77c1df5" title="Advance the clock to the current time. ">Advance()</a>.  <a href="#a7aaeadaba72648b1fd42ea57c83f169c">More...</a><br /></td></tr>
-<tr class="separator:a7aaeadaba72648b1fd42ea57c83f169c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62c215b39f44b483908567bda9e9141b"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_hover_race_1_1_util_1_1_duration.html">Duration</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_util_1_1_clock.html#a62c215b39f44b483908567bda9e9141b">GetTime</a> () const noexcept</td></tr>
+<tr class="memdesc:a62c215b39f44b483908567bda9e9141b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the time of the last call to <a class="el" href="class_hover_race_1_1_util_1_1_clock.html#a50ff802049e9637215bd3b29c77c1df5" title="Advance the clock to the current time. ">Advance()</a>.  <a href="#a62c215b39f44b483908567bda9e9141b">More...</a><br /></td></tr>
+<tr class="separator:a62c215b39f44b483908567bda9e9141b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88a6325175002480d1beadca2db19744"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_util_1_1_clock.html">Clock</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_util_1_1_clock.html#a88a6325175002480d1beadca2db19744">operator=</a> (const <a class="el" href="class_hover_race_1_1_util_1_1_clock.html">Clock</a> &amp;)=delete</td></tr>
 <tr class="separator:a88a6325175002480d1beadca2db19744"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc7db8e68abe273385bd272385cf21e3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_util_1_1_clock.html">Clock</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_util_1_1_clock.html#abc7db8e68abe273385bd272385cf21e3">operator=</a> (<a class="el" href="class_hover_race_1_1_util_1_1_clock.html">Clock</a> &amp;&amp;)=default</td></tr>
 <tr class="separator:abc7db8e68abe273385bd272385cf21e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a570dcdf819fb515edb3b54fb79d6be52"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_util_1_1_clock.html#a570dcdf819fb515edb3b54fb79d6be52">SetTime</a> (const <a class="el" href="class_hover_race_1_1_util_1_1_duration.html">Duration</a> &amp;duration=<a class="el" href="class_hover_race_1_1_util_1_1_duration.html">Duration</a>())</td></tr>
-<tr class="separator:a570dcdf819fb515edb3b54fb79d6be52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad13081d2f93a2ac01d2636222e60868f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_util_1_1_clock.html#ad13081d2f93a2ac01d2636222e60868f">SetTime</a> (const <a class="el" href="class_hover_race_1_1_util_1_1_duration.html">Duration</a> &amp;duration={}) noexcept</td></tr>
+<tr class="separator:ad13081d2f93a2ac01d2636222e60868f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a26130808fa2af9461da3629333fffc48"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_sdl_display_8cpp.html#ac794df5461b19719072c49d25cdbf8ef">std::map</a>&lt; <a class="el" href="class_hover_race_1_1_util_1_1_duration.html">Duration</a>, std::unique_ptr&lt; <a class="el" href="class_hover_race_1_1_util_1_1_clock.html#ac384a55275d1f49afd1ca35e77fa67f2">alarmSignal_t</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_util_1_1_clock.html#a26130808fa2af9461da3629333fffc48">alarms</a></td></tr>
+<tr class="memitem:a26130808fa2af9461da3629333fffc48"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_sdl_display_8cpp.html#ac794df5461b19719072c49d25cdbf8ef">std::map</a>&lt; <a class="el" href="class_hover_race_1_1_util_1_1_duration.html">Duration</a>, std::unique_ptr&lt; <a class="el" href="class_hover_race_1_1_util_1_1_clock.html#a4489caead12f89f31e3c6b6ebc6df745">alarmSignal_t</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_util_1_1_clock.html#a26130808fa2af9461da3629333fffc48">alarms</a></td></tr>
 <tr class="separator:a26130808fa2af9461da3629333fffc48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af06ae834e98a10b404e1aab94e3abdcd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_util_1_1_duration.html">Duration</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_util_1_1_clock.html#af06ae834e98a10b404e1aab94e3abdcd">lastRead</a></td></tr>
 <tr class="separator:af06ae834e98a10b404e1aab94e3abdcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -127,12 +127,12 @@ Private Attributes</h2></td></tr>
 <div class="textblock"><p>A game clock that manages the current time in the simulation. </p>
 <dl class="section author"><dt>Author</dt><dd>Michael Imamura </dd></dl>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="ac384a55275d1f49afd1ca35e77fa67f2"></a>
+<a class="anchor" id="a4489caead12f89f31e3c6b6ebc6df745"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef boost::signals2::signal&lt;void()&gt; <a class="el" href="class_hover_race_1_1_util_1_1_clock.html#ac384a55275d1f49afd1ca35e77fa67f2">HoverRace::Util::Clock::alarmSignal_t</a></td>
+          <td class="memname">using <a class="el" href="class_hover_race_1_1_util_1_1_clock.html#a4489caead12f89f31e3c6b6ebc6df745">HoverRace::Util::Clock::alarmSignal_t</a> =  boost::signals2::signal&lt;void()&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -319,7 +319,7 @@ template&lt;class Fn &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="af8d200d0c5e714daa87071e44772621d"></a>
+<a class="anchor" id="aa1fbf8c4c55064f58c143574a83aa002"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -335,7 +335,7 @@ template&lt;class Fn &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -390,7 +390,7 @@ template&lt;class Fn &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a7aaeadaba72648b1fd42ea57c83f169c"></a>
+<a class="anchor" id="a62c215b39f44b483908567bda9e9141b"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -406,7 +406,7 @@ template&lt;class Fn &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -463,18 +463,26 @@ template&lt;class Fn &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a570dcdf819fb515edb3b54fb79d6be52"></a>
+<a class="anchor" id="ad13081d2f93a2ac01d2636222e60868f"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void HoverRace::Util::Clock::SetTime </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="class_hover_race_1_1_util_1_1_duration.html">Duration</a> &amp;&#160;</td>
-          <td class="paramname"><em>duration</em> = <code><a class="el" href="class_hover_race_1_1_util_1_1_duration.html">Duration</a>()</code></td><td>)</td>
+          <td class="paramname"><em>duration</em> = <code>{}</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -488,7 +496,7 @@ template&lt;class Fn &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_sdl_display_8cpp.html#ac794df5461b19719072c49d25cdbf8ef">std::map</a>&lt;<a class="el" href="class_hover_race_1_1_util_1_1_duration.html">Duration</a>, std::unique_ptr&lt;<a class="el" href="class_hover_race_1_1_util_1_1_clock.html#ac384a55275d1f49afd1ca35e77fa67f2">alarmSignal_t</a>&gt; &gt; HoverRace::Util::Clock::alarms</td>
+          <td class="memname"><a class="el" href="_sdl_display_8cpp.html#ac794df5461b19719072c49d25cdbf8ef">std::map</a>&lt;<a class="el" href="class_hover_race_1_1_util_1_1_duration.html">Duration</a>, std::unique_ptr&lt;<a class="el" href="class_hover_race_1_1_util_1_1_clock.html#a4489caead12f89f31e3c6b6ebc6df745">alarmSignal_t</a>&gt; &gt; HoverRace::Util::Clock::alarms</td>
         </tr>
       </table>
   </td>

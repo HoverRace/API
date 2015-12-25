@@ -70,9 +70,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aae1f2942c9299ad69b0ec290d4079c3b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_type_line.html#aae1f2942c9299ad69b0ec290d4079c3b">IsPrepared</a> () const </td></tr>
 <tr class="memdesc:aae1f2942c9299ad69b0ec290d4079c3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if this instance has been prepared.  <a href="#aae1f2942c9299ad69b0ec290d4079c3b">More...</a><br /></td></tr>
 <tr class="separator:aae1f2942c9299ad69b0ec290d4079c3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc271cca6d899e504e192e4fe0a5d444"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_type_line.html#adc271cca6d899e504e192e4fe0a5d444">Render</a> (const <a class="el" href="union_hover_race_1_1_display_1_1_color.html">Color</a> color, int x, int y)</td></tr>
-<tr class="memdesc:adc271cca6d899e504e192e4fe0a5d444"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render this line using the owning <a class="el" href="class_hover_race_1_1_display_1_1_type_case.html" title="Character-by-character text renderer. ">TypeCase</a>.  <a href="#adc271cca6d899e504e192e4fe0a5d444">More...</a><br /></td></tr>
-<tr class="separator:adc271cca6d899e504e192e4fe0a5d444"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b35694955dc4da09aa49a2715649d9d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_type_line.html#a0b35694955dc4da09aa49a2715649d9d">Render</a> (const <a class="el" href="union_hover_race_1_1_display_1_1_color.html">Color</a> color, int x, int y, boost::optional&lt; size_t &gt; caret={})</td></tr>
+<tr class="memdesc:a0b35694955dc4da09aa49a2715649d9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render this line using the owning <a class="el" href="class_hover_race_1_1_display_1_1_type_case.html" title="Character-by-character text renderer. ">TypeCase</a>.  <a href="#a0b35694955dc4da09aa49a2715649d9d">More...</a><br /></td></tr>
+<tr class="separator:a0b35694955dc4da09aa49a2715649d9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -140,7 +140,7 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="adc271cca6d899e504e192e4fe0a5d444"></a>
+<a class="anchor" id="a0b35694955dc4da09aa49a2715649d9d"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -163,7 +163,13 @@ Public Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>y</em>&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">boost::optional&lt; size_t &gt;&#160;</td>
+          <td class="paramname"><em>caret</em> = <code>{}</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -184,6 +190,7 @@ Public Attributes</h2></td></tr>
     <tr><td class="paramname">color</td><td>The color of the string. </td></tr>
     <tr><td class="paramname">x</td><td>The screen X coordinate of the upper-left corner. </td></tr>
     <tr><td class="paramname">y</td><td>The screen Y coordinate of the upper-left corner. </td></tr>
+    <tr><td class="paramname">caret</td><td>The optional caret position. </td></tr>
   </table>
   </dd>
 </dl>
