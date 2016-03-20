@@ -67,15 +67,16 @@
 Public Member Functions</h2></td></tr>
 <tr class="memitem:adaca8ec4655bf60719705e06350cb342"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_hover_race_1_1_client_1_1_scene_1_1_conn_list.html#adaca8ec4655bf60719705e06350cb342">~ConnList</a> ()</td></tr>
 <tr class="separator:adaca8ec4655bf60719705e06350cb342"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f55eb6341ab280ee62386ab079afd08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_hover_race_1_1_client_1_1_scene_1_1_conn_list.html#a7f55eb6341ab280ee62386ab079afd08">Clear</a> ()</td></tr>
-<tr class="separator:a7f55eb6341ab280ee62386ab079afd08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa84128ea02c259c36872c501f1b4e83c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_hover_race_1_1_client_1_1_scene_1_1_conn_list.html">ConnList</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_hover_race_1_1_client_1_1_scene_1_1_conn_list.html#aa84128ea02c259c36872c501f1b4e83c">operator&lt;&lt;</a> (boost::signals2::connection &amp;&amp;conn)</td></tr>
-<tr class="separator:aa84128ea02c259c36872c501f1b4e83c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a854ea473a41fc61e523c2f37f1e00dce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_hover_race_1_1_client_1_1_scene_1_1_conn_list.html#a854ea473a41fc61e523c2f37f1e00dce">Clear</a> () noexcept</td></tr>
+<tr class="separator:a854ea473a41fc61e523c2f37f1e00dce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38ec03ab76dd2076bcf5819526020918"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a38ec03ab76dd2076bcf5819526020918"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_hover_race_1_1_client_1_1_scene_1_1_conn_list.html">ConnList</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_hover_race_1_1_client_1_1_scene_1_1_conn_list.html#a38ec03ab76dd2076bcf5819526020918">operator&lt;&lt;</a> (T &amp;&amp;conn)</td></tr>
+<tr class="separator:a38ec03ab76dd2076bcf5819526020918"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a1b2bac2e59a9fbe9bf01d49bf7e9a158"><td class="memItemLeft" align="right" valign="top">std::list&lt; boost::signals2::scoped_connection &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_hover_race_1_1_client_1_1_scene_1_1_conn_list.html#a1b2bac2e59a9fbe9bf01d49bf7e9a158">conns</a></td></tr>
-<tr class="separator:a1b2bac2e59a9fbe9bf01d49bf7e9a158"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f7393047e39b9262714f8f7b6954ab2"><td class="memItemLeft" align="right" valign="top">std::forward_list&lt; boost::signals2::scoped_connection &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_hover_race_1_1_client_1_1_scene_1_1_conn_list.html#a6f7393047e39b9262714f8f7b6954ab2">conns</a></td></tr>
+<tr class="separator:a6f7393047e39b9262714f8f7b6954ab2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Tracks connections as a group. </p>
@@ -105,7 +106,7 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a7f55eb6341ab280ee62386ab079afd08"></a>
+<a class="anchor" id="a854ea473a41fc61e523c2f37f1e00dce"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -121,16 +122,18 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="aa84128ea02c259c36872c501f1b4e83c"></a>
+<a class="anchor" id="a38ec03ab76dd2076bcf5819526020918"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -138,7 +141,7 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="struct_hover_race_1_1_client_1_1_scene_1_1_conn_list.html">ConnList</a>&amp; HoverRace::Client::Scene::ConnList::operator&lt;&lt; </td>
           <td>(</td>
-          <td class="paramtype">boost::signals2::connection &amp;&amp;&#160;</td>
+          <td class="paramtype">T &amp;&amp;&#160;</td>
           <td class="paramname"><em>conn</em></td><td>)</td>
           <td></td>
         </tr>
@@ -153,7 +156,7 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a1b2bac2e59a9fbe9bf01d49bf7e9a158"></a>
+<a class="anchor" id="a6f7393047e39b9262714f8f7b6954ab2"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -161,7 +164,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::list&lt;boost::signals2::scoped_connection&gt; HoverRace::Client::Scene::ConnList::conns</td>
+          <td class="memname">std::forward_list&lt;boost::signals2::scoped_connection&gt; HoverRace::Client::Scene::ConnList::conns</td>
         </tr>
       </table>
   </td>

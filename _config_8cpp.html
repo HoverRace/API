@@ -65,7 +65,10 @@
 <code>#include &lt;unistd.h&gt;</code><br />
 <code>#include &lt;boost/algorithm/string.hpp&gt;</code><br />
 <code>#include &lt;boost/filesystem/convenience.hpp&gt;</code><br />
+<code>#include &lt;boost/filesystem/fstream.hpp&gt;</code><br />
 <code>#include &lt;boost/filesystem/path.hpp&gt;</code><br />
+<code>#include &lt;boost/uuid/uuid.hpp&gt;</code><br />
+<code>#include &lt;boost/uuid/string_generator.hpp&gt;</code><br />
 <code>#include &lt;SDL2/SDL_keycode.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="_emitter_8h_source.html">yaml/Emitter.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_map_node_8h_source.html">yaml/MapNode.h</a>&quot;</code><br />
@@ -76,6 +79,7 @@
 <code>#include &quot;<a class="el" href="_bundle_8h_source.html">../Parcel/Bundle.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_res_bundle_8h_source.html">../Parcel/ResBundle.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_track_bundle_8h_source.html">../Parcel/TrackBundle.h</a>&quot;</code><br />
+<code>#include &quot;../Player/ProfileExn.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="_locale_8h_source.html">Locale.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_log_8h_source.html">Log.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_str_8h_source.html">Str.h</a>&quot;</code><br />
@@ -99,8 +103,6 @@ Macros</h2></td></tr>
 <tr class="separator:af3a37ddad69a98c185798e80a58dcbdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2bb640726038943acae754b883373e20"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_config_8cpp.html#a2bb640726038943acae754b883373e20">DEFAULT_MAIN_SERVER</a>&#160;&#160;&#160;&quot;www.hoverrace.com/imr/rl.php&quot;</td></tr>
 <tr class="separator:a2bb640726038943acae754b883373e20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85f93468f413a4bbd25bb2bd7ac1d73e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_config_8cpp.html#a85f93468f413a4bbd25bb2bd7ac1d73e">DEFAULT_NICKNAME</a>&#160;&#160;&#160;&quot;Player&quot;</td></tr>
-<tr class="separator:a85f93468f413a4bbd25bb2bd7ac1d73e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab862dbc6ba847ef4c9b73d47b8a1ec5a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_config_8cpp.html#ab862dbc6ba847ef4c9b73d47b8a1ec5a">DEFAULT_UPDATE_SERVER</a>&#160;&#160;&#160;&quot;www.hoverrace.com/updates/updates.php&quot;</td></tr>
 <tr class="separator:ab862dbc6ba847ef4c9b73d47b8a1ec5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c89f3449c0cc91f289ecbef54188d8d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_config_8cpp.html#a2c89f3449c0cc91f289ecbef54188d8d">DIRSEP</a>&#160;&#160;&#160;&quot;/&quot;</td></tr>
@@ -143,18 +145,6 @@ Macros</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define DEFAULT_MAIN_SERVER&#160;&#160;&#160;&quot;www.hoverrace.com/imr/rl.php&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a85f93468f413a4bbd25bb2bd7ac1d73e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define DEFAULT_NICKNAME&#160;&#160;&#160;&quot;Player&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -208,7 +198,7 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">(emitter)-&gt;MapKey(#name); \</div><div class="line">    (emitter)-&gt;Value(name);</div></div><!-- fragment -->
+<b>Value:</b><div class="fragment"><div class="line">(emitter).MapKey(#name); \</div><div class="line">    (emitter).Value(name);</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a66d78502aae542180ff9bc41c4c1fccf"></a>

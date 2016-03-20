@@ -66,7 +66,7 @@
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for OS.h:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="_o_s_8h__incl.svg" width="606" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="_o_s_8h__incl.svg" width="582" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
@@ -113,9 +113,15 @@ Functions</h2></td></tr>
 <tr class="memitem:a3653ed640e9a8db076d2add1ea231dee"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_util_1_1_o_s.html#a3653ed640e9a8db076d2add1ea231dee">HoverRace::Util::OS::FileTimeString</a> ()</td></tr>
 <tr class="memdesc:a3653ed640e9a8db076d2add1ea231dee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a string representing the current timestamp, suitable for filenames.  <a href="namespace_hover_race_1_1_util_1_1_o_s.html#a3653ed640e9a8db076d2add1ea231dee">More...</a><br /></td></tr>
 <tr class="separator:a3653ed640e9a8db076d2add1ea231dee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c8875be69d117a05f363082e8b70d85"><td class="memItemLeft" align="right" valign="top">OS::path_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_util_1_1_o_s.html#a1c8875be69d117a05f363082e8b70d85">HoverRace::Util::OS::FindExePath</a> ()</td></tr>
+<tr class="memdesc:a1c8875be69d117a05f363082e8b70d85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the path of the executable itself.  <a href="namespace_hover_race_1_1_util_1_1_o_s.html#a1c8875be69d117a05f363082e8b70d85">More...</a><br /></td></tr>
+<tr class="separator:a1c8875be69d117a05f363082e8b70d85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8156dcadbdc69694c9feef4b509b890"><td class="memItemLeft" align="right" valign="top">FILE *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_util_1_1_o_s.html#aa8156dcadbdc69694c9feef4b509b890">HoverRace::Util::OS::FOpen</a> (const path_t &amp;path, const char *mode)</td></tr>
 <tr class="memdesc:aa8156dcadbdc69694c9feef4b509b890"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a file using the OS-specific path format.  <a href="namespace_hover_race_1_1_util_1_1_o_s.html#aa8156dcadbdc69694c9feef4b509b890">More...</a><br /></td></tr>
 <tr class="separator:aa8156dcadbdc69694c9feef4b509b890"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37d814b2b7eed0e857f3b39d74d95d3d"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_util_1_1_o_s.html#a37d814b2b7eed0e857f3b39d74d95d3d">HoverRace::Util::OS::GetUsername</a> ()</td></tr>
+<tr class="memdesc:a37d814b2b7eed0e857f3b39d74d95d3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the username of the current <a class="el" href="namespace_hover_race_1_1_util_1_1_o_s.html" title="Operating system support utilities. ">OS</a> user.  <a href="namespace_hover_race_1_1_util_1_1_o_s.html#a37d814b2b7eed0e857f3b39d74d95d3d">More...</a><br /></td></tr>
+<tr class="separator:a37d814b2b7eed0e857f3b39d74d95d3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f8ea397c9cb216e2c21f52df2d936df"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_util_1_1_o_s.html#a7f8ea397c9cb216e2c21f52df2d936df">HoverRace::Util::OS::OpenLink</a> (const std::string &amp;url)</td></tr>
 <tr class="memdesc:a7f8ea397c9cb216e2c21f52df2d936df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a URL.  <a href="namespace_hover_race_1_1_util_1_1_o_s.html#a7f8ea397c9cb216e2c21f52df2d936df">More...</a><br /></td></tr>
 <tr class="separator:a7f8ea397c9cb216e2c21f52df2d936df"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -128,6 +134,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ae44c5dc64a3efc34638bea21c7cc2e37"><td class="memItemLeft" align="right" valign="top">const std::locale &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_util_1_1_o_s.html#ae44c5dc64a3efc34638bea21c7cc2e37">HoverRace::Util::OS::SetLocale</a> (const path_t &amp;path, const std::string &amp;domain, const std::string &amp;reqLocale={})</td></tr>
 <tr class="memdesc:ae44c5dc64a3efc34638bea21c7cc2e37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the locale based on the current environment.  <a href="namespace_hover_race_1_1_util_1_1_o_s.html#ae44c5dc64a3efc34638bea21c7cc2e37">More...</a><br /></td></tr>
 <tr class="separator:ae44c5dc64a3efc34638bea21c7cc2e37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56d16b4afdeb8365df741abaeabe713f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_util_1_1_o_s.html#a56d16b4afdeb8365df741abaeabe713f">HoverRace::Util::OS::ShowMessage</a> (const std::string &amp;s, bool error=false)</td></tr>
+<tr class="memdesc:a56d16b4afdeb8365df741abaeabe713f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="namespace_hover_race_1_1_display.html">Display</a> a simple error message to the user.  <a href="namespace_hover_race_1_1_util_1_1_o_s.html#a56d16b4afdeb8365df741abaeabe713f">More...</a><br /></td></tr>
+<tr class="separator:a56d16b4afdeb8365df741abaeabe713f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99ff9c93ff3bde8edff1f256b7a7c79e"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_util_1_1_o_s.html#a99ff9c93ff3bde8edff1f256b7a7c79e">HoverRace::Util::OS::StrError</a> (int errnum)</td></tr>
 <tr class="memdesc:a99ff9c93ff3bde8edff1f256b7a7c79e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert an error number to a string.  <a href="namespace_hover_race_1_1_util_1_1_o_s.html#a99ff9c93ff3bde8edff1f256b7a7c79e">More...</a><br /></td></tr>
 <tr class="separator:a99ff9c93ff3bde8edff1f256b7a7c79e"><td class="memSeparator" colspan="2">&#160;</td></tr>

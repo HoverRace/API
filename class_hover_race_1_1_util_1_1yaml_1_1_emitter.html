@@ -53,7 +53,6 @@
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_hover_race_1_1_util_1_1yaml_1_1_emitter-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -116,6 +115,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad881a8b2c5b76bd4a9ed5565b78779a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_util_1_1yaml_1_1_emitter.html#ad881a8b2c5b76bd4a9ed5565b78779a9">Value</a> (const <a class="el" href="namespace_hover_race_1_1_util_1_1_o_s.html#a2214cc4c8bc277b059dfe766dcf35b4e">HoverRace::Util::OS::path_t</a> &amp;path)</td></tr>
 <tr class="memdesc:ad881a8b2c5b76bd4a9ed5565b78779a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a single path value.  <a href="#ad881a8b2c5b76bd4a9ed5565b78779a9">More...</a><br /></td></tr>
 <tr class="separator:ad881a8b2c5b76bd4a9ed5565b78779a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f0d34c75e42042bc1873e0e9a455cda"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a7f0d34c75e42042bc1873e0e9a455cda"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_util_1_1yaml_1_1_emitter.html#a7f0d34c75e42042bc1873e0e9a455cda">Value</a> (const T &amp;<a class="el" href="_rulebook_8cpp.html#aef340542f1edc6a67d9a8e21585fe760">val</a>)</td></tr>
+<tr class="separator:a7f0d34c75e42042bc1873e0e9a455cda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -130,13 +132,6 @@ Protected Member Functions</h2></td></tr>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:a5701f21a1ea9aec293c7b0ba9ab20a36"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_util_1_1yaml_1_1_emitter.html#a5701f21a1ea9aec293c7b0ba9ab20a36">Emitter</a> ()=delete</td></tr>
 <tr class="separator:a5701f21a1ea9aec293c7b0ba9ab20a36"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
-Static Private Member Functions</h2></td></tr>
-<tr class="memitem:ae48fbf85e186335a0820a08fedd996e2"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_util_1_1yaml_1_1_emitter.html#ae48fbf85e186335a0820a08fedd996e2">OutputStreamHandler</a> (void *data, unsigned char *buffer, size_t size)</td></tr>
-<tr class="separator:ae48fbf85e186335a0820a08fedd996e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af330023ea58980651f4ca41ed7f692a8"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_util_1_1yaml_1_1_emitter.html#af330023ea58980651f4ca41ed7f692a8">OutputStringHandler</a> (void *data, unsigned char *buffer, size_t size)</td></tr>
-<tr class="separator:af330023ea58980651f4ca41ed7f692a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -416,86 +411,6 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ae48fbf85e186335a0820a08fedd996e2"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int HoverRace::Util::yaml::Emitter::OutputStreamHandler </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>data</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned char *&#160;</td>
-          <td class="paramname"><em>buffer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>size</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="af330023ea58980651f4ca41ed7f692a8"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int HoverRace::Util::yaml::Emitter::OutputStringHandler </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>data</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned char *&#160;</td>
-          <td class="paramname"><em>buffer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>size</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="a0545c3f8b6bb0d2a6a1d91f37df776df"></a>
 <div class="memitem">
 <div class="memproto">
@@ -705,6 +620,32 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a class="anchor" id="a7f0d34c75e42042bc1873e0e9a455cda"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HoverRace::Util::yaml::Emitter::Value </td>
+          <td>(</td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 695;
+var viewWidth = 664;
 var viewHeight = 127;
 var sectionId = 'dynsection-0';
 </script>
@@ -56,85 +56,85 @@ var sectionId = 'dynsection-0';
 <title>HoverRace::Client::HoverScript::Actor::Wrapper</title>
 <!-- Node1 -->
 <g id="node1" class="node"><title>Node1</title>
-<polygon fill="#bfbfbf" stroke="black" points="577,-17 577,-58 687,-58 687,-17 577,-17"/>
-<text text-anchor="start" x="585" y="-46" font-family="FreeSans" font-size="10.00">HoverRace::Client::</text>
-<text text-anchor="start" x="585" y="-35" font-family="FreeSans" font-size="10.00">HoverScript::Actor::</text>
-<text text-anchor="middle" x="632" y="-24" font-family="FreeSans" font-size="10.00">Wrapper</text>
+<polygon fill="#bfbfbf" stroke="black" points="552,-17 552,-58 656,-58 656,-17 552,-17"/>
+<text text-anchor="start" x="560" y="-46" font-family="Helvetica,sans-Serif" font-size="10.00">HoverRace::Client::</text>
+<text text-anchor="start" x="560" y="-35" font-family="Helvetica,sans-Serif" font-size="10.00">HoverScript::Actor::</text>
+<text text-anchor="middle" x="604" y="-24" font-family="Helvetica,sans-Serif" font-size="10.00">Wrapper</text>
 </g>
 <!-- Node2 -->
 <g id="node2" class="node"><title>Node2</title>
 <g id="a_node2"><a xlink:href="class_hover_race_1_1_model_1_1_free_element.html" target="_top" xlink:title="HoverRace::Model::FreeElement">
-<polygon fill="none" stroke="black" points="372,-50 372,-69 541,-69 541,-50 372,-50"/>
-<text text-anchor="middle" x="456.5" y="-57" font-family="FreeSans" font-size="10.00">HoverRace::Model::FreeElement</text>
+<polygon fill="none" stroke="black" points="356,-50 356,-69 516,-69 516,-50 356,-50"/>
+<text text-anchor="middle" x="436" y="-57" font-family="Helvetica,sans-Serif" font-size="10.00">HoverRace::Model::FreeElement</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node1 -->
 <g id="edge1" class="edge"><title>Node2&#45;&gt;Node1</title>
-<path fill="none" stroke="midnightblue" d="M542.788,-48.6854C554.426,-47.2096 566.1,-45.7294 576.97,-44.351"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="542.071,-45.2482 532.591,-49.9784 542.951,-52.1926 542.071,-45.2482"/>
+<path fill="none" stroke="midnightblue" d="M519.001,-48.6324C530.092,-47.1625 541.207,-45.6895 551.553,-44.3183"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="518.298,-45.1949 508.845,-49.9784 519.218,-52.1342 518.298,-45.1949"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node"><title>Node3</title>
 <g id="a_node3"><a xlink:href="class_hover_race_1_1_model_1_1_element.html" target="_top" xlink:title="Represents all objects (wall, floor, ceiling, etc.) that can be found in a maze. ">
-<polygon fill="none" stroke="black" points="187,-94 187,-113 336,-113 336,-94 187,-94"/>
-<text text-anchor="middle" x="261.5" y="-101" font-family="FreeSans" font-size="10.00">HoverRace::Model::Element</text>
+<polygon fill="none" stroke="black" points="180,-94 180,-113 320,-113 320,-94 180,-94"/>
+<text text-anchor="middle" x="250" y="-101" font-family="Helvetica,sans-Serif" font-size="10.00">HoverRace::Model::Element</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node2 -->
 <g id="edge2" class="edge"><title>Node3&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M314.189,-91.7159C345.345,-84.6131 384.511,-75.684 413.704,-69.0287"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="313.35,-88.3174 304.378,-93.9527 314.906,-95.1423 313.35,-88.3174"/>
+<path fill="none" stroke="midnightblue" d="M300.665,-91.6236C330.305,-84.5358 367.442,-75.6552 395.153,-69.0287"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="299.837,-88.2228 290.925,-93.9527 301.465,-95.0309 299.837,-88.2228"/>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node"><title>Node4</title>
 <g id="a_node4"><a xlink:href="class_hover_race_1_1_util_1_1_object_from_factory.html" target="_top" xlink:title="Base class for object created with a Dll Factory. ">
-<polygon fill="none" stroke="black" points="0,-88.5 0,-118.5 151,-118.5 151,-88.5 0,-88.5"/>
-<text text-anchor="start" x="8" y="-106.5" font-family="FreeSans" font-size="10.00">HoverRace::Util::ObjectFrom</text>
-<text text-anchor="middle" x="75.5" y="-95.5" font-family="FreeSans" font-size="10.00">Factory</text>
+<polygon fill="none" stroke="black" points="0,-88.5 0,-118.5 144,-118.5 144,-88.5 0,-88.5"/>
+<text text-anchor="start" x="8" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00">HoverRace::Util::ObjectFrom</text>
+<text text-anchor="middle" x="72" y="-95.5" font-family="Helvetica,sans-Serif" font-size="10.00">Factory</text>
 </a>
 </g>
 </g>
 <!-- Node4&#45;&gt;Node3 -->
 <g id="edge3" class="edge"><title>Node4&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M161.348,-103.5C169.819,-103.5 178.371,-103.5 186.715,-103.5"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="161.075,-100 151.075,-103.5 161.075,-107 161.075,-100"/>
+<path fill="none" stroke="midnightblue" d="M154.141,-103.5C162.764,-103.5 171.475,-103.5 179.941,-103.5"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="154.079,-100 144.079,-103.5 154.079,-107 154.079,-100"/>
 </g>
 <!-- Node5 -->
 <g id="node5" class="node"><title>Node5</title>
-<polygon fill="none" stroke="#bfbfbf" points="187,-44.5 187,-74.5 336,-74.5 336,-44.5 187,-44.5"/>
-<text text-anchor="start" x="195" y="-62.5" font-family="FreeSans" font-size="10.00">std::enable_shared</text>
-<text text-anchor="middle" x="261.5" y="-51.5" font-family="FreeSans" font-size="10.00">_from_this&lt; FreeElement &gt;</text>
+<polygon fill="none" stroke="#bfbfbf" points="182,-44.5 182,-74.5 318,-74.5 318,-44.5 182,-44.5"/>
+<text text-anchor="start" x="190" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::enable_shared</text>
+<text text-anchor="middle" x="250" y="-51.5" font-family="Helvetica,sans-Serif" font-size="10.00">_from_this&lt; FreeElement &gt;</text>
 </g>
 <!-- Node5&#45;&gt;Node2 -->
 <g id="edge4" class="edge"><title>Node5&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M346.28,-59.5C354.763,-59.5 363.38,-59.5 371.863,-59.5"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="346.016,-56.0001 336.016,-59.5 346.016,-63.0001 346.016,-56.0001"/>
+<path fill="none" stroke="midnightblue" d="M328.353,-59.5C337.427,-59.5 346.697,-59.5 355.797,-59.5"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="328.209,-56.0001 318.209,-59.5 328.209,-63.0001 328.209,-56.0001"/>
 </g>
 <!-- Node6 -->
 <g id="node6" class="node"><title>Node6</title>
 <g id="a_node6"><a xlink:href="class_hover_race_1_1_script_1_1_wrapper.html" target="_top" xlink:title="Base class for Luabind class wrappers. ">
-<polygon fill="none" stroke="black" points="402.5,-0.5 402.5,-30.5 510.5,-30.5 510.5,-0.5 402.5,-0.5"/>
-<text text-anchor="start" x="410.5" y="-18.5" font-family="FreeSans" font-size="10.00">HoverRace::Script::</text>
-<text text-anchor="middle" x="456.5" y="-7.5" font-family="FreeSans" font-size="10.00">Wrapper</text>
+<polygon fill="none" stroke="black" points="384,-0.5 384,-30.5 488,-30.5 488,-0.5 384,-0.5"/>
+<text text-anchor="start" x="392" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">HoverRace::Script::</text>
+<text text-anchor="middle" x="436" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">Wrapper</text>
 </a>
 </g>
 </g>
 <!-- Node6&#45;&gt;Node1 -->
 <g id="edge5" class="edge"><title>Node6&#45;&gt;Node1</title>
-<path fill="none" stroke="midnightblue" d="M520.972,-23.5484C539.292,-25.8713 559.108,-28.384 576.808,-30.6284"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="521.332,-20.0661 510.971,-22.2802 520.452,-27.0105 521.332,-20.0661"/>
+<path fill="none" stroke="midnightblue" d="M498.313,-23.6259C515.876,-25.9534 534.831,-28.4656 551.723,-30.7043"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="498.533,-20.1245 488.16,-22.2802 497.613,-27.0638 498.533,-20.1245"/>
 </g>
 <!-- Node7 -->
 <g id="node7" class="node"><title>Node7</title>
-<polygon fill="none" stroke="#bfbfbf" points="207.5,-6 207.5,-25 315.5,-25 315.5,-6 207.5,-6"/>
-<text text-anchor="middle" x="261.5" y="-13" font-family="FreeSans" font-size="10.00">luabind::wrap_base</text>
+<polygon fill="none" stroke="#bfbfbf" points="199.5,-6 199.5,-25 300.5,-25 300.5,-6 199.5,-6"/>
+<text text-anchor="middle" x="250" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00">luabind::wrap_base</text>
 </g>
 <!-- Node7&#45;&gt;Node6 -->
 <g id="edge6" class="edge"><title>Node7&#45;&gt;Node6</title>
-<path fill="none" stroke="midnightblue" d="M325.788,-15.5C350.585,-15.5 378.715,-15.5 402.425,-15.5"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="325.749,-12.0001 315.749,-15.5 325.749,-19.0001 325.749,-12.0001"/>
+<path fill="none" stroke="midnightblue" d="M311.011,-15.5C334.552,-15.5 361.285,-15.5 383.885,-15.5"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="310.793,-12.0001 300.793,-15.5 310.793,-19.0001 310.793,-12.0001"/>
 </g>
 </g>
 </svg>
