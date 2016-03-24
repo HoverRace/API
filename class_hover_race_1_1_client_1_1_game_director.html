@@ -122,7 +122,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a14e047cc2162e06167d139b2ca7bef6f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_game_director.html#a14e047cc2162e06167d139b2ca7bef6f">RequestStatusPresentation</a> ()=0</td></tr>
 <tr class="memdesc:a14e047cc2162e06167d139b2ca7bef6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Request that the status (logged-in players, etc.) be momentarily displayed to remind the user what's going on.  <a href="#a14e047cc2162e06167d139b2ca7bef6f">More...</a><br /></td></tr>
 <tr class="separator:a14e047cc2162e06167d139b2ca7bef6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affa5eac2f3e253af7aac979f509ffd20"><td class="memItemLeft" align="right" valign="top">virtual std::shared_ptr&lt; Player::Player &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_game_director.html#affa5eac2f3e253af7aac979f509ffd20">ShareUiPilot</a> () const =0</td></tr>
+<tr class="memitem:a81530155bb70bf147aa417069f5e3483"><td class="memItemLeft" align="right" valign="top">virtual std::shared_ptr&lt; <a class="el" href="class_hover_race_1_1_player_1_1_avatar_gallery.html">Player::AvatarGallery</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_game_director.html#a81530155bb70bf147aa417069f5e3483">ShareAvatarGallery</a> () const =0</td></tr>
+<tr class="memdesc:a81530155bb70bf147aa417069f5e3483"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the global avatar gallery.  <a href="#a81530155bb70bf147aa417069f5e3483">More...</a><br /></td></tr>
+<tr class="separator:a81530155bb70bf147aa417069f5e3483"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affa5eac2f3e253af7aac979f509ffd20"><td class="memItemLeft" align="right" valign="top">virtual std::shared_ptr&lt; <a class="el" href="class_hover_race_1_1_player_1_1_player.html">Player::Player</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_game_director.html#affa5eac2f3e253af7aac979f509ffd20">ShareUiPilot</a> () const =0</td></tr>
 <tr class="memdesc:affa5eac2f3e253af7aac979f509ffd20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the current local player who is in control of the UI at the moment.  <a href="#affa5eac2f3e253af7aac979f509ffd20">More...</a><br /></td></tr>
 <tr class="separator:affa5eac2f3e253af7aac979f509ffd20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -648,6 +651,34 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a81530155bb70bf147aa417069f5e3483"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::shared_ptr&lt;<a class="el" href="class_hover_race_1_1_player_1_1_avatar_gallery.html">Player::AvatarGallery</a>&gt; HoverRace::Client::GameDirector::ShareAvatarGallery </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Retrieve the global avatar gallery. </p>
+<dl class="section return"><dt>Returns</dt><dd>The gallery (never <code>nullptr</code>). </dd></dl>
+
+<p>Implemented in <a class="el" href="class_hover_race_1_1_client_1_1_client_app.html#aff16243825cda3e9d7c087fa08663054">HoverRace::Client::ClientApp</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="affa5eac2f3e253af7aac979f509ffd20"></a>
 <div class="memitem">
 <div class="memproto">
@@ -656,7 +687,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual std::shared_ptr&lt;Player::Player&gt; HoverRace::Client::GameDirector::ShareUiPilot </td>
+          <td class="memname">virtual std::shared_ptr&lt;<a class="el" href="class_hover_race_1_1_player_1_1_player.html">Player::Player</a>&gt; HoverRace::Client::GameDirector::ShareUiPilot </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>

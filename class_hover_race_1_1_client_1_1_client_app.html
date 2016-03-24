@@ -134,7 +134,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a94d74c042e5cb609fd704836970d6938"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_client_app.html#a94d74c042e5cb609fd704836970d6938">RequestStatusPresentation</a> () override</td></tr>
 <tr class="memdesc:a94d74c042e5cb609fd704836970d6938"><td class="mdescLeft">&#160;</td><td class="mdescRight">Request that the status (logged-in players, etc.) be momentarily displayed to remind the user what's going on.  <a href="#a94d74c042e5cb609fd704836970d6938">More...</a><br /></td></tr>
 <tr class="separator:a94d74c042e5cb609fd704836970d6938"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ad6fa2fa5f60e77b58e2be3e45c1328"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; Player::Player &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_client_app.html#a7ad6fa2fa5f60e77b58e2be3e45c1328">ShareUiPilot</a> () const override</td></tr>
+<tr class="memitem:aff16243825cda3e9d7c087fa08663054"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_hover_race_1_1_player_1_1_avatar_gallery.html">Player::AvatarGallery</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_client_app.html#aff16243825cda3e9d7c087fa08663054">ShareAvatarGallery</a> () const override</td></tr>
+<tr class="memdesc:aff16243825cda3e9d7c087fa08663054"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the global avatar gallery.  <a href="#aff16243825cda3e9d7c087fa08663054">More...</a><br /></td></tr>
+<tr class="separator:aff16243825cda3e9d7c087fa08663054"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ad6fa2fa5f60e77b58e2be3e45c1328"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_hover_race_1_1_player_1_1_player.html">Player::Player</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_client_app.html#a7ad6fa2fa5f60e77b58e2be3e45c1328">ShareUiPilot</a> () const override</td></tr>
 <tr class="memdesc:a7ad6fa2fa5f60e77b58e2be3e45c1328"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the current local player who is in control of the UI at the moment.  <a href="#a7ad6fa2fa5f60e77b58e2be3e45c1328">More...</a><br /></td></tr>
 <tr class="separator:a7ad6fa2fa5f60e77b58e2be3e45c1328"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_hover_race_1_1_client_1_1_game_director"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_hover_race_1_1_client_1_1_game_director')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_hover_race_1_1_client_1_1_game_director.html">HoverRace::Client::GameDirector</a></td></tr>
@@ -196,6 +199,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a1024fa15628be1c98627bfad69f92363"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fc175fd1517f3b649fb68d87d13f711"><td class="memItemLeft" align="right" valign="top">std::list&lt; std::shared_ptr&lt; <a class="el" href="class_hover_race_1_1_client_1_1_announcement.html">Announcement</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_client_app.html#a3fc175fd1517f3b649fb68d87d13f711">announcements</a></td></tr>
 <tr class="separator:a3fc175fd1517f3b649fb68d87d13f711"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58b0b9e3fd9a4f42291865e1c9acd1d1"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_hover_race_1_1_player_1_1_avatar_gallery.html">Player::AvatarGallery</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_client_app.html#a58b0b9e3fd9a4f42291865e1c9acd1d1">avatarGallery</a></td></tr>
+<tr class="separator:a58b0b9e3fd9a4f42291865e1c9acd1d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5edf768d460459c580fe5770e28342b9"><td class="memItemLeft" align="right" valign="top">std::weak_ptr&lt; <a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_console_scene.html">HoverScript::ConsoleScene</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_client_app.html#a5edf768d460459c580fe5770e28342b9">consoleScene</a></td></tr>
 <tr class="separator:a5edf768d460459c580fe5770e28342b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6ca4ac83434c1410a2365af81afd141"><td class="memItemLeft" align="right" valign="top">boost::signals2::connection&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_client_app.html#ae6ca4ac83434c1410a2365af81afd141">consoleToggleConn</a></td></tr>
@@ -1253,6 +1258,34 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="aff16243825cda3e9d7c087fa08663054"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="class_hover_race_1_1_player_1_1_avatar_gallery.html">Player::AvatarGallery</a>&gt; HoverRace::Client::ClientApp::ShareAvatarGallery </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Retrieve the global avatar gallery. </p>
+<dl class="section return"><dt>Returns</dt><dd>The gallery (never <code>nullptr</code>). </dd></dl>
+
+<p>Implements <a class="el" href="class_hover_race_1_1_client_1_1_game_director.html#a81530155bb70bf147aa417069f5e3483">HoverRace::Client::GameDirector</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a7ad6fa2fa5f60e77b58e2be3e45c1328"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1261,7 +1294,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::shared_ptr&lt; Player::Player &gt; HoverRace::Client::ClientApp::ShareUiPilot </td>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="class_hover_race_1_1_player_1_1_player.html">Player::Player</a> &gt; HoverRace::Client::ClientApp::ShareUiPilot </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -1337,6 +1370,26 @@ Private Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">std::list&lt;std::shared_ptr&lt;<a class="el" href="class_hover_race_1_1_client_1_1_announcement.html">Announcement</a>&gt; &gt; HoverRace::Client::ClientApp::announcements</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a58b0b9e3fd9a4f42291865e1c9acd1d1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="class_hover_race_1_1_player_1_1_avatar_gallery.html">Player::AvatarGallery</a>&gt; HoverRace::Client::ClientApp::avatarGallery</td>
         </tr>
       </table>
   </td>

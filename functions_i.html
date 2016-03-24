@@ -160,6 +160,7 @@
 , <a class="el" href="class_hover_race_1_1_display_1_1_button.html#a587751e24e55d979a2dee346e723ebb4">HoverRace::Display::Button</a>
 , <a class="el" href="class_hover_race_1_1_display_1_1_checkbox.html#a7ce84f8bcaf7f1cb5a9f38bb334ec1e5">HoverRace::Display::Checkbox</a>
 , <a class="el" href="class_hover_race_1_1_display_1_1_pick_list_item.html#ad88f461cdd2ac223462e21882f08c1b0">HoverRace::Display::PickListItem</a>
+, <a class="el" href="class_hover_race_1_1_net_1_1_blocking_transfer.html#a1a29f1174a7409fe5854a101d9902610">HoverRace::Net::BlockingTransfer</a>
 , <a class="el" href="class_hover_race_1_1_util_1_1_config.html#a6124a46747c7211fac8a89550b74b52d">HoverRace::Util::Config</a>
 , <a class="el" href="class_hover_race_1_1_util_1_1yaml_1_1_map_node.html#a9b72b6d4364059175446f0ee321fcad7">HoverRace::Util::yaml::MapNode</a>
 , <a class="el" href="class_hover_race_1_1_util_1_1yaml_1_1_seq_node.html#af2b0bdbfcad8e20801b77e7ce0ca3e2b">HoverRace::Util::yaml::SeqNode</a>
@@ -292,6 +293,9 @@
 <li>isBold()
 : <a class="el" href="struct_hover_race_1_1_display_1_1_ui_font.html#aca0da6a499aa8d74020c3e2b01830d24">HoverRace::Display::UiFont</a>
 </li>
+<li>IsCanceled()
+: <a class="el" href="class_hover_race_1_1_net_1_1_cancel_flag.html#ad9338d1b95f1a30f0c565b3fd836451a">HoverRace::Net::CancelFlag</a>
+</li>
 <li>IsCapturing()
 : <a class="el" href="class_hover_race_1_1_control_1_1_input_event_controller.html#ab7b091f03921101e0a972dbc7a09e529">HoverRace::Control::InputEventController</a>
 </li>
@@ -303,6 +307,13 @@
 </li>
 <li>IsClip()
 : <a class="el" href="class_hover_race_1_1_display_1_1_base_container.html#abd2edda33c1081337152807c1053b9ea">HoverRace::Display::BaseContainer</a>
+</li>
+<li>IsCompeting()
+: <a class="el" href="class_hover_race_1_1_player_1_1_player.html#a6a5e5f557c7c5df60c4f2731fa402395">HoverRace::Player::Player</a>
+</li>
+<li>IsComplete()
+: <a class="el" href="class_hover_race_1_1_net_1_1_blocking_transfer.html#aad01086343e30eb67b75c8fd34d30c17">HoverRace::Net::BlockingTransfer</a>
+, <a class="el" href="class_hover_race_1_1_net_1_1_transfer.html#a5b05539523f277081c96605ff72b1c6f">HoverRace::Net::Transfer</a>
 </li>
 <li>IsCorner()
 : <a class="el" href="struct_hover_race_1_1_display_1_1_hud_1_1_hud_alignment.html#ab604611528708a1685a6cb5c11d132fe">HoverRace::Display::Hud::HudAlignment</a>
@@ -316,6 +327,8 @@
 <li>IsEmpty()
 : <a class="el" href="class_hover_race_1_1_display_1_1_base_container.html#a46925a3bdef37bb2a50b5d4f132bad32">HoverRace::Display::BaseContainer</a>
 , <a class="el" href="class_hover_race_1_1_model_1_1_track_list.html#a46dfee69baff3cd11b04b41bdbbba81b">HoverRace::Model::TrackList</a>
+, <a class="el" href="class_hover_race_1_1_player_1_1_avatar_gallery.html#a54a5904754f0ad830ba0ddf1f92b824c">HoverRace::Player::AvatarGallery</a>
+, <a class="el" href="class_hover_race_1_1_player_1_1_profile_gallery.html#a5c6067bb59aa4ecd724e435867356cfa">HoverRace::Player::ProfileGallery</a>
 , <a class="el" href="class_hover_race_1_1_util_1_1_loader.html#a21600f0d92f38ebee94a860c3c4847c9">HoverRace::Util::Loader</a>
 , <a class="el" href="class_hover_race_1_1_util_1_1yaml_1_1_seq_node.html#a966bbdd5d33e06b5c9a04e4bc32ff5be">HoverRace::Util::yaml::SeqNode</a>
 , <a class="el" href="class_m_r___fast_fifo_base.html#a06108e8165553da272059021b68ada15">MR_FastFifoBase&lt; pType &gt;</a>
@@ -345,6 +358,9 @@
 : <a class="el" href="class_hover_race_1_1_display_1_1_res_3_01_texture_01_4.html#ad5d51e6d16505da74af856309ca075b3">HoverRace::Display::Res&lt; Texture &gt;</a>
 , <a class="el" href="class_hover_race_1_1_display_1_1_sprite_texture_res.html#acb990560a0364eba873e643b4894a5db">HoverRace::Display::SpriteTextureRes</a>
 </li>
+<li>IsHuman()
+: <a class="el" href="class_hover_race_1_1_player_1_1_player.html#a12aef2435db858ab9f5b7377054bfceb">HoverRace::Player::Player</a>
+</li>
 <li>IsInitialized()
 : <a class="el" href="class_hover_race_1_1_display_1_1_glyph_entry.html#abfde485aa80a1b7e4560e9e1fa4e5f29">HoverRace::Display::GlyphEntry</a>
 </li>
@@ -359,6 +375,12 @@
 </li>
 <li>IsLayoutUnscaled()
 : <a class="el" href="class_hover_race_1_1_display_1_1_ui_view_model.html#ad65fb0acbbfb138e688b6af325476120">HoverRace::Display::UiViewModel</a>
+</li>
+<li>isLoaded()
+: <a class="el" href="class_hover_race_1_1_player_1_1_local_profile.html#a59470377d9c0b47f3e5a7b1823ecc831">HoverRace::Player::LocalProfile</a>
+</li>
+<li>IsLocal()
+: <a class="el" href="class_hover_race_1_1_player_1_1_player.html#a688e2a53ccfff2f3b6e218a65356d0c9">HoverRace::Player::Player</a>
 </li>
 <li>IsMapActive()
 : <a class="el" href="class_hover_race_1_1_control_1_1_input_event_controller.html#a5d4d9926ad29baa985597b62b3e67f3b">HoverRace::Control::InputEventController</a>
@@ -419,10 +441,12 @@
 , <a class="el" href="class_hover_race_1_1_parcel_1_1_bundle.html#a9745f3bdd1586900254ec526d132778c">HoverRace::Parcel::Bundle</a>
 </li>
 <li>Iterator()
-: <a class="el" href="class_hover_race_1_1_parcel_1_1_bundle_1_1_iterator.html#a4587697c5bd3680e921ba5f3886a353b">HoverRace::Parcel::Bundle::Iterator</a>
+: <a class="el" href="class_hover_race_1_1_parcel_1_1_bundle_1_1_iterator.html#a457c48c4c9aa18819b45828b61acf0e5">HoverRace::Parcel::Bundle::Iterator</a>
 </li>
 <li>iterator
-: <a class="el" href="class_hover_race_1_1_util_1_1_locale.html#aed53c21c6ae8378f1e092956641a9549">HoverRace::Util::Locale</a>
+: <a class="el" href="class_hover_race_1_1_player_1_1_avatar_gallery.html#a13c41deec7f655ac8f212c07fd5e73b7">HoverRace::Player::AvatarGallery</a>
+, <a class="el" href="class_hover_race_1_1_player_1_1_profile_gallery.html#a4b487d3079e48a0c17768853dfc0f0fe">HoverRace::Player::ProfileGallery</a>
+, <a class="el" href="class_hover_race_1_1_util_1_1_locale.html#aed53c21c6ae8378f1e092956641a9549">HoverRace::Util::Locale</a>
 , <a class="el" href="class_hover_race_1_1_util_1_1yaml_1_1_map_node.html#a41453a2521e5ca611849a832bf5f04f2">HoverRace::Util::yaml::MapNode</a>
 , <a class="el" href="class_hover_race_1_1_util_1_1yaml_1_1_seq_node.html#abb9a8ddbb18dc8e096937128dba97064">HoverRace::Util::yaml::SeqNode</a>
 </li>
