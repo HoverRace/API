@@ -127,7 +127,8 @@
 : <a class="el" href="class_hover_race_1_1_control_1_1_input_event_controller.html#a850f2fe40d7e2099af8d6e224df429e8">HoverRace::Control::InputEventController</a>
 </li>
 <li>saveConn
-: <a class="el" href="class_hover_race_1_1_client_1_1_settings_scene.html#a0de3a4006f77335b1660c6e9d57baf9c">HoverRace::Client::SettingsScene</a>
+: <a class="el" href="class_hover_race_1_1_client_1_1_profile_edit_scene.html#a395116d1b1e47e995342ef133fb0d1e8">HoverRace::Client::ProfileEditScene</a>
+, <a class="el" href="class_hover_race_1_1_client_1_1_settings_scene.html#a0de3a4006f77335b1660c6e9d57baf9c">HoverRace::Client::SettingsScene</a>
 </li>
 <li>SaveVersion()
 : <a class="el" href="class_hover_race_1_1_util_1_1_config.html#a21c83ed4a3313642a53672966116dd4f">HoverRace::Util::Config</a>
@@ -456,7 +457,6 @@
 <li>SetColor()
 : <a class="el" href="class_hover_race_1_1_display_1_1_base_text.html#af09713ce65b0b7ce34577c1c1d88962d">HoverRace::Display::BaseText</a>
 , <a class="el" href="class_hover_race_1_1_display_1_1_fill_box.html#af8601240fc1ddac6a5b8a5ba59d17281">HoverRace::Display::FillBox</a>
-, <a class="el" href="class_hover_race_1_1_display_1_1_picture.html#a4b5002775fe928f9eea1bd841a826d89">HoverRace::Display::Picture</a>
 , <a class="el" href="class_hover_race_1_1_display_1_1_rule_line.html#abb25f3b418a2bd4d3dcd571f753479cb">HoverRace::Display::RuleLine</a>
 , <a class="el" href="class_hover_race_1_1_display_1_1_screen_fade.html#a3ca056d6fd70f98b3d7e2c5ccbbd1076">HoverRace::Display::ScreenFade</a>
 , <a class="el" href="class_hover_race_1_1_display_1_1_s_d_l_1_1_sdl_surface_text.html#ac78e8957ab6830f80f44f24c30ad5fd1">HoverRace::Display::SDL::SdlSurfaceText</a>
@@ -690,7 +690,6 @@
 , <a class="el" href="class_hover_race_1_1_display_1_1_click_region.html#a4713b672d99dfcb1217d3c48bd719077">HoverRace::Display::ClickRegion</a>
 , <a class="el" href="class_hover_race_1_1_display_1_1_fill_box.html#a2dfc01617a366b0267381d14c6d0c7b2">HoverRace::Display::FillBox</a>
 , <a class="el" href="class_hover_race_1_1_display_1_1_flex_grid_1_1_basic_cell.html#a5a88063491d3241b7d8c0d495c2dfedc">HoverRace::Display::FlexGrid::BasicCell&lt; T &gt;</a>
-, <a class="el" href="class_hover_race_1_1_display_1_1_picture.html#a4ea6328cfefa19955a981102b2eb228e">HoverRace::Display::Picture</a>
 </li>
 <li>SetSplitMode()
 : <a class="el" href="class_hover_race_1_1_client_1_1_observer.html#a4022195d42925aca3b0769178dea84bc">HoverRace::Client::Observer</a>
@@ -719,7 +718,8 @@
 : <a class="el" href="class_hover_race_1_1_display_1_1_button.html#a1ebdc6b4962bfa5654a5c504ad5dba94">HoverRace::Display::Button</a>
 </li>
 <li>SetTexture()
-: <a class="el" href="class_hover_race_1_1_display_1_1_picture.html#a6084d3642afc3802ff6be4575185a15e">HoverRace::Display::Picture</a>
+: <a class="el" href="class_hover_race_1_1_display_1_1_button.html#ad9c3678a2c3fefc8926420dfb0597eae">HoverRace::Display::Button</a>
+, <a class="el" href="class_hover_race_1_1_display_1_1_picture.html#a6084d3642afc3802ff6be4575185a15e">HoverRace::Display::Picture</a>
 </li>
 <li>SetTime()
 : <a class="el" href="class_hover_race_1_1_util_1_1_clock.html#ad13081d2f93a2ac01d2636222e60868f">HoverRace::Util::Clock</a>
@@ -840,6 +840,10 @@
 <li>ShareResBundle()
 : <a class="el" href="class_hover_race_1_1_util_1_1_config.html#ae574fdbbabe4232218c9b9cbece915a6">HoverRace::Util::Config</a>
 </li>
+<li>ShareTexture()
+: <a class="el" href="class_hover_race_1_1_display_1_1_button.html#a0dd57473c11bb7ed3571bc8f9fa64eb6">HoverRace::Display::Button</a>
+, <a class="el" href="class_hover_race_1_1_display_1_1_picture.html#a00971338e8d8269e01a7787b635129a3">HoverRace::Display::Picture</a>
+</li>
 <li>ShareTrack()
 : <a class="el" href="class_hover_race_1_1_display_1_1_hud.html#ad9543f6759e24eb0b3af735a5de19c2d">HoverRace::Display::Hud</a>
 , <a class="el" href="class_hover_race_1_1_display_1_1_hud_decor.html#ab39e48c7bea70d7c5a52377e374be0be">HoverRace::Display::HudDecor</a>
@@ -934,12 +938,6 @@
 <li>size
 : <a class="el" href="class_hover_race_1_1_display_1_1_fill_box.html#a850edd370bb1327f1e0ab3ca1f4c3744">HoverRace::Display::FillBox</a>
 , <a class="el" href="class_hover_race_1_1_display_1_1_flex_grid.html#a619cd1f3dd86ef7d68cdd04576197447">HoverRace::Display::FlexGrid</a>
-</li>
-<li>SIZE
-: <a class="el" href="struct_hover_race_1_1_display_1_1_picture_1_1_props.html#aa390bc4ba7c382ac675f774bbc1f34b5acbf926517137492bedecbbca8ecaebdd">HoverRace::Display::Picture::Props</a>
-</li>
-<li>size
-: <a class="el" href="class_hover_race_1_1_display_1_1_picture.html#aaf2e6b8afe9a6f7a69dde3f248355f2a">HoverRace::Display::Picture</a>
 </li>
 <li>SIZE
 : <a class="el" href="struct_hover_race_1_1_display_1_1_rule_line_1_1_props.html#a29bcc43121cc2c8a05c672e7f67a39fdaa7f7bc840f624d56e0ccf774c6992684">HoverRace::Display::RuleLine::Props</a>
@@ -1068,12 +1066,14 @@
 <li>StartSeq()
 : <a class="el" href="class_hover_race_1_1_util_1_1yaml_1_1_emitter.html#ad2df10acfd0c4ab32b9eec47e1930387">HoverRace::Util::yaml::Emitter</a>
 </li>
+<li>state
+: <a class="el" href="class_hover_race_1_1_client_1_1_scene.html#ab04a2cd8ac900f8881760326bfaa4581">HoverRace::Client::Scene</a>
+</li>
 <li>State
 : <a class="el" href="class_hover_race_1_1_client_1_1_scene.html#a44bc6ab34b62962b74d0713aeb87fdd7">HoverRace::Client::Scene</a>
 </li>
 <li>state
-: <a class="el" href="class_hover_race_1_1_client_1_1_scene.html#ab04a2cd8ac900f8881760326bfaa4581">HoverRace::Client::Scene</a>
-, <a class="el" href="struct_hover_race_1_1_script_1_1_core_1_1_stack_restore.html#a8e190f64554d6771a108d2b13f7336bd">HoverRace::Script::Core::StackRestore</a>
+: <a class="el" href="struct_hover_race_1_1_script_1_1_core_1_1_stack_restore.html#a8e190f64554d6771a108d2b13f7336bd">HoverRace::Script::Core::StackRestore</a>
 , <a class="el" href="class_hover_race_1_1_script_1_1_core.html#a1c8dbe444588437349e23e1e4764445a">HoverRace::Script::Core</a>
 </li>
 <li>stateBox
@@ -1096,6 +1096,12 @@
 </li>
 <li>stateTs
 : <a class="el" href="class_hover_race_1_1_client_1_1_scene.html#a03b98bc23ab3dc774504e1863395a5ec">HoverRace::Client::Scene</a>
+</li>
+<li>status
+: <a class="el" href="class_hover_race_1_1_client_1_1_player_status_announcement.html#a1fba55da2b7898529e3a439fba1ff8ad">HoverRace::Client::PlayerStatusAnnouncement</a>
+</li>
+<li>status_t
+: <a class="el" href="struct_hover_race_1_1_client_1_1_player_status_announcement_1_1_status.html#a8791add438a1446fde0e9cf5cb6cfd2a">HoverRace::Client::PlayerStatusAnnouncement::Status</a>
 </li>
 <li>statusOverlayScene
 : <a class="el" href="class_hover_race_1_1_client_1_1_client_app.html#a637edaa101e751f5b2b114762520ce7c">HoverRace::Client::ClientApp</a>
@@ -1152,11 +1158,11 @@
 <li>StringWriteFunc()
 : <a class="el" href="class_hover_race_1_1_net_1_1_blocking_transfer.html#a8e97d0a865815315792080ada88690ed">HoverRace::Net::BlockingTransfer</a>
 </li>
-<li>style
-: <a class="el" href="struct_hover_race_1_1_display_1_1_ui_font.html#afca1116c4c8b96f7842fed1e8a8f1cbe">HoverRace::Display::UiFont</a>
-</li>
 <li>Style
 : <a class="el" href="struct_hover_race_1_1_display_1_1_ui_font.html#a2e09a4b153710af8fe30201f04790b2a">HoverRace::Display::UiFont</a>
+</li>
+<li>style
+: <a class="el" href="struct_hover_race_1_1_display_1_1_ui_font.html#afca1116c4c8b96f7842fed1e8a8f1cbe">HoverRace::Display::UiFont</a>
 </li>
 <li>StyleEnv()
 : <a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_style_env.html#a0006e6c5a8d1305b2fb6e27e82b46be0">HoverRace::Client::HoverScript::StyleEnv</a>
@@ -1172,6 +1178,9 @@
 </li>
 <li>subBundle
 : <a class="el" href="class_hover_race_1_1_parcel_1_1_bundle.html#aab584373bbf4578227953009a4814f0e">HoverRace::Parcel::Bundle</a>
+</li>
+<li>subject
+: <a class="el" href="class_hover_race_1_1_client_1_1_player_status_announcement.html#ac19abe1be261d232563cf1cda9b606e1">HoverRace::Client::PlayerStatusAnnouncement</a>
 </li>
 <li>SubmitChunk()
 : <a class="el" href="class_hover_race_1_1_client_1_1_hover_script_1_1_console.html#a86e5314c8a7b42917951d4e6410dbe82">HoverRace::Client::HoverScript::Console</a>
@@ -1193,6 +1202,7 @@
 </li>
 <li>SUPER
 : <a class="el" href="class_hover_race_1_1_client_1_1_audio_settings_scene.html#a6b13859dc285a81187df13bf388b1eaf">HoverRace::Client::AudioSettingsScene</a>
+, <a class="el" href="class_hover_race_1_1_client_1_1_avatar_select_scene.html#a2673d76dca403924ee72f960c30962dd">HoverRace::Client::AvatarSelectScene</a>
 , <a class="el" href="class_hover_race_1_1_client_1_1_bulletin_board_1_1_bulletin.html#af013e5e4034f39d10d9a367d42cedc3a">HoverRace::Client::BulletinBoard::Bulletin</a>
 , <a class="el" href="class_hover_race_1_1_client_1_1_bulletin_board.html#a8c9252e03e32426f785df2c4c25cb862">HoverRace::Client::BulletinBoard</a>
 , <a class="el" href="class_hover_race_1_1_client_1_1_client_app.html#a9c3361c9c287073e89d3891ed45ed2ee">HoverRace::Client::ClientApp</a>
@@ -1243,9 +1253,10 @@
 , <a class="el" href="class_hover_race_1_1_client_1_1_palette_scene.html#aa4e3f918fc584a94e4ad058f73ae2559">HoverRace::Client::PaletteScene</a>
 , <a class="el" href="class_hover_race_1_1_client_1_1_pause_menu_scene.html#a87075040d797924445cb6b7325e51b25">HoverRace::Client::PauseMenuScene</a>
 , <a class="el" href="class_hover_race_1_1_client_1_1_player_bar.html#a8320cf2ca547481b2817dae5db9de721">HoverRace::Client::PlayerBar</a>
+, <a class="el" href="class_hover_race_1_1_client_1_1_player_status_announcement.html#aecf284a06490415a11b08a887bc326b8">HoverRace::Client::PlayerStatusAnnouncement</a>
 , <a class="el" href="class_hover_race_1_1_client_1_1_play_game_scene.html#af689941d94890ca7cf0cf4b0028c518d">HoverRace::Client::PlayGameScene</a>
 , <a class="el" href="class_hover_race_1_1_client_1_1_practice_setup_scene.html#aba353b71be56154ad9ec8609fd80b96c">HoverRace::Client::PracticeSetupScene</a>
-, <a class="el" href="class_hover_race_1_1_client_1_1_profile_edit_scene.html#a0a0cb893e04e06533245d041ce01cb26">HoverRace::Client::ProfileEditScene</a>
+, <a class="el" href="class_hover_race_1_1_client_1_1_profile_edit_scene.html#ab9b196e1d9b72ca228c2844764226340">HoverRace::Client::ProfileEditScene</a>
 , <a class="el" href="class_hover_race_1_1_client_1_1_session_loading_scene.html#a10d33e29e51621cb7289fd95ea63b584">HoverRace::Client::SessionLoadingScene</a>
 , <a class="el" href="class_hover_race_1_1_client_1_1_settings_menu_scene_1_1_menu_item_button.html#acd37d668a72ba8305880fadd2a259e17">HoverRace::Client::SettingsMenuScene::MenuItemButton&lt; T &gt;</a>
 , <a class="el" href="class_hover_race_1_1_client_1_1_settings_menu_scene.html#a84126d4027007c6aa883dcfd4cbd1145">HoverRace::Client::SettingsMenuScene</a>
@@ -1289,7 +1300,7 @@
 , <a class="el" href="class_hover_race_1_1_display_1_1_pick_list_1_1_default_item.html#a03c217b14b1f35ba0ca72fda0eae60e3">HoverRace::Display::PickList&lt; T &gt;::DefaultItem</a>
 , <a class="el" href="class_hover_race_1_1_display_1_1_pick_list.html#a471a71cd8be1b642bb08d88aeadefa3d">HoverRace::Display::PickList&lt; T &gt;</a>
 , <a class="el" href="class_hover_race_1_1_display_1_1_pick_list_item.html#a178ca02a99b5c6185b32408d2eb439f4">HoverRace::Display::PickListItem</a>
-, <a class="el" href="class_hover_race_1_1_display_1_1_picture.html#ae179356cb5f56953dbba1f266f796cf8">HoverRace::Display::Picture</a>
+, <a class="el" href="class_hover_race_1_1_display_1_1_picture.html#aab12333240c171a83398784d798106a3">HoverRace::Display::Picture</a>
 , <a class="el" href="class_hover_race_1_1_display_1_1_radio_button.html#a5c27d3949d5413105a6b2207ddd95b16">HoverRace::Display::RadioButton&lt; T &gt;</a>
 , <a class="el" href="class_hover_race_1_1_display_1_1_res_load_exn.html#a29e500f227fc0ede499bca3d6fab1725">HoverRace::Display::ResLoadExn</a>
 , <a class="el" href="class_hover_race_1_1_display_1_1_rule_line.html#afb3fc282c0f4d00f34e658a923d9b245">HoverRace::Display::RuleLine</a>
