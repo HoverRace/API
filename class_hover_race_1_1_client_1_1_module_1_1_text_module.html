@@ -162,9 +162,17 @@ Private Types</h2></td></tr>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:acbe8f5654b3d43c4aa29377a11c41c98"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_module_1_1_text_module.html#acbe8f5654b3d43c4aa29377a11c41c98">AdjustWrapWidth</a> (double amt)</td></tr>
 <tr class="separator:acbe8f5654b3d43c4aa29377a11c41c98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae98b63c6b852c455b7edf078ecee37f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_module_1_1_text_module.html#ae98b63c6b852c455b7edf078ecee37f4">OnEditInput</a> ()</td></tr>
+<tr class="separator:ae98b63c6b852c455b7edf078ecee37f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
+<tr class="memitem:a672a287c9ffe6de61be4773818050462"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_hover_race_1_1_display_1_1_button.html">Display::Button</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_module_1_1_text_module.html#a672a287c9ffe6de61be4773818050462">inputBtn</a></td></tr>
+<tr class="separator:a672a287c9ffe6de61be4773818050462"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e4f60eec67c6ceb938c4044950c91f6"><td class="memItemLeft" align="right" valign="top">boost::signals2::scoped_connection&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_module_1_1_text_module.html#a8e4f60eec67c6ceb938c4044950c91f6">inputConn</a></td></tr>
+<tr class="separator:a8e4f60eec67c6ceb938c4044950c91f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ed8b9b49cec4d831c0d35ce1f079879"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_hover_race_1_1_display_1_1_active_text.html">Display::ActiveText</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_module_1_1_text_module.html#a0ed8b9b49cec4d831c0d35ce1f079879">inputLbl</a></td></tr>
+<tr class="separator:a0ed8b9b49cec4d831c0d35ce1f079879"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a911ba717d2d3b8f6432051a8ee459abd"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_hover_race_1_1_display_1_1_active_text.html">Display::ActiveText</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_module_1_1_text_module.html#a911ba717d2d3b8f6432051a8ee459abd">randomLbl</a></td></tr>
 <tr class="separator:a911ba717d2d3b8f6432051a8ee459abd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02baf817aa5f5173799fd1715c32e651"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_hover_race_1_1_display_1_1_fill_box.html">Display::FillBox</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_client_1_1_module_1_1_text_module.html#a02baf817aa5f5173799fd1715c32e651">wrapBox</a></td></tr>
@@ -378,7 +386,90 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ae98b63c6b852c455b7edf078ecee37f4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HoverRace::Client::Module::TextModule::OnEditInput </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a672a287c9ffe6de61be4773818050462"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="class_hover_race_1_1_display_1_1_button.html">Display::Button</a>&gt; HoverRace::Client::Module::TextModule::inputBtn</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8e4f60eec67c6ceb938c4044950c91f6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::signals2::scoped_connection HoverRace::Client::Module::TextModule::inputConn</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0ed8b9b49cec4d831c0d35ce1f079879"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="class_hover_race_1_1_display_1_1_active_text.html">Display::ActiveText</a>&gt; HoverRace::Client::Module::TextModule::inputLbl</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a911ba717d2d3b8f6432051a8ee459abd"></a>
 <div class="memitem">
 <div class="memproto">

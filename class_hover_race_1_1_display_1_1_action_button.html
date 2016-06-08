@@ -82,6 +82,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:aa9009b88103e36643506f7fda86dcd33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for automatically-sized button with fixed label.  <a href="#aa9009b88103e36643506f7fda86dcd33">More...</a><br /></td></tr>
 <tr class="separator:aa9009b88103e36643506f7fda86dcd33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a237b98bbb955ee3f96d688bf9bc4ed26"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_action_button.html#a237b98bbb955ee3f96d688bf9bc4ed26">ActionButton</a> (<a class="el" href="class_hover_race_1_1_display_1_1_display.html">Display</a> &amp;<a class="el" href="class_hover_race_1_1_display_1_1_click_region.html#a0652e0565e874dac967ccc12bd97c321">display</a>, const <a class="el" href="struct_hover_race_1_1_vec2.html">Vec2</a> &amp;<a class="el" href="class_hover_race_1_1_display_1_1_click_region.html#a99002ba7e1a7df9de5f2a53b9833b51f">size</a>, <a class="el" href="namespace_hover_race_1_1_display.html#aa7058413e37de3c35d9a4b8c3c2ca084">uiLayoutFlags_t</a> <a class="el" href="class_hover_race_1_1_display_1_1_ui_view_model.html#aaa3b34f6038b7ef807a55550c1be23bc">layoutFlags</a>=0)</td></tr>
+<tr class="memdesc:a237b98bbb955ee3f96d688bf9bc4ed26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for fixed-sized button with automatic label.  <a href="#a237b98bbb955ee3f96d688bf9bc4ed26">More...</a><br /></td></tr>
 <tr class="separator:a237b98bbb955ee3f96d688bf9bc4ed26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4904d318aded41d8a95717913e996107"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_action_button.html#a4904d318aded41d8a95717913e996107">ActionButton</a> (<a class="el" href="class_hover_race_1_1_display_1_1_display.html">Display</a> &amp;<a class="el" href="class_hover_race_1_1_display_1_1_click_region.html#a0652e0565e874dac967ccc12bd97c321">display</a>, const <a class="el" href="struct_hover_race_1_1_vec2.html">Vec2</a> &amp;<a class="el" href="class_hover_race_1_1_display_1_1_click_region.html#a99002ba7e1a7df9de5f2a53b9833b51f">size</a>, const std::string &amp;text, <a class="el" href="namespace_hover_race_1_1_display.html#aa7058413e37de3c35d9a4b8c3c2ca084">uiLayoutFlags_t</a> <a class="el" href="class_hover_race_1_1_display_1_1_ui_view_model.html#aaa3b34f6038b7ef807a55550c1be23bc">layoutFlags</a>=0)</td></tr>
 <tr class="memdesc:a4904d318aded41d8a95717913e996107"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for fixed-sized button with fixed label.  <a href="#a4904d318aded41d8a95717913e996107">More...</a><br /></td></tr>
@@ -317,6 +318,8 @@ Private Member Functions</h2></td></tr>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a1836fc9c5d671d972daf102d79579fea"><td class="memItemLeft" align="right" valign="top">std::weak_ptr&lt; Control::InputEventController::VoidActionPtr::element_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_action_button.html#a1836fc9c5d671d972daf102d79579fea">action</a></td></tr>
 <tr class="separator:a1836fc9c5d671d972daf102d79579fea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad705c793624c08fd2de82c3fe962452c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_action_button.html#ad705c793624c08fd2de82c3fe962452c">armed</a></td></tr>
+<tr class="separator:ad705c793624c08fd2de82c3fe962452c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaebd7eb9a0251a1d97f27d391f4b93c8"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_action_button.html#aaebd7eb9a0251a1d97f27d391f4b93c8">fixedText</a></td></tr>
 <tr class="separator:aaebd7eb9a0251a1d97f27d391f4b93c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d6402193772659d269f69d05df23076"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_hover_race_1_1_display_1_1_keycap_icon.html">KeycapIcon</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_display_1_1_action_button.html#a8d6402193772659d269f69d05df23076">keycap</a></td></tr>
@@ -487,6 +490,17 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Constructor for fixed-sized button with automatic label. </p>
+<dl class="section note"><dt>Note</dt><dd>The button will have no text until an action is attached. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">display</td><td>The display child elements will be attached to. </td></tr>
+    <tr><td class="paramname">size</td><td>The fixed button size. </td></tr>
+    <tr><td class="paramname">layoutFlags</td><td>Optional layout flags. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -675,6 +689,26 @@ Additional Inherited Members</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">std::weak_ptr&lt;Control::InputEventController::VoidActionPtr::element_type&gt; HoverRace::Display::ActionButton::action</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad705c793624c08fd2de82c3fe962452c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HoverRace::Display::ActionButton::armed</td>
         </tr>
       </table>
   </td>
