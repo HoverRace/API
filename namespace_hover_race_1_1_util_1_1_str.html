@@ -73,6 +73,9 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ae3da9554d0474a4576af67fce7658a73"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_viewport3_d_8h.html#a92ab9b5ccb38279197015ee3f200757a">MR_DllDeclare</a> size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_util_1_1_str.html#ae3da9554d0474a4576af67fce7658a73">Assign</a> (std::string &amp;dest, const std::string &amp;src, size_t len)</td></tr>
+<tr class="memdesc:ae3da9554d0474a4576af67fce7658a73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign a UTF-8 string to another, with a maximum length.  <a href="#ae3da9554d0474a4576af67fce7658a73">More...</a><br /></td></tr>
+<tr class="separator:ae3da9554d0474a4576af67fce7658a73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3100ba66a335b6c2cc1b9156fcd79c0"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_util_1_1_str.html#ac3100ba66a335b6c2cc1b9156fcd79c0">operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="class_hover_race_1_1_util_1_1_str_1_1_lua.html">Lua</a> &amp;lua)</td></tr>
 <tr class="separator:ac3100ba66a335b6c2cc1b9156fcd79c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7afbcbfdb71ec2c6e0da64427381051"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_hover_race_1_1_util_1_1_o_s.html#a2214cc4c8bc277b059dfe766dcf35b4e">OS::path_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hover_race_1_1_util_1_1_str.html#af7afbcbfdb71ec2c6e0da64427381051">UP</a> (const char *s=NULL)  throw ()</td></tr>
@@ -91,6 +94,49 @@ Functions</h2></td></tr>
 <tr class="separator:a227ee8f0538108756a487d1badbbd666"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="ae3da9554d0474a4576af67fce7658a73"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t HoverRace::Util::Str::Assign </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>dest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Assign a UTF-8 string to another, with a maximum length. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dest</td><td>The destination string. The contents will be replaced. </td></tr>
+    <tr><td class="paramname">src</td><td>The source string. </td></tr>
+    <tr><td class="paramname">len</td><td>The maximum length, in code points. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The destination length, in code points copied. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="ac3100ba66a335b6c2cc1b9156fcd79c0"></a>
 <div class="memitem">
 <div class="memproto">
