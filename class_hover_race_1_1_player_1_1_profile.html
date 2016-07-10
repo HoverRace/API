@@ -93,6 +93,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aec5a9f031ac16b3bbaaaf0c2a7691130"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a395eb39e4379930a4112a4a5d45ef922"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_player_1_1_profile.html#a395eb39e4379930a4112a4a5d45ef922">GetAvatarName</a> () const </td></tr>
 <tr class="separator:a395eb39e4379930a4112a4a5d45ef922"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57bef70e3650709e67136e5f2a0522cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="union_hover_race_1_1_display_1_1_color.html">Display::Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_player_1_1_profile.html#a57bef70e3650709e67136e5f2a0522cc">GetColor</a> (size_t i) const </td></tr>
+<tr class="memdesc:a57bef70e3650709e67136e5f2a0522cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the color by index.  <a href="#a57bef70e3650709e67136e5f2a0522cc">More...</a><br /></td></tr>
+<tr class="separator:a57bef70e3650709e67136e5f2a0522cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec3f110eb6b73347e540abfc0a47e493"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_player_1_1_profile.html#aec3f110eb6b73347e540abfc0a47e493">GetName</a> () const </td></tr>
 <tr class="memdesc:aec3f110eb6b73347e540abfc0a47e493"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the name of the player.  <a href="#aec3f110eb6b73347e540abfc0a47e493">More...</a><br /></td></tr>
 <tr class="separator:aec3f110eb6b73347e540abfc0a47e493"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -106,9 +109,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae9e3b5ae33add2de928492a53b19cd24"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_player_1_1_profile.html#ae9e3b5ae33add2de928492a53b19cd24">GetUidStr</a> () const </td></tr>
 <tr class="memdesc:ae9e3b5ae33add2de928492a53b19cd24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the UID as a string.  <a href="#ae9e3b5ae33add2de928492a53b19cd24">More...</a><br /></td></tr>
 <tr class="separator:ae9e3b5ae33add2de928492a53b19cd24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19259288f9dbf0333d6c60c863444b68"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_player_1_1_profile.html#a19259288f9dbf0333d6c60c863444b68">SetColor</a> (size_t i, <a class="el" href="union_hover_race_1_1_display_1_1_color.html">Display::Color</a> color) override</td></tr>
+<tr class="memdesc:a19259288f9dbf0333d6c60c863444b68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the color by index.  <a href="#a19259288f9dbf0333d6c60c863444b68">More...</a><br /></td></tr>
+<tr class="separator:a19259288f9dbf0333d6c60c863444b68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
+<tr class="memitem:ab437b3498e3a10049445555de6ce63b5"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_player_1_1_profile.html#ab437b3498e3a10049445555de6ce63b5">MAX_AVATAR_NAME_LENGTH</a> = 16</td></tr>
+<tr class="separator:ab437b3498e3a10049445555de6ce63b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac37dfae391f4c54321a8886e300f47b"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_player_1_1_profile.html#aac37dfae391f4c54321a8886e300f47b">MAX_NAME_LENGTH</a> = 30</td></tr>
 <tr class="memdesc:aac37dfae391f4c54321a8886e300f47b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum length for the name.  <a href="#aac37dfae391f4c54321a8886e300f47b">More...</a><br /></td></tr>
 <tr class="separator:aac37dfae391f4c54321a8886e300f47b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -117,19 +125,19 @@ Static Public Attributes</h2></td></tr>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:afcaa17aa9a873af8bb8e59fac1e2783f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hover_race_1_1_player_1_1_avatar_gallery.html">AvatarGallery</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_player_1_1_profile.html#afcaa17aa9a873af8bb8e59fac1e2783f">GetAvatarGallery</a> () const </td></tr>
 <tr class="separator:afcaa17aa9a873af8bb8e59fac1e2783f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb2da521d9b1d78f740006c7bb382ab7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_player_1_1_profile.html#aeb2da521d9b1d78f740006c7bb382ab7">Rename</a> (const std::string &amp;<a class="el" href="class_hover_race_1_1_player_1_1_profile.html#a348dca1450bf487d75817f14cfb0b03d">name</a>)</td></tr>
-<tr class="memdesc:aeb2da521d9b1d78f740006c7bb382ab7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempt to rename the profile.  <a href="#aeb2da521d9b1d78f740006c7bb382ab7">More...</a><br /></td></tr>
-<tr class="separator:aeb2da521d9b1d78f740006c7bb382ab7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a2d22abde3d8e26b23b3b5fbc0b1cb0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_player_1_1_profile.html#a9a2d22abde3d8e26b23b3b5fbc0b1cb0">Rename</a> (const std::string &amp;<a class="el" href="class_hover_race_1_1_player_1_1_profile.html#a348dca1450bf487d75817f14cfb0b03d">name</a>) override</td></tr>
+<tr class="memdesc:a9a2d22abde3d8e26b23b3b5fbc0b1cb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempt to rename the profile.  <a href="#a9a2d22abde3d8e26b23b3b5fbc0b1cb0">More...</a><br /></td></tr>
+<tr class="separator:a9a2d22abde3d8e26b23b3b5fbc0b1cb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06d8b6bc0d292e570bdbf929d37b3368"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_player_1_1_profile.html#a06d8b6bc0d292e570bdbf929d37b3368">Save</a> ()=0</td></tr>
 <tr class="separator:a06d8b6bc0d292e570bdbf929d37b3368"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c0d385264a92862793289f038c73b8e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_player_1_1_profile.html#a0c0d385264a92862793289f038c73b8e">SetAvatarName</a> (const std::string &amp;<a class="el" href="class_hover_race_1_1_player_1_1_profile.html#a906544f183f304a0af4af38bc29ee0f0">avatarName</a>)</td></tr>
-<tr class="separator:a0c0d385264a92862793289f038c73b8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b7e501fd1c887b91c562ad22a6fa745"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_player_1_1_profile.html#a3b7e501fd1c887b91c562ad22a6fa745">SetAvatarName</a> (const std::string &amp;<a class="el" href="class_hover_race_1_1_player_1_1_profile.html#a906544f183f304a0af4af38bc29ee0f0">avatarName</a>) override</td></tr>
+<tr class="separator:a3b7e501fd1c887b91c562ad22a6fa745"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc96c403ed2a39968481381276aaf47c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_player_1_1_profile.html#afc96c403ed2a39968481381276aaf47c">SetName</a> (const std::string &amp;<a class="el" href="class_hover_race_1_1_player_1_1_profile.html#a348dca1450bf487d75817f14cfb0b03d">name</a>)</td></tr>
 <tr class="separator:afc96c403ed2a39968481381276aaf47c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15d395f0daccf02bc5a1118da9f13181"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_player_1_1_profile.html#a15d395f0daccf02bc5a1118da9f13181">SetPrimaryColor</a> (<a class="el" href="union_hover_race_1_1_display_1_1_color.html">Display::Color</a> color)</td></tr>
-<tr class="separator:a15d395f0daccf02bc5a1118da9f13181"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a670f82686a300a03ef385ebdd35008"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_player_1_1_profile.html#a9a670f82686a300a03ef385ebdd35008">SetSecondaryColor</a> (<a class="el" href="union_hover_race_1_1_display_1_1_color.html">Display::Color</a> color)</td></tr>
-<tr class="separator:a9a670f82686a300a03ef385ebdd35008"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80985f8fd3a3754703c5b4638f93a04f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_player_1_1_profile.html#a80985f8fd3a3754703c5b4638f93a04f">SetPrimaryColor</a> (<a class="el" href="union_hover_race_1_1_display_1_1_color.html">Display::Color</a> color) override</td></tr>
+<tr class="separator:a80985f8fd3a3754703c5b4638f93a04f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee5ca149904f69f079b98203e373dd7c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hover_race_1_1_player_1_1_profile.html#aee5ca149904f69f079b98203e373dd7c">SetSecondaryColor</a> (<a class="el" href="union_hover_race_1_1_display_1_1_color.html">Display::Color</a> color) override</td></tr>
+<tr class="separator:aee5ca149904f69f079b98203e373dd7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -412,6 +420,31 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a57bef70e3650709e67136e5f2a0522cc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="union_hover_race_1_1_display_1_1_color.html">Display::Color</a> HoverRace::Player::Profile::GetColor </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieve the color by index. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i</td><td>The color index (starts at zero). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The color at the index. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="aec3f110eb6b73347e540abfc0a47e493"></a>
 <div class="memitem">
 <div class="memproto">
@@ -528,7 +561,7 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aeb2da521d9b1d78f740006c7bb382ab7"></a>
+<a class="anchor" id="a9a2d22abde3d8e26b23b3b5fbc0b1cb0"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -536,7 +569,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void HoverRace::Player::Profile::Rename </td>
+          <td class="memname">void HoverRace::Player::Profile::Rename </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>name</em></td><td>)</td>
@@ -545,7 +578,7 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -589,7 +622,7 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a0c0d385264a92862793289f038c73b8e"></a>
+<a class="anchor" id="a3b7e501fd1c887b91c562ad22a6fa745"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -606,12 +639,57 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="class_hover_race_1_1_player_1_1_editable_profile.html#ad44bde47d77bb66c2600caa07e5e9be1">HoverRace::Player::EditableProfile</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a19259288f9dbf0333d6c60c863444b68"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HoverRace::Player::Profile::SetColor </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="union_hover_race_1_1_display_1_1_color.html">Display::Color</a>&#160;</td>
+          <td class="paramname"><em>color</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the color by index. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i</td><td>The color index (starts at zero). </td></tr>
+    <tr><td class="paramname">color</td><td>The color to set. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="class_hover_race_1_1_player_1_1_editable_profile.html#a4d8ec14540ac9585bc9cfbdb2b4c8b9d">HoverRace::Player::EditableProfile</a>.</p>
 
 </div>
 </div>
@@ -639,7 +717,7 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a15d395f0daccf02bc5a1118da9f13181"></a>
+<a class="anchor" id="a80985f8fd3a3754703c5b4638f93a04f"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -656,7 +734,7 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -665,7 +743,7 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a9a670f82686a300a03ef385ebdd35008"></a>
+<a class="anchor" id="aee5ca149904f69f079b98203e373dd7c"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -682,7 +760,7 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -726,6 +804,26 @@ Private Attributes</h2></td></tr>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab437b3498e3a10049445555de6ce63b5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const size_t HoverRace::Player::Profile::MAX_AVATAR_NAME_LENGTH = 16</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

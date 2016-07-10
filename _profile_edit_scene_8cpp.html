@@ -63,6 +63,7 @@
 <code>#include &quot;<a class="el" href="_profile_exn_8h_source.html">../../engine/Player/ProfileExn.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_config_8h_source.html">../../engine/Util/Config.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_log_8h_source.html">../../engine/Util/Log.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_o_s_8h_source.html">../../engine/Util/OS.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_avatar_select_scene_8h_source.html">AvatarSelectScene.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_text_edit_scene_8h_source.html">TextEditScene.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_profile_edit_scene_8h_source.html">ProfileEditScene.h</a>&quot;</code><br />
@@ -82,6 +83,106 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Variable Documentation</h2>
+<a class="anchor" id="a72f49011b5605e0c59eabd1ab811cdfd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t col</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afd8362d60592871c6dd8a6a9d676429e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;Display::FillBox&gt; colorBox</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8fa03a405443da8c51582dceeca186c5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;Display::Container&gt; colorContainer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad5595836f764271c4d658ab47f649a99"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt;boost::signals2::scoped_connection, 2&gt; conns</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aeb92a509ad88b97d51c8547bfda40941"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Player::EditableProfile&amp; editProfile</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="af185cbbaeaf60dcad5d8cf684f2068b3"></a>
 <div class="memitem">
 <div class="memproto">
@@ -96,6 +197,26 @@ Namespaces</h2></td></tr>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab0253eaf8658b0cd4bd266ea1118fc8a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const Vec2 SIZE</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
